@@ -1,0 +1,392 @@
+[
+  {
+    "id": "northeastern",
+    "name": "NORTHEASTERN",
+    "platform": "Common app",
+    "testOptional": false,
+    "englishP25": 710,
+    "englishP50": 730,
+    "englishP75": 760,
+    "mathP25": 730,
+    "mathP50": 760,
+    "mathP75": 780,
+    "difficulty": 50,
+    "importance": "Very Important",
+    "prompts": [],
+    "acceptanceRate": 0.05
+  },
+  {
+    "id": "purdue",
+    "name": "Purdue",
+    "platform": "Common app",
+    "testOptional": false,
+    "englishP25": 600,
+    "englishP50": 660,
+    "englishP75": 720,
+    "mathP25": 600,
+    "mathP50": 690,
+    "mathP75": 760,
+    "difficulty": 30,
+    "importance": "Important",
+    "prompts": [
+      "How will opportunities at Purdue support your interests, both in and out of the classroom? (Respond in 250 words or fewer.)",
+      "Briefly discuss your reasons for choosing your major and your interest in studying at this campus location (Indianapolis or West Lafayette). (Respond in 250 words or fewer.)"
+    ],
+    "acceptanceRate": null
+  },
+  {
+    "id": "georgia-tech",
+    "name": "Georgia tech",
+    "platform": "Common app",
+    "testOptional": false,
+    "englishP25": 680,
+    "englishP50": 720,
+    "englishP75": 750,
+    "mathP25": 690,
+    "mathP50": 760,
+    "mathP75": 790,
+    "difficulty": 25,
+    "importance": "Considered",
+    "prompts": [
+      "Why do you want to study your chosen major and why do you want to study your major at Georgia Tech?*(300 words)"
+    ],
+    "acceptanceRate": null
+  },
+  {
+    "id": "tufts",
+    "name": "Tufts",
+    "platform": "Common app",
+    "testOptional": true,
+    "englishP25": 720,
+    "englishP50": 740,
+    "englishP75": 770,
+    "mathP25": 750,
+    "mathP50": 770,
+    "mathP75": 790,
+    "difficulty": 20,
+    "importance": "Considered",
+    "prompts": [
+      "Please complete the following statement: \"I am applying to Tufts because...\" (150-250 words)",
+      "It’s cool to love learning. What excites your intellectual curiosity, and why?(200-250words)"
+    ],
+    "acceptanceRate": 0.105
+  },
+  {
+    "id": "north-western",
+    "name": "North Western",
+    "platform": "Common app",
+    "testOptional": true,
+    "englishP25": 740,
+    "englishP50": 760,
+    "englishP75": 770,
+    "mathP25": 770,
+    "mathP50": 780,
+    "mathP75": 800,
+    "difficulty": 25,
+    "importance": "Considered",
+    "prompts": [
+      "We want to be sure we’re considering your application in the context of your personal experiences: What aspects of your background (your identity, your school setting, your community, your household, etc.) have most shaped how you see yourself engaging in Northwestern’s community, be it academically, extracurricularly, culturally, politically, socially, or otherwise? (fewer than 300 words)",
+      "2)  Northwestern fosters a distinctively interdisciplinary culture. We believe discovery and innovation thrive at the intersection of diverse ideas, perspectives, and academic interests. Within this setting, if you could dream up an undergraduate class, research project, or creative effort (a start-up, a design prototype, a performance, etc.), what would it be? Who might be some ideal classmates or collaborators?(200 words)",
+      "5)  Northwestern is a place where people with diverse backgrounds from all over the world can study, live, and talk with one another. This range of experiences and viewpoints immeasurably enriches learning. How might your individual background contribute to this diversity of perspectives in Northwestern’s classrooms and around our campus?(200 words)"
+    ],
+    "acceptanceRate": null
+  },
+  {
+    "id": "caltech",
+    "name": "Caltech",
+    "platform": "Common app",
+    "testOptional": false,
+    "englishP25": 750,
+    "englishP50": 770,
+    "englishP75": 800,
+    "mathP25": 750,
+    "mathP50": 770,
+    "mathP75": 800,
+    "difficulty": 85,
+    "importance": "Very Important",
+    "prompts": [
+      "Why did you choose your proposed area of interest? If you selected ‘other’, what topics are you interested in pursuing?*(200 words)",
+      "Regardless of your STEM interest listed above, take this opportunity to nerd out and talk to us about whatever STEM rabbit hole you have found yourself falling into. Be as specific or broad as you would like.*(150 words)",
+      "Tell us about a meaningful STEM-related experience from the last few years and share how and why it inspired your curiosity.(200 words)",
+      "The creativity, inventiveness, and innovation of Caltech's students, faculty, and researchers have won Nobel Prizes and put rovers on Mars. But Techers also imagine smaller-scale innovations every day, from new ways to design solar cells to how to 3D-print dorm decor to experimenting in the kitchen. How have you been a creator, inventor, or innovator in your own life?*(200 words)",
+      "each: If you could teach a class on any topic or concept, what would it be and why? (125 words)\nHobby: What is an interest or hobby you do for fun, and why does it bring you joy?(125 words)"
+    ],
+    "acceptanceRate": null
+  },
+  {
+    "id": "john",
+    "name": "John",
+    "platform": "Common app",
+    "testOptional": false,
+    "englishP25": 740,
+    "englishP50": 760,
+    "englishP75": 770,
+    "mathP25": 780,
+    "mathP50": 790,
+    "mathP75": 800,
+    "difficulty": 40,
+    "importance": "Considered",
+    "prompts": [
+      "Over the past 150 years, every monumental discovery at Hopkins has started with a first step: The first draft by a Pulitzer Prize-winning author. A prototype that led to a life-changing medical invention. The first pitch that launched a new startup venture. As we commemorate the university's sesquicentennial—150 years since its founding—we continue to celebrate first steps just as much as final achievements. Tell us about an important first in your life—big or small—that has shaped you. (350 word limit)"
+    ],
+    "acceptanceRate": 0.064
+  },
+  {
+    "id": "usc",
+    "name": "USC",
+    "platform": "Common app",
+    "testOptional": true,
+    "englishP25": 710,
+    "englishP50": 740,
+    "englishP75": 760,
+    "mathP25": 740,
+    "mathP50": 780,
+    "mathP75": 790,
+    "difficulty": 70,
+    "importance": "Very Important",
+    "prompts": [
+      "Describe how you plan to pursue your academic interests and why you want to explore them at USC specifically. Please feel free to address your first- and second-choice major selections. (Approximately 250 words)",
+      "Describe yourself in three words. First Word:*Second Word:*Third Word:*What is your favorite snack?*Best movie of all time:*Dream job:*If your life had a theme song, what would it be?*Dream trip:*What TV show will you binge watch next? *Which well-known person or fictional character would be your ideal roommate?*Favorite book:*If you could teach a class on any topic, what would it be?"
+    ],
+    "acceptanceRate": null
+  },
+  {
+    "id": "cornell",
+    "name": "cornell",
+    "platform": "Common app",
+    "testOptional": false,
+    "englishP25": 730,
+    "englishP50": 750,
+    "englishP75": 770,
+    "mathP25": 770,
+    "mathP50": 790,
+    "mathP75": 800,
+    "difficulty": 40,
+    "importance": "Considered",
+    "prompts": [
+      "Define community in the way that is most meaningful to you. This community example can be drawn from your family, school, workplace, activities or interests, or any other group you belong to.*(350 words)"
+    ],
+    "acceptanceRate": 0.084
+  },
+  {
+    "id": "cmu",
+    "name": "CMU",
+    "platform": "Common app",
+    "testOptional": true,
+    "englishP25": 730,
+    "englishP50": 750,
+    "englishP75": 770,
+    "mathP25": 770,
+    "mathP50": 790,
+    "mathP75": 800,
+    "difficulty": 70,
+    "importance": "Considered",
+    "prompts": [
+      "Most students choose their intended major or area of study based on a passion or inspiration that’s developed over time – what passion or inspiration led you to choose this area of study?\n(300 word maximum)",
+      "Many students pursue college for a specific degree, career opportunity or personal goal. Whichever it may be, learning will be critical to achieve your ultimate goal. As you think ahead to the process of learning during your college years, how will you define a successful college experience?\n(300 word maximum)",
+      "Consider your application as a whole. What do you personally want to emphasize about your application for the admission committee’s consideration? Highlight something that’s important to you or something you haven’t had a chance to share. Tell us, don’t show us (no websites please).\n(300 word maximum)"
+    ],
+    "acceptanceRate": 0.114
+  },
+  {
+    "id": "boston-university",
+    "name": "Boston University",
+    "platform": "Common app",
+    "testOptional": false,
+    "englishP25": 690,
+    "englishP50": 720,
+    "englishP75": 750,
+    "mathP25": 730,
+    "mathP50": 760,
+    "mathP75": 780,
+    "difficulty": 65,
+    "importance": "Considered",
+    "prompts": [
+      "1. Reflect on a social or community issue that deeply resonates with you. Why is it important to you, and how have you been involved in addressing or raising awareness about it?(300 words)",
+      "OR\n2. What about being a student at BU most excites you? How do you hope to contribute to our campus community?*(300 words)"
+    ],
+    "acceptanceRate": null
+  },
+  {
+    "id": "upenn",
+    "name": "Upenn",
+    "platform": "Common app",
+    "testOptional": false,
+    "englishP25": 740,
+    "englishP50": 760,
+    "englishP75": 770,
+    "mathP25": 770,
+    "mathP50": 790,
+    "mathP75": 800,
+    "difficulty": 60,
+    "importance": "Considered",
+    "prompts": [
+      "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!) (150-200 words)",
+      "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn. (150-200 words)",
+      "Penn Engineering prepares its students to become leaders in technology by combining a strong foundation in the natural sciences and mathematics with depth of study in focused disciplinary majors. Please share how you plan to pursue your engineering interests at Penn, particularly within the intended major you selected. (150-200 words)"
+    ],
+    "acceptanceRate": null
+  },
+  {
+    "id": "brown",
+    "name": "BROWN",
+    "platform": "Common app",
+    "testOptional": false,
+    "englishP25": 740,
+    "englishP50": 760,
+    "englishP75": 780,
+    "mathP25": 770,
+    "mathP50": 780,
+    "mathP75": 800,
+    "difficulty": 80,
+    "importance": "Very Important",
+    "prompts": [
+      "Brown's Open Curriculum allows students to explore broadly while also diving deeply into their academic pursuits. Tell us about any academic interests that excite you, and how you might pursue them at Brown. (250 word limit)",
+      "Students entering Brown often find that making their home on College Hill naturally invites reflection on where they came from. Share how an aspect of your growing up has inspired or challenged you, and what unique contributions this might allow you to make to the Brown community. (250 word limit)",
+      "Brown students care deeply about their work and the world around them. Students find contentment, satisfaction, and meaning in daily interactions and major discoveries. Whether big or small, mundane or spectacular, tell us about something that brings you joy. (250 word limit)",
+      "What three words best describe you? (3 word limit)",
+      "If you could teach a class on any one thing, whether academic or otherwise, what would it be? (100 word limit)",
+      "In one sentence, why Brown? (50 word limit)"
+    ],
+    "acceptanceRate": 0.054
+  },
+  {
+    "id": "yale",
+    "name": "Yale",
+    "platform": "Common app",
+    "testOptional": false,
+    "englishP25": 730,
+    "englishP50": 760,
+    "englishP75": 780,
+    "mathP25": 740,
+    "mathP50": 780,
+    "mathP75": 790,
+    "difficulty": 90,
+    "importance": "Considered",
+    "prompts": [
+      "Reflect on how your interests, values, and/or experiences have drawn you to Yale (125 words or fewer)",
+      "What inspires you?",
+      "If you could teach any college course, write a book, or create an original piece of art of any kind, what would it be?",
+      "Other than a family member, who is someone who has had a significant influence on you? What has been the impact of their influence?",
+      "What is something about you that is not included anywhere else in your application?",
+      "3. Reflect on an element of your personal experience that you feel will enrich your college. How has it shaped you?"
+    ],
+    "acceptanceRate": 0.046
+  },
+  {
+    "id": "mit",
+    "name": "MIT",
+    "platform": "Custom",
+    "testOptional": false,
+    "englishP25": 740,
+    "englishP50": 760,
+    "englishP75": 780,
+    "mathP25": 780,
+    "mathP50": 800,
+    "mathP75": 800,
+    "difficulty": 90,
+    "importance": "Important",
+    "prompts": [
+      "Tell us more about why this field of study at MIT appeals to you. (100 words)",
+      "We know you lead a busy life, full of activities, many of which are required of you. Tell us about something you do simply for the pleasure of it. (150 words)",
+      "While some reach their goals following well-trodden paths, others blaze their own trails achieving the unexpected. In what ways have you done something different than what was expected in your educational journey? (225 words)",
+      "MIT brings people with diverse backgrounds together to collaborate, from tackling the world’s biggest challenges to lending a helping hand. Describe one way you have collaborated with others to learn from them, with them, or contribute to your community together. (225 words)",
+      "How did you manage a situation or challenge that you didn’t expect? What did you learn from it? (225 words)",
+      "No application can meet the needs of every individual. If there is significant information that you were not able to include elsewhere in the application, you may include it here. (Many students will leave this section blank—and that’s okay.) (300 words)"
+    ],
+    "acceptanceRate": 0.045
+  },
+  {
+    "id": "harvard",
+    "name": "Harvard",
+    "platform": "Custom",
+    "testOptional": false,
+    "englishP25": 740,
+    "englishP50": 760,
+    "englishP75": 780,
+    "mathP25": 770,
+    "mathP50": 790,
+    "mathP75": 800,
+    "difficulty": 90,
+    "importance": "Considered",
+    "prompts": [
+      "Harvard has long recognized the importance of enrolling a student body with a diversity of perspectives and experiences. How will the life experiences that shaped who you are today enable you to contribute to Harvard?",
+      "Describe a time when you strongly disagreed with someone about an idea or issue. How did you communicate or engage with this person? What did you learn from this experience?",
+      "Briefly describe any of your extracurricular activities, employment experience, travel, or family responsibilities that have shaped who you are.",
+      "How do you hope to use your Harvard education in the future?",
+      "Top 3 things your roommates might like to know about you."
+    ],
+    "acceptanceRate": 0.036
+  },
+  {
+    "id": "columbia",
+    "name": "Columbia",
+    "platform": "Common app",
+    "testOptional": true,
+    "englishP25": 740,
+    "englishP50": 760,
+    "englishP75": 780,
+    "mathP25": 770,
+    "mathP50": 790,
+    "mathP75": 800,
+    "difficulty": 85,
+    "importance": "Very Important",
+    "prompts": [
+      "List a selection of texts, resources and outlets that have contributed to your intellectual development outside of academic courses, including but not limited to books, journals, websites, podcasts, essays, plays, presentations, videos, museums and other content that you enjoy. (100 words or fewer)",
+      "Tell us about an aspect of your life so far or your lived experience that is important to you, and describe how it has shaped the way you would learn from and contribute to Columbia's multidimensional and collaborative environment. (150 words or fewer)",
+      "At Columbia, students representing a wide range of perspectives are invited to live and learn together. In such a community, questions and debates naturally arise. Please describe a time when you did not agree with someone and discuss how you engaged with them and what you took away from the interaction. (150 words or fewer)",
+      "In college/university, students are often challenged in ways that they could not anticipate. Please describe a situation in which you have navigated through adversity and discuss how you changed as a result. (150 words or fewer)",
+      "Why are you interested in attending Columbia University? We encourage you to consider the aspect(s) that you find unique and compelling about Columbia. (150 words or fewer)",
+      "course specific question"
+    ],
+    "acceptanceRate": null
+  },
+  {
+    "id": "princeton",
+    "name": "Princeton",
+    "platform": "Common app",
+    "testOptional": true,
+    "englishP25": 740,
+    "englishP50": 760,
+    "englishP75": 780,
+    "mathP25": 770,
+    "mathP50": 790,
+    "mathP75": 800,
+    "difficulty": 95,
+    "importance": "Very Important",
+    "prompts": [
+      "Princeton values community and encourages students, faculty, staff and leadership to engage in respectful conversations that can expand their perspectives and challenge their ideas and beliefs. As a prospective member of this community, reflect on how your lived experiences will impact the conversations you will have in the classroom, the dining hall or other campus spaces. What lessons have you learned in life thus far? What will your classmates learn from you? In short, how has your lived experience shaped you? (500 words or fewer)",
+      "Princeton has a longstanding commitment to understanding our responsibility to society through service and civic engagement. How does your own story intersect with these ideals? (250 words or fewer)",
+      "What is a new skill you would like to learn in college?",
+      "What brings you joy?",
+      "What song represents the soundtrack of your life at this moment?",
+      "Submit a paper"
+    ],
+    "acceptanceRate": null
+  },
+  {
+    "id": "stanford",
+    "name": "Stanford",
+    "platform": "Common app",
+    "testOptional": false,
+    "englishP25": 740,
+    "englishP50": 760,
+    "englishP75": 780,
+    "mathP25": 770,
+    "mathP50": 790,
+    "mathP75": 800,
+    "difficulty": 50,
+    "importance": "Considered",
+    "prompts": [
+      "Most significant challenge society faces",
+      "What did you do the last 2 summers",
+      "Historical moment or event you'd like to witness",
+      "Elaborate on Extracurricular activity, job, or family responsibility",
+      "Five things that are important to you",
+      "Idea or experience that makes you excited about learning",
+      "Note to future roommate",
+      "Life experiences, interests and character that would help you make a distinctive contribution to\nStanford"
+    ],
+    "acceptanceRate": 0.039
+  }
+]

@@ -1,0 +1,31 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+.claude/
+
+# Your original personal workbook — contains your own scores/strategy, kept out of the repo
+# by default since GitHub Pages needs a public repo on the free tier. Remove this line if you
+# want it version-controlled too (e.g. in a private repo, or a scrubbed copy).
+guide.xlsx
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
