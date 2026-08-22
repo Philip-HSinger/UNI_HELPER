@@ -2,6 +2,7 @@ import { useAppContext } from '../context/AppContext'
 import { useSortedEntries } from '../hooks/useSortedEntries'
 import { ScoreInputPanel } from '../components/ScoreInputPanel'
 import { ApplyingSchoolsPanel } from '../components/ApplyingSchoolsPanel'
+import { EasyWinsPanel } from '../components/EasyWinsPanel'
 import { SummaryBar } from '../components/SummaryBar'
 import { AddSchoolPanel } from '../components/AddSchoolPanel'
 import { StatusBadge } from '../components/StatusBadge'
@@ -23,6 +24,8 @@ export function OverviewPage() {
         <ScoreInputPanel scores={ownScores} onChange={setOwnScores} />
         <ApplyingSchoolsPanel entries={entries} />
       </div>
+
+      <EasyWinsPanel entries={entries} />
 
       <SummaryBar entries={entries} />
 

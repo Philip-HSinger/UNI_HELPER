@@ -10,7 +10,7 @@ export function LikelihoodRow({ entry }: { entry: EnrichedEntry }) {
       <td className="px-3 py-3">
         <div className="font-medium text-ink">{entry.name}</div>
         <div className="font-mono text-xs tabular-nums text-ink-muted">
-          Composite (approx.) {composite.p25}/{composite.p50}/{composite.p75}
+          Combined approx. {composite.p25}/{composite.p50}/{composite.p75}
         </div>
       </td>
       <td className="px-3 py-3">
@@ -20,10 +20,14 @@ export function LikelihoodRow({ entry }: { entry: EnrichedEntry }) {
           {entry.classification}
         </span>
       </td>
-      <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">
-        {entry.englishPercentile}
-        <span className="text-ink-muted"> / {entry.mathPercentile}</span>
+      <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink-muted">
+        {entry.englishP25}/{entry.englishP50}/{entry.englishP75}
       </td>
+      <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">{entry.englishPercentile}</td>
+      <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink-muted">
+        {entry.mathP25}/{entry.mathP50}/{entry.mathP75}
+      </td>
+      <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">{entry.mathPercentile}</td>
       <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">{entry.weightedAverage}</td>
       <td className="px-3 py-3 text-sm text-ink">{entry.importance}</td>
       <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">

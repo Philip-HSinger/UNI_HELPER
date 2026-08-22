@@ -11,7 +11,7 @@ function Stat({ label, value }: { label: string; value: string | number }) {
 }
 
 export function SummaryBar({ entries }: { entries: EnrichedEntry[] }) {
-  const applying = entries.filter((e) => e.status !== 'not_started').length
+  const applyingEntries = entries.filter((e) => e.status !== 'not_started')
   const reach = entries.filter((e) => e.classification === 'Reach').length
   const match = entries.filter((e) => e.classification === 'Match').length
   const safety = entries.filter((e) => e.classification === 'Safety').length
@@ -19,13 +19,15 @@ export function SummaryBar({ entries }: { entries: EnrichedEntry[] }) {
     entries.length === 0
       ? 0
       : Math.round((entries.reduce((s, e) => s + e.efficiencyScore, 0) / entries.length) * 10) / 10
+  const totalEffort = Math.round(applyingEntries.reduce((s, e) => s + e.essayEffort, 0) * 10) / 10
 
   return (
     <div className="flex flex-wrap gap-3">
       <Stat label="Schools on your list" value={entries.length} />
-      <Stat label="Applying / decided" value={applying} />
+      <Stat label="Applying / decided" value={applyingEntries.length} />
       <Stat label="Reach · Match · Safety" value={`${reach} · ${match} · ${safety}`} />
       <Stat label="Avg. efficiency score" value={avgEfficiency} />
+      <Stat label="Total essay effort (applying)" value={totalEffort} />
     </div>
   )
 }
