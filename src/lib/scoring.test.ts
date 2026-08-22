@@ -3,12 +3,16 @@ import {
   average,
   classify,
   computeSchoolScores,
+  computeThemeCoverage,
   efficiencyScore,
   essayEffort,
+  estimatePromptReuse,
+  estimateSchoolReuse,
   percentile,
   testRecommendation,
   weightedAverage,
 } from './scoring'
+import type { Prompt } from '../types'
 
 // Fixtures below are read directly from the original guide.xlsx "APPLICATION GUIDE" sheet,
 // computed with the user's own SAT English 730 / Math 800, to confirm this port reproduces
@@ -63,20 +67,68 @@ describe('weightedAverage', () => {
 })
 
 describe('essayEffort', () => {
-  it('matches the workbook for Purdue (difficulty 30, similarities 10 & 90)', () => {
-    expect(essayEffort(30, [10, 90])).toBeCloseTo(15, 1)
+  it('matches the workbook for Purdue (difficulty 30, 50% reuse)', () => {
+    expect(essayEffort(30, 50)).toBeCloseTo(15, 1)
   })
-  it('matches the workbook for Georgia Tech (difficulty 25, similarities 10 & 90)', () => {
-    expect(essayEffort(25, [10, 90])).toBeCloseTo(12.5, 1)
+  it('matches the workbook for Georgia Tech (difficulty 25, 50% reuse)', () => {
+    expect(essayEffort(25, 50)).toBeCloseTo(12.5, 1)
   })
-  it('matches the workbook for Tufts (difficulty 20, similarities 40 & 30)', () => {
-    expect(essayEffort(20, [40, 30])).toBeCloseTo(13, 1)
+  it('matches the workbook for Tufts (difficulty 20, 35% reuse)', () => {
+    expect(essayEffort(20, 35)).toBeCloseTo(13, 1)
   })
-  it('floors at 1 instead of hitting zero for a 100%-reused school', () => {
-    expect(essayEffort(50, [100, 100])).toBe(1)
+  it('floors at 1 instead of hitting zero for a fully-reused school', () => {
+    expect(essayEffort(50, 100)).toBe(1)
   })
-  it('treats no essay banks as no reuse credit', () => {
-    expect(essayEffort(40, [])).toBe(40)
+  it('treats zero reuse as the full difficulty', () => {
+    expect(essayEffort(40, 0)).toBe(40)
+  })
+})
+
+function prompt(themes: Prompt['themes']): Prompt {
+  return { text: 'placeholder', themes }
+}
+
+describe('computeThemeCoverage', () => {
+  it('counts how many committed prompts touch each theme', () => {
+    const coverage = computeThemeCoverage([
+      prompt(['why_major']),
+      prompt(['why_major', 'community_identity']),
+      prompt(['challenge_adversity']),
+    ])
+    expect(coverage.why_major).toBe(2)
+    expect(coverage.community_identity).toBe(1)
+    expect(coverage.challenge_adversity).toBe(1)
+    expect(coverage.values_joy).toBeUndefined()
+  })
+})
+
+describe('estimatePromptReuse', () => {
+  it('gives 0 for an untagged prompt', () => {
+    expect(estimatePromptReuse(prompt([]), { why_major: 5 })).toBe(0)
+  })
+  it('gives 0 when the theme has no committed coverage', () => {
+    expect(estimatePromptReuse(prompt(['why_major']), {})).toBe(0)
+  })
+  it('saturates toward 100 as coverage grows (1 -> 50%, 3 -> 75%)', () => {
+    expect(estimatePromptReuse(prompt(['why_major']), { why_major: 1 })).toBeCloseTo(50, 1)
+    expect(estimatePromptReuse(prompt(['why_major']), { why_major: 3 })).toBeCloseTo(75, 1)
+  })
+  it('takes the best-covered theme when a prompt has several', () => {
+    expect(estimatePromptReuse(prompt(['values_joy', 'why_major']), { values_joy: 0, why_major: 3 })).toBeCloseTo(
+      75,
+      1,
+    )
+  })
+})
+
+describe('estimateSchoolReuse', () => {
+  it('averages reuse across all of a school\'s prompts', () => {
+    const coverage = { why_major: 1 } // -> 50% reuse
+    const prompts = [prompt(['why_major']), prompt([])] // 50% and 0%
+    expect(estimateSchoolReuse(prompts, coverage)).toBeCloseTo(25, 1)
+  })
+  it('is 0 for a school with no prompts', () => {
+    expect(estimateSchoolReuse([], {})).toBe(0)
   })
 })
 
@@ -135,7 +187,7 @@ describe('computeSchoolScores (end-to-end)', () => {
         acceptanceRate: null,
       },
       OWN_SCORES,
-      [10, 90],
+      50, // reuse percent, matching the workbook's avg(10, 90) similarity for this row
     )
 
     expect(result.englishPercentile).toBeCloseTo(57.6, 1)

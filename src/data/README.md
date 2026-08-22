@@ -18,8 +18,15 @@ API call instead — nothing else in the app needs to change, since every compon
 | `englishP25/50/75`, `mathP25/50/75` | SAT section score bands for enrolled students | the school's **Common Data Set (CDS), section C9** — published annually, usually as a PDF/spreadsheet on the school's institutional research site |
 | `difficulty` | 1-100 subjective essay-prompt difficulty | editorial judgement — recalibrate if it feels off |
 | `importance` | how much the school says it weighs standardized testing | CDS **section C7** ("Relative Importance of Academic and Nonacademic Factors") |
-| `prompts` | this cycle's supplemental essay prompts | school's application portal |
+| `prompts` | this cycle's supplemental essay prompts, as `{ text, themes }` | school's application portal |
 | `acceptanceRate` | 0-1 admit rate | CDS **section C1**, or the Common App/IPEDS aggregate |
+
+`themes` (see `src/lib/themes.ts`) tags a prompt with what it's actually asking about (why this
+major, identity/community, challenge/adversity, ...) so the app can estimate essay reuse against
+whatever schools a user marks "Committed" — see the README's "How essay reuse is estimated"
+section. Catalog prompts currently ship with `themes: []` (untagged); tagging is optional but a
+school with untagged prompts will never show reuse credit for a user. Worth doing once per school
+when you're already touching its prompts for the yearly refresh below.
 
 ## Updating each admissions cycle
 

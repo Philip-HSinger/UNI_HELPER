@@ -1,30 +1,46 @@
 import { useMemo, useState } from 'react'
-import type { EnrichedEntry, EssayBank, SchoolEntry } from '../types'
+import type { EnrichedEntry, SchoolEntry } from '../types'
+import type { Theme } from '../lib/themes'
 import { SchoolRow } from './SchoolRow'
 
-type SortKey = 'name' | 'englishPercentile' | 'mathPercentile' | 'weightedAverage' | 'essayEffort' | 'efficiencyScore'
+type SortKey =
+  | 'name'
+  | 'englishPercentile'
+  | 'mathPercentile'
+  | 'weightedAverage'
+  | 'estimatedReuse'
+  | 'essayEffort'
+  | 'efficiencyScore'
 
-const COLUMNS: { key: SortKey; label: string }[] = [
-  { key: 'name', label: 'School' },
-  { key: 'name', label: 'Fit' }, // classification column, not independently sortable
-  { key: 'englishPercentile', label: 'English %ile' },
-  { key: 'mathPercentile', label: 'Math %ile' },
-  { key: 'weightedAverage', label: 'Weighted score' },
-  { key: 'essayEffort', label: 'Essay effort' },
-  { key: 'efficiencyScore', label: 'Efficiency' },
+const COLUMNS: { key: SortKey; label: string; sortable: boolean }[] = [
+  { key: 'name', label: 'School', sortable: false },
+  { key: 'name', label: 'Committed', sortable: false },
+  { key: 'name', label: 'Fit', sortable: false },
+  { key: 'englishPercentile', label: 'English %ile', sortable: true },
+  { key: 'mathPercentile', label: 'Math %ile', sortable: true },
+  { key: 'weightedAverage', label: 'Weighted score', sortable: true },
+  { key: 'estimatedReuse', label: 'Reuse', sortable: true },
+  { key: 'essayEffort', label: 'Essay effort', sortable: true },
+  { key: 'efficiencyScore', label: 'Efficiency', sortable: true },
 ]
 
 export function SchoolTable({
   entries,
-  banks,
   onUpdate,
-  onSetSimilarity,
+  onToggleCommitted,
+  onAddPrompt,
+  onUpdatePromptText,
+  onTogglePromptTheme,
+  onRemovePrompt,
   onRemove,
 }: {
   entries: EnrichedEntry[]
-  banks: EssayBank[]
   onUpdate: (id: string, partial: Partial<SchoolEntry>) => void
-  onSetSimilarity: (id: string, bankId: string, value: number) => void
+  onToggleCommitted: (id: string) => void
+  onAddPrompt: (id: string, text: string) => void
+  onUpdatePromptText: (id: string, index: number, text: string) => void
+  onTogglePromptTheme: (id: string, index: number, theme: Theme) => void
+  onRemovePrompt: (id: string, index: number) => void
   onRemove: (id: string) => void
 }) {
   const [sortKey, setSortKey] = useState<SortKey>('efficiencyScore')
@@ -61,17 +77,17 @@ export function SchoolTable({
 
   return (
     <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-900">
-      <table className="w-full min-w-[900px] border-collapse text-left">
+      <table className="w-full min-w-[1000px] border-collapse text-left">
         <thead>
           <tr className="border-b border-slate-200 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:border-slate-700">
-            {COLUMNS.map((col, i) => (
+            {COLUMNS.map((col) => (
               <th
                 key={col.label}
-                className={`px-3 py-2 ${i > 1 ? 'cursor-pointer select-none hover:text-slate-600 dark:hover:text-slate-200' : ''}`}
-                onClick={() => i > 1 && toggleSort(col.key)}
+                className={`px-3 py-2 ${col.sortable ? 'cursor-pointer select-none hover:text-slate-600 dark:hover:text-slate-200' : ''}`}
+                onClick={() => col.sortable && toggleSort(col.key)}
               >
                 {col.label}
-                {i > 1 && sortKey === col.key && (sortDir === 'asc' ? ' ▲' : ' ▼')}
+                {col.sortable && sortKey === col.key && (sortDir === 'asc' ? ' ▲' : ' ▼')}
               </th>
             ))}
             <th className="px-3 py-2">Test rec.</th>
@@ -84,11 +100,14 @@ export function SchoolTable({
             <SchoolRow
               key={entry.id}
               entry={entry}
-              banks={banks}
               expanded={expandedId === entry.id}
               onToggleExpand={() => setExpandedId((cur) => (cur === entry.id ? null : entry.id))}
               onUpdate={(partial) => onUpdate(entry.id, partial)}
-              onSetSimilarity={(bankId, value) => onSetSimilarity(entry.id, bankId, value)}
+              onToggleCommitted={() => onToggleCommitted(entry.id)}
+              onAddPrompt={(text) => onAddPrompt(entry.id, text)}
+              onUpdatePromptText={(index, text) => onUpdatePromptText(entry.id, index, text)}
+              onTogglePromptTheme={(index, theme) => onTogglePromptTheme(entry.id, index, theme)}
+              onRemovePrompt={(index) => onRemovePrompt(entry.id, index)}
               onRemove={() => onRemove(entry.id)}
             />
           ))}

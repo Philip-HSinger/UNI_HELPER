@@ -1,7 +1,8 @@
 // Pure scoring functions ported from the original guide.xlsx "APPLICATION GUIDE" sheet.
 // Every function here is deterministic and side-effect free so it can be unit tested directly
 // against the workbook's own computed values (see scoring.test.ts).
-import type { Importance } from '../types'
+import type { Importance, Prompt } from '../types'
+import type { Theme } from './themes'
 
 export function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value))
@@ -74,15 +75,45 @@ export function weightedAverage(avg: number, importance: Importance): number {
 }
 
 /**
- * How much genuine new writing a school's supplement will cost, after discounting for
- * material the applicant can reuse from essay banks they've already written. `similarities`
- * are 0-100 reuse percentages against each bank; effort is floored at 1 so a "fully reused"
- * school (100% similarity) still produces a large-but-finite efficiency score instead of Infinity.
+ * How much genuine new writing a school's supplement will cost, after discounting for the
+ * estimated reuse (0-100, from estimateSchoolReuse below) against essays you've already
+ * committed to writing. Effort is floored at 1 so a "fully reused" school still produces a
+ * large-but-finite efficiency score instead of Infinity.
  */
-export function essayEffort(difficulty: number, similarities: number[]): number {
-  const avgSimilarity = similarities.length === 0 ? 0 : similarities.reduce((s, v) => s + v, 0) / similarities.length
-  const effort = difficulty * (1 - avgSimilarity / 100)
+export function essayEffort(difficulty: number, reusePercent: number): number {
+  const effort = difficulty * (1 - reusePercent / 100)
   return Math.max(1, effort)
+}
+
+// How quickly reuse saturates as more committed prompts touch a theme: with SATURATION=1,
+// one matching committed prompt already earns 50% reuse credit, three earns 75%, and it
+// approaches (but never reaches) 100% — matching the intuition that after a couple of essays
+// on a theme you basically have the material, with diminishing returns after that.
+const REUSE_SATURATION = 1
+
+/** Counts, per theme, how many prompts across your committed schools cover it. */
+export function computeThemeCoverage(committedPrompts: Prompt[]): Partial<Record<Theme, number>> {
+  const coverage: Partial<Record<Theme, number>> = {}
+  for (const prompt of committedPrompts) {
+    for (const theme of prompt.themes) {
+      coverage[theme] = (coverage[theme] ?? 0) + 1
+    }
+  }
+  return coverage
+}
+
+/** Estimated 0-100 reuse for one prompt: the best-covered theme it touches, saturated. */
+export function estimatePromptReuse(prompt: Prompt, coverage: Partial<Record<Theme, number>>): number {
+  if (prompt.themes.length === 0) return 0
+  const bestCount = Math.max(...prompt.themes.map((t) => coverage[t] ?? 0))
+  return round1((100 * bestCount) / (bestCount + REUSE_SATURATION))
+}
+
+/** A school's overall estimated reuse: the average across its own prompts. Untagged/no prompts -> 0 (no credit). */
+export function estimateSchoolReuse(prompts: Prompt[], coverage: Partial<Record<Theme, number>>): number {
+  if (prompts.length === 0) return 0
+  const total = prompts.reduce((sum, p) => sum + estimatePromptReuse(p, coverage), 0)
+  return round1(total / prompts.length)
 }
 
 /** Score achievable per unit of essay effort — the "best bang for your writing time" ranking metric. */
@@ -137,13 +168,16 @@ export interface ComputedSchoolScores {
   mathPercentile: number
   average: number
   weightedAverage: number
+  estimatedReuse: number
   essayEffort: number
   efficiencyScore: number
   testRecommendation: TestRecommendation
   classification: Classification
 }
 
-/** Runs every formula above for one school entry, given the user's own test scores. */
+/** Runs every formula above for one school entry, given the user's own test scores and its
+ * already-estimated reuse percent (see estimateSchoolReuse, computed once per render from
+ * whichever schools are marked `committed`). */
 export function computeSchoolScores(
   school: {
     englishP25: number
@@ -158,13 +192,13 @@ export function computeSchoolScores(
     acceptanceRate: number | null
   },
   ownScores: { english: number; math: number },
-  bankSimilarities: number[],
+  reusePercent: number,
 ): ComputedSchoolScores {
   const englishPercentile = percentile(ownScores.english, school.englishP25, school.englishP50, school.englishP75)
   const mathPercentile = percentile(ownScores.math, school.mathP25, school.mathP50, school.mathP75)
   const avg = average(englishPercentile, mathPercentile)
   const wAvg = weightedAverage(avg, school.importance)
-  const effort = essayEffort(school.difficulty, bankSimilarities)
+  const effort = essayEffort(school.difficulty, reusePercent)
   const efficiency = efficiencyScore(wAvg, effort)
   const recommendation = testRecommendation(school.testOptional, mathPercentile, englishPercentile)
   const classification = classify(wAvg, school.acceptanceRate)
@@ -174,6 +208,7 @@ export function computeSchoolScores(
     mathPercentile,
     average: avg,
     weightedAverage: wAvg,
+    estimatedReuse: reusePercent,
     essayEffort: round1(effort),
     efficiencyScore: efficiency,
     testRecommendation: recommendation,

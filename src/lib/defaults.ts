@@ -11,7 +11,7 @@ export function newId(): string {
 export function catalogEntryToSchoolEntry(catalog: SchoolCatalogEntry): SchoolEntry {
   return {
     ...catalog,
-    similarities: {},
+    committed: false,
     status: 'not_started',
     fromCatalogId: catalog.id,
   }
@@ -33,7 +33,7 @@ export function blankSchoolEntry(): SchoolEntry {
     importance: 'Considered',
     prompts: [],
     acceptanceRate: null,
-    similarities: {},
+    committed: false,
     status: 'not_started',
     fromCatalogId: null,
   }
@@ -46,7 +46,6 @@ const STARTER_SCHOOL_IDS = ['stanford', 'cornell', 'boston-university', 'purdue'
 export function createInitialState(): AppState {
   return {
     ownScores: { english: 700, math: 700 },
-    essayBanks: [{ id: newId(), name: 'My essays' }],
     entries: CATALOG.filter((s) => STARTER_SCHOOL_IDS.includes(s.id)).map(catalogEntryToSchoolEntry),
   }
 }

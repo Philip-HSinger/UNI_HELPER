@@ -1,8 +1,16 @@
 // Core data model for the app. `SchoolEntry` is what actually lives in a user's list
 // (persisted to localStorage) — it starts as a copy of a `SchoolCatalogEntry` from
 // src/data/schools.json, or a blank custom school, and is fully editable from there.
+import type { Theme } from './lib/themes'
 
 export type Importance = 'Very Important' | 'Important' | 'Considered' | 'Not Considered'
+
+/** One supplemental prompt, tagged with the themes it covers so reuse can be estimated
+ * against your committed schools' prompts (see estimateSchoolReuse in lib/scoring.ts). */
+export interface Prompt {
+  text: string
+  themes: Theme[]
+}
 
 export type ApplicationStatus =
   | 'not_started'
@@ -35,14 +43,8 @@ export interface SchoolCatalogEntry {
   mathP75: number
   difficulty: number
   importance: Importance
-  prompts: string[]
+  prompts: Prompt[]
   acceptanceRate: number | null
-}
-
-/** An essay/story bank the user has already written and wants to reuse across schools. */
-export interface EssayBank {
-  id: string
-  name: string
 }
 
 /** A school in the user's own working list — fully editable, independent of the catalog. */
@@ -59,10 +61,11 @@ export interface SchoolEntry {
   mathP75: number
   difficulty: number
   importance: Importance
-  prompts: string[]
+  prompts: Prompt[]
   acceptanceRate: number | null
-  /** bankId -> 0-100 "how much of this school's essays can this bank cover" */
-  similarities: Record<string, number>
+  /** You're 100% going here regardless of outcome — its prompts seed the reuse estimate for
+   * every other school on the list (see estimateSchoolReuse in lib/scoring.ts). */
+  committed: boolean
   status: ApplicationStatus
   fromCatalogId: string | null
 }
@@ -74,7 +77,6 @@ export interface OwnScores {
 
 export interface AppState {
   ownScores: OwnScores
-  essayBanks: EssayBank[]
   entries: SchoolEntry[]
 }
 

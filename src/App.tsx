@@ -1,10 +1,11 @@
 import { useMemo } from 'react'
 import { usePersistentState } from './hooks/usePersistentState'
-import { CATALOG, blankSchoolEntry, catalogEntryToSchoolEntry, newId } from './lib/defaults'
-import { computeSchoolScores } from './lib/scoring'
+import { CATALOG, blankSchoolEntry, catalogEntryToSchoolEntry } from './lib/defaults'
+import { computeSchoolScores, computeThemeCoverage, estimateSchoolReuse } from './lib/scoring'
+import type { Theme } from './lib/themes'
 import type { EnrichedEntry, OwnScores, SchoolEntry } from './types'
 import { ScoreInputPanel } from './components/ScoreInputPanel'
-import { EssayBankManager } from './components/EssayBankManager'
+import { ThemeCoveragePanel } from './components/ThemeCoveragePanel'
 import { SummaryBar } from './components/SummaryBar'
 import { AddSchoolPanel } from './components/AddSchoolPanel'
 import { SchoolTable } from './components/SchoolTable'
@@ -13,35 +14,17 @@ function App() {
   const [state, setState] = usePersistentState()
 
   const enrichedEntries: EnrichedEntry[] = useMemo(() => {
-    const bankIds = state.essayBanks.map((b) => b.id)
+    const committedPrompts = state.entries.filter((e) => e.committed).flatMap((e) => e.prompts)
+    const coverage = computeThemeCoverage(committedPrompts)
     return state.entries.map((entry) => {
-      const similarities = bankIds.map((id) => entry.similarities[id] ?? 0)
-      const computed = computeSchoolScores(entry, state.ownScores, similarities)
+      const reusePercent = estimateSchoolReuse(entry.prompts, coverage)
+      const computed = computeSchoolScores(entry, state.ownScores, reusePercent)
       return { ...entry, ...computed }
     })
-  }, [state.entries, state.essayBanks, state.ownScores])
+  }, [state.entries, state.ownScores])
 
   function setOwnScores(scores: OwnScores) {
     setState((s) => ({ ...s, ownScores: scores }))
-  }
-
-  function addBank(name: string) {
-    setState((s) => ({ ...s, essayBanks: [...s.essayBanks, { id: newId(), name }] }))
-  }
-
-  function renameBank(id: string, name: string) {
-    setState((s) => ({ ...s, essayBanks: s.essayBanks.map((b) => (b.id === id ? { ...b, name } : b)) }))
-  }
-
-  function removeBank(id: string) {
-    setState((s) => ({
-      ...s,
-      essayBanks: s.essayBanks.filter((b) => b.id !== id),
-      entries: s.entries.map((e) => {
-        const { [id]: _removed, ...rest } = e.similarities
-        return { ...e, similarities: rest }
-      }),
-    }))
   }
 
   function addFromCatalog(catalogId: string) {
@@ -58,12 +41,51 @@ function App() {
     setState((s) => ({ ...s, entries: s.entries.map((e) => (e.id === id ? { ...e, ...partial } : e)) }))
   }
 
-  function setSimilarity(id: string, bankId: string, value: number) {
+  function toggleCommitted(id: string) {
+    setState((s) => ({
+      ...s,
+      entries: s.entries.map((e) => (e.id === id ? { ...e, committed: !e.committed } : e)),
+    }))
+  }
+
+  function addPrompt(id: string, text: string) {
+    setState((s) => ({
+      ...s,
+      entries: s.entries.map((e) => (e.id === id ? { ...e, prompts: [...e.prompts, { text, themes: [] }] } : e)),
+    }))
+  }
+
+  function updatePromptText(id: string, index: number, text: string) {
     setState((s) => ({
       ...s,
       entries: s.entries.map((e) =>
-        e.id === id ? { ...e, similarities: { ...e.similarities, [bankId]: value } } : e,
+        e.id === id ? { ...e, prompts: e.prompts.map((p, i) => (i === index ? { ...p, text } : p)) } : e,
       ),
+    }))
+  }
+
+  function togglePromptTheme(id: string, index: number, theme: Theme) {
+    setState((s) => ({
+      ...s,
+      entries: s.entries.map((e) =>
+        e.id === id
+          ? {
+              ...e,
+              prompts: e.prompts.map((p, i) =>
+                i === index
+                  ? { ...p, themes: p.themes.includes(theme) ? p.themes.filter((t) => t !== theme) : [...p.themes, theme] }
+                  : p,
+              ),
+            }
+          : e,
+      ),
+    }))
+  }
+
+  function removePrompt(id: string, index: number) {
+    setState((s) => ({
+      ...s,
+      entries: s.entries.map((e) => (e.id === id ? { ...e, prompts: e.prompts.filter((_, i) => i !== index) } : e)),
     }))
   }
 
@@ -91,12 +113,7 @@ function App() {
       <main className="mx-auto max-w-6xl space-y-6 px-4 py-6">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <ScoreInputPanel scores={state.ownScores} onChange={setOwnScores} />
-          <EssayBankManager
-            banks={state.essayBanks}
-            onAdd={addBank}
-            onRename={renameBank}
-            onRemove={removeBank}
-          />
+          <ThemeCoveragePanel entries={enrichedEntries} />
         </div>
 
         <SummaryBar entries={enrichedEntries} />
@@ -105,9 +122,12 @@ function App() {
 
         <SchoolTable
           entries={enrichedEntries}
-          banks={state.essayBanks}
           onUpdate={updateEntry}
-          onSetSimilarity={setSimilarity}
+          onToggleCommitted={toggleCommitted}
+          onAddPrompt={addPrompt}
+          onUpdatePromptText={updatePromptText}
+          onTogglePromptTheme={togglePromptTheme}
+          onRemovePrompt={removePrompt}
           onRemove={removeEntry}
         />
 
