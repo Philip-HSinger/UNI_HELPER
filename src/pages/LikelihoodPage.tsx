@@ -39,6 +39,21 @@ function InfoButton({ children }: { children: ReactNode }) {
   )
 }
 
+// A hover/focus-only variant (vs. InfoButton's click-to-toggle above) for short, single-fact
+// hints attached to a column header — no state needed, pure CSS via group-hover/focus-within.
+function HoverInfo({ children }: { children: ReactNode }) {
+  return (
+    <span className="group relative ml-1 inline-flex normal-case" tabIndex={0}>
+      <span className="inline-flex h-3.5 w-3.5 cursor-help items-center justify-center rounded-full border border-ink-muted text-[9px] font-semibold leading-none tracking-normal text-ink-muted group-hover:border-accent group-hover:text-accent group-focus-within:border-accent group-focus-within:text-accent">
+        i
+      </span>
+      <span className="pointer-events-none absolute left-1/2 top-full z-10 hidden w-56 -translate-x-1/2 rounded-md border border-hairline bg-surface p-2 text-xs font-normal normal-case leading-relaxed tracking-normal text-ink-muted group-hover:block group-focus-within:block">
+        {children}
+      </span>
+    </span>
+  )
+}
+
 export function LikelihoodPage() {
   const { entries, ownScores } = useAppContext()
   const { sorted, sortKey, sortDir, toggleSort } = useSortedEntries<EnrichedEntry, keyof EnrichedEntry>(
@@ -72,8 +87,20 @@ export function LikelihoodPage() {
                 <tr className="border-b border-hairline text-xs font-semibold uppercase tracking-wide text-ink-muted">
                   <th className="px-3 py-2">School</th>
                   <th className="px-3 py-2">Fit</th>
-                  <th className="px-3 py-2">English</th>
-                  <th className="px-3 py-2">Math</th>
+                  <th className="px-3 py-2">
+                    English
+                    <HoverInfo>
+                      Your percentile is estimated via bell-curve interpolation against this
+                      school's published 25th/50th/75th score band.
+                    </HoverInfo>
+                  </th>
+                  <th className="px-3 py-2">
+                    Math
+                    <HoverInfo>
+                      Your percentile is estimated via bell-curve interpolation against this
+                      school's published 25th/50th/75th score band.
+                    </HoverInfo>
+                  </th>
                   <th
                     className="cursor-pointer select-none px-3 py-2 hover:text-ink"
                     onClick={() => toggleSort('weightedAverage')}
@@ -81,7 +108,7 @@ export function LikelihoodPage() {
                     Weighted score{sortKey === 'weightedAverage' && (sortDir === 'asc' ? ' ▲' : ' ▼')}
                   </th>
                   <th className="px-3 py-2">Importance</th>
-                  <th className="px-3 py-2">Acceptance rate</th>
+                  <th className="px-3 py-2">Raw acceptance rate</th>
                   <th className="px-3 py-2">Test rec.</th>
                 </tr>
               </thead>

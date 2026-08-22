@@ -19,7 +19,9 @@ export function SummaryBar({ entries }: { entries: EnrichedEntry[] }) {
     entries.length === 0
       ? 0
       : Math.round((entries.reduce((s, e) => s + e.efficiencyScore, 0) / entries.length) * 10) / 10
-  const totalEffort = Math.round(applyingEntries.reduce((s, e) => s + e.essayEffort, 0) * 10) / 10
+  // Every school on the list, not just ones marked "Applying" — the point is the total writing
+  // effort ahead if you went through with all of them, not just the ones already decided.
+  const totalEffort = Math.round(entries.reduce((s, e) => s + e.essayEffort, 0) * 10) / 10
 
   return (
     <div className="flex flex-wrap gap-3">
@@ -27,7 +29,7 @@ export function SummaryBar({ entries }: { entries: EnrichedEntry[] }) {
       <Stat label="Applying / decided" value={applyingEntries.length} />
       <Stat label="Reach · Match · Safety" value={`${reach} · ${match} · ${safety}`} />
       <Stat label="Avg. efficiency score" value={avgEfficiency} />
-      <Stat label="Total essay effort (applying)" value={totalEffort} />
+      <Stat label="Total effort to apply" value={totalEffort} />
     </div>
   )
 }

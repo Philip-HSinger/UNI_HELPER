@@ -4,10 +4,7 @@ import { CLASSIFICATION_STYLES, RECOMMENDATION_STYLES } from '../lib/uiStyles'
 function ScoreCell({ percentile, p25, p50, p75 }: { percentile: number; p25: number; p50: number; p75: number }) {
   return (
     <td className="px-3 py-3">
-      <div className="font-mono text-sm tabular-nums text-ink">
-        {percentile}
-        <span className="text-ink-muted"> %ile</span>
-      </div>
+      <div className="font-mono text-sm tabular-nums text-ink">{percentile}</div>
       <div className="font-mono text-xs tabular-nums text-ink-muted">
         band {p25}/{p50}/{p75}
       </div>
