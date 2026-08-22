@@ -1,18 +1,24 @@
 import type { EnrichedEntry } from '../types'
-import { compositeBand } from '../lib/scoring'
 import { CLASSIFICATION_STYLES, RECOMMENDATION_STYLES } from '../lib/uiStyles'
 
-export function LikelihoodRow({ entry }: { entry: EnrichedEntry }) {
-  const composite = compositeBand(entry)
+function ScoreCell({ percentile, p25, p50, p75 }: { percentile: number; p25: number; p50: number; p75: number }) {
+  return (
+    <td className="px-3 py-3">
+      <div className="font-mono text-sm tabular-nums text-ink">
+        {percentile}
+        <span className="text-ink-muted"> %ile</span>
+      </div>
+      <div className="font-mono text-xs tabular-nums text-ink-muted">
+        band {p25}/{p50}/{p75}
+      </div>
+    </td>
+  )
+}
 
+export function LikelihoodRow({ entry }: { entry: EnrichedEntry }) {
   return (
     <tr className="border-b border-hairline last:border-0">
-      <td className="px-3 py-3">
-        <div className="font-medium text-ink">{entry.name}</div>
-        <div className="font-mono text-xs tabular-nums text-ink-muted">
-          Combined approx. {composite.p25}/{composite.p50}/{composite.p75}
-        </div>
-      </td>
+      <td className="px-3 py-3 font-medium text-ink">{entry.name}</td>
       <td className="px-3 py-3">
         <span
           className={`rounded-sm px-2 py-0.5 text-xs font-medium tracking-wide ${CLASSIFICATION_STYLES[entry.classification]}`}
@@ -20,14 +26,13 @@ export function LikelihoodRow({ entry }: { entry: EnrichedEntry }) {
           {entry.classification}
         </span>
       </td>
-      <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink-muted">
-        {entry.englishP25}/{entry.englishP50}/{entry.englishP75}
-      </td>
-      <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">{entry.englishPercentile}</td>
-      <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink-muted">
-        {entry.mathP25}/{entry.mathP50}/{entry.mathP75}
-      </td>
-      <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">{entry.mathPercentile}</td>
+      <ScoreCell
+        percentile={entry.englishPercentile}
+        p25={entry.englishP25}
+        p50={entry.englishP50}
+        p75={entry.englishP75}
+      />
+      <ScoreCell percentile={entry.mathPercentile} p25={entry.mathP25} p50={entry.mathP50} p75={entry.mathP75} />
       <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">{entry.weightedAverage}</td>
       <td className="px-3 py-3 text-sm text-ink">{entry.importance}</td>
       <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">

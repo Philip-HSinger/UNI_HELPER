@@ -106,20 +106,39 @@ export function lookupSimilarity(matrix: SimilarityMatrix, promptIdA: string, pr
   return matrix.get(pairKey(promptIdA, promptIdB)) ?? 0
 }
 
+export interface PromptReuseMatch {
+  percent: number
+  /** Which of the applying-school prompts produced the best match, or null if nothing scored above 0. */
+  matchedPromptId: string | null
+}
+
 /**
  * Estimated 0-100 reuse for one prompt: the best (highest-scoring) match against any prompt from
- * schools you're already applying to. "Best match" rather than an average, since what matters is
- * whether *some* essay you're already writing covers this prompt well, not diluting that by
- * unrelated prompts from the same schools.
+ * schools you're already applying to, plus which prompt that was (so the UI can show *why*, not
+ * just a number). "Best match" rather than an average, since what matters is whether *some* essay
+ * you're already writing covers this prompt well, not diluting that by unrelated prompts from the
+ * same schools.
  */
-export function estimatePromptReuse(promptId: string, applyingPromptIds: string[], matrix: SimilarityMatrix): number {
-  if (applyingPromptIds.length === 0) return 0
+export function estimatePromptReuseDetailed(
+  promptId: string,
+  applyingPromptIds: string[],
+  matrix: SimilarityMatrix,
+): PromptReuseMatch {
   let best = 0
+  let bestId: string | null = null
   for (const applyingId of applyingPromptIds) {
     const score = lookupSimilarity(matrix, promptId, applyingId)
-    if (score > best) best = score
+    if (score > best) {
+      best = score
+      bestId = applyingId
+    }
   }
-  return round1(best)
+  return { percent: round1(best), matchedPromptId: bestId }
+}
+
+/** Same estimate as estimatePromptReuseDetailed, just the number — see that function for details. */
+export function estimatePromptReuse(promptId: string, applyingPromptIds: string[], matrix: SimilarityMatrix): number {
+  return estimatePromptReuseDetailed(promptId, applyingPromptIds, matrix).percent
 }
 
 /** A school's overall estimated reuse: the average across its own prompts. No prompts -> 0 (no credit). */

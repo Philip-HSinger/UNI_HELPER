@@ -7,6 +7,7 @@ import {
   efficiencyScore,
   essayEffort,
   estimatePromptReuse,
+  estimatePromptReuseDetailed,
   estimateSchoolReuse,
   lookupSimilarity,
   pairKey,
@@ -121,6 +122,25 @@ describe('estimatePromptReuse', () => {
   it('a strong-but-partial match reduces reuse, never to 100 unless actually scored that high', () => {
     const matrix: SimilarityMatrix = new Map([[pairKey('mit-intellectual-curiosity', 'princeton-what-excites-you'), 75]])
     expect(estimatePromptReuse('mit-intellectual-curiosity', ['princeton-what-excites-you'], matrix)).toBe(75)
+  })
+})
+
+describe('estimatePromptReuseDetailed', () => {
+  it('reports which prompt produced the best match, not just the score', () => {
+    const matrix: SimilarityMatrix = new Map([
+      [pairKey('mit-1', 'princeton-1'), 40],
+      [pairKey('mit-1', 'stanford-1'), 75],
+    ])
+    expect(estimatePromptReuseDetailed('mit-1', ['princeton-1', 'stanford-1'], matrix)).toEqual({
+      percent: 75,
+      matchedPromptId: 'stanford-1',
+    })
+  })
+  it('reports a null match when nothing scored above 0', () => {
+    expect(estimatePromptReuseDetailed('mit-1', ['princeton-1'], new Map())).toEqual({
+      percent: 0,
+      matchedPromptId: null,
+    })
   })
 })
 

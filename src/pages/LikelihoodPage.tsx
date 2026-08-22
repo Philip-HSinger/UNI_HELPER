@@ -67,43 +67,22 @@ export function LikelihoodPage() {
       ) : (
         <div className={CARD_CLASS_FLUSH}>
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[1080px] border-collapse text-left">
+            <table className="w-full min-w-[920px] border-collapse text-left">
               <thead>
-                <tr className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
-                  <th rowSpan={2} className="border-b border-hairline px-3 py-2 align-bottom">
-                    School
-                  </th>
-                  <th rowSpan={2} className="border-b border-hairline px-3 py-2 align-bottom">
-                    Fit
-                  </th>
-                  <th colSpan={2} className="border-b border-hairline px-3 py-2 text-center">
-                    English
-                  </th>
-                  <th colSpan={2} className="border-b border-hairline px-3 py-2 text-center">
-                    Math
-                  </th>
+                <tr className="border-b border-hairline text-xs font-semibold uppercase tracking-wide text-ink-muted">
+                  <th className="px-3 py-2">School</th>
+                  <th className="px-3 py-2">Fit</th>
+                  <th className="px-3 py-2">English</th>
+                  <th className="px-3 py-2">Math</th>
                   <th
-                    rowSpan={2}
-                    className="cursor-pointer select-none border-b border-hairline px-3 py-2 align-bottom hover:text-ink"
+                    className="cursor-pointer select-none px-3 py-2 hover:text-ink"
                     onClick={() => toggleSort('weightedAverage')}
                   >
                     Weighted score{sortKey === 'weightedAverage' && (sortDir === 'asc' ? ' ▲' : ' ▼')}
                   </th>
-                  <th rowSpan={2} className="border-b border-hairline px-3 py-2 align-bottom">
-                    Importance
-                  </th>
-                  <th rowSpan={2} className="border-b border-hairline px-3 py-2 align-bottom">
-                    Acceptance rate
-                  </th>
-                  <th rowSpan={2} className="border-b border-hairline px-3 py-2 align-bottom">
-                    Test rec.
-                  </th>
-                </tr>
-                <tr className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
-                  <th className="border-b border-hairline px-3 py-2">25/50/75</th>
-                  <th className="border-b border-hairline px-3 py-2">Your %ile</th>
-                  <th className="border-b border-hairline px-3 py-2">25/50/75</th>
-                  <th className="border-b border-hairline px-3 py-2">Your %ile</th>
+                  <th className="px-3 py-2">Importance</th>
+                  <th className="px-3 py-2">Acceptance rate</th>
+                  <th className="px-3 py-2">Test rec.</th>
                 </tr>
               </thead>
               <tbody>

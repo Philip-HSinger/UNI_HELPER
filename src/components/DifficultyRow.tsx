@@ -46,17 +46,32 @@ export function DifficultyRow({
               <p className="text-sm text-ink-muted">No prompts on file for this school yet.</p>
             ) : (
               <ul className="space-y-2">
-                {entry.prompts.map((prompt) => (
-                  <li
-                    key={prompt.id}
-                    className="flex items-start justify-between gap-4 rounded-md border border-hairline p-2 text-sm text-ink"
-                  >
-                    <span>{prompt.text}</span>
-                    <span className="shrink-0 whitespace-nowrap font-mono text-xs text-ink-muted">
-                      {prompt.wordLimit === null ? 'no stated limit' : `${prompt.wordLimit} words`}
-                    </span>
-                  </li>
-                ))}
+                {entry.prompts.map((prompt) => {
+                  const reuse = entry.promptReuse.find((r) => r.promptId === prompt.id)
+                  return (
+                    <li key={prompt.id} className="rounded-md border border-hairline p-2 text-sm text-ink">
+                      <div className="flex items-start justify-between gap-4">
+                        <span>{prompt.text}</span>
+                        <span className="shrink-0 whitespace-nowrap font-mono text-xs text-ink-muted">
+                          {prompt.wordLimit === null ? 'no stated limit' : `${prompt.wordLimit} words`}
+                        </span>
+                      </div>
+                      {reuse && reuse.percent > 0 && (
+                        <div className="mt-1.5 border-t border-hairline pt-1.5 text-xs">
+                          <span className="font-mono font-semibold tabular-nums text-accent">
+                            {reuse.percent}% reuse
+                          </span>
+                          {reuse.matchedWith && (
+                            <span className="text-ink-muted">
+                              {' '}
+                              — similar to {reuse.matchedWith.schoolName}'s "{reuse.matchedWith.promptText}"
+                            </span>
+                          )}
+                        </div>
+                      )}
+                    </li>
+                  )
+                })}
               </ul>
             )}
             <p className="mt-3 text-xs text-ink-muted">

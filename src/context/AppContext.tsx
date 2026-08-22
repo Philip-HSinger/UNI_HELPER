@@ -2,8 +2,15 @@ import { createContext, useContext, useEffect, useMemo, useRef, type ReactNode }
 import { usePersistentState } from '../hooks/usePersistentState'
 import { useReferenceData } from '../hooks/useReferenceData'
 import { catalogEntryToSchoolEntry, createInitialState } from '../lib/defaults'
-import { computeSchoolScores, estimateSchoolReuse } from '../lib/scoring'
-import type { ApplicationStatus, EnrichedEntry, OwnScores, SchoolCatalogEntry, SchoolEntry } from '../types'
+import { computeSchoolScores, estimatePromptReuseDetailed, estimateSchoolReuse } from '../lib/scoring'
+import type {
+  ApplicationStatus,
+  EnrichedEntry,
+  OwnScores,
+  PromptReuseInfo,
+  SchoolCatalogEntry,
+  SchoolEntry,
+} from '../types'
 
 const EMPTY_STATE = { ownScores: { english: 700, math: 700 }, entries: [] }
 
@@ -36,6 +43,16 @@ export function AppProvider({ children }: { children: ReactNode }) {
     }
   }, [wasFreshOnLoad, referenceLoading, catalog, setState])
 
+  // Looks up which school a prompt id belongs to, so a per-prompt match can be shown as "similar
+  // to <School>'s <prompt text>", not just a bare percentage.
+  const promptIndex = useMemo(() => {
+    const map = new Map<string, { schoolName: string; promptText: string }>()
+    for (const c of catalog) {
+      for (const p of c.prompts) map.set(p.id, { schoolName: c.name, promptText: p.text })
+    }
+    return map
+  }, [catalog])
+
   const enrichedEntries: EnrichedEntry[] = useMemo(() => {
     // Every catalog-sourced field is looked up fresh here, by fromCatalogId, on every recompute —
     // never read off the persisted entry itself. That's what makes a Supabase edit (a name fix, a
@@ -56,10 +73,21 @@ export function AppProvider({ children }: { children: ReactNode }) {
       const promptIds = catalogEntry.prompts.map((p) => p.id)
       const reusePercent = estimateSchoolReuse(promptIds, applyingPromptIds, matrix)
       const computed = computeSchoolScores(catalogEntry, state.ownScores, reusePercent)
-      results.push({ ...catalogEntry, status: entry.status, fromCatalogId: entry.fromCatalogId, ...computed })
+      const promptReuse: PromptReuseInfo[] = catalogEntry.prompts.map((p) => {
+        const detail = estimatePromptReuseDetailed(p.id, applyingPromptIds, matrix)
+        const matchedWith = detail.matchedPromptId ? (promptIndex.get(detail.matchedPromptId) ?? null) : null
+        return { promptId: p.id, percent: detail.percent, matchedWith }
+      })
+      results.push({
+        ...catalogEntry,
+        status: entry.status,
+        fromCatalogId: entry.fromCatalogId,
+        ...computed,
+        promptReuse,
+      })
     }
     return results
-  }, [state.entries, state.ownScores, catalog, matrix])
+  }, [state.entries, state.ownScores, catalog, matrix, promptIndex])
 
   function setOwnScores(scores: OwnScores) {
     setState((s) => ({ ...s, ownScores: scores }))

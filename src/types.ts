@@ -71,8 +71,17 @@ export interface AppState {
   entries: SchoolEntry[]
 }
 
+/** Per-prompt reuse detail, one per entry in `SchoolCatalogEntry.prompts` (same order), so the
+ * Difficulty page can show *why* a specific essay question has reuse credit, not just the
+ * school-wide average — see AppContext's `enrichedEntries` for how this gets built. */
+export interface PromptReuseInfo {
+  promptId: string
+  percent: number
+  matchedWith: { schoolName: string; promptText: string } | null
+}
+
 // What the table/summary actually render: the live catalog fields for `fromCatalogId` (never a
 // stale copy), the user's own `status`, and the computed scores derived from both.
 export type EnrichedEntry = SchoolCatalogEntry &
   Pick<SchoolEntry, 'status' | 'fromCatalogId'> &
-  import('./lib/scoring').ComputedSchoolScores
+  import('./lib/scoring').ComputedSchoolScores & { promptReuse: PromptReuseInfo[] }
