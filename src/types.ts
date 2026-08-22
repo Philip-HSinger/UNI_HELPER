@@ -27,8 +27,8 @@ export const APPLICATION_STATUSES: { value: ApplicationStatus; label: string }[]
   { value: 'not_started', label: 'Not started' },
   { value: 'applying', label: 'Applying' },
   { value: 'submitted', label: 'Submitted' },
-  { value: 'accepted', label: 'Accepted' },
-  { value: 'rejected', label: 'Rejected' },
+  { value: 'accepted', label: '✓ Accepted' },
+  { value: 'rejected', label: '✕ Rejected' },
   { value: 'waitlisted', label: 'Waitlisted' },
 ]
 
@@ -48,6 +48,8 @@ export interface SchoolCatalogEntry {
   importance: Importance
   prompts: Prompt[]
   acceptanceRate: number | null
+  /** US News National Universities rank, admin-entered, null until someone fills it in. */
+  usNewsRank: number | null
 }
 
 /** A school on the user's own list. Deliberately holds only what's actually yours to set — every

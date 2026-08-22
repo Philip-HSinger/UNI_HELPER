@@ -11,6 +11,14 @@
   --color-accent-soft: #e7ece4;
   --color-error: #8c2f2f;
 
+  /* A little traffic-light color, used only for Reach/Match/Safety and Submit/Don't-Submit calls —
+     danger reuses the same hue as --color-error (both read as "the red one"), just named for its
+     use in a judgment call rather than a system failure. */
+  --color-danger: #8c2f2f;
+  --color-danger-soft: #f3e4e4;
+  --color-caution: #8a6d1f;
+  --color-caution-soft: #f3ecd9;
+
   /* Fonts: Newsreader (serif display/lede), Public Sans (UI body), IBM Plex Mono (all numeric data) */
   --font-display: 'Newsreader', ui-serif, Georgia, serif;
   --font-sans: 'Public Sans', ui-sans-serif, system-ui, sans-serif;
@@ -30,6 +38,11 @@
     --color-accent: #7fb69a;
     --color-accent-soft: #26332b;
     --color-error: #d97878;
+
+    --color-danger: #d97878;
+    --color-danger-soft: #332020;
+    --color-caution: #d9b65c;
+    --color-caution-soft: #332b18;
   }
 }
 

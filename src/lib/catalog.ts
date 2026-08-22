@@ -23,6 +23,7 @@ interface RawSchoolRow {
   difficulty: number
   importance: string
   acceptance_rate: number | null
+  us_news_rank: number | null
   prompts: RawPromptRow[] | null
 }
 
@@ -49,6 +50,7 @@ export function shapeCatalogRows(rows: RawSchoolRow[]): SchoolCatalogEntry[] {
       difficulty: row.difficulty,
       importance: row.importance as Importance,
       acceptanceRate: row.acceptance_rate,
+      usNewsRank: row.us_news_rank,
       prompts,
     }
   })

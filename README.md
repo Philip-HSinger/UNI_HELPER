@@ -42,9 +42,9 @@ Supabase's public `anon` key (safe to ship in the built JS — access control is
 not secrecy of that key; see `supabase/schema.sql`). One-time setup for a fresh clone/fork:
 
 1. Create a free project at [supabase.com](https://supabase.com).
-2. In its SQL editor, run `supabase/schema.sql` (tables + RLS policies), then
-   `supabase/seed.sql` (the 19 starter schools + their prompts, generated from
-   `supabase/seed_source.schools.json` by `scripts/generate_seed_sql.py`).
+2. In its SQL editor, run `supabase/schema.sql` (tables + RLS policies, including the free-tier
+   `waitlist_emails` table), then `supabase/seed.sql` (the 19 starter schools + their prompts,
+   generated from `supabase/seed_source.schools.json` by `scripts/generate_seed_sql.py`).
 3. From Project Settings → API, copy the **Project URL** and **anon public key** into a local
    `.env.local` (copy `.env.local.example`) for `npm run dev`, and into the GitHub repo's
    **Settings → Secrets and variables → Actions** (as `VITE_SUPABASE_URL` /
@@ -73,20 +73,34 @@ npm run build    # production build to dist/
 That workflow also runs `npm run test` on every push, so a scoring-formula regression fails the
 build instead of quietly shipping.
 
-## Adding accounts / a paywall later
+## Monetization status
 
-A backend already exists (Supabase), which gets you partway to monetising without more
-infrastructure changes:
+**What exists today:** a free tier only, no accounts, no payments. `FREE_SCHOOL_LIMIT` in
+`src/lib/limits.ts` caps a list at 5 schools (client-side only — there's no login to enforce it
+against). Once someone hits that cap, `AddSchoolPanel` swaps to an email capture form
+(`src/lib/waitlist.ts`) that writes into the `waitlist_emails` table — public can INSERT (join the
+list) but there's no select policy, so the anon key can never read emails back; you read signups
+yourself in Supabase's table editor (your authenticated session bypasses RLS, same as editing
+`schools`/`prompts` does). This validates real demand before building actual payments.
+
+**What it would take to actually charge money** — a backend already exists (Supabase), which gets
+you partway there without more infrastructure changes:
 
 1. **Accounts**: [Supabase Auth](https://supabase.com/auth) can hold each user's own working list
-   (today's `localStorage` `AppState`) server-side instead, so it follows them across devices.
+   (today's `localStorage` `AppState`) server-side instead, so it follows them across devices —
+   this is also what makes the free-tier cap actually enforceable, instead of just a UI suggestion.
 2. **Paywall**: [Stripe](https://stripe.com) Checkout + a webhook needs actual server code — add
    Vercel serverless functions (`api/*.ts`, works alongside this Vite app with no migration) or
-   Supabase Edge Functions. A sensible freemium split: free tier caps schools on a list (e.g. 5);
-   paid tier unlocks unlimited schools, CSV/PDF export, and synced accounts.
+   Supabase Edge Functions. A one-time "senior year pass" fits how this actually gets used (one
+   admissions cycle, then done) better than a recurring subscription. Paid tier: unlimited schools,
+   CSV/PDF export, synced accounts.
 3. **Smarter reuse estimation**: once there's a backend calling an LLM is easy — let paid users
    paste actual essay drafts and get a real similarity score per prompt instead of relying on the
    manually-curated matrix, or use it to help seed matrix scores faster.
+4. **The real bottleneck is data, not code**: only a handful of the 19 seeded schools have complete,
+   current data and more than a few `prompt_similarity` pairs scored (see `src/data/README.md`).
+   A sellable product needs the ~150-300 most commonly applied-to schools covered, which is an
+   ongoing research/curation cost every cycle, not a one-time build.
 
 ## Project structure
 

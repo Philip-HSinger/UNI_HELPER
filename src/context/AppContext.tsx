@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useMemo, useRef, type ReactNode }
 import { usePersistentState } from '../hooks/usePersistentState'
 import { useReferenceData } from '../hooks/useReferenceData'
 import { catalogEntryToSchoolEntry, createInitialState } from '../lib/defaults'
+import { FREE_SCHOOL_LIMIT } from '../lib/limits'
 import { computeSchoolScores, estimatePromptReuseDetailed, estimateSchoolReuse } from '../lib/scoring'
 import type {
   ApplicationStatus,
@@ -94,6 +95,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }
 
   function addFromCatalog(catalogId: string) {
+    if (state.entries.length >= FREE_SCHOOL_LIMIT) return // AddSchoolPanel hides the search UI at this point too
     const catalogEntry = catalog.find((c) => c.id === catalogId)
     if (!catalogEntry) return
     setState((s) => ({ ...s, entries: [...s.entries, catalogEntryToSchoolEntry(catalogEntry)] }))

@@ -6,7 +6,9 @@ import { EasyWinsPanel } from '../components/EasyWinsPanel'
 import { SummaryBar } from '../components/SummaryBar'
 import { AddSchoolPanel } from '../components/AddSchoolPanel'
 import { StatusBadge } from '../components/StatusBadge'
+import { ClassificationIcon } from '../components/icons'
 import { CARD_CLASS_FLUSH, CLASSIFICATION_STYLES } from '../lib/uiStyles'
+import { FREE_SCHOOL_LIMIT } from '../lib/limits'
 import type { EnrichedEntry } from '../types'
 
 export function OverviewPage() {
@@ -29,7 +31,12 @@ export function OverviewPage() {
 
       <SummaryBar entries={entries} />
 
-      <AddSchoolPanel catalog={catalog} excludeCatalogIds={excludeCatalogIds} onAddFromCatalog={addFromCatalog} />
+      <AddSchoolPanel
+        catalog={catalog}
+        excludeCatalogIds={excludeCatalogIds}
+        onAddFromCatalog={addFromCatalog}
+        atLimit={entries.length >= FREE_SCHOOL_LIMIT}
+      />
 
       {entries.length === 0 ? (
         <div className={`${CARD_CLASS_FLUSH} border-dashed p-10 text-center text-sm text-ink-muted`}>
@@ -56,11 +63,17 @@ export function OverviewPage() {
               <tbody>
                 {sorted.map((entry) => (
                   <tr key={entry.id} className="border-b border-hairline last:border-0 hover:bg-accent-soft">
-                    <td className="px-3 py-3 font-medium text-ink">{entry.name}</td>
+                    <td className="px-3 py-3">
+                      <span className="font-medium text-ink">{entry.name}</span>
+                      {entry.usNewsRank !== null && (
+                        <span className="ml-1.5 font-mono text-xs text-ink-muted">#{entry.usNewsRank}</span>
+                      )}
+                    </td>
                     <td className="px-3 py-3">
                       <span
-                        className={`rounded-sm px-2 py-0.5 text-xs font-medium tracking-wide ${CLASSIFICATION_STYLES[entry.classification]}`}
+                        className={`inline-flex items-center gap-1 rounded-sm px-2 py-0.5 text-xs font-medium tracking-wide ${CLASSIFICATION_STYLES[entry.classification]}`}
                       >
+                        <ClassificationIcon classification={entry.classification} />
                         {entry.classification}
                       </span>
                     </td>

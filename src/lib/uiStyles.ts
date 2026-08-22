@@ -1,6 +1,4 @@
-// Shared style constants, reused across the Overview/Likelihood/Difficulty pages. Deliberately
-// monochrome (ink/muted/accent only) — see src/components/StatusBadge.tsx for the same language
-// applied to application status.
+// Shared style constants, reused across the Overview/Likelihood/Difficulty pages.
 
 // The recurring flat "editorial card" wrapper. Two shapes: a padded panel for form-ish content,
 // and a flush (no padding) wrapper for things that manage their own inner spacing (tables,
@@ -8,15 +6,18 @@
 export const CARD_CLASS = 'rounded-md border border-hairline bg-surface p-4'
 export const CARD_CLASS_FLUSH = 'overflow-hidden rounded-md border border-hairline bg-surface'
 
-// Reach/Match/Safety badges. Safety is the one "good news" highlight (accent); Reach draws the
-// eye in plain ink rather than a rainbow alert color; Match stays quiet.
+// Reach/Match/Safety badges — a deliberate bit of traffic-light color: green for a no-brainer,
+// red for a genuine long shot, amber for the real toss-up in between. Paired with an icon (see
+// ClassificationIcon in components/icons.tsx) so the signal doesn't rely on color alone.
 export const CLASSIFICATION_STYLES: Record<string, string> = {
-  Reach: 'border border-ink text-ink font-semibold',
-  Match: 'border border-hairline text-ink-muted',
+  Reach: 'border border-danger bg-danger-soft text-danger',
+  Match: 'border border-caution bg-caution-soft text-caution',
   Safety: 'border border-accent bg-accent-soft text-accent',
 }
 
-// Submit/Helps vs Don't Submit/Hurts test-recommendation text.
+// Submit/Helps vs Don't Submit/Hurts test-recommendation text. Not treated as good/bad news the
+// way classification is — "Don't Submit" is neutral practical advice, not a warning — so this
+// stays a two-tone accent/muted distinction rather than green/red.
 export const RECOMMENDATION_STYLES: Record<string, string> = {
   Submit: 'text-accent font-semibold',
   Helps: 'text-accent font-semibold',

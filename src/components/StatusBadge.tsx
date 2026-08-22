@@ -1,15 +1,16 @@
 import { APPLICATION_STATUSES, type ApplicationStatus } from '../types'
 
-// A monochrome intensity progression rather than a color per status: quiet/undecided (hairline) ->
-// in motion (accent outline, then accent outline+fill) -> the two terminal outcomes get a solid
-// fill each, positive in accent, negative in ink (not a new error hue).
+// An intensity progression rather than a color per status: quiet/undecided (hairline) -> in motion
+// (accent outline, then accent outline+fill) -> the two terminal outcomes get a solid fill each,
+// good news in accent (green), bad news in danger (red) — a native <select>'s <option>s can't hold
+// an icon, so APPLICATION_STATUSES' labels carry a plain-text ✓/✕ glyph on those two instead.
 const STYLES: Record<ApplicationStatus, string> = {
   not_started: 'border border-hairline bg-surface text-ink-muted',
   waitlisted: 'border border-dashed border-ink-muted bg-surface text-ink-muted',
   applying: 'border border-accent bg-surface text-accent',
   submitted: 'border border-accent bg-accent-soft text-accent',
   accepted: 'border border-accent bg-accent text-paper',
-  rejected: 'border border-ink bg-ink text-paper',
+  rejected: 'border border-danger bg-danger text-paper',
 }
 
 export function StatusBadge({

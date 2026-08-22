@@ -18,6 +18,7 @@ describe('shapeCatalogRows', () => {
         difficulty: 30,
         importance: 'Important',
         acceptance_rate: null,
+        us_news_rank: 46,
         prompts: [{ id: 'purdue--why-major', text: 'Why this major?', word_limit: 250 }],
       },
     ])
@@ -26,6 +27,7 @@ describe('shapeCatalogRows', () => {
     expect(school.englishP25).toBe(600)
     expect(school.mathP75).toBe(760)
     expect(school.importance).toBe('Important')
+    expect(school.usNewsRank).toBe(46)
     expect(school.prompts).toEqual([{ id: 'purdue--why-major', text: 'Why this major?', wordLimit: 250 }])
   })
 
@@ -45,6 +47,7 @@ describe('shapeCatalogRows', () => {
         difficulty: 10,
         importance: 'Considered',
         acceptance_rate: 0.5,
+        us_news_rank: null,
         prompts: null,
       },
     ])

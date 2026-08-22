@@ -21,6 +21,7 @@ create table if not exists schools (
   importance text not null default 'Considered'
     check (importance in ('Very Important', 'Important', 'Considered', 'Not Considered')),
   acceptance_rate numeric,
+  us_news_rank integer,
   created_at timestamptz not null default now()
 );
 
@@ -47,7 +48,21 @@ create table if not exists prompt_similarity (
 create index if not exists prompt_similarity_a_idx on prompt_similarity (prompt_a_id);
 create index if not exists prompt_similarity_b_idx on prompt_similarity (prompt_b_id);
 
--- Row Level Security: public read, no public write on any of the three tables.
+-- Free-tier waitlist: the opposite access pattern from the three tables above - public can INSERT
+-- (anyone can join the list) but there is no select policy at all, so the anon key can never read
+-- emails back. You read signups yourself in the table editor, which uses your authenticated
+-- session and bypasses RLS entirely, same as editing schools/prompts/prompt_similarity does.
+create table if not exists waitlist_emails (
+  id uuid primary key default gen_random_uuid(),
+  email text not null unique,
+  created_at timestamptz not null default now()
+);
+
+alter table waitlist_emails enable row level security;
+drop policy if exists "public join waitlist" on waitlist_emails;
+create policy "public join waitlist" on waitlist_emails for insert with check (true);
+
+-- Row Level Security: public read, no public write on any of the three catalog tables.
 alter table schools enable row level security;
 alter table prompts enable row level security;
 alter table prompt_similarity enable row level security;

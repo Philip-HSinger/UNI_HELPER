@@ -13,8 +13,9 @@ source for `scripts/generate_seed_sql.py`, not something the app imports.
 
 Once a school's new Common Data Set is out, edit the row directly in Supabase's table editor (or
 via SQL): update the percentile bands and acceptance rate, check whether `test_optional`/
-`importance` changed, and replace/add `prompts` rows once the new cycle's supplements are released
-(usually over the summer). No redeploy needed — the live site reads this at runtime.
+`importance` changed, replace/add `prompts` rows once the new cycle's supplements are released
+(usually over the summer), and fill in `us_news_rank` from that year's US News National
+Universities list if you track it. No redeploy needed — the live site reads this at runtime.
 
 `supabase/update_five_schools.sql` is a worked example of what a complete, current entry looks
 like — MIT, Princeton, Stanford, Georgia Tech, and Purdue, researched from each school's own
