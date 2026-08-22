@@ -3,7 +3,7 @@ import { usePersistentState } from '../hooks/usePersistentState'
 import { useReferenceData } from '../hooks/useReferenceData'
 import { catalogEntryToSchoolEntry, createInitialState } from '../lib/defaults'
 import { computeSchoolScores, estimateSchoolReuse } from '../lib/scoring'
-import type { ApplicationStatus, EnrichedEntry, OwnScores, SchoolCatalogEntry } from '../types'
+import type { ApplicationStatus, EnrichedEntry, OwnScores, SchoolCatalogEntry, SchoolEntry } from '../types'
 
 const EMPTY_STATE = { ownScores: { english: 700, math: 700 }, entries: [] }
 
@@ -37,18 +37,29 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }, [wasFreshOnLoad, referenceLoading, catalog, setState])
 
   const enrichedEntries: EnrichedEntry[] = useMemo(() => {
+    // Every catalog-sourced field is looked up fresh here, by fromCatalogId, on every recompute —
+    // never read off the persisted entry itself. That's what makes a Supabase edit (a name fix, a
+    // new percentile band, a reworded prompt) show up immediately for schools already on someone's
+    // list, not just newly-added ones.
+    const resolve = (entry: SchoolEntry) => catalog.find((c) => c.id === entry.fromCatalogId)
+
     // Schools with any status past "not started" are treated as essays you're actually writing —
     // that's what every other school's reuse gets estimated against (see estimateSchoolReuse).
     const applyingPromptIds = state.entries
       .filter((e) => e.status !== 'not_started')
-      .flatMap((e) => e.prompts.map((p) => p.id))
-    return state.entries.map((entry) => {
-      const promptIds = entry.prompts.map((p) => p.id)
+      .flatMap((e) => resolve(e)?.prompts.map((p) => p.id) ?? [])
+
+    const results: EnrichedEntry[] = []
+    for (const entry of state.entries) {
+      const catalogEntry = resolve(entry)
+      if (!catalogEntry) continue // removed from the catalog since it was added to this list
+      const promptIds = catalogEntry.prompts.map((p) => p.id)
       const reusePercent = estimateSchoolReuse(promptIds, applyingPromptIds, matrix)
-      const computed = computeSchoolScores(entry, state.ownScores, reusePercent)
-      return { ...entry, ...computed }
-    })
-  }, [state.entries, state.ownScores, matrix])
+      const computed = computeSchoolScores(catalogEntry, state.ownScores, reusePercent)
+      results.push({ ...catalogEntry, status: entry.status, fromCatalogId: entry.fromCatalogId, ...computed })
+    }
+    return results
+  }, [state.entries, state.ownScores, catalog, matrix])
 
   function setOwnScores(scores: OwnScores) {
     setState((s) => ({ ...s, ownScores: scores }))

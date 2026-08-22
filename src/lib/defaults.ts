@@ -2,9 +2,9 @@ import type { AppState, SchoolCatalogEntry, SchoolEntry } from '../types'
 
 export function catalogEntryToSchoolEntry(catalog: SchoolCatalogEntry): SchoolEntry {
   return {
-    ...catalog,
-    status: 'not_started',
+    id: catalog.id,
     fromCatalogId: catalog.id,
+    status: 'not_started',
   }
 }
 

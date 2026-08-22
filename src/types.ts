@@ -50,24 +50,13 @@ export interface SchoolCatalogEntry {
   acceptanceRate: number | null
 }
 
-/** A school on the user's own list — a snapshot copy of a SchoolCatalogEntry plus the two things
- * that are actually yours to set: `status` and (implicitly, via list membership) whether it's on
- * your list at all. Everything else here is display-only in the UI. */
+/** A school on the user's own list. Deliberately holds only what's actually yours to set — every
+ * catalog-sourced field (name, percentiles, prompts, etc.) is looked up live from `catalog` by
+ * `fromCatalogId` each render (see AppContext's `enrichedEntries`), never copied/frozen at add
+ * time. That way an admin edit in Supabase (a typo fix, a new percentile band, a reworded prompt)
+ * shows up immediately for schools already on someone's list, not just newly-added ones. */
 export interface SchoolEntry {
   id: string
-  name: string
-  platform: string
-  testOptional: boolean
-  englishP25: number
-  englishP50: number
-  englishP75: number
-  mathP25: number
-  mathP50: number
-  mathP75: number
-  difficulty: number
-  importance: Importance
-  prompts: Prompt[]
-  acceptanceRate: number | null
   status: ApplicationStatus
   fromCatalogId: string
 }
@@ -82,5 +71,8 @@ export interface AppState {
   entries: SchoolEntry[]
 }
 
-// A school entry with its live computed scores merged in — what the table/summary actually render.
-export type EnrichedEntry = SchoolEntry & import('./lib/scoring').ComputedSchoolScores
+// What the table/summary actually render: the live catalog fields for `fromCatalogId` (never a
+// stale copy), the user's own `status`, and the computed scores derived from both.
+export type EnrichedEntry = SchoolCatalogEntry &
+  Pick<SchoolEntry, 'status' | 'fromCatalogId'> &
+  import('./lib/scoring').ComputedSchoolScores
