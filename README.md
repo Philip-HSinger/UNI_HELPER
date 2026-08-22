@@ -40,7 +40,7 @@ npm run build    # production build to dist/
 
 1. Push this repo to GitHub.
 2. In the repo's Settings → Pages, set **Source** to "GitHub Actions".
-3. Push to `main` — `.github/workflows/deploy.yml` builds and publishes automatically to
+3. Push to `master` — `.github/workflows/deploy.yml` builds and publishes automatically to
    `https://<your-username>.github.io/<repo-name>/`.
 
 That workflow also runs `npm run test` on every push, so a scoring-formula regression fails the
