@@ -5,7 +5,7 @@ import { DifficultyRow } from '../components/DifficultyRow'
 import type { EnrichedEntry } from '../types'
 
 export function DifficultyPage() {
-  const { entries, updateEntry, addPrompt, updatePromptText, updatePromptWordLimit, removePrompt } = useAppContext()
+  const { entries } = useAppContext()
   const [expandedId, setExpandedId] = useState<string | null>(null)
   const { sorted, sortKey, sortDir, toggleSort } = useSortedEntries<EnrichedEntry, keyof EnrichedEntry>(
     entries,
@@ -49,11 +49,6 @@ export function DifficultyPage() {
                   entry={entry}
                   expanded={expandedId === entry.id}
                   onToggleExpand={() => setExpandedId((cur) => (cur === entry.id ? null : entry.id))}
-                  onUpdate={(partial) => updateEntry(entry.id, partial)}
-                  onAddPrompt={(text) => addPrompt(entry.id, text)}
-                  onUpdatePromptText={(index, text) => updatePromptText(entry.id, index, text)}
-                  onUpdatePromptWordLimit={(index, wordLimit) => updatePromptWordLimit(entry.id, index, wordLimit)}
-                  onRemovePrompt={(index) => removePrompt(entry.id, index)}
                 />
               ))}
             </tbody>

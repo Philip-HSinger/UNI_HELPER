@@ -16,6 +16,12 @@ via SQL): update the percentile bands and acceptance rate, check whether `test_o
 `importance` changed, and replace/add `prompts` rows once the new cycle's supplements are released
 (usually over the summer). No redeploy needed — the live site reads this at runtime.
 
+`supabase/update_five_schools.sql` is a worked example of what a complete, current entry looks
+like — MIT, Princeton, Stanford, Georgia Tech, and Purdue, researched from each school's own
+admissions pages and recent Common Data Sets for the 2026-27 cycle (including Georgia Tech
+dropping its supplement entirely, a real change that happened days before that cycle opened).
+Use it as the template/reference when bringing another school up to the same standard.
+
 ## Filling in the prompt-similarity matrix
 
 In the `prompt_similarity` table, each row is one scored pair: `prompt_a_id`, `prompt_b_id`,

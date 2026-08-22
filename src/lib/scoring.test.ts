@@ -105,13 +105,13 @@ describe('pairKey / lookupSimilarity', () => {
 })
 
 describe('estimatePromptReuse', () => {
-  it('is 0 with no committed prompts', () => {
+  it('is 0 with no prompts from schools being applied to', () => {
     expect(estimatePromptReuse('mit-1', [], new Map())).toBe(0)
   })
   it('is 0 when no pair involving this prompt has been scored', () => {
     expect(estimatePromptReuse('mit-1', ['princeton-1'], new Map())).toBe(0)
   })
-  it("takes the best match across the applicant's committed schools", () => {
+  it('takes the best match across the schools the applicant is applying to', () => {
     const matrix: SimilarityMatrix = new Map([
       [pairKey('mit-1', 'princeton-1'), 40],
       [pairKey('mit-1', 'stanford-1'), 75],

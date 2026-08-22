@@ -78,8 +78,8 @@ export function weightedAverage(avg: number, importance: Importance): number {
 
 /**
  * How much genuine new writing a school's supplement will cost, after discounting for the
- * estimated reuse (0-100, from estimateSchoolReuse below) against essays you've already
- * committed to writing. Effort is floored at 1 so a "fully reused" school still produces a
+ * estimated reuse (0-100, from estimateSchoolReuse below) against essays for schools you're
+ * already applying to. Effort is floored at 1 so a "fully reused" school still produces a
  * large-but-finite efficiency score instead of Infinity.
  */
 export function essayEffort(difficulty: number, reusePercent: number): number {
@@ -108,23 +108,24 @@ export function lookupSimilarity(matrix: SimilarityMatrix, promptIdA: string, pr
 
 /**
  * Estimated 0-100 reuse for one prompt: the best (highest-scoring) match against any prompt from
- * your committed schools. "Best match" rather than an average, since what matters is whether
- * *some* committed essay covers this prompt well, not diluting that by unrelated committed prompts.
+ * schools you're already applying to. "Best match" rather than an average, since what matters is
+ * whether *some* essay you're already writing covers this prompt well, not diluting that by
+ * unrelated prompts from the same schools.
  */
-export function estimatePromptReuse(promptId: string, committedPromptIds: string[], matrix: SimilarityMatrix): number {
-  if (committedPromptIds.length === 0) return 0
+export function estimatePromptReuse(promptId: string, applyingPromptIds: string[], matrix: SimilarityMatrix): number {
+  if (applyingPromptIds.length === 0) return 0
   let best = 0
-  for (const committedId of committedPromptIds) {
-    const score = lookupSimilarity(matrix, promptId, committedId)
+  for (const applyingId of applyingPromptIds) {
+    const score = lookupSimilarity(matrix, promptId, applyingId)
     if (score > best) best = score
   }
   return round1(best)
 }
 
 /** A school's overall estimated reuse: the average across its own prompts. No prompts -> 0 (no credit). */
-export function estimateSchoolReuse(promptIds: string[], committedPromptIds: string[], matrix: SimilarityMatrix): number {
+export function estimateSchoolReuse(promptIds: string[], applyingPromptIds: string[], matrix: SimilarityMatrix): number {
   if (promptIds.length === 0) return 0
-  const total = promptIds.reduce((sum, id) => sum + estimatePromptReuse(id, committedPromptIds, matrix), 0)
+  const total = promptIds.reduce((sum, id) => sum + estimatePromptReuse(id, applyingPromptIds, matrix), 0)
   return round1(total / promptIds.length)
 }
 
@@ -211,7 +212,7 @@ export interface ComputedSchoolScores {
 
 /** Runs every formula above for one school entry, given the user's own test scores and its
  * already-estimated reuse percent (see estimateSchoolReuse, computed once per render from
- * whichever schools are marked `committed`). */
+ * whichever schools the user's `status` marks as already being applied to). */
 export function computeSchoolScores(
   school: {
     englishP25: number

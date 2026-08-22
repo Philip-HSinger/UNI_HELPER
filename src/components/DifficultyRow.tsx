@@ -1,5 +1,4 @@
-import type { EnrichedEntry, Prompt, SchoolEntry } from '../types'
-import { Field, inputClass } from './FormField'
+import type { EnrichedEntry, Prompt } from '../types'
 
 function wordCountSummary(prompts: Prompt[]): string {
   const known = prompts.filter((p) => p.wordLimit !== null)
@@ -14,20 +13,10 @@ export function DifficultyRow({
   entry,
   expanded,
   onToggleExpand,
-  onUpdate,
-  onAddPrompt,
-  onUpdatePromptText,
-  onUpdatePromptWordLimit,
-  onRemovePrompt,
 }: {
   entry: EnrichedEntry
   expanded: boolean
   onToggleExpand: () => void
-  onUpdate: (partial: Partial<SchoolEntry>) => void
-  onAddPrompt: (text: string) => void
-  onUpdatePromptText: (index: number, text: string) => void
-  onUpdatePromptWordLimit: (index: number, wordLimit: number | null) => void
-  onRemovePrompt: (index: number) => void
 }) {
   return (
     <>
@@ -51,86 +40,28 @@ export function DifficultyRow({
       {expanded && (
         <tr className="border-b border-slate-100 bg-slate-50/70 dark:border-slate-800 dark:bg-slate-800/30">
           <td colSpan={6} className="px-4 py-4" onClick={(e) => e.stopPropagation()}>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              <div>
-                <Field label="Essay difficulty (1-100)">
-                  <input
-                    type="range"
-                    min={1}
-                    max={100}
-                    value={entry.difficulty}
-                    onChange={(e) => onUpdate({ difficulty: Number(e.target.value) })}
-                    className="w-full accent-indigo-600"
-                  />
-                  <div className="text-right text-xs text-slate-400">{entry.difficulty}</div>
-                </Field>
-                <p className="mt-3 text-xs text-slate-400">
-                  Estimated reuse ({entry.estimatedReuse}%) comes from the prompt-similarity
-                  database, scored against your committed schools' prompts — it isn't editable
-                  here.
-                </p>
-              </div>
-
-              <div className="md:col-span-2">
-                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">
-                  Supplemental prompts
-                </h4>
-                <div className="max-h-80 space-y-2 overflow-y-auto pr-1">
-                  {entry.prompts.map((prompt, i) => (
-                    <div key={prompt.id} className="rounded-lg border border-slate-200 p-2 dark:border-slate-700">
-                      <div className="flex items-start gap-2">
-                        <textarea
-                          value={prompt.text}
-                          onChange={(e) => onUpdatePromptText(i, e.target.value)}
-                          rows={2}
-                          className={`${inputClass} resize-none`}
-                        />
-                        <div className="w-20 shrink-0">
-                          <input
-                            type="number"
-                            min={0}
-                            placeholder="words"
-                            value={prompt.wordLimit ?? ''}
-                            onChange={(e) =>
-                              onUpdatePromptWordLimit(i, e.target.value === '' ? null : Number(e.target.value))
-                            }
-                            className={inputClass}
-                          />
-                        </div>
-                        <button
-                          type="button"
-                          onClick={() => onRemovePrompt(i)}
-                          className="shrink-0 rounded-lg px-1.5 py-1 text-xs text-slate-400 hover:bg-rose-50 hover:text-rose-600 dark:hover:bg-rose-950"
-                        >
-                          ✕
-                        </button>
-                      </div>
-                    </div>
-                  ))}
-                  {entry.prompts.length === 0 && <p className="text-sm text-slate-400">No prompts yet — add one below.</p>}
-                </div>
-                <form
-                  className="mt-2 flex gap-2"
-                  onSubmit={(e) => {
-                    e.preventDefault()
-                    const form = e.currentTarget
-                    const input = form.elements.namedItem('prompt') as HTMLInputElement
-                    const text = input.value.trim()
-                    if (!text) return
-                    onAddPrompt(text)
-                    input.value = ''
-                  }}
-                >
-                  <input name="prompt" placeholder="Add a prompt…" className={inputClass} />
-                  <button
-                    type="submit"
-                    className="shrink-0 rounded-lg bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-indigo-500"
+            <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Supplemental prompts</h4>
+            {entry.prompts.length === 0 ? (
+              <p className="text-sm text-slate-400">No prompts on file for this school yet.</p>
+            ) : (
+              <ul className="space-y-2">
+                {entry.prompts.map((prompt) => (
+                  <li
+                    key={prompt.id}
+                    className="flex items-start justify-between gap-4 rounded-lg border border-slate-200 p-2 text-sm text-slate-700 dark:border-slate-700 dark:text-slate-200"
                   >
-                    Add
-                  </button>
-                </form>
-              </div>
-            </div>
+                    <span>{prompt.text}</span>
+                    <span className="shrink-0 whitespace-nowrap text-xs text-slate-400">
+                      {prompt.wordLimit === null ? 'no stated limit' : `${prompt.wordLimit} words`}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            <p className="mt-3 text-xs text-slate-400">
+              Difficulty and prompts are set by the site — estimated reuse ({entry.estimatedReuse}%) comes from the
+              prompt-similarity database, scored against the prompts of schools you're applying to.
+            </p>
           </td>
         </tr>
       )}

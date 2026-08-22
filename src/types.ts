@@ -1,12 +1,14 @@
 // Core data model for the app. `SchoolEntry` is what actually lives in a user's list
 // (persisted to localStorage) — it starts as a copy of a `SchoolCatalogEntry` fetched from
-// Supabase (see lib/catalog.ts), or a blank custom school, and is fully editable from there.
+// Supabase (see lib/catalog.ts). All catalog-sourced fields (percentiles, importance, acceptance
+// rate, difficulty, prompts) are read-only in the app by design — they're admin-curated data,
+// edited only in Supabase (see supabase/schema.sql and src/data/README.md).
 
 export type Importance = 'Very Important' | 'Important' | 'Considered' | 'Not Considered'
 
 /** One supplemental prompt. `id` is a stable key referenced by rows in the prompt_similarity
- * table (see lib/similarity.ts) so reuse can be estimated against your committed schools'
- * prompts (see estimateSchoolReuse in lib/scoring.ts). */
+ * table (see lib/similarity.ts) so reuse can be estimated against the schools you're applying to
+ * (see estimateSchoolReuse in lib/scoring.ts). */
 export interface Prompt {
   id: string
   text: string
@@ -48,7 +50,9 @@ export interface SchoolCatalogEntry {
   acceptanceRate: number | null
 }
 
-/** A school in the user's own working list — fully editable, independent of the catalog. */
+/** A school on the user's own list — a snapshot copy of a SchoolCatalogEntry plus the two things
+ * that are actually yours to set: `status` and (implicitly, via list membership) whether it's on
+ * your list at all. Everything else here is display-only in the UI. */
 export interface SchoolEntry {
   id: string
   name: string
@@ -64,11 +68,8 @@ export interface SchoolEntry {
   importance: Importance
   prompts: Prompt[]
   acceptanceRate: number | null
-  /** You're 100% going here regardless of outcome — its prompts seed the reuse estimate for
-   * every other school on the list (see estimateSchoolReuse in lib/scoring.ts). */
-  committed: boolean
   status: ApplicationStatus
-  fromCatalogId: string | null
+  fromCatalogId: string
 }
 
 export interface OwnScores {

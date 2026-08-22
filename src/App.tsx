@@ -40,7 +40,7 @@ function Shell() {
         )}
 
         <p className="text-center text-xs text-slate-400">
-          Your own list (scores, committed schools, status) stays in this browser only — the
+          Your own list (scores, which schools you're applying to, status) stays in this browser only — the
           school database and prompt-similarity scores are shared and read from Supabase.
         </p>
       </main>

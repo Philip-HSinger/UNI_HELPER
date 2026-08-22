@@ -1,12 +1,10 @@
-import { useState } from 'react'
 import { useAppContext } from '../context/AppContext'
 import { useSortedEntries } from '../hooks/useSortedEntries'
 import { LikelihoodRow } from '../components/LikelihoodRow'
 import type { EnrichedEntry } from '../types'
 
 export function LikelihoodPage() {
-  const { entries, ownScores, updateEntry } = useAppContext()
-  const [expandedId, setExpandedId] = useState<string | null>(null)
+  const { entries, ownScores } = useAppContext()
   const { sorted, sortKey, sortDir, toggleSort } = useSortedEntries<EnrichedEntry, keyof EnrichedEntry>(
     entries,
     'weightedAverage',
@@ -48,13 +46,7 @@ export function LikelihoodPage() {
             </thead>
             <tbody>
               {sorted.map((entry) => (
-                <LikelihoodRow
-                  key={entry.id}
-                  entry={entry}
-                  expanded={expandedId === entry.id}
-                  onToggleExpand={() => setExpandedId((cur) => (cur === entry.id ? null : entry.id))}
-                  onUpdate={(partial) => updateEntry(entry.id, partial)}
-                />
+                <LikelihoodRow key={entry.id} entry={entry} />
               ))}
             </tbody>
           </table>

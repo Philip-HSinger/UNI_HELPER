@@ -1,9 +1,9 @@
 import { createContext, useContext, useEffect, useMemo, useRef, type ReactNode } from 'react'
 import { usePersistentState } from '../hooks/usePersistentState'
 import { useReferenceData } from '../hooks/useReferenceData'
-import { newId, blankSchoolEntry, catalogEntryToSchoolEntry, createInitialState } from '../lib/defaults'
+import { catalogEntryToSchoolEntry, createInitialState } from '../lib/defaults'
 import { computeSchoolScores, estimateSchoolReuse } from '../lib/scoring'
-import type { EnrichedEntry, OwnScores, SchoolCatalogEntry, SchoolEntry } from '../types'
+import type { ApplicationStatus, EnrichedEntry, OwnScores, SchoolCatalogEntry } from '../types'
 
 const EMPTY_STATE = { ownScores: { english: 700, math: 700 }, entries: [] }
 
@@ -16,13 +16,7 @@ interface AppContextValue {
   entries: EnrichedEntry[]
   excludeCatalogIds: Set<string>
   addFromCatalog: (catalogId: string) => void
-  addBlank: () => void
-  updateEntry: (id: string, partial: Partial<SchoolEntry>) => void
-  toggleCommitted: (id: string) => void
-  addPrompt: (id: string, text: string) => void
-  updatePromptText: (id: string, index: number, text: string) => void
-  updatePromptWordLimit: (id: string, index: number, wordLimit: number | null) => void
-  removePrompt: (id: string, index: number) => void
+  setStatus: (id: string, status: ApplicationStatus) => void
   removeEntry: (id: string) => void
 }
 
@@ -43,10 +37,14 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }, [wasFreshOnLoad, referenceLoading, catalog, setState])
 
   const enrichedEntries: EnrichedEntry[] = useMemo(() => {
-    const committedPromptIds = state.entries.filter((e) => e.committed).flatMap((e) => e.prompts.map((p) => p.id))
+    // Schools with any status past "not started" are treated as essays you're actually writing —
+    // that's what every other school's reuse gets estimated against (see estimateSchoolReuse).
+    const applyingPromptIds = state.entries
+      .filter((e) => e.status !== 'not_started')
+      .flatMap((e) => e.prompts.map((p) => p.id))
     return state.entries.map((entry) => {
       const promptIds = entry.prompts.map((p) => p.id)
-      const reusePercent = estimateSchoolReuse(promptIds, committedPromptIds, matrix)
+      const reusePercent = estimateSchoolReuse(promptIds, applyingPromptIds, matrix)
       const computed = computeSchoolScores(entry, state.ownScores, reusePercent)
       return { ...entry, ...computed }
     })
@@ -62,62 +60,15 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setState((s) => ({ ...s, entries: [...s.entries, catalogEntryToSchoolEntry(catalogEntry)] }))
   }
 
-  function addBlank() {
-    setState((s) => ({ ...s, entries: [...s.entries, blankSchoolEntry()] }))
-  }
-
-  function updateEntry(id: string, partial: Partial<SchoolEntry>) {
-    setState((s) => ({ ...s, entries: s.entries.map((e) => (e.id === id ? { ...e, ...partial } : e)) }))
-  }
-
-  function toggleCommitted(id: string) {
-    setState((s) => ({
-      ...s,
-      entries: s.entries.map((e) => (e.id === id ? { ...e, committed: !e.committed } : e)),
-    }))
-  }
-
-  function addPrompt(id: string, text: string) {
-    setState((s) => ({
-      ...s,
-      entries: s.entries.map((e) =>
-        e.id === id ? { ...e, prompts: [...e.prompts, { id: newId(), text, wordLimit: null }] } : e,
-      ),
-    }))
-  }
-
-  function updatePromptText(id: string, index: number, text: string) {
-    setState((s) => ({
-      ...s,
-      entries: s.entries.map((e) =>
-        e.id === id ? { ...e, prompts: e.prompts.map((p, i) => (i === index ? { ...p, text } : p)) } : e,
-      ),
-    }))
-  }
-
-  function updatePromptWordLimit(id: string, index: number, wordLimit: number | null) {
-    setState((s) => ({
-      ...s,
-      entries: s.entries.map((e) =>
-        e.id === id ? { ...e, prompts: e.prompts.map((p, i) => (i === index ? { ...p, wordLimit } : p)) } : e,
-      ),
-    }))
-  }
-
-  function removePrompt(id: string, index: number) {
-    setState((s) => ({
-      ...s,
-      entries: s.entries.map((e) => (e.id === id ? { ...e, prompts: e.prompts.filter((_, i) => i !== index) } : e)),
-    }))
+  function setStatus(id: string, status: ApplicationStatus) {
+    setState((s) => ({ ...s, entries: s.entries.map((e) => (e.id === id ? { ...e, status } : e)) }))
   }
 
   function removeEntry(id: string) {
     setState((s) => ({ ...s, entries: s.entries.filter((e) => e.id !== id) }))
   }
 
-  const excludeCatalogIds = new Set(
-    state.entries.map((e) => e.fromCatalogId).filter((id): id is string => id !== null),
-  )
+  const excludeCatalogIds = new Set(state.entries.map((e) => e.fromCatalogId))
 
   const value: AppContextValue = {
     catalog,
@@ -128,13 +79,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     entries: enrichedEntries,
     excludeCatalogIds,
     addFromCatalog,
-    addBlank,
-    updateEntry,
-    toggleCommitted,
-    addPrompt,
-    updatePromptText,
-    updatePromptWordLimit,
-    removePrompt,
+    setStatus,
     removeEntry,
   }
 

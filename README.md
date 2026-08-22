@@ -2,15 +2,19 @@
 
 A tool for college applicants across three pages:
 
-- **Overview** — your SAT scores, which schools you've committed to (100% going regardless of
-  outcome), and a ranked list by **Efficiency Score** — the best admissions "return" per unit of
-  essay-writing effort.
+- **Overview** — your SAT scores, which schools you're applying to, and a ranked list by
+  **Efficiency Score** — the best admissions "return" per unit of essay-writing effort.
 - **Likelihood of getting in** — each school's composite/English/Math score bands, your estimated
   percentile (via bell-curve interpolation against the published 25th/50th/75th band), how much
   that school actually weighs standardized testing, its acceptance rate, and a Reach/Match/Safety
-  read.
+  read. All read-only — this reference data is curated in Supabase, not editable in the app.
 - **Difficulty of applying** — essay count, total word count, the actual prompts, a difficulty
-  rating, and estimated essay reuse from a real prompt-to-prompt similarity database.
+  rating (set by the site, not the user), and estimated essay reuse from a real prompt-to-prompt
+  similarity database.
+
+Adding schools is search-only, from a fixed catalog — there's no "add a custom school" escape
+hatch, since every school's percentiles/prompts/difficulty are meant to be curated data, not
+something a visitor free-types in.
 
 Ported from a personal Excel workbook (`guide.xlsx`) — see `src/lib/scoring.ts` for the formulas
 and `src/lib/scoring.test.ts` for tests confirming they reproduce the original spreadsheet's numbers.
@@ -19,16 +23,17 @@ and `src/lib/scoring.test.ts` for tests confirming they reproduce the original s
 
 Vite + React + TypeScript + Tailwind CSS v4, hosted on GitHub Pages, backed by **Supabase**
 (hosted Postgres) for shared reference data. Your own working list — which schools you've added,
-`committed` flags, application status, own scores — stays in `localStorage`, per browser; there's
-no login yet (see "Adding accounts" below).
+each one's application `status`, own scores — stays in `localStorage`, per browser; there's no
+login yet (see "Adding accounts" below).
 
-**How essay reuse is estimated:** mark a school "Committed" and its prompts become the reference
-set every other school is compared against. `prompt_similarity` (a Supabase table) holds real,
-curated pairwise scores — e.g. "MIT's intellectual-curiosity prompt overlaps 75% with Princeton's
-'what excites you academically' prompt." A candidate school's reuse % is the best match across your
-committed schools' prompts, averaged over its own prompts (see `estimateSchoolReuse` in
-`src/lib/scoring.ts`); essay effort then discounts difficulty by that reuse — a 75% match still
-leaves 25% of the work, never zero, unless a pair is actually scored 100.
+**How essay reuse is estimated:** set a school's status to "Applying" (or further along —
+Submitted/Accepted/etc.) and its prompts become part of the reference set every other school is
+compared against. `prompt_similarity` (a Supabase table) holds real, curated pairwise scores — e.g.
+"MIT's intellectual-curiosity prompt overlaps 75% with Princeton's 'what excites you academically'
+prompt." A candidate school's reuse % is the best match across the prompts of schools you're
+applying to, averaged over its own prompts (see `estimateSchoolReuse` in `src/lib/scoring.ts`);
+essay effort then discounts difficulty by that reuse — a 75% match still leaves 25% of the work,
+never zero, unless a pair is actually scored 100.
 
 ## Backend (Supabase)
 
@@ -101,6 +106,6 @@ src/
   hooks/usePersistentState.ts, useReferenceData.ts, useHashRoute.ts, useSortedEntries.ts
   context/AppContext.tsx        # shared state + handlers for all three pages
   pages/                        # OverviewPage, LikelihoodPage, DifficultyPage
-  components/                   # NavBar, per-page rows, shared form fields, etc.
+  components/                   # NavBar, per-page rows, add-school search, status badge, etc.
   types.ts                      # shared data model
 ```
