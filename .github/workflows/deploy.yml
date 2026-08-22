@@ -21,7 +21,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # 22+ needed: @supabase/supabase-js's realtime client requires a native WebSocket
+          # global (added in Node 22) - on 20 it throws at createClient() time, failing `npm test`.
+          node-version: 22
           cache: npm
       - run: npm ci
       - run: npm run test
