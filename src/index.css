@@ -1,18 +1,45 @@
 @import "tailwindcss";
 
+@theme {
+  /* Light-mode palette (base values — see the dark override below) */
+  --color-paper: #faf8f5;
+  --color-ink: #1a1a1a;
+  --color-ink-muted: #6b6560;
+  --color-hairline: #e4dfd6;
+  --color-surface: #ffffff;
+  --color-accent: #2b4c3f;
+  --color-accent-soft: #e7ece4;
+  --color-error: #8c2f2f;
+
+  /* Fonts: Newsreader (serif display/lede), Public Sans (UI body), IBM Plex Mono (all numeric data) */
+  --font-display: 'Newsreader', ui-serif, Georgia, serif;
+  --font-sans: 'Public Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* Dark mode is OS-preference only (no .dark class anywhere) — redefine the same custom
+   properties Tailwind's @theme block generated, so every utility that reads them (bg-paper,
+   text-ink, border-hairline, etc.) repaints automatically with no dark: variants needed. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #16140f;
+    --color-ink: #f2eee7;
+    --color-ink-muted: #9c948a;
+    --color-hairline: #332f28;
+    --color-surface: #1c1a15;
+    --color-accent: #7fb69a;
+    --color-accent-soft: #26332b;
+    --color-error: #d97878;
+  }
+}
+
 html {
   color-scheme: light dark;
 }
 
 body {
   margin: 0;
-  font-family:
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    'Segoe UI',
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: var(--font-sans);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
 }

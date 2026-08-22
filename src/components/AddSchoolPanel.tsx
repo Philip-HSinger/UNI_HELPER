@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { SchoolCatalogEntry } from '../types'
+import { CARD_CLASS } from '../lib/uiStyles'
 
 export function AddSchoolPanel({
   catalog,
@@ -21,19 +22,19 @@ export function AddSchoolPanel({
   }, [query, excludeCatalogIds, catalog])
 
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900">
-      <h2 className="mb-3 text-sm font-semibold text-slate-900 dark:text-slate-100">Add a school</h2>
+    <div className={CARD_CLASS}>
+      <h2 className="mb-3 text-sm font-semibold text-ink">Add a school</h2>
       <div className="relative min-w-56">
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search schools…"
-          className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
+          className="w-full rounded-md border border-hairline bg-surface px-3 py-2 text-sm text-ink focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
         />
         {query && (
-          <div className="absolute z-10 mt-1 w-full overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg dark:border-slate-700 dark:bg-slate-800">
+          <div className="absolute z-10 mt-1 w-full overflow-hidden rounded-md border border-hairline bg-surface">
             {matches.length === 0 && (
-              <div className="px-3 py-2 text-sm text-slate-400">
+              <div className="px-3 py-2 text-sm text-ink-muted">
                 No matches — the school database only covers a set list; more schools get added over time.
               </div>
             )}
@@ -45,7 +46,7 @@ export function AddSchoolPanel({
                   onAddFromCatalog(s.id)
                   setQuery('')
                 }}
-                className="block w-full px-3 py-2 text-left text-sm hover:bg-indigo-50 dark:text-slate-100 dark:hover:bg-indigo-950"
+                className="block w-full px-3 py-2 text-left text-sm text-ink hover:bg-accent-soft"
               >
                 {s.name}
               </button>

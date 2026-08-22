@@ -1,10 +1,11 @@
 import type { EnrichedEntry } from '../types'
+import { CARD_CLASS } from '../lib/uiStyles'
 
 function Stat({ label, value }: { label: string; value: string | number }) {
   return (
-    <div className="flex-1 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm dark:border-slate-700 dark:bg-slate-900">
-      <div className="text-xs font-medium text-slate-400">{label}</div>
-      <div className="mt-0.5 text-xl font-semibold text-slate-900 dark:text-slate-100">{value}</div>
+    <div className={`flex-1 ${CARD_CLASS}`}>
+      <div className="text-xs font-medium text-ink-muted">{label}</div>
+      <div className="mt-0.5 font-mono text-xl font-semibold tabular-nums text-ink">{value}</div>
     </div>
   )
 }

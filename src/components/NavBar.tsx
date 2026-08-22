@@ -6,7 +6,7 @@ const LINKS: { route: string; label: string }[] = [
 
 export function NavBar({ route, onNavigate }: { route: string; onNavigate: (route: string) => void }) {
   return (
-    <nav className="flex gap-1 border-b border-slate-200 px-4 dark:border-slate-800">
+    <nav className="flex gap-1 border-b border-hairline px-4">
       {LINKS.map((link) => {
         const active = route === link.route
         return (
@@ -14,10 +14,8 @@ export function NavBar({ route, onNavigate }: { route: string; onNavigate: (rout
             key={link.route}
             type="button"
             onClick={() => onNavigate(link.route)}
-            className={`border-b-2 px-3 py-3 text-sm font-medium transition-colors ${
-              active
-                ? 'border-indigo-600 text-indigo-600 dark:border-indigo-400 dark:text-indigo-400'
-                : 'border-transparent text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200'
+            className={`border-b-2 px-3 py-3 text-sm font-medium tracking-wide transition-colors [font-variant:small-caps] ${
+              active ? 'border-accent text-accent' : 'border-transparent text-ink-muted hover:text-ink'
             }`}
           >
             {link.label}

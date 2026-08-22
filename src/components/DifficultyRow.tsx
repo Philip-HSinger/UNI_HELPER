@@ -20,47 +20,49 @@ export function DifficultyRow({
 }) {
   return (
     <>
-      <tr
-        className="cursor-pointer border-b border-slate-100 hover:bg-slate-50 dark:border-slate-800 dark:hover:bg-slate-800/50"
-        onClick={onToggleExpand}
-      >
+      <tr className="cursor-pointer border-b border-hairline hover:bg-accent-soft" onClick={onToggleExpand}>
         <td className="px-3 py-3">
-          <div className="font-medium text-slate-900 dark:text-slate-100">{entry.name}</div>
-          <div className="text-xs text-slate-400">{entry.platform}</div>
+          <div className="font-medium text-ink">{entry.name}</div>
+          <div className="text-xs text-ink-muted">{entry.platform}</div>
         </td>
-        <td className="px-3 py-3 text-sm tabular-nums text-slate-600 dark:text-slate-300">{entry.prompts.length}</td>
-        <td className="px-3 py-3 text-sm text-slate-600 dark:text-slate-300">{wordCountSummary(entry.prompts)}</td>
-        <td className="px-3 py-3 text-sm tabular-nums text-slate-600 dark:text-slate-300">{entry.difficulty}</td>
-        <td className="px-3 py-3 text-sm tabular-nums text-slate-600 dark:text-slate-300">{entry.estimatedReuse}%</td>
-        <td className="px-3 py-3 text-sm font-semibold tabular-nums text-indigo-600 dark:text-indigo-400">
-          {entry.essayEffort}
+        <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">{entry.prompts.length}</td>
+        <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">{wordCountSummary(entry.prompts)}</td>
+        <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">{entry.difficulty}</td>
+        <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">{entry.estimatedReuse}%</td>
+        <td className="px-3 py-3">
+          <span className="inline-flex items-center justify-center rounded-md border border-accent px-2 py-0.5 font-mono text-sm font-semibold tabular-nums text-accent">
+            {entry.essayEffort}
+          </span>
         </td>
       </tr>
 
       {expanded && (
-        <tr className="border-b border-slate-100 bg-slate-50/70 dark:border-slate-800 dark:bg-slate-800/30">
+        <tr className="border-b border-hairline bg-accent-soft">
           <td colSpan={6} className="px-4 py-4" onClick={(e) => e.stopPropagation()}>
-            <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Supplemental prompts</h4>
+            <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-ink-muted">
+              Supplemental prompts
+            </h4>
             {entry.prompts.length === 0 ? (
-              <p className="text-sm text-slate-400">No prompts on file for this school yet.</p>
+              <p className="text-sm text-ink-muted">No prompts on file for this school yet.</p>
             ) : (
               <ul className="space-y-2">
                 {entry.prompts.map((prompt) => (
                   <li
                     key={prompt.id}
-                    className="flex items-start justify-between gap-4 rounded-lg border border-slate-200 p-2 text-sm text-slate-700 dark:border-slate-700 dark:text-slate-200"
+                    className="flex items-start justify-between gap-4 rounded-md border border-hairline p-2 text-sm text-ink"
                   >
                     <span>{prompt.text}</span>
-                    <span className="shrink-0 whitespace-nowrap text-xs text-slate-400">
+                    <span className="shrink-0 whitespace-nowrap font-mono text-xs text-ink-muted">
                       {prompt.wordLimit === null ? 'no stated limit' : `${prompt.wordLimit} words`}
                     </span>
                   </li>
                 ))}
               </ul>
             )}
-            <p className="mt-3 text-xs text-slate-400">
-              Difficulty and prompts are set by the site — estimated reuse ({entry.estimatedReuse}%) comes from the
-              prompt-similarity database, scored against the prompts of schools you're applying to.
+            <p className="mt-3 text-xs text-ink-muted">
+              Difficulty and prompts are set by the site — estimated reuse (
+              <span className="font-mono">{entry.estimatedReuse}%</span>) comes from the prompt-similarity
+              database, scored against the prompts of schools you're applying to.
             </p>
           </td>
         </tr>

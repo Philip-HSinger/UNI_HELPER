@@ -5,7 +5,7 @@ import { ApplyingSchoolsPanel } from '../components/ApplyingSchoolsPanel'
 import { SummaryBar } from '../components/SummaryBar'
 import { AddSchoolPanel } from '../components/AddSchoolPanel'
 import { StatusBadge } from '../components/StatusBadge'
-import { CLASSIFICATION_STYLES } from '../lib/uiStyles'
+import { CARD_CLASS_FLUSH, CLASSIFICATION_STYLES } from '../lib/uiStyles'
 import type { EnrichedEntry } from '../types'
 
 export function OverviewPage() {
@@ -29,59 +29,60 @@ export function OverviewPage() {
       <AddSchoolPanel catalog={catalog} excludeCatalogIds={excludeCatalogIds} onAddFromCatalog={addFromCatalog} />
 
       {entries.length === 0 ? (
-        <div className="rounded-xl border border-dashed border-slate-300 bg-white p-10 text-center text-sm text-slate-400 dark:border-slate-700 dark:bg-slate-900">
+        <div className={`${CARD_CLASS_FLUSH} border-dashed p-10 text-center text-sm text-ink-muted`}>
           No schools on your list yet — add one above.
         </div>
       ) : (
-        <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-900">
-          <table className="w-full min-w-[700px] border-collapse text-left">
-            <thead>
-              <tr className="border-b border-slate-200 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:border-slate-700">
-                <th className="px-3 py-2">School</th>
-                <th className="px-3 py-2">Fit</th>
-                <th
-                  className="cursor-pointer select-none px-3 py-2 hover:text-slate-600 dark:hover:text-slate-200"
-                  onClick={() => toggleSort('efficiencyScore')}
-                >
-                  Efficiency{sortKey === 'efficiencyScore' && (sortDir === 'asc' ? ' ▲' : ' ▼')}
-                </th>
-                <th className="px-3 py-2">Status</th>
-                <th className="px-3 py-2" />
-              </tr>
-            </thead>
-            <tbody>
-              {sorted.map((entry) => (
-                <tr
-                  key={entry.id}
-                  className="border-b border-slate-100 last:border-0 hover:bg-slate-50 dark:border-slate-800 dark:hover:bg-slate-800/50"
-                >
-                  <td className="px-3 py-3 font-medium text-slate-900 dark:text-slate-100">{entry.name}</td>
-                  <td className="px-3 py-3">
-                    <span
-                      className={`rounded-full px-2 py-0.5 text-xs font-medium ${CLASSIFICATION_STYLES[entry.classification]}`}
-                    >
-                      {entry.classification}
-                    </span>
-                  </td>
-                  <td className="px-3 py-3 text-sm font-semibold tabular-nums text-indigo-600 dark:text-indigo-400">
-                    {entry.efficiencyScore}
-                  </td>
-                  <td className="px-3 py-3">
-                    <StatusBadge status={entry.status} onChange={(status) => setStatus(entry.id, status)} />
-                  </td>
-                  <td className="px-3 py-3 text-right">
-                    <button
-                      type="button"
-                      onClick={() => removeEntry(entry.id)}
-                      className="rounded-lg px-2 py-1 text-xs text-slate-400 hover:bg-rose-50 hover:text-rose-600 dark:hover:bg-rose-950"
-                    >
-                      Remove
-                    </button>
-                  </td>
+        <div className={CARD_CLASS_FLUSH}>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[700px] border-collapse text-left">
+              <thead>
+                <tr className="border-b border-hairline text-xs font-semibold uppercase tracking-wide text-ink-muted">
+                  <th className="px-3 py-2">School</th>
+                  <th className="px-3 py-2">Fit</th>
+                  <th
+                    className="cursor-pointer select-none px-3 py-2 hover:text-ink"
+                    onClick={() => toggleSort('efficiencyScore')}
+                  >
+                    Efficiency{sortKey === 'efficiencyScore' && (sortDir === 'asc' ? ' ▲' : ' ▼')}
+                  </th>
+                  <th className="px-3 py-2">Status</th>
+                  <th className="px-3 py-2" />
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {sorted.map((entry) => (
+                  <tr key={entry.id} className="border-b border-hairline last:border-0 hover:bg-accent-soft">
+                    <td className="px-3 py-3 font-medium text-ink">{entry.name}</td>
+                    <td className="px-3 py-3">
+                      <span
+                        className={`rounded-sm px-2 py-0.5 text-xs font-medium tracking-wide ${CLASSIFICATION_STYLES[entry.classification]}`}
+                      >
+                        {entry.classification}
+                      </span>
+                    </td>
+                    <td className="px-3 py-3">
+                      <span className="inline-flex items-center justify-center rounded-md border border-accent px-2 py-0.5 font-mono text-sm font-semibold tabular-nums text-accent">
+                        {entry.efficiencyScore}
+                      </span>
+                    </td>
+                    <td className="px-3 py-3">
+                      <StatusBadge status={entry.status} onChange={(status) => setStatus(entry.id, status)} />
+                    </td>
+                    <td className="px-3 py-3 text-right">
+                      <button
+                        type="button"
+                        onClick={() => removeEntry(entry.id)}
+                        className="rounded-md px-2 py-1 text-xs text-ink-muted hover:bg-accent-soft hover:text-ink"
+                      >
+                        Remove
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       )}
     </div>

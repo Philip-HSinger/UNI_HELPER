@@ -6,25 +6,27 @@ export function LikelihoodRow({ entry }: { entry: EnrichedEntry }) {
   const composite = compositeBand(entry)
 
   return (
-    <tr className="border-b border-slate-100 last:border-0 dark:border-slate-800">
+    <tr className="border-b border-hairline last:border-0">
       <td className="px-3 py-3">
-        <div className="font-medium text-slate-900 dark:text-slate-100">{entry.name}</div>
-        <div className="text-xs text-slate-400">
+        <div className="font-medium text-ink">{entry.name}</div>
+        <div className="font-mono text-xs tabular-nums text-ink-muted">
           Composite (approx.) {composite.p25}/{composite.p50}/{composite.p75}
         </div>
       </td>
       <td className="px-3 py-3">
-        <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${CLASSIFICATION_STYLES[entry.classification]}`}>
+        <span
+          className={`rounded-sm px-2 py-0.5 text-xs font-medium tracking-wide ${CLASSIFICATION_STYLES[entry.classification]}`}
+        >
           {entry.classification}
         </span>
       </td>
-      <td className="px-3 py-3 text-sm tabular-nums text-slate-600 dark:text-slate-300">
+      <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">
         {entry.englishPercentile}
-        <span className="text-slate-400"> / {entry.mathPercentile}</span>
+        <span className="text-ink-muted"> / {entry.mathPercentile}</span>
       </td>
-      <td className="px-3 py-3 text-sm tabular-nums text-slate-600 dark:text-slate-300">{entry.weightedAverage}</td>
-      <td className="px-3 py-3 text-sm text-slate-600 dark:text-slate-300">{entry.importance}</td>
-      <td className="px-3 py-3 text-sm tabular-nums text-slate-600 dark:text-slate-300">
+      <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">{entry.weightedAverage}</td>
+      <td className="px-3 py-3 text-sm text-ink">{entry.importance}</td>
+      <td className="px-3 py-3 font-mono text-sm tabular-nums text-ink">
         {entry.acceptanceRate === null ? '—' : `${(entry.acceptanceRate * 100).toFixed(1)}%`}
       </td>
       <td className={`px-3 py-3 text-sm font-medium ${RECOMMENDATION_STYLES[entry.testRecommendation]}`}>

@@ -1,4 +1,5 @@
 import type { OwnScores } from '../types'
+import { CARD_CLASS } from '../lib/uiStyles'
 
 export function ScoreInputPanel({
   scores,
@@ -8,13 +9,11 @@ export function ScoreInputPanel({
   onChange: (scores: OwnScores) => void
 }) {
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900">
-      <h2 className="mb-3 text-sm font-semibold text-slate-900 dark:text-slate-100">Your SAT scores</h2>
+    <div className={CARD_CLASS}>
+      <h2 className="mb-3 text-sm font-semibold text-ink">Your SAT scores</h2>
       <div className="grid grid-cols-2 gap-3">
         <label className="block">
-          <span className="mb-1 block text-xs font-medium text-slate-500 dark:text-slate-400">
-            English (EBRW)
-          </span>
+          <span className="mb-1 block text-xs font-medium text-ink-muted">English (EBRW)</span>
           <input
             type="number"
             min={200}
@@ -22,11 +21,11 @@ export function ScoreInputPanel({
             step={10}
             value={scores.english}
             onChange={(e) => onChange({ ...scores, english: Number(e.target.value) })}
-            className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
+            className="w-full rounded-md border border-hairline bg-surface px-3 py-2 font-mono text-sm tabular-nums text-ink focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
           />
         </label>
         <label className="block">
-          <span className="mb-1 block text-xs font-medium text-slate-500 dark:text-slate-400">Math</span>
+          <span className="mb-1 block text-xs font-medium text-ink-muted">Math</span>
           <input
             type="number"
             min={200}
@@ -34,11 +33,11 @@ export function ScoreInputPanel({
             step={10}
             value={scores.math}
             onChange={(e) => onChange({ ...scores, math: Number(e.target.value) })}
-            className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
+            className="w-full rounded-md border border-hairline bg-surface px-3 py-2 font-mono text-sm tabular-nums text-ink focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
           />
         </label>
       </div>
-      <p className="mt-2 text-xs text-slate-400">
+      <p className="mt-2 text-xs text-ink-muted">
         Used to estimate your percentile at each school from its published 25th/50th/75th bands.
       </p>
     </div>
