@@ -1,86 +1,106 @@
 # Application Efficiency Guide
 
-A tool for college applicants to see, for every school on their list: their estimated percentile
-against that school's SAT bands, whether submitting test scores helps or hurts them, and — the
-core feature — an **Efficiency Score** ranking which supplements give the best admissions "return"
-for the essay-writing effort they demand, after crediting reuse estimated from the schools you've
-already committed to (100% going regardless of outcome).
+A tool for college applicants across three pages:
 
-Ported from a personal Excel workbook (`guide.xlsx`) into a standalone web app anyone can use with
-their own scores. See `src/lib/scoring.ts` for the formulas and `src/lib/scoring.test.ts` for tests
-confirming they reproduce the original spreadsheet's numbers.
+- **Overview** — your SAT scores, which schools you've committed to (100% going regardless of
+  outcome), and a ranked list by **Efficiency Score** — the best admissions "return" per unit of
+  essay-writing effort.
+- **Likelihood of getting in** — each school's composite/English/Math score bands, your estimated
+  percentile (via bell-curve interpolation against the published 25th/50th/75th band), how much
+  that school actually weighs standardized testing, its acceptance rate, and a Reach/Match/Safety
+  read.
+- **Difficulty of applying** — essay count, total word count, the actual prompts, a difficulty
+  rating, and estimated essay reuse from a real prompt-to-prompt similarity database.
+
+Ported from a personal Excel workbook (`guide.xlsx`) — see `src/lib/scoring.ts` for the formulas
+and `src/lib/scoring.test.ts` for tests confirming they reproduce the original spreadsheet's numbers.
 
 ## Stack
 
-Vite + React + TypeScript + Tailwind CSS v4. All user data (own scores, the working school list,
-prompt theme tags, application status) lives only in the browser via `localStorage` — there is no
-backend in v1. The school reference data (percentile bands, prompts, acceptance rates) ships in
-`src/data/schools.json`, versioned in git — see `src/data/README.md` for how to update it every
-admissions cycle.
+Vite + React + TypeScript + Tailwind CSS v4, hosted on GitHub Pages, backed by **Supabase**
+(hosted Postgres) for shared reference data. Your own working list — which schools you've added,
+`committed` flags, application status, own scores — stays in `localStorage`, per browser; there's
+no login yet (see "Adding accounts" below).
 
-**How essay reuse is estimated:** mark a school "Committed" (100% going regardless of outcome) and
-tag its prompts with themes (`src/lib/themes.ts` — "why this major", "identity/community",
-"challenge/adversity", etc.). Every other school's reuse % comes from how much its own
-(similarly-tagged) prompts overlap in theme with your committed schools' prompts — see
-`estimateSchoolReuse` in `src/lib/scoring.ts`. This replaces a literal prompt-by-prompt similarity
-matrix (which doesn't generalize past a fixed set of pre-scored schools) with something that works
-for any school or custom prompt a user adds, at the cost of needing prompts tagged to be useful.
-The catalog ships with prompts untagged; tagging them is a manual (or later, LLM-assisted) step.
+**How essay reuse is estimated:** mark a school "Committed" and its prompts become the reference
+set every other school is compared against. `prompt_similarity` (a Supabase table) holds real,
+curated pairwise scores — e.g. "MIT's intellectual-curiosity prompt overlaps 75% with Princeton's
+'what excites you academically' prompt." A candidate school's reuse % is the best match across your
+committed schools' prompts, averaged over its own prompts (see `estimateSchoolReuse` in
+`src/lib/scoring.ts`); essay effort then discounts difficulty by that reuse — a 75% match still
+leaves 25% of the work, never zero, unless a pair is actually scored 100.
+
+## Backend (Supabase)
+
+The school catalog and the prompt-similarity matrix live in Postgres, read by the app with
+Supabase's public `anon` key (safe to ship in the built JS — access control is Row Level Security,
+not secrecy of that key; see `supabase/schema.sql`). One-time setup for a fresh clone/fork:
+
+1. Create a free project at [supabase.com](https://supabase.com).
+2. In its SQL editor, run `supabase/schema.sql` (tables + RLS policies), then
+   `supabase/seed.sql` (the 19 starter schools + their prompts, generated from
+   `supabase/seed_source.schools.json` by `scripts/generate_seed_sql.py`).
+3. From Project Settings → API, copy the **Project URL** and **anon public key** into a local
+   `.env.local` (copy `.env.local.example`) for `npm run dev`, and into the GitHub repo's
+   **Settings → Secrets and variables → Actions** (as `VITE_SUPABASE_URL` /
+   `VITE_SUPABASE_ANON_KEY`) so the deploy workflow can build with them.
+4. From then on, edit school data and fill in `prompt_similarity` scores directly in Supabase's
+   table editor (a spreadsheet-like grid) — see `src/data/README.md`. No redeploy needed; the live
+   site reads this at runtime.
 
 ## Getting started
 
 ```bash
 npm install
-npm run dev      # http://localhost:5173
-npm run test     # scoring engine unit tests
+npm run dev      # http://localhost:5173 — needs .env.local (see above) to actually load data
+npm run test     # unit tests — pure functions only, no network/Supabase needed
 npm run build    # production build to dist/
 ```
 
-## Deploying (now): GitHub Pages, free
+## Deploying: GitHub Pages, free
 
-1. Push this repo to GitHub.
-2. In the repo's Settings → Pages, set **Source** to "GitHub Actions".
-3. Push to `master` — `.github/workflows/deploy.yml` builds and publishes automatically to
+1. Push this repo to GitHub (public, for the free Pages tier).
+2. Settings → Pages → Source: "GitHub Actions".
+3. Add the two Supabase secrets (above) under Settings → Secrets and variables → Actions.
+4. Push to `master` — `.github/workflows/deploy.yml` builds and publishes automatically to
    `https://<your-username>.github.io/<repo-name>/`.
 
 That workflow also runs `npm run test` on every push, so a scoring-formula regression fails the
 build instead of quietly shipping.
 
-## Upgrading to monetise it later
+## Adding accounts / a paywall later
 
-GitHub Pages only serves static files — no accounts, no payments, no server-side database are
-possible there. When you're ready to monetise, the same codebase moves without a rewrite:
+A backend already exists (Supabase), which gets you partway to monetising without more
+infrastructure changes:
 
-1. **Host on [Vercel](https://vercel.com) instead** (or alongside — Pages can stay as a free
-   marketing/demo instance). Vercel auto-detects this Vite project; connecting the GitHub repo is
-   the entire setup.
-2. **Add a backend** via Vercel serverless functions (`api/*.ts` — works with any frontend
-   framework, no migration off Vite/React required).
-3. **Add accounts**, so a user's list follows them across devices instead of living in one
-   browser's `localStorage` — e.g. [Clerk](https://clerk.com) or [Supabase Auth](https://supabase.com/auth)
-   for the login flow, with the `AppState` shape in `src/types.ts` persisted server-side (Supabase/
-   Postgres is a natural fit) instead of (or in addition to) `localStorage`.
-4. **Add a paywall** with [Stripe](https://stripe.com) (Checkout + a webhook `api/` route). A
-   sensible freemium split: free tier caps the number of schools on a list (e.g. 5); paid tier
-   unlocks unlimited schools, CSV/PDF export, and synced accounts.
-5. **Upgrade reuse estimation with an LLM**, once there's a backend to call one from: let paid
-   users paste actual essay drafts and prompts and get a real similarity/reuse score per prompt
-   instead of (or blended with) the free tag-overlap heuristic — a natural, clearly-better paid
-   feature rather than an arbitrary tier cutoff.
-6. Keep `src/data/schools.json` as the shared catalog either way — it's reference data, not user
-   data, so it doesn't need to move into the per-user database.
+1. **Accounts**: [Supabase Auth](https://supabase.com/auth) can hold each user's own working list
+   (today's `localStorage` `AppState`) server-side instead, so it follows them across devices.
+2. **Paywall**: [Stripe](https://stripe.com) Checkout + a webhook needs actual server code — add
+   Vercel serverless functions (`api/*.ts`, works alongside this Vite app with no migration) or
+   Supabase Edge Functions. A sensible freemium split: free tier caps schools on a list (e.g. 5);
+   paid tier unlocks unlimited schools, CSV/PDF export, and synced accounts.
+3. **Smarter reuse estimation**: once there's a backend calling an LLM is easy — let paid users
+   paste actual essay drafts and get a real similarity score per prompt instead of relying on the
+   manually-curated matrix, or use it to help seed matrix scores faster.
 
 ## Project structure
 
 ```
+supabase/
+  schema.sql                    # table definitions + Row Level Security policies
+  seed.sql                      # generated INSERT statements (run once per fresh project)
+  seed_source.schools.json      # one-time seed source (not imported by the app)
+scripts/
+  generate_seed_sql.py          # regenerates seed.sql from seed_source.schools.json
 src/
-  data/schools.json      # the school reference "database" (~19 pre-seeded schools)
-  data/README.md         # how to update it each admissions cycle
-  lib/scoring.ts         # the ported formulas + theme-overlap reuse estimation (unit tested)
-  lib/themes.ts          # the fixed prompt-theme vocabulary
-  lib/defaults.ts        # catalog access + initial-state helpers
-  lib/storage.ts         # localStorage persistence
-  hooks/usePersistentState.ts
-  components/            # UI: score input, theme coverage, school table/row, add-school, summary
-  types.ts               # shared data model
+  lib/scoring.ts                # ported formulas + matrix-based reuse estimation (unit tested)
+  lib/catalog.ts, similarity.ts # Supabase fetch + row-shaping (shaping is unit tested)
+  lib/supabaseClient.ts         # the Supabase client (anon key from env)
+  lib/defaults.ts               # blank/catalog-derived entry helpers
+  lib/storage.ts                # localStorage persistence
+  hooks/usePersistentState.ts, useReferenceData.ts, useHashRoute.ts, useSortedEntries.ts
+  context/AppContext.tsx        # shared state + handlers for all three pages
+  pages/                        # OverviewPage, LikelihoodPage, DifficultyPage
+  components/                   # NavBar, per-page rows, shared form fields, etc.
+  types.ts                      # shared data model
 ```

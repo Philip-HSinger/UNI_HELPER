@@ -1,44 +1,28 @@
-# School data (`schools.json`)
+# Where the data actually lives now
 
-This file is the app's "database" for v1 — a plain, git-versioned JSON file. That's a deliberate
-choice for reference data of this size: it's diffable, reviewable in a pull request, and needs no
-server. If this later needs to be edited by non-technical people through an admin UI, swap it for
-a real database table with the same shape and point `src/lib/defaults.ts`'s `CATALOG` import at an
-API call instead — nothing else in the app needs to change, since every component only ever reads
-`SchoolCatalogEntry` objects.
+This directory used to hold `schools.json` as the app's "database" — a git-committed file. That's
+been replaced: the school catalog (percentiles, acceptance rate, importance, prompts) and the
+prompt-similarity matrix now live in a real Supabase (Postgres) project, fetched at runtime by
+`src/lib/catalog.ts` / `src/lib/similarity.ts`. See the root `README.md`'s "Backend (Supabase)"
+section for setup, and `supabase/schema.sql` for the table definitions.
 
-## Fields
+`schools.json` itself moved to `supabase/seed_source.schools.json` — it's now only a one-time seed
+source for `scripts/generate_seed_sql.py`, not something the app imports.
 
-| Field | Meaning | Source |
-|---|---|---|
-| `id` | stable slug, used as the catalog key | derived from name |
-| `name` | display name | — |
-| `platform` | Common App / Coalition / school-specific portal | school's application page |
-| `testOptional` | whether SAT/ACT is optional there | school's admissions/testing policy page |
-| `englishP25/50/75`, `mathP25/50/75` | SAT section score bands for enrolled students | the school's **Common Data Set (CDS), section C9** — published annually, usually as a PDF/spreadsheet on the school's institutional research site |
-| `difficulty` | 1-100 subjective essay-prompt difficulty | editorial judgement — recalibrate if it feels off |
-| `importance` | how much the school says it weighs standardized testing | CDS **section C7** ("Relative Importance of Academic and Nonacademic Factors") |
-| `prompts` | this cycle's supplemental essay prompts, as `{ text, themes }` | school's application portal |
-| `acceptanceRate` | 0-1 admit rate | CDS **section C1**, or the Common App/IPEDS aggregate |
+## Updating school data each admissions cycle
 
-`themes` (see `src/lib/themes.ts`) tags a prompt with what it's actually asking about (why this
-major, identity/community, challenge/adversity, ...) so the app can estimate essay reuse against
-whatever schools a user marks "Committed" — see the README's "How essay reuse is estimated"
-section. Catalog prompts currently ship with `themes: []` (untagged); tagging is optional but a
-school with untagged prompts will never show reuse credit for a user. Worth doing once per school
-when you're already touching its prompts for the yearly refresh below.
+Once a school's new Common Data Set is out, edit the row directly in Supabase's table editor (or
+via SQL): update the percentile bands and acceptance rate, check whether `test_optional`/
+`importance` changed, and replace/add `prompts` rows once the new cycle's supplements are released
+(usually over the summer). No redeploy needed — the live site reads this at runtime.
 
-## Updating each admissions cycle
+## Filling in the prompt-similarity matrix
 
-Common Data Sets are typically published in the winter/spring following each admissions cycle.
-Once a school's new CDS is out:
+In the `prompt_similarity` table, each row is one scored pair: `prompt_a_id`, `prompt_b_id`,
+`score` (0-100) — e.g. "MIT's intellectual-curiosity prompt overlaps 75% with Princeton's 'what
+excites you academically' prompt." The table editor's grid shows the real `prompts.text` right
+alongside (join on `prompt_a_id`/`prompt_b_id`), so there's no separate legend file to maintain.
 
-1. Open `schools.json`, find the entry, update the percentile bands and acceptance rate.
-2. Check whether `testOptional`/`importance` changed (policies shift year to year).
-3. Replace `prompts` with the new cycle's supplemental questions once released (usually over the
-   summer, from the Common App / school portal).
-4. Commit as its own PR per admissions cycle so the history stays reviewable
-   (e.g. `data: update 2027-28 percentiles and prompts`).
-
-Schools users add themselves (via "Add custom school") never touch this file — they're only ever
-stored in that user's own browser.
+One constraint to know: `prompt_a_id` must sort alphabetically before `prompt_b_id` (a check
+constraint enforces this, so a pair can't accidentally be scored twice in conflicting directions)
+— if an insert fails, swap the two IDs.

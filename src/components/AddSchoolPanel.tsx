@@ -1,11 +1,13 @@
 import { useMemo, useState } from 'react'
-import { CATALOG } from '../lib/defaults'
+import type { SchoolCatalogEntry } from '../types'
 
 export function AddSchoolPanel({
+  catalog,
   excludeCatalogIds,
   onAddFromCatalog,
   onAddBlank,
 }: {
+  catalog: SchoolCatalogEntry[]
   excludeCatalogIds: Set<string>
   onAddFromCatalog: (catalogId: string) => void
   onAddBlank: () => void
@@ -14,10 +16,11 @@ export function AddSchoolPanel({
 
   const matches = useMemo(() => {
     const q = query.trim().toLowerCase()
-    return CATALOG.filter((s) => !excludeCatalogIds.has(s.id))
+    return catalog
+      .filter((s) => !excludeCatalogIds.has(s.id))
       .filter((s) => (q ? s.name.toLowerCase().includes(q) : true))
       .slice(0, 8)
-  }, [query, excludeCatalogIds])
+  }, [query, excludeCatalogIds, catalog])
 
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900">

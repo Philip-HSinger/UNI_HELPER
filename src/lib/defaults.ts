@@ -1,7 +1,4 @@
-import schoolCatalog from '../data/schools.json'
 import type { AppState, SchoolCatalogEntry, SchoolEntry } from '../types'
-
-export const CATALOG: SchoolCatalogEntry[] = schoolCatalog as SchoolCatalogEntry[]
 
 export function newId(): string {
   if (typeof crypto !== 'undefined' && 'randomUUID' in crypto) return crypto.randomUUID()
@@ -43,9 +40,10 @@ export function blankSchoolEntry(): SchoolEntry {
 // visitor's list, so the table isn't empty on first load. Fully removable/editable.
 const STARTER_SCHOOL_IDS = ['stanford', 'cornell', 'boston-university', 'purdue']
 
-export function createInitialState(): AppState {
+/** `catalog` must already be loaded (see useReferenceData) — this only runs once that's ready. */
+export function createInitialState(catalog: SchoolCatalogEntry[]): AppState {
   return {
     ownScores: { english: 700, math: 700 },
-    entries: CATALOG.filter((s) => STARTER_SCHOOL_IDS.includes(s.id)).map(catalogEntryToSchoolEntry),
+    entries: catalog.filter((s) => STARTER_SCHOOL_IDS.includes(s.id)).map(catalogEntryToSchoolEntry),
   }
 }

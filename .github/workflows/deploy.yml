@@ -29,6 +29,11 @@ jobs:
         run: npm run build
         env:
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
+          # Set these in Settings -> Secrets and variables -> Actions. The anon key is meant to be
+          # public (see src/lib/supabaseClient.ts) - access control is Row Level Security, not
+          # secrecy of this key - but it's still a repo secret so it isn't hardcoded in the yml.
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

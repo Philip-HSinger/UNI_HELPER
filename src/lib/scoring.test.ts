@@ -2,17 +2,19 @@ import { describe, expect, it } from 'vitest'
 import {
   average,
   classify,
+  compositeBand,
   computeSchoolScores,
-  computeThemeCoverage,
   efficiencyScore,
   essayEffort,
   estimatePromptReuse,
   estimateSchoolReuse,
+  lookupSimilarity,
+  pairKey,
   percentile,
   testRecommendation,
   weightedAverage,
+  type SimilarityMatrix,
 } from './scoring'
-import type { Prompt } from '../types'
 
 // Fixtures below are read directly from the original guide.xlsx "APPLICATION GUIDE" sheet,
 // computed with the user's own SAT English 730 / Math 800, to confirm this port reproduces
@@ -64,6 +66,10 @@ describe('weightedAverage', () => {
   it('matches the workbook for Tufts', () => {
     expect(weightedAverage(61.9, 'Considered')).toBeCloseTo(59.5, 1)
   })
+  it('pins the weighted average at exactly 50 for "Not Considered", regardless of the raw average', () => {
+    expect(weightedAverage(95, 'Not Considered')).toBe(50)
+    expect(weightedAverage(5, 'Not Considered')).toBe(50)
+  })
 })
 
 describe('essayEffort', () => {
@@ -84,51 +90,67 @@ describe('essayEffort', () => {
   })
 })
 
-function prompt(themes: Prompt['themes']): Prompt {
-  return { text: 'placeholder', themes }
-}
-
-describe('computeThemeCoverage', () => {
-  it('counts how many committed prompts touch each theme', () => {
-    const coverage = computeThemeCoverage([
-      prompt(['why_major']),
-      prompt(['why_major', 'community_identity']),
-      prompt(['challenge_adversity']),
-    ])
-    expect(coverage.why_major).toBe(2)
-    expect(coverage.community_identity).toBe(1)
-    expect(coverage.challenge_adversity).toBe(1)
-    expect(coverage.values_joy).toBeUndefined()
+describe('pairKey / lookupSimilarity', () => {
+  it('is order-independent', () => {
+    const matrix: SimilarityMatrix = new Map([[pairKey('a', 'b'), 75]])
+    expect(lookupSimilarity(matrix, 'a', 'b')).toBe(75)
+    expect(lookupSimilarity(matrix, 'b', 'a')).toBe(75)
+  })
+  it('is 0 for an unscored pair', () => {
+    expect(lookupSimilarity(new Map(), 'a', 'b')).toBe(0)
+  })
+  it('is 0 comparing a prompt to itself', () => {
+    expect(lookupSimilarity(new Map(), 'a', 'a')).toBe(0)
   })
 })
 
 describe('estimatePromptReuse', () => {
-  it('gives 0 for an untagged prompt', () => {
-    expect(estimatePromptReuse(prompt([]), { why_major: 5 })).toBe(0)
+  it('is 0 with no committed prompts', () => {
+    expect(estimatePromptReuse('mit-1', [], new Map())).toBe(0)
   })
-  it('gives 0 when the theme has no committed coverage', () => {
-    expect(estimatePromptReuse(prompt(['why_major']), {})).toBe(0)
+  it('is 0 when no pair involving this prompt has been scored', () => {
+    expect(estimatePromptReuse('mit-1', ['princeton-1'], new Map())).toBe(0)
   })
-  it('saturates toward 100 as coverage grows (1 -> 50%, 3 -> 75%)', () => {
-    expect(estimatePromptReuse(prompt(['why_major']), { why_major: 1 })).toBeCloseTo(50, 1)
-    expect(estimatePromptReuse(prompt(['why_major']), { why_major: 3 })).toBeCloseTo(75, 1)
+  it("takes the best match across the applicant's committed schools", () => {
+    const matrix: SimilarityMatrix = new Map([
+      [pairKey('mit-1', 'princeton-1'), 40],
+      [pairKey('mit-1', 'stanford-1'), 75],
+    ])
+    expect(estimatePromptReuse('mit-1', ['princeton-1', 'stanford-1'], matrix)).toBe(75)
   })
-  it('takes the best-covered theme when a prompt has several', () => {
-    expect(estimatePromptReuse(prompt(['values_joy', 'why_major']), { values_joy: 0, why_major: 3 })).toBeCloseTo(
-      75,
-      1,
-    )
+  it('a strong-but-partial match reduces reuse, never to 100 unless actually scored that high', () => {
+    const matrix: SimilarityMatrix = new Map([[pairKey('mit-intellectual-curiosity', 'princeton-what-excites-you'), 75]])
+    expect(estimatePromptReuse('mit-intellectual-curiosity', ['princeton-what-excites-you'], matrix)).toBe(75)
   })
 })
 
 describe('estimateSchoolReuse', () => {
-  it('averages reuse across all of a school\'s prompts', () => {
-    const coverage = { why_major: 1 } // -> 50% reuse
-    const prompts = [prompt(['why_major']), prompt([])] // 50% and 0%
-    expect(estimateSchoolReuse(prompts, coverage)).toBeCloseTo(25, 1)
+  it("averages reuse across all of a school's prompts (unscored ones count as 0)", () => {
+    const matrix: SimilarityMatrix = new Map([[pairKey('p1', 'c1'), 80]])
+    expect(estimateSchoolReuse(['p1', 'p2'], ['c1'], matrix)).toBeCloseTo(40, 1)
   })
   it('is 0 for a school with no prompts', () => {
-    expect(estimateSchoolReuse([], {})).toBe(0)
+    expect(estimateSchoolReuse([], ['c1'], new Map())).toBe(0)
+  })
+  it('a partial match reduces essay effort but never all the way to zero ("not zero less")', () => {
+    const matrix: SimilarityMatrix = new Map([[pairKey('p1', 'c1'), 75]])
+    const reuse = estimateSchoolReuse(['p1'], ['c1'], matrix)
+    expect(essayEffort(50, reuse)).toBeCloseTo(12.5, 1)
+    expect(essayEffort(50, reuse)).toBeGreaterThan(0)
+  })
+})
+
+describe('compositeBand', () => {
+  it('sums the English and Math bands per percentile (an approximation, not a real published composite)', () => {
+    const band = compositeBand({
+      englishP25: 600,
+      englishP50: 660,
+      englishP75: 720,
+      mathP25: 600,
+      mathP50: 690,
+      mathP75: 760,
+    })
+    expect(band).toEqual({ p25: 1200, p50: 1350, p75: 1480 })
   })
 })
 
@@ -194,6 +216,7 @@ describe('computeSchoolScores (end-to-end)', () => {
     expect(result.mathPercentile).toBeCloseTo(70.5, 1)
     expect(result.average).toBeCloseTo(64.1, 1)
     expect(result.weightedAverage).toBeCloseTo(61.3, 1)
+    expect(result.estimatedReuse).toBe(50)
     expect(result.essayEffort).toBeCloseTo(12.5, 1)
     expect(result.efficiencyScore).toBeCloseTo(490.4, 1)
     expect(result.testRecommendation).toBe('Helps')

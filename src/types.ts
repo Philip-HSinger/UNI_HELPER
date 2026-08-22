@@ -1,15 +1,16 @@
 // Core data model for the app. `SchoolEntry` is what actually lives in a user's list
-// (persisted to localStorage) — it starts as a copy of a `SchoolCatalogEntry` from
-// src/data/schools.json, or a blank custom school, and is fully editable from there.
-import type { Theme } from './lib/themes'
+// (persisted to localStorage) — it starts as a copy of a `SchoolCatalogEntry` fetched from
+// Supabase (see lib/catalog.ts), or a blank custom school, and is fully editable from there.
 
 export type Importance = 'Very Important' | 'Important' | 'Considered' | 'Not Considered'
 
-/** One supplemental prompt, tagged with the themes it covers so reuse can be estimated
- * against your committed schools' prompts (see estimateSchoolReuse in lib/scoring.ts). */
+/** One supplemental prompt. `id` is a stable key referenced by rows in the prompt_similarity
+ * table (see lib/similarity.ts) so reuse can be estimated against your committed schools'
+ * prompts (see estimateSchoolReuse in lib/scoring.ts). */
 export interface Prompt {
+  id: string
   text: string
-  themes: Theme[]
+  wordLimit: number | null
 }
 
 export type ApplicationStatus =
@@ -29,7 +30,7 @@ export const APPLICATION_STATUSES: { value: ApplicationStatus; label: string }[]
   { value: 'waitlisted', label: 'Waitlisted' },
 ]
 
-/** The read-only reference data shipped in src/data/schools.json (the "database"). */
+/** The read-only reference data fetched from Supabase (see lib/catalog.ts) — the "database". */
 export interface SchoolCatalogEntry {
   id: string
   name: string

@@ -1,8 +1,7 @@
 // Pure scoring functions ported from the original guide.xlsx "APPLICATION GUIDE" sheet.
 // Every function here is deterministic and side-effect free so it can be unit tested directly
 // against the workbook's own computed values (see scoring.test.ts).
-import type { Importance, Prompt } from '../types'
-import type { Theme } from './themes'
+import type { Importance } from '../types'
 
 export function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value))
@@ -60,8 +59,11 @@ function importanceModifier(importance: Importance): number {
       return 1
     case 'Considered':
       return 0.8
-    default:
-      return 1
+    case 'Not Considered':
+      // A school that doesn't consider testing at all shouldn't have your score move its
+      // weighted average off 50 in either direction - modifier 0, not 1 (that was a bug: it
+      // used to fall through to the same weight as "Important").
+      return 0
   }
 }
 
@@ -85,35 +87,67 @@ export function essayEffort(difficulty: number, reusePercent: number): number {
   return Math.max(1, effort)
 }
 
-// How quickly reuse saturates as more committed prompts touch a theme: with SATURATION=1,
-// one matching committed prompt already earns 50% reuse credit, three earns 75%, and it
-// approaches (but never reaches) 100% — matching the intuition that after a couple of essays
-// on a theme you basically have the material, with diminishing returns after that.
-const REUSE_SATURATION = 1
+/**
+ * The prompt-to-prompt reuse matrix: a map from an order-independent pair key to a 0-100
+ * similarity score, built from the `prompt_similarity` table (see lib/similarity.ts). Only pairs
+ * someone has actually scored appear here — an unscored pair simply looks up as 0 (no reuse
+ * credit assumed), never an error.
+ */
+export type SimilarityMatrix = Map<string, number>
 
-/** Counts, per theme, how many prompts across your committed schools cover it. */
-export function computeThemeCoverage(committedPrompts: Prompt[]): Partial<Record<Theme, number>> {
-  const coverage: Partial<Record<Theme, number>> = {}
-  for (const prompt of committedPrompts) {
-    for (const theme of prompt.themes) {
-      coverage[theme] = (coverage[theme] ?? 0) + 1
-    }
+/** Order-independent key so a pair scored as (a, b) is found whether looked up as (a, b) or (b, a). */
+export function pairKey(promptIdA: string, promptIdB: string): string {
+  return promptIdA < promptIdB ? `${promptIdA}|${promptIdB}` : `${promptIdB}|${promptIdA}`
+}
+
+/** 0 if the pair hasn't been scored (or is the same prompt compared to itself). */
+export function lookupSimilarity(matrix: SimilarityMatrix, promptIdA: string, promptIdB: string): number {
+  if (promptIdA === promptIdB) return 0
+  return matrix.get(pairKey(promptIdA, promptIdB)) ?? 0
+}
+
+/**
+ * Estimated 0-100 reuse for one prompt: the best (highest-scoring) match against any prompt from
+ * your committed schools. "Best match" rather than an average, since what matters is whether
+ * *some* committed essay covers this prompt well, not diluting that by unrelated committed prompts.
+ */
+export function estimatePromptReuse(promptId: string, committedPromptIds: string[], matrix: SimilarityMatrix): number {
+  if (committedPromptIds.length === 0) return 0
+  let best = 0
+  for (const committedId of committedPromptIds) {
+    const score = lookupSimilarity(matrix, promptId, committedId)
+    if (score > best) best = score
   }
-  return coverage
+  return round1(best)
 }
 
-/** Estimated 0-100 reuse for one prompt: the best-covered theme it touches, saturated. */
-export function estimatePromptReuse(prompt: Prompt, coverage: Partial<Record<Theme, number>>): number {
-  if (prompt.themes.length === 0) return 0
-  const bestCount = Math.max(...prompt.themes.map((t) => coverage[t] ?? 0))
-  return round1((100 * bestCount) / (bestCount + REUSE_SATURATION))
+/** A school's overall estimated reuse: the average across its own prompts. No prompts -> 0 (no credit). */
+export function estimateSchoolReuse(promptIds: string[], committedPromptIds: string[], matrix: SimilarityMatrix): number {
+  if (promptIds.length === 0) return 0
+  const total = promptIds.reduce((sum, id) => sum + estimatePromptReuse(id, committedPromptIds, matrix), 0)
+  return round1(total / promptIds.length)
 }
 
-/** A school's overall estimated reuse: the average across its own prompts. Untagged/no prompts -> 0 (no credit). */
-export function estimateSchoolReuse(prompts: Prompt[], coverage: Partial<Record<Theme, number>>): number {
-  if (prompts.length === 0) return 0
-  const total = prompts.reduce((sum, p) => sum + estimatePromptReuse(p, coverage), 0)
-  return round1(total / prompts.length)
+/**
+ * The composite (English + Math) 25th/50th/75th SAT band, for display only. This is an
+ * *approximation* — it sums the two section bands rather than reflecting a school's real
+ * published composite distribution (which CDS reports separately and tends to be a bit tighter,
+ * since section scores correlate) — good enough for a reference figure, not precise enough to
+ * feed back into the percentile math, which keeps using the real section-level bands.
+ */
+export function compositeBand(school: {
+  englishP25: number
+  englishP50: number
+  englishP75: number
+  mathP25: number
+  mathP50: number
+  mathP75: number
+}): { p25: number; p50: number; p75: number } {
+  return {
+    p25: school.englishP25 + school.mathP25,
+    p50: school.englishP50 + school.mathP50,
+    p75: school.englishP75 + school.mathP75,
+  }
 }
 
 /** Score achievable per unit of essay effort — the "best bang for your writing time" ranking metric. */
