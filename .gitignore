@@ -30,3 +30,4 @@ guide.xlsx
 *.njsproj
 *.sln
 *.sw?
+__pycache__/

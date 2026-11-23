@@ -1,0 +1,24 @@
+"""Run the full validation suite and write reports/backtest_results.json (feeds the PDF)."""
+import json
+import sys
+import time
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from unimath import backtest as bt  # noqa: E402
+from unimath.catalog import load_catalog  # noqa: E402
+from unimath.model import Student  # noqa: E402
+
+schools = load_catalog()
+sim_csv = ROOT / "data" / "similarity.csv"
+out, t0 = {}, time.time()
+out["e1"] = bt.e1_band_fit(400); print("e1", time.time() - t0, flush=True)
+out["e5"] = bt.e5_similarity(schools, sim_csv)
+out["e6"] = bt.e6_planner(schools, sim_csv, trials=30); print("e6", time.time() - t0, flush=True)
+out["e3_well"] = bt.e3_e4_predictive(schools, misspecified=False); print("e3w", time.time() - t0, flush=True)
+out["e3_miss"] = bt.e3_e4_predictive(schools, misspecified=True); print("e3m", time.time() - t0, flush=True)
+out["e2"] = bt.e2_recovery(schools, reps=6); print("e2", time.time() - t0, flush=True)
+out["sens"] = bt.sensitivity(schools, Student(750, 790), ["mit", "stanford", "cmu", "georgia-tech", "purdue"])
+(ROOT / "reports" / "backtest_results.json").write_text(json.dumps(out, indent=1))
+print("done", time.time() - t0)

@@ -1,0 +1,11 @@
+prompt_a_id,prompt_b_id,score
+mit--field-of-study,princeton--academic-interest,80.0
+mit--personal-academic-experiences,princeton--civic-engagement,60.0
+mit--unconventional-path,princeton--lived-experience,55.0
+mit--field-of-study,stanford--excited-about-learning,75.0
+princeton--lived-experience,stanford--distinctive-contribution,80.0
+princeton--civic-engagement,stanford--significant-challenge,55.0
+mit--just-for-fun,stanford--five-things-important,40.0
+mit--field-of-study,purdue--briefly-discuss-your-reasons-for-choosing,45.0
+princeton--academic-interest,purdue--briefly-discuss-your-reasons-for-choosing,50.0
+purdue--how-will-opportunities-at-purdue-support,stanford--excited-about-learning,40.0

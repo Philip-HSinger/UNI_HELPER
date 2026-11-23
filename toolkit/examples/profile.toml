@@ -1,0 +1,38 @@
+# Example student profile. Run:  unimath CHNC -p examples/profile.toml
+[student]
+sat_ebrw = 750
+sat_math = 790
+# holistic_pct = 70   # advisor's read of non-test strength, percentile among applicants (omit = infer from tests)
+
+[plan]
+effort_cost = 0.005     # preference points per word of new essay writing
+max_apps = 10
+fallback_utility = 40   # value of your guaranteed option (e.g. rolling-admission state school)
+
+[[schools]]
+id = "mit"
+utility = 100
+[[schools]]
+id = "stanford"
+utility = 98
+[[schools]]
+id = "princeton"
+utility = 95
+[[schools]]
+id = "cmu"
+utility = 90
+[[schools]]
+id = "cornell"
+utility = 85
+[[schools]]
+id = "georgia-tech"
+utility = 80
+[[schools]]
+id = "tufts"
+utility = 72
+[[schools]]
+id = "northeastern"
+utility = 70
+[[schools]]
+id = "purdue"
+utility = 60

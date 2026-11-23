@@ -1,5 +1,9 @@
 # Application Efficiency Guide
 
+> **New: [`toolkit/`](toolkit/) — UNIMATH**, a statistical admissions terminal (calibrated + correlated
+> chances, Bayesian updating, essay-reuse optimization, backtests). Methods and validation:
+> [`toolkit/reports/UNIMATH_methods_manual.pdf`](toolkit/reports/UNIMATH_methods_manual.pdf).
+
 A tool for college applicants across three pages:
 
 - **Overview** — your SAT scores, which schools you're applying to, and a ranked list by
