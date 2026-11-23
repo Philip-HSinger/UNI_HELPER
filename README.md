@@ -1,8 +1,18 @@
-# Application Efficiency Guide
+# UNI_HELPER
 
-> **New: [`toolkit/`](toolkit/) — UNIMATH**, a statistical admissions terminal (calibrated + correlated
-> chances, Bayesian updating, essay-reuse optimization, backtests). Methods and validation:
-> [`toolkit/reports/UNIMATH_methods_manual.pdf`](toolkit/reports/UNIMATH_methods_manual.pdf).
+Tools for college applications and the counselors who guide them. This repository has two parts:
+
+| Part | What it is | Start here |
+|---|---|---|
+| **Web app** (this directory) | *Application Efficiency Guide*: a React site where a student enters scores and a school list and sees likelihood, essay workload and an efficiency ranking. Hosted on GitHub Pages, backed by Supabase. | This README |
+| **[`toolkit/`](toolkit/): UNIMATH** | A terminal and Python library for counselors: odds that account for how decisions move together, Bayesian updates after early results, zero-admit risk screening for a whole caseload, essay-reuse planning, and a backtesting suite. | [`toolkit/README.md`](toolkit/README.md) and the [methods manual (PDF)](toolkit/reports/UNIMATH_methods_manual.pdf) |
+
+The two share the same school catalog and prompt-similarity table (`supabase/`). UNIMATH is the statistical engine;
+the web app is the student-facing front end.
+
+---
+
+# Web app: Application Efficiency Guide
 
 A tool for college applicants across three pages:
 
