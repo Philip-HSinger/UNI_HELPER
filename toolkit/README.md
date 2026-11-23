@@ -140,6 +140,10 @@ reports/           methods manual (PDF), figures, results JSON, business documen
 
 ## Business documents (drafts)
 
+- `reports/UNIMATH_feature_build_spec.pdf` (internal, built by `scripts/make_offer.py`): the three features being
+  sold (Essay map, List check, Decision updates) on two engines, how each is calculated, what exists in the code,
+  and the build spec for what's missing (prompt collection, LLM-scored essay matrix, counselor check, new commands,
+  tests, gates).
 - `reports/pitch_email_v3.md`: counselor pitch led by essay planning. **Don't send it until:**
   1. the prompt-pair matrix is human-scored for the schools it names ([N] in the email),
   2. the similarity test (E5) is re-run on held-out human scores and beats a constant guess,
