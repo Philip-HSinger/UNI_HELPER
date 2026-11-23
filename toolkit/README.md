@@ -140,6 +140,7 @@ reports/           methods manual (PDF), figures, results JSON, business documen
 
 ## Business documents (drafts)
 
+- `reports/UNIMATH_summary.pdf` (one page, `scripts/make_summary.py`): the short version of the build spec below.
 - `reports/UNIMATH_feature_build_spec.pdf` (internal, built by `scripts/make_offer.py`): the three features being
   sold (Essay map, List check, Decision updates) on two engines, how each is calculated, what exists in the code,
   and the build spec for what's missing (prompt collection, LLM-scored essay matrix, counselor check, new commands,
