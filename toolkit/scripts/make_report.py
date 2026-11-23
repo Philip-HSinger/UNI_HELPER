@@ -384,7 +384,8 @@ if LOOP.exists():
         bt_ = b.read_text().splitlines()
         bv = bt_[0].replace("VERDICT: ", "")
         dv = d.read_text().splitlines()[0].replace("VERDICT: ", "") if d.exists() else "(stopped: already BUY)"
-        flip = next((ln for ln in bt_ if ln.startswith("FLIP:")), "")
+        fi = next((i for i, ln in enumerate(bt_) if ln.startswith("FLIP:")), None)
+        flip = " ".join(bt_[fi:]) if fi is not None else ""
         rows.append([str(n), changes[n], bv, dv, flip.replace("FLIP:", "Buyer needs:")])
     table(rows, [0.45, 2.0, 1.05, 1.0, 2.2], font=7.2)
     P("<b>In plain English: what the loop shows.</b> The builder flipped to BUY in round 2. Wider coverage, the "
