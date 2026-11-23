@@ -18,3 +18,17 @@ Outcomes: GHOSTED (never opened) / READ-NO-REPLY / DECLINED / INTERESTED-NO-COMM
 
 Anti-agreeableness rules for buyers: realistic busy professional; most cold vendor email is ignored; no obligation
 to be polite or to engage; budget and approval constraints are real; a "yes" must be justified by the private card.
+
+## Changes after manager pre-flight review (audit/00_preflight.md)
+- Outcomes also include FORWARDED and UNSUBSCRIBED. No follow-up after UNSUBSCRIBE or DELETE.
+- For buyers who never replied, the outcome comes from their recorded actions, not from buyer_final.
+- A buyer IGNORE at T2 or later ends the thread.
+- Only the buyer's MESSAGE text is relayed to the seller; ACTION, DECISION_IF_ANY, PRIVATE THOUGHTS and internal
+  forwarding notes are never relayed.
+- The seller receives the fact sheet and the public profiles inline (initially and in every reply prompt).
+- Buyers run as the tool-less `sim-buyer` agent type, so they cannot read any file.
+- Buyer cards show only `private_buyer_view` (written without product knowledge; `python sim.py lint` must return 0).
+  `likely_objections` / `what_would_make_them_buy` stay manager-only predictions, compared with outcomes afterwards.
+- Every inbox holds at least 2 other vendor pitches; the follow-up week uses 11 fresh distractors.
+- If more than 6 of 36 buyers open our email at T0 (2x the cards' ~9% average open rate), T0 is re-run with
+  24-item inboxes.

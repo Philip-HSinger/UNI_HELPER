@@ -1,0 +1,326 @@
+[
+ {
+  "id": "p01-public-hs-counselor-tx",
+  "name": "Marisol Trevi\u00f1o",
+  "title": "Professional School Counselor (Grade 12, A-L)",
+  "organization": "Eastfield Ridge High School, Harlan Bend ISD",
+  "org_type": "Public comprehensive high school, ~2,900 students, Title I",
+  "location": "Houston metro, Texas",
+  "public_notes": "Bilingual counselor with 9 years in the district; posts on the school site about FAFSA nights and TSI testing."
+ },
+ {
+  "id": "p02-rural-solo-counselor-oh",
+  "name": "Gary Lindqvist",
+  "title": "School Counselor (K-12)",
+  "organization": "Pine Hollow Local Schools",
+  "org_type": "Rural public district, one building K-12, ~640 students",
+  "location": "Southeastern Ohio",
+  "public_notes": "Only counselor in the district; also coordinates testing, 504 plans, and the College Credit Plus program."
+ },
+ {
+  "id": "p03-boarding-school-college-counseling-director-ct",
+  "name": "Eleanor Whitcombe",
+  "title": "Director of College Counseling",
+  "organization": "Hawthorne Hill School",
+  "org_type": "Independent coeducational boarding school, ~420 students, 5 college counselors",
+  "location": "Litchfield County, Connecticut",
+  "public_notes": "Former selective-college admissions officer; speaks regularly at regional counselor conferences on ethics in admissions."
+ },
+ {
+  "id": "p04-private-day-school-associate-counselor-il",
+  "name": "Priya Raman",
+  "title": "Associate Director of College Counseling",
+  "organization": "Lakeshore Country Day School",
+  "org_type": "Independent day school, grades 6-12, ~110 seniors",
+  "location": "North Shore suburbs of Chicago, Illinois",
+  "public_notes": "Joined from a data-heavy role in higher-ed enrollment management; runs the office's annual outcomes report."
+ },
+ {
+  "id": "p05-international-school-counselor-sg",
+  "name": "Daniel Osei-Mensah",
+  "title": "University Counselor",
+  "organization": "Meridian International Academy",
+  "org_type": "Private IB international school, ~1,800 students, 4 university counselors",
+  "location": "Singapore",
+  "public_notes": "Ghanaian-British counselor who advises students applying to the US, UK, Canada, the Netherlands, and Australia."
+ },
+ {
+  "id": "p06-international-school-counselor-uae",
+  "name": "Rania Haddad",
+  "title": "College Counselor",
+  "organization": "Al Noor American School",
+  "org_type": "Private American-curriculum K-12 school, ~2,200 students",
+  "location": "Dubai, United Arab Emirates",
+  "public_notes": "Lebanese-American counselor; her school sends most graduates to the US, UK and local branch campuses."
+ },
+ {
+  "id": "p07-district-ccr-director-ga",
+  "name": "Kendra Ellison",
+  "title": "Director of College and Career Readiness",
+  "organization": "Oakmont County Public Schools",
+  "org_type": "Large suburban/urban public school district, 18 high schools, ~95,000 students",
+  "location": "Atlanta metro, Georgia",
+  "public_notes": "Oversees counseling, CTE pathways and dual enrollment; serves on a state task force on college access."
+ },
+ {
+  "id": "p08-charter-network-college-access-ny",
+  "name": "Andre Whitfield",
+  "title": "Senior Director of College Access and Persistence",
+  "organization": "Ascent Ridge Charter Network",
+  "org_type": "Charter management organization, 6 high schools, ~650 seniors per year",
+  "location": "Bronx, New York / Newark, New Jersey",
+  "public_notes": "Leads a team of 14 college counselors; network publicly reports college matriculation and persistence rates."
+ },
+ {
+  "id": "p09-solo-iec-quant-wa",
+  "name": "Jonathan Pierce",
+  "title": "Founder and Independent Educational Consultant",
+  "organization": "Pierce College Advising LLC",
+  "org_type": "Solo IEC practice, ~28 seniors per year",
+  "location": "Seattle, Washington",
+  "public_notes": "Former software engineer turned college advisor; IECA associate member; writes a blog on admissions statistics."
+ },
+ {
+  "id": "p10-solo-iec-parttime-fl",
+  "name": "Debra Castellano",
+  "title": "College Admissions Coach",
+  "organization": "Sunshine College Coaching",
+  "org_type": "Part-time solo IEC practice, ~10 students per year",
+  "location": "Tampa Bay area, Florida",
+  "public_notes": "Retired high school English teacher; helps local families with essays and Florida public university applications."
+ },
+ {
+  "id": "p11-boutique-iec-firm-owner-ca",
+  "name": "Helen Zhao",
+  "title": "Founder and Managing Partner",
+  "organization": "Crestline Admissions Partners",
+  "org_type": "Boutique admissions consulting firm, 6 consultants, ~140 students",
+  "location": "San Francisco Bay Area, California",
+  "public_notes": "Ivy League alumni interviewer and former Silicon Valley product marketer; firm packages run $8k-$25k."
+ },
+ {
+  "id": "p12-employed-counselor-large-consultancy-ma",
+  "name": "Sean Gallagher",
+  "title": "Senior College Admissions Counselor",
+  "organization": "Summit Gate Admissions",
+  "org_type": "National admissions-consulting company, ~200 counselors, remote",
+  "location": "Boston, Massachusetts (remote)",
+  "public_notes": "Former regional admissions officer at a liberal arts college; manages a caseload of ~35 seniors for the company."
+ },
+ {
+  "id": "p13-pm-college-planning-platform",
+  "name": "Natalie Brooks",
+  "title": "Senior Product Manager, Counselor Analytics",
+  "organization": "Trellisway Planning Inc.",
+  "org_type": "College and career planning SaaS used by ~6,000 high schools",
+  "location": "Denver, Colorado",
+  "public_notes": "Leads the counselor analytics roadmap; previously at a large student information systems company."
+ },
+ {
+  "id": "p14-data-lead-test-prep",
+  "name": "Arjun Venkataraman",
+  "title": "Head of Data and Analytics",
+  "organization": "ScoreRise Learning",
+  "org_type": "National test-prep and tutoring company, online and 40 centers",
+  "location": "New Jersey (hybrid)",
+  "public_notes": "Leads a team of 5 analysts; previously a quant at a regional bank."
+ },
+ {
+  "id": "p15-solo-founder-admissions-app",
+  "name": "Kevin Tran",
+  "title": "Founder",
+  "organization": "CampusOdds (pre-launch startup)",
+  "org_type": "Bootstrapped consumer app startup, 1 founder plus a part-time designer",
+  "location": "Austin, Texas",
+  "public_notes": "Former Big Tech software engineer building an AI-powered college list app for students; launching on social media."
+ },
+ {
+  "id": "p16-admissions-youtuber",
+  "name": "Brianna Okoro",
+  "title": "Creator and Host",
+  "organization": "Brianna Explains College (YouTube and TikTok)",
+  "org_type": "Independent content creator, ~380k YouTube subscribers, ~600k TikTok followers",
+  "location": "Atlanta, Georgia",
+  "public_notes": "Former admissions reader turned creator; posts list reactions, 'chances me' streams, and essay reviews."
+ },
+ {
+  "id": "p17-essay-coaching-business",
+  "name": "Margaret 'Maggie' Holt",
+  "title": "Founder and Lead Coach",
+  "organization": "Inkwell Essay Studio",
+  "org_type": "Essay coaching company, founder plus 9 contract writing coaches, ~250 students/year",
+  "location": "Brooklyn, New York",
+  "public_notes": "MFA in creative nonfiction; known for supplemental essay bootcamps each summer and a December 'Supplement Sprint'."
+ },
+ {
+  "id": "p18-nonprofit-college-access-director-ca",
+  "name": "Luis Hern\u00e1ndez",
+  "title": "Program Director",
+  "organization": "First Rung Scholars",
+  "org_type": "Nonprofit college-access program serving ~900 low-income, first-generation students",
+  "location": "Los Angeles, California",
+  "public_notes": "Program works in 12 partner high schools; publicly reports UC/CSU admission and FAFSA/CADAA completion rates."
+ },
+ {
+  "id": "p19-cbo-immigrant-families-mn",
+  "name": "Hodan Warsame",
+  "title": "Youth Education Coordinator",
+  "organization": "Riverside Community Center",
+  "org_type": "Small community-based nonprofit serving East African and Latino immigrant families",
+  "location": "Minneapolis, Minnesota",
+  "public_notes": "Runs an after-school homework help program and a Saturday college-prep circle for ~60 high schoolers."
+ },
+ {
+  "id": "p20-intl-agent-india",
+  "name": "Rohit Malhotra",
+  "title": "Founder and Lead Counsellor",
+  "organization": "BrightAbroad Education Consultants",
+  "org_type": "Overseas education agency, 3 offices, ~400 students per year (mostly graduate, ~60 undergraduate US applicants)",
+  "location": "Hyderabad, India",
+  "public_notes": "Agency advertises US, UK, Canada and Australia admissions; represents several universities on commission for graduate programs."
+ },
+ {
+  "id": "p21-intl-agent-china",
+  "name": "Lin Yuqing (Grace Lin)",
+  "title": "Head of US Undergraduate Admissions Planning",
+  "organization": "Jade Gate Education",
+  "org_type": "Premium study-abroad consultancy, ~150 US undergraduate clients per year",
+  "location": "Shanghai, China",
+  "public_notes": "Graduate of a US liberal arts college; her firm charges premium packages for top-30 US undergraduate admissions."
+ },
+ {
+  "id": "p22-intl-agent-nigeria",
+  "name": "Chukwuemeka Adeyemi",
+  "title": "Managing Director",
+  "organization": "Harmattan Gate Study Abroad",
+  "org_type": "Study-abroad agency, 2 offices, ~250 students per year (UK, Canada, US)",
+  "location": "Lagos, Nigeria",
+  "public_notes": "Agency focuses on UK and Canada graduate programs; growing US undergraduate scholarship-seeking clients."
+ },
+ {
+  "id": "p23-quant-parent-nj",
+  "name": "Sanjay Kulkarni",
+  "title": "Actuary (parent of a high school senior)",
+  "organization": "Self (family purchase)",
+  "org_type": "Parent; works as a credentialed actuary at an insurance company",
+  "location": "Princeton area, New Jersey",
+  "public_notes": "Active on online parent forums discussing admissions data; spreadsheet enthusiast."
+ },
+ {
+  "id": "p24-anxious-parent-va",
+  "name": "Jennifer Wallace",
+  "title": "Parent (marketing manager)",
+  "organization": "Self (family)",
+  "org_type": "Parent of a high-achieving senior at a public high school",
+  "location": "Northern Virginia",
+  "public_notes": "Active in the PTA and a local college-parent Facebook group."
+ },
+ {
+  "id": "p25-high-achieving-student",
+  "name": "Maya Rodriguez-Chen",
+  "title": "High school senior",
+  "organization": "Self",
+  "org_type": "Student at a large public magnet high school",
+  "location": "Phoenix, Arizona",
+  "public_notes": "Robotics team captain; posts on student admissions forums; applying to 14 schools."
+ },
+ {
+  "id": "p26-homeschool-coop-coordinator",
+  "name": "Rebecca Jorgensen",
+  "title": "Co-op Coordinator and High School Advisor",
+  "organization": "Cedar Grove Homeschool Cooperative",
+  "org_type": "Homeschool co-op, ~45 families, ~20 high schoolers",
+  "location": "Colorado Springs, Colorado",
+  "public_notes": "Homeschooling mother of four; volunteers as 'counselor' writing school profiles and transcripts for co-op families."
+ },
+ {
+  "id": "p27-university-admissions-analyst",
+  "name": "Thomas Becker",
+  "title": "Senior Enrollment Analyst",
+  "organization": "Midland State University",
+  "org_type": "Public flagship university, ~32,000 students, Office of Enrollment Management",
+  "location": "Midwest (Iowa)",
+  "public_notes": "Builds yield and admit models; presents at enrollment management conferences."
+ },
+ {
+  "id": "p28-education-researcher",
+  "name": "Dr. Alicia Moreno",
+  "title": "Assistant Professor of Education Policy",
+  "organization": "Graduate School of Education, Lakeview University",
+  "org_type": "Research university, school of education",
+  "location": "Philadelphia, Pennsylvania",
+  "public_notes": "Studies college access, undermatching, and school counseling; publishes in education policy journals."
+ },
+ {
+  "id": "p29-tutor-marketplace-product-lead",
+  "name": "Marcus Ellery",
+  "title": "Head of Product, College Advising Vertical",
+  "organization": "TutorLoop Marketplace",
+  "org_type": "Online tutoring marketplace, ~12,000 tutors, launching a college-advising category",
+  "location": "Remote (company HQ in Chicago, Illinois)",
+  "public_notes": "Former growth PM; posting on LinkedIn about launching a college-advising category for independent advisors in Q1."
+ },
+ {
+  "id": "p30-financial-aid-scholarship-advisor-nc",
+  "name": "Denise Carter",
+  "title": "Financial Aid and Scholarship Advisor",
+  "organization": "Pathway Scholars Fund",
+  "org_type": "Regional scholarship foundation, advises ~500 applicants per year",
+  "location": "Charlotte, North Carolina",
+  "public_notes": "Former college financial aid officer (14 years); runs free FAFSA and CSS Profile workshops across the county."
+ },
+ {
+  "id": "p31-angel-investor-edtech",
+  "name": "Richard Hale",
+  "title": "Angel Investor and Advisor",
+  "organization": "Hale Ventures (personal angel fund)",
+  "org_type": "Individual angel investor, $25k-$100k checks in pre-seed edtech",
+  "location": "Palo Alto, California",
+  "public_notes": "Former founder of a test-prep company (acquired); active member of a regional angel network; 20+ edtech investments."
+ },
+ {
+  "id": "p32-catholic-hs-counseling-director-oh",
+  "name": "Br. Michael Santangelo",
+  "title": "Director of College Counseling",
+  "organization": "St. Benedict Preparatory High School",
+  "org_type": "Catholic college-preparatory high school, ~900 students, 3 college counselors",
+  "location": "Cleveland, Ohio",
+  "public_notes": "Religious brother and former theology teacher; school emphasizes Catholic colleges, service, and affordability."
+ },
+ {
+  "id": "p33-athletic-recruiting-advisor-tx",
+  "name": "Tanya Brooks",
+  "title": "Founder",
+  "organization": "Baseline Recruiting Advisors",
+  "org_type": "Sports recruiting consultancy, ~60 student-athletes per year",
+  "location": "Dallas, Texas",
+  "public_notes": "Former college volleyball player and assistant coach; helps families navigate NCAA/NAIA recruiting and admissions."
+ },
+ {
+  "id": "p34-gear-up-grant-coordinator-tx",
+  "name": "Samuel Ortiz",
+  "title": "Program Coordinator",
+  "organization": "Valley Region College Readiness Partnership",
+  "org_type": "Federally funded college access grant serving ~4,000 students across 10 schools",
+  "location": "Rio Grande Valley, Texas",
+  "public_notes": "Coordinates college readiness services for a cohort of students from grade 7 through first year of college; fiscal agent is a regional university."
+ },
+ {
+  "id": "p35-affluent-suburban-public-counselor-nj",
+  "name": "Karen Lieberman",
+  "title": "School Counselor (Grades 11-12)",
+  "organization": "Ridgeview Regional High School",
+  "org_type": "Public high school in an affluent suburb, ~1,600 students",
+  "location": "Bergen County, New Jersey",
+  "public_notes": "Counselor for ~230 students; regular presenter at the school's parent college nights; school sends many students to highly selective colleges."
+ },
+ {
+  "id": "p36-community-college-transfer-advisor-ca",
+  "name": "Victor Nguyen",
+  "title": "Transfer Center Coordinator",
+  "organization": "Sierra Valley Community College",
+  "org_type": "Public community college, ~18,000 students",
+  "location": "Sacramento, California",
+  "public_notes": "Runs transfer workshops and partnerships with UC, CSU, and private universities; former transfer student himself."
+ }
+]
