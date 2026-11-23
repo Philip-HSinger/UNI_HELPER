@@ -306,3 +306,19 @@ class AdmissionModel:
         w0, w1 = np.exp(logw), np.exp(post)
         m0, m1 = S @ w0, S @ w1
         return float(m0), float(np.sqrt(((S - m0) ** 2) @ w0)), float(m1), float(np.sqrt(((S - m1) ** 2) @ w1))
+
+    def p_none_range(self, student: Student, ids: list[str], decisions=None) -> tuple[float, float, float]:
+        """(low, central, high) P(no admits) across plausible link strengths and lapse rates. The misspecified
+        backtest showed the central value can over-warn ~2x when the world has hooks and heavy tails, so the
+        honest output is a range, not one number."""
+        from dataclasses import replace as _rep
+        vals = []
+        hm, hs = self.holistic_prior(student)
+        for gamma in (0.05, 0.3, 0.5):
+            for lapse in (0.02, 0.05, 0.10):
+                for hsd in (0.5 * hs, hs):  # how much of the applicant's non-test strength is unknown
+                    m = self.with_params(shared_fit=gamma, lapse=lapse)
+                    st = _rep(student, holistic_mean=hm, holistic_sd=hsd)
+                    vals.append(float(m.count_distribution(st, ids, decisions)[0]))
+        return min(vals), float(self.count_distribution(student, ids, decisions)[0]), max(vals)
+

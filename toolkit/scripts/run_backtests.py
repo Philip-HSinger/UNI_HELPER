@@ -7,10 +7,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from unimath import backtest as bt  # noqa: E402
-from unimath.catalog import load_catalog  # noqa: E402
+from unimath.catalog import curated_only, load_catalog  # noqa: E402
 from unimath.model import Student  # noqa: E402
 
-schools = load_catalog()
+schools = curated_only(load_catalog())
 sim_csv = ROOT / "data" / "similarity.csv"
 out, t0 = {}, time.time()
 out["e1"] = bt.e1_band_fit(400); print("e1", time.time() - t0, flush=True)

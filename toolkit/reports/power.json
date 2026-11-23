@@ -1,0 +1,78 @@
+{
+ "scores_only": {
+  "25": {
+   "p_unimath_significantly_better": 0.013333333333333334,
+   "p_counselor_significantly_better": 0.04666666666666667,
+   "p_inconclusive": 0.94,
+   "mean_diff": 0.005530343785113324
+  },
+  "50": {
+   "p_unimath_significantly_better": 0.013333333333333334,
+   "p_counselor_significantly_better": 0.10666666666666667,
+   "p_inconclusive": 0.88,
+   "mean_diff": 0.006567423763690503
+  },
+  "100": {
+   "p_unimath_significantly_better": 0.0,
+   "p_counselor_significantly_better": 0.22,
+   "p_inconclusive": 0.78,
+   "mean_diff": 0.006747683261632904
+  },
+  "200": {
+   "p_unimath_significantly_better": 0.0,
+   "p_counselor_significantly_better": 0.52,
+   "p_inconclusive": 0.48,
+   "mean_diff": 0.007652569635396997
+  },
+  "400": {
+   "p_unimath_significantly_better": 0.0,
+   "p_counselor_significantly_better": 0.76,
+   "p_inconclusive": 0.24,
+   "mean_diff": 0.0072876021011415715
+  },
+  "800": {
+   "p_unimath_significantly_better": 0.0,
+   "p_counselor_significantly_better": 0.9866666666666667,
+   "p_inconclusive": 0.013333333333333308,
+   "mean_diff": 0.007445995278334806
+  }
+ },
+ "with_counselor_rating": {
+  "25": {
+   "p_unimath_significantly_better": 0.18666666666666668,
+   "p_counselor_significantly_better": 0.006666666666666667,
+   "p_inconclusive": 0.8066666666666666,
+   "mean_diff": -0.004594410043902832
+  },
+  "50": {
+   "p_unimath_significantly_better": 0.2,
+   "p_counselor_significantly_better": 0.006666666666666667,
+   "p_inconclusive": 0.7933333333333333,
+   "mean_diff": -0.0030102024079577783
+  },
+  "100": {
+   "p_unimath_significantly_better": 0.22666666666666666,
+   "p_counselor_significantly_better": 0.0,
+   "p_inconclusive": 0.7733333333333333,
+   "mean_diff": -0.0024649817053151515
+  },
+  "200": {
+   "p_unimath_significantly_better": 0.22666666666666666,
+   "p_counselor_significantly_better": 0.0,
+   "p_inconclusive": 0.7733333333333333,
+   "mean_diff": -0.001796720002161776
+  },
+  "400": {
+   "p_unimath_significantly_better": 0.44666666666666666,
+   "p_counselor_significantly_better": 0.0,
+   "p_inconclusive": 0.5533333333333333,
+   "mean_diff": -0.0020083336802977536
+  },
+  "800": {
+   "p_unimath_significantly_better": 0.5933333333333334,
+   "p_counselor_significantly_better": 0.0,
+   "p_inconclusive": 0.4066666666666666,
+   "mean_diff": -0.001752995237819095
+  }
+ }
+}

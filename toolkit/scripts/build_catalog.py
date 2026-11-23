@@ -86,6 +86,67 @@ SQL_TO_JSON = {
 }
 
 
+SCORECARD = ROOT / "toolkit" / "data" / "scorecard_raw.json"
+CURATED_TO_SCORECARD = {
+    "northeastern": "Northeastern University", "purdue": "Purdue University-Main Campus",
+    "georgia-tech": "Georgia Institute of Technology-Main Campus", "tufts": "Tufts University",
+    "north-western": "Northwestern University", "caltech": "California Institute of Technology",
+    "john": "Johns Hopkins University", "usc": "University of Southern California", "cornell": "Cornell University",
+    "cmu": "Carnegie Mellon University", "boston-university": "Boston University", "upenn": "University of Pennsylvania",
+    "brown": "Brown University", "yale": "Yale University", "mit": "Massachusetts Institute of Technology",
+    "harvard": "Harvard University", "columbia": "Columbia University in the City of New York",
+    "princeton": "Princeton University", "stanford": "Stanford University",
+}
+PLACEHOLDER = "Supplement not yet curated (placeholder: one 250-word essay assumed)"
+# Scorecard test-requirement code -> (testOptional, importance PROXY). Not the CDS C7 label: flagged in provenance.
+TEST_REQ = {1: (False, "Important"), 2: (False, "Considered"), 5: (True, "Considered"), 3: (True, "Not Considered")}
+
+
+def scorecard_schools(curated: list[dict]) -> list[dict]:
+    if not SCORECARD.exists():
+        return []
+    raw = json.loads(SCORECARD.read_text())["results"]
+    by_name = {r["school.name"]: r for r in raw}
+    sat = lambda r, q, s: r.get(f"latest.admissions.sat_scores.{q}.{s}")  # noqa: E731
+    # 1. fill gaps in curated schools (never overwrite curated values)
+    for c in curated:
+        r = by_name.get(CURATED_TO_SCORECARD.get(c["id"], ""))
+        if r and c.get("acceptanceRate") is None and r.get("latest.admissions.admission_rate.overall"):
+            c["acceptanceRate"] = round(r["latest.admissions.admission_rate.overall"], 4)
+            c["provenance"] = c.get("provenance", "seed") + "+scorecard-admit-rate"
+    taken = set(CURATED_TO_SCORECARD.values())
+    ids = {c["id"] for c in curated}
+    out = []
+    for r in raw:
+        name = r["school.name"]
+        rate = r.get("latest.admissions.admission_rate.overall")
+        q = {(qq, ss): sat(r, qq, ss) for qq in ("25th_percentile", "midpoint", "75th_percentile")
+             for ss in ("critical_reading", "math")}
+        if name in taken or not rate or not (0 < rate < 1) or None in q.values():
+            continue
+        flags = []
+        for ss in ("critical_reading", "math"):
+            lo, mid, hi = q[("25th_percentile", ss)], q[("midpoint", ss)], q[("75th_percentile", ss)]
+            if not lo <= mid <= hi:
+                q[("midpoint", ss)] = min(max(mid, lo), hi)
+                flags.append(f"{ss} midpoint outside quartiles, clipped")
+        sid = slugify(name, 8)
+        n = 2
+        while sid in ids:
+            sid, n = f"{slugify(name, 8)}-{n}", n + 1
+        ids.add(sid)
+        opt, imp = TEST_REQ.get(r.get("latest.admissions.test_requirements"), (True, "Considered"))
+        out.append({"id": sid, "name": name, "platform": "Common app", "testOptional": opt,
+                    "englishP25": q[("25th_percentile", "critical_reading")], "englishP50": q[("midpoint", "critical_reading")],
+                    "englishP75": q[("75th_percentile", "critical_reading")], "mathP25": q[("25th_percentile", "math")],
+                    "mathP50": q[("midpoint", "math")], "mathP75": q[("75th_percentile", "math")], "difficulty": None,
+                    "importance": imp, "acceptanceRate": round(rate, 4), "usNewsRank": None, "state": r.get("school.state"),
+                    "unitid": r["id"], "provenance": "college-scorecard (importance = proxy from test-requirement code)",
+                    "dataFlags": flags,
+                    "prompts": [{"id": f"{sid}--placeholder", "text": PLACEHOLDER, "wordLimit": 250, "placeholder": True}]})
+    return out
+
+
 def main() -> None:
     seed = json.loads(SEED.read_text(encoding="utf-8"))
     sql = UPDATE_SQL.read_text(encoding="utf-8")
@@ -117,6 +178,7 @@ def main() -> None:
         school["provenance"] = provenance
         schools.append(school)
 
+    schools += scorecard_schools(schools)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     (OUT_DIR / "catalog.json").write_text(json.dumps(schools, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     with open(OUT_DIR / "similarity.csv", "w", newline="", encoding="utf-8") as f:

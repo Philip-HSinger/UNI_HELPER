@@ -175,7 +175,31 @@ def correlated_count_logscore(model: AdmissionModel, o: Outcomes):
     return float(np.mean(out)), np.array(pany_c), np.array(pany_i), np.array(any_obs)
 
 
-def e3_e4_predictive(schools, misspecified: bool, n_students=2500, seed=7, true: ModelParams = TRUE) -> dict:
+def per_student_count_ll(model: AdmissionModel, o: Outcomes, p_marg) -> dict:
+    """Per-student log P(observed #admits): correlated model vs independence. Paired by student."""
+    from .fit import LOGW, _prob_rows, _row_terms
+    off, s_mu, s_sd, r, _ = _row_terms(model, o)
+    P, _, _ = _prob_rows(model, o, off, s_mu, s_sd, r)
+    w = np.exp(LOGW)
+    cor, ind = [], []
+    for s in np.unique(o.student):
+        idx = np.flatnonzero(o.student == s)
+        k = int(o.y[idx].sum())
+        dist = np.zeros((len(idx) + 1, P.shape[1]))
+        dist[0] = 1
+        for i in idx:
+            dist[1:] = dist[1:] * (1 - P[i]) + dist[:-1] * P[i]
+            dist[0] *= 1 - P[i]
+        cor.append(float(np.log(max((dist @ w)[k], 1e-12))))
+        d = np.array([1.0])
+        for p in p_marg[idx]:
+            d = np.r_[d * (1 - p), 0] + np.r_[0, d * p]
+        ind.append(float(np.log(max(d[k], 1e-12))))
+    return {"correlated": cor, "independent": ind}
+
+
+def e3_e4_predictive(schools, misspecified: bool, n_students=2500, seed=7, true: ModelParams = TRUE,
+                     return_preds: bool = False) -> dict:
     o = simulate(schools, true, n_students, 8, seed=seed, misspecified=misspecified)
     train, test = split_students(o, 0.6, seed)
     y = test.y
@@ -194,7 +218,12 @@ def e3_e4_predictive(schools, misspecified: bool, n_students=2500, seed=7, true:
     scores = {k: score_all(v, y) for k, v in preds.items()}
     ls_c, pany_c, pany_i, any_obs = correlated_count_logscore(fitted, test)
     ls_i = independent_count_logscore(preds["unimath (fitted)"], test)
-    return {"misspecified": misspecified, "n_train_rows": len(train), "n_test_rows": len(test),
+    extra = {}
+    if return_preds:
+        extra = {"preds": {k: v.tolist() for k, v in preds.items()}, "y": y.tolist(), "student": test.student.tolist(),
+                 "pany_correlated": pany_c.tolist(), "pany_independent": pany_i.tolist(), "any_observed": any_obs.tolist(),
+                 "count_ll": per_student_count_ll(fitted, test, preds["unimath (fitted)"])}
+    return {**extra, "misspecified": misspecified, "n_train_rows": len(train), "n_test_rows": len(test),
             "fitted": res.estimates, "scores": scores,
             "count_logscore": {"correlated": ls_c, "independent": ls_i},
             "p_any": {"correlated": pany_c.tolist(), "independent": pany_i.tolist(), "observed": any_obs.tolist()},
@@ -268,4 +297,50 @@ def sensitivity(schools, student: Student, sids: list[str]) -> dict:
         out[k] = {"lo": lo, "hi": hi,
                   "p_lo": dict(zip(ids, base.with_params(**{k: lo}).chances(student, ids).tolist())),
                   "p_hi": dict(zip(ids, base.with_params(**{k: hi}).chances(student, ids).tolist()))}
+    return out
+
+
+# ---------------------------------------------------------------------------------------- E7 power
+def e7_backtest_power(schools, sizes=(25, 50, 100, 200, 400), reps=150, seed=0, informed: bool = False) -> dict:
+    """How many past students does BKTST need before 'UNIMATH beat my calls' is distinguishable from luck?
+
+    Simulated counselor: knows each student's non-test strength (noisy rating, sd 0.6) - information UNIMATH's
+    score-only forecast lacks - but reports only reach (<20%), target (20-60%) or likely (>60%) labels.
+    UNIMATH: default parameters, scores only. Scoring exactly as BKTST: labels -> leave-one-student-out label
+    rates; Brier difference with a student-cluster bootstrap 95% CI.
+    """
+    from .fit import predict_marginal
+    from .significance import cluster_bootstrap_diff
+    M = AdmissionModel(schools)
+    out = {}
+    for n in sizes:
+        wins = losses = 0
+        diffs = []
+        for r in range(reps):
+            o = simulate(schools, TRUE, n, 8, seed=seed * 100000 + n * 1000 + r, rated_share=1.0)
+            y = o.y
+            p_c_full = predict_marginal(M, o)                      # counselor's private, informed estimate
+            calls = np.where(p_c_full < 0.2, 0, np.where(p_c_full < 0.6, 1, 2))
+            blind = Outcomes(o.student, o.school, o.ebrw, o.math, o.code, np.full(len(o), np.nan), o.submitted)
+            # UNIMATH: scores only, or (informed=True) scores + the counselor's own holistic rating via HOL
+            p_u = predict_marginal(M, o if informed else blind)
+            if informed:
+                # counselor's rating is a separate noisy read, not the same one used for their labels
+                rng = np.random.default_rng(r)
+                from scipy import stats as _st
+                h_lab = _st.norm.ppf(np.clip(o.hpct / 100, 1e-3, 1 - 1e-3))
+                o2 = Outcomes(o.student, o.school, o.ebrw, o.math, o.code,
+                              100 * _st.norm.cdf(h_lab + 0.3 * rng.standard_normal(len(o))), o.submitted)
+                p_u = predict_marginal(M, o2)
+            p_c = np.empty(len(o))
+            for i in range(len(o)):
+                m = (calls == calls[i]) & (o.student != o.student[i])
+                p_c[i] = (y[m].sum() + 0.5) / (m.sum() + 1.0)
+            d = cluster_bootstrap_diff((p_u - y) ** 2, (p_c - y) ** 2, o.student, B=600, seed=r)
+            diffs.append(d["diff"])
+            wins += d["ci95"][1] < 0
+            losses += d["ci95"][0] > 0
+        out[str(n)] = {"p_unimath_significantly_better": wins / reps, "p_counselor_significantly_better": losses / reps,
+                       "p_inconclusive": 1 - (wins + losses) / reps, "mean_diff": float(np.mean(diffs))}
+        print("power", n, out[str(n)], flush=True)
     return out

@@ -13,7 +13,7 @@ from scipy import stats  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from unimath.backtest import _continuous_split_normal  # noqa: E402
-from unimath.catalog import SIMILARITY, load_catalog  # noqa: E402
+from unimath.catalog import SIMILARITY, curated_only, load_catalog  # noqa: E402
 from unimath.model import AdmissionModel, Student  # noqa: E402
 from unimath.scores import fit_band, fit_school  # noqa: E402
 from unimath.similarity import SimilarityEngine  # noqa: E402
@@ -21,7 +21,7 @@ from unimath.similarity import SimilarityEngine  # noqa: E402
 FIG = ROOT / "reports" / "figures"
 FIG.mkdir(parents=True, exist_ok=True)
 R = json.loads((ROOT / "reports" / "backtest_results.json").read_text())
-CAT = load_catalog()
+CAT = curated_only(load_catalog())
 M = AdmissionModel(CAT)
 E = SimilarityEngine(CAT, SIMILARITY)
 ST = Student(750, 790)
@@ -203,3 +203,53 @@ ax.set(xlim=(-3, 5), yticks=[], xlabel="shared strength factor S", title="UPDT: 
 ax.legend(frameon=False, fontsize=7)
 save("f12_posterior")
 print("figures written to", FIG)
+
+# 13. forest plot of every effect with 95% CI (from significance.json)
+SIGP = ROOT / "reports" / "significance.json"
+if SIGP.exists():
+    SG = json.loads(SIGP.read_text())
+    rows = []
+    for world, lab in (("pred_well", "matched"), ("pred_miss", "misspec.")):
+        if world not in SG:
+            continue
+        w = SG[world]
+        for key, name in (("fitted_vs_base", "chances vs acceptance rate"), ("fitted_vs_logistic", "chances vs logistic model"),
+                          ("default_vs_logistic", "no-data chances vs logistic"), ("posterior_vs_fitted", "using other decisions")):
+            d = w[key]["brier"]
+            base = d["diff"] / d["relative"]
+            rows.append((f"{name} ({lab})", -100 * d["relative"], -100 * d["ci95"][1] / base, -100 * d["ci95"][0] / base))
+    c1 = SG["c1"]["vs_web"]
+    rows.append(("percentile curve vs bell curve", -c1["diff"] / np.mean(R["e1"]["raw"]["normal-IQR (web app)"]) * 100,
+                 -c1["ci95"][1] / np.mean(R["e1"]["raw"]["normal-IQR (web app)"]) * 100,
+                 -c1["ci95"][0] / np.mean(R["e1"]["raw"]["normal-IQR (web app)"]) * 100))
+    fig, ax = plt.subplots(figsize=(6.4, 0.32 * len(rows) + 0.8))
+    for i, (name, est, lo, hi) in enumerate(rows[::-1]):
+        col = GREEN if lo > 0 else GREY
+        ax.plot([lo, hi], [i, i], color=col, lw=2.5)
+        ax.plot(est, i, "o", color=INK, ms=4)
+    ax.axvline(0, color=RED, lw=0.8, ls="--")
+    ax.set_yticks(range(len(rows)), [r[0] for r in rows[::-1]])
+    ax.set(xlabel="% reduction in error (bar = 95% CI; right of red line = better than the comparison)",
+           title="Is it better than chance? Every comparison with its 95% interval")
+    save("f13_forest")
+    print("forest written")
+
+# 14. backtest power
+PW = ROOT / "reports" / "power.json"
+if PW.exists():
+    pw = json.loads(PW.read_text())
+    fig, axes = plt.subplots(1, 2, figsize=(7.2, 2.8), sharey=True)
+    for ax, key, title in zip(axes, ("scores_only", "with_counselor_rating"),
+                              ("A. scores-only UNIMATH vs counselor", "B. UNIMATH + counselor rating vs counselor")):
+        ns = [int(k) for k in pw[key]]
+        ax.plot(ns, [100 * pw[key][str(n)]["p_unimath_significantly_better"] for n in ns], "o-", color=AMBER, label="UNIMATH significantly better")
+        ax.plot(ns, [100 * pw[key][str(n)]["p_counselor_significantly_better"] for n in ns], "o-", color=BLUE, label="counselor significantly better")
+        ax.plot(ns, [100 * pw[key][str(n)]["p_inconclusive"] for n in ns], "o--", color=GREY, label="inconclusive")
+        ax.axvline(25, color=RED, lw=0.7, ls=":")
+        ax.set(xscale="log", xlabel="past students in the backtest", title=title)
+        ax.set_xticks(ns, [str(n) for n in ns])
+        ax.xaxis.set_minor_formatter(matplotlib.ticker.NullFormatter())
+    axes[0].set_ylabel("% of simulated backtests")
+    axes[0].legend(frameon=False, fontsize=6.5)
+    save("f14_power")
+    print("power fig written")

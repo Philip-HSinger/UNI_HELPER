@@ -18,6 +18,7 @@ from reportlab.platypus import (Image, KeepTogether, PageBreak, Paragraph, Simpl
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 R = json.loads((ROOT / "reports" / "backtest_results.json").read_text())
+SIG0 = json.loads((ROOT / "reports" / "significance.json").read_text())
 FIG = ROOT / "reports" / "figures"
 OUT = ROOT / "reports" / "UNIMATH_methods_manual.pdf"
 
@@ -32,6 +33,7 @@ B = ParagraphStyle("B", parent=ss["BodyText"], fontName="Helvetica", fontSize=9,
 SM = ParagraphStyle("SM", parent=B, fontSize=7.5, leading=10)
 MONO = ParagraphStyle("M", parent=B, fontName="Courier", fontSize=8, leading=10.5, backColor=colors.HexColor("#f4f4f4"),
                       borderPadding=4, spaceBefore=3, spaceAfter=7)
+PLAIN = ParagraphStyle("PL", parent=B, backColor=colors.HexColor("#eef5ff"), borderPadding=6, borderColor=colors.HexColor("#2b6cb0"), borderWidth=0.6, spaceBefore=2, spaceAfter=9)
 CALL = ParagraphStyle("C", parent=B, backColor=SHADE, borderPadding=6, borderColor=AMBER, borderWidth=0.6, spaceBefore=4, spaceAfter=9)
 
 story = []
@@ -86,7 +88,7 @@ story.append(Spacer(1, 8))
 P("Every feature, the statistical technique behind it, its assumptions, how it was backtested, what the backtests "
   "showed (including what did not work), and an honest look at who would buy this and why.", B)
 story.append(Spacer(1, 20))
-P("Version 0.1 &nbsp;·&nbsp; November 2026 &nbsp;·&nbsp; catalog: 19 schools (13 fully modellable), 71 supplement prompts", SM)
+P("Version 0.1 &nbsp;·&nbsp; November 2026 &nbsp;·&nbsp; catalog: 412 four-year schools (393 from US Dept. of Education College Scorecard + 19 hand-curated with real supplements)", SM)
 story.append(PageBreak())
 
 # ------------------------------------------------------------------------------------------ exec summary
@@ -94,38 +96,305 @@ P("1. Executive summary", H1)
 P(f"<b>What it is.</b> A terminal (Bloomberg-style function codes) and Python library that turns published admissions "
   "data into calibrated, correlated admission probabilities, a Bayesian update as decisions arrive, essay-reuse "
   "planning, and a list optimizer. There is also a plain-English 'family brief' for counselors who don't want the math.")
-P("<b>The one result that matters.</b> Every mainstream list-balancing tool treats schools as independent and multiplies "
-  f"probabilities. In the backtest, take students whose lists looked at least 95% safe under that formula. "
-  f"<b>{pw[3]:.1f}% of them actually got zero admits</b>. The independence formula predicted {pw[1]:.1f}%; "
-  f"UNIMATH's correlated model predicted {pw[2]:.1f}% (Figure 7). Under a deliberately misspecified world, "
-  f"the zero-admit rate was {pm[3]:.1f}%. UNIMATH predicted {pm[2]:.1f}% (too pessimistic) and independence "
-  f"predicted {pm[1]:.1f}% (far too optimistic).", CALL)
-rows = [["Claim", "Verdict", "Evidence"],
-        ["Score percentiles beat the bell curve through the IQR", "Yes, modestly",
-         f"E1: {f(R['e1']['mae']['two-piece quantile-matched'], 2)} vs {f(R['e1']['mae']['normal-IQR (web app)'], 2)} "
-         "percentile-point mean error on known truth"],
-        ["Per-school chances beat a sensible logistic baseline", "Slightly",
-         f"E3: Brier {f(e3w['scores']['unimath (fitted)']['brier'], 4)} vs {f(e3w['scores']['logistic on z-score']['brier'], 4)} "
-         f"(matched world); {f(e3m['scores']['unimath (fitted)']['brier'], 4)} vs {f(e3m['scores']['logistic on z-score']['brier'], 4)} (misspecified)"],
-        ["Bayesian update from other decisions adds real information", "Yes, clearly",
-         f"E4: Brier {f(e3w['scores']['unimath (fitted)']['brier'], 4)} → "
-         f"{f(e3w['scores']['unimath fitted + other decisions (LOO posterior)']['brier'], 4)}; AUC "
-         f"{f(e3w['scores']['unimath (fitted)']['auc'])} → {f(e3w['scores']['unimath fitted + other decisions (LOO posterior)']['auc'])}"],
-        ["Risk of zero admits is calibrated", "Yes if model is right; overstated if not", "Figure 7"],
-        ["Model parameters can be learned from outcomes", "Partly",
-         "E2: lapse and test weight recovered; shared-noise share weakly identified; 95% CIs cover only "
-         f"{100 * R['e2']['sigma_eps']['coverage95']:.0f}%"],
-        ["Essay similarity heuristic matches human curation", "No",
-         f"E5: MAE {f(R['e5']['raw']['mae_points'], 1)} pts, worse than a constant ({f(R['e5']['constant_baseline']['mae_points'], 1)})"],
-        ["List optimizer finds the best list", "Yes", f"E6: greedy = brute-force optimum in {100 * R['e6']['same_list']:.0f}% of {R['e6']['trials']} trials"],
-        ["Validated on real student outcomes", "NOT YET", "No outcome data was available. The harness (FIT, LEDGER/SCORE) is ready."]]
-table(rows, [2.2, 1.25, 3.25])
+_sw, _sm = SIG0["pred_well"]["safe_lists"], SIG0["pred_miss"]["safe_lists"]
+P("<b>The one result that matters, in plain English.</b> Most list-balancing tools multiply each school's odds as if "
+  "admissions were separate coin flips. Across 5 simulated worlds, we took the students whose lists looked at least "
+  f"95% safe that way. <b>{100 * _sw['observed_rate']:.1f}% of them got zero admits</b> "
+  f"({_sw['zero_admits']} of {_sw['n']}). Multiplying odds predicted {100 * _sw['independence']['expected'] / _sw['n']:.1f}%; "
+  f"UNIMATH predicted {100 * _sw['correlated']['expected'] / _sw['n']:.1f}%. When we deliberately made the fake world "
+  f"break the model's rules, {100 * _sm['observed_rate']:.1f}% got zero. UNIMATH said "
+  f"{100 * _sm['correlated']['expected'] / _sm['n']:.1f}% (too cautious) and multiplying odds said "
+  f"{100 * _sm['independence']['expected'] / _sm['n']:.1f}% (far too optimistic). "
+  "<i>Math version: Claim 5 in Section B.</i>", CALL)
+P("<b>Is any of it better than chance?</b> Each claim below was tested two ways: does it beat a no-information "
+  "guess, and is the advantage bigger than luck (95% confidence intervals, p-values, resampling whole students)? "
+  "Full math and numbers are in Section B.")
+_v = {"1": "YES, small", "2": "YES", "3": "YES, small" if SIG0["pred_well"]["fitted_vs_logistic"]["brier"]["ci95"][1] < 0
+      and SIG0["pred_miss"]["fitted_vs_logistic"]["brier"]["ci95"][1] < 0 else "NOT RELIABLY", "4": "YES, large", "5": "YES",
+      "6": "PARTLY", "7": "NO", "8": "YES", "9": "UNTESTED"}
+rows = [["#", "Claim (plain English)", "Better than chance?", "On what data"],
+        ["1", "Our percentile estimate is more accurate than a plain bell curve", _v["1"], "simulated score bands"],
+        ["2", "Chances beat quoting the acceptance rate to everyone", _v["2"], "simulated students"],
+        ["3", "Single-school chances beat a simple statistical model", _v["3"], "simulated students"],
+        ["4", "Knowing a student's other decisions sharpens the rest", _v["4"], "simulated students"],
+        ["5", "Multiplying odds badly understates the risk of zero admits", _v["5"], "simulated students"],
+        ["6", "The model can learn its settings from past outcomes", _v["6"], "simulated students"],
+        ["7", "Automatic essay-overlap scores match human judgement", _v["7"], "10 human-scored pairs"],
+        ["8", "The list optimizer finds the best list", _v["8"], "random test cases"],
+        ["9", "Any of this beats existing tools for real students", _v["9"], "no real data yet"],
+        ["10", "It beats a counselor's own calls on one past class", "NO (can't be shown)", "simulated counselors"]]
+table(rows, [0.3, 3.4, 1.4, 1.6])
 P("<b>The honest bottom line.</b> The math is sound and tested, and the core insight (correlated decisions) is real and "
   "under-served by competitors. But the code is not a moat: a subagent rebuilt the core in about 35 minutes (Section 10). "
   "What is defensible is (a) outcome data pooled across many counselors, which calibrates the model; (b) a curated, "
   "per-cycle catalog and prompt matrix; and (c) a public, tamper-evident forecast track record. Every validation "
   "number in this manual is synthetic until real outcomes are loaded.")
 story.append(PageBreak())
+
+
+# ------------------------------------------------------------------------------------------ reading guide
+P("A. Reading guide: the terms in plain English", H1)
+P("This manual states every claim twice: once as mathematics (precise, testable) and once in plain English. "
+  "These are the terms that come up most.")
+rows = [["Term", "Plain English", "What 'good' looks like"],
+        ["Probability / P(admit)", "How often this would happen across many similar applicants. 20% means about 1 in 5 such students get in.", "-"],
+        ["Calibrated", "When the model says 20%, about 20% of those students really get in. A calibrated model's numbers can be taken at face value.", "Points on the diagonal of a reliability plot"],
+        ["Brier score", "Average squared miss between the forecast and what happened (1 = admitted, 0 = not). Lower is better. A forecaster who always says 50% scores 0.25.", "Lower than quoting each school's acceptance rate"],
+        ["Log loss", "Like the Brier score, but punishes confident wrong answers much harder (saying 1% for someone who got in).", "Lower is better"],
+        ["AUC", "Pick one admitted and one rejected application at random. AUC is the chance the model gave the admitted one the higher probability. 0.5 is a coin flip; 1.0 is perfect ranking.", "Well above 0.5"],
+        ["ECE (calibration error)", "Average gap between what the model said and what happened, within groups of similar forecasts.", "Close to 0"],
+        ["Base rate", "Just quoting the school's acceptance rate to everyone. The 'knows nothing about you' benchmark.", "Model must beat this"],
+        ["95% confidence interval (CI)", "The range the true value plausibly lies in, given the data we had. If the whole interval is on one side of zero, the effect is not just luck.", "Interval excludes 0"],
+        ["p-value", "If there were really no difference, how often would we see a gap this big from luck alone? p = 0.01 means 1 time in 100.", "Below 0.05 (conventionally)"],
+        ["Bootstrap", "Re-running the analysis thousands of times on resampled data to see how much the answer wobbles. We resample whole students, because one student's decisions are linked.", "-"],
+        ["Synthetic data", "Fake students generated by a computer from rules we chose. It proves the math works, but not that real admissions follow those rules.", "-"],
+        ["Well-specified / misspecified", "Well-specified: the fake world follows exactly the model's rules, so the model is graded on its own exam. Misspecified: the fake world deliberately breaks the rules (heavy tails, hooks, wrong weights), a harder exam.", "-"]]
+table(rows, [1.4, 3.7, 1.6], font=7.4)
+story.append(PageBreak())
+
+
+# ------------------------------------------------------------------------------------------ claims register
+SIG = json.loads((ROOT / "reports" / "significance.json").read_text())
+
+
+def pf(p):
+    return "p < 0.001" if p < 0.001 else f"p = {p:.3f}"
+
+
+def ci_s(c, scale=1.0, d=4):
+    return f"95% CI {c[0] * scale:.{d}f} to {c[1] * scale:.{d}f}"
+
+
+VERDICT_COLORS = {"YES": "#2e8b57", "NO": "#c0392b", "PARTLY": "#d98a00", "UNTESTED": "#7a7a7a"}
+
+
+def claim(num, title, math, plain, result, verdict, verdict_text, caveat):
+    col = VERDICT_COLORS[verdict]
+    rows = [[f"<b>Claim {num}</b>", f"<b>{title}</b>"],
+            ["Math", math], ["In plain English", plain], ["Result", result],
+            ["Better than chance?", f"<font color='{col}'><b>{verdict}</b></font> · {verdict_text}"], ["Caveat", caveat]]
+    body = ParagraphStyle("cb", parent=SM, fontSize=7.8, leading=10.3)
+    head = ParagraphStyle("ch", parent=body, textColor=colors.white)
+    t = Table([[Paragraph(a, head if i == 0 else body), Paragraph(b, head if i == 0 else body)] for i, (a, b) in enumerate(rows)],
+              colWidths=[1.15 * inch, 5.55 * inch])
+    t.setStyle(TableStyle([("GRID", (0, 0), (-1, -1), 0.3, colors.HexColor("#cccccc")), ("VALIGN", (0, 0), (-1, -1), "TOP"),
+                           ("BACKGROUND", (0, 0), (-1, 0), INK), ("BACKGROUND", (0, 2), (-1, 2), colors.HexColor("#eef5ff")),
+                           ("LEFTPADDING", (0, 0), (-1, -1), 4), ("RIGHTPADDING", (0, 0), (-1, -1), 4)]))
+    story.append(KeepTogether([t, Spacer(1, 9)]))
+
+
+def sig_verdict(d):
+    """'YES' if the whole 95% CI shows the claimed direction (negative loss difference)."""
+    return d["ci95"][1] < 0
+
+
+P("B. Claims register: every claim, in math and in plain English, with a chance test", H1)
+P("<b>How to read this.</b> 'Better than chance' has two meanings, and both are checked. (1) Does the tool beat a "
+  "<i>no-information guess</i> (a coin flip, or quoting the acceptance rate to everyone)? (2) Is the advantage "
+  "<i>bigger than luck</i>? Would it survive re-running on fresh random data? For (2) we report 95% confidence "
+  "intervals and p-values. The predictive claims pool <b>5 independent simulated worlds</b> "
+  f"({SIG['pred_well']['n_students']:,} held-out students, {SIG['pred_well']['n_rows']:,} applications per scenario), "
+  "and resample whole students, because one student's decisions are linked.")
+P("<b>The most important caveat applies to claims 2-6.</b> They are tested on synthetic students. In the "
+  "'well-specified' world the fake data follows the model's own rules, so the model is grading its own exam: passing "
+  "proves the math and code are right, not that real admissions work this way. The 'misspecified' world deliberately "
+  "breaks the rules and is a fairer test, but we still wrote it. <b>Claim 9 (does any of this hold for real "
+  "students?) is untested.</b>", CALL)
+fig("f13_forest", caption="Figure 13. Every predictive comparison at a glance. Green bars clear zero (the advantage is "
+    "not luck); grey bars cross it (could be luck). In plain English: green means 'genuinely better on this test'.")
+
+c1 = SIG["c1"]
+claim("1", "Our percentile curve is more accurate than a symmetric bell curve",
+      "For band b let e<sub>b</sub><super>M</super> = mean<sub>x∈{600..800}</sub> |F<sub>M</sub>(x) − F<sub>b</sub>(x)|·100, "
+      "with F<sub>b</sub> the true mid-rank CDF. H<sub>0</sub>: E[e<super>ours</super> − e<super>normal</super>] = 0. "
+      "Paired t-test and Wilcoxon signed-rank test over 392 simulated skewed, ceiling-censored bands.",
+      "Given only the three numbers a school publishes, our curve tells you your percentile more accurately than the "
+      "bell curve the web app uses.",
+      f"Error lower by {-c1['vs_web']['diff']:.2f} percentile points on average ({ci_s([-c1['vs_web']['ci95'][1], -c1['vs_web']['ci95'][0]], 1, 2)}); "
+      f"better on {100 * c1['vs_web']['share_a_better']:.0f}% of bands; {pf(c1['vs_web']['p_wilcoxon'])}. "
+      f"Also beats the continuous split normal by {-c1['vs_continuous']['diff']:.2f} points ({pf(c1['vs_continuous']['p_wilcoxon'])}).",
+      "YES", "clearly not luck, but the effect is small (about 1 percentile point).",
+      "The 'true' distributions were skew-normal shapes we chose. Real score distributions could differ.")
+
+
+def pred_claim_numbers(world):
+    w = SIG[f"pred_{world}"]
+    return w, w["brier"], w["auc"]
+
+
+ww, bw, aw = pred_claim_numbers("well")
+wm, bm, am = pred_claim_numbers("miss")
+fb_w, fb_m = ww["fitted_vs_base"]["brier"], wm["fitted_vs_base"]["brier"]
+claim("2", "The chances are informative: better than a coin flip and better than quoting the acceptance rate",
+      "H<sub>0</sub><sup>a</sup>: AUC = 0.5 (Mann-Whitney U, one-sided). H<sub>0</sub><sup>b</sup>: "
+      "E[(p−y)² − (r<sub>j</sub>−y)²], p = model forecast, = 0, where r<sub>j</sub> is the school's acceptance rate; student-cluster "
+      "bootstrap (4,000 resamples).",
+      "Knowing the student's scores gives better odds than telling everyone the school's acceptance rate, and ranks "
+      "admitted students above rejected ones far more often than guessing would.",
+      f"Matched world: AUC {aw['unimath (fitted)']['auc']:.3f} ({pf(aw['unimath (fitted)']['p_vs_random'])} vs 0.5); "
+      f"Brier {bw['unimath (fitted)']:.4f} vs {bw['base rate']:.4f} for the acceptance rate and {bw['coin flip (0.5)']:.3f} for a coin flip "
+      f"(improvement {ci_s([-fb_w['ci95'][1], -fb_w['ci95'][0]])}). "
+      f"Misspecified world: AUC {am['unimath (fitted)']['auc']:.3f}; Brier {bm['unimath (fitted)']:.4f} vs {bm['base rate']:.4f} "
+      f"({ci_s([-fb_m['ci95'][1], -fb_m['ci95'][0]])}).",
+      "YES" if sig_verdict(fb_w) and sig_verdict(fb_m) else "PARTLY",
+      "on synthetic data, in both worlds, by a wide margin.",
+      "Any model that uses test scores sensibly would pass this. It's a floor, not a selling point.")
+
+fl_w, fl_m = ww["fitted_vs_logistic"]["brier"], wm["fitted_vs_logistic"]["brier"]
+dl_w = ww["default_vs_logistic"]["brier"]
+yes3 = sig_verdict(fl_w) and sig_verdict(fl_m)
+claim("3", "Per-school chances beat a simple statistical baseline (logistic regression)",
+      "Δ = E[(p<sub>UNIMATH</sub>−y)² − (p<sub>logit</sub>−y)²], logit model: y ~ logit(r<sub>j</sub>) + "
+      "z-score vs published band, trained on the same 60% of students. H<sub>0</sub>: Δ = 0; student-cluster bootstrap.",
+      "Compared with what a careful developer could build in an afternoon, are UNIMATH's single-school odds actually better?",
+      f"Matched world: Brier difference {fl_w['diff']:.4f} ({ci_s(fl_w['ci95'])}, {pf(fl_w['p'])}), i.e. "
+      f"{-100 * fl_w['relative']:.1f}% lower error. Misspecified world: {fl_m['diff']:.4f} ({ci_s(fl_m['ci95'])}, {pf(fl_m['p'])}), "
+      f"{-100 * fl_m['relative']:.1f}% lower. With <i>no</i> training data (default priors): {dl_w['diff']:.4f} ({ci_s(dl_w['ci95'])}).",
+      "YES" if yes3 else "PARTLY",
+      ("statistically real in both worlds, but small: a few percent lower error." if yes3 else
+       "the advantage is small and not reliably distinguishable from luck in every scenario."),
+      "This is the claim a competitor would attack. Don't market 'more accurate chances'; market what the logistic "
+      "model can't do (Claims 4-5).")
+
+pv_w, pv_m = ww["posterior_vs_fitted"]["brier"], wm["posterior_vs_fitted"]["brier"]
+claim("4", "Knowing a student's other decisions improves the prediction for the rest (Bayesian update)",
+      "For each held-out decision y<sub>ij</sub>: p<sub>ij</sub><super>post</super> = ∫p<sub>ij</sub>(S) π(S | y<sub>i,−j</sub>) dS "
+      "vs p<sub>ij</sub><super>prior</super> = ∫p<sub>ij</sub>(S) π(S) dS. H<sub>0</sub>: E[(p<super>post</super>−y)² − (p<super>prior</super>−y)²] = 0; "
+      "student-cluster bootstrap.",
+      "If you know a student got into CMU and was rejected by MIT, you can predict their Cornell result better than from "
+      "their scores alone. This is the 'accepted at one, probably at the other' feature.",
+      f"Matched world: error lower by {-100 * pv_w['relative']:.0f}% ({ci_s(pv_w['ci95'])}, {pf(pv_w['p'])}); AUC "
+      f"{aw['unimath (fitted)']['auc']:.3f} → {aw['unimath fitted + other decisions (LOO posterior)']['auc']:.3f}. "
+      f"Misspecified world: lower by {-100 * pv_m['relative']:.0f}% ({ci_s(pv_m['ci95'])}, {pf(pv_m['p'])}).",
+      "YES" if sig_verdict(pv_w) and sig_verdict(pv_m) else "PARTLY",
+      "the largest and most robust effect in the whole suite.",
+      "Its size depends on how strongly real decisions are linked, which no public data measures. On real data the gain "
+      "could be larger or smaller.")
+
+cw, cm = ww["count_correlated_vs_independent"], wm["count_correlated_vs_independent"]
+sw, sm_ = ww["safe_lists"], wm["safe_lists"]
+claim("5", "Treating schools as independent badly understates the risk of zero admits",
+      "(a) Per-student log score of the observed number of admits K<sub>i</sub>: log P<sub>corr</sub>(K<sub>i</sub>) vs "
+      "log P<sub>indep</sub>(K<sub>i</sub>) (Poisson-binomial of marginals); paired bootstrap. (b) Among students with "
+      "1−Π(1−p<sub>j</sub>) &gt; 0.95, test the observed zero-admit count against the exact Poisson-binomial "
+      "distribution implied by each model.",
+      "When a list 'looks' 95%+ safe because you multiplied the odds, the real chance of getting nothing is much higher. "
+      "UNIMATH's correlated model sees this; the multiply-the-odds method doesn't.",
+      f"(a) Correlated model better: matched {ci_s([-cw['ci95'][1], -cw['ci95'][0]], 1, 3)} nats/student ({pf(cw['p'])}); "
+      f"misspecified {ci_s([-cm['ci95'][1], -cm['ci95'][0]], 1, 3)} ({pf(cm['p'])}). "
+      f"(b) Matched world: {sw['zero_admits']} of {sw['n']} 'safe' students got zero admits "
+      f"({100 * sw['observed_rate']:.1f}%, CI {100 * sw['observed_ci95'][0]:.1f}–{100 * sw['observed_ci95'][1]:.1f}%). "
+      f"Independence expected {sw['independence']['expected']:.1f} ({pf(sw['independence']['p_two_sided'])}: rejected); "
+      f"correlated model expected {sw['correlated']['expected']:.1f} ({pf(sw['correlated']['p_two_sided'])}). "
+      f"Misspecified: {sm_['zero_admits']} of {sm_['n']}; independence expected {sm_['independence']['expected']:.1f} "
+      f"({pf(sm_['independence']['p_two_sided'])}), correlated expected {sm_['correlated']['expected']:.1f} "
+      f"({pf(sm_['correlated']['p_two_sided'])}).",
+      "YES" if sig_verdict(cw) and sig_verdict(cm) else "PARTLY",
+      "independence is decisively rejected in both worlds. The correlated model is right when the world matches it; in "
+      "the misspecified world it over-warns (a p-value below 0.05 for the correlated row there means its predicted "
+      "count is also wrong).",
+      "Real-world strength of the link between decisions is unknown. The direction (independence is too optimistic) "
+      "is very likely; the size is not established.")
+
+c5 = SIG.get("c5", {})
+if c5:
+    rows_txt = "; ".join(f"{k}: true {v['true']}, mean {v['mean']:.3f} (bias {pf(v['bias_t_p'])}), CI coverage "
+                         f"{100 * v['coverage95']:.0f}% [{100 * v['coverage_ci95'][0]:.0f}–{100 * v['coverage_ci95'][1]:.0f}%]"
+                         for k, v in c5.items())
+    claim("6", "The model's settings can be learned from outcome data (FIT works)",
+          "Over R=20 simulated datasets with known θ: bias test H<sub>0</sub>: E[θ<sub>est</sub>] = θ (t-test), and coverage "
+          "H<sub>0</sub>: P(θ ∈ θ<sub>est</sub> ± 1.96·SE) = 0.95 (exact binomial interval).",
+          "If a counselor uploads past outcomes, does the fitting step find the true settings, and are its stated error "
+          "bars honest?",
+          rows_txt + ".",
+          "PARTLY", "some settings are recovered well; others are biased or have over-confident error bars (coverage "
+          "well below 95%).",
+          "Fix before selling FIT: use bootstrap or profile-likelihood intervals, and pool data across practices.")
+
+c6 = SIG["c6"]
+claim("7", "Automatic essay-similarity scores match human judgement",
+      "Spearman ρ between model and curated scores on n=10 held-out pairs; H<sub>0</sub>: ρ = 0 (permutation test, "
+      "20,000 shuffles). Also paired |error| vs a constant predictor.",
+      "Does the computer's guess of 'how much of essay A can be reused for prompt B' agree with a person's?",
+      f"ρ = {c6['raw_spearman']['rho']:.2f}, permutation {pf(c6['raw_spearman']['p_one_sided'])}; recalibrated "
+      f"ρ = {c6['loo_spearman']['rho']:.2f} ({pf(c6['loo_spearman']['p_one_sided'])}). Mean error "
+      f"{c6['abs_err_vs_constant']['diff']:+.1f} points vs always guessing the average ({pf(c6['abs_err_vs_constant']['p_t'])}).",
+      "NO", "not distinguishable from a random ordering, and no better than guessing the average.",
+      "Only 10 human-scored pairs exist, so even a good method could not prove itself yet. Human scores override the "
+      "model in the product.")
+
+c7 = SIG["c7"]
+claim("8", "The list optimizer finds the best list",
+      "On random instances, compare the greedy+swap objective with the brute-force optimum; Clopper-Pearson interval on "
+      "the match rate.",
+      "When the tool recommends a list, is it really the best one under its own scoring, or just a decent one?",
+      f"{c7['k']} of {c7['n']} matched the exact optimum: match rate ≥ {100 * c7['ci95'][0]:.0f}% with 95% confidence.",
+      "YES", "this is a search-correctness claim, and it holds.",
+      "'Best' only under the model's own odds and the user's preference numbers.")
+
+claim("9", "Any of this predicts real students better than existing tools",
+      "Would require E[L(p<sub>UNIMATH</sub>, y)] &lt; E[L(p<sub>competitor</sub>, y)] on real outcomes y "
+      "(L = Brier or log loss), with a pre-registered held-out set.",
+      "Is it actually better than CollegeVine, scattergrams, or an experienced counselor's judgement for real students?",
+      "No real outcome data was available. FIT and LEDGER/SCORE are built to answer this on a counselor's past classes "
+      "and on frozen 2026-27 forecasts.",
+      "UNTESTED", "unknown. This is the claim buyers care about most.",
+      "Until this is tested, all accuracy statements should be framed as 'on simulated data'.")
+
+PWR = json.loads((ROOT / "reports" / "power.json").read_text())
+so, wc = PWR["scores_only"], PWR["with_counselor_rating"]
+claim("10", "UNIMATH beats a counselor's own reach/target/likely calls, and one class can show it",
+      "Simulated counselor with private, noisy knowledge of non-test strength (sd 0.6) reports 3 labels. BKTST "
+      "scoring: labels → leave-one-student-out label rates; Δ = Brier(UNIMATH) − Brier(labels), student-cluster "
+      "bootstrap. Power = P(95% CI excludes 0) over 150 simulated backtests per class size n.",
+      "If a counselor runs our free backtest on last year's class, will it show UNIMATH is better than their own "
+      "calls, and would that result mean anything?",
+      f"<b>Scores-only UNIMATH loses to the counselor</b> (mean Δ = +{so['800']['mean_diff']:.4f}; counselor "
+      f"significantly better in {100 * so['800']['p_counselor_significantly_better']:.0f}% of 800-student backtests). "
+      f"<b>UNIMATH + the counselor's rating wins, but barely</b> (mean Δ = {wc['800']['mean_diff']:.4f}). "
+      f"With one class of 25 students, the result is inconclusive in {100 * wc['25']['p_inconclusive']:.0f}% of backtests; "
+      f"even with 800 students, only {100 * wc['800']['p_unimath_significantly_better']:.0f}% detect the gain.",
+      "NO", "not provable on one counselor's data: the honest pitch is 'use your judgement as an input', not 'beat it'.",
+      "The simulated counselor's skill is an assumption. Real counselors may be better or worse than modelled.")
+fig("f14_power", 6.6, "Figure 14. Power of the free backtest. Red line: a typical class of 25. Left: a model "
+    "that ignores the counselor's knowledge loses as data grows. Right: feeding it the counselor's rating makes it "
+    "slightly better than labels alone, but far too slightly to prove on one class.")
+story.append(PageBreak())
+
+
+# ------------------------------------------------------------------------------------------ persuasion loop
+LOOP = ROOT / "reports" / "loop"
+if LOOP.exists():
+    P("C. The persuasion loop: fresh AI buyer and builder, round by round", H1)
+    P("<b>Method.</b> Each round, two brand-new subagents with no memory of earlier rounds read only that round's sales "
+      "email and the linked manual (and, in round 3, the draft data terms). The <b>buyer</b> plays a solo independent "
+      "counselor asking 'should I buy this?'. The <b>builder</b> is asked 'can you just build this for me instead?'. "
+      "Between rounds, only true changes were allowed: real product features, honest re-framing, corrected facts. No "
+      "invented references, customers or results. The loop stops when the buyer says BUY, the builder says BUY "
+      "(too big to build), or the remaining objection can only be fixed with real-world data.")
+    rows = [["Round", "What changed going in", "Buyer verdict", "Builder verdict", "Main remaining objection"]]
+    changes = {1: "Honest pitch v2: free past-class backtest offer, simulated numbers labelled",
+               2: "BKTST built; zero-admit risk shown as a range; power analysis published; 412-school coverage from College "
+                  "Scorecard; repositioned as 'uses your judgement, doesn't beat it'; pay-after-May terms",
+               3: "ROSTER caseload import; counselor-only vs family brief (words, no %); ED rate input; draft data terms; timing fix"}
+    for n in (1, 2, 3):
+        b, d = LOOP / f"buyer_r{n}.md", LOOP / f"builder_r{n}.md"
+        if not b.exists():
+            continue
+        bt_ = b.read_text().splitlines()
+        bv = bt_[0].replace("VERDICT: ", "")
+        dv = d.read_text().splitlines()[0].replace("VERDICT: ", "") if d.exists() else "(stopped: already BUY)"
+        flip = next((ln for ln in bt_ if ln.startswith("FLIP:")), "")
+        rows.append([str(n), changes[n], bv, dv, flip.replace("FLIP:", "Buyer needs:")])
+    table(rows, [0.45, 2.0, 1.05, 1.0, 2.2], font=7.2)
+    P("<b>In plain English: what the loop shows.</b> The builder flipped to BUY in round 2. Wider coverage, the "
+      "power analysis (which shows a copy can't be validated cheaply either) and a pay-after-results offer made building "
+      "your own cost 2-10x the price. The buyer moved from 'trial, don't pay' to 'use the free cycle as a second opinion', "
+      "but every round ended on the same flip condition: <b>evidence on real students, pooled across practices, ideally "
+      "checked by an independent statistician</b>. That cannot be produced by rewriting an email or adding features. It "
+      "takes one admissions cycle of real forecasts (LEDGER now, SCORE in May) across several counselors. The loop "
+      "has therefore reached its honest ceiling for this session.", CALL)
+    story.append(PageBreak())
 
 # ------------------------------------------------------------------------------------------ features
 P("2. Feature map", H1)
@@ -140,7 +409,10 @@ rows = [["Code", "What a user gets", "Technique", "Backtestable?"],
         ["SENS", "Which assumptions an answer depends on", "One-at-a-time parameter perturbation (tornado)", "n/a (diagnostic)"],
         ["FIT", "Model refit on a practice's own outcomes, with held-out scores", "Maximum marginal likelihood, L-BFGS-B, Hessian SEs; Brier, log loss, AUC, ECE", "It is the backtest"],
         ["LEDGER / SCORE", "Frozen, tamper-evident forecasts graded in spring", "SHA-256 hash chain; proper scoring rules vs constant forecast", "It is the backtest"],
-        ["BRIEF", "Plain-English paragraph for a family email", "Templated summary of the above", "n/a"],
+        ["BRIEF [family]", "Counselor brief (numbers), or family brief in words (low/moderate/high), no false precision", "Templated summary; risk shown as a range across link strengths", "n/a"],
+        ["ROSTER", "Whole caseload screened at once: no-admit risk range and likely count per student", "Batch of PORT/CHNC", "n/a"],
+        ["BKTST", "Counselor's own past calls vs UNIMATH on real past outcomes", "Label→rate conversion (leave-one-student-out); student-cluster bootstrap CI", "It is the backtest (see Claim 10 for power)"],
+        ["ED", "Use a school's early-round admit rate for one student", "Recalibration with the round-specific base rate (approximation)", "Needs round-level outcomes"],
         ["DQ / SCH / CAT", "Data-quality report; per-school calibration page", "Validation rules; calibration readout", "n/a"]]
 table(rows, [0.8, 1.9, 2.6, 1.4])
 P("Screenshots of the terminal look like this (amber on black, one function per screen):", B)
@@ -154,6 +426,7 @@ story.append(PageBreak())
 
 # ------------------------------------------------------------------------------------------ PCTL
 P("3. Score percentiles (PCTL): bell-curve interpolation done properly", H1)
+P("<b>In plain English.</b> Schools publish three numbers about their students' SAT scores: the score a quarter of students fall below, the middle score, and the score three quarters fall below. We draw a curve that passes exactly through those three numbers, respecting that nobody can score above 800, and read off where your score sits. One test sitting can be off by about 30 points either way, so we also give a range.", PLAIN)
 P("<b>Input.</b> A school's published 25th/50th/75th percentile section scores (Common Data Set C9; enrolled first-years).")
 P("<b>Technique.</b> Each section is modelled as a <i>quantile-matched two-piece normal</i>. Below the median the "
   "latent score is a half-normal with scale σ<sub>L</sub> = (q50−q25)/0.6745, and above it a half-normal with "
@@ -185,6 +458,7 @@ story.append(PageBreak())
 
 # ------------------------------------------------------------------------------------------ CHNC
 P("4. Admission probability (CHNC): a calibrated selection model", H1)
+P("<b>In plain English.</b> Picture every application getting a hidden overall rating made of test scores, everything else (grades, activities, essays), and luck. The school admits everyone above a cutoff. Two public facts tell us where the cutoff sits: what fraction of applicants get in, and what the admitted students' scores look like. From those, we work out how likely you are to land above the cutoff.", PLAIN)
 P("<b>Generative model.</b> Within school j's applicant pool, an applicant is admitted iff "
   "U<sub>j</sub> = a<sub>j</sub>·zT + b·zH + ε<sub>j</sub> &gt; c<sub>j</sub>. Here zT is the pool-standardized test "
   "composite, zH the standardized non-test strength (grades, rigor, activities), and ε everything idiosyncratic to the "
@@ -214,6 +488,7 @@ story.append(PageBreak())
 
 # ------------------------------------------------------------------------------------------ XADM/UPDT/PORT
 P("5. Cross-admit, Bayesian updating and portfolio risk (XADM · UPDT · PORT)", H1)
+P("<b>In plain English.</b> Your applications aren't separate coin flips. The same essays, grades and recommendations go everywhere, so a yes from MIT means your application is strong, and your Stanford odds should go up. Multiplying schools' odds as if they were independent makes a list of reaches look much safer than it is. These tools do the math the right way, and update your remaining odds every time a real decision comes in.", PLAIN)
 P("<b>Why decisions are correlated.</b> The same student carries the same non-test strength and the same "
   "essays and recommendations to every school. All shared parts collapse into one latent "
   "S ~ N(b·μ<sub>h</sub>, b²σ<sub>h</sub>² + γσ²), where γ is the share of read noise common to every school. "
@@ -240,15 +515,20 @@ for key, lab in (("e3_well", "matches model"), ("e3_miss", "misspecified")):
 table(rows, [1.1, 1.9, 1.2, 1.1, 1.6])
 fig("f7_pnone", caption="Figure 7. The headline result. Among students whose lists look ≥95% safe under independence, "
     "the real zero-admit rate is several times higher.")
-P(f"<b>Verdict.</b> Conditioning on other decisions is the most valuable thing the model does: about a 20% Brier "
-  f"improvement in both worlds. The zero-admit warning is accurate when the model is right ({pw[2]:.1f}% predicted vs "
-  f"{pw[3]:.1f}% observed). When the world has heavy tails and hooked applicants, it over-warns ({pm[2]:.1f}% vs "
-  f"{pm[3]:.1f}%): the fit absorbed the hooked students by inflating shared variance. Over-warning is the safer failure "
-  "for a family, but it is still miscalibration, and real outcome data is needed to settle γ.", CALL)
+_pvw = SIG0["pred_well"]["posterior_vs_fitted"]["brier"]
+_pvm = SIG0["pred_miss"]["posterior_vs_fitted"]["brier"]
+P(f"<b>Verdict.</b> Conditioning on other decisions is the most valuable thing the model does. Pooled over 5 worlds, "
+  f"error drops {-100 * _pvw['relative']:.0f}% (matched) and {-100 * _pvm['relative']:.0f}% (misspecified), both far beyond luck. "
+  f"The zero-admit warning is accurate when the model is right ({100 * _sw['correlated']['expected'] / _sw['n']:.1f}% "
+  f"predicted vs {100 * _sw['observed_rate']:.1f}% observed). When the world has heavy tails and hooked applicants it "
+  f"over-warns ({100 * _sm['correlated']['expected'] / _sm['n']:.1f}% vs {100 * _sm['observed_rate']:.1f}%). Over-warning is "
+  "the safer failure for a family, but it is still miscalibration. <i>In plain English: it's right about the direction "
+  "of the risk, not reliably about its size.</i>", CALL)
 story.append(PageBreak())
 
 # ------------------------------------------------------------------------------------------ E3 + E2
 P("6. Fitting to real outcomes (FIT) and the predictive backtest", H1)
+P("<b>In plain English.</b> To check the model, we invented thousands of fake students whose results we know, hid some of them, and asked the model to predict the hidden ones. This tests whether the math and the code work. It cannot test whether real admissions offices behave like the model, because we wrote the fake world. That needs real student outcomes, which we don't have yet.", PLAIN)
 P("<b>Estimation.</b> Maximum <i>marginal</i> likelihood: each student's shared factor is integrated out "
   "(121-point grid), so a student's eight decisions count as eight correlated observations, not eight independent ones. "
   "Free parameters are σ<sub>ε</sub>, γ, the test-weight scale and the lapse ω (log/logit transformed), optimized with "
@@ -286,6 +566,7 @@ story.append(PageBreak())
 
 # ------------------------------------------------------------------------------------------ essays + plan
 P("7. Essay reuse (ESSY · FREE) and the list optimizer (PLAN)", H1)
+P("<b>In plain English.</b> Many supplements ask nearly the same question ('why this major?', 'a challenge you faced'). If you already wrote one for School A, School B may be mostly done. We estimate how much of each school's writing is already covered by your other schools, then pick the list that gives the best expected result for the least new writing.", PLAIN)
 P("<b>Prompt-pair reuse.</b> R(p,q) is the share of p's work already done by an essay for q. Curated scores (the "
   "same <font face='Courier'>prompt_similarity</font> table as the web app's Supabase) always win. Otherwise "
   "R = max over shared themes of θ<sub>t</sub>·(0.6 + 0.4·cos)·L, where θ<sub>t</sub> is a theme reuse coefficient "
@@ -320,6 +601,7 @@ story.append(PageBreak())
 
 # ------------------------------------------------------------------------------------------ sensitivity
 P("8. Assumptions and sensitivity (SENS)", H1)
+P("<b>In plain English.</b> Every model rests on guesses about how the world works. This page shows how much each answer moves if a guess is off. If an answer swings a lot, treat it as rough.", PLAIN)
 rows = [["Assumption", "Default", "Why", "Learnable from outcomes?"],
         ["σ<sub>ε</sub> (read noise)", "1.0", "Holistic reads are noisy; equal in size to non-test strength", "Yes (E2: moderately)"],
         ["γ shared noise share", "0.30", "Same essays/recs read everywhere", "Weakly; needs pooled data"],
@@ -381,6 +663,55 @@ P("<b>Clone test.</b> A second subagent was asked 'can you just build this for m
   "and keyword essay matching. Its own assessment: 'plausible-looking, not calibrated'. Its sensitivity check moved one "
   "school from 65% to 94% under reasonable alternative assumptions. Parity on trustworthiness: 1-3 months part-time "
   "plus 2-4 days per cycle. Its recommendation was a hybrid, decided by backtesting on last year's class.")
+P("Verdicts at a glance", H2)
+table([["Test", "Question put to a fresh Claude", "Verdict", "In one sentence"],
+       ["Buy test", "'I got this email. Should I buy it? Be honest.' (asked as a solo independent counselor)", "TRIAL ONLY",
+        "The idea is real and $390/yr is cheap, but nothing proves the numbers beat what the counselor already has, and the vendor is anonymous."],
+       ["Build test", "'Someone wants $49/month for this. Can you just build it for me instead?'", "HYBRID",
+        "The math can be copied in an afternoon, but making the numbers trustworthy takes 1-3 months plus upkeep every year, so decide by testing both on last year's class."]],
+      [0.8, 2.3, 0.9, 2.7])
+P("Resolving every objection", H2)
+P("In plain English: each row is something that made the AI hesitate, and the concrete fix. 'Done' items already exist "
+  "in the toolkit; the rest is the roadmap in priority order.")
+table([["#", "Objection (who raised it)", "Fix", "Effort", "Status"],
+       ["1", "Headline numbers come from the model itself, not real outcomes (buy)",
+        "Offer a free backtest of the counselor's last 2-3 classes with FIT, scored against their own calls and the scattergram. Freeze this year's forecasts in LEDGER now and publish the April SCORE.",
+        "Days per counselor; the track record takes one cycle", "Tools done; needs first real class"],
+       ["2", "Anonymous vendor (buy)", "Named founder, company entity, website, 2-3 counselor references, published methods manual.",
+        "1 week", "Not started"],
+       ["3", "No external validation (buy, build)", "Pre-register the evaluation, then have an independent statistician review this manual and the code.",
+        "2-4 weeks, small fee", "Not started"],
+       ["4", "Only 19 schools (buy)", "Import every large 4-year school's SAT bands and admit rate from the College Scorecard API; keep hand-curated supplements for the most-applied; DQ flags proxies.",
+        "Done for chances (412 schools); supplements: 2-3 weeks per 100 schools", "DONE for odds; supplements partial"],
+       ["5", "Looks score-driven: what about GPA, rigor, activities, ED/EA? (buy)",
+        "Structured advisor rubric (GPA, rigor, activities, essays, hooks) mapped to the non-test strength h; separate early-round acceptance rates; in-state flag.",
+        "1-2 weeks model work + data", "Partial (HOL percentile only)"],
+       ["6", "~250 outcomes/yr per practice is too few to refit (buy; confirmed by E2)",
+        "Pooled outcomes co-op with a hierarchical model: shared settings learned from all practices, with a practice-level adjustment.",
+        "3-6 weeks; needs ~10 practices", "Not started; the biggest moat"],
+       ["7", "Uploading client data to strangers (buy)",
+        "Local-only mode by default (it already runs entirely on the user's machine), de-identification before any pooling, data processing agreement, deletion policy.",
+        "1 week (policy + docs)", "Local mode done"],
+       ["8", "Terminal is friction for a solo counselor (buy)",
+        "Counselor-facing one-page family report (PDF) from BRIEF + a simple web front end; keep the terminal for power users and quantitative parents.",
+        "1-2 weeks", "BRIEF done; report not"],
+       ["9", "No CollegePlannerPro/Scoir import (buy)", "CSV importers mapped to their export formats.", "Days each", "Not started"],
+       ["10", "'Liability' fear framing and unsourced '1 in 10' (buy)",
+        "Rewrite the pitch: lead with the free past-class backtest and the public forecast ledger; label every number 'simulated' until real.",
+        "Hours", "Done in this manual; pitch email not yet"],
+       ["11", "Code copied in 35 minutes (build)",
+        "Don't sell code. Sell the maintained catalog, the pooled calibration and the track record, which a clone can't reproduce without the data.",
+        "Ongoing", "Positioning only"],
+       ["12", "Clone's odds swung 65%→94% under different assumptions (build)",
+        "Ship SENS with every answer, learn the uncertain settings from pooled data (FIT), and show ranges, not single decimals, in family-facing output.",
+        "Days", "SENS done; ranges in CHNC done"],
+       ["13", "2-4 days/yr of upkeep (build)", "That upkeep is the product: price the subscription on 'we re-verify every school and every new supplement each August'.",
+        "Ongoing", "Positioning"]],
+      [0.25, 1.6, 2.9, 1.05, 0.9], font=6.9)
+P("<b>The sequence that turns 'trial only' into 'buy'.</b> (1) Get one counselor's last two classes and run FIT: "
+  "this produces the first real accuracy number, good or bad. (2) Freeze this cycle's forecasts in LEDGER and publish "
+  "the head hash. (3) Fix the pitch (items 2, 10). (4) Expand coverage (4). (5) Recruit about 10 practices into the "
+  "outcomes co-op (6). Steps 1-3 cost almost nothing and answer Claim 9.", CALL)
 P("<b>Conclusion: what is actually sellable.</b> Code can be cloned. These can't:", CALL)
 P("1. <b>A pooled outcomes co-op.</b> Each practice contributes de-identified outcomes and gets a model calibrated on "
   "thousands of decisions. This directly fixes E2's identification problem and the buyer's 250-outcomes objection, "
@@ -405,8 +736,9 @@ story.append(PageBreak())
 P("11. Limitations and roadmap", H1)
 P("• <b>No real outcomes yet.</b> Every E3/E4 number is synthetic. First priority: run FIT and SCORE on a real "
   "counselor's past classes.<br/>"
-  "• <b>Coverage.</b> 19 schools, 6 missing acceptance rates (DQ flags them). Target the 150-300 most-applied schools "
-  "from CDS and IPEDS/College Scorecard.<br/>"
+  "• <b>Coverage.</b> Odds now cover 412 schools (Scorecard). For the 393 imported schools, 'test importance' is a "
+  "proxy from Scorecard's test-requirement code, not the CDS C7 label, and their supplements are placeholders. "
+  "Caltech still lacks an acceptance rate.<br/>"
   "• <b>Enrolled vs admitted bands.</b> CDS reports enrolled students. A yield adjustment parameter exists but is set "
   "to 0.<br/>"
   "• <b>Round structure.</b> ED/EA/REA rates differ sharply from RD. The model uses overall rates; it needs per-round "
@@ -421,7 +753,9 @@ rows = [["Command", "Description"]] + [[c, d] for c, d in [
     ("PCTL · CHNC · XADM · PORT", "percentiles, chances, cross-admit, portfolio"),
     ("DEC mit accepted · UPDT", "record a decision, Bayesian re-pricing"),
     ("ESSY · FREE · PLAN", "essay coverage, near-free schools, list optimizer"),
-    ("BRIEF", "plain-English family brief"),
+    ("BRIEF · BRIEF family", "counselor brief (numbers) · family brief (words)"),
+    ("ROSTER caseload.csv · BKTST past.csv", "whole-caseload risk screen · score your past calls vs UNIMATH"),
+    ("ED tufts 0.20", "use a school's early-round admit rate for this student"),
     ("SENS · SCH mit · DQ · CAT", "sensitivity, school page, data quality, catalog"),
     ("FIT outcomes.csv · SIM out.csv", "fit to real outcomes with held-out scores; synthetic data"),
     ("LEDGER f.jsonl alex · SCORE f.jsonl outcomes.csv", "freeze forecasts (hash chain); verify and grade"),

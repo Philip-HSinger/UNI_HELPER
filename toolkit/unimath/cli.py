@@ -42,7 +42,7 @@ CYN = _c("38;5;45")
 
 def header(code: str, title: str, sub: str = "") -> None:
     w = 96
-    line = f" {code:<6}{title}"
+    line = f" {code:<7}{title}"
     sub = sub[: max(0, w - len(line) - 3)]
     print(BAR(line + " " * max(1, w - len(line) - len(sub) - 1) + sub + " "))
 
@@ -92,6 +92,7 @@ class Session:
     effort_cost: float = 0.01  # utility points per word
     max_apps: int = 12
     fallback: float = 0.0
+    ed: dict = field(default_factory=dict)  # school -> early-round admit rate entered by the counselor
     json: bool = False
 
     def student(self) -> Student:
@@ -120,7 +121,8 @@ def load_profile(path: str, sess: Session) -> None:
 class Terminal:
     def __init__(self, sess: Session, catalog_path=None):
         self.sess = sess
-        self.cat = load_catalog(catalog_path)
+        self.catalog_path = catalog_path
+        self.cat = load_catalog(catalog_path, {k: {"acceptanceRate": v} for k, v in sess.ed.items()})
         self.by_id = {s["id"]: s for s in self.cat}
         self.model = AdmissionModel(self.cat)
         self.sim = SimilarityEngine(self.cat, SIMILARITY)
@@ -271,8 +273,10 @@ class Terminal:
                 continue
             print(AMB(f"  {n:>2} admits  {100 * p:6.2f}%  ") + CYN(bar_spark(p, 50)))
         e = float(dist @ np.arange(len(dist)))
+        lo, mid, hi = M.p_none_range(st, ids, s.decisions or None)
         print(WHT(f"  P(≥1 admit) {100 * (1 - dist[0]):.1f}%   ") + DIM(f"naive independent 1-∏(1-p): {100 * p_ind:.1f}%")
               + WHT(f"   E[#admits] {e:.2f}"))
+        print(AMB(f"  P(no admits) plausible range {100 * lo:.1f}% – {100 * hi:.1f}% (central {100 * mid:.1f}%) across link strengths"))
         note("  the gap between those two numbers is why list-balancing tools that multiply probabilities overstate safety.")
 
     def cmd_ESSY(self, args):
@@ -462,8 +466,54 @@ class Terminal:
         table([("ID", 20, "<"), ("NAME", 26, "<"), ("ADM%", 7, ">"), ("  TEST IMPORTANCE", 18, "<"), ("PROMPTS", 8, ">"),
                ("  SOURCE", 20, "<")], rows)
 
+    def cmd_ED(self, args):
+        """ED <school> <rate|clear>  use the school's early-round admit rate (from its CDS C21) for this student"""
+        if len(args) < 2 or args[0] not in self.by_id:
+            return print(RED("usage: ED tufts 0.15   (early-round admit rate from the school's Common Data Set C21)"))
+        if args[1].lower() == "clear":
+            self.sess.ed.pop(args[0], None)
+        else:
+            self.sess.ed[args[0]] = float(args[1])
+        self.cat = load_catalog(self.catalog_path, {k: {"acceptanceRate": v} for k, v in self.sess.ed.items()})
+        self.by_id = {x["id"]: x for x in self.cat}
+        self.model = AdmissionModel(self.cat)
+        print(AMB(f"  early-round rates in use: {self.sess.ed or 'none'}"))
+        note("  approximation: the ED applicant pool is treated like the overall pool, with the ED admit rate as the base rate.")
+
+    def cmd_ROSTER(self, args):
+        """ROSTER <caseload.csv>  whole caseload at once: zero-admit risk range and likely count per student"""
+        import csv as _csv
+        if not args:
+            return print(RED("usage: ROSTER caseload.csv  (student_id,ebrw,math,holistic_pct,schools  with schools ';'-separated)"))
+        rows, js = [], []
+        for r in _csv.DictReader(open(args[0], newline="", encoding="utf-8")):
+            hp = r.get("holistic_pct")
+            st = Student.from_percentile(float(r["ebrw"]), float(r["math"]), float(hp) if hp else None)
+            listed = [x.strip() for x in r["schools"].split(";") if x.strip()]
+            ids = self.model.usable([x for x in listed if x in self.by_id])
+            unknown = [x for x in listed if x not in ids]
+            if not ids:
+                continue
+            p = self.model.chances(st, ids)
+            lo, mid, hi = self.model.p_none_range(st, ids)
+            likely = int((p >= 0.6).sum())
+            flag = "ADD A LIKELY" if likely < 2 and hi > 0.05 else ("CHECK" if hi > 0.15 else "")
+            rows.append([r["student_id"], f"{st.composite:.0f}", len(ids), likely, f"{100 * lo:.0f}-{100 * hi:.0f}%", flag,
+                         ",".join(unknown)[:18]])
+            js.append({"student": r["student_id"], "n": len(ids), "likely": likely, "p_none_range": [lo, mid, hi], "flag": flag,
+                       "not_modelled": unknown})
+        if self.out(js):
+            return
+        header("ROSTER", "CASELOAD RISK SCREEN", f"{len(rows)} students")
+        table([("STUDENT", 14, "<"), ("SAT", 6, ">"), ("#SCH", 6, ">"), ("LIKELY", 8, ">"), ("NO-ADMIT RISK", 15, ">"),
+               ("  FLAG", 15, "<"), ("NOT MODELLED", 19, "<")], rows,
+              lambda r_, c, v, st_: RED(st_) if c == 5 and v else AMB(st_))
+        note("  likely = 60%+; risk = plausible range across link strengths. Screening aid for the counselor, not family-facing.")
+
     def cmd_BRIEF(self, args):
-        """BRIEF                 plain-English family brief: the analysis with no math, ready to paste"""
+        """BRIEF [family]         plain-English brief: counselor version (numbers) or family version (words, no false precision)"""
+        family = bool(args) and args[0].lower() == "family"
+        args = args[1:] if family else args
         s, M, st = self.sess, self.model, self.sess.student()
         ids = M.usable(self.ids(args))
         if not ids:
@@ -475,9 +525,11 @@ class Terminal:
         likely = [i for i, x in zip(ids, p) if x >= 0.6]
         lines = []
         one_in = lambda q: f"about 1 in {max(2, round(1 / q))}" if q > 0.005 else "under 1 in 200"  # noqa: E731
-        lines.append(f"With this list of {len(ids)} schools, the chance of no admission anywhere is {one_in(p_none)} "
-                     f"({100 * p_none:.0f}%). Treating the schools as independent would suggest {one_in(p_ind_none)}: "
-                     f"the real risk is higher because the same application is read everywhere.")
+        lo, _, hi = M.p_none_range(st, ids, s.decisions or None)
+        lines.append(f"With this list of {len(ids)} schools, the chance of no admission anywhere is roughly {one_in(p_none)} "
+                     f"(plausible range {100 * lo:.0f}%–{100 * hi:.0f}%). Treating the schools as independent would suggest "
+                     f"{one_in(p_ind_none)}: the real risk is higher because the same application is read everywhere, but "
+                     f"exactly how much higher is uncertain.")
         if len(likely) < 2:
             # what single addition from the catalog most reduces P(no admits)?
             best = None
@@ -511,9 +563,20 @@ class Terminal:
         alone = sum(self.sim.standalone_effort(i) for i in ids)
         lines.append(f"Supplemental writing: about {words:,.0f} words if essays are reused well, versus {alone:,.0f} written from "
                      f"scratch. Write the longest supplements first; later ones can borrow from them.")
-        if self.out({"brief": lines}):
+        if family:
+            band = lambda q: "low" if q < 0.05 else "moderate" if q < 0.15 else "high"  # noqa: E731
+            lo, _, hi = M.p_none_range(st, ids, s.decisions or None)
+            lines = [f"The overall risk of not being admitted anywhere on this list is {band(hi)}. Because the same "
+                     "application is read by every school, results tend to move together, so a list of reaches is "
+                     "riskier than it looks school by school.",
+                     f"Strongest prospects: {', '.join(self.name(ids[i]) for i in np.argsort(-p)[:3])}."]
+            if len(likely) < 2:
+                lines.append("We recommend adding at least one more school where admission is likely on the student's own merits.")
+            lines.append("These are estimates from published admissions data and a statistical model, not guarantees.")
+        if self.out({"brief": lines, "audience": "family" if family else "counselor"}):
             return
-        header("BRIEF", "FAMILY BRIEF", f"{st.ebrw:.0f}/{st.math:.0f}")
+        header("BRIEF", "FAMILY BRIEF (plain words)" if family else "COUNSELOR BRIEF (not for forwarding verbatim)",
+               f"{st.ebrw:.0f}/{st.math:.0f}")
         import textwrap
         for ln in lines:
             print(AMB(textwrap.fill(ln, 94, initial_indent="  • ", subsequent_indent="    ")))
@@ -568,6 +631,53 @@ class Terminal:
         for k in sc:
             print(WHT(f"  {k:<10}") + AMB(f"{sc[k]:.4f}") + DIM(f"   (constant-rate forecast: {base[k]:.4f})"))
         print(AMB(f"  graded {len(pairs)} of {len(recs)} frozen forecasts"))
+
+    def cmd_BKTST(self, args):
+        """BKTST <past_class.csv>  score the counselor's own reach/target/likely calls vs UNIMATH on real past outcomes"""
+        import csv as _csv
+        from .significance import cluster_bootstrap_diff
+        from .fit import auc, brier
+        if not args:
+            return print(RED("usage: BKTST past.csv  (student_id,school_id,ebrw,math,decision,counselor_call[,holistic_pct])"))
+        rows = [r for r in _csv.DictReader(open(args[0], newline="", encoding="utf-8")) if r["school_id"] in self.by_id
+                and self.model.cal[r["school_id"]].ok]
+        if not rows:
+            return note("  no rows for modellable schools")
+        y = np.array([r["decision"].strip().lower() == "accepted" for r in rows], dtype=float)
+        stu = np.array([r["student_id"] for r in rows])
+        calls = np.array([r.get("counselor_call", "").strip().lower() for r in rows])
+        # counselor's categories -> probabilities: each category's admit rate among the OTHER students (leave-one-student-out),
+        # so the counselor is scored on the best honest probability their labels support.
+        p_c = np.empty(len(rows))
+        for i in range(len(rows)):
+            m = (calls == calls[i]) & (stu != stu[i])
+            p_c[i] = (y[m].sum() + 0.5) / (m.sum() + 1.0)
+        p_u = np.empty(len(rows))
+        for i, r in enumerate(rows):
+            hp = r.get("holistic_pct")
+            st = Student.from_percentile(float(r["ebrw"]), float(r["math"]), float(hp) if hp else None)
+            p_u[i] = self.model.chances(st, [r["school_id"]])[0]
+        # for ranking (AUC) use each label's full-sample rate: LOO rates are slightly anti-correlated with a student's
+        # own outcome, which scrambles the order of near-tied forecasts inside a label.
+        p_rank = np.array([y[calls == cl].mean() for cl in calls])
+        base = np.array([self.model.cal[r["school_id"]].rate for r in rows])
+        d = cluster_bootstrap_diff((p_u - y) ** 2, (p_c - y) ** 2, stu)
+        res = {"n_apps": len(rows), "n_students": int(len(set(stu))),
+               "brier": {"unimath": brier(p_u, y), "counselor_calls": brier(p_c, y), "acceptance_rate": brier(base, y)},
+               "auc": {"unimath": auc(p_u, y), "counselor_calls": auc(p_rank, y)}, "unimath_minus_counselor": d}
+        if self.out(res):
+            return
+        header("BKTST", "YOUR PAST CLASS: WHOSE ODDS WERE BETTER?", f"{len(rows)} apps / {len(set(stu))} students")
+        table([("FORECAST", 26, "<"), ("BRIER", 9, ">"), ("AUC", 8, ">")],
+              [["UNIMATH", f"{res['brier']['unimath']:.4f}", f"{res['auc']['unimath']:.3f}"],
+               ["your reach/target/likely", f"{res['brier']['counselor_calls']:.4f}", f"{res['auc']['counselor_calls']:.3f}"],
+               ["acceptance rate only", f"{res['brier']['acceptance_rate']:.4f}", "-"]])
+        better = d["ci95"][1] < 0
+        worse = d["ci95"][0] > 0
+        verdict = ("UNIMATH was more accurate, and not by luck" if better else "your calls were more accurate"
+                   if worse else "no clear winner: the difference is within what luck could produce")
+        print(WHT(f"  difference {d['diff']:+.4f} (95% CI {d['ci95'][0]:+.4f} to {d['ci95'][1]:+.4f}, p={d['p']:.3f}): ") + AMB(verdict))
+        note("  lower Brier = better. Your labels are turned into probabilities using how often each label actually got in.")
 
     def cmd_HELP(self, args):
         """HELP                  this screen"""

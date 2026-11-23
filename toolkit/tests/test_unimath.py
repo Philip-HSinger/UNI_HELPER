@@ -172,11 +172,14 @@ def test_likelihood_prefers_truth():
 # ------------------------------------------------------------------ data + CLI
 def test_catalog_validation_flags_known_gaps():
     issues = validate(CAT)
-    assert ("ERROR", "columbia", "acceptance rate missing: chances not computable") in issues
+    assert ("ERROR", "caltech", "acceptance rate missing: chances not computable") in issues
+    columbia = next(x for x in CAT if x["id"] == "columbia")
+    assert columbia["acceptanceRate"] is not None and "scorecard" in columbia["provenance"]  # gap filled, flagged
 
 
 @pytest.mark.parametrize("cmd", ["CHNC", "XADM", "PORT", "PCTL", "ESSY", "FREE", "PLAN", "BRIEF", "SCH mit", "DQ", "CAT",
-                                 "HELP", "UPDT", "SENS"])
+                                 "HELP", "UPDT", "SENS", "BKTST examples/past_class_demo.csv",
+                                 "ROSTER examples/caseload_demo.csv", "BRIEF family", "ED tufts 0.2"])
 def test_cli_commands_run(cmd):
     r = subprocess.run([sys.executable, "-m", "unimath.cli", "-p", str(ROOT / "examples" / "profile.toml"), *cmd.split()],
                        cwd=ROOT, capture_output=True, text=True, timeout=120)
@@ -200,3 +203,23 @@ def test_ledger_detects_tampering(tmp_path):
     rows[0]["p_admit"] = 0.99
     led.write_text("\n".join(json.dumps(r) for r in rows) + "\n")
     assert "TAMPERED" in run("SCORE", str(led), str(out))
+
+
+def test_zero_admit_range_brackets_central():
+    M = AdmissionModel(CAT)
+    lo, mid, hi = M.p_none_range(Student(750, 790), ["mit", "stanford", "cmu", "purdue"])
+    assert lo <= mid <= hi and hi > lo
+
+
+def test_scorecard_placeholder_supplements_cost_effort_but_no_reuse():
+    E = SimilarityEngine(CAT, SIMILARITY)
+    sc = next(x["id"] for x in CAT if any(p.get("placeholder") for p in x["prompts"]))
+    assert E.standalone_effort(sc) > 0
+    assert E.marginal_effort(sc, ["mit", "stanford", "princeton"])[0] == E.standalone_effort(sc)
+
+
+def test_family_brief_has_no_percentages():
+    r = subprocess.run([sys.executable, "-m", "unimath.cli", "-p", str(ROOT / "examples" / "profile.toml"), "--json", "BRIEF", "family"],
+                       cwd=ROOT, capture_output=True, text=True, timeout=60)
+    text = " ".join(json.loads(r.stdout)["brief"])
+    assert "%" not in text and "1 in" not in text

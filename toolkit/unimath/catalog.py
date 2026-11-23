@@ -39,10 +39,23 @@ def validate(schools: list[dict]) -> list[tuple[str, str, str]]:
             issues.append(("ERROR", sid, f"importance '{s.get('importance')}' not a CDS label"))
         for p in s.get("prompts", []):
             wl = p.get("wordLimit")
+            if p.get("placeholder"):
+                continue
             if wl is None and "optional" not in p["text"].lower() and "graded" not in p["text"].lower():
                 issues.append(("WARN", sid, f"prompt '{p['id']}' has no word limit (assumed 250)"))
             elif wl is not None and wl < 25:
                 issues.append(("WARN", sid, f"prompt '{p['id']}' word limit {wl} looks mis-parsed"))
+        for fl in s.get("dataFlags", []):
+            issues.append(("WARN", sid, fl))
+        if any(p.get("placeholder") for p in s.get("prompts", [])):
+            issues.append(("WARN", sid, "supplement not curated: essay tools assume one 250-word essay"))
+            continue
         if s.get("provenance") != "researched-2026-27":
             issues.append(("WARN", sid, "data not re-verified for the 2026-27 cycle"))
     return issues
+
+
+def curated_only(schools: list[dict]) -> list[dict]:
+    """The hand-curated schools (real supplements). Backtests use this set so results stay comparable."""
+    return [s for s in schools if not any(p.get("placeholder") for p in s.get("prompts", []))]
+

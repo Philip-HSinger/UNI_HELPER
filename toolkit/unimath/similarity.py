@@ -68,6 +68,8 @@ def themes_of(text: str) -> set[str]:
 
 def prompt_kind(text: str, limit: int | None) -> str:
     t = text.lower()
+    if t.startswith("supplement not yet curated"):
+        return "placeholder"
     if "optional" in t:
         return "optional"
     if re.search(r"submit a graded|graded written paper", t):
