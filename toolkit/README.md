@@ -140,6 +140,7 @@ reports/           methods manual (PDF), figures, results JSON, business documen
 
 ## Business documents (drafts)
 
+- `reports/UNIMATH_market_analysis.pdf` and `reports/UNIMATH_offer.pdf` (`scripts/make_pitch_docs.py`): market analysis and the prospect-facing offer, inputs for the pitch simulation.
 - `reports/UNIMATH_product_plan.pdf` (3 pages, `scripts/make_plan.py`): per feature, how it works, benefit, build, test, sell.
 - `reports/UNIMATH_summary.pdf` (one page, `scripts/make_summary.py`): the short version of the build spec below.
 - `reports/UNIMATH_feature_build_spec.pdf` (internal, built by `scripts/make_offer.py`): the three features being
