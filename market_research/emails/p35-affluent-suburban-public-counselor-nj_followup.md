@@ -1,5 +1,8 @@
-Subject: Re: Reach-heavy lists and December updates
+Subject: Re: your seniors' RD lists after early results
+Hi Karen,
 
-Hi Ms. Lieberman, one follow-up before December results. After an early-decision deferral, UNIMATH updates the odds at the student's remaining schools, which helps show whether the regular-round list still needs a safer option. Free through May; no names needed. Worth 15 minutes?
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

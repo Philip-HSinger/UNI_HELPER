@@ -1,5 +1,8 @@
-Subject: Re: Supplement overlap map
+Subject: Re: your seniors' RD lists after early results
+Hi Maggie,
 
-Hi Maggie, one follow-up before the Sprint gets busy. If a call doesn't fit, could you name two or three prompt pairs your coaches routinely treat as "one draft, two essays"? I'd score them by hand and send you the result. Thanks either way.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

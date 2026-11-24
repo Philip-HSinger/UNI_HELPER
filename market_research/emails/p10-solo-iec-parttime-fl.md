@@ -1,13 +1,20 @@
-Subject: Honestly, maybe not for you yet
+Subject: your seniors' RD lists after early results
+Hi Debra,
 
-Hi Ms. Castellano,
+I saw you help local families with essays and Florida university applications.
 
-I'm the solo founder of UNIMATH, and I'll be straight: it probably isn't a fit for your practice yet.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-It estimates admission odds for 412 US colleges and flags risky lists, but today it's a command-line program, not a web app. The essay-planning part, which maps overlapping supplement prompts so students can reuse drafts, is unfinished: only 10 prompt pairs are human-scored, and my automatic scoring didn't beat chance in testing.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Since you know essays, my ask is different: could you tell me, in a few lines, which supplement prompts your students most often manage to answer with one shared draft, or struggle to? I'm building a human-scored map and would rather build what coaches actually need.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-Thank you either way.
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

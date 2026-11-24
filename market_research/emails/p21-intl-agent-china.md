@@ -1,11 +1,20 @@
-Subject: List-risk checks for top-30 US applicants
+Subject: your seniors' RD lists after early results
+Hi Grace,
 
-Dear Ms. Lin,
+I saw Jade Gate focuses on top-30 US undergraduate admissions.
 
-When students apply mostly to top-30 US colleges, their results tend to move together, because the same application is read similarly everywhere. UNIMATH models that: it flags lists where the risk of zero admits is higher than multiplying per-school odds suggests (by 4.5-8x in simulation) and shows it as a range. After each early decision, deferral or waitlist, it re-prices the remaining schools.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-Limits: 19 selective schools are hand-curated, the rest use College Scorecard data; admit rates aren't international-specific; inputs are SAT bands plus your counsellor's 0-100 read. It's a command-line tool on your own computer and needs no student names. New, no paying customers, simulated evidence only.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Founding counsellors use it free through May. Would 20 minutes before December results be useful?
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-[Founder name], UNIMATH
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
+
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

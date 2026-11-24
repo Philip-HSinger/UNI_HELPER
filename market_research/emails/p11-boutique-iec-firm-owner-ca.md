@@ -1,13 +1,20 @@
-Subject: List-risk checks for Crestline (early-stage, plainly stated)
+Subject: your seniors' RD lists after early results
+Hi Helen,
 
-Hi Ms. Zhao,
+I saw Crestline works with families on selective admissions in the Bay Area.
 
-As a former product marketer, you'll want claims you can check, so here's UNIMATH plainly.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-It's a local command-line tool/Python library. From one CSV (no names), it flags lists where zero-admit risk is higher than multiplying odds suggests, treating each student's decisions as linked, and re-prices remaining schools after each early decision, deferral or waitlist. It writes a counselor brief and a plain-words family brief.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-What it isn't yet: a web app, integrated with anything, security-audited, or proven on real outcomes. All evidence is simulated; no paying customers. Essay-prompt overlap mapping is unfinished.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-There's no firm plan yet: today it's $390/year per consultant (introductory), and founding counselors use it free through May. Would one of your consultants try it on their December early results and report back?
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

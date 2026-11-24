@@ -1,5 +1,8 @@
-Subject: Re: A former reader's take on "linked" admissions odds?
+Subject: Re: your seniors' RD lists after early results
+Hi Brianna,
 
-Hi Brianna, one follow-up. If a call doesn't fit your schedule, I can send the methods manual instead. If the "linked decisions" idea is wrong from a reader's seat, I'd rather know now. No promotion asked, ever.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

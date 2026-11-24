@@ -1,13 +1,20 @@
-Subject: A list-risk check for your co-op seniors
+Subject: your seniors' RD lists after early results
+Hi Rebecca,
 
-Hi Ms. Jorgensen,
+I saw you write school profiles and transcripts for your co-op families.
 
-Since you serve as counselor for your co-op's high schoolers, UNIMATH may be relevant, with caveats.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-It flags college lists where the risk of zero admits is higher than it looks, using SAT bands, admit rates and your own 0-100 read of each student. After early decisions, it re-prices the remaining schools, and it writes a plain-words brief for each family. No student names needed.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Caveats: it's a command-line program on your own computer, not a web app; it has no GPA, rigor or activities inputs beyond your single rating; and it's new, with no paying customers and only simulated evidence.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-The founding-counselor offer is free through May, so you'd pay nothing unless you continue. Would a 20-minute screen-share help you decide?
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

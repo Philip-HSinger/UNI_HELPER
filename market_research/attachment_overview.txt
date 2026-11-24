@@ -1,0 +1,54 @@
+Calliper
+Admissions analytics for college counselors, built by Philip, an electrical engineering student at Brown.
+Facts in, measured answers out.
+Three things for each student's list:
+                      What you get                                                                       Available
+
+Decision              When an early result arrives, new odds for every school still pending, as a        Now
+updates               range. Built for mid-December, when you have two weeks before 1 January
+                      deadlines.
+
+List check            The real chance of no admits. Most tools multiply odds as if schools decided       Risk check now;
+                      independently, which understates it. In one example list: about 10% with the       'what to add' with
+                      default assumptions (3-11% across all plausible ones), against 1.6% when odds      Essay map
+                      are multiplied. Plus which schools are cheap and worth adding.
+
+Essay map             Which essays your student has already written cover which other schools'           Pilot from August
+                      prompts, and how many new words each school really needs, measured from            2027, for your
+                      the student's own essays.                                                          juniors
+
+
+How it works
+• Facts only: SAT (GPA being added), the schools' published data, and real decisions. No made-up ratings of
+  your students.
+• Linked odds: the same application is read at every school, so the model treats decisions as linked. That's
+  why it shows a higher risk of no admits, and why one early result changes the other odds.
+• Measured essay reuse: the share of a student's essay that actually carries over to another prompt,
+  checked by a separate grader, not a guess.
+• Private: no student names needed. Essays are only used with the family's consent, and you get a plan,
+  never a rewritten essay to submit.
+
+Where it stands
+• New this cycle, so it's free for the first counselors while it's checked against real results. A detailed methods
+  write-up is available on request.
+• During the pilot I run it for you and send a one-page PDF per student. No software to install.
+
+The founding-counselor pilot
+You get                                                          In return
+
+Decision updates and the list risk check for your current        Your students' decisions this spring, without names, so the
+seniors, this December, free                                     odds can be checked against real results
+
+Essay map for your juniors from August 2027, free for the        With consent: which essays each student reused for which
+2027-28 cycle                                                    school (numbers only), to measure reuse
+
+A say in what gets built; your name on the track record if you   Two short feedback calls
+want it
+
+After the pilot (introductory prices): $390 per counselor per year, or $1,500 per school or firm (up to 10
+counselors). Founding counselors keep these prices. Platforms wanting the engine: let's talk.
+
+What to do next
+Send one current senior's list (scores and schools, no name) and any early results you already have. You'll get
+back their updated odds and the list's real risk of no admits within two days.
+

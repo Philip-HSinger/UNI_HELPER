@@ -1,13 +1,20 @@
-Subject: Only worth it if it saves you time
+Subject: your seniors' RD lists after early results
+Hi Gary,
 
-Hi Mr. Lindqvist,
+Being the only counselor in a district while also running testing and College Credit Plus sounds like a lot.
 
-You're the only counselor for a K-12 district and also handle testing, 504 plans and College Credit Plus, so I'll be direct about whether this deserves your time.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-UNIMATH is a new tool I built alone. You export one CSV of seniors (no names required), add your 0-100 read of each student, and it flags lists with a higher-than-expected risk of zero admits. It then writes a short brief for you and a plain-words one for each family.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Being honest: it's a command-line program on your own computer, not a web app; there's no integration with your student system; and there are no paying customers yet. If command lines aren't your thing, it may not be for you yet.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-It's free through May for founding counselors. Would a 15-minute screen-share help you decide?
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

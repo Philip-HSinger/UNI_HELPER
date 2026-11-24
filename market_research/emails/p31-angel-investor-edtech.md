@@ -1,13 +1,20 @@
-Subject: Early-stage admissions analytics, stated plainly
+Subject: your seniors' RD lists after early results
+Hi Richard,
 
-Hi Mr. Hale,
+I saw you've backed a lot of edtech companies.
 
-Given your test-prep exit and edtech portfolio, I'd value your view on UNIMATH.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-It's an admissions-analytics tool for counselors: it treats a student's decisions as linked, flags lists where zero-admit risk is higher than multiplying odds suggests (4.5-8x in simulation), and re-prices remaining schools after early decisions.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Where it actually stands: v0.1, command-line, solo founder, no paying customers, evidence only from simulations. A free founding-counselor offer runs through May; introductory prices are $390/year per counselor and $1,500/year per school. Spring outcomes, graded against forecasts frozen in a tamper-evident log, will be the first real test.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-Would you give me 20 minutes of feedback on the counselor market and what you'd want to see before taking a company like this seriously?
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

@@ -1,5 +1,8 @@
-Subject: Re: Only worth it if it saves you time
+Subject: Re: your seniors' RD lists after early results
+Hi Gary,
 
-Hi Mr. Lindqvist, one short follow-up. If a screen-share is too much right now, I can send a sample counselor brief and family brief built from made-up students, so you can judge the output in two minutes. Just reply "sample." It's free through May if you want to try it on your seniors.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

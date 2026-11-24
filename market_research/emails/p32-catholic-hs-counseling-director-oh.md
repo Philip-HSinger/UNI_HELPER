@@ -1,11 +1,20 @@
-Subject: List risk and early-decision updates for St. Benedict seniors
+Subject: your seniors' RD lists after early results
+Hi Brother Michael,
 
-Dear Br. Michael,
+I saw St. Benedict puts a lot of weight on affordability in college lists.
 
-UNIMATH is a new tool I built alone to help counselors spot college lists where the risk of zero admits is higher than it looks, because one application tends to be read similarly everywhere. After each early decision, deferral or waitlist, it re-prices the remaining schools, and it writes a numbers brief for counselors and a plain-words brief for families.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-On fit: it doesn't model cost, aid or affordability. It covers 412 US four-year colleges; only 19 selective schools are hand-curated, the rest use College Scorecard data. It's command-line and CSV-only, with no paying customers and only simulated evidence.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Founding counselors use it free through May; the introductory site licence covers your three counselors at $1,500/year. Would a 20-minute call before December results be useful?
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-[Founder name], UNIMATH
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
+
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

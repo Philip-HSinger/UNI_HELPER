@@ -20,7 +20,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 PERSONAS = json.loads((HERE / "personas.json").read_text()) if (HERE / "personas.json").exists() else []
 BY_ID = {p["id"]: p for p in PERSONAS}
-SENDER = "UNIMATH"
+SENDER = "Calliper"
 
 
 def preview(text: str, n: int = 140) -> str:
@@ -93,43 +93,6 @@ def outcome(pid: str, oc: str, note: str) -> None:
     f.write_text(json.dumps(d, indent=1))
 
 
-if __name__ == "__main__":
-    cmd, *a = sys.argv[1:]
-    if cmd == "public":
-        pub = [{"id": p["id"], **p["public_profile"]} for p in PERSONAS]
-        (HERE / "public_profiles.json").write_text(json.dumps(pub, indent=1))
-        print(f"wrote public_profiles.json ({len(pub)})")
-    elif cmd == "card":
-        print(card(a[0]))
-    elif cmd == "inbox":
-        print(inbox(a[0], a[1]))
-    elif cmd == "email":
-        s, b = our_email(a[0], followup=len(a) > 1)
-        print(f"FROM: {SENDER}\nSUBJECT: {s}\n\n{b}")
-    elif cmd == "log":
-        log(*a)
-    elif cmd == "packet":
-        print(packet(a[0], a[1], a[2] if len(a) > 2 else None))
-    elif cmd == "answer":
-        f = answer(a[0], a[1])
-        m = _meta()[a[0]]
-        if "OPEN" in f:
-            idx = m["idx_t0" if a[1] == "t0" else "idx_followup"]
-            opened = idx in [int(x) for x in __import__("re").findall(r"\d+", f["OPEN"])]
-            print(f"OURS_OPENED={opened} (ours=#{idx})")
-        for k in ("ACTION", "DECISION_IF_ANY", "FINAL", "WOULD_PAY", "TOP_OBJECTION"):
-            if k in f:
-                print(f"{k}: {f[k].strip()}")
-        if f.get("ACTION", "").strip().upper().startswith(("REPLY", "FORWARD")):
-            print("MESSAGE:\n" + f.get("MESSAGE", "").strip())
-    elif cmd == "lint":
-        n = lint()
-        print(f"lint hits: {n}")
-        sys.exit(1 if n else 0)
-    elif cmd == "outcome":
-        outcome(a[0], a[1], " ".join(a[2:]))
-
-
 # ---------------------------------------------------------------------------------------------- buyer packets
 # Each buyer gets a private folder /tmp/mr/<random token>/ holding only its own stage prompts and its answers.
 # The orchestrator-only map (persona -> token, index of our email in each inbox) lives in /tmp/mr/_meta.json.
@@ -185,7 +148,11 @@ def packet(pid: str, stage: str, extra: str | None = None) -> str:
     elif stage in ("open", "open_followup"):
         fu = stage == "open_followup"
         s, b = our_email(pid, followup=fu)
-        email = f"FROM: {SENDER}\nSUBJECT: {s}\n\n{b}"
+        email = f"FROM: {SENDER} <calliper@agentmail.to>\nSUBJECT: {s}\n\n{b}"
+        att = HERE / "attachment_overview.txt"
+        if not fu and att.exists():
+            email += ("\n\n--- If you choose to open the attachment (Calliper_overview.pdf), it reads: ---\n"
+                      + att.read_text().strip() + "\n--- end of attachment ---")
         body = (TPL / "buyer_open.md").read_text().replace("{N}", str(m[pid]["idx_followup" if fu else "idx_t0"])).replace("{EMAIL}", email)
     elif stage == "reply":
         body = (TPL / "buyer_reply.md").read_text().replace("{EMAIL}", Path(extra).read_text().strip())
@@ -216,3 +183,40 @@ def answer(pid: str, stage: str) -> dict:
         elif key:
             fields[key] += "\n" + line
     return fields
+
+
+if __name__ == "__main__":
+    cmd, *a = sys.argv[1:]
+    if cmd == "public":
+        pub = [{"id": p["id"], **p["public_profile"]} for p in PERSONAS]
+        (HERE / "public_profiles.json").write_text(json.dumps(pub, indent=1))
+        print(f"wrote public_profiles.json ({len(pub)})")
+    elif cmd == "card":
+        print(card(a[0]))
+    elif cmd == "inbox":
+        print(inbox(a[0], a[1]))
+    elif cmd == "email":
+        s, b = our_email(a[0], followup=len(a) > 1)
+        print(f"FROM: {SENDER}\nSUBJECT: {s}\n\n{b}")
+    elif cmd == "log":
+        log(*a)
+    elif cmd == "packet":
+        print(packet(a[0], a[1], a[2] if len(a) > 2 else None))
+    elif cmd == "answer":
+        f = answer(a[0], a[1])
+        m = _meta()[a[0]]
+        if "OPEN" in f:
+            idx = m["idx_t0" if a[1] == "t0" else "idx_followup"]
+            opened = idx in [int(x) for x in __import__("re").findall(r"\d+", f["OPEN"])]
+            print(f"OURS_OPENED={opened} (ours=#{idx})")
+        for k in ("ACTION", "DECISION_IF_ANY", "FINAL", "WOULD_PAY", "TOP_OBJECTION"):
+            if k in f:
+                print(f"{k}: {f[k].strip()}")
+        if f.get("ACTION", "").strip().upper().startswith(("REPLY", "FORWARD")):
+            print("MESSAGE:\n" + f.get("MESSAGE", "").strip())
+    elif cmd == "lint":
+        n = lint()
+        print(f"lint hits: {n}")
+        sys.exit(1 if n else 0)
+    elif cmd == "outcome":
+        outcome(a[0], a[1], " ".join(a[2:]))

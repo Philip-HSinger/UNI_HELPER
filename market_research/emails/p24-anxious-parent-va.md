@@ -1,13 +1,20 @@
-Subject: A free, basic list check (not a sales pitch)
+Subject: your seniors' RD lists after early results
+Hi Jennifer,
 
-Hi Ms. Wallace,
+I saw your posts in the local college-parent group.
 
-I build UNIMATH, an admissions-analytics tool for school counselors. I don't sell it to families, so this isn't a pitch.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-There is a free, basic student-facing page, the Application Efficiency Guide (up to 5 schools, currently with a waitlist).
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-One honest note: no tool can tell you how a specific application will turn out, and mine is new and tested only on simulated students. A counselor's own judgment of a student has outperformed a scores-only model, so your school counselor remains an important voice.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-If you'd like a spot on the waitlist, just reply and I'll add you. Otherwise, no reply needed.
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

@@ -1,5 +1,8 @@
-Subject: Re: List risk and early-decision updates
+Subject: Re: your seniors' RD lists after early results
+Hi Brother Michael,
 
-Dear Br. Michael, one follow-up. If a call is hard in December, one of your counselors could try it on their own caseload for free, with no student names, and tell you whether it was worth the time.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

@@ -1,5 +1,8 @@
-Subject: Re: Free Application Efficiency Guide
+Subject: Re: your seniors' RD lists after early results
+Hi Maya,
 
-Hi Maya, one last note: if you'd like a waitlist spot for the free guide, just reply. Otherwise I won't email again. Good luck this season.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

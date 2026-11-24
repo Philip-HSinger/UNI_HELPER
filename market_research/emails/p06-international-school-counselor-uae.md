@@ -1,13 +1,20 @@
-Subject: US list risk for Al Noor seniors (US colleges only)
+Subject: your seniors' RD lists after early results
+Hi Rania,
 
-Hi Ms. Haddad,
+I saw that most of your graduates head to the US and UK.
 
-Since most Al Noor graduates apply to the US, UNIMATH may help with that part, though not with UK or local branch-campus applications, which it doesn't cover.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-For 412 US four-year colleges, it estimates per-school odds from SAT bands, admit rates and your own 0-100 read of each student, treats a student's decisions as linked, and flags lists where the chance of zero admits is higher than it looks. After each early decision, deferral or waitlist, it re-prices the remaining schools.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Limits: it's a command-line program on your own computer, with no web app or SIS integration; admit rates aren't international-specific; and it's new, with no paying customers. It needs no student names.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-Founding counselors use it free through May. Would a 20-minute call before December early results be useful?
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

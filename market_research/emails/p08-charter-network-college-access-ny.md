@@ -1,13 +1,20 @@
-Subject: Flagging zero-admit risk across your seniors
+Subject: your seniors' RD lists after early results
+Hi Andre,
 
-Hi Mr. Whitfield,
+I saw your network publicly reports matriculation and persistence, which is rare.
 
-Your network reports matriculation and persistence, so I'll be clear about scope: UNIMATH addresses admission risk, not persistence.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-It screens a caseload from one CSV (no student names), treats each student's applications as linked, and flags lists where the risk of zero admits is higher than multiplying odds suggests. After early decisions it re-prices remaining schools, and it freezes forecasts in a tamper-evident log so you can grade them against spring outcomes.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Limits: command-line, runs locally, no SIS or Naviance integration, no SOC 2 or privacy certification, all evidence simulated, no paying customers. A school site licence covers up to 10 counselors at $1,500/year (introductory); founding counselors use it free through May.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-Would a 30-minute call with you or a counselor lead help decide whether a small free trial is worth it?
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

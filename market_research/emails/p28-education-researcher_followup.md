@@ -1,5 +1,8 @@
-Subject: Re: Forecasts frozen before outcomes
+Subject: Re: your seniors' RD lists after early results
+Hi Alicia,
 
-Dear Dr. Moreno, one follow-up. I'm happy to send the methods manual with no commitment. If a spring evaluation against real outcomes isn't of research interest to you, a pointer to someone who might find it useful would also help.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

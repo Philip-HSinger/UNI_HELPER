@@ -1,11 +1,20 @@
-Subject: Probably a poor fit for recruited athletes, and why
+Subject: your seniors' RD lists after early results
+Hi Tanya,
 
-Hi Ms. Brooks,
+I saw you help recruited athletes with admissions as well as recruiting.
 
-I'll be honest early: UNIMATH probably doesn't fit most of your clients. It estimates admission odds from SAT bands, admit rates and a counselor's 0-100 read, and it has no input for recruiting status or coach support, so it can't reflect how recruiting changes a student-athlete's chances.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-Where it might help: athletes who end up applying as regular applicants. For those lists, it flags when the risk of zero admits is higher than it looks and re-prices schools after early decisions.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-It's new, command-line, solo-built, with no paying customers and simulated evidence only. Founding counselors use it free through May. Would that backup-list use be worth a 15-minute call?
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-[Founder name], UNIMATH
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
+
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

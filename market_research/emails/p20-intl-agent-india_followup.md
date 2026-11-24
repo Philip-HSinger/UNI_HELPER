@@ -1,5 +1,8 @@
-Subject: Re: For your US undergraduate applicants only
+Subject: Re: your seniors' RD lists after early results
+Hi Rohit,
 
-Dear Mr. Malhotra, a short follow-up. US early results arrive in December; that's when UNIMATH's re-pricing of remaining schools is most useful for applicants deciding whether to add schools. If your US undergraduate group is too small to justify it, a quick "no" is perfectly fine.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

@@ -1,5 +1,8 @@
-Subject: Re: A Python library for correlated admissions risk
+Subject: Re: your seniors' RD lists after early results
+Hi Jonathan,
 
-Hi Jonathan, one follow-up. If you'd rather start with the math than the tool, I'll send the methods manual; I'd especially value pushback on the correlation assumptions. December early results are a good test: the Bayesian re-pricing after each decision is where linked decisions matter most.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

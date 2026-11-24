@@ -144,15 +144,17 @@ m.build(ROOT / "reports" / "UNIMATH_market_analysis.pdf", "UNIMATH market analys
 
 # ================================================================================================ offer
 o = Doc()
-o.p("UNIMATH: the offer", H1)
-o.p("Admissions analytics for independent college counselors. Facts in, measured answers out.", LEAD)
+o.p("Calliper", H1)
+o.p("Admissions analytics for college counselors, built by Philip, an electrical engineering student at Brown. "
+    "Facts in, measured answers out.", LEAD)
 o.p("Three things for each student's list:", B)
 o.table([["", "What you get", "Available"],
          ["<b>Decision updates</b>", "When an early result arrives, new odds for every school still pending, as a "
           "range. Built for mid-December, when you have two weeks before 1 January deadlines.", "<b>Now</b>"],
          ["<b>List check</b>", "The real chance of no admits. Most tools multiply odds as if schools decided "
-          "independently, which understates it. In one example list: about 10% (range 3-11%), against 1.6% multiplied. "
-          "Plus which schools are cheap and worth adding.", "Risk check <b>now</b>; 'what to add' with Essay map"],
+          "independently, which understates it. In one example list: about 10% with the default "
+          "assumptions (3-11% across all plausible ones), against 1.6% when odds are multiplied. Plus which schools are "
+          "cheap and worth adding.", "Risk check <b>now</b>; 'what to add' with Essay map"],
          ["<b>Essay map</b>", "Which essays your student has already written cover which other schools' prompts, and "
           "how many new words each school really needs, measured from the student's own essays.",
           "<b>Pilot from August 2027</b>, for your juniors"]],
@@ -168,12 +170,10 @@ o.bullets(["<b>Facts only:</b> SAT (GPA being added), the schools' published dat
            "<b>Private:</b> no student names needed. Essays are only used with the family's consent, and you get a plan, "
            "never a rewritten essay to submit."])
 
-o.p("Honest status", H2)
-o.bullets(["New product from a solo founder; v0.1. No paying customers or references yet.",
-           "Accuracy so far is tested on simulated students only. A 25-page methods manual documents every test, "
-           "including what failed. Real-outcome validation is the point of this pilot.",
-           "Today it runs as a command-line tool, so during the pilot I run it for you and send you a one-page PDF per "
-           "student. No software to install."])
+o.p("Where it stands", H2)
+o.bullets(["New this cycle, so it's free for the first counselors while it's checked against real results. A detailed "
+           "methods write-up is available on request.",
+           "During the pilot I run it for you and send a one-page PDF per student. No software to install."])
 
 o.p("The founding-counselor pilot", H2)
 o.table([["You get", "In return"],
@@ -183,10 +183,10 @@ o.table([["You get", "In return"],
           "With consent: which essays each student reused for which school (numbers only), to measure reuse"],
          ["A say in what gets built; your name on the track record if you want it", "Two short feedback calls"]],
         [3.5, 3.5])
-o.p("After the pilot: <b>$390 per counselor per year</b>, or <b>$1,500 per school or firm</b> (up to 10 counselors). "
-    "These are introductory prices; founding counselors keep them. Platforms wanting the engine: let's talk.")
+o.p("After the pilot (introductory prices): <b>$390 per counselor per year</b>, or <b>$1,500 per school or firm</b> (up to 10 counselors). "
+    "Founding counselors keep these prices. Platforms wanting the engine: let's talk.")
 
 o.p("What to do next", H2)
 o.p("Send one current senior's list (scores and schools, no name) and any early results you already have. You'll get "
     "back their updated odds and the list's real risk of no admits within two days.", BOX)
-o.build(ROOT / "reports" / "UNIMATH_offer.pdf", "UNIMATH offer")
+o.build(ROOT / "reports" / "Calliper_overview.pdf", "Calliper overview")

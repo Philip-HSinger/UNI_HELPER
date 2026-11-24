@@ -1,5 +1,8 @@
-Subject: Re: List-risk checks for top-30 US applicants
+Subject: Re: your seniors' RD lists after early results
+Hi Grace,
 
-Dear Ms. Lin, one follow-up. I can send the methods manual, which documents every test including failures, so you can judge the model before trying it. After May, it would be $390/year per counsellor (introductory) only if you continue.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

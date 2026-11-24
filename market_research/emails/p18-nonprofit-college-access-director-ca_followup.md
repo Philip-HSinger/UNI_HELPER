@@ -1,5 +1,8 @@
-Subject: Re: Zero-admit risk screening
+Subject: Re: your seniors' RD lists after early results
+Hi Luis,
 
-Hi Mr. Hernández, one follow-up. If UC/CSU make up most of your students' lists, UNIMATH probably isn't worth your time yet, and a quick "not now" helps me. If some students apply to private colleges with December decisions, the after-decision re-pricing may be useful; it's free through May.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

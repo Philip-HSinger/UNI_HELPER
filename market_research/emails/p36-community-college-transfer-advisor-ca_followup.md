@@ -1,5 +1,8 @@
-Subject: Re: Not built for transfer admissions
+Subject: Re: your seniors' RD lists after early results
+Hi Victor,
 
-Hi Mr. Nguyen, one follow-up. Even a one-line answer, "yes, transfer outcomes tend to fall together" or "no, it's mostly pathway rules," would help me decide what to build. Nothing to sell you today.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

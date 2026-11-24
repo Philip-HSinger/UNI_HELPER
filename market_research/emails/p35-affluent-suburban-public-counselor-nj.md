@@ -1,13 +1,20 @@
-Subject: Reach-heavy lists: zero-admit risk and December updates
+Subject: your seniors' RD lists after early results
+Hi Karen,
 
-Hi Ms. Lieberman,
+I saw you present at Ridgeview's parent college nights.
 
-With many Ridgeview students aiming at highly selective colleges, you've likely seen reach-heavy lists that look fine school by school. UNIMATH treats a student's decisions as linked (the same file is read similarly everywhere); in simulation, multiplying per-school odds understated zero-admit risk 4.5-8x. It shows the risk as a range, since my own estimate over-warned ~2x when assumptions broke.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-It screens your caseload from one CSV (no names), re-prices remaining schools after each early decision, deferral or waitlist, and writes a plain-words family brief that may help with parent conversations.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Honest status: command-line, no Naviance integration, new, no paying customers, simulated evidence only.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-Founding counselors use it free through May ($390/year introductory after). Would you try it before December results?
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

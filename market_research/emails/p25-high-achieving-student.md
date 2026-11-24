@@ -1,13 +1,20 @@
-Subject: Free Application Efficiency Guide (5 schools)
-
+Subject: your seniors' RD lists after early results
 Hi Maya,
 
-I'm the founder of UNIMATH, an admissions tool built for school counselors. I don't sell anything to students, so this is just a heads-up.
+I saw your posts on the admissions forums about your 14-school list.
 
-There's a free, basic student page called the Application Efficiency Guide. It's capped at 5 schools and has a waitlist, so it won't cover all 14 of yours. It's new and tested only on simulated students, so treat it as a second opinion, not an answer.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-For a 14-school list, your school counselor is the best person to talk to; the full UNIMATH tool is meant for counselors. If you'd like a waitlist spot, reply and I'll add you (if you're under 18, please check with a parent first).
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Good luck with robotics season and your applications.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-[Founder name], UNIMATH
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
+
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

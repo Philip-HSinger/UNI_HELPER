@@ -1,5 +1,8 @@
-Subject: Re: Early-stage admissions analytics
+Subject: Re: your seniors' RD lists after early results
+Hi Richard,
 
-Hi Mr. Hale, one follow-up. If now is too early, I'd be glad to send you the spring comparison of frozen forecasts against real outcomes once it exists. Would that be useful?
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

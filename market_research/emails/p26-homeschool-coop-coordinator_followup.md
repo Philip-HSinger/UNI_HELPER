@@ -1,5 +1,8 @@
-Subject: Re: A list-risk check for your co-op seniors
+Subject: Re: your seniors' RD lists after early results
+Hi Rebecca,
 
-Hi Ms. Jorgensen, one follow-up. With about 20 high schoolers, you could try it on just this year's seniors before December decisions, free. If the command line is a barrier, please tell me; that's useful to know too.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

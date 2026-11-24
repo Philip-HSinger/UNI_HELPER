@@ -1,13 +1,20 @@
-Subject: One solo founder to another: a list-risk engine
-
+Subject: your seniors' RD lists after early results
 Hi Kevin,
 
-I saw you're building CampusOdds. I'm a solo founder too (UNIMATH), so this is half pitch, half comparing notes.
+I saw you're building CampusOdds.
 
-UNIMATH's engine treats a student's decisions as linked (one application, read everywhere). In simulation, multiplying per-school odds understated the risk of zero admits 4.5-8x; my model over-warned ~2x when the simulated world broke its assumptions, so it reports a range. It also re-prices remaining schools after early decisions. It's a Python library covering 412 US colleges.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-Caveats: no real-outcome validation, no customers, single-school odds only ~7% better than a simple model, and no packaged API (licensing is negotiable). It also relies on a counselor's 0-100 read of the student, which a consumer app would need to replace.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-If licensing beats building that piece yourself, want to talk for 20 minutes?
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-[Founder name], UNIMATH
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
+
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

@@ -1,0 +1,182 @@
+{
+ "p01-public-hs-counselor-tx": {
+  "segment": "Public HS counselor (large urban district, under-resourced)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p02-rural-solo-counselor-oh": {
+  "segment": "Rural public HS solo counselor",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p03-boarding-school-college-counseling-director-ct": {
+  "segment": "Private/independent boarding school college counseling office",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p04-private-day-school-associate-counselor-il": {
+  "segment": "Private day school associate college counselor (data-curious)",
+  "outcome": "TRIAL",
+  "note": "free de-identified test after ED results; wants link-strength scenarios shown"
+ },
+ "p05-international-school-counselor-sg": {
+  "segment": "International school university counselor (Asia)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p06-international-school-counselor-uae": {
+  "segment": "International school counselor (Middle East, US-curriculum)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p07-district-ccr-director-ga": {
+  "segment": "District college & career readiness director (procurement)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p08-charter-network-college-access-ny": {
+  "segment": "Charter network college access director",
+  "outcome": "DECLINED",
+  "note": "does not model first-gen/low-income or net price; undermatching risk; no scale for 14 counselors"
+ },
+ "p09-solo-iec-quant-wa": {
+  "segment": "Solo independent educational consultant (quant-minded)",
+  "outcome": "TRIAL",
+  "note": "will send a likely-deferral student; correlation is set not fitted; wants honest caveats in report"
+ },
+ "p10-solo-iec-parttime-fl": {
+  "segment": "Solo IEC (part-time, former teacher, low-tech)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p11-boutique-iec-firm-owner-ca": {
+  "segment": "Boutique IEC firm owner (multi-consultant)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p12-employed-counselor-large-consultancy-ma": {
+  "segment": "Counselor employed by a large admissions-consulting company",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p13-pm-college-planning-platform": {
+  "segment": "Product manager at a large college-planning platform (enterprise)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p14-data-lead-test-prep": {
+  "segment": "Data/analytics lead at a test-prep company",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p15-solo-founder-admissions-app": {
+  "segment": "Entrepreneur building own college-admissions app",
+  "outcome": "INTERESTED-NO-COMMIT",
+  "note": "not a counselor; wants API/consumer licence; might build own version"
+ },
+ "p16-admissions-youtuber": {
+  "segment": "Admissions YouTuber / content creator",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p17-essay-coaching-business": {
+  "segment": "Essay-coaching business owner",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p18-nonprofit-college-access-director-ca": {
+  "segment": "Nonprofit college-access program director",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p19-cbo-immigrant-families-mn": {
+  "segment": "Community-based organization (immigrant families)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p20-intl-agent-india": {
+  "segment": "International student agent (India)",
+  "outcome": "DECLINED",
+  "note": "no international/Indian calibration, no white-label or marketing use"
+ },
+ "p21-intl-agent-china": {
+  "segment": "International student agent (China, high-end)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p22-intl-agent-nigeria": {
+  "segment": "International student agent (Nigeria)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p23-quant-parent-nj": {
+  "segment": "Quantitatively minded parent",
+  "outcome": "TRIAL",
+  "note": "parent, not a counselor; would pay ~$100; will compare with own Monte Carlo"
+ },
+ "p24-anxious-parent-va": {
+  "segment": "Anxious parent",
+  "outcome": "TRIAL",
+  "note": "parent, not a counselor; would pay ~$300; wants to know what to do, in-state handling"
+ },
+ "p25-high-achieving-student": {
+  "segment": "High-achieving student (senior)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p26-homeschool-coop-coordinator": {
+  "segment": "Homeschool co-op coordinator",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p27-university-admissions-analyst": {
+  "segment": "University admissions/enrollment office analyst",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p28-education-researcher": {
+  "segment": "Education researcher (academic)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p29-tutor-marketplace-product-lead": {
+  "segment": "Private tutor marketplace (product lead)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p30-financial-aid-scholarship-advisor-nc": {
+  "segment": "Financial-aid / scholarship advisor",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p31-angel-investor-edtech": {
+  "segment": "Angel investor (edtech)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p32-catholic-hs-counseling-director-oh": {
+  "segment": "Catholic/parochial HS college counseling director",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p33-athletic-recruiting-advisor-tx": {
+  "segment": "Athletic recruiting consultant",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p34-gear-up-grant-coordinator-tx": {
+  "segment": "Federal grant-funded college access coordinator (GEAR UP-style)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p35-affluent-suburban-public-counselor-nj": {
+  "segment": "Public HS counselor (affluent suburban, high-pressure)",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ },
+ "p36-community-college-transfer-advisor-ca": {
+  "segment": "Community college transfer advisor",
+  "outcome": "GHOSTED",
+  "note": "did not open initial email or follow-up"
+ }
+}

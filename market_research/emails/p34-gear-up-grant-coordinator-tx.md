@@ -1,11 +1,20 @@
-Subject: Caseload list screening for your senior cohort
+Subject: your seniors' RD lists after early results
+Hi Samuel,
 
-Hi Mr. Ortiz,
+I saw the partnership follows students from grade 7 into college.
 
-UNIMATH screens a caseload from one CSV (no student names) and flags students whose college lists carry a higher risk of zero admits than multiplying odds suggests. It writes a counselor brief and a plain-words family brief.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-Honest fit notes: it uses SAT bands plus an adviser's 0-100 rating, with no GPA or class-rank input, so it can't account for Texas automatic admission by rank. It's command-line and solo-built, with no SOC 2 or privacy certification, no paying customers, and only simulated evidence. A grant with a university fiscal agent may require more than that.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-If any partner-school counselors want to try it on this year's seniors, the founding-counselor offer is free through May. Would a 20-minute call to judge fit make sense?
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-[Founder name], UNIMATH
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
+
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

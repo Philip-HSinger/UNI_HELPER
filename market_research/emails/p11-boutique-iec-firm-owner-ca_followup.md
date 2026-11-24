@@ -1,5 +1,8 @@
-Subject: Re: List-risk checks for Crestline
+Subject: Re: your seniors' RD lists after early results
+Hi Helen,
 
-Hi Ms. Zhao, one follow-up. I can send the 25-page methods manual, which documents every test including failures, so you can judge the claims before anyone tries it. If an arrangement for all six consultants would matter, I'd rather hear what you'd need than guess.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

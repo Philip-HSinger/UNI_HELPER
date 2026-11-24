@@ -1,11 +1,20 @@
-Subject: Not built for transfer admissions; a quick question
+Subject: your seniors' RD lists after early results
+Hi Victor,
 
-Hi Mr. Nguyen,
+I saw the transfer workshops you run with UC, CSU and private universities.
 
-I'll be direct: UNIMATH probably doesn't fit your transfer center. It estimates admission odds at 412 US four-year colleges from SAT bands and admit rates; it doesn't model transfer admission, transfer GPA, or UC/CSU transfer pathways.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-I'm writing because you run transfer partnerships with UC, CSU and private universities, and I'd like to learn whether transfer students face the problem it targets: lists where the chance of zero admits is higher than it looks because applications are read similarly everywhere.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Would you share, in a few lines or a 15-minute call, whether that risk is real for your students? It would tell me whether transfer is worth building toward.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-[Founder name], UNIMATH
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
+
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

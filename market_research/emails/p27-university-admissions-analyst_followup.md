@@ -1,5 +1,8 @@
-Subject: Re: Critique of a counselor-side admit model?
+Subject: Re: your seniors' RD lists after early results
+Hi Thomas,
 
-Hi Mr. Becker, one follow-up. If the full manual is too much, I'd most value one view: does "the same application is read similarly everywhere" overstate correlation across institutions with different priorities? A few lines would help.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

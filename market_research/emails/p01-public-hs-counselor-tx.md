@@ -1,13 +1,20 @@
-Subject: A second check on senior college lists (free through May)
+Subject: your seniors' RD lists after early results
+Hi Marisol,
 
-Hi Ms. Treviño,
+I saw your posts about FAFSA nights and TSI testing on the school site.
 
-I'm the solo founder of UNIMATH, a new admissions-analytics tool, and I'll keep this short given your FAFSA nights and TSI testing.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-UNIMATH screens a whole caseload from one CSV (no student names needed) and flags lists where the risk of zero admits is higher than it looks, because one application tends to be read the same way everywhere. It writes a numbers brief for you and a plain-words brief for each family.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Honest limits: it's a command-line program on your own computer, not a web app yet; it uses SAT bands plus your own 0-100 read of each student, with no GPA or class-rank inputs; there's no Naviance or SIS integration; and there are no paying customers yet.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-Founding counselors use it free through May. Would a 20-minute call to see if it fits your caseload be worthwhile?
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

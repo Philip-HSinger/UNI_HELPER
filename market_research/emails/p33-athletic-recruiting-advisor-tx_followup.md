@@ -1,5 +1,8 @@
-Subject: Re: Probably a poor fit for recruited athletes
+Subject: Re: your seniors' RD lists after early results
+Hi Tanya,
 
-Hi Ms. Brooks, one follow-up. If backup lists for non-recruited applicants aren't a real problem in your practice, a quick "no" is useful. If they are, I'm happy to send a sample brief built from simulated students first.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

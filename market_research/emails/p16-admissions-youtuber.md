@@ -1,13 +1,20 @@
-Subject: A former reader's take on "linked" admissions odds?
-
+Subject: your seniors' RD lists after early results
 Hi Brianna,
 
-I'm the solo founder of UNIMATH, a new counselor-facing admissions tool. I'm not asking you to promote anything; I'd value your view as a former reader.
+I've watched a few of your 'chances me' streams.
 
-The core idea: applications aren't independent coin flips, because the same file tends to be read similarly everywhere. In simulation, multiplying per-school odds understated the chance of zero admits 4.5-8x. That seems relevant to the reach-heavy lists you react to.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-Honest status: the full tool is a command-line program for counselors, and I don't sell to families. There's a free, basic student page (Application Efficiency Guide, 5 schools max, waitlist). Evidence is simulated only; no customers yet.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Would you give me 15 minutes on whether this idea matches what you saw reading files, or where it's wrong?
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-[Founder name], UNIMATH
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
+
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

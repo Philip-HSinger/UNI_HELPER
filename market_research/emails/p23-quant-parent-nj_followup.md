@@ -1,5 +1,8 @@
-Subject: Re: Correlated admissions risk
+Subject: Re: your seniors' RD lists after early results
+Hi Sanjay,
 
-Hi Mr. Kulkarni, one follow-up. If the full manual is too long, I can point you to just the parts on correlated decisions and the failed tests. Any critique, even a few lines, would help.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

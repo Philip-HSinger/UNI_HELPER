@@ -1,5 +1,8 @@
-Subject: Re: Flagging zero-admit risk across your seniors
+Subject: Re: your seniors' RD lists after early results
+Hi Andre,
 
-Hi Mr. Whitfield, following up once. A low-effort option: one counselor runs their caseload CSV through UNIMATH before December early results, free and with no student names. If it doesn't change a single list conversation, you've lost an afternoon. Would that be worth trying?
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

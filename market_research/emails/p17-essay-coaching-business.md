@@ -1,11 +1,20 @@
-Subject: Supplement overlap map: early, and looking for a coach's eye
-
+Subject: your seniors' RD lists after early results
 Hi Maggie,
 
-Your December Supplement Sprint is exactly where draft reuse matters, so I'll be candid about where UNIMATH's essay planning stands.
+I saw your December Supplement Sprint.
 
-It's meant to map which supplement prompts overlap so students can reuse drafts. Today, prompts are loaded for 19 schools, but only 10 prompt pairs are human-scored, and my automatic overlap scoring did not beat chance in testing. I'm building a human-scored map for the 50-100 most-applied schools; it isn't done.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-So I'm not selling it to you yet. I'd like 20 minutes to learn how your coaches decide whether two prompts can share a draft, so the map reflects real practice. If it eventually helps your team, you'd be among the first to know.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-[Founder name], UNIMATH
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
+
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
+
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

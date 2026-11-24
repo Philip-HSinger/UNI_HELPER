@@ -1,5 +1,8 @@
-Subject: Re: Score-band admissions odds
+Subject: Re: your seniors' RD lists after early results
+Hi Arjun,
 
-Hi Mr. Venkataraman, one follow-up. The 25-page methods manual documents every simulation, including where the model failed; happy to send it with no call attached. If your team sees a use, we can discuss licence terms; if not, your critique alone would be worth a lot to me.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

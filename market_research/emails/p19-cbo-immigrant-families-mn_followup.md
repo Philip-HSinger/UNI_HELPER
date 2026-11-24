@@ -1,5 +1,8 @@
-Subject: Re: Your Saturday college-prep circle
+Subject: Re: your seniors' RD lists after early results
+Hi Hodan,
 
-Hi Ms. Warsame, one short follow-up. If it helps you decide, I can send a sample family brief built from a made-up student, so you can see whether the plain-words output would make sense to your families. If not, no reply needed.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

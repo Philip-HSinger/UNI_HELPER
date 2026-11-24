@@ -1,5 +1,8 @@
-Subject: Re: One solo founder to another
+Subject: Re: your seniors' RD lists after early results
+Hi Kevin,
 
-Hi Kevin, one follow-up. Even if you're building your own model, I'm happy to share my methods manual; the section on failed tests may save you time. If licensing ever makes sense, terms are open. Good luck with the launch either way.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

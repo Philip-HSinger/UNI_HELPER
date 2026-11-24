@@ -1,13 +1,20 @@
-Subject: A Python library for correlated admissions risk
-
+Subject: your seniors' RD lists after early results
 Hi Jonathan,
 
-You write about admissions statistics, so I'll skip the pitch and give you the model.
+I've been reading your blog on admissions statistics.
 
-UNIMATH is a Python library/CLI that treats a student's decisions as correlated (one application, read everywhere). In simulation, multiplying odds understated zero-admit risk 4.5-8x; my own estimate over-warned ~2x when the simulated world broke its assumptions, so it reports a range. Conditioning on a student's other decisions cut prediction error 18-24%, again in simulation. Single-school odds were only ~7% better than a simple model, and a counselor's judgment (a 0-100 input) beats a scores-only model.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-It covers 412 US colleges from College Scorecard data, 19 selective ones hand-curated. No real outcomes yet, no customers. The 25-page methods manual includes the failures.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Founding counselors use it free through May ($390/year introductory after). Would you try it on your seniors and tell me where it breaks?
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-[Founder name], UNIMATH
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
+
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

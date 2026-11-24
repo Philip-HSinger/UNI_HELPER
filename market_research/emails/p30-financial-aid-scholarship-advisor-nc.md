@@ -1,11 +1,20 @@
-Subject: Not a financial aid tool, but a quick question
+Subject: your seniors' RD lists after early results
+Hi Denise,
 
-Hi Ms. Carter,
+I saw the FAFSA and CSS Profile workshops you run across the county.
 
-I'll be upfront: UNIMATH doesn't do financial aid. It's a new tool that flags college lists where the risk of zero admits is higher than it looks, and re-prices remaining schools after early decisions. It doesn't model cost, net price, FAFSA or the CSS Profile.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-I'm writing because you see ~500 applicants a year and their lists from the affordability side. My question: do you often see students whose lists are risky on admission and affordability at once? If so, I'd like to understand how you spot them.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Ten minutes on the phone, or a few lines by email, would help. Nothing to buy.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-[Founder name], UNIMATH
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
+
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

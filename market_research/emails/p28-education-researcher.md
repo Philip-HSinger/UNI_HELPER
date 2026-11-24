@@ -1,13 +1,20 @@
-Subject: Forecasts frozen before outcomes: a research question
+Subject: your seniors' RD lists after early results
+Hi Alicia,
 
-Dear Dr. Moreno,
+I've read some of your work on undermatching.
 
-Your work on undermatching and school counseling prompted this note. UNIMATH is a counselor tool I built alone; I'm writing about research, not sales.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-Two features may interest you: forecasts are frozen in a tamper-evident log so they can be graded against real outcomes in spring, and it can score counselors' past reach/target/likely calls against its own odds. Optional opt-in pooling of de-identified outcomes exists, though its terms are drafts not yet lawyer-reviewed.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Limits a researcher should know: all evidence is simulated; one class of ~25 students can't prove any method better; inputs are SAT bands, admit rates and a counselor's single rating; there's no real-outcome dataset yet.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-Would you read the 25-page methods manual and advise whether a counselor-partner evaluation could be designed credibly?
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

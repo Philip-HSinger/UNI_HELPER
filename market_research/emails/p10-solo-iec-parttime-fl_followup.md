@@ -1,5 +1,8 @@
-Subject: Re: Honestly, maybe not for you yet
+Subject: Re: your seniors' RD lists after early results
+Hi Debra,
 
-Hi Ms. Castellano, one gentle follow-up. Even one example of two supplement prompts a student answered well with the same draft would help my map. And if you'd like a note if a simpler, non-command-line version ever exists, just reply "keep me posted." None exists yet, so no pressure.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

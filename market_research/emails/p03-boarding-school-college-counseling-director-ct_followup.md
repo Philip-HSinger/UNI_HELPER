@@ -1,5 +1,8 @@
-Subject: Re: A forecasting tool that documents its own failures
+Subject: Re: your seniors' RD lists after early results
+Hi Eleanor,
 
-Dear Ms. Whitcombe, a brief follow-up. I'm happy to send the methods manual with no call attached; a candid "this could mislead families because..." would be as valuable to me as interest. If your counselors want to try it on this year's early round, it's free through May for founding counselors.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

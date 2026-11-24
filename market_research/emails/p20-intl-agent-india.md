@@ -1,13 +1,20 @@
-Subject: For your US undergraduate applicants only
+Subject: your seniors' RD lists after early results
+Hi Rohit,
 
-Dear Mr. Malhotra,
+I saw BrightAbroad advises students applying to the US.
 
-UNIMATH won't help most of BrightAbroad's work: it covers only US four-year undergraduate admissions (412 colleges), not graduate programs or the UK, Canada or Australia.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-For your US undergraduate applicants, it estimates per-school odds from SAT bands, College Scorecard admit rates and your counsellor's 0-100 read of the student, treats each student's decisions as linked, and flags lists where the chance of zero admits is higher than it looks. It re-prices remaining schools after early decisions, deferrals and waitlists.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Limits: admit rates are overall, not international-specific; it's a command-line tool on your own computer; it's new, with no paying customers and only simulated evidence.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-The founding-counselor offer is free through May ($390/year per counsellor, introductory, after). Would a 20-minute call be worthwhile?
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

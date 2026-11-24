@@ -1,11 +1,20 @@
-Subject: Critique of a counselor-side admit model?
+Subject: your seniors' RD lists after early results
+Hi Thomas,
 
-Hi Mr. Becker,
+I saw your talks on yield and admit modelling.
 
-You build admit models from the institution's side; I've built one from the counselor's side, and I'd value your critique rather than selling you anything.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-UNIMATH estimates per-school odds for 412 US colleges from College Scorecard SAT bands and admit rates plus a counselor's 0-100 rating, then treats a student's decisions as linked. In simulation, independent multiplication understated zero-admit risk 4.5-8x; my estimate over-warned ~2x when the simulated world broke its assumptions. Single-school odds were only ~7% better than a simple statistical model. No real-outcome validation yet; forecasts are frozen in a tamper-evident log to be graded in spring.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Would you skim the 25-page methods manual and tell me what an enrollment analyst would find naive? Even brief notes would help.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-[Founder name], UNIMATH
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
+
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

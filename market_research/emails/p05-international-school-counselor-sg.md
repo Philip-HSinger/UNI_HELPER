@@ -1,13 +1,20 @@
-Subject: US-only list risk for your applicants (honest scope)
+Subject: your seniors' RD lists after early results
+Hi Daniel,
 
-Hi Mr. Osei-Mensah,
+I know you advise students across five countries, so US lists are only part of your year.
 
-I'll lead with the limit: UNIMATH covers only 412 four-year US colleges, so it does nothing for your UK, Canada, Netherlands or Australia applicants.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-For students applying to the US, it treats their decisions as linked (one file, read the same way everywhere) and flags lists where zero-admit risk is higher than multiplying odds suggests. It re-prices remaining schools after early decisions, deferrals and waitlists, and screens a caseload from one CSV with no names.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-Odds lean on SAT bands, overall College Scorecard admit rates and your own 0-100 read; there's no IB score input and no international-specific adjustment. It's a command-line tool that runs locally; new, solo-built, no paying customers yet.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-If your US-bound group is large enough to matter, founding counselors use it free through May. Worth a 20-minute call?
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

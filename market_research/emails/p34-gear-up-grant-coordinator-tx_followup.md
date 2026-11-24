@@ -1,5 +1,8 @@
-Subject: Re: Caseload list screening
+Subject: Re: your seniors' RD lists after early results
+Hi Samuel,
 
-Hi Mr. Ortiz, one follow-up. If a call is hard to schedule, I can send a sample counselor brief and family brief built from simulated students, so you can judge whether it fits your cohort before involving anyone else.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

@@ -1,5 +1,8 @@
-Subject: Re: US list risk for Al Noor seniors
+Subject: Re: your seniors' RD lists after early results
+Hi Rania,
 
-Hi Ms. Haddad, a short follow-up. If a call is too much during application season, I can send a sample counselor brief and family brief built from simulated students, so you can judge the output quickly. It's free through May for founding counselors either way.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

@@ -1,5 +1,8 @@
-Subject: Re: Grading reach/target/likely calls
+Subject: Re: your seniors' RD lists after early results
+Hi Priya,
 
-Hi Ms. Raman, following up once. A concrete option: run last year's class through the past-calls scoring as a free test before December results arrive, then decide. Data stays on your computer and needs no names. Happy to send just the methods manual first if you'd rather start there.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

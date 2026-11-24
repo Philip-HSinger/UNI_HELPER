@@ -1,5 +1,8 @@
-Subject: Re: US undergraduate admission odds only
+Subject: Re: your seniors' RD lists after early results
+Hi Chukwuemeka,
 
-Dear Mr. Adeyemi, a brief follow-up. If UNIMATH isn't relevant now, no reply needed. If you have even a few US undergraduate applicants this cycle, I'm happy to send a sample counsellor brief built from simulated students so you can judge it quickly.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

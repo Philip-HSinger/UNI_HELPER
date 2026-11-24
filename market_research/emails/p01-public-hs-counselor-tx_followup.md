@@ -1,5 +1,8 @@
-Subject: Re: A second check on senior college lists
+Subject: Re: your seniors' RD lists after early results
+Hi Marisol,
 
-Hi Ms. Treviño, following up once. Early results arrive in December; after each acceptance, deferral or waitlist, UNIMATH re-prices a student's remaining schools so you can see who may still need a safer application. It's free through May for founding counselors. If it's not a fit, no reply needed.
+Quick follow-up: early results start coming out in a couple of weeks. If you send me one senior's SAT, GPA and college list (no name), I'll send back a one-page report on their updated odds and how the list holds up. It's free and takes two minutes.
 
-[Founder name], UNIMATH
+Thanks,
+Philip
+Calliper

@@ -1,13 +1,20 @@
-Subject: A linked-decision list-risk engine for counselor analytics
+Subject: your seniors' RD lists after early results
+Hi Natalie,
 
-Hi Ms. Brooks,
+I saw you lead the counselor analytics roadmap at Trellisway.
 
-You lead Trellisway's counselor analytics roadmap, so I'll pitch the engine, not an app.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-UNIMATH is a Python library that treats a student's admissions decisions as linked, flags lists where zero-admit risk is higher than multiplying odds suggests (shown as a range), and re-prices remaining schools after each early decision, deferral or waitlist. It covers 412 US four-year colleges using College Scorecard data plus a counselor's 0-100 rating.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-On readiness: no packaged API or licence yet (terms negotiable), no integrations, no SOC 2 or privacy certification, and all evidence is simulated. One founder, no customers. A 25-page methods manual covers every test, including failures.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-Would a 30-minute technical call help you judge whether this belongs on your roadmap or is better left alone?
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

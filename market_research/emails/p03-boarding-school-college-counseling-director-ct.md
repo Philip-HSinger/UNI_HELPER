@@ -1,13 +1,20 @@
-Subject: A forecasting tool that documents its own failures
+Subject: your seniors' RD lists after early results
+Hi Eleanor,
 
-Dear Ms. Whitcombe,
+I came across your conference talks on ethics in admissions.
 
-Given your talks on ethics in admissions, I'd value your critique more than a sale.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-UNIMATH, which I built alone, treats a student's decisions as linked (one file, read similarly everywhere). It flags lists where zero-admit risk exceeds what multiplying odds suggests, shows that risk as a range, and freezes forecasts in a tamper-evident log to grade against spring outcomes.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-What it can't claim: all evidence is simulated; single-school odds were only ~7% better than a simple statistical model; a counselor's judgment beats a scores-only model, which is why your team's 0-100 read is an input. No paying customers yet. A 25-page methods manual documents every test, including failures.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-Would you read it and tell me where it falls short? If it proves useful, the introductory site licence covers your five counselors at $1,500/year.
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

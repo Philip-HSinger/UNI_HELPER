@@ -1,13 +1,20 @@
-Subject: Grading reach/target/likely calls for your outcomes report
+Subject: your seniors' RD lists after early results
+Hi Priya,
 
-Hi Ms. Raman,
+I read that you run your office's annual outcomes report, so I thought you'd like the numbers side of this.
 
-Since you run Lakeshore's outcomes report and come from enrollment management, one UNIMATH feature may interest you: it scores a counselor's past reach/target/likely calls against its own odds on a past class, and freezes this year's forecasts in a tamper-evident log to grade in spring.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-I'll be upfront about the statistics: with ~110 seniors, one class can't prove any method better; all evidence so far is simulated; single-school odds were only ~7% better than a simple model. It works from one CSV (no names), runs locally as a command-line tool/Python library, and has no Naviance or Scoir integration. No paying customers yet.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-A 25-page methods manual covers every test, failures included. Founding counselors use it free through May; the introductory site licence is $1,500/year.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-Would you like the manual and a 20-minute walkthrough?
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]

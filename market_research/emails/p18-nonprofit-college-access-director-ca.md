@@ -1,13 +1,20 @@
-Subject: Zero-admit risk screening, with a UC/CSU caveat
+Subject: your seniors' RD lists after early results
+Hi Luis,
 
-Hi Mr. Hernández,
+I saw First Rung publishes UC/CSU admission rates across its 12 schools.
 
-UNIMATH screens a caseload from one CSV (no student names) and flags students whose lists carry a higher risk of zero admits than multiplying odds suggests, then writes a counselor brief and a plain-words family brief.
+I'm an electrical engineering student at Brown, and I've built a tool for college counselors.
 
-An important caveat for your program: its odds lean on SAT bands and admit rates, and UC and CSU don't consider test scores, so it is weaker for UC/CSU-heavy lists. It has no GPA input beyond the counselor's single 0-100 rating and doesn't touch FAFSA or CADAA.
+When early results come out next month, it uses Bayesian probability to update a student's chances at every school left on their list. It treats applications as dependent, not independent: the same application is read everywhere, so an ED admit or deferral shifts the odds at every other school. You'll know before Jan 1 whether the RD list still works, and which lists risk getting in nowhere.
 
-It's new, solo-built, CSV-only, with no paying customers and only simulated evidence.
+I'm also working on the essay side: it maps which supplements overlap, so a student can see that their MIT essay on why they love their field already covers most of Princeton's academic-interest essay and how many new words each school actually needs. You can spot that two prompts overlap, but not across 20 schools with five prompts each.
 
-If some of your students also apply to private or out-of-state colleges, would a 20-minute call to check fit be worthwhile? Founding counselors use it free through May.
+Would you be up for trying it on one of your seniors? No name or identifying data needed, just their SAT, GPA and college list, and I'll send back a one-page report. It's free.
 
-[Founder name], UNIMATH
+If you're curious how both features work, I've attached a short PDF that explains them, and I'm happy to walk you through it on a call.
+
+Thanks,
+Philip
+Calliper
+
+[Attachment: Calliper_overview.pdf]
