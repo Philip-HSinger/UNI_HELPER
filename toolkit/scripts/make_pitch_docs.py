@@ -187,6 +187,8 @@ o.p("After the pilot (introductory prices): <b>$390 per counselor per year</b>, 
     "Founding counselors keep these prices. Platforms wanting the engine: let's talk.")
 
 o.p("What to do next", H2)
-o.p("Send one current senior's list (scores and schools, no name) and any early results you already have. You'll get "
-    "back their updated odds and the list's real risk of no admits within two days.", BOX)
+o.p("Send a typical college list from your practice and an SAT score, with no real student needed. You'll get back a "
+    "one-page sample report within a few days: the odds, the list's real risk of no admits, and how an early result "
+    "would change them.", BOX)
+o.p("Calliper · 69 Brown Street #7457, Providence, RI 02912 · calliper@agentmail.to", SM)
 o.build(ROOT / "reports" / "Calliper_overview.pdf", "Calliper overview")
