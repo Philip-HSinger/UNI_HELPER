@@ -129,7 +129,7 @@ def figure():
 
 # ---------------------------------------------------------------------------------------------- content
 P("Linked admission odds and early-decision updating", TITLE)
-P("Philip &nbsp;&middot;&nbsp; Electrical Engineering, Brown University (Class of 2030) &nbsp;&middot;&nbsp; "
+P("Philip Singer &nbsp;&middot;&nbsp; Electrical Engineering, Brown University (Class of 2030) &nbsp;&middot;&nbsp; "
   "calliper@agentmail.to", AUTH)
 P("Calliper technical note, November 2026. An independent student project, not affiliated with or endorsed by "
   "Brown University.", SMALL)
@@ -242,5 +242,5 @@ def on_page(c, doc):
 
 SimpleDocTemplate(str(OUT), pagesize=letter, leftMargin=0.85 * inch, rightMargin=0.85 * inch, topMargin=0.7 * inch,
                   bottomMargin=0.7 * inch, title="Linked admission odds and early-decision updating",
-                  author="Philip (Calliper)").build(story, onFirstPage=on_page, onLaterPages=on_page)
+                  author="Philip Singer (Calliper)").build(story, onFirstPage=on_page, onLaterPages=on_page)
 print(f"wrote {OUT}")
