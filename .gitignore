@@ -31,3 +31,4 @@ guide.xlsx
 *.sln
 *.sw?
 __pycache__/
+.claude/settings.local.json
