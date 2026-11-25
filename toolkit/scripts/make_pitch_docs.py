@@ -145,7 +145,7 @@ m.build(ROOT / "reports" / "UNIMATH_market_analysis.pdf", "UNIMATH market analys
 # ================================================================================================ offer
 o = Doc()
 o.p("Calliper", H1)
-o.p("Admissions analytics for college counselors, built by Philip, a Brown freshman studying electrical engineering. "
+o.p("Admissions analytics for college counselors, built by Philip, a Brown freshman concentrating in electrical engineering. "
     "Facts in, measured answers out.", LEAD)
 o.p("Three things for each student's list:", B)
 o.table([["", "What you get", "Available"],

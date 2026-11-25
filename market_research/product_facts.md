@@ -4,7 +4,7 @@ Everything the seller says must be supported by this sheet. Anything not here is
 "not yet". Never invent customers, testimonials, partnerships, results on real students, or features.
 
 ## Who
-- Calliper is built by Philip, a freshman at Brown studying electrical engineering. New this cycle. No paying customers or
+- Calliper is built by Philip, a freshman at Brown concentrating in electrical engineering. New this cycle. No paying customers or
   client references yet.
 - Email: calliper@agentmail.to. A detailed methods write-up exists and can be shared on request.
 
