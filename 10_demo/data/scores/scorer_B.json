@@ -1,0 +1,392 @@
+[
+  {
+    "pair": "tufts-1|boston-college-1",
+    "a_from_b": 2,
+    "b_from_a": 2,
+    "reason": "Tufts engagement vs family tradition; nothing usable."
+  },
+  {
+    "pair": "tufts-1|boston-college-2",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Tufts engagement vs conversation partner; nothing usable."
+  },
+  {
+    "pair": "tufts-1|boston-college-3",
+    "a_from_b": 2,
+    "b_from_a": 2,
+    "reason": "Tufts engagement vs stereotype challenge; nothing usable."
+  },
+  {
+    "pair": "tufts-1|boston-college-4",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Tufts engagement vs new Jesuit value; nothing usable."
+  },
+  {
+    "pair": "tufts-1|boston-university-1",
+    "a_from_b": 25,
+    "b_from_a": 25,
+    "reason": "Both school-interest essays; BU excitement vs Tufts engagement, specifics do not transfer."
+  },
+  {
+    "pair": "tufts-1|fordham-university-1",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Tufts engagement vs growth experience; nothing usable."
+  },
+  {
+    "pair": "tufts-1|fordham-university-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts engagement vs NYC readiness; nothing usable."
+  },
+  {
+    "pair": "tufts-1|fordham-university-3",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Both school-oriented but past engagement vs imagined future; little carries."
+  },
+  {
+    "pair": "tufts-1|university-of-massachusetts-amherst-1",
+    "a_from_b": 25,
+    "b_from_a": 25,
+    "reason": "Both school-specific interest essays; reasons and engagement details do not transfer across schools."
+  },
+  {
+    "pair": "tufts-1|university-of-massachusetts-amherst-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts engagement vs major choice; nothing usable."
+  },
+  {
+    "pair": "tufts-1|university-of-massachusetts-amherst-4",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Tufts engagement history vs community; nothing usable."
+  },
+  {
+    "pair": "tufts-2|boston-college-1",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Favorite assignment vs family tradition; nothing usable."
+  },
+  {
+    "pair": "tufts-2|boston-college-2",
+    "a_from_b": 20,
+    "b_from_a": 15,
+    "reason": "Intellectual conversation could center on an assignment; one anecdote carries."
+  },
+  {
+    "pair": "tufts-2|boston-college-3",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Favorite assignment vs stereotype challenge; nothing usable."
+  },
+  {
+    "pair": "tufts-2|boston-college-4",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Favorite assignment vs new Jesuit value; nothing usable."
+  },
+  {
+    "pair": "tufts-2|boston-university-1",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "Academic enthusiasm is shared; school-specific vs past-assignment content differs."
+  },
+  {
+    "pair": "tufts-2|fordham-university-1",
+    "a_from_b": 15,
+    "b_from_a": 10,
+    "reason": "An assignment could have shifted a perspective; at most an anecdote."
+  },
+  {
+    "pair": "tufts-2|fordham-university-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Favorite assignment vs NYC readiness; nothing usable."
+  },
+  {
+    "pair": "tufts-2|fordham-university-3",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Favorite assignment vs future-self letter; nothing usable."
+  },
+  {
+    "pair": "tufts-2|university-of-massachusetts-amherst-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Favorite assignment vs why UMass; nothing usable."
+  },
+  {
+    "pair": "tufts-2|university-of-massachusetts-amherst-2",
+    "a_from_b": 25,
+    "b_from_a": 25,
+    "reason": "An assignment in the intended field can anchor a major essay and vice versa; one anecdote."
+  },
+  {
+    "pair": "tufts-2|university-of-massachusetts-amherst-4",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Favorite assignment vs community; nothing usable."
+  },
+  {
+    "pair": "boston-college-1|boston-university-1",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Family tradition vs why BU; nothing usable."
+  },
+  {
+    "pair": "boston-college-1|fordham-university-1",
+    "a_from_b": 20,
+    "b_from_a": 20,
+    "reason": "Community engagement overlaps; tradition essay is not a growth story, an anecdote carries."
+  },
+  {
+    "pair": "boston-college-1|fordham-university-2",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "Cultural tradition can show readiness for a diverse city; one paragraph carries."
+  },
+  {
+    "pair": "boston-college-1|fordham-university-3",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tradition only in Fordham's framing; content unrelated."
+  },
+  {
+    "pair": "boston-college-1|university-of-massachusetts-amherst-1",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Family tradition vs why UMass; nothing usable."
+  },
+  {
+    "pair": "boston-college-1|university-of-massachusetts-amherst-2",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Family tradition vs major choice; nothing usable."
+  },
+  {
+    "pair": "boston-college-1|university-of-massachusetts-amherst-4",
+    "a_from_b": 40,
+    "b_from_a": 40,
+    "reason": "A community tradition and a community's significance share raw material; UMass adds enrich-campus, BC adds tradition focus."
+  },
+  {
+    "pair": "boston-college-2|boston-university-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Conversation partner vs why BU; nothing usable."
+  },
+  {
+    "pair": "boston-college-2|fordham-university-1",
+    "a_from_b": 25,
+    "b_from_a": 30,
+    "reason": "Conversations that changed a viewpoint can serve as a growth experience; different focus."
+  },
+  {
+    "pair": "boston-college-2|fordham-university-2",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Conversation partner vs NYC readiness; little overlap."
+  },
+  {
+    "pair": "boston-college-2|fordham-university-3",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Conversation partner vs future-self letter; nothing usable."
+  },
+  {
+    "pair": "boston-college-2|university-of-massachusetts-amherst-1",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Conversation partner vs why UMass; nothing usable."
+  },
+  {
+    "pair": "boston-college-2|university-of-massachusetts-amherst-2",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Profound questions could relate to intended major; small overlap."
+  },
+  {
+    "pair": "boston-college-2|university-of-massachusetts-amherst-4",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Conversation partner vs community; a partner from the community could bridge one paragraph."
+  },
+  {
+    "pair": "boston-college-3|boston-university-1",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Stereotype challenge vs why BU; nothing usable."
+  },
+  {
+    "pair": "boston-college-3|fordham-university-1",
+    "a_from_b": 35,
+    "b_from_a": 45,
+    "reason": "Overcoming a single story is a perspective/growth experience; Fordham prompt is broader so it absorbs BC3 better."
+  },
+  {
+    "pair": "boston-college-3|fordham-university-2",
+    "a_from_b": 15,
+    "b_from_a": 20,
+    "reason": "Overcoming assumptions can show readiness for a diverse city; one anecdote carries."
+  },
+  {
+    "pair": "boston-college-3|fordham-university-3",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Overcoming a stereotype vs future-self letter; nothing usable."
+  },
+  {
+    "pair": "boston-college-3|university-of-massachusetts-amherst-1",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Single-story challenge vs why UMass; nothing usable."
+  },
+  {
+    "pair": "boston-college-3|university-of-massachusetts-amherst-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Stereotype challenge vs major choice; nothing usable."
+  },
+  {
+    "pair": "boston-college-3|university-of-massachusetts-amherst-4",
+    "a_from_b": 30,
+    "b_from_a": 30,
+    "reason": "Identity community and being stereotyped share raw material; different angles."
+  },
+  {
+    "pair": "boston-college-4|boston-university-1",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Value proposal for BC vs what excites you about BU; minimal overlap."
+  },
+  {
+    "pair": "boston-college-4|fordham-university-1",
+    "a_from_b": 25,
+    "b_from_a": 20,
+    "reason": "A growth experience can illustrate the proposed value; anecdote carries, framing differs."
+  },
+  {
+    "pair": "boston-college-4|fordham-university-2",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "New value vs NYC readiness; little overlap."
+  },
+  {
+    "pair": "boston-college-4|fordham-university-3",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Value and personal development vs future-self letter; a line on growth could carry."
+  },
+  {
+    "pair": "boston-college-4|university-of-massachusetts-amherst-1",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Value for BC community vs why UMass; at most a line on personal goals."
+  },
+  {
+    "pair": "boston-college-4|university-of-massachusetts-amherst-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Proposed Jesuit-style value vs major choice; nothing usable."
+  },
+  {
+    "pair": "boston-college-4|university-of-massachusetts-amherst-4",
+    "a_from_b": 25,
+    "b_from_a": 20,
+    "reason": "Both tie personal values to enriching campus community; different subjects (value vs group)."
+  },
+  {
+    "pair": "boston-university-1|fordham-university-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Why-BU vs personal growth experience; nothing usable."
+  },
+  {
+    "pair": "boston-university-1|fordham-university-2",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "NYC-living readiness vs BU excitement; only urban-campus sentiment overlaps."
+  },
+  {
+    "pair": "boston-university-1|fordham-university-3",
+    "a_from_b": 30,
+    "b_from_a": 30,
+    "reason": "Both school-oriented futures; goals transfer but school resources and the letter frame do not."
+  },
+  {
+    "pair": "boston-university-1|university-of-massachusetts-amherst-1",
+    "a_from_b": 50,
+    "b_from_a": 50,
+    "reason": "Two why-us prompts; student goals transfer, school-specific reasons do not."
+  },
+  {
+    "pair": "boston-university-1|university-of-massachusetts-amherst-2",
+    "a_from_b": 30,
+    "b_from_a": 35,
+    "reason": "Academic interest/major part is shared; BU essay needs school specifics, major essay needs origin story."
+  },
+  {
+    "pair": "boston-university-1|university-of-massachusetts-amherst-4",
+    "a_from_b": 10,
+    "b_from_a": 8,
+    "reason": "Excitement about BU vs a community you belong to; minimal overlap."
+  },
+  {
+    "pair": "fordham-university-1|university-of-massachusetts-amherst-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Growth experience vs why UMass; nothing usable."
+  },
+  {
+    "pair": "fordham-university-1|university-of-massachusetts-amherst-2",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "An origin story for the major could involve a perspective shift; one anecdote carries."
+  },
+  {
+    "pair": "fordham-university-1|university-of-massachusetts-amherst-4",
+    "a_from_b": 30,
+    "b_from_a": 25,
+    "reason": "Community essay may hold a growth moment; growth essay may come from a community; different angles."
+  },
+  {
+    "pair": "fordham-university-2|university-of-massachusetts-amherst-1",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Both school-focused but NYC preparation vs why UMass share almost nothing."
+  },
+  {
+    "pair": "fordham-university-2|university-of-massachusetts-amherst-2",
+    "a_from_b": 8,
+    "b_from_a": 5,
+    "reason": "NYC readiness vs major choice; little shared content."
+  },
+  {
+    "pair": "fordham-university-2|university-of-massachusetts-amherst-4",
+    "a_from_b": 30,
+    "b_from_a": 30,
+    "reason": "A diverse home community is raw material for readiness for NYC and vice versa; different angles."
+  },
+  {
+    "pair": "fordham-university-3|university-of-massachusetts-amherst-1",
+    "a_from_b": 25,
+    "b_from_a": 20,
+    "reason": "Both school-oriented; student goals transfer but Fordham/UMass specifics and letter format do not."
+  },
+  {
+    "pair": "fordham-university-3|university-of-massachusetts-amherst-2",
+    "a_from_b": 25,
+    "b_from_a": 20,
+    "reason": "Major rationale can feed imagined academic accomplishments and vice versa; school-specific framing differs."
+  },
+  {
+    "pair": "fordham-university-3|university-of-massachusetts-amherst-4",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Future-self accomplishments vs community enriching campus; only a community-contribution line carries over."
+  }
+]
