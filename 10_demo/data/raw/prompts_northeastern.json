@@ -1,0 +1,60 @@
+{
+  "school_id": "northeastern",
+  "school": "Northeastern University",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-27",
+  "no_supplement": true,
+  "prompts": [],
+  "related_optional_statements": [
+    {
+      "id": "northeastern-camd-1",
+      "text": "The Department of Art + Design is looking for the next generation of innovative visual problem solvers and creative makers who expressively engage with the broader world and exercise personal agency and vision through their chosen medium.  In your portfolio personal statement, please describe what qualities you feel you will bring to the department and your college-level educational experience and why.",
+      "word_limit": 500,
+      "char_limit": null,
+      "word_min": null,
+      "required": false,
+      "choose_group": null,
+      "applies_to": "Optional CAMD portfolio (Art/Design/Media Arts), submitted via Application Status Check after applying; CAMD home-college applicants only",
+      "source_url": "https://camd.northeastern.edu/undergraduate-admissions/portfolios/",
+      "source_type": "official",
+      "limit_note": "Portfolio Personal Statement form has a 500-word limit (general CAMD portfolio rule)"
+    },
+    {
+      "id": "northeastern-camd-2",
+      "text": "It has never been a more exciting time to be involved in media, communications and journalism. In your Journalism portfolio, please discuss the possibilities you see in these fields and how you would pursue them.",
+      "word_limit": 500,
+      "char_limit": null,
+      "word_min": null,
+      "required": false,
+      "choose_group": null,
+      "applies_to": "Optional CAMD portfolio (Journalism), submitted via Application Status Check after applying; CAMD home-college applicants only",
+      "source_url": "https://camd.northeastern.edu/undergraduate-admissions/portfolios/",
+      "source_type": "official",
+      "limit_note": "Portfolio Personal Statement form has a 500-word limit (general CAMD portfolio rule)"
+    },
+    {
+      "id": "northeastern-camd-3",
+      "text": "A separate one-page statement describing your musical background, influences, and goals as well as why you think the Music Technology program is right for you.",
+      "word_limit": null,
+      "char_limit": null,
+      "word_min": null,
+      "required": false,
+      "choose_group": null,
+      "applies_to": "Optional CAMD portfolio (Music Technology), submitted via Application Status Check after applying; CAMD home-college applicants only",
+      "source_url": "https://camd.northeastern.edu/undergraduate-admissions/portfolios/",
+      "source_type": "official",
+      "limit_note": "one page (no word count stated)"
+    }
+  ],
+  "notes": "Northeastern has no supplemental essay: the official first-year requirements page lists only the Common App/Coalition application, fee, counselor + teacher recommendations, transcripts, optional testing, English proficiency, optional CAMD portfolio, and DCF for non-US citizens - no writing supplement (third-party Koppelman Group 2025-26 and CollegeVine agree; Koppelman notes only an optional resume upload). The John Martinson Honors Program is by invitation from the regular application, with no separate essay. Cycle: the official pages carry no year label; the CAMD portfolio page lists deadlines ED I 11/15/26, EA 12/15/26, ED II 01/15/27, RD 02/01/27, i.e. the 2026-27 cycle (fall 2027 entry). prompts is left empty per the no-supplement rule; 'related_optional_statements' (non-standard field) records the verbatim optional CAMD portfolio personal-statement prompts, which are portfolio components, not Common App supplements. Theatre (Performance) asks only to 'Include a resume and a personal statement.' with no prompt, so it is not listed.",
+  "sources": [
+    "https://admissions.northeastern.edu/application-information/first-year-applicants/",
+    "https://admissions.northeastern.edu/application-information/",
+    "https://admissions.northeastern.edu/application-information/admissions-deadlines-decisions/",
+    "https://admissions.northeastern.edu/apply/first-year-application-requirements/",
+    "https://admissions.northeastern.edu/faq/",
+    "https://camd.northeastern.edu/undergraduate-admissions/portfolios/",
+    "https://www.koppelmangroup.com/blog/2025/8/27/how-to-write-the-northeastern-supplement-2025-2026",
+    "https://www.collegevine.com/faq/16141/does-northeastern-university-have-a-supplemental-essay"
+  ]
+}

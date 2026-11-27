@@ -1,0 +1,81 @@
+{
+  "school_id": "boston-university",
+  "school": "Boston University",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-27",
+  "no_supplement": false,
+  "prompts": [
+    {
+      "id": "boston-university-1",
+      "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?",
+      "word_limit": 300,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "all first-year applicants (Common App)",
+      "source_url": "https://www.collegeessayguy.com/blog/boston-university-supplemental-essay",
+      "source_type": "third-party"
+    },
+    {
+      "id": "boston-university-2",
+      "text": "The mission of Kilachand Honors College is to offer a challenging liberal arts education grounded in critical and creative thinking, interdisciplinary problem-solving, and the real-world application of knowledge. Please see https://www.bu.edu/khc/about/ for more details about our program, and then respond to one of the following questions in an essay of 600 words or less:\n\nWhat about the Kilachand Honors College resonates with you, and how would Kilachand’s curriculum fulfill your academic, creative, intellectual, and/or professional goals?",
+      "word_limit": 600,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 2
+      },
+      "applies_to": "Kilachand Honors College applicants only (opt-in by checking 'Yes' on the BU application)",
+      "source_url": "https://www.ivycoach.com/the-ivy-coach-blog/college-essays/boston-university-supplemental-essay-prompts/",
+      "source_type": "third-party"
+    },
+    {
+      "id": "boston-university-3",
+      "text": "The mission of Kilachand Honors College is to offer a challenging liberal arts education grounded in critical and creative thinking, interdisciplinary problem-solving, and the real-world application of knowledge. Please see https://www.bu.edu/khc/about/ for more details about our program, and then respond to one of the following questions in an essay of 600 words or less:\n\nIf you could create a new Kilachand course, what would it be? How would your imagined course align with the core values of Kilachand?",
+      "word_limit": 600,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 2
+      },
+      "applies_to": "Kilachand Honors College applicants only (opt-in by checking 'Yes' on the BU application)",
+      "source_url": "https://www.ivycoach.com/the-ivy-coach-blog/college-essays/boston-university-supplemental-essay-prompts/",
+      "source_type": "third-party"
+    }
+  ],
+  "notes": "Cycle: third-party guides dated Aug-Sep 2026 (College Transitions 2026-08-13, College Essay Guy updated 2026-08-04, NextAdmit 2026-09-21, Ivy Coach, Esslo, College Essay Advisors) all label these 2026-27; official BU pages (bu.edu/admissions/apply/first-year/, bu.edu/khc/admissions/) confirm one required BU supplemental essay plus a required essay for Kilachand applicants but do NOT print the prompt text, and the Common App prompt text is behind login, so no prompt could be verified verbatim against an official page. Change vs 2025-26: the 'Reflect on a social or community issue that deeply resonates with you...' option was dropped; all applicants now answer the single Why-BU prompt (College Transitions, NextAdmit, Esslo, Ivy Coach agree). UNCERTAIN wording of prompt 1: College Essay Guy, College Transitions, NextAdmit and College Essay Advisors give the two-sentence question with 'How do you hope to contribute to our campus community?'; Ivy Coach, Esslo and I'mAdmitted give only 'What about being a student at BU most excites you?'. Majority version recorded. The preamble is assembled from the 2025-26 wording (NextAdmit/UPgraded/CollegeVine, em dash and curly quotes) with the 2026-27 lead-in 'please respond to the following question in 300 words or less:' as reported by College Essay Guy (2025-26 said 'one of the following two questions'); exact punctuation of the preamble is not officially confirmed. Kilachand: Ivy Coach, Esslo and College Essay Guy agree on choose 1 of 2 at 600 words; the shared intro paragraph is copied from the 2025-26 CollegeVine/UPgraded text (College Essay Guy's 2026-27 paraphrase matches it). I'mAdmitted instead lists two 250-word KHC essays ('A Question on Your Mind', 'Leadership Vision') - these look like an older or unreliable version and were not recorded. No other program-specific essays found: the Trustee Scholarship essay no longer exists (BU's merit page lists only the Presidential Scholarship, which needs no extra essay); CFA music/theatre/art use auditions/portfolios, not written prompts.",
+  "sources": [
+    "https://www.bu.edu/admissions/apply/first-year/",
+    "https://www.bu.edu/admissions/apply/first-year/application-requirements/",
+    "https://www.bu.edu/admissions/apply/first-year/faq/",
+    "https://www.bu.edu/admissions/apply/deadlines/",
+    "https://www.bu.edu/khc/",
+    "https://www.bu.edu/khc/admissions/",
+    "https://www.bu.edu/khc/prospective-students/",
+    "https://www.bu.edu/khc/about/",
+    "https://www.bu.edu/admissions/tuition-aid/scholarships-financial-aid/",
+    "https://www.bu.edu/admissions/tuition-aid/scholarships-financial-aid/first-year-merit/",
+    "https://www.bu.edu/admissions/tuition-aid/scholarships-financial-aid/first-year-merit/trustee/",
+    "https://www.commonapp.org/explore/boston-university",
+    "https://www.collegeessayguy.com/blog/boston-university-supplemental-essay",
+    "https://www.ivycoach.com/the-ivy-coach-blog/college-essays/boston-university-supplemental-essay-prompts/",
+    "https://www.esslo.org/supplemental-essays/boston-university",
+    "https://blog.collegevine.com/how-to-write-the-boston-university-essays",
+    "https://www.collegetransitions.com/blog/boston-university-supplemental-essay-prompts/",
+    "https://nextadmit.com/blog/how-to-write-the-bu-supplemental-essays/",
+    "https://imadmitted.com/schools/bu",
+    "https://imadmitted.com/supplemental-essay-prompts",
+    "https://admissionsight.com/boston-university-supplemental-essays/",
+    "https://www.collegeessayadvisors.com/supplemental-essay/boston-university-bu-supplemental-essay-prompt-guide/",
+    "https://upgradedfuture.com/boston-university",
+    "https://www.indigoresearch.org/blog/boston-university-bu-supplemental-essay",
+    "https://github.com/neelsatyavolu/college-forge/pull/58"
+  ]
+}

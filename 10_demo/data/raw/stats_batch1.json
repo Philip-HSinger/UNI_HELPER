@@ -1,0 +1,247 @@
+[
+  {
+    "school_id": "tufts",
+    "school": "Tufts University",
+    "cds_year": "2025-26",
+    "cds_url": "https://provost.tufts.edu/institutionalresearch/wp-content/uploads/sites/5/CDS_2025-2026.pdf",
+    "applicants": 33395,
+    "admits": 3612,
+    "enrolled": 1764,
+    "admit_rate": 0.1082,
+    "ed_applicants": 3344,
+    "ed_admits": 1071,
+    "ed_rate": 0.3203,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": 0.42,
+    "pct_submit_act": 0.16,
+    "sat_ebrw": [
+      720,
+      740,
+      760
+    ],
+    "sat_math": [
+      730,
+      760,
+      780
+    ],
+    "sat_composite": [
+      1460,
+      1500,
+      1520
+    ],
+    "act_composite": [
+      33,
+      34,
+      35
+    ],
+    "test_importance": "Considered",
+    "test_policy_2026_27": "test-optional",
+    "test_policy_url": "https://admissions.tufts.edu/apply/applying-to-tufts/sat-and-act-tests/",
+    "deadlines": {
+      "ED1": "Nov 2",
+      "ED2": "Jan 4",
+      "EA": null,
+      "RD": "Jan 4"
+    },
+    "deadlines_url": "https://admissions.tufts.edu/apply/first-year-students/",
+    "notes": "CDS 2025-26 = Fall 2025 entering class. C1 totals are sums of the men/women/unknown-sex rows (33,395 / 3,612 / 1,764); the C1 residency table on the same page totals 33,415 / 3,613 / 1,765, so the two disagree slightly (admit rate is 0.108 either way). The PDF text layer is garbled in places; C7 and C8A were read from the rendered page images. C8A (Fall 2027): SAT/ACT 'not required but considered if submitted'. No Early Action plan. Admissions site: 'Tufts University is test-optional for all undergraduate applicants' (no end date given). Deadlines page lists ED I Nov 2, 2026; ED II Jan 4, 2027; RD Jan 4, 2027."
+  },
+  {
+    "school_id": "boston-college",
+    "school": "Boston College",
+    "cds_year": "2024-25",
+    "cds_url": "https://www.bc.edu/content/dam/bc1/offices/irp/ir/cds/Boston_College_CDS_2024-2025_Final.pdf",
+    "applicants": 34779,
+    "admits": 5632,
+    "enrolled": 2394,
+    "admit_rate": 0.1619,
+    "ed_applicants": 4288,
+    "ed_admits": 1434,
+    "ed_rate": 0.3344,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": 0.3,
+    "pct_submit_act": 0.15,
+    "sat_ebrw": [
+      710,
+      740,
+      760
+    ],
+    "sat_math": [
+      730,
+      760,
+      780
+    ],
+    "sat_composite": [
+      1460,
+      1500,
+      1520
+    ],
+    "act_composite": [
+      33,
+      34,
+      35
+    ],
+    "test_importance": "Important",
+    "test_policy_2026_27": "test-optional",
+    "test_policy_url": "https://www.bc.edu/content/bc-web/admission/apply/test-optional.html",
+    "deadlines": {
+      "ED1": "Nov 1",
+      "ED2": "Jan 4",
+      "EA": null,
+      "RD": "Jan 4"
+    },
+    "deadlines_url": "https://www.bc.edu/content/bc-web/admission/apply.html",
+    "notes": "2024-25 (Fall 2024 entering class) is the newest CDS on BC's IR page; no 2025-26 CDS found. The CDS C21 dates contain a typo ('Other early decision plan closing date 1/2/25'). C8A in the CDS (for Fall 2026): SAT/ACT 'not required but considered if submitted'. No Early Action plan. Admissions site (not CDS): 'Boston College offers a test-optional admission policy' and encourages test takers to submit scores. The site's Class of 2030 (Fall 2026) profile lists 41,923 applications, 5,636 admitted (13.4%) and 2,400 enrolled, with about two-thirds of enrollees submitting scores; this is newer than the CDS, but the record uses the CDS figures. The apply page says 'Supplemental Questions 2026-27'; it also lists a Nov 1 deadline for spring first-year entry and QuestBridge."
+  },
+  {
+    "school_id": "boston-university",
+    "school": "Boston University",
+    "cds_year": "2025-26",
+    "cds_url": "https://www.bu.edu/asir/files/2026/07/CDS-2025-2026-C-updated.pdf",
+    "applicants": 76776,
+    "admits": 9853,
+    "enrolled": 3449,
+    "admit_rate": 0.1283,
+    "ed_applicants": 6907,
+    "ed_admits": 2165,
+    "ed_rate": 0.3135,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": 0.36,
+    "pct_submit_act": 0.1,
+    "sat_ebrw": [
+      700,
+      730,
+      750
+    ],
+    "sat_math": [
+      720,
+      750,
+      780
+    ],
+    "sat_composite": [
+      1420,
+      1470,
+      1510
+    ],
+    "act_composite": [
+      33,
+      34,
+      34
+    ],
+    "test_importance": "Considered",
+    "test_policy_2026_27": "test-optional",
+    "test_policy_url": "https://www.bu.edu/admissions/apply/first-year/",
+    "deadlines": {
+      "ED1": "Nov 2",
+      "ED2": "Jan 5",
+      "EA": null,
+      "RD": "Jan 5"
+    },
+    "deadlines_url": "https://www.bu.edu/admissions/apply/deadlines/",
+    "notes": "CDS 2025-26 = Fall 2025 entering class. The figures come from the 'updated' Section C file posted in July 2026, which matches the updated full CDS (https://www.bu.edu/asir/files/2026/07/CDS-2025-2026-updated.pdf). The C21 ED applicant and admit counts are not split between ED1 and ED2, so they are probably combined. No Early Action plan. The CDS C8F and the admissions site both say BU is test-optional for first-year applicants applying through fall 2028 and spring 2029. The CDS lists ED closing Nov 1, but the admissions deadlines page lists Nov 2 for the current cycle (Nov 1, 2026 is a Sunday); notification dates are Dec 14 (ED) and Feb 8 (ED2)."
+  },
+  {
+    "school_id": "northeastern",
+    "school": "Northeastern University",
+    "cds_year": "2025-26",
+    "cds_url": "https://uds.northeastern.edu/university-facts/common-data-set/",
+    "applicants": 105257,
+    "admits": 5920,
+    "enrolled": 2736,
+    "admit_rate": 0.0562,
+    "ed_applicants": 5404,
+    "ed_admits": 1910,
+    "ed_rate": 0.3534,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": 0.22,
+    "pct_submit_act": 0.08,
+    "sat_ebrw": [
+      710,
+      730,
+      750
+    ],
+    "sat_math": [
+      720,
+      750,
+      780
+    ],
+    "sat_composite": [
+      1440,
+      1480,
+      1510
+    ],
+    "act_composite": [
+      33,
+      33,
+      34
+    ],
+    "test_importance": "Very Important",
+    "test_policy_2026_27": "test-optional",
+    "test_policy_url": "https://admissions.northeastern.edu/application-information/first-year-applicants/",
+    "deadlines": {
+      "ED1": "Nov 1",
+      "ED2": "Jan 1",
+      "EA": "Nov 1",
+      "RD": "Jan 1"
+    },
+    "deadlines_url": "https://admissions.northeastern.edu/application-information/admissions-deadlines-decisions/",
+    "notes": "The CDS is an HTML page, not a PDF. Its heading says 'Northeastern 2024-2025', but the content covers Fall 2025 admissions, the Fall 2027 test policy and 2026-27 costs, so it is the 2025-26 edition and is mislabeled. The archived PDF CDS-2024-25 (Fall 2024) is at http://uds.northeastern.edu/wp-content/uploads/2026/03/CDS-2024-25.pdf. Applicants are the sum of the sex rows (46,252 + 58,959 + 46 = 105,257); the residency table total is 105,256. Northeastern offers Early Action (Nov 1 deadline, notification by Feb 15, non-restrictive), but the CDS has no EA count fields and no EA applicant or admit counts were found on the official site, so EA counts are null. The C21 ED counts are not split between ED I and ED II. C7 rates test scores 'Very Important' even though C8A (Fall 2027) says 'not required but considered if submitted'. Admissions site: 'Northeastern University is test-optional'. The deadlines page does not name a cycle year but is the current page as of Nov 2026."
+  },
+  {
+    "school_id": "college-of-the-holy-cross",
+    "school": "College of the Holy Cross",
+    "cds_year": "2023-24",
+    "cds_url": "https://www.holycross.edu/document/common-data-set-20232024",
+    "applicants": 8670,
+    "admits": 1829,
+    "enrolled": 824,
+    "admit_rate": 0.211,
+    "ed_applicants": 761,
+    "ed_admits": 511,
+    "ed_rate": 0.6715,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": 0.35,
+    "pct_submit_act": 0.19,
+    "sat_ebrw": [
+      630,
+      680,
+      720
+    ],
+    "sat_math": [
+      620,
+      660,
+      700
+    ],
+    "sat_composite": [
+      1270,
+      1340,
+      1420
+    ],
+    "act_composite": [
+      28,
+      30,
+      32
+    ],
+    "test_importance": "Considered",
+    "test_policy_2026_27": "test-optional",
+    "test_policy_url": "https://www.holycross.edu/admissions-aid/how-to-apply",
+    "deadlines": {
+      "ED1": "Nov 15",
+      "ED2": "Jan 15",
+      "EA": null,
+      "RD": "Jan 15"
+    },
+    "deadlines_url": "https://www.holycross.edu/admissions-aid/how-to-apply",
+    "notes": "STALE: the newest CDS on Holy Cross's Institutional Research page (https://www.holycross.edu/finance/institutional-research) is 2023-24 (Fall 2023 entering class). No 2024-25 or 2025-26 CDS was found, and guessed URLs returned 404. The PDF link /media/2068 redirects to the URL given in cds_url. The CDS C8 (for Fall 2025) reads 'Not required for admission, but considered for some'. No Early Action plan. Admissions site: test scores are 'entirely optional' (test-optional since the class entering in 2006); Holy Cross superscores SAT and ACT. The admissions homepage (https://www.holycross.edu/admissions-aid) shows Class of 2030 figures of about 10,600 applications and an 18% acceptance rate, newer than the CDS (rounded and not CDS-sourced). The deadlines page does not name a cycle year; QuestBridge deadline is Nov 1."
+  }
+]
