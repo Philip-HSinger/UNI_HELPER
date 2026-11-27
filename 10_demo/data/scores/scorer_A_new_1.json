@@ -1,0 +1,986 @@
+[
+ {
+  "pair": "tufts-1|upenn-1",
+  "a_from_b": 3,
+  "b_from_a": 2,
+  "reason": "Tufts asks how you engaged with Tufts (narrower, school-specific); Penn asks for a thank-you note; no shared content"
+ },
+ {
+  "pair": "tufts-1|upenn-2",
+  "a_from_b": 10,
+  "b_from_a": 8,
+  "reason": "Both school-specific but different schools; Tufts (narrower) wants your engagement history, Penn wants community fit"
+ },
+ {
+  "pair": "tufts-1|upenn-4",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Tufts engagement history (narrower, school-specific) vs Penn intellectual curiosity; at most a visited class carries"
+ },
+ {
+  "pair": "tufts-1|rice-1",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Tufts engagement history (narrower) vs Rice academic interests; only a line about research into the school carries"
+ },
+ {
+  "pair": "tufts-1|rice-2",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "Both draw on researching a school, but Tufts (narrower) wants how you engaged and Rice wants what appeals; specifics don't transfer"
+ },
+ {
+  "pair": "tufts-1|rice-3",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Tufts engagement history (narrower) vs Rice life experiences to share; nothing usable"
+ },
+ {
+  "pair": "tufts-1|rice-4",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Tufts engagement history (narrower) vs Rice background-shaped perspectives; nothing usable"
+ },
+ {
+  "pair": "tufts-1|emory-1",
+  "a_from_b": 8,
+  "b_from_a": 5,
+  "reason": "Tufts engagement history (narrower) vs Emory academic interests; a sentence at most"
+ },
+ {
+  "pair": "tufts-1|emory-2",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Tufts engagement history (narrower) vs Emory community impact story; nothing usable"
+ },
+ {
+  "pair": "tufts-1|emory-3",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Tufts engagement history (narrower) vs Emory cultural awareness story; nothing usable"
+ },
+ {
+  "pair": "tufts-1|emory-4",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Tufts engagement history (narrower) vs Emory service contribution; nothing usable"
+ },
+ {
+  "pair": "tufts-1|emory-5",
+  "a_from_b": 2,
+  "b_from_a": 2,
+  "reason": "Tufts engagement history (narrower) vs Emory navigating disagreement; nothing usable"
+ },
+ {
+  "pair": "tufts-1|villanova-1",
+  "a_from_b": 2,
+  "b_from_a": 2,
+  "reason": "Tufts engagement history (narrower) vs Villanova equity and justice action; nothing usable"
+ },
+ {
+  "pair": "tufts-1|villanova-2",
+  "a_from_b": 2,
+  "b_from_a": 3,
+  "reason": "Tufts engagement history (narrower) vs Villanova life lesson; nothing usable"
+ },
+ {
+  "pair": "tufts-1|villanova-3",
+  "a_from_b": 12,
+  "b_from_a": 12,
+  "reason": "Tufts engagement history vs why Villanova; both school-specific, reasons for one school don't transfer; Tufts narrower"
+ },
+ {
+  "pair": "tufts-1|villanova-4",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Tufts engagement history (narrower) vs Villanova technology for common good; nothing usable"
+ },
+ {
+  "pair": "tufts-1|villanova-5",
+  "a_from_b": 2,
+  "b_from_a": 2,
+  "reason": "Tufts engagement history (narrower) vs Villanova helping someone in need; nothing usable"
+ },
+ {
+  "pair": "tufts-2|upenn-1",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Tufts favorite assignment vs Penn thank-you note (narrower format); a note to a teacher might mention an assignment"
+ },
+ {
+  "pair": "tufts-2|upenn-2",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Tufts favorite assignment vs Penn community fit (narrower, school-specific); little overlap"
+ },
+ {
+  "pair": "tufts-2|upenn-4",
+  "a_from_b": 30,
+  "b_from_a": 35,
+  "reason": "Penn curiosity plus how you'd pursue it at Penn (narrower on school fit); a favorite assignment can seed the curiosity story"
+ },
+ {
+  "pair": "tufts-2|rice-1",
+  "a_from_b": 20,
+  "b_from_a": 25,
+  "reason": "Rice academic areas plus Rice fit (narrower on school); an assignment can illustrate the academic interest"
+ },
+ {
+  "pair": "tufts-2|rice-2",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Tufts assignment vs why Rice (narrower, school-specific); little usable"
+ },
+ {
+  "pair": "tufts-2|rice-3",
+  "a_from_b": 5,
+  "b_from_a": 8,
+  "reason": "Tufts assignment vs Rice life experiences to share; different subjects, Tufts narrower"
+ },
+ {
+  "pair": "tufts-2|rice-4",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Tufts assignment vs Rice background-shaped perspectives; different subjects, Tufts narrower"
+ },
+ {
+  "pair": "tufts-2|emory-1",
+  "a_from_b": 25,
+  "b_from_a": 30,
+  "reason": "Tufts specific assignment (narrower) vs Emory academic interests and why; assignment can anchor the academic story"
+ },
+ {
+  "pair": "tufts-2|emory-2",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Tufts assignment (narrower) vs Emory community impact; different subjects"
+ },
+ {
+  "pair": "tufts-2|emory-3",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "Tufts assignment vs Emory cultural awareness (narrower subject); an assignment could expand awareness, but angle differs"
+ },
+ {
+  "pair": "tufts-2|emory-4",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Tufts assignment vs Emory service to humanity; different subjects, Tufts narrower"
+ },
+ {
+  "pair": "tufts-2|emory-5",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "Tufts assignment vs Emory disagreement; a debate-style assignment could carry an anecdote, Emory narrower in focus"
+ },
+ {
+  "pair": "tufts-2|villanova-1",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Tufts assignment vs Villanova equity action (narrower); an anecdote at most"
+ },
+ {
+  "pair": "tufts-2|villanova-2",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "Tufts assignment (narrower) vs Villanova life lesson; a lesson from an assignment could carry partly"
+ },
+ {
+  "pair": "tufts-2|villanova-3",
+  "a_from_b": 3,
+  "b_from_a": 5,
+  "reason": "Tufts assignment vs why Villanova (narrower, school-specific); nearly nothing usable"
+ },
+ {
+  "pair": "tufts-2|villanova-4",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "Tufts assignment vs Villanova technology for common good (narrower); a tech project assignment could carry"
+ },
+ {
+  "pair": "tufts-2|villanova-5",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Tufts assignment vs Villanova someone borrowing your strength (narrower); nothing usable"
+ },
+ {
+  "pair": "upenn-1|rice-1",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Penn thank-you note (narrower format) vs Rice academic interests; nothing usable"
+ },
+ {
+  "pair": "upenn-1|rice-2",
+  "a_from_b": 2,
+  "b_from_a": 2,
+  "reason": "Penn thank-you note vs why Rice (narrower, school-specific); nothing usable"
+ },
+ {
+  "pair": "upenn-1|rice-3",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "Penn thank-you note (narrower format) vs Rice experiences to share; a mentor or family figure could appear in both"
+ },
+ {
+  "pair": "upenn-1|rice-4",
+  "a_from_b": 12,
+  "b_from_a": 12,
+  "reason": "Penn thank-you note (narrower format) vs Rice background-shaped perspectives; a person who shaped you could carry"
+ },
+ {
+  "pair": "upenn-1|emory-1",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Penn thank-you note (narrower format) vs Emory academic interests; nothing usable"
+ },
+ {
+  "pair": "upenn-1|emory-2",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "Penn thank-you note (narrower format) vs Emory community impact; an anecdote at most"
+ },
+ {
+  "pair": "upenn-1|emory-3",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "Penn thank-you note (narrower format) vs Emory cultural awareness; someone who broadened you could carry briefly"
+ },
+ {
+  "pair": "upenn-1|emory-4",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Penn thank-you note (narrower format) vs Emory service contribution; little usable"
+ },
+ {
+  "pair": "upenn-1|emory-5",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Penn thank-you note (narrower format) vs Emory disagreement; little usable"
+ },
+ {
+  "pair": "upenn-1|boston-college-1",
+  "a_from_b": 15,
+  "b_from_a": 12,
+  "reason": "Penn thank-you note (narrower format) vs BC tradition; could thank whoever keeps a family tradition"
+ },
+ {
+  "pair": "upenn-1|boston-college-2",
+  "a_from_b": 35,
+  "b_from_a": 30,
+  "reason": "Penn thank-you note (narrower format) vs BC conversation partner; same person can be the subject, but note form vs profound questions"
+ },
+ {
+  "pair": "upenn-1|boston-college-3",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Penn thank-you note (narrower format) vs BC single story; a supporter could appear in both"
+ },
+ {
+  "pair": "upenn-1|boston-college-4",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Penn thank-you note vs BC fourth Be (narrower, BC-specific value); nothing usable"
+ },
+ {
+  "pair": "upenn-1|boston-university-1",
+  "a_from_b": 2,
+  "b_from_a": 2,
+  "reason": "Penn thank-you note vs why BU (narrower, school-specific); nothing usable"
+ },
+ {
+  "pair": "upenn-1|villanova-1",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Penn thank-you note (narrower format) vs Villanova equity action; an anecdote at most"
+ },
+ {
+  "pair": "upenn-1|villanova-2",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "Penn thank-you note (narrower format) vs Villanova life lesson; the lesson-giver could be the note's recipient"
+ },
+ {
+  "pair": "upenn-1|villanova-3",
+  "a_from_b": 2,
+  "b_from_a": 2,
+  "reason": "Penn thank-you note vs why Villanova (narrower, school-specific); nothing usable"
+ },
+ {
+  "pair": "upenn-1|villanova-4",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Penn thank-you note (narrower format) vs Villanova technology; nothing usable"
+ },
+ {
+  "pair": "upenn-1|villanova-5",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "Penn thanks someone who helped you vs Villanova you helped someone (narrower); reversed roles, little carries"
+ },
+ {
+  "pair": "upenn-1|fordham-university-1",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "Penn thank-you note (narrower format) vs Fordham perspective-changing experience; the catalyst person could carry"
+ },
+ {
+  "pair": "upenn-1|fordham-university-2",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Penn thank-you note (narrower format) vs Fordham preparation for NYC; little usable"
+ },
+ {
+  "pair": "upenn-1|fordham-university-3",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Penn note vs Fordham message to younger self (narrower, Fordham-specific); similar letter form, different content"
+ },
+ {
+  "pair": "upenn-1|university-of-massachusetts-amherst-1",
+  "a_from_b": 2,
+  "b_from_a": 2,
+  "reason": "Penn thank-you note vs why UMass (narrower, school-specific); nothing usable"
+ },
+ {
+  "pair": "upenn-1|university-of-massachusetts-amherst-2",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Penn thank-you note (narrower format) vs UMass why major; a teacher who sparked the major could carry"
+ },
+ {
+  "pair": "upenn-1|university-of-massachusetts-amherst-4",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Penn thank-you note (narrower format) vs UMass community; little usable"
+ },
+ {
+  "pair": "upenn-2|rice-1",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "Penn community fit vs Rice academic fit; both school-specific but different subjects; Penn narrower"
+ },
+ {
+  "pair": "upenn-2|rice-2",
+  "a_from_b": 25,
+  "b_from_a": 25,
+  "reason": "Two why-us prompts; Penn narrower (community and your contribution) vs Rice broad appeal; reasons don't transfer"
+ },
+ {
+  "pair": "upenn-2|rice-3",
+  "a_from_b": 40,
+  "b_from_a": 45,
+  "reason": "Both ask what your experiences bring to a community; Penn narrower (Penn specifics and how Penn shapes you)"
+ },
+ {
+  "pair": "upenn-2|rice-4",
+  "a_from_b": 40,
+  "b_from_a": 45,
+  "reason": "Both ask how your perspective joins a community; Penn narrower (Penn specifics and how Penn shapes you)"
+ },
+ {
+  "pair": "upenn-2|emory-1",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Penn community fit vs Emory academic interests; different subjects, Penn narrower"
+ },
+ {
+  "pair": "upenn-2|emory-2",
+  "a_from_b": 30,
+  "b_from_a": 25,
+  "reason": "Emory past community impact supports Penn's 'shape Penn' half; Penn narrower on school fit"
+ },
+ {
+  "pair": "upenn-2|emory-3",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "Penn community fit vs Emory cultural awareness story (narrower); perspective material partly carries"
+ },
+ {
+  "pair": "upenn-2|emory-4",
+  "a_from_b": 15,
+  "b_from_a": 12,
+  "reason": "Penn community fit vs Emory service contribution; contribution theme overlaps slightly, Penn narrower on school"
+ },
+ {
+  "pair": "upenn-2|emory-5",
+  "a_from_b": 12,
+  "b_from_a": 12,
+  "reason": "Penn community fit vs Emory disagreement (narrower); a dialogue anecdote could carry"
+ },
+ {
+  "pair": "upenn-2|boston-college-1",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "Penn community fit vs BC tradition (narrower); bringing-people-together material partly carries"
+ },
+ {
+  "pair": "upenn-2|boston-college-2",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "Penn community fit vs BC conversation partner (narrower); little overlap"
+ },
+ {
+  "pair": "upenn-2|boston-college-3",
+  "a_from_b": 15,
+  "b_from_a": 12,
+  "reason": "Penn community fit vs BC single story (narrower); perspective material partly carries"
+ },
+ {
+  "pair": "upenn-2|boston-college-4",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "Both school-fit prompts on values and community; BC narrower (invent a fourth Be), Penn needs Penn specifics"
+ },
+ {
+  "pair": "upenn-2|boston-university-1",
+  "a_from_b": 25,
+  "b_from_a": 30,
+  "reason": "Two why-us prompts; Penn narrower (community focus) vs BU broad excitement; school reasons don't transfer"
+ },
+ {
+  "pair": "upenn-2|villanova-1",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "Penn community fit vs Villanova equity action (narrower); contribution evidence partly carries"
+ },
+ {
+  "pair": "upenn-2|villanova-2",
+  "a_from_b": 25,
+  "b_from_a": 20,
+  "reason": "Both about what you'd give a campus community; Villanova narrower (a single lesson), Penn needs Penn specifics"
+ },
+ {
+  "pair": "upenn-2|villanova-3",
+  "a_from_b": 45,
+  "b_from_a": 45,
+  "reason": "Two community-flavored why-us prompts; student-side goals carry, school specifics don't; Villanova 'new home' narrower framing"
+ },
+ {
+  "pair": "upenn-2|villanova-4",
+  "a_from_b": 10,
+  "b_from_a": 8,
+  "reason": "Penn community fit vs Villanova technology (narrower); little overlap"
+ },
+ {
+  "pair": "upenn-2|villanova-5",
+  "a_from_b": 12,
+  "b_from_a": 10,
+  "reason": "Penn community fit vs Villanova helping someone (narrower); one anecdote could carry"
+ },
+ {
+  "pair": "upenn-2|fordham-university-1",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "Penn community fit vs Fordham perspective change (narrower, needs growth examples); perspective material partly carries"
+ },
+ {
+  "pair": "upenn-2|fordham-university-2",
+  "a_from_b": 25,
+  "b_from_a": 25,
+  "reason": "Penn community fit vs Fordham preparation for NYC; both mix background and school fit, different schools; Fordham narrower"
+ },
+ {
+  "pair": "upenn-2|fordham-university-3",
+  "a_from_b": 25,
+  "b_from_a": 25,
+  "reason": "Penn community fit vs Fordham future accomplishments (narrower, Fordham-specific); both school-specific, goals partly carry"
+ },
+ {
+  "pair": "upenn-2|university-of-massachusetts-amherst-1",
+  "a_from_b": 35,
+  "b_from_a": 35,
+  "reason": "Two why-us prompts; Penn narrower (community and contribution) vs UMass general why; reasons don't transfer"
+ },
+ {
+  "pair": "upenn-2|university-of-massachusetts-amherst-2",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Penn community fit vs UMass why major (narrower); little overlap"
+ },
+ {
+  "pair": "upenn-2|university-of-massachusetts-amherst-4",
+  "a_from_b": 45,
+  "b_from_a": 45,
+  "reason": "Both ask a community you come from and how you'd enrich campus; UMass narrower (one named community), Penn needs Penn specifics"
+ },
+ {
+  "pair": "upenn-4|rice-1",
+  "a_from_b": 55,
+  "b_from_a": 55,
+  "reason": "Same core: academic interest plus how you'd pursue it at the school; school-specific halves don't transfer; Penn narrower (a curiosity)"
+ },
+ {
+  "pair": "upenn-4|rice-2",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "Penn curiosity plus Penn pursuit vs why Rice broad (narrower on school); goals carry, school reasons don't"
+ },
+ {
+  "pair": "upenn-4|rice-3",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Penn intellectual curiosity vs Rice experiences to share; different subjects, Rice narrower framing"
+ },
+ {
+  "pair": "upenn-4|rice-4",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Penn intellectual curiosity vs Rice background perspectives; different subjects, Rice narrower framing"
+ },
+ {
+  "pair": "upenn-4|emory-1",
+  "a_from_b": 50,
+  "b_from_a": 60,
+  "reason": "Both academic interest at a school; Penn narrower (one curiosity and how to pursue it in the College)"
+ },
+ {
+  "pair": "upenn-4|emory-2",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Penn curiosity vs Emory community impact (narrower); nothing usable"
+ },
+ {
+  "pair": "upenn-4|emory-3",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "Penn curiosity vs Emory cultural awareness (narrower); a cultural topic of curiosity could overlap"
+ },
+ {
+  "pair": "upenn-4|emory-4",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "Penn curiosity vs Emory service (narrower); a curiosity tied to service could overlap a little"
+ },
+ {
+  "pair": "upenn-4|emory-5",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "Penn curiosity vs Emory disagreement (narrower); intellectual dialogue overlaps a little"
+ },
+ {
+  "pair": "upenn-4|boston-college-1",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Penn curiosity vs BC tradition (narrower); nothing usable"
+ },
+ {
+  "pair": "upenn-4|boston-college-2",
+  "a_from_b": 25,
+  "b_from_a": 25,
+  "reason": "Penn curiosity vs BC profound questions with a partner (narrower, needs a person); shared intellectual material"
+ },
+ {
+  "pair": "upenn-4|boston-college-3",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Penn curiosity vs BC single story (narrower); nothing usable"
+ },
+ {
+  "pair": "upenn-4|boston-college-4",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Penn curiosity vs BC fourth Be (narrower, BC-specific value); little usable"
+ },
+ {
+  "pair": "upenn-4|boston-university-1",
+  "a_from_b": 30,
+  "b_from_a": 25,
+  "reason": "Penn curiosity plus pursuit vs BU what excites (broad why-us); academic goals carry, school specifics don't; Penn narrower"
+ },
+ {
+  "pair": "upenn-4|villanova-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Penn curiosity vs Villanova equity action (narrower); little usable"
+ },
+ {
+  "pair": "upenn-4|villanova-2",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Penn curiosity vs Villanova life lesson (narrower); little usable"
+ },
+ {
+  "pair": "upenn-4|villanova-3",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "Penn curiosity plus Penn pursuit vs why Villanova (narrower on school); goals carry slightly"
+ },
+ {
+  "pair": "upenn-4|villanova-4",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "Penn curiosity vs Villanova technology for common good (narrower); a tech curiosity could overlap"
+ },
+ {
+  "pair": "upenn-4|villanova-5",
+  "a_from_b": 2,
+  "b_from_a": 2,
+  "reason": "Penn curiosity vs Villanova helping someone (narrower); nothing usable"
+ },
+ {
+  "pair": "upenn-4|fordham-university-1",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "Penn curiosity vs Fordham perspective change (narrower, needs growth); an intellectual turn could carry briefly"
+ },
+ {
+  "pair": "upenn-4|fordham-university-2",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Penn curiosity vs Fordham preparation for NYC (narrower); little usable"
+ },
+ {
+  "pair": "upenn-4|fordham-university-3",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "Penn curiosity plus pursuit vs Fordham future accomplishments (narrower, Fordham-specific); academic goals partly carry"
+ },
+ {
+  "pair": "upenn-4|university-of-massachusetts-amherst-1",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "Penn curiosity plus Penn pursuit vs why UMass (narrower on school); goals carry, reasons don't"
+ },
+ {
+  "pair": "upenn-4|university-of-massachusetts-amherst-2",
+  "a_from_b": 45,
+  "b_from_a": 55,
+  "reason": "Penn curiosity plus pursuit in the College (narrower) vs UMass why major; the academic interest core carries"
+ },
+ {
+  "pair": "upenn-4|university-of-massachusetts-amherst-4",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Penn curiosity vs UMass community (narrower); little usable"
+ },
+ {
+  "pair": "rice-1|emory-1",
+  "a_from_b": 65,
+  "b_from_a": 65,
+  "reason": "Same question (academic areas and the school) with names swapped; school-specific details don't transfer; Rice slightly narrower (how to explore)"
+ },
+ {
+  "pair": "rice-1|emory-2",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Rice academics plus Rice fit vs Emory community impact (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-1|emory-3",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Rice academics vs Emory cultural awareness (narrower); little usable"
+ },
+ {
+  "pair": "rice-1|emory-4",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Rice academics vs Emory service contribution (narrower); a service-minded field could overlap slightly"
+ },
+ {
+  "pair": "rice-1|emory-5",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Rice academics vs Emory disagreement (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-1|boston-college-1",
+  "a_from_b": 2,
+  "b_from_a": 2,
+  "reason": "Rice academics vs BC tradition (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-1|boston-college-2",
+  "a_from_b": 12,
+  "b_from_a": 12,
+  "reason": "Rice academics vs BC conversation partner (narrower); intellectual questions could overlap a little"
+ },
+ {
+  "pair": "rice-1|boston-college-3",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Rice academics vs BC single story (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-1|boston-college-4",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Rice academics vs BC fourth Be (narrower, BC-specific value); little usable"
+ },
+ {
+  "pair": "rice-1|boston-university-1",
+  "a_from_b": 30,
+  "b_from_a": 25,
+  "reason": "Rice academics plus Rice (narrower) vs BU what excites (broad why-us); academic goals carry, school specifics don't"
+ },
+ {
+  "pair": "rice-1|villanova-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Rice academics vs Villanova equity action (narrower); little usable"
+ },
+ {
+  "pair": "rice-1|villanova-2",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Rice academics vs Villanova life lesson (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-1|villanova-3",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "Rice academics plus Rice vs why Villanova (broad why-us, home framing); goals carry slightly; Rice narrower on academics"
+ },
+ {
+  "pair": "rice-1|villanova-4",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "Rice academics vs Villanova technology for common good (narrower); a tech field could overlap"
+ },
+ {
+  "pair": "rice-1|villanova-5",
+  "a_from_b": 2,
+  "b_from_a": 2,
+  "reason": "Rice academics vs Villanova helping someone (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-1|fordham-university-1",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Rice academics vs Fordham perspective change (narrower, needs growth); little usable"
+ },
+ {
+  "pair": "rice-1|fordham-university-2",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Rice academics vs Fordham preparation for NYC (narrower); little usable"
+ },
+ {
+  "pair": "rice-1|fordham-university-3",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "Rice academics plus Rice vs Fordham future accomplishments (narrower, Fordham-specific); academic goals partly carry"
+ },
+ {
+  "pair": "rice-1|university-of-massachusetts-amherst-1",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "Rice academics plus Rice vs why UMass (broad why-us); academic goals carry, school reasons don't; Rice narrower"
+ },
+ {
+  "pair": "rice-1|university-of-massachusetts-amherst-2",
+  "a_from_b": 55,
+  "b_from_a": 75,
+  "reason": "Both about why your chosen academic areas; Rice narrower (adds how you'd explore them at Rice)"
+ },
+ {
+  "pair": "rice-1|university-of-massachusetts-amherst-4",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Rice academics vs UMass community (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-2|emory-1",
+  "a_from_b": 15,
+  "b_from_a": 12,
+  "reason": "Why Rice (broad) vs Emory academic interests (narrower subject); academic reasons for Rice partly carry"
+ },
+ {
+  "pair": "rice-2|emory-2",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Why Rice vs Emory community impact (narrower); little usable"
+ },
+ {
+  "pair": "rice-2|emory-3",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Why Rice vs Emory cultural awareness (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-2|emory-4",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Why Rice vs Emory service contribution (narrower); little usable"
+ },
+ {
+  "pair": "rice-2|emory-5",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Why Rice vs Emory disagreement (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-2|boston-college-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Why Rice vs BC tradition (narrower); a line about traditions at most"
+ },
+ {
+  "pair": "rice-2|boston-college-2",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Why Rice vs BC conversation partner (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-2|boston-college-3",
+  "a_from_b": 2,
+  "b_from_a": 2,
+  "reason": "Why Rice vs BC single story (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-2|boston-college-4",
+  "a_from_b": 12,
+  "b_from_a": 12,
+  "reason": "Why Rice vs BC fourth Be plus enriching BC (narrower); both touch school fit but different schools"
+ },
+ {
+  "pair": "rice-2|boston-university-1",
+  "a_from_b": 50,
+  "b_from_a": 50,
+  "reason": "Two broad why-us prompts (what appeals / what excites); student goals carry, school reasons don't; similar breadth"
+ },
+ {
+  "pair": "rice-2|villanova-1",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Why Rice vs Villanova equity action (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-2|villanova-2",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Why Rice vs Villanova life lesson (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-2|villanova-3",
+  "a_from_b": 45,
+  "b_from_a": 45,
+  "reason": "Two why-us prompts; Villanova narrower ('new home' framing); student goals carry, school reasons don't"
+ },
+ {
+  "pair": "rice-2|villanova-4",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "Why Rice vs Villanova technology (narrower); little usable"
+ },
+ {
+  "pair": "rice-2|villanova-5",
+  "a_from_b": 2,
+  "b_from_a": 2,
+  "reason": "Why Rice vs Villanova helping someone (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-2|fordham-university-1",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Why Rice vs Fordham perspective change (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-2|fordham-university-2",
+  "a_from_b": 12,
+  "b_from_a": 15,
+  "reason": "Why Rice vs Fordham preparation for NYC (narrower, about your background); a sentence or two of fit carries"
+ },
+ {
+  "pair": "rice-2|fordham-university-3",
+  "a_from_b": 30,
+  "b_from_a": 30,
+  "reason": "Why Rice vs Fordham future accomplishments (narrower, Fordham-specific); goals carry, school reasons don't"
+ },
+ {
+  "pair": "rice-2|university-of-massachusetts-amherst-1",
+  "a_from_b": 50,
+  "b_from_a": 50,
+  "reason": "Two broad why-us prompts with names swapped; student goals carry, school reasons don't; similar breadth"
+ },
+ {
+  "pair": "rice-2|university-of-massachusetts-amherst-2",
+  "a_from_b": 12,
+  "b_from_a": 10,
+  "reason": "Why Rice vs UMass why major (narrower); academic reasons overlap slightly"
+ },
+ {
+  "pair": "rice-2|university-of-massachusetts-amherst-4",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Why Rice vs UMass community plus enriching campus (narrower); a line about contribution carries"
+ },
+ {
+  "pair": "rice-3|emory-1",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "Rice experiences to share vs Emory academic interests (narrower); nothing usable"
+ },
+ {
+  "pair": "rice-3|emory-2",
+  "a_from_b": 25,
+  "b_from_a": 40,
+  "reason": "Emory community impact (narrower) supplies an experience Rice can use; Rice essay often lacks a community-change story"
+ },
+ {
+  "pair": "rice-3|emory-3",
+  "a_from_b": 30,
+  "b_from_a": 40,
+  "reason": "Emory cultural awareness story (narrower) supplies perspective Rice wants; Rice essay may not show expanding awareness"
+ },
+ {
+  "pair": "rice-3|emory-4",
+  "a_from_b": 15,
+  "b_from_a": 12,
+  "reason": "Rice experiences to share vs Emory service contribution (narrower); some perspective material carries"
+ },
+ {
+  "pair": "rice-3|emory-5",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "Rice experiences to share vs Emory disagreement (narrower); a dialogue experience could carry partly"
+ },
+ {
+  "pair": "rice-3|boston-college-1",
+  "a_from_b": 55,
+  "b_from_a": 40,
+  "reason": "BC family tradition (narrower) fits Rice's cultural traditions to share; Rice essay may not center a tradition"
+ },
+ {
+  "pair": "rice-3|boston-college-2",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "Rice experiences to share vs BC conversation partner (narrower); a formative person could carry"
+ },
+ {
+  "pair": "rice-3|boston-college-3",
+  "a_from_b": 35,
+  "b_from_a": 30,
+  "reason": "BC single-story experience (narrower) gives Rice a perspective to share; Rice essay rarely frames a stereotype"
+ },
+ {
+  "pair": "rice-3|boston-college-4",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "Rice experiences to share vs BC fourth Be (narrower, BC-specific value); values material partly carries"
+ },
+ {
+  "pair": "rice-3|boston-university-1",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "Rice experiences to share vs why BU (narrower, school-specific); little usable"
+ },
+ {
+  "pair": "rice-3|villanova-1",
+  "a_from_b": 30,
+  "b_from_a": 25,
+  "reason": "Villanova equity action (narrower) can be a Rice experience to share; Rice essay often lacks a justice action"
+ },
+ {
+  "pair": "rice-3|villanova-2",
+  "a_from_b": 55,
+  "b_from_a": 55,
+  "reason": "Both ask what you'd share with fellow students from your experience; Villanova narrower (one life lesson)"
+ },
+ {
+  "pair": "rice-3|villanova-3",
+  "a_from_b": 12,
+  "b_from_a": 10,
+  "reason": "Rice experiences to share vs why Villanova (narrower, school-specific); a line about community fit carries"
+ }
+]
