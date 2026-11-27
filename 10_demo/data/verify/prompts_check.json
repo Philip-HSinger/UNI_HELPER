@@ -195,5 +195,55 @@
       "https://nudgeessay.com/requirements/university-of-rhode-island",
       "https://joinclarityprep.com/supplemental-essays"
     ]
+  },
+  {
+    "school_id": "upenn",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "sources": [
+      "https://admissions.upenn.edu/how-to-apply/preparing-your-application/writing",
+      "https://www.collegetransitions.com/blog/upenn-supplemental-essay-prompts/"
+    ],
+    "check_notes": "Official page (heading '2026-27 Short Answer and Essay Prompts', fetched 2026-11-27) matched by script: all 17 prompt texts appear verbatim once the trailing '(50-200 words)' parentheticals are removed. Limits 50-200 and 50-400 words, 50-400 words or 2,000 characters for transfer, all match. The structure also matches: 2 all-applicant prompts, 1 single-degree school prompt (CAS = upenn-4, 50 to 200 words), Huntsman 3 responses (language dropdown + 2 essays), LSM 1, M&T 2, NHCM 1, VIPER 2, VIC 1, transfer essay for transfers only. A domestic CAS first-year writes upenn-1, upenn-2 and upenn-4. College Transitions (Aug 20 2026) confirms the new CAS curiosity prompt and the same structure. Its wording differs only in punctuation and in paraphrases such as 'Explain' vs 'Discuss' for Wharton and the VIC wording; the official text governs. Search-engine snippets of the official page still show the old CAS prompt ('What are you curious about and how would you take advantage of opportunities in the arts and sciences?'), but the live page does not."
+  },
+  {
+    "school_id": "emory",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "sources": [
+      "https://blog.emoryadmission.com/2026/08/emorys-short-answer-questions-2026-27/",
+      "https://apply.emory.edu/apply/first-year/",
+      "https://admission.emory.edu/apply/first-year/",
+      "https://gradpilot.com/news/emory-supplemental-essays-2026-2027",
+      "https://www.koppelmangroup.com/blog/2026/8/17/how-to-write-the-emory-supplement-2026-2027"
+    ],
+    "check_notes": "The official admission blog post (Aug 1, 2026, 'for the 2026-2027 first-year application') matched by script: all 5 texts verbatim. Academic Interests is required with '200 Words Recommended Length'. 'Getting to Know You' is answer one of four, '(150 Words)'. Official apply.emory.edu/apply/first-year confirms 'two additional short answer questions specific to Emory's application' and one Common App application to Emory College, Oxford College or both. No separate Emory College prompt. (That page's link points to the 2024-25 blog post, which is harmless.) admission.emory.edu/apply/first-year/ returns 404. GradPilot matches verbatim. Koppelman paraphrases emory-2 and emory-4 slightly and labels the limits 'Max'. Caveat only: word_limit 200 for emory-1 is a recommended length on the official page, not a stated hard cap."
+  },
+  {
+    "school_id": "villanova",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "sources": [
+      "https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/application-essays.html",
+      "https://gradpilot.com/news/villanova-supplemental-essays-2026-2027",
+      "https://www.collegetransitions.com/blog/villanova-university-essay-prompts-3"
+    ],
+    "check_notes": "The official page 'Villanova Writing Supplement (2026-2027)' matched by script: all 5 prompts verbatim, including curly vs straight quotes. Instruction: 'Choose one of the five topics below and submit a written response in about 250 words'. Required, choose 1 of 5, same for all first-year applicants. No college-specific, honors or short-answer prompts on the official page. GradPilot matches all 5 verbatim. College Transitions 2026-27 shows a different Prompt Four that does not match the official AI/technology prompt; the official text governs. Caveat only: 250 is a target ('about 250 words'; Pro-Tips allow going over or under 'as long as it is close'), not a hard cap."
+  },
+  {
+    "school_id": "rice",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "sources": [
+      "https://admission.rice.edu/apply/first-year-domestic-applicants",
+      "https://admission.rice.edu/apply/first-year-international-applicants",
+      "https://admission.rice.edu/apply/questbridge-applicants",
+      "https://www.collegetransitions.com/blog/rice-university-supplemental-essay-prompts/"
+    ],
+    "check_notes": "The official 'Essay Prompts (2026-2027)' sections on the domestic, international and QuestBridge pages matched by script: all 7 texts verbatim. Limits: 150 / 150 / 500 (choose 1 of 2) / Box image (no words) / architecture 250 + 250. The prompt-3 choice is required for regular applicants. The QuestBridge tab reads '...contribute to the Rice community (optional):', so applies_to 'optional for QuestBridge' is correct. A domestic non-architecture first-year completes rice-1, rice-2, one of rice-3/rice-4, and rice-5 (Box). rice-6 and rice-7 apply to architecture only. College Transitions (Aug 18 2026) matches, apart from punctuation in architecture prompt 1. Caveat only: rice-5 text is the official page's description of The Box, not the shorter question wording inside the Common App, which could not be viewed."
   }
 ]
