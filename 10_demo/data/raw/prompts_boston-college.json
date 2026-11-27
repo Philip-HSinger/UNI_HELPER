@@ -1,0 +1,90 @@
+{
+  "school_id": "boston-college",
+  "school": "Boston College",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-27",
+  "no_supplement": false,
+  "prompts": [
+    {
+      "id": "boston-college-1",
+      "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?",
+      "word_limit": 400,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 4
+      },
+      "applies_to": "all applicants except Human-Centered Engineering (HCE) major applicants",
+      "source_url": "https://www.bc.edu/content/bc-web/admission/apply.html",
+      "source_type": "official"
+    },
+    {
+      "id": "boston-college-2",
+      "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?",
+      "word_limit": 400,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 4
+      },
+      "applies_to": "all applicants except Human-Centered Engineering (HCE) major applicants",
+      "source_url": "https://www.bc.edu/content/bc-web/admission/apply.html",
+      "source_type": "official"
+    },
+    {
+      "id": "boston-college-3",
+      "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?",
+      "word_limit": 400,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 4
+      },
+      "applies_to": "all applicants except Human-Centered Engineering (HCE) major applicants",
+      "source_url": "https://www.bc.edu/content/bc-web/admission/apply.html",
+      "source_type": "official"
+    },
+    {
+      "id": "boston-college-4",
+      "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?",
+      "word_limit": 400,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 4
+      },
+      "applies_to": "all applicants except Human-Centered Engineering (HCE) major applicants",
+      "source_url": "https://www.bc.edu/content/bc-web/admission/apply.html",
+      "source_type": "official"
+    },
+    {
+      "id": "boston-college-5",
+      "text": "Human-Centered Engineering (HCE) Applicants only: One goal of a Jesuit education is to prepare students to serve the Common Good. Human-Centered Engineering at Boston College integrates technical knowledge, creativity, and a humanistic perspective to address societal challenges and opportunities. What societal problems are important to you and how will you use your HCE education to solve them?",
+      "word_limit": 400,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "Human-Centered Engineering (HCE) major applicants only (instead of prompts 1-4)",
+      "source_url": "https://www.bc.edu/content/bc-web/admission/apply.html",
+      "source_type": "official"
+    }
+  ],
+  "notes": "Cycle confirmed: the official BC apply page section is headed 'Supplemental Questions 2026-27'. The instruction reads verbatim: 'We would like to get a better sense of you. Please respond to one of the first four prompts below (400 word limit). Students applying to the Human Centered Engineering major should respond to Prompt #5 instead.' The leading numerals ('1. ' etc.) were removed from the stored text. The 400-word limit is stated once for the whole set. Applying it to prompt 5 is an inference, because the page gives prompt 5 no separate limit. Prompt 5 begins with the italic label 'Human-Centered Engineering (HCE) Applicants only:', which is kept verbatim. Punctuation is kept as published, including the mixed quotes in prompt 2, which opens with a straight quote and closes with a curly one. Whitespace was normalized to single spaces; the source has a double space after 'background.' in prompt 3. Prompts 3 and 4 contain link text ('The Danger of a Single Story', 'A Pocket Guide to Jesuit Education') kept as plain text. A third-party guide says the 2026-27 wording is unchanged from 2025-26. The official page lists no other BC-specific short answers. Not checked inside the Common App portal itself (login required).",
+  "sources": [
+    "https://www.bc.edu/content/bc-web/admission/apply.html",
+    "https://www.collegetransitions.com/blog/boston-college-supplemental-essay-prompts-3"
+  ]
+}

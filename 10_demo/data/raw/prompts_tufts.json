@@ -1,0 +1,76 @@
+{
+  "school_id": "tufts",
+  "school": "Tufts University",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-27",
+  "no_supplement": false,
+  "prompts": [
+    {
+      "id": "tufts-1",
+      "text": "Please describe how you have learned about and engaged with Tufts during your college search process.",
+      "word_limit": 150,
+      "char_limit": null,
+      "word_min": 75,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "all applicants",
+      "source_url": "https://admissions.tufts.edu/apply/short-answer-questions/",
+      "source_type": "official"
+    },
+    {
+      "id": "tufts-2",
+      "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?",
+      "word_limit": 200,
+      "char_limit": null,
+      "word_min": 100,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "School of Arts and Sciences applicants only",
+      "source_url": "https://admissions.tufts.edu/apply/short-answer-questions/",
+      "source_type": "official"
+    },
+    {
+      "id": "tufts-3",
+      "text": "Tell us about an engineering or science-related project that you have helped build, design, create, or iterate in the past two years. What was the project and what was your role?",
+      "word_limit": 200,
+      "char_limit": null,
+      "word_min": 100,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "School of Engineering applicants only",
+      "source_url": "https://admissions.tufts.edu/apply/short-answer-questions/",
+      "source_type": "official"
+    },
+    {
+      "id": "tufts-4",
+      "text": "Tell us more about a specific piece in your portfolio. What were the ideas you intended to explore, and how did those ideas inform the process of making the piece?",
+      "word_limit": 200,
+      "char_limit": null,
+      "word_min": 100,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "Bachelor of Fine Arts (BFA) program applicants only",
+      "source_url": "https://admissions.tufts.edu/apply/short-answer-questions/",
+      "source_type": "official"
+    },
+    {
+      "id": "tufts-5",
+      "text": "Tell us more about a specific piece in your portfolio. How did an academic course, project, or interest inspire the ideas that you explored in this piece? Or, how did making this piece influence your academic interests?",
+      "word_limit": 200,
+      "char_limit": null,
+      "word_min": 100,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "Combined Degree (BFA+BA/BS) program applicants only",
+      "source_url": "https://admissions.tufts.edu/apply/short-answer-questions/",
+      "source_type": "official"
+    }
+  ],
+  "notes": "Cycle confirmed: the official page is headed 'Short Answer Prompts for the Class of 2031' (entering fall 2027). Each applicant answers two required short answers. Prompt #1 (tufts-1, 75-150 words) goes to all applicants. Each applicant also answers exactly ONE Prompt #2, set by their intended school/program (tufts-2 to tufts-5, each 100-200 words). Applicants do not pick their Prompt #2, so choose_group is null. Prompt #1's range was printed in parentheses after the prompt ('(75-150 words)'); that parenthetical was removed from the stored text and recorded as word_min/word_limit. Prompt #2's range comes from each lead-in line, e.g. 'Applicants to the School of Arts and Sciences are required to answer the following question in 100-200 words:'. The prompt text is identical on the official short-answer page and the official Inside Admissions blog post (Jun 26). The blog also gives non-prompt guidance, e.g. 'What actions have you taken to learn about Tufts so far?'. That guidance is advice, not part of the prompt, and is not recorded. No optional prompts are listed. Not checked inside the Common App/Coalition portal itself (login required).",
+  "sources": [
+    "https://admissions.tufts.edu/apply/essay-questions/",
+    "https://admissions.tufts.edu/apply/short-answer-questions/",
+    "https://admissions.tufts.edu/blogs/inside-admissions/post/tufts-short-answer-questions-for-the-class-of-2031/",
+    "https://www.collegetransitions.com/blog/tufts-university-essay-prompts-3"
+  ]
+}
