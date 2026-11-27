@@ -1,0 +1,142 @@
+{
+  "required": [
+    "tufts-1",
+    "tufts-2",
+    "boston-university-1",
+    "university-of-massachusetts-amherst-1",
+    "university-of-massachusetts-amherst-2",
+    "boston-college-3",
+    "fordham-university-1",
+    "university-of-massachusetts-amherst-4"
+  ],
+  "choose_groups": {
+    "Boston College group A": {
+      "options": [
+        "boston-college-1",
+        "boston-college-2",
+        "boston-college-3",
+        "boston-college-4"
+      ],
+      "chosen": [
+        "boston-college-3"
+      ],
+      "why": {
+        "boston-college-1": 0.152,
+        "boston-college-2": 0.144,
+        "boston-college-3": 0.171,
+        "boston-college-4": 0.148
+      }
+    },
+    "Fordham group A": {
+      "options": [
+        "fordham-university-1",
+        "fordham-university-2",
+        "fordham-university-3"
+      ],
+      "chosen": [
+        "fordham-university-1"
+      ],
+      "why": {
+        "fordham-university-1": 0.264,
+        "fordham-university-2": 0.175,
+        "fordham-university-3": 0.202
+      }
+    },
+    "UMass Amherst group A": {
+      "options": [
+        "university-of-massachusetts-amherst-4"
+      ],
+      "chosen": [
+        "university-of-massachusetts-amherst-4"
+      ],
+      "why": {
+        "university-of-massachusetts-amherst-4": 0.228
+      }
+    }
+  },
+  "plan": [
+    {
+      "step": 1,
+      "prompt": "boston-college-3",
+      "school": "Boston College",
+      "limit": 400,
+      "reuse_from": null,
+      "reuse_share": 0.0,
+      "new_words": 400
+    },
+    {
+      "step": 2,
+      "prompt": "boston-university-1",
+      "school": "Boston University",
+      "limit": 300,
+      "reuse_from": "boston-college-3",
+      "reuse_share": 0.025,
+      "new_words": 292
+    },
+    {
+      "step": 3,
+      "prompt": "fordham-university-1",
+      "school": "Fordham",
+      "limit": 300,
+      "reuse_from": "boston-college-3",
+      "reuse_share": 0.45,
+      "new_words": 165
+    },
+    {
+      "step": 4,
+      "prompt": "tufts-2",
+      "school": "Tufts",
+      "limit": 200,
+      "reuse_from": "fordham-university-1",
+      "reuse_share": 0.15,
+      "new_words": 170
+    },
+    {
+      "step": 5,
+      "prompt": "tufts-1",
+      "school": "Tufts",
+      "limit": 150,
+      "reuse_from": "boston-university-1",
+      "reuse_share": 0.2,
+      "new_words": 120
+    },
+    {
+      "step": 6,
+      "prompt": "university-of-massachusetts-amherst-1",
+      "school": "UMass Amherst",
+      "limit": 100,
+      "reuse_from": "boston-university-1",
+      "reuse_share": 0.5,
+      "new_words": 50
+    },
+    {
+      "step": 7,
+      "prompt": "university-of-massachusetts-amherst-2",
+      "school": "UMass Amherst",
+      "limit": 100,
+      "reuse_from": "boston-university-1",
+      "reuse_share": 0.3,
+      "new_words": 70
+    },
+    {
+      "step": 8,
+      "prompt": "university-of-massachusetts-amherst-4",
+      "school": "UMass Amherst",
+      "limit": 100,
+      "reuse_from": "boston-college-3",
+      "reuse_share": 0.275,
+      "new_words": 72
+    }
+  ],
+  "naive_words": 1650,
+  "new_words": 1339,
+  "saved_share": 0.188,
+  "agreement": {
+    "n_scores": 130,
+    "mae": 2.576923076923077,
+    "pearson_r": 0.9375261895162984,
+    "within_15": 1.0,
+    "over_25": 0
+  },
+  "awaiting_adjudication": 0
+}

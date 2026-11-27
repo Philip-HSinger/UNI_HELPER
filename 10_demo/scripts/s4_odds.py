@@ -33,7 +33,20 @@ def entry(sid, rate=None):
             "testOptional": "optional" in pol or "blind" in pol, "prompts": []}
 
 
-M = AdmissionModel([entry(s) for s in IDS])
+def logit(p):
+    return float(np.log(p / (1 - p)))
+
+
+def expit(x):
+    return float(1 / (1 + np.exp(-x)))
+
+
+# Early Decision: the ED admit rate overstates the boost (ED pools hold recruited athletes, legacies and other hooks),
+# the overall rate understates it. Central assumption: half the gap, on the log-odds scale. Low/high = the two ends.
+ed_overall, ed_round = schools[ED]["stats"]["admit_rate"], schools[ED]["stats"]["ed_rate"]
+ED_RATE = {"low": ed_overall, "central": expit((logit(ed_overall) + logit(ed_round)) / 2), "high": ed_round}
+
+M = AdmissionModel([entry(s, ED_RATE["central"] if s == ED else None) for s in IDS])
 ST = Student(STUDENT["ebrw"], STUDENT["math"])
 
 
@@ -58,11 +71,12 @@ for res in ("accepted", "deferred", "rejected"):
     out["scenarios"][res] = {"odds": odds(rest, d), "risk_rest": risk(rest, d),
                              "risk_six_rest": risk([s for s in SIX if s != ED], d)}
 
-# sensitivity: Tufts priced at its Early Decision admit rate instead of its overall rate (upper bound; ED pools differ)
-ed_rate = schools[ED]["stats"].get("ed_rate")
-if ed_rate:
-    M_ed = AdmissionModel([entry(s, ed_rate if s == ED else None) for s in IDS])
-    out["ed_sensitivity"] = {"ed_rate": ed_rate, "chance_at_ed_rate": float(M_ed.chances(ST, [ED])[0])}
+# sensitivity: the ED school priced at each end of the assumption
+out["ed_rates"] = ED_RATE
+out["ed_sensitivity"] = {}
+for k, r in ED_RATE.items():
+    Mk = AdmissionModel([entry(s, r if s == ED else None) for s in IDS])
+    out["ed_sensitivity"][k] = {"rate_used": r, "chance": float(Mk.chances(ST, [ED])[0])}
 
 # calibration details for the annotated report
 out["calibration"] = {s: {"rate": M.cal[s].rate, "a_test_weight": M.cal[s].a, "cutoff_c": M.cal[s].c,
