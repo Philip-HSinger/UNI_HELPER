@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tufts-3",
+    "school": "Tufts",
+    "why": "Tufts School of Engineering only",
+    "text": "Tell us about an engineering or science-related project that you have helped build, design, create, or iterate in the past two years. What was the project and what was your role?"
+  },
+  {
+    "id": "tufts-4",
+    "school": "Tufts",
+    "why": "Tufts BFA only",
+    "text": "Tell us more about a specific piece in your portfolio. What were the ideas you intended to explore, and how did those ideas inform the process of making the piece?"
+  },
+  {
+    "id": "tufts-5",
+    "school": "Tufts",
+    "why": "Tufts combined BFA degree only",
+    "text": "Tell us more about a specific piece in your portfolio. How did an academic course, project, or interest inspire the ideas that you explored in this piece? Or, how did making this piece influence your academic interests?"
+  },
+  {
+    "id": "boston-college-5",
+    "school": "Boston College",
+    "why": "BC Human-Centered Engineering only",
+    "text": "Human-Centered Engineering (HCE) Applicants only: One goal of a Jesuit education is to prepare students to serve the Common Good. Human-Centered Engineering at Boston College integrates technical knowledge, creativity, and a humanistic perspective to address societal challenges and opportunities. What societal problems are important to you and how will you use your HCE education to solve them?"
+  },
+  {
+    "id": "boston-university-2",
+    "school": "Boston University",
+    "why": "BU Kilachand Honors College only",
+    "text": "The mission of Kilachand Honors College is to offer a challenging liberal arts education grounded in critical and creative thinking, interdisciplinary problem-solving, and the real-world application of knowledge. Please see https://www.bu.edu/khc/about/ for more details about our program, and then respond to one of the following questions in an essay of 600 words or less:\n\nWhat about the Kilachand Honors College resonates with you, and how would Kilachand’s curriculum fulfill your academic, creative, intellectual, and/or professional goals?"
+  },
+  {
+    "id": "boston-university-3",
+    "school": "Boston University",
+    "why": "BU Kilachand Honors College only",
+    "text": "The mission of Kilachand Honors College is to offer a challenging liberal arts education grounded in critical and creative thinking, interdisciplinary problem-solving, and the real-world application of knowledge. Please see https://www.bu.edu/khc/about/ for more details about our program, and then respond to one of the following questions in an essay of 600 words or less:\n\nIf you could create a new Kilachand course, what would it be? How would your imagined course align with the core values of Kilachand?"
+  },
+  {
+    "id": "wesleyan-university-1",
+    "school": "Wesleyan",
+    "why": "Wesleyan international applicants only",
+    "text": "What recent news story—local or global—has resonated with you personally? Share the story and tell us why it had that impact on you."
+  },
+  {
+    "id": "university-of-massachusetts-amherst-3",
+    "school": "UMass Amherst",
+    "why": "UMass Commonwealth Honors College applicants only",
+    "text": "Commonwealth Honors College is a community in which students examine complex questions, learn across differences, and connect their academic interests to the world around them. What is one perspective, experience, or question you would bring to this community, and how would you hope to develop it at UMass Amherst?"
+  },
+  {
+    "id": "university-of-rhode-island-1",
+    "school": "URI",
+    "why": "URI Nursing only",
+    "text": "Please provide a statement of 250 words or fewer explaining why you have chosen this major."
+  },
+  {
+    "id": "university-of-rhode-island-2",
+    "school": "URI",
+    "why": "URI PharmD only",
+    "text": "Please provide a statement of 250 words or fewer explaining why you have chosen this major."
+  },
+  {
+    "id": "university-of-rhode-island-3",
+    "school": "URI",
+    "why": "URI Honors only",
+    "text": "URI Honors offers students an opportunity to engage in advanced coursework, thought-provoking project work/dialogue, and more.  One defining moment of your Honors journey is participation in our inspiring yearly Colloquium. The URI Honors Program brings in amazing guest speakers, including scientists, bestselling authors, actors, politicians, activists, and other incredible leaders. Past students have met legends like Jane Goodall, actor B.D. Wong, and countless other changemakers. To learn more about our Honors Students and the URI Honors Program, check out our website and YouTube channel. If you’d like to be considered for the URI Honors Program, please submit a brief statement responding to the prompt below. In 250 words or less, please tell us:\nWhat theme would you pick for your Colloquium? To guide you through your statement, consider answering the following questions within your writing:\nWhy does this theme matter to you personally?\nWhy would this topic grab the attention of other high schoolers and URI students?\nWhat makes this theme super relevant to what’s happening in the world today?\nGet creative and think about it—we’re excited to see what ideas you come up with!"
+  },
+  {
+    "id": "university-of-rhode-island-4",
+    "school": "URI",
+    "why": "URI Talent Development only",
+    "text": "Following the assassination of Dr. Martin Luther King, Jr., the University of Rhode Island (URI) established Talent Development (TD) as a special admission program for historically marginalized Rhode Island students looking to enter higher education and earn a baccalaureate degree. Tell us about aspects of your lived experience that you believe make you an ideal candidate for the Talent Development program."
+  }
+]

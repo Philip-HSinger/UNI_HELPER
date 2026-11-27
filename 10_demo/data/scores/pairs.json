@@ -1,0 +1,977 @@
+[
+  {
+    "pair": "tufts-1|boston-college-1",
+    "A": {
+      "id": "tufts-1",
+      "school": "Tufts",
+      "limit_words": 150,
+      "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+    },
+    "B": {
+      "id": "boston-college-1",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+    }
+  },
+  {
+    "pair": "tufts-1|boston-college-2",
+    "A": {
+      "id": "tufts-1",
+      "school": "Tufts",
+      "limit_words": 150,
+      "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+    },
+    "B": {
+      "id": "boston-college-2",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+    }
+  },
+  {
+    "pair": "tufts-1|boston-college-3",
+    "A": {
+      "id": "tufts-1",
+      "school": "Tufts",
+      "limit_words": 150,
+      "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+    },
+    "B": {
+      "id": "boston-college-3",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+    }
+  },
+  {
+    "pair": "tufts-1|boston-college-4",
+    "A": {
+      "id": "tufts-1",
+      "school": "Tufts",
+      "limit_words": 150,
+      "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+    },
+    "B": {
+      "id": "boston-college-4",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+    }
+  },
+  {
+    "pair": "tufts-1|boston-university-1",
+    "A": {
+      "id": "tufts-1",
+      "school": "Tufts",
+      "limit_words": 150,
+      "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+    },
+    "B": {
+      "id": "boston-university-1",
+      "school": "Boston University",
+      "limit_words": 300,
+      "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?"
+    }
+  },
+  {
+    "pair": "tufts-1|fordham-university-1",
+    "A": {
+      "id": "tufts-1",
+      "school": "Tufts",
+      "limit_words": 150,
+      "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+    },
+    "B": {
+      "id": "fordham-university-1",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+    }
+  },
+  {
+    "pair": "tufts-1|fordham-university-2",
+    "A": {
+      "id": "tufts-1",
+      "school": "Tufts",
+      "limit_words": 150,
+      "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+    },
+    "B": {
+      "id": "fordham-university-2",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+    }
+  },
+  {
+    "pair": "tufts-1|fordham-university-3",
+    "A": {
+      "id": "tufts-1",
+      "school": "Tufts",
+      "limit_words": 150,
+      "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+    },
+    "B": {
+      "id": "fordham-university-3",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+    }
+  },
+  {
+    "pair": "tufts-1|university-of-massachusetts-amherst-1",
+    "A": {
+      "id": "tufts-1",
+      "school": "Tufts",
+      "limit_words": 150,
+      "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-1",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why do you want to attend UMass Amherst?"
+    }
+  },
+  {
+    "pair": "tufts-1|university-of-massachusetts-amherst-2",
+    "A": {
+      "id": "tufts-1",
+      "school": "Tufts",
+      "limit_words": 150,
+      "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-2",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why did you choose the major you did?"
+    }
+  },
+  {
+    "pair": "tufts-1|university-of-massachusetts-amherst-4",
+    "A": {
+      "id": "tufts-1",
+      "school": "Tufts",
+      "limit_words": 150,
+      "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-4",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+    }
+  },
+  {
+    "pair": "tufts-2|boston-college-1",
+    "A": {
+      "id": "tufts-2",
+      "school": "Tufts",
+      "limit_words": 200,
+      "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+    },
+    "B": {
+      "id": "boston-college-1",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+    }
+  },
+  {
+    "pair": "tufts-2|boston-college-2",
+    "A": {
+      "id": "tufts-2",
+      "school": "Tufts",
+      "limit_words": 200,
+      "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+    },
+    "B": {
+      "id": "boston-college-2",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+    }
+  },
+  {
+    "pair": "tufts-2|boston-college-3",
+    "A": {
+      "id": "tufts-2",
+      "school": "Tufts",
+      "limit_words": 200,
+      "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+    },
+    "B": {
+      "id": "boston-college-3",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+    }
+  },
+  {
+    "pair": "tufts-2|boston-college-4",
+    "A": {
+      "id": "tufts-2",
+      "school": "Tufts",
+      "limit_words": 200,
+      "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+    },
+    "B": {
+      "id": "boston-college-4",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+    }
+  },
+  {
+    "pair": "tufts-2|boston-university-1",
+    "A": {
+      "id": "tufts-2",
+      "school": "Tufts",
+      "limit_words": 200,
+      "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+    },
+    "B": {
+      "id": "boston-university-1",
+      "school": "Boston University",
+      "limit_words": 300,
+      "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?"
+    }
+  },
+  {
+    "pair": "tufts-2|fordham-university-1",
+    "A": {
+      "id": "tufts-2",
+      "school": "Tufts",
+      "limit_words": 200,
+      "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+    },
+    "B": {
+      "id": "fordham-university-1",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+    }
+  },
+  {
+    "pair": "tufts-2|fordham-university-2",
+    "A": {
+      "id": "tufts-2",
+      "school": "Tufts",
+      "limit_words": 200,
+      "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+    },
+    "B": {
+      "id": "fordham-university-2",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+    }
+  },
+  {
+    "pair": "tufts-2|fordham-university-3",
+    "A": {
+      "id": "tufts-2",
+      "school": "Tufts",
+      "limit_words": 200,
+      "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+    },
+    "B": {
+      "id": "fordham-university-3",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+    }
+  },
+  {
+    "pair": "tufts-2|university-of-massachusetts-amherst-1",
+    "A": {
+      "id": "tufts-2",
+      "school": "Tufts",
+      "limit_words": 200,
+      "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-1",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why do you want to attend UMass Amherst?"
+    }
+  },
+  {
+    "pair": "tufts-2|university-of-massachusetts-amherst-2",
+    "A": {
+      "id": "tufts-2",
+      "school": "Tufts",
+      "limit_words": 200,
+      "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-2",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why did you choose the major you did?"
+    }
+  },
+  {
+    "pair": "tufts-2|university-of-massachusetts-amherst-4",
+    "A": {
+      "id": "tufts-2",
+      "school": "Tufts",
+      "limit_words": 200,
+      "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-4",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+    }
+  },
+  {
+    "pair": "boston-college-1|boston-university-1",
+    "A": {
+      "id": "boston-college-1",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+    },
+    "B": {
+      "id": "boston-university-1",
+      "school": "Boston University",
+      "limit_words": 300,
+      "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?"
+    }
+  },
+  {
+    "pair": "boston-college-1|fordham-university-1",
+    "A": {
+      "id": "boston-college-1",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+    },
+    "B": {
+      "id": "fordham-university-1",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+    }
+  },
+  {
+    "pair": "boston-college-1|fordham-university-2",
+    "A": {
+      "id": "boston-college-1",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+    },
+    "B": {
+      "id": "fordham-university-2",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+    }
+  },
+  {
+    "pair": "boston-college-1|fordham-university-3",
+    "A": {
+      "id": "boston-college-1",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+    },
+    "B": {
+      "id": "fordham-university-3",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+    }
+  },
+  {
+    "pair": "boston-college-1|university-of-massachusetts-amherst-1",
+    "A": {
+      "id": "boston-college-1",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-1",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why do you want to attend UMass Amherst?"
+    }
+  },
+  {
+    "pair": "boston-college-1|university-of-massachusetts-amherst-2",
+    "A": {
+      "id": "boston-college-1",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-2",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why did you choose the major you did?"
+    }
+  },
+  {
+    "pair": "boston-college-1|university-of-massachusetts-amherst-4",
+    "A": {
+      "id": "boston-college-1",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-4",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+    }
+  },
+  {
+    "pair": "boston-college-2|boston-university-1",
+    "A": {
+      "id": "boston-college-2",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+    },
+    "B": {
+      "id": "boston-university-1",
+      "school": "Boston University",
+      "limit_words": 300,
+      "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?"
+    }
+  },
+  {
+    "pair": "boston-college-2|fordham-university-1",
+    "A": {
+      "id": "boston-college-2",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+    },
+    "B": {
+      "id": "fordham-university-1",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+    }
+  },
+  {
+    "pair": "boston-college-2|fordham-university-2",
+    "A": {
+      "id": "boston-college-2",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+    },
+    "B": {
+      "id": "fordham-university-2",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+    }
+  },
+  {
+    "pair": "boston-college-2|fordham-university-3",
+    "A": {
+      "id": "boston-college-2",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+    },
+    "B": {
+      "id": "fordham-university-3",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+    }
+  },
+  {
+    "pair": "boston-college-2|university-of-massachusetts-amherst-1",
+    "A": {
+      "id": "boston-college-2",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-1",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why do you want to attend UMass Amherst?"
+    }
+  },
+  {
+    "pair": "boston-college-2|university-of-massachusetts-amherst-2",
+    "A": {
+      "id": "boston-college-2",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-2",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why did you choose the major you did?"
+    }
+  },
+  {
+    "pair": "boston-college-2|university-of-massachusetts-amherst-4",
+    "A": {
+      "id": "boston-college-2",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-4",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+    }
+  },
+  {
+    "pair": "boston-college-3|boston-university-1",
+    "A": {
+      "id": "boston-college-3",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+    },
+    "B": {
+      "id": "boston-university-1",
+      "school": "Boston University",
+      "limit_words": 300,
+      "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?"
+    }
+  },
+  {
+    "pair": "boston-college-3|fordham-university-1",
+    "A": {
+      "id": "boston-college-3",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+    },
+    "B": {
+      "id": "fordham-university-1",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+    }
+  },
+  {
+    "pair": "boston-college-3|fordham-university-2",
+    "A": {
+      "id": "boston-college-3",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+    },
+    "B": {
+      "id": "fordham-university-2",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+    }
+  },
+  {
+    "pair": "boston-college-3|fordham-university-3",
+    "A": {
+      "id": "boston-college-3",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+    },
+    "B": {
+      "id": "fordham-university-3",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+    }
+  },
+  {
+    "pair": "boston-college-3|university-of-massachusetts-amherst-1",
+    "A": {
+      "id": "boston-college-3",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-1",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why do you want to attend UMass Amherst?"
+    }
+  },
+  {
+    "pair": "boston-college-3|university-of-massachusetts-amherst-2",
+    "A": {
+      "id": "boston-college-3",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-2",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why did you choose the major you did?"
+    }
+  },
+  {
+    "pair": "boston-college-3|university-of-massachusetts-amherst-4",
+    "A": {
+      "id": "boston-college-3",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-4",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+    }
+  },
+  {
+    "pair": "boston-college-4|boston-university-1",
+    "A": {
+      "id": "boston-college-4",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+    },
+    "B": {
+      "id": "boston-university-1",
+      "school": "Boston University",
+      "limit_words": 300,
+      "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?"
+    }
+  },
+  {
+    "pair": "boston-college-4|fordham-university-1",
+    "A": {
+      "id": "boston-college-4",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+    },
+    "B": {
+      "id": "fordham-university-1",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+    }
+  },
+  {
+    "pair": "boston-college-4|fordham-university-2",
+    "A": {
+      "id": "boston-college-4",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+    },
+    "B": {
+      "id": "fordham-university-2",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+    }
+  },
+  {
+    "pair": "boston-college-4|fordham-university-3",
+    "A": {
+      "id": "boston-college-4",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+    },
+    "B": {
+      "id": "fordham-university-3",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+    }
+  },
+  {
+    "pair": "boston-college-4|university-of-massachusetts-amherst-1",
+    "A": {
+      "id": "boston-college-4",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-1",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why do you want to attend UMass Amherst?"
+    }
+  },
+  {
+    "pair": "boston-college-4|university-of-massachusetts-amherst-2",
+    "A": {
+      "id": "boston-college-4",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-2",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why did you choose the major you did?"
+    }
+  },
+  {
+    "pair": "boston-college-4|university-of-massachusetts-amherst-4",
+    "A": {
+      "id": "boston-college-4",
+      "school": "Boston College",
+      "limit_words": 400,
+      "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-4",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+    }
+  },
+  {
+    "pair": "boston-university-1|fordham-university-1",
+    "A": {
+      "id": "boston-university-1",
+      "school": "Boston University",
+      "limit_words": 300,
+      "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?"
+    },
+    "B": {
+      "id": "fordham-university-1",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+    }
+  },
+  {
+    "pair": "boston-university-1|fordham-university-2",
+    "A": {
+      "id": "boston-university-1",
+      "school": "Boston University",
+      "limit_words": 300,
+      "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?"
+    },
+    "B": {
+      "id": "fordham-university-2",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+    }
+  },
+  {
+    "pair": "boston-university-1|fordham-university-3",
+    "A": {
+      "id": "boston-university-1",
+      "school": "Boston University",
+      "limit_words": 300,
+      "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?"
+    },
+    "B": {
+      "id": "fordham-university-3",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+    }
+  },
+  {
+    "pair": "boston-university-1|university-of-massachusetts-amherst-1",
+    "A": {
+      "id": "boston-university-1",
+      "school": "Boston University",
+      "limit_words": 300,
+      "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-1",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why do you want to attend UMass Amherst?"
+    }
+  },
+  {
+    "pair": "boston-university-1|university-of-massachusetts-amherst-2",
+    "A": {
+      "id": "boston-university-1",
+      "school": "Boston University",
+      "limit_words": 300,
+      "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-2",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why did you choose the major you did?"
+    }
+  },
+  {
+    "pair": "boston-university-1|university-of-massachusetts-amherst-4",
+    "A": {
+      "id": "boston-university-1",
+      "school": "Boston University",
+      "limit_words": 300,
+      "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-4",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+    }
+  },
+  {
+    "pair": "fordham-university-1|university-of-massachusetts-amherst-1",
+    "A": {
+      "id": "fordham-university-1",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-1",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why do you want to attend UMass Amherst?"
+    }
+  },
+  {
+    "pair": "fordham-university-1|university-of-massachusetts-amherst-2",
+    "A": {
+      "id": "fordham-university-1",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-2",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why did you choose the major you did?"
+    }
+  },
+  {
+    "pair": "fordham-university-1|university-of-massachusetts-amherst-4",
+    "A": {
+      "id": "fordham-university-1",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-4",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+    }
+  },
+  {
+    "pair": "fordham-university-2|university-of-massachusetts-amherst-1",
+    "A": {
+      "id": "fordham-university-2",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-1",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why do you want to attend UMass Amherst?"
+    }
+  },
+  {
+    "pair": "fordham-university-2|university-of-massachusetts-amherst-2",
+    "A": {
+      "id": "fordham-university-2",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-2",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why did you choose the major you did?"
+    }
+  },
+  {
+    "pair": "fordham-university-2|university-of-massachusetts-amherst-4",
+    "A": {
+      "id": "fordham-university-2",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-4",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+    }
+  },
+  {
+    "pair": "fordham-university-3|university-of-massachusetts-amherst-1",
+    "A": {
+      "id": "fordham-university-3",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-1",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why do you want to attend UMass Amherst?"
+    }
+  },
+  {
+    "pair": "fordham-university-3|university-of-massachusetts-amherst-2",
+    "A": {
+      "id": "fordham-university-3",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-2",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "Why did you choose the major you did?"
+    }
+  },
+  {
+    "pair": "fordham-university-3|university-of-massachusetts-amherst-4",
+    "A": {
+      "id": "fordham-university-3",
+      "school": "Fordham",
+      "limit_words": 300,
+      "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+    },
+    "B": {
+      "id": "university-of-massachusetts-amherst-4",
+      "school": "UMass Amherst",
+      "limit_words": 100,
+      "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+    }
+  }
+]

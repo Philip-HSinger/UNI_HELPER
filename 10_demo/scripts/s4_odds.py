@@ -20,7 +20,11 @@ schools = {s["school_id"]: s for s in load(ROOT / "data" / "schools.json")}
 
 def entry(sid, rate=None):
     st = schools[sid]["stats"]
-    e, m = st["sat_ebrw"], st["sat_math"]
+    e, m = st.get("sat_ebrw"), st.get("sat_math")
+    if not e or not m:  # composite only (Fordham): split evenly between the two sections; median = midpoint
+        c = st["sat_composite"]
+        half = [c[0] / 2, (c[1] or (c[0] + c[2]) / 2) / 2, c[2] / 2]
+        e = m = half
     pol = (st.get("test_policy_2026_27") or "").lower()
     return {"id": sid, "name": SHORT[sid], "acceptanceRate": rate or st["admit_rate"],
             "englishP25": e[0], "englishP50": e[1] or (e[0] + e[2]) / 2, "englishP75": e[2],

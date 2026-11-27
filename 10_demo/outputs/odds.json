@@ -1,0 +1,399 @@
+{
+  "student": {
+    "ebrw": 710,
+    "math": 710
+  },
+  "ed": "tufts",
+  "ea": [
+    "northeastern",
+    "fordham-university",
+    "fairfield-university",
+    "university-of-massachusetts-amherst",
+    "university-of-rhode-island"
+  ],
+  "baseline": {
+    "tufts": {
+      "chance": 0.06629701110404292,
+      "lo": 0.005429628773328312,
+      "hi": 0.19771271486325334,
+      "sends_sat": false
+    },
+    "boston-college": {
+      "chance": 0.09835770328183956,
+      "lo": 0.008176299686953466,
+      "hi": 0.304149243869312,
+      "sends_sat": true
+    },
+    "boston-university": {
+      "chance": 0.09280542426713619,
+      "lo": 0.006484313955702586,
+      "hi": 0.2892558582849229,
+      "sends_sat": true
+    },
+    "northeastern": {
+      "chance": 0.045316344398211625,
+      "lo": 0.002815468931251038,
+      "hi": 0.12767091692398042,
+      "sends_sat": true
+    },
+    "wesleyan-university": {
+      "chance": 0.19878412290090466,
+      "lo": 0.009491440265969864,
+      "hi": 0.5852400594377986,
+      "sends_sat": true
+    },
+    "college-of-the-holy-cross": {
+      "chance": 0.4039349769389007,
+      "lo": 0.03292466619238786,
+      "hi": 0.8655577065611958,
+      "sends_sat": true
+    },
+    "fordham-university": {
+      "chance": 0.5410349881571556,
+      "lo": 0.09324552745676114,
+      "hi": 0.9406046078253076,
+      "sends_sat": true
+    },
+    "fairfield-university": {
+      "chance": 0.49382728590767894,
+      "lo": 0.06390119274537331,
+      "hi": 0.9165326495107158,
+      "sends_sat": true
+    },
+    "university-of-massachusetts-amherst": {
+      "chance": 0.6768300868692251,
+      "lo": 0.21223395549892785,
+      "hi": 0.972071375591605,
+      "sends_sat": true
+    },
+    "university-of-rhode-island": {
+      "chance": 0.9459803265746958,
+      "lo": 0.8668350507268731,
+      "hi": 0.9872750599175653,
+      "sends_sat": true
+    }
+  },
+  "risk_all10": {
+    "linked": 0.030844271629764622,
+    "lo": 0.004050710740621584,
+    "hi": 0.03788605413743101,
+    "naive": 0.0014122361635119998
+  },
+  "risk_six": {
+    "linked": 0.37776477371392825,
+    "lo": 0.3091111962104293,
+    "hi": 0.40824084071054245,
+    "naive": 0.21998614354663285
+  },
+  "six": [
+    "tufts",
+    "boston-college",
+    "northeastern",
+    "boston-university",
+    "college-of-the-holy-cross",
+    "fairfield-university"
+  ],
+  "scenarios": {
+    "accepted": {
+      "odds": {
+        "boston-college": {
+          "chance": 0.40813839916981137,
+          "lo": 0.0641489367959478,
+          "hi": 0.7926972812305478,
+          "sends_sat": true
+        },
+        "boston-university": {
+          "chance": 0.39584171511981997,
+          "lo": 0.05816748813682837,
+          "hi": 0.7811392143088384,
+          "sends_sat": true
+        },
+        "northeastern": {
+          "chance": 0.24644418908386057,
+          "lo": 0.016303472272115524,
+          "hi": 0.5933165976235915,
+          "sends_sat": true
+        },
+        "wesleyan-university": {
+          "chance": 0.6118009287862451,
+          "lo": 0.20962583570292606,
+          "hi": 0.9160182791957918,
+          "sends_sat": true
+        },
+        "college-of-the-holy-cross": {
+          "chance": 0.817635282253138,
+          "lo": 0.564419805603655,
+          "hi": 0.9573626257498438,
+          "sends_sat": true
+        },
+        "fordham-university": {
+          "chance": 0.892816850590672,
+          "lo": 0.7564169482748403,
+          "hi": 0.9730414893793214,
+          "sends_sat": true
+        },
+        "fairfield-university": {
+          "chance": 0.8666872230504674,
+          "lo": 0.6983218908466046,
+          "hi": 0.9615734028096788,
+          "sends_sat": true
+        },
+        "university-of-massachusetts-amherst": {
+          "chance": 0.9383791792865839,
+          "lo": 0.8918324102631776,
+          "hi": 0.9798829518744885,
+          "sends_sat": true
+        },
+        "university-of-rhode-island": {
+          "chance": 0.983779230565519,
+          "lo": 0.986877314585579,
+          "hi": 0.9872799974901473,
+          "sends_sat": true
+        }
+      },
+      "risk_rest": {
+        "linked": 0.0025592713982263322,
+        "lo": 0.0005753609573066864,
+        "hi": 0.0053048454726842085,
+        "naive": 2.7244500642834877e-07
+      },
+      "risk_six_rest": {
+        "linked": 0.05068299625844459,
+        "lo": 0.019614178984790842,
+        "hi": 0.1954012524503655,
+        "naive": 0.006550869030958743
+      }
+    },
+    "deferred": {
+      "odds": {
+        "boston-college": {
+          "chance": 0.27383955539795657,
+          "lo": 0.044748731228245534,
+          "hi": 0.5858280790615794,
+          "sends_sat": true
+        },
+        "boston-university": {
+          "chance": 0.2622917578050437,
+          "lo": 0.040019419359812694,
+          "hi": 0.5695716239586431,
+          "sends_sat": true
+        },
+        "northeastern": {
+          "chance": 0.1366249092695246,
+          "lo": 0.010687467067759708,
+          "hi": 0.3464130577584464,
+          "sends_sat": true
+        },
+        "wesleyan-university": {
+          "chance": 0.48901651877489827,
+          "lo": 0.15809577508082837,
+          "hi": 0.8161003733438487,
+          "sends_sat": true
+        },
+        "college-of-the-holy-cross": {
+          "chance": 0.7611188346548525,
+          "lo": 0.48761280420559644,
+          "hi": 0.941250966037057,
+          "sends_sat": true
+        },
+        "fordham-university": {
+          "chance": 0.8688802448223985,
+          "lo": 0.6934808095691553,
+          "hi": 0.9689216829685284,
+          "sends_sat": true
+        },
+        "fairfield-university": {
+          "chance": 0.8344227103276886,
+          "lo": 0.6296605335181102,
+          "hi": 0.955276174743829,
+          "sends_sat": true
+        },
+        "university-of-massachusetts-amherst": {
+          "chance": 0.9358483074417875,
+          "lo": 0.8551202955970263,
+          "hi": 0.9791998850628792,
+          "sends_sat": true
+        },
+        "university-of-rhode-island": {
+          "chance": 0.9867491697199737,
+          "lo": 0.9864567840742127,
+          "hi": 0.9872798913791242,
+          "sends_sat": true
+        }
+      },
+      "risk_rest": {
+        "linked": 0.00014457793727821832,
+        "lo": 1.3713592640044136e-05,
+        "hi": 0.0009340570813146432,
+        "naive": 1.04189899264258e-06
+      },
+      "risk_six_rest": {
+        "linked": 0.05560896793699825,
+        "lo": 0.024767005447374958,
+        "hi": 0.18192025754239544,
+        "naive": 0.018293610040269834
+      }
+    },
+    "rejected": {
+      "odds": {
+        "boston-college": {
+          "chance": 0.06743634980257268,
+          "lo": 0.008154705145346353,
+          "hi": 0.1962597883985755,
+          "sends_sat": true
+        },
+        "boston-university": {
+          "chance": 0.06265558213384947,
+          "lo": 0.006465756143457696,
+          "hi": 0.1842523864608001,
+          "sends_sat": true
+        },
+        "northeastern": {
+          "chance": 0.026262965338836677,
+          "lo": 0.0028138358906058462,
+          "hi": 0.06915995858630924,
+          "sends_sat": true
+        },
+        "wesleyan-university": {
+          "chance": 0.15501476490798005,
+          "lo": 0.009198690827941558,
+          "hi": 0.45112023632099973,
+          "sends_sat": true
+        },
+        "college-of-the-holy-cross": {
+          "chance": 0.3570888320630358,
+          "lo": 0.029176924092322927,
+          "hi": 0.7917618546490174,
+          "sends_sat": true
+        },
+        "fordham-university": {
+          "chance": 0.5001100776207503,
+          "lo": 0.08367743525612482,
+          "hi": 0.9048094749095957,
+          "sends_sat": true
+        },
+        "fairfield-university": {
+          "chance": 0.450761814691638,
+          "lo": 0.056395251789509736,
+          "hi": 0.8710708721563377,
+          "sends_sat": true
+        },
+        "university-of-massachusetts-amherst": {
+          "chance": 0.6457125120561623,
+          "lo": 0.19304100968161483,
+          "hi": 0.9602398931636282,
+          "sends_sat": true
+        },
+        "university-of-rhode-island": {
+          "chance": 0.9413324685724725,
+          "lo": 0.8510474155627369,
+          "hi": 0.98725581245247,
+          "sends_sat": true
+        }
+      },
+      "risk_rest": {
+        "linked": 0.03452089720830076,
+        "lo": 0.004305459301909181,
+        "hi": 0.042407156181751546,
+        "naive": 0.0026388104417201528
+      },
+      "risk_six_rest": {
+        "linked": 0.4203608196274889,
+        "lo": 0.3243432270030664,
+        "hi": 0.45581012223369455,
+        "naive": 0.30055991711939534
+      }
+    }
+  },
+  "ed_sensitivity": {
+    "ed_rate": 0.3203,
+    "chance_at_ed_rate": 0.24865148228795503
+  },
+  "calibration": {
+    "tufts": {
+      "rate": 0.1082,
+      "a_test_weight": 0.5,
+      "cutoff_c": 1.8542363506048452,
+      "pool_mean": 1457.9632967094647,
+      "pool_sd": 60.56666843014059,
+      "test_optional": true
+    },
+    "boston-college": {
+      "rate": 0.1619,
+      "a_test_weight": 0.8,
+      "cutoff_c": 1.6031637109313455,
+      "pool_mean": 1433.077172342806,
+      "pool_sd": 71.93926009039133,
+      "test_optional": true
+    },
+    "boston-university": {
+      "rate": 0.1283,
+      "a_test_weight": 0.5,
+      "cutoff_c": 1.7016958794810604,
+      "pool_mean": 1431.9050455739264,
+      "pool_sd": 71.94432915518529,
+      "test_optional": true
+    },
+    "northeastern": {
+      "rate": 0.0562,
+      "a_test_weight": 1.0,
+      "cutoff_c": 2.7496264243294304,
+      "pool_mean": 1391.906651195658,
+      "pool_sd": 73.20388271502878,
+      "test_optional": true
+    },
+    "wesleyan-university": {
+      "rate": 0.1637,
+      "a_test_weight": 0.5,
+      "cutoff_c": 1.4690464803244117,
+      "pool_mean": 1370.620190032832,
+      "pool_sd": 111.85277763237055,
+      "test_optional": true
+    },
+    "college-of-the-holy-cross": {
+      "rate": 0.211,
+      "a_test_weight": 0.5,
+      "cutoff_c": 1.2044344324640905,
+      "pool_mean": 1280.1701184536053,
+      "pool_sd": 116.66159220981707,
+      "test_optional": true
+    },
+    "fordham-university": {
+      "rate": 0.472,
+      "a_test_weight": 0.5,
+      "cutoff_c": 0.1053649707328751,
+      "pool_mean": 1390.1127604341984,
+      "pool_sd": 78.17860275669572,
+      "test_optional": true
+    },
+    "fairfield-university": {
+      "rate": 0.2505,
+      "a_test_weight": 0.5,
+      "cutoff_c": 1.0093757269969417,
+      "pool_mean": 1294.8189648568366,
+      "pool_sd": 83.03846868681751,
+      "test_optional": true
+    },
+    "university-of-massachusetts-amherst": {
+      "rate": 0.5989,
+      "a_test_weight": 0.5,
+      "cutoff_c": -0.37575136703953704,
+      "pool_mean": 1380.1497085029296,
+      "pool_sd": 114.74574317096794,
+      "test_optional": true
+    },
+    "university-of-rhode-island": {
+      "rate": 0.7456,
+      "a_test_weight": 0.5,
+      "cutoff_c": -0.9910610467454033,
+      "pool_mean": 1165.078623241042,
+      "pool_sd": 166.75723983309075,
+      "test_optional": true
+    }
+  },
+  "params": {
+    "gamma_shared": 0.3,
+    "lapse": 0.05,
+    "rho_th": 0.4
+  }
+}

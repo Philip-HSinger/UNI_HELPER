@@ -29,6 +29,13 @@ for sid in IDS:
 stats = []
 for f in sorted(RAW.glob("stats_batch*.json")):
     stats += load(f)
+stat_fixes = load(VERIFY / "stats_check.json") if (VERIFY / "stats_check.json").exists() else []
+for chk in stat_fixes:
+    for s in stats:
+        if s["school_id"] == chk["school_id"]:
+            for c in chk.get("corrections", []):
+                s[c["field"]] = c["should_be"]
+            s["verified"] = chk["verdict"]
 for s in stats:
     if s["school_id"] in schools:
         schools[s["school_id"]].update(stats=s)

@@ -1,0 +1,673 @@
+[
+  {
+    "school_id": "tufts",
+    "school": "Tufts",
+    "cycle": "2026-27",
+    "no_supplement": false,
+    "prompt_notes": "Cycle confirmed: the official page is headed 'Short Answer Prompts for the Class of 2031' (entering fall 2027). Each applicant answers two required short answers. Prompt #1 (tufts-1, 75-150 words) goes to all applicants. Each applicant also answers exactly ONE Prompt #2, set by their intended school/program (tufts-2 to tufts-5, each 100-200 words). Applicants do not pick their Prompt #2, so choose_group is null. Prompt #1's range was printed in parentheses after the prompt ('(75-150 words)'); that parenthetical was removed from the stored text and recorded as word_min/word_limit. Prompt #2's range comes from each lead-in line, e.g. 'Applicants to the School of Arts and Sciences are required to answer the following question in 100-200 words:'. The prompt text is identical on the official short-answer page and the official Inside Admissions blog post (Jun 26). The blog also gives non-prompt guidance, e.g. 'What actions have you taken to learn about Tufts so far?'. That guidance is advice, not part of the prompt, and is not recorded. No optional prompts are listed. Not checked inside the Common App/Coalition portal itself (login required).",
+    "prompt_sources": [
+      "https://admissions.tufts.edu/apply/essay-questions/",
+      "https://admissions.tufts.edu/apply/short-answer-questions/",
+      "https://admissions.tufts.edu/blogs/inside-admissions/post/tufts-short-answer-questions-for-the-class-of-2031/",
+      "https://www.collegetransitions.com/blog/tufts-university-essay-prompts-3"
+    ],
+    "stats": {
+      "school_id": "tufts",
+      "school": "Tufts University",
+      "cds_year": "2025-26",
+      "cds_url": "https://provost.tufts.edu/institutionalresearch/wp-content/uploads/sites/5/CDS_2025-2026.pdf",
+      "applicants": 33395,
+      "admits": 3612,
+      "enrolled": 1764,
+      "admit_rate": 0.1082,
+      "ed_applicants": 3344,
+      "ed_admits": 1071,
+      "ed_rate": 0.3203,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": 0.42,
+      "pct_submit_act": 0.16,
+      "sat_ebrw": [
+        720,
+        740,
+        760
+      ],
+      "sat_math": [
+        730,
+        760,
+        780
+      ],
+      "sat_composite": [
+        1460,
+        1500,
+        1520
+      ],
+      "act_composite": [
+        33,
+        34,
+        35
+      ],
+      "test_importance": "Considered",
+      "test_policy_2026_27": "test-optional",
+      "test_policy_url": "https://admissions.tufts.edu/apply/applying-to-tufts/sat-and-act-tests/",
+      "deadlines": {
+        "ED1": "Nov 2",
+        "ED2": "Jan 4",
+        "EA": null,
+        "RD": "Jan 4"
+      },
+      "deadlines_url": "https://admissions.tufts.edu/apply/first-year-students/",
+      "notes": "CDS 2025-26 = Fall 2025 entering class. C1 totals are sums of the men/women/unknown-sex rows (33,395 / 3,612 / 1,764); the C1 residency table on the same page totals 33,415 / 3,613 / 1,765, so the two disagree slightly (admit rate is 0.108 either way). The PDF text layer is garbled in places; C7 and C8A were read from the rendered page images. C8A (Fall 2027): SAT/ACT 'not required but considered if submitted'. No Early Action plan. Admissions site: 'Tufts University is test-optional for all undergraduate applicants' (no end date given). Deadlines page lists ED I Nov 2, 2026; ED II Jan 4, 2027; RD Jan 4, 2027."
+    }
+  },
+  {
+    "school_id": "boston-college",
+    "school": "Boston College",
+    "cycle": "2026-27",
+    "no_supplement": false,
+    "prompt_notes": "Cycle confirmed: the official BC apply page section is headed 'Supplemental Questions 2026-27'. The instruction reads verbatim: 'We would like to get a better sense of you. Please respond to one of the first four prompts below (400 word limit). Students applying to the Human Centered Engineering major should respond to Prompt #5 instead.' The leading numerals ('1. ' etc.) were removed from the stored text. The 400-word limit is stated once for the whole set. Applying it to prompt 5 is an inference, because the page gives prompt 5 no separate limit. Prompt 5 begins with the italic label 'Human-Centered Engineering (HCE) Applicants only:', which is kept verbatim. Punctuation is kept as published, including the mixed quotes in prompt 2, which opens with a straight quote and closes with a curly one. Whitespace was normalized to single spaces; the source has a double space after 'background.' in prompt 3. Prompts 3 and 4 contain link text ('The Danger of a Single Story', 'A Pocket Guide to Jesuit Education') kept as plain text. A third-party guide says the 2026-27 wording is unchanged from 2025-26. The official page lists no other BC-specific short answers. Not checked inside the Common App portal itself (login required).",
+    "prompt_sources": [
+      "https://www.bc.edu/content/bc-web/admission/apply.html",
+      "https://www.collegetransitions.com/blog/boston-college-supplemental-essay-prompts-3"
+    ],
+    "stats": {
+      "school_id": "boston-college",
+      "school": "Boston College",
+      "cds_year": "2024-25",
+      "cds_url": "https://www.bc.edu/content/dam/bc1/offices/irp/ir/cds/Boston_College_CDS_2024-2025_Final.pdf",
+      "applicants": 34779,
+      "admits": 5632,
+      "enrolled": 2394,
+      "admit_rate": 0.1619,
+      "ed_applicants": 4288,
+      "ed_admits": 1434,
+      "ed_rate": 0.3344,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": 0.3,
+      "pct_submit_act": 0.15,
+      "sat_ebrw": [
+        710,
+        740,
+        760
+      ],
+      "sat_math": [
+        730,
+        760,
+        780
+      ],
+      "sat_composite": [
+        1460,
+        1500,
+        1520
+      ],
+      "act_composite": [
+        33,
+        34,
+        35
+      ],
+      "test_importance": "Important",
+      "test_policy_2026_27": "test-optional",
+      "test_policy_url": "https://www.bc.edu/content/bc-web/admission/apply/test-optional.html",
+      "deadlines": {
+        "ED1": "Nov 1",
+        "ED2": "Jan 4",
+        "EA": null,
+        "RD": "Jan 4"
+      },
+      "deadlines_url": "https://www.bc.edu/content/bc-web/admission/apply.html",
+      "notes": "2024-25 (Fall 2024 entering class) is the newest CDS on BC's IR page; no 2025-26 CDS found. The CDS C21 dates contain a typo ('Other early decision plan closing date 1/2/25'). C8A in the CDS (for Fall 2026): SAT/ACT 'not required but considered if submitted'. No Early Action plan. Admissions site (not CDS): 'Boston College offers a test-optional admission policy' and encourages test takers to submit scores. The site's Class of 2030 (Fall 2026) profile lists 41,923 applications, 5,636 admitted (13.4%) and 2,400 enrolled, with about two-thirds of enrollees submitting scores; this is newer than the CDS, but the record uses the CDS figures. The apply page says 'Supplemental Questions 2026-27'; it also lists a Nov 1 deadline for spring first-year entry and QuestBridge."
+    }
+  },
+  {
+    "school_id": "boston-university",
+    "school": "Boston University",
+    "cycle": "2026-27",
+    "no_supplement": false,
+    "prompt_notes": "Cycle: third-party guides dated Aug-Sep 2026 (College Transitions 2026-08-13, College Essay Guy updated 2026-08-04, NextAdmit 2026-09-21, Ivy Coach, Esslo, College Essay Advisors) all label these 2026-27; official BU pages (bu.edu/admissions/apply/first-year/, bu.edu/khc/admissions/) confirm one required BU supplemental essay plus a required essay for Kilachand applicants but do NOT print the prompt text, and the Common App prompt text is behind login, so no prompt could be verified verbatim against an official page. Change vs 2025-26: the 'Reflect on a social or community issue that deeply resonates with you...' option was dropped; all applicants now answer the single Why-BU prompt (College Transitions, NextAdmit, Esslo, Ivy Coach agree). UNCERTAIN wording of prompt 1: College Essay Guy, College Transitions, NextAdmit and College Essay Advisors give the two-sentence question with 'How do you hope to contribute to our campus community?'; Ivy Coach, Esslo and I'mAdmitted give only 'What about being a student at BU most excites you?'. Majority version recorded. The preamble is assembled from the 2025-26 wording (NextAdmit/UPgraded/CollegeVine, em dash and curly quotes) with the 2026-27 lead-in 'please respond to the following question in 300 words or less:' as reported by College Essay Guy (2025-26 said 'one of the following two questions'); exact punctuation of the preamble is not officially confirmed. Kilachand: Ivy Coach, Esslo and College Essay Guy agree on choose 1 of 2 at 600 words; the shared intro paragraph is copied from the 2025-26 CollegeVine/UPgraded text (College Essay Guy's 2026-27 paraphrase matches it). I'mAdmitted instead lists two 250-word KHC essays ('A Question on Your Mind', 'Leadership Vision') - these look like an older or unreliable version and were not recorded. No other program-specific essays found: the Trustee Scholarship essay no longer exists (BU's merit page lists only the Presidential Scholarship, which needs no extra essay); CFA music/theatre/art use auditions/portfolios, not written prompts.",
+    "prompt_sources": [
+      "https://www.bu.edu/admissions/apply/first-year/",
+      "https://www.bu.edu/admissions/apply/first-year/application-requirements/",
+      "https://www.bu.edu/admissions/apply/first-year/faq/",
+      "https://www.bu.edu/admissions/apply/deadlines/",
+      "https://www.bu.edu/khc/",
+      "https://www.bu.edu/khc/admissions/",
+      "https://www.bu.edu/khc/prospective-students/",
+      "https://www.bu.edu/khc/about/",
+      "https://www.bu.edu/admissions/tuition-aid/scholarships-financial-aid/",
+      "https://www.bu.edu/admissions/tuition-aid/scholarships-financial-aid/first-year-merit/",
+      "https://www.bu.edu/admissions/tuition-aid/scholarships-financial-aid/first-year-merit/trustee/",
+      "https://www.commonapp.org/explore/boston-university",
+      "https://www.collegeessayguy.com/blog/boston-university-supplemental-essay",
+      "https://www.ivycoach.com/the-ivy-coach-blog/college-essays/boston-university-supplemental-essay-prompts/",
+      "https://www.esslo.org/supplemental-essays/boston-university",
+      "https://blog.collegevine.com/how-to-write-the-boston-university-essays",
+      "https://www.collegetransitions.com/blog/boston-university-supplemental-essay-prompts/",
+      "https://nextadmit.com/blog/how-to-write-the-bu-supplemental-essays/",
+      "https://imadmitted.com/schools/bu",
+      "https://imadmitted.com/supplemental-essay-prompts",
+      "https://admissionsight.com/boston-university-supplemental-essays/",
+      "https://www.collegeessayadvisors.com/supplemental-essay/boston-university-bu-supplemental-essay-prompt-guide/",
+      "https://upgradedfuture.com/boston-university",
+      "https://www.indigoresearch.org/blog/boston-university-bu-supplemental-essay",
+      "https://github.com/neelsatyavolu/college-forge/pull/58"
+    ],
+    "stats": {
+      "school_id": "boston-university",
+      "school": "Boston University",
+      "cds_year": "2025-26",
+      "cds_url": "https://www.bu.edu/asir/files/2026/07/CDS-2025-2026-C-updated.pdf",
+      "applicants": 76776,
+      "admits": 9853,
+      "enrolled": 3449,
+      "admit_rate": 0.1283,
+      "ed_applicants": 6907,
+      "ed_admits": 2165,
+      "ed_rate": 0.3135,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": 0.36,
+      "pct_submit_act": 0.1,
+      "sat_ebrw": [
+        700,
+        730,
+        750
+      ],
+      "sat_math": [
+        720,
+        750,
+        780
+      ],
+      "sat_composite": [
+        1420,
+        1470,
+        1510
+      ],
+      "act_composite": [
+        33,
+        34,
+        34
+      ],
+      "test_importance": "Considered",
+      "test_policy_2026_27": "test-optional",
+      "test_policy_url": "https://www.bu.edu/admissions/apply/first-year/",
+      "deadlines": {
+        "ED1": "Nov 2",
+        "ED2": "Jan 5",
+        "EA": null,
+        "RD": "Jan 5"
+      },
+      "deadlines_url": "https://www.bu.edu/admissions/apply/deadlines/",
+      "notes": "CDS 2025-26 = Fall 2025 entering class. The figures come from the 'updated' Section C file posted in July 2026, which matches the updated full CDS (https://www.bu.edu/asir/files/2026/07/CDS-2025-2026-updated.pdf). The C21 ED applicant and admit counts are not split between ED1 and ED2, so they are probably combined. No Early Action plan. The CDS C8F and the admissions site both say BU is test-optional for first-year applicants applying through fall 2028 and spring 2029. The CDS lists ED closing Nov 1, but the admissions deadlines page lists Nov 2 for the current cycle (Nov 1, 2026 is a Sunday); notification dates are Dec 14 (ED) and Feb 8 (ED2)."
+    }
+  },
+  {
+    "school_id": "northeastern",
+    "school": "Northeastern",
+    "cycle": "2026-27",
+    "no_supplement": true,
+    "prompt_notes": "Northeastern has no supplemental essay: the official first-year requirements page lists only the Common App/Coalition application, fee, counselor + teacher recommendations, transcripts, optional testing, English proficiency, optional CAMD portfolio, and DCF for non-US citizens - no writing supplement (third-party Koppelman Group 2025-26 and CollegeVine agree; Koppelman notes only an optional resume upload). The John Martinson Honors Program is by invitation from the regular application, with no separate essay. Cycle: the official pages carry no year label; the CAMD portfolio page lists deadlines ED I 11/15/26, EA 12/15/26, ED II 01/15/27, RD 02/01/27, i.e. the 2026-27 cycle (fall 2027 entry). prompts is left empty per the no-supplement rule; 'related_optional_statements' (non-standard field) records the verbatim optional CAMD portfolio personal-statement prompts, which are portfolio components, not Common App supplements. Theatre (Performance) asks only to 'Include a resume and a personal statement.' with no prompt, so it is not listed.",
+    "prompt_sources": [
+      "https://admissions.northeastern.edu/application-information/first-year-applicants/",
+      "https://admissions.northeastern.edu/application-information/",
+      "https://admissions.northeastern.edu/application-information/admissions-deadlines-decisions/",
+      "https://admissions.northeastern.edu/apply/first-year-application-requirements/",
+      "https://admissions.northeastern.edu/faq/",
+      "https://camd.northeastern.edu/undergraduate-admissions/portfolios/",
+      "https://www.koppelmangroup.com/blog/2025/8/27/how-to-write-the-northeastern-supplement-2025-2026",
+      "https://www.collegevine.com/faq/16141/does-northeastern-university-have-a-supplemental-essay"
+    ],
+    "stats": {
+      "school_id": "northeastern",
+      "school": "Northeastern University",
+      "cds_year": "2025-26",
+      "cds_url": "https://uds.northeastern.edu/university-facts/common-data-set/",
+      "applicants": 105257,
+      "admits": 5920,
+      "enrolled": 2736,
+      "admit_rate": 0.0562,
+      "ed_applicants": 5404,
+      "ed_admits": 1910,
+      "ed_rate": 0.3534,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": 0.22,
+      "pct_submit_act": 0.08,
+      "sat_ebrw": [
+        710,
+        730,
+        750
+      ],
+      "sat_math": [
+        720,
+        750,
+        780
+      ],
+      "sat_composite": [
+        1440,
+        1480,
+        1510
+      ],
+      "act_composite": [
+        33,
+        33,
+        34
+      ],
+      "test_importance": "Very Important",
+      "test_policy_2026_27": "test-optional",
+      "test_policy_url": "https://admissions.northeastern.edu/application-information/first-year-applicants/",
+      "deadlines": {
+        "ED1": "Nov 1",
+        "ED2": "Jan 1",
+        "EA": "Nov 1",
+        "RD": "Jan 1"
+      },
+      "deadlines_url": "https://admissions.northeastern.edu/application-information/admissions-deadlines-decisions/",
+      "notes": "The CDS is an HTML page, not a PDF. Its heading says 'Northeastern 2024-2025', but the content covers Fall 2025 admissions, the Fall 2027 test policy and 2026-27 costs, so it is the 2025-26 edition and is mislabeled. The archived PDF CDS-2024-25 (Fall 2024) is at http://uds.northeastern.edu/wp-content/uploads/2026/03/CDS-2024-25.pdf. Applicants are the sum of the sex rows (46,252 + 58,959 + 46 = 105,257); the residency table total is 105,256. Northeastern offers Early Action (Nov 1 deadline, notification by Feb 15, non-restrictive), but the CDS has no EA count fields and no EA applicant or admit counts were found on the official site, so EA counts are null. The C21 ED counts are not split between ED I and ED II. C7 rates test scores 'Very Important' even though C8A (Fall 2027) says 'not required but considered if submitted'. Admissions site: 'Northeastern University is test-optional'. The deadlines page does not name a cycle year but is the current page as of Nov 2026."
+    }
+  },
+  {
+    "school_id": "wesleyan-university",
+    "school": "Wesleyan",
+    "cycle": "2026-27",
+    "no_supplement": false,
+    "prompt_notes": "UNCONFIRMED ON AN OFFICIAL PAGE. Wesleyan's official admission pages (first-year, application process, FAQ, international) say only that applicants complete the Common App or Coalition/Scoir application 'including Wesleyan's member-specific questions' and do not publish any essay prompt text. The only prompt found is from third-party Esslo, which labels it the 2026-2027 prompt for 'International — school outside the U.S./Canada' (250 words). AADPS (Chinese admissions guide) lists the same wording, 250 words, under international students for an earlier cycle (page labeled 2022-23 / 2025-26), and the same prompt appears as one of Wesleyan's old optional supplement choices in a 2014 blog. Whether it is required or optional for international applicants is not stated by any source, so 'required' is null. For domestic applicants there appears to be no supplemental essay: the Common App 2026-27 requirements grid (updated 09-25-2026) shows a blank 'Writing' (required writing supplement) column for Wesleyan, AdmissionSight (2025-26) says Wesleyan has no supplemental essays, and CollegeVine lists none. Wesleyan's member questions also include two narrow disciplinary/conviction questions (not essays) and optional SlideRoom arts supplements (music, theatre, visual arts, film, dance), neither of which is an essay prompt. Verify the international prompt in the Common App Wesleyan member questions before relying on it.",
+    "prompt_sources": [
+      "https://www.wesleyan.edu/apply/",
+      "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html",
+      "https://www.wesleyan.edu/admission/application-process.html",
+      "https://www.wesleyan.edu/admission/undergraduate-admission/early-decision.html",
+      "https://www.wesleyan.edu/admission/information-for-school-counselors.html",
+      "https://www.wesleyan.edu/admission/admission-faq.html",
+      "https://www.wesleyan.edu/admission/undergraduate-admission/international/index.html",
+      "https://admission.wesleyan.edu/apply/",
+      "https://www.esslo.org/college-essay-grader/wesleyan",
+      "https://aadps.net/2014/2132.html",
+      "https://www.collegevine.com/schools/wesleyan-university/essay-prompts",
+      "https://www.collegeessayguy.com/blog/wesleyan-university-supplemental-essay",
+      "https://www.commonapp.org/explore/wesleyan-university",
+      "https://content.commonapp.org/Files/ReqGrid.pdf"
+    ],
+    "stats": {
+      "school_id": "wesleyan-university",
+      "school": "Wesleyan University",
+      "cds_year": "2025-26",
+      "cds_url": "https://wesleyan0.sharepoint.com/:f:/s/IRDataandReports/EtCqjFa5sgBLif1SveNykPUB6j5D6s_nZFlWs_GLu_3yXA",
+      "stats_source": "CDS",
+      "applicants": 14973,
+      "admits": 2451,
+      "enrolled": 825,
+      "admit_rate": 0.1637,
+      "ed_applicants": 1220,
+      "ed_admits": 522,
+      "ed_rate": 0.4279,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": 0.4352,
+      "pct_submit_act": 0.1515,
+      "sat_ebrw": [
+        690,
+        730,
+        750
+      ],
+      "sat_math": [
+        660,
+        720,
+        770
+      ],
+      "sat_composite": [
+        1350,
+        1460,
+        1510
+      ],
+      "act_composite": [
+        32,
+        33,
+        35
+      ],
+      "test_importance": "Considered",
+      "test_policy_2026_27": "test-optional (homeschooled applicants must submit SAT or ACT)",
+      "test_policy_url": "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html",
+      "deadlines": {
+        "ED1": "Nov 15",
+        "ED2": "Jan 1",
+        "EA": null,
+        "RD": "Jan 1"
+      },
+      "deadlines_url": "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html",
+      "notes": "Wesleyan publishes its CDS only as .xlsx files in a SharePoint folder linked from https://www.wesleyan.edu/ir/common-data-sets.html. The file used is CDS_2025-2026.xlsx (Fall 2025). Values come from the sheet's answer columns (C.101-C.2201). C9: 359 SAT / 125 ACT submitters of 825 enrolled. ED counts combine ED I (11/15) and ED II (1/1). No EA plan. The admissions page does not print a cycle year; dates are taken as current for 2026-27."
+    }
+  },
+  {
+    "school_id": "college-of-the-holy-cross",
+    "school": "Holy Cross",
+    "cycle": "2026-27",
+    "no_supplement": true,
+    "prompt_notes": "No school-specific supplemental essay found for first-year applicants. The official How to Apply page (https://www.holycross.edu/admissions-aid/how-to-apply) lists 'What's Required?' as the Common Application or Coalition (Scoir) application, transcript, two recommendations, $65 fee and the ED agreement; it lists no writing supplement. Optional items are an interview, test scores, Schoolhouse certifications, and 'Supplementary materials that showcase your special talents or achievement, such as artwork, recorded performances, original writing, research and additional recommendations' (via SlideRoom). The Common App 2026-27 Requirements Grid (updated 09-25-2026) lists Holy Cross deadlines (ED 11/15/2026, EDII 1/15/2027, RD 01/15/2027), Personal essay = Y, and SlideRoom portfolio. The grid's Writing supplement column is blank for Holy Cross, but it is also blank for schools that do have supplements (e.g. Boston College, Cornell), so the grid does not settle it on its own. The Common App explore page shows no writing questions. Cycle confirmed as 2026-27 from those deadline years. UNCERTAIN: older Holy Cross pages (a 2013 admissions blog post, and a cached hcappsdev.holycross.edu interviews page that returned 503) mention an OPTIONAL 'Holy Cross Response' or additional questions on the Applicant Status Portal after submission. In the past it was offered to students who could not interview. A 2023 Top Tier Admissions article also calls this a 'stealth essay'. No official page shows its current wording, so it is not recorded here. Applicants should check their portal after submitting. The QuestBridge page says the Holy Cross QuestBridge Supplement has no additional essays. Third-party Draftl also says no supplement for 2026-27. Do not confuse this school with Holy Cross College (Notre Dame, IN).",
+    "prompt_sources": [
+      "https://www.holycross.edu/admissions-aid/how-to-apply",
+      "https://www.holycross.edu/admissions-aid/how-to-apply/questbridge-applicants",
+      "https://www.holycross.edu/admissions-aid/how-to-apply/international-students",
+      "https://www.holycross.edu/admissions-aid/connect-with-us/information-for-counselors",
+      "https://www.holycross.edu/admissions-aid/connect-with-us/admission-programming",
+      "https://www.holycross.edu/admissions-aid",
+      "https://www.holycross.edu/sitemap.xml",
+      "https://www.commonapp.org/explore/college-holy-cross",
+      "https://content.commonapp.org/Files/ReqGrid.pdf",
+      "https://hcappsdev.holycross.edu/hcs/hcweb/admissions-aid/interviews.html",
+      "https://hcappsdev.holycross.edu/hcs/hcweb/admissions-aid/application-tips.html",
+      "https://toptieradmissions.com/hidden-college-essays-pop-ups-and-stealth-supplements/",
+      "https://draftl.com/schools/college-of-the-holy-cross",
+      "https://gradpilot.com/news/jesuit-college-essay-prompts-2026-2027",
+      "https://solutionprep.com/wp-content/uploads/2026/06/Solution-Prep-Essay-Handouts.pdf"
+    ],
+    "stats": {
+      "school_id": "college-of-the-holy-cross",
+      "school": "College of the Holy Cross",
+      "cds_year": "2023-24",
+      "cds_url": "https://www.holycross.edu/document/common-data-set-20232024",
+      "applicants": 8670,
+      "admits": 1829,
+      "enrolled": 824,
+      "admit_rate": 0.211,
+      "ed_applicants": 761,
+      "ed_admits": 511,
+      "ed_rate": 0.6715,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": 0.35,
+      "pct_submit_act": 0.19,
+      "sat_ebrw": [
+        630,
+        680,
+        720
+      ],
+      "sat_math": [
+        620,
+        660,
+        700
+      ],
+      "sat_composite": [
+        1270,
+        1340,
+        1420
+      ],
+      "act_composite": [
+        28,
+        30,
+        32
+      ],
+      "test_importance": "Considered",
+      "test_policy_2026_27": "test-optional",
+      "test_policy_url": "https://www.holycross.edu/admissions-aid/how-to-apply",
+      "deadlines": {
+        "ED1": "Nov 15",
+        "ED2": "Jan 15",
+        "EA": null,
+        "RD": "Jan 15"
+      },
+      "deadlines_url": "https://www.holycross.edu/admissions-aid/how-to-apply",
+      "notes": "STALE: the newest CDS on Holy Cross's Institutional Research page (https://www.holycross.edu/finance/institutional-research) is 2023-24 (Fall 2023 entering class). No 2024-25 or 2025-26 CDS was found, and guessed URLs returned 404. The PDF link /media/2068 redirects to the URL given in cds_url. The CDS C8 (for Fall 2025) reads 'Not required for admission, but considered for some'. No Early Action plan. Admissions site: test scores are 'entirely optional' (test-optional since the class entering in 2006); Holy Cross superscores SAT and ACT. The admissions homepage (https://www.holycross.edu/admissions-aid) shows Class of 2030 figures of about 10,600 applications and an 18% acceptance rate, newer than the CDS (rounded and not CDS-sourced). The deadlines page does not name a cycle year; QuestBridge deadline is Nov 1."
+    }
+  },
+  {
+    "school_id": "fordham-university",
+    "school": "Fordham",
+    "cycle": "2026-27",
+    "no_supplement": false,
+    "prompt_notes": "Prompt text copied verbatim from Fordham's official 'Writing for the Common Application' page (listed there as A, B, C under 'Short Response', with the lead-in: 'Your choice of one of three short response questions (300 words max) is meant to help you reflect on your personal growth and community impact. How will you continue to grow and impact our communities at Fordham and in New York City?'). The page states these optional sections carry no penalty if skipped. The official page is undated; the 2026-27 cycle is inferred from CollegeEssayGuy ('Guide 2026/2027', updated 08/10/2026) and Esslo ('essay prompts for 2026-2027'), which both list the same three prompts with 300-word limits. CollegeEssayGuy/CollegeVine quote the in-app instruction as 'You may choose to answer one (1) of the optional questions below. Keep in mind that your response is a maximum of 300 words.' Common App 2026-27 requirements grid (updated 09-25-2026) shows no required writing supplement for Fordham, consistent with the prompts being optional. Not included: the official page also mentions optional 'Challenges and Circumstances' and 'Additional Information' sections, which are standard Common App sections rather than Fordham-specific prompts. No program-specific (e.g., Gabelli, Honors) essay prompts were found. Empowerly's claim of '1 required Fordham-specific question' conflicts with the official page and was disregarded. CollegeVine's older guide lists four options (incl. a Jesuit 'contribute to our campus community' prompt and a 'something you are proud of' prompt) from earlier cycles; those are not on the current official page.",
+    "prompt_sources": [
+      "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/writing-for-the-common-application/",
+      "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/writing-for-the-common-application/essay-guidelines/",
+      "https://www.collegeessayguy.com/blog/fordham-university-supplemental-essay",
+      "https://www.esslo.org/college-essay-grader/fordham",
+      "https://empowerly.com/blog/blog-supplemental-essay-prompts-2026-27",
+      "https://blog.collegevine.com/how-to-write-the-fordham-university-essays",
+      "https://content.commonapp.org/Files/ReqGrid.pdf"
+    ],
+    "stats": {
+      "school_id": "fordham-university",
+      "school": "Fordham University",
+      "cds_year": "2024-25",
+      "cds_url": "https://fordhamit-my.sharepoint.com/:x:/g/personal/oira_fordham_edu/EaJPT5Oj60pOvKeX3_fzOqQBLFA9sVfvKFLE4nT-WLJSRQ?e=9ExBg2",
+      "stats_source": "admissions site (Undergraduate Admission Facts, Fall 2026 / Class of 2030), NOT CDS",
+      "applicants": 53599,
+      "admits": 25300,
+      "enrolled": 2653,
+      "admit_rate": 0.472,
+      "ed_applicants": null,
+      "ed_admits": null,
+      "ed_rate": null,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": null,
+      "pct_submit_act": null,
+      "sat_ebrw": null,
+      "sat_math": null,
+      "sat_composite": [
+        1355,
+        null,
+        1470
+      ],
+      "act_composite": [
+        31,
+        null,
+        34
+      ],
+      "test_importance": null,
+      "test_policy_2026_27": "test-optional",
+      "test_policy_url": "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/testing-policy/",
+      "deadlines": {
+        "ED1": "Nov 1",
+        "ED2": "Jan 3",
+        "EA": "Nov 1",
+        "RD": "Jan 3"
+      },
+      "deadlines_url": "https://www.fordham.edu/undergraduate-admission/apply/",
+      "notes": "I could not open the CDS. Fordham's CDS page (https://www.fordham.edu/about/leadership-and-administration/administrative-offices/office-of-the-provost/provost-office-units/institutional-research-and-assessment/consumer-information/common-data-set/) lists CDS 2024-25 as the newest. It is a OneDrive Excel share that refused anonymous download (HTML error / 403). No 2025-26 CDS is posted. All stats here come from https://www.fordham.edu/undergraduate-admission/why-fordham/admission-facts/ (Fall 2026 applications, updated Sept 23, 2026), so they are one cycle newer than any CDS. Figures: 53,599 completed applications (excludes PCS), 25,300 offers, 2,653 enrolled, acceptance rate 47%. SAT and ACT middle 50% are for ENROLLED students (SAT 1355-1470, ACT 31-34). No medians or section scores are given. 70.1% of enrollees did not submit tests, so about 29.9% submitted SAT or ACT combined; the split is not published. Admitted-student middle 50%: SAT 1380-1490, ACT 32-34 (60.3% of admits test-free). ED/EA counts and C7 test importance are not available without the CDS. Third-party sites (CollegeVine) cite the 2024-25 CDS at 43,364 applicants / 25,719 admits; this is unverified and not used. Deadlines (2026-27 cycle, explicitly dated): EA and ED I Nov 1, 2026, extended to Nov 8 this cycle; RD and ED II Jan 3, 2027."
+    }
+  },
+  {
+    "school_id": "fairfield-university",
+    "school": "Fairfield",
+    "cycle": "2026-27",
+    "no_supplement": true,
+    "prompt_notes": "No school-specific supplemental essay for first-year applicants. The official First-Year Applicants page lists 'Required Components' as a 'Completed Common Application', a 'Personal statement (Common Application essay)', a '$65 application fee or official fee waiver', and the counselor materials. It lists no writing supplement. The only Fairfield-specific item mentioned is the 'Fairfield University Supplement to the Common Application', where test-optional applicants indicate that choice. The Common App explore page shows only 'Common Application Essay' and no supplemental questions. The Common App 2026-27 Requirements Grid (updated 09-25-2026) lists Fairfield with EDI 11/15/2026, EDII 1/15/2027, EA 11/1/2026, RD 01/15/2027 and Personal essay = Y. That confirms the 2026-27 cycle, although the grid's Writing column is blank for every school, so it is not conclusive on its own. Search-result snippets from third-party Draftl, Clarity Prep and UPgraded also say no supplement; those pages were not opened. CollegeCalcAI lists a '250 words' item, but it is the Accelerated Second Degree Nursing (ASDNU) portal essays (150-250 words each). That is a post-baccalaureate program, not first-year entry, so it is excluded. Also excluded: Fairfield Bellarmine (https://www.fairfield.edu/bellarmine/admission), Fairfield's separate two-year associate-degree college, with its own rolling application (not the Common App). It says 'Choose one of four prompts to tell us more about who you are.' and 'Written, video, and creative pieces are all welcomed options for sharing your best self.' The four prompts are not published on the page, and its dates refer to the 2026 entry cycle. The Honors Program is by invitation and has no separate essay.",
+    "prompt_sources": [
+      "https://www.fairfield.edu/admission-and-aid/apply/first-year-applicants/index.html",
+      "https://www.fairfield.edu/admission-and-aid/apply/index.html",
+      "https://www.fairfield.edu/bellarmine/admission",
+      "https://www.commonapp.org/explore/fairfield-university",
+      "https://content.commonapp.org/Files/ReqGrid.pdf",
+      "https://collegecalcai.com/schools/fairfield-university/supplemental-essays",
+      "https://solutionprep.com/wp-content/uploads/2026/06/Solution-Prep-Essay-Handouts.pdf"
+    ],
+    "stats": {
+      "school_id": "fairfield-university",
+      "school": "Fairfield University",
+      "cds_year": "2025-26",
+      "cds_url": "https://www.fairfield.edu/_files/documents/pdfs/4422120485_about_offices-and-departments_institutional-research_common-data-sheet-2025-26_03302026.pdf",
+      "stats_source": "CDS",
+      "applicants": 21299,
+      "admits": 5336,
+      "enrolled": 1513,
+      "admit_rate": 0.2505,
+      "ed_applicants": 689,
+      "ed_admits": 566,
+      "ed_rate": 0.8215,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": 0.17,
+      "pct_submit_act": 0.04,
+      "sat_ebrw": [
+        640,
+        670,
+        700
+      ],
+      "sat_math": [
+        630,
+        660,
+        690
+      ],
+      "sat_composite": [
+        1280,
+        1330,
+        1370
+      ],
+      "act_composite": [
+        29,
+        30,
+        32
+      ],
+      "test_importance": "Considered",
+      "test_policy_2026_27": "test-optional (SAT/ACT required for homeschooled applicants; TOEFL/IELTS/Duolingo for non-native English speakers)",
+      "test_policy_url": "https://www.fairfield.edu/admission-and-aid/apply/first-year-applicants/",
+      "deadlines": {
+        "ED1": "Nov 15",
+        "ED2": "Jan 15",
+        "EA": "Nov 1",
+        "RD": "Jan 15"
+      },
+      "deadlines_url": "https://www.fairfield.edu/admission-and-aid/apply/first-year-applicants/",
+      "notes": "2025-26 CDS (Fall 2025 entering class; file dated 03/30/2026, linked from the IR page). Page headers inside the PDF still read 'Common Data Set 2024-2025' (template carry-over), but the data are labelled Fall 2025. C9: 258 SAT / 54 ACT submitters of 1,513 enrolled (17% / 4% as published). C21 ED counts combine ED I (11/15) and ED II (1/15). The standard CDS does not ask for EA counts and none are published. C22 EA notification is 12/20; the admissions page gives Dec 20-Jan 15. The admissions FAQ cites Class of 2030 admitted-student middle 50% of SAT 1320-1420 and ACT 29-33 (admitted, not enrolled). The admissions page does not print a cycle year; dates are taken as current for 2026-27."
+    }
+  },
+  {
+    "school_id": "university-of-massachusetts-amherst",
+    "school": "UMass Amherst",
+    "cycle": "2026-27",
+    "no_supplement": false,
+    "prompt_notes": "Three required UMass-specific short answers: prompts 1 and 2 for everyone, plus ONE of prompts 3/4. The official admissions page says 'The third question depends on whether or not you're interested in joining Commonwealth Honors College' (Honors-interested -> prompt 3; others -> prompt 4); the official FY27 (2026-2027) UREP essay handout says 'Please answer one of the following questions' - modeled as choose 1 of 2. Cycle confirmed as 2026-27 via the official FY27 handout (uploaded 2026-09, titled for the '2026-2027 Common App questions'), whose prompts match the admissions page. Text is copied from the official first-year application instructions page, which states no word limits; the 100-word limit comes from the official FY27 handout ('UMASS CUSTOM QUESTIONS (100 WORDS EACH)'). Minor wording variants exist: the FY27 handout phrases prompt 2 as 'Why did you choose this major(s)?'; third-party sites (Esslo, CollegeVine 2025-26) quote the Common App wording as 'Please tell us why you want to attend UMass Amherst.' and 'Please tell us why you chose the Major(s) you did.' and Esslo gives the honors prompt ending '...develop it at UMass?'. The exact in-app Common App wording could not be viewed (login required). The Commonwealth Honors College essay page (honorspaths.honors.umass.edu) returned HTTP 503.",
+    "prompt_sources": [
+      "https://www.umass.edu/admissions/first-year-application-instructions",
+      "https://www.umass.edu/sites/default/files/2026-09/FY27AdmissionsUREPUMassReadySetApply_EmpoweringVoiceEssay_Fillable.pdf",
+      "https://honorspaths.honors.umass.edu/chc-paths/on-campus-app/essay_questions",
+      "https://blog.collegevine.com/how-to-write-the-umass-amherst-essays",
+      "https://www.esslo.org/college-essay-grader/umass-amherst"
+    ],
+    "stats": {
+      "school_id": "university-of-massachusetts-amherst",
+      "school": "University of Massachusetts Amherst",
+      "cds_year": "2025-26",
+      "cds_url": "https://www.umass.edu/uair/media/1062/download",
+      "stats_source": "CDS",
+      "applicants": 53117,
+      "admits": 31813,
+      "enrolled": 5315,
+      "admit_rate": 0.5989,
+      "ed_applicants": null,
+      "ed_admits": null,
+      "ed_rate": null,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": 0.249,
+      "pct_submit_act": 0.03,
+      "sat_ebrw": [
+        660,
+        700,
+        740
+      ],
+      "sat_math": [
+        660,
+        710,
+        760
+      ],
+      "sat_composite": [
+        1330,
+        1410,
+        1480
+      ],
+      "act_composite": [
+        30,
+        32,
+        34
+      ],
+      "test_importance": "Considered",
+      "test_policy_2026_27": "test-optional (all majors; homeschooled applicants in an approved curriculum also not required)",
+      "test_policy_url": "https://www.umass.edu/admissions/test-optional-policy",
+      "deadlines": {
+        "ED1": null,
+        "ED2": null,
+        "EA": "Nov 5",
+        "RD": "Jan 15"
+      },
+      "deadlines_url": "https://www.umass.edu/admissions/important-dates-deadlines",
+      "notes": "2025-26 CDS (Fall 2025), linked as 'Fall 2025 Common Data Set' on https://www.umass.edu/uair/data/common-data-set. No ED plan (C21 = No). EA (Nov 5) is non-restrictive, and the CDS gives no EA counts. C9 inconsistency: ACT is published as 0.3% but with 160 submitters, which is 3.0% of 5,315; I used 0.030 (SAT 1,322 = 24.9% is consistent). C8E/C8D are blank. The admissions stats page shows Fall 2026: about 52.5K first-year applicants, 65% admitted, about 5.2K enrolled (newer than the CDS). The test-optional page gives no end date and no cycle year. The deadlines page also lists the spring first-year deadline as Oct 15 in one block and Nov 5 in another (inconsistent)."
+    }
+  },
+  {
+    "school_id": "university-of-rhode-island",
+    "school": "URI",
+    "cycle": "2025-26",
+    "no_supplement": false,
+    "prompt_notes": "No verbatim 2026-27 prompt text is published on any official URI page; URI's supplement questions live inside the Common App (login required). Prompt wording is copied from CollegeVine's 2025-26 guide (posted Sept 3, 2025), so cycle is recorded as 2025-26. Official confirmation available: URI's first-year page (current, shows '2026 Admitted Student Profile') says a supplemental essay is required for 'Honors, Nursing, Pharmacy, and Talent Development only' - there is NO supplement for general applicants. The official Honors Program page confirms the Honors statement is '250 words or less' and that the prompt asks applicants to pitch a creative Colloquium theme, why it matters to them, its connection to current world events and why it would captivate the campus community - consistent with prompt 3. The official first-year page confirms a 'required Nursing statement' and that 'All pharmacy applicants are required to submit a supplemental essay', but gives no wording or limits; 250-word limits for prompts 1-2 come only from CollegeVine. UNCERTAIN: the official TD page describes the TD essay differently ('should address why the student feels they are eligible for the TD program, and explain how the program’s opportunities will help them achieve their academic, professional, or personal goals', including aspects of lived experience), so the 2026-27 TD prompt may have been reworded; the 250-500 word range is from CollegeVine only. CollegeVine labels the PharmD prompt 'Required'; the Nursing prompt is required per URI's 'required Nursing statement'. Honors essay is required only for those seeking Honors consideration (priority deadline Dec 1).",
+    "prompt_sources": [
+      "https://web.uri.edu/admission/first-year/",
+      "https://www.commonapp.org/explore/university-rhode-island",
+      "https://blog.collegevine.com/how-to-write-the-university-of-rhode-island-essays",
+      "https://web.uri.edu/admission/scholarships/honors-program/",
+      "https://web.uri.edu/admission/first-year/td/",
+      "https://web.uri.edu/talentdevelopment/getting-in/applications-process/",
+      "https://web.uri.edu/pharmacy/academics/pharmd/admission/"
+    ],
+    "stats": {
+      "school_id": "university-of-rhode-island",
+      "school": "University of Rhode Island",
+      "cds_year": "2025-26",
+      "cds_url": "https://web.uri.edu/ir/wp-content/uploads/sites/276/CDS-PDF-2025-2026_fillablePDF.pdf",
+      "stats_source": "CDS",
+      "applicants": 28021,
+      "admits": 20892,
+      "enrolled": 3431,
+      "admit_rate": 0.7456,
+      "ed_applicants": 202,
+      "ed_admits": 150,
+      "ed_rate": 0.7426,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": 0.23,
+      "pct_submit_act": 0.0149,
+      "sat_ebrw": [
+        550,
+        620,
+        670
+      ],
+      "sat_math": [
+        520,
+        590,
+        645
+      ],
+      "sat_composite": [
+        1090,
+        1210,
+        1310
+      ],
+      "act_composite": [
+        25,
+        28,
+        31
+      ],
+      "test_importance": "Considered",
+      "test_policy_2026_27": "test-optional",
+      "test_policy_url": "https://web.uri.edu/admission/first-year/",
+      "deadlines": {
+        "ED1": "Nov 1",
+        "ED2": null,
+        "EA": "Dec 1",
+        "RD": "Feb 1"
+      },
+      "deadlines_url": "https://web.uri.edu/admission/first-year/",
+      "notes": "2025-26 CDS (Fall 2025). It is a fillable PDF and the checkboxes were read from the text layer. C7 'Considered' and C8A 'Yes, considered if submitted' look clear. C9 published 23.00% SAT (775) and 1.49% ACT (51). 775/3431 is 22.6%, so the published SAT percent is slightly off. The C21 label reads 'For the Fall 2024 entering class' (ED 202 applied, 150 admitted). This is probably a stale template label, but the ED counts may be from Fall 2024. There is only one ED round (Nov 1). EA (Dec 1) is non-restrictive, and the CDS gives no EA counts. The admissions site quotes a '2026 Admitted Student Profile' of SAT 1170-1340 and ACT 27-32 (admitted, not enrolled). C1 sex breakdown (men 1285 / women 2144 / unknown 2) totals 3431 enrolled, which matches the residency table."
+    }
+  }
+]
