@@ -1,0 +1,986 @@
+[
+ {
+  "pair": "rice-3|villanova-4",
+  "a_from_b": 15,
+  "b_from_a": 8,
+  "reason": "B narrower: tech-for-common-good subject; Rice wants life experiences to share"
+ },
+ {
+  "pair": "rice-3|villanova-5",
+  "a_from_b": 30,
+  "b_from_a": 20,
+  "reason": "B narrower: one story of supporting someone, usable as an experience for Rice"
+ },
+ {
+  "pair": "rice-3|fordham-university-1",
+  "a_from_b": 45,
+  "b_from_a": 35,
+  "reason": "B narrower: requires a perspective-changing experience with growth; Rice accepts it"
+ },
+ {
+  "pair": "rice-3|fordham-university-2",
+  "a_from_b": 30,
+  "b_from_a": 25,
+  "reason": "B narrower: needs NYC-specific readiness; diverse-experience material overlaps"
+ },
+ {
+  "pair": "rice-3|fordham-university-3",
+  "a_from_b": 10,
+  "b_from_a": 8,
+  "reason": "B narrower: Fordham-specific future accomplishments vs Rice life experiences"
+ },
+ {
+  "pair": "rice-3|university-of-massachusetts-amherst-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: pure why-UMass; Rice asks what student brings"
+ },
+ {
+  "pair": "rice-3|university-of-massachusetts-amherst-2",
+  "a_from_b": 12,
+  "b_from_a": 8,
+  "reason": "B narrower: major reasons; little overlap with life experiences"
+ },
+ {
+  "pair": "rice-3|university-of-massachusetts-amherst-4",
+  "a_from_b": 70,
+  "b_from_a": 55,
+  "reason": "B narrower: one community plus enriching campus; Rice broadly accepts it"
+ },
+ {
+  "pair": "rice-4|emory-1",
+  "a_from_b": 12,
+  "b_from_a": 10,
+  "reason": "B narrower: Emory academic interests vs background-shaped perspectives"
+ },
+ {
+  "pair": "rice-4|emory-2",
+  "a_from_b": 35,
+  "b_from_a": 35,
+  "reason": "B narrower: specific community-impact story; Rice wants identity-shaped perspective"
+ },
+ {
+  "pair": "rice-4|emory-3",
+  "a_from_b": 40,
+  "b_from_a": 30,
+  "reason": "B narrower: intentionally expanding cultural awareness vs own cultural background"
+ },
+ {
+  "pair": "rice-4|emory-4",
+  "a_from_b": 35,
+  "b_from_a": 35,
+  "reason": "B narrower: service to humanity; overlaps with change-agent theme"
+ },
+ {
+  "pair": "rice-4|emory-5",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "B narrower: navigating disagreement, only an anecdote carries"
+ },
+ {
+  "pair": "rice-4|boston-college-1",
+  "a_from_b": 40,
+  "b_from_a": 30,
+  "reason": "B narrower: a specific family/community tradition; cultural material overlaps"
+ },
+ {
+  "pair": "rice-4|boston-college-2",
+  "a_from_b": 20,
+  "b_from_a": 12,
+  "reason": "B narrower: a conversation partner and profound questions"
+ },
+ {
+  "pair": "rice-4|boston-college-3",
+  "a_from_b": 45,
+  "b_from_a": 35,
+  "reason": "B narrower: being stereotyped by background; identity material overlaps"
+ },
+ {
+  "pair": "rice-4|boston-college-4",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "B narrower: invent a fourth Be value format"
+ },
+ {
+  "pair": "rice-4|boston-university-1",
+  "a_from_b": 12,
+  "b_from_a": 12,
+  "reason": "B narrower: why-BU school detail vs background perspective"
+ },
+ {
+  "pair": "rice-4|villanova-1",
+  "a_from_b": 45,
+  "b_from_a": 35,
+  "reason": "B narrower: past equity and justice action; fits change-agent framing"
+ },
+ {
+  "pair": "rice-4|villanova-2",
+  "a_from_b": 30,
+  "b_from_a": 25,
+  "reason": "B narrower: a single life lesson to share"
+ },
+ {
+  "pair": "rice-4|villanova-3",
+  "a_from_b": 12,
+  "b_from_a": 12,
+  "reason": "B narrower: why-Villanova school reasons"
+ },
+ {
+  "pair": "rice-4|villanova-4",
+  "a_from_b": 20,
+  "b_from_a": 10,
+  "reason": "B narrower: technology for common good subject"
+ },
+ {
+  "pair": "rice-4|villanova-5",
+  "a_from_b": 25,
+  "b_from_a": 20,
+  "reason": "B narrower: one story of someone leaning on you"
+ },
+ {
+  "pair": "rice-4|fordham-university-1",
+  "a_from_b": 45,
+  "b_from_a": 40,
+  "reason": "B narrower: single growth experience; both about perspectives"
+ },
+ {
+  "pair": "rice-4|fordham-university-2",
+  "a_from_b": 30,
+  "b_from_a": 35,
+  "reason": "B narrower: NYC readiness; diverse background supplies much of it"
+ },
+ {
+  "pair": "rice-4|fordham-university-3",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "B narrower: Fordham-specific future accomplishments"
+ },
+ {
+  "pair": "rice-4|university-of-massachusetts-amherst-1",
+  "a_from_b": 12,
+  "b_from_a": 10,
+  "reason": "B narrower: why-UMass reasons don't transfer"
+ },
+ {
+  "pair": "rice-4|university-of-massachusetts-amherst-2",
+  "a_from_b": 12,
+  "b_from_a": 8,
+  "reason": "B narrower: reasons for major"
+ },
+ {
+  "pair": "rice-4|university-of-massachusetts-amherst-4",
+  "a_from_b": 70,
+  "b_from_a": 65,
+  "reason": "B narrower: one community plus enriching campus; same identity/background core"
+ },
+ {
+  "pair": "emory-1|boston-college-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "A narrower: Emory academic interests vs family tradition"
+ },
+ {
+  "pair": "emory-1|boston-college-2",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "B narrower: conversation partner; intellectual questions may overlap"
+ },
+ {
+  "pair": "emory-1|boston-college-3",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "both narrow: academic interests vs being stereotyped"
+ },
+ {
+  "pair": "emory-1|boston-college-4",
+  "a_from_b": 8,
+  "b_from_a": 5,
+  "reason": "B narrower: invented value format vs academic interests"
+ },
+ {
+  "pair": "emory-1|boston-university-1",
+  "a_from_b": 40,
+  "b_from_a": 50,
+  "reason": "A narrower: academic-only why-Emory; BU accepts the goals part"
+ },
+ {
+  "pair": "emory-1|villanova-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "both narrow: academics vs equity action"
+ },
+ {
+  "pair": "emory-1|villanova-2",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: a life lesson vs academic interests"
+ },
+ {
+  "pair": "emory-1|villanova-3",
+  "a_from_b": 30,
+  "b_from_a": 35,
+  "reason": "A narrower: academic why-Emory vs community why-Villanova"
+ },
+ {
+  "pair": "emory-1|villanova-4",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "B narrower: technology for common good; overlaps if tech-focused academics"
+ },
+ {
+  "pair": "emory-1|villanova-5",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "B narrower: helping someone vs academic interests"
+ },
+ {
+  "pair": "emory-1|fordham-university-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: growth experience vs academic interests"
+ },
+ {
+  "pair": "emory-1|fordham-university-2",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "B narrower: NYC readiness vs academic interests"
+ },
+ {
+  "pair": "emory-1|fordham-university-3",
+  "a_from_b": 30,
+  "b_from_a": 35,
+  "reason": "A narrower: academic areas; Fordham future-self may carry academic goals"
+ },
+ {
+  "pair": "emory-1|university-of-massachusetts-amherst-1",
+  "a_from_b": 40,
+  "b_from_a": 50,
+  "reason": "A narrower: academic why-Emory vs general why-UMass"
+ },
+ {
+  "pair": "emory-1|university-of-massachusetts-amherst-2",
+  "a_from_b": 65,
+  "b_from_a": 75,
+  "reason": "A narrower: Emory-specific academic areas; major reasons are the core"
+ },
+ {
+  "pair": "emory-1|university-of-massachusetts-amherst-4",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: a community's significance vs academic interests"
+ },
+ {
+  "pair": "emory-2|boston-college-1",
+  "a_from_b": 25,
+  "b_from_a": 20,
+  "reason": "B narrower: a tradition; Emory needs personal impact on community"
+ },
+ {
+  "pair": "emory-2|boston-college-2",
+  "a_from_b": 10,
+  "b_from_a": 8,
+  "reason": "B narrower: conversation partner vs community impact"
+ },
+ {
+  "pair": "emory-2|boston-college-3",
+  "a_from_b": 10,
+  "b_from_a": 8,
+  "reason": "B narrower: single-story stereotyping vs community impact"
+ },
+ {
+  "pair": "emory-2|boston-college-4",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "B narrower: invent a fourth Be value"
+ },
+ {
+  "pair": "emory-2|boston-university-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: why-BU vs community impact story"
+ },
+ {
+  "pair": "emory-2|villanova-1",
+  "a_from_b": 70,
+  "b_from_a": 55,
+  "reason": "B narrower: equity and justice action; Emory accepts it as community impact"
+ },
+ {
+  "pair": "emory-2|villanova-2",
+  "a_from_b": 25,
+  "b_from_a": 20,
+  "reason": "B narrower: one life lesson"
+ },
+ {
+  "pair": "emory-2|villanova-3",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: why-Villanova vs community impact"
+ },
+ {
+  "pair": "emory-2|villanova-4",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "B narrower: technology for common good"
+ },
+ {
+  "pair": "emory-2|villanova-5",
+  "a_from_b": 30,
+  "b_from_a": 25,
+  "reason": "B narrower: helping one person vs shaping a community"
+ },
+ {
+  "pair": "emory-2|fordham-university-1",
+  "a_from_b": 40,
+  "b_from_a": 40,
+  "reason": "both narrow: growth experience vs community impact, shared material"
+ },
+ {
+  "pair": "emory-2|fordham-university-2",
+  "a_from_b": 15,
+  "b_from_a": 10,
+  "reason": "B narrower: NYC readiness"
+ },
+ {
+  "pair": "emory-2|fordham-university-3",
+  "a_from_b": 10,
+  "b_from_a": 8,
+  "reason": "B narrower: Fordham future accomplishments"
+ },
+ {
+  "pair": "emory-2|university-of-massachusetts-amherst-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: why-UMass reasons"
+ },
+ {
+  "pair": "emory-2|university-of-massachusetts-amherst-2",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: reasons for major"
+ },
+ {
+  "pair": "emory-2|university-of-massachusetts-amherst-4",
+  "a_from_b": 40,
+  "b_from_a": 45,
+  "reason": "both narrow: community significance and enriching campus vs your impact on it"
+ },
+ {
+  "pair": "emory-3|boston-college-1",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "both narrow: own tradition vs expanding awareness of others"
+ },
+ {
+  "pair": "emory-3|boston-college-2",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "B narrower: conversation partner, possibly cross-cultural"
+ },
+ {
+  "pair": "emory-3|boston-college-3",
+  "a_from_b": 30,
+  "b_from_a": 20,
+  "reason": "B narrower: being stereotyped vs expanding own awareness"
+ },
+ {
+  "pair": "emory-3|boston-college-4",
+  "a_from_b": 12,
+  "b_from_a": 10,
+  "reason": "B narrower: invent a fourth Be value"
+ },
+ {
+  "pair": "emory-3|boston-university-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: why-BU"
+ },
+ {
+  "pair": "emory-3|villanova-1",
+  "a_from_b": 25,
+  "b_from_a": 20,
+  "reason": "B narrower: equity and justice action"
+ },
+ {
+  "pair": "emory-3|villanova-2",
+  "a_from_b": 25,
+  "b_from_a": 50,
+  "reason": "A narrower: cultural-awareness experience; Villanova lesson prompt accepts it"
+ },
+ {
+  "pair": "emory-3|villanova-3",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: why-Villanova"
+ },
+ {
+  "pair": "emory-3|villanova-4",
+  "a_from_b": 8,
+  "b_from_a": 5,
+  "reason": "B narrower: technology for common good"
+ },
+ {
+  "pair": "emory-3|villanova-5",
+  "a_from_b": 15,
+  "b_from_a": 12,
+  "reason": "B narrower: someone leaning on you"
+ },
+ {
+  "pair": "emory-3|fordham-university-1",
+  "a_from_b": 40,
+  "b_from_a": 70,
+  "reason": "A narrower: cultural-awareness experience is a case of perspective change"
+ },
+ {
+  "pair": "emory-3|fordham-university-2",
+  "a_from_b": 30,
+  "b_from_a": 45,
+  "reason": "A narrower: cultural awareness supplies much of NYC readiness"
+ },
+ {
+  "pair": "emory-3|fordham-university-3",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: Fordham future accomplishments"
+ },
+ {
+  "pair": "emory-3|university-of-massachusetts-amherst-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: why-UMass"
+ },
+ {
+  "pair": "emory-3|university-of-massachusetts-amherst-2",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: reasons for major"
+ },
+ {
+  "pair": "emory-3|university-of-massachusetts-amherst-4",
+  "a_from_b": 25,
+  "b_from_a": 25,
+  "reason": "both narrow: own community vs expanding into other cultures"
+ },
+ {
+  "pair": "emory-4|boston-college-1",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "B narrower: a tradition vs service contribution"
+ },
+ {
+  "pair": "emory-4|boston-college-2",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "B narrower: conversation partner vs service"
+ },
+ {
+  "pair": "emory-4|boston-college-3",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: being stereotyped vs service"
+ },
+ {
+  "pair": "emory-4|boston-college-4",
+  "a_from_b": 25,
+  "b_from_a": 20,
+  "reason": "B narrower: invented value; could be a service value"
+ },
+ {
+  "pair": "emory-4|boston-university-1",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "B narrower: why-BU vs service contribution"
+ },
+ {
+  "pair": "emory-4|villanova-1",
+  "a_from_b": 55,
+  "b_from_a": 40,
+  "reason": "B narrower: past equity action; Emory service prompt accepts it"
+ },
+ {
+  "pair": "emory-4|villanova-2",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "B narrower: a life lesson"
+ },
+ {
+  "pair": "emory-4|villanova-3",
+  "a_from_b": 12,
+  "b_from_a": 12,
+  "reason": "B narrower: why-Villanova, service mission may overlap slightly"
+ },
+ {
+  "pair": "emory-4|villanova-4",
+  "a_from_b": 55,
+  "b_from_a": 35,
+  "reason": "B narrower: technology as means of service; Emory accepts it"
+ },
+ {
+  "pair": "emory-4|villanova-5",
+  "a_from_b": 30,
+  "b_from_a": 20,
+  "reason": "B narrower: helping one person in need"
+ },
+ {
+  "pair": "emory-4|fordham-university-1",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "B narrower: growth experience"
+ },
+ {
+  "pair": "emory-4|fordham-university-2",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "B narrower: NYC readiness"
+ },
+ {
+  "pair": "emory-4|fordham-university-3",
+  "a_from_b": 25,
+  "b_from_a": 20,
+  "reason": "B narrower: Fordham-specific accomplishments, may include service"
+ },
+ {
+  "pair": "emory-4|university-of-massachusetts-amherst-1",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "B narrower: why-UMass"
+ },
+ {
+  "pair": "emory-4|university-of-massachusetts-amherst-2",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "B narrower: reasons for major, may share service goals"
+ },
+ {
+  "pair": "emory-4|university-of-massachusetts-amherst-4",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "B narrower: one community and enriching campus"
+ },
+ {
+  "pair": "emory-5|boston-college-1",
+  "a_from_b": 8,
+  "b_from_a": 5,
+  "reason": "B narrower: a tradition vs navigating disagreement"
+ },
+ {
+  "pair": "emory-5|boston-college-2",
+  "a_from_b": 30,
+  "b_from_a": 25,
+  "reason": "both narrow: dialogue with a partner vs disagreement"
+ },
+ {
+  "pair": "emory-5|boston-college-3",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "B narrower: being stereotyped, a form of clash"
+ },
+ {
+  "pair": "emory-5|boston-college-4",
+  "a_from_b": 15,
+  "b_from_a": 12,
+  "reason": "B narrower: invent a fourth Be value"
+ },
+ {
+  "pair": "emory-5|boston-university-1",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "B narrower: why-BU"
+ },
+ {
+  "pair": "emory-5|villanova-1",
+  "a_from_b": 15,
+  "b_from_a": 12,
+  "reason": "B narrower: equity and justice action"
+ },
+ {
+  "pair": "emory-5|villanova-2",
+  "a_from_b": 25,
+  "b_from_a": 45,
+  "reason": "A narrower: disagreement approach; Villanova lesson prompt accepts it"
+ },
+ {
+  "pair": "emory-5|villanova-3",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "B narrower: why-Villanova"
+ },
+ {
+  "pair": "emory-5|villanova-4",
+  "a_from_b": 8,
+  "b_from_a": 5,
+  "reason": "B narrower: technology for common good"
+ },
+ {
+  "pair": "emory-5|villanova-5",
+  "a_from_b": 12,
+  "b_from_a": 10,
+  "reason": "B narrower: someone leaning on you"
+ },
+ {
+  "pair": "emory-5|fordham-university-1",
+  "a_from_b": 30,
+  "b_from_a": 45,
+  "reason": "A narrower: disagreement can be a perspective-changing experience"
+ },
+ {
+  "pair": "emory-5|fordham-university-2",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "B narrower: NYC readiness"
+ },
+ {
+  "pair": "emory-5|fordham-university-3",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: Fordham future accomplishments"
+ },
+ {
+  "pair": "emory-5|university-of-massachusetts-amherst-1",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "B narrower: why-UMass"
+ },
+ {
+  "pair": "emory-5|university-of-massachusetts-amherst-2",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: reasons for major"
+ },
+ {
+  "pair": "emory-5|university-of-massachusetts-amherst-4",
+  "a_from_b": 12,
+  "b_from_a": 10,
+  "reason": "B narrower: community significance"
+ },
+ {
+  "pair": "boston-college-1|villanova-1",
+  "a_from_b": 15,
+  "b_from_a": 12,
+  "reason": "B narrower: equity action vs a tradition"
+ },
+ {
+  "pair": "boston-college-1|villanova-2",
+  "a_from_b": 20,
+  "b_from_a": 30,
+  "reason": "A narrower: a tradition; Villanova lesson prompt can accept it"
+ },
+ {
+  "pair": "boston-college-1|villanova-3",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: why-Villanova"
+ },
+ {
+  "pair": "boston-college-1|villanova-4",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "B narrower: technology for common good"
+ },
+ {
+  "pair": "boston-college-1|villanova-5",
+  "a_from_b": 12,
+  "b_from_a": 10,
+  "reason": "B narrower: someone leaning on you"
+ },
+ {
+  "pair": "boston-college-2|villanova-1",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "B narrower: equity action vs conversation partner"
+ },
+ {
+  "pair": "boston-college-2|villanova-2",
+  "a_from_b": 25,
+  "b_from_a": 40,
+  "reason": "A narrower: conversation partner; lesson prompt accepts what was learned"
+ },
+ {
+  "pair": "boston-college-2|villanova-3",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: why-Villanova"
+ },
+ {
+  "pair": "boston-college-2|villanova-4",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "both narrow: profound questions could concern tech ethics"
+ },
+ {
+  "pair": "boston-college-2|villanova-5",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "both narrow: person who leaned on you could be the partner"
+ },
+ {
+  "pair": "boston-college-3|villanova-1",
+  "a_from_b": 30,
+  "b_from_a": 25,
+  "reason": "both narrow: stereotyping vs equity action, related material"
+ },
+ {
+  "pair": "boston-college-3|villanova-2",
+  "a_from_b": 25,
+  "b_from_a": 50,
+  "reason": "A narrower: single-story episode; lesson prompt accepts it"
+ },
+ {
+  "pair": "boston-college-3|villanova-3",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "B narrower: why-Villanova"
+ },
+ {
+  "pair": "boston-college-3|villanova-4",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "B narrower: technology for common good"
+ },
+ {
+  "pair": "boston-college-3|villanova-5",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "B narrower: someone leaning on you"
+ },
+ {
+  "pair": "boston-college-4|villanova-1",
+  "a_from_b": 15,
+  "b_from_a": 12,
+  "reason": "B narrower: equity action vs invented value"
+ },
+ {
+  "pair": "boston-college-4|villanova-2",
+  "a_from_b": 40,
+  "b_from_a": 50,
+  "reason": "A narrower: invented fourth Be value plus BC enrichment; lesson overlaps"
+ },
+ {
+  "pair": "boston-college-4|villanova-3",
+  "a_from_b": 12,
+  "b_from_a": 10,
+  "reason": "B narrower: why-Villanova; BC asks enrich community"
+ },
+ {
+  "pair": "boston-college-4|villanova-4",
+  "a_from_b": 10,
+  "b_from_a": 8,
+  "reason": "B narrower: technology for common good"
+ },
+ {
+  "pair": "boston-college-4|villanova-5",
+  "a_from_b": 15,
+  "b_from_a": 12,
+  "reason": "B narrower: someone leaning on you"
+ },
+ {
+  "pair": "boston-university-1|villanova-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: equity action vs why-BU"
+ },
+ {
+  "pair": "boston-university-1|villanova-2",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: life lesson vs why-BU"
+ },
+ {
+  "pair": "boston-university-1|villanova-3",
+  "a_from_b": 50,
+  "b_from_a": 50,
+  "reason": "both why-us: school reasons don't transfer, personal goals do"
+ },
+ {
+  "pair": "boston-university-1|villanova-4",
+  "a_from_b": 8,
+  "b_from_a": 5,
+  "reason": "B narrower: technology for common good vs why-BU"
+ },
+ {
+  "pair": "boston-university-1|villanova-5",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "B narrower: someone leaning on you vs why-BU"
+ },
+ {
+  "pair": "villanova-1|fordham-university-1",
+  "a_from_b": 45,
+  "b_from_a": 60,
+  "reason": "A narrower: equity action; Fordham perspective/action prompt accepts it"
+ },
+ {
+  "pair": "villanova-1|fordham-university-2",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "B narrower: NYC readiness"
+ },
+ {
+  "pair": "villanova-1|fordham-university-3",
+  "a_from_b": 10,
+  "b_from_a": 10,
+  "reason": "B narrower: Fordham future accomplishments"
+ },
+ {
+  "pair": "villanova-1|university-of-massachusetts-amherst-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: why-UMass"
+ },
+ {
+  "pair": "villanova-1|university-of-massachusetts-amherst-2",
+  "a_from_b": 10,
+  "b_from_a": 8,
+  "reason": "B narrower: reasons for major"
+ },
+ {
+  "pair": "villanova-1|university-of-massachusetts-amherst-4",
+  "a_from_b": 30,
+  "b_from_a": 30,
+  "reason": "both narrow: equity action vs community significance"
+ },
+ {
+  "pair": "villanova-2|fordham-university-1",
+  "a_from_b": 60,
+  "b_from_a": 45,
+  "reason": "B narrower: specific growth experience; lesson prompt accepts it"
+ },
+ {
+  "pair": "villanova-2|fordham-university-2",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "B narrower: NYC readiness"
+ },
+ {
+  "pair": "villanova-2|fordham-university-3",
+  "a_from_b": 15,
+  "b_from_a": 10,
+  "reason": "B narrower: Fordham future accomplishments"
+ },
+ {
+  "pair": "villanova-2|university-of-massachusetts-amherst-1",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "B narrower: why-UMass"
+ },
+ {
+  "pair": "villanova-2|university-of-massachusetts-amherst-2",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: reasons for major"
+ },
+ {
+  "pair": "villanova-2|university-of-massachusetts-amherst-4",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "B narrower: one community and enriching campus"
+ },
+ {
+  "pair": "villanova-3|fordham-university-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: growth experience vs why-Villanova"
+ },
+ {
+  "pair": "villanova-3|fordham-university-2",
+  "a_from_b": 20,
+  "b_from_a": 20,
+  "reason": "both narrow: NYC readiness vs why-Villanova fit"
+ },
+ {
+  "pair": "villanova-3|fordham-university-3",
+  "a_from_b": 35,
+  "b_from_a": 35,
+  "reason": "both school-specific: Fordham future vs why-Villanova"
+ },
+ {
+  "pair": "villanova-3|university-of-massachusetts-amherst-1",
+  "a_from_b": 50,
+  "b_from_a": 50,
+  "reason": "both why-us: school reasons don't transfer, personal goals do"
+ },
+ {
+  "pair": "villanova-3|university-of-massachusetts-amherst-2",
+  "a_from_b": 20,
+  "b_from_a": 15,
+  "reason": "A narrower: why-Villanova needs school reasons; major goals carry"
+ },
+ {
+  "pair": "villanova-3|university-of-massachusetts-amherst-4",
+  "a_from_b": 15,
+  "b_from_a": 12,
+  "reason": "A narrower: why-Villanova vs community significance"
+ },
+ {
+  "pair": "villanova-4|fordham-university-1",
+  "a_from_b": 12,
+  "b_from_a": 10,
+  "reason": "A narrower: technology for common good vs growth experience"
+ },
+ {
+  "pair": "villanova-4|fordham-university-2",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "both narrow: technology vs NYC readiness"
+ },
+ {
+  "pair": "villanova-4|fordham-university-3",
+  "a_from_b": 15,
+  "b_from_a": 12,
+  "reason": "both narrow: technology vs Fordham future accomplishments"
+ },
+ {
+  "pair": "villanova-4|university-of-massachusetts-amherst-1",
+  "a_from_b": 5,
+  "b_from_a": 5,
+  "reason": "B narrower: why-UMass"
+ },
+ {
+  "pair": "villanova-4|university-of-massachusetts-amherst-2",
+  "a_from_b": 25,
+  "b_from_a": 20,
+  "reason": "both narrow: tech-service vision overlaps if major is tech"
+ },
+ {
+  "pair": "villanova-4|university-of-massachusetts-amherst-4",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "both narrow: technology vs a community"
+ },
+ {
+  "pair": "villanova-5|fordham-university-1",
+  "a_from_b": 25,
+  "b_from_a": 35,
+  "reason": "A narrower: helping someone; Fordham perspective prompt can accept it"
+ },
+ {
+  "pair": "villanova-5|fordham-university-2",
+  "a_from_b": 8,
+  "b_from_a": 8,
+  "reason": "B narrower: NYC readiness"
+ },
+ {
+  "pair": "villanova-5|fordham-university-3",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "B narrower: Fordham future accomplishments"
+ },
+ {
+  "pair": "villanova-5|university-of-massachusetts-amherst-1",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "B narrower: why-UMass"
+ },
+ {
+  "pair": "villanova-5|university-of-massachusetts-amherst-2",
+  "a_from_b": 3,
+  "b_from_a": 3,
+  "reason": "B narrower: reasons for major"
+ },
+ {
+  "pair": "villanova-5|university-of-massachusetts-amherst-4",
+  "a_from_b": 15,
+  "b_from_a": 15,
+  "reason": "both narrow: helping someone vs a community"
+ }
+]
