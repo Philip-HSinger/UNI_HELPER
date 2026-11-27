@@ -21,6 +21,8 @@ Anchors:
 
 "Why us" essays: the reasons a student gives for one school do not transfer to another, but the part about the student's own goals does. Two "why us" prompts usually score 40-60, not 90.
 
-Directions differ: a broad prompt usually supplies a narrow one better than the reverse.
+Directions differ. An essay written for a narrow, specific prompt usually answers a broad prompt well (the broad prompt accepts it), while an essay written for a broad prompt often lacks what a narrow prompt specifically asks for. So "narrow from broad" usually scores lower than "broad from narrow".
+
+"Why us" prompts against non-"why us" prompts: an essay about the student's own story rarely supplies a "why us" answer beyond a sentence or two; score these low (5-20) unless the other prompt also asks about fit with a school.
 
 Score each pair independently. Do not look up other scorers' answers. Write a one-line reason for every pair.
