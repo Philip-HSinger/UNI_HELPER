@@ -20,6 +20,19 @@ SCHOOLS = [  # order used in every table
 ]
 SHORT = dict(SCHOOLS)
 IDS = [s for s, _ in SCHOOLS]
+# The example student: a domestic, arts-and-sciences applicant, not applying to an honors college or a
+# specialised program. Prompts that apply only to other applicants are left out (listed in the annotated report).
+NOT_ELIGIBLE = {
+    "tufts-3": "Tufts School of Engineering only", "tufts-4": "Tufts BFA only", "tufts-5": "Tufts combined BFA degree only",
+    "boston-college-5": "BC Human-Centered Engineering only",
+    "boston-university-2": "BU Kilachand Honors College only", "boston-university-3": "BU Kilachand Honors College only",
+    "university-of-massachusetts-amherst-3": "UMass Commonwealth Honors College applicants only",
+    "university-of-rhode-island-1": "URI Nursing only", "university-of-rhode-island-2": "URI PharmD only",
+    "university-of-rhode-island-3": "URI Honors only", "university-of-rhode-island-4": "URI Talent Development only",
+    "wesleyan-university-1": "Wesleyan international applicants only",
+}
+# Optional essays the student writes anyway (most counselors advise it); key = (school_id, choose group)
+WRITE_OPTIONAL = {("fordham-university", "A")}
 DEFAULT_LIMIT = 250  # words assumed when a prompt states no limit (flagged in the annotated report)
 
 

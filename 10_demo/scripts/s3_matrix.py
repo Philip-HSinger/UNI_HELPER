@@ -8,7 +8,7 @@ import itertools
 
 import numpy as np
 
-from common import IDS, OUT, ROOT, SCORES, SHORT, length_factor, load, save
+from common import IDS, OUT, ROOT, SCORES, SHORT, WRITE_OPTIONAL, length_factor, load, save
 
 prompts = {p["id"]: p for p in load(ROOT / "data" / "prompts.json")}
 sA = {r["pair"]: r for r in load(SCORES / "scorer_A.json")}
@@ -78,7 +78,7 @@ def required_set():
         chosen = sorted(opts, key=lambda o: -score[o])[:k]
         picks[f"{SHORT[sid]} group {g}"] = {"options": opts, "chosen": chosen,
                                             "why": {o: round(float(score[o]), 3) for o in opts}}
-        if any(prompts[o].get("required", True) for o in opts):
+        if any(prompts[o].get("required") for o in opts) or (sid, g) in WRITE_OPTIONAL:
             req += chosen
     return req, picks
 

@@ -2,12 +2,24 @@
 prompt pair for the scorers (data/scores/pairs.json). Run after the research (and verification) agents finish."""
 import itertools
 
-from common import IDS, RAW, ROOT, SCORES, SHORT, limit_words, load, save
+from common import IDS, NOT_ELIGIBLE, RAW, ROOT, SCORES, SHORT, VERIFY, limit_words, load, save
 
-prompts, schools = [], {}
+# corrections from the independent checker, applied on top of the raw files
+fixes = {}
+if (VERIFY / "prompts_check.json").exists():
+    for school in load(VERIFY / "prompts_check.json"):
+        for c in school.get("corrections", []):
+            fixes.setdefault(c["prompt_id"], []).append(c)
+
+prompts, schools, excluded = [], {}, []
 for sid in IDS:
     d = load(RAW / f"prompts_{sid}.json")
     for p in d.get("prompts", []):
+        for c in fixes.get(p["id"], []):
+            p[c["field"]] = c["should_be"]
+        if p["id"] in NOT_ELIGIBLE:
+            excluded.append({"id": p["id"], "school": SHORT[sid], "why": NOT_ELIGIBLE[p["id"]], "text": p["text"]})
+            continue
         p = dict(p, school_id=sid, school=SHORT[sid], limit=limit_words(p),
                  limit_assumed=not (p.get("word_limit") or p.get("char_limit")))
         prompts.append(p)
@@ -24,6 +36,7 @@ missing = [sid for sid in IDS if "stats" not in schools[sid]]
 assert not missing, f"no stats for {missing}"
 
 save(ROOT / "data" / "prompts.json", prompts)
+save(ROOT / "data" / "excluded_prompts.json", excluded)
 save(ROOT / "data" / "schools.json", [schools[s] for s in IDS])
 
 pairs = []
