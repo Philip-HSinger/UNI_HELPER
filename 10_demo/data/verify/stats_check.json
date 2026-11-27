@@ -139,5 +139,45 @@
       "https://www.umass.edu/uair/media/1062/download",
       "https://www.umass.edu/admissions/test-optional-policy"
     ]
+  },
+  {
+    "school_id": "upenn",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "sources": [
+      "https://upenn.box.com/s/woo7d85yxpol6j9e2o121aucjc6dc1k5",
+      "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing"
+    ]
+  },
+  {
+    "school_id": "emory",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "sources": [
+      "https://provost.emory.edu/planning-administration/_includes/documents/sections/institutional-data/emory-common-date-set-2025-2026.pdf",
+      "https://apply.emory.edu/apply/first-year/tips/standardized-exam-policies.html"
+    ]
+  },
+  {
+    "school_id": "villanova",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "sources": [
+      "https://www.villanova.edu/content/dam/villanova/provost/decision_support/CDS-2025-2026-v3.pdf",
+      "https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/first-year-applicants.html"
+    ]
+  },
+  {
+    "school_id": "rice",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "sources": [
+      "https://ideas.rice.edu/wp-content/uploads/2026/10/CDS_2025-26_WEBSITE_Updated_10-7-2026.pdf",
+      "https://admission.rice.edu/apply/first-year-applicants"
+    ]
   }
 ]

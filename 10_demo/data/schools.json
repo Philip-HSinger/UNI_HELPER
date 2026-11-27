@@ -73,7 +73,52 @@
       "https://www.collegetransitions.com/blog/upenn-supplemental-essay-prompts/",
       "https://www.collegeessayguy.com/blog/upenn-university-pennsylvania-supplemental-essay",
       "https://admissions.upenn.edu/how-to-apply/first-year-applicants/writing-supplement"
-    ]
+    ],
+    "stats": {
+      "school_id": "upenn",
+      "school": "University of Pennsylvania",
+      "cds_year": "2025-26",
+      "cds_url": "https://upenn.box.com/s/woo7d85yxpol6j9e2o121aucjc6dc1k5",
+      "applicants": 72544,
+      "admits": 3570,
+      "enrolled": 2420,
+      "admit_rate": 0.0492,
+      "ed_applicants": 9503,
+      "ed_admits": 1266,
+      "ed_rate": 0.1332,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": 0.52,
+      "pct_submit_act": 0.18,
+      "sat_ebrw": [
+        740,
+        760,
+        770
+      ],
+      "sat_math": [
+        770,
+        790,
+        800
+      ],
+      "sat_composite": null,
+      "act_composite": [
+        34,
+        35,
+        35
+      ],
+      "test_importance": "Considered",
+      "test_policy_2026_27": "Required (SAT or ACT); hardship waiver available; self-reporting allowed except recruited athletes",
+      "test_policy_url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing",
+      "deadlines": {
+        "ED1": "Nov 1",
+        "ED2": null,
+        "EA": null,
+        "RD": "Jan 5"
+      },
+      "deadlines_url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants",
+      "notes": "CDS linked from https://ira.upenn.edu/penn-numbers/common-data-set (hosted on Penn Box, dated 23 June 2026). CDS does not report an SAT composite 25/50/75 (only EBRW and Math), so sat_composite is null. Penn has a single ED round (11/1) and no EA. C7 rates test scores only 'Considered' for the Fall 2025 cohort, while C8A (Fall 2027) and the admissions site say SAT/ACT are required; the C7 rating probably reflects the earlier test-optional period. C1 enrolled line has a stray '13' printed near the part-time males row; full-time males (1,133) + females (1,287) = 2,420, which matches the reported total. Unknown-sex applicants (17) are included in the 72,544 total. Deadlines page says the cycle is for fall 2027 entry; RD Jan 5, 2027."
+    }
   },
   {
     "school_id": "rice",
@@ -89,7 +134,56 @@
       "https://admission.rice.edu/apply",
       "https://admission.rice.edu/apply/first-year",
       "https://www.collegeessayguy.com/blog/rice-university-supplemental-essays"
-    ]
+    ],
+    "stats": {
+      "school_id": "rice",
+      "school": "Rice University",
+      "cds_year": "2025-26",
+      "cds_url": "https://ideas.rice.edu/wp-content/uploads/2026/10/CDS_2025-26_WEBSITE_Updated_10-7-2026.pdf",
+      "applicants": 36791,
+      "admits": 2948,
+      "enrolled": 1263,
+      "admit_rate": 0.0801,
+      "ed_applicants": 5748,
+      "ed_admits": 647,
+      "ed_rate": 0.1126,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": 0.59,
+      "pct_submit_act": 0.24,
+      "sat_ebrw": [
+        740,
+        760,
+        770
+      ],
+      "sat_math": [
+        760,
+        790,
+        800
+      ],
+      "sat_composite": [
+        1510,
+        1540,
+        1560
+      ],
+      "act_composite": [
+        34,
+        35,
+        36
+      ],
+      "test_importance": "Very Important",
+      "test_policy_2026_27": "Test-optional (SAT/ACT recommended but not required)",
+      "test_policy_url": "https://admission.rice.edu/apply/first-year-applicants",
+      "deadlines": {
+        "ED1": "Nov 1",
+        "ED2": "Jan 4",
+        "EA": null,
+        "RD": "Jan 4"
+      },
+      "deadlines_url": "https://admission.rice.edu/apply/first-year-applicants",
+      "notes": "CDS index: https://ideas.rice.edu/reporting-analytics/common-data-set/ (the page blocked plain curl with HTTP 403 but opened through the normal fetch tool; the PDF downloaded directly). Used the 10-7-2026 updated version; its admissions sections match the earlier 8-3-2026 version, and only tuition and faculty-ratio labels changed. C21 gives one ED figure (629 of 647 ED admits enrolled); ED I (11/1) and ED II (1/4) look combined. No EA. C8A is labeled 'for students applying for Fall 2026' rather than Fall 2027 and marks SAT/ACT 'Recommended'. C7 still rates test scores 'Very Important'. The admissions page does not label its deadlines by term; it was assumed current because the same page refers to the 2026-2027 cycle for interviews."
+    }
   },
   {
     "school_id": "emory",
@@ -104,7 +198,56 @@
       "https://admission.emory.edu/apply/first-year/",
       "https://blog.emoryadmission.com/2026/08/emorys-short-answer-questions-2026-2027/",
       "https://blog.emoryadmission.com/2026/07/emorys-short-answer-questions-2026-27/"
-    ]
+    ],
+    "stats": {
+      "school_id": "emory",
+      "school": "Emory University",
+      "cds_year": "2025-26",
+      "cds_url": "https://provost.emory.edu/planning-administration/_includes/documents/sections/institutional-data/emory-common-date-set-2025-2026.pdf",
+      "applicants": 37561,
+      "admits": 3869,
+      "enrolled": 1443,
+      "admit_rate": 0.103,
+      "ed_applicants": 4728,
+      "ed_admits": 1049,
+      "ed_rate": 0.2219,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": 0.47,
+      "pct_submit_act": 0.21,
+      "sat_ebrw": [
+        720,
+        740,
+        760
+      ],
+      "sat_math": [
+        740,
+        780,
+        790
+      ],
+      "sat_composite": [
+        1480,
+        1510,
+        1540
+      ],
+      "act_composite": [
+        33,
+        34,
+        35
+      ],
+      "test_importance": "Very Important",
+      "test_policy_2026_27": "Test-optional",
+      "test_policy_url": "https://apply.emory.edu/apply/first-year/tips/standardized-exam-policies.html",
+      "deadlines": {
+        "ED1": "Nov 1",
+        "ED2": "Jan 1",
+        "EA": null,
+        "RD": "Jan 1"
+      },
+      "deadlines_url": "https://apply.emory.edu/apply/plans-deadlines/",
+      "notes": "CDS index: https://provost.emory.edu/planning-administration/data/common-data-set.html (the file name really does say 'common-date-set'). C21 gives one ED figure; ED I (11/1) and ED II (1/1) look combined. No EA. C7 rates test scores 'Very Important' even though C8A (Fall 2027) lists SAT/ACT as 'not required, but considered if submitted', which is internally inconsistent. The CDS does not say whether Oxford College first-years are counted in C1. Its 1,443 enrolled matches B1 full-time first-time first-years (624 M + 819 F). The plans-and-deadlines page does not name the cycle; it was assumed current for 2026-27. The testing page explicitly covers the 2026-2027 cycle. A separate Scholar Programs deadline is Nov 15."
+    }
   },
   {
     "school_id": "boston-college",
@@ -261,7 +404,56 @@
       "https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/application-essays.html",
       "https://www.collegetransitions.com/blog/villanova-university-essay-prompts-3",
       "https://gradpilot.com/news/villanova-supplemental-essays-2026-2027"
-    ]
+    ],
+    "stats": {
+      "school_id": "villanova",
+      "school": "Villanova University",
+      "cds_year": "2025-26",
+      "cds_url": "https://www.villanova.edu/content/dam/villanova/provost/decision_support/CDS-2025-2026-v3.pdf",
+      "applicants": 25841,
+      "admits": 7272,
+      "enrolled": 1805,
+      "admit_rate": 0.2814,
+      "ed_applicants": 1680,
+      "ed_admits": 1005,
+      "ed_rate": 0.5982,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": 0.19,
+      "pct_submit_act": 0.09,
+      "sat_ebrw": [
+        700,
+        730,
+        750
+      ],
+      "sat_math": [
+        710,
+        730,
+        770
+      ],
+      "sat_composite": [
+        1420,
+        1450,
+        1490
+      ],
+      "act_composite": [
+        32,
+        34,
+        34
+      ],
+      "test_importance": "Considered",
+      "test_policy_2026_27": "Test-optional through the 2026-27 admission campaign (Class of 2031); SAT/ACT required for homeschooled applicants",
+      "test_policy_url": "https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/first-year-applicants.html",
+      "deadlines": {
+        "ED1": "Nov 1",
+        "ED2": "Jan 15",
+        "EA": "Nov 1",
+        "RD": "Jan 15"
+      },
+      "deadlines_url": "https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/dates-and-deadlines.html",
+      "notes": "CDS index: https://www.villanova.edu/university/provost/odsdi/external-survey-reporting.html (file version v3). C21 gives one ED figure; ED I (11/1) and ED II (1/15) look combined. C22 confirms EA (closing 11/1, notification 1/20, not restrictive) but the CDS gives no EA applicant or admit counts, so those fields are null. C8A marks SAT/ACT 'Required for some' (homeschool students, per C8F); for everyone else it is test-optional. Enrolled 1,805 includes 16 part-time students (1,789 full-time). Only 19% of enrollees submitted SAT and 9% ACT, so the score ranges describe a small subset. The deadlines page does not name the entry term; the admissions page names Class of 2031 (2026-27) for the test policy. Admissions pages say EA applicants may switch to ED I by Nov 10, and deferred EA or RD applicants may switch to ED II by Jan 31."
+    }
   },
   {
     "school_id": "fordham-university",

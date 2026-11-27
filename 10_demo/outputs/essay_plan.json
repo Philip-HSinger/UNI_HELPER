@@ -1,184 +1,365 @@
 {
-  "required": [
-    "tufts-1",
-    "tufts-2",
-    "boston-university-1",
-    "university-of-massachusetts-amherst-1",
-    "university-of-massachusetts-amherst-2",
-    "boston-college-3",
-    "fordham-university-1",
-    "university-of-massachusetts-amherst-4"
+  "list": [
+    "tufts",
+    "upenn",
+    "rice",
+    "emory",
+    "boston-college",
+    "boston-university",
+    "villanova",
+    "fordham-university"
   ],
-  "choose_groups": {
-    "Boston College group A": {
-      "options": [
-        "boston-college-1",
-        "boston-college-2",
-        "boston-college-3",
-        "boston-college-4"
-      ],
-      "chosen": [
-        "boston-college-3"
-      ],
-      "why": {
-        "boston-college-1": 0.177,
-        "boston-college-2": 0.16,
-        "boston-college-3": 0.218,
-        "boston-college-4": 0.181
-      }
-    },
-    "Fordham group A": {
-      "options": [
-        "fordham-university-1",
-        "fordham-university-2",
-        "fordham-university-3"
-      ],
-      "chosen": [
-        "fordham-university-1"
-      ],
-      "why": {
-        "fordham-university-1": 0.296,
-        "fordham-university-2": 0.197,
-        "fordham-university-3": 0.244
-      }
-    },
-    "UMass Amherst group A": {
-      "options": [
-        "university-of-massachusetts-amherst-4"
-      ],
-      "chosen": [
-        "university-of-massachusetts-amherst-4"
-      ],
-      "why": {
-        "university-of-massachusetts-amherst-4": 0.263
-      }
-    }
-  },
-  "plan": [
-    {
-      "step": 1,
-      "prompt": "boston-college-3",
-      "school": "Boston College",
-      "limit": 400,
-      "reuse_from": null,
-      "reuse_share": 0.0,
-      "new_words": 400
-    },
-    {
-      "step": 2,
-      "prompt": "fordham-university-1",
-      "school": "Fordham",
-      "limit": 300,
-      "reuse_from": "boston-college-3",
-      "reuse_share": 0.575,
-      "new_words": 128
-    },
-    {
-      "step": 3,
-      "prompt": "tufts-2",
-      "school": "Tufts",
-      "limit": 200,
-      "reuse_from": "fordham-university-1",
-      "reuse_share": 0.15,
-      "new_words": 170
-    },
-    {
-      "step": 4,
-      "prompt": "boston-university-1",
-      "school": "Boston University",
-      "limit": 300,
-      "reuse_from": "tufts-2",
-      "reuse_share": 0.067,
-      "new_words": 280
-    },
-    {
-      "step": 5,
-      "prompt": "tufts-1",
-      "school": "Tufts",
-      "limit": 150,
-      "reuse_from": "boston-university-1",
-      "reuse_share": 0.25,
-      "new_words": 112
-    },
-    {
-      "step": 6,
-      "prompt": "university-of-massachusetts-amherst-1",
-      "school": "UMass Amherst",
-      "limit": 100,
-      "reuse_from": "boston-university-1",
-      "reuse_share": 0.5,
-      "new_words": 50
-    },
-    {
-      "step": 7,
-      "prompt": "university-of-massachusetts-amherst-2",
-      "school": "UMass Amherst",
-      "limit": 100,
-      "reuse_from": "tufts-2",
-      "reuse_share": 0.35,
-      "new_words": 65
-    },
-    {
-      "step": 8,
-      "prompt": "university-of-massachusetts-amherst-4",
-      "school": "UMass Amherst",
-      "limit": 100,
-      "reuse_from": "boston-college-3",
-      "reuse_share": 0.35,
-      "new_words": 65
-    }
-  ],
-  "naive_words": 1650,
-  "new_words": 1270,
-  "saved_share": 0.23,
-  "agreement": {
-    "n_scores": 130,
-    "mae": 2.8384615384615386,
-    "pearson_r": 0.9500552656783549,
-    "within_15": 1.0,
-    "over_25": 0,
-    "n_above_10": 58,
-    "pearson_r_above_10": 0.9104141078362836,
-    "mae_above_10": 4.172413793103448
-  },
-  "awaiting_adjudication": 0,
-  "december": {
-    "submitted": [
-      "tufts-1",
-      "tufts-2",
-      "university-of-massachusetts-amherst-1",
-      "university-of-massachusetts-amherst-2",
-      "fordham-university-1",
-      "university-of-massachusetts-amherst-4"
-    ],
-    "bc_choice": "boston-college-3",
+  "full": {
+    "new_words": 2225,
     "steps": [
       {
         "step": 1,
-        "prompt": "boston-university-1",
-        "school": "Boston University",
-        "limit": 300,
-        "reuse_from": "university-of-massachusetts-amherst-1",
-        "reuse_share": 0.167,
-        "new_words": 250
+        "prompt": "tufts-2",
+        "school": "Tufts",
+        "limit": 200,
+        "reuse_from": null,
+        "reuse_share": 0.0,
+        "new_words": 200
       },
       {
         "step": 2,
-        "prompt": "boston-college-3",
+        "prompt": "upenn-4",
+        "school": "Penn",
+        "limit": 200,
+        "reuse_from": "tufts-2",
+        "reuse_share": 0.375,
+        "new_words": 125
+      },
+      {
+        "step": 3,
+        "prompt": "emory-1",
+        "school": "Emory",
+        "limit": 200,
+        "reuse_from": "upenn-4",
+        "reuse_share": 0.65,
+        "new_words": 70
+      },
+      {
+        "step": 4,
+        "prompt": "boston-university-1",
+        "school": "Boston University",
+        "limit": 300,
+        "reuse_from": "emory-1",
+        "reuse_share": 0.317,
+        "new_words": 205
+      },
+      {
+        "step": 5,
+        "prompt": "tufts-1",
+        "school": "Tufts",
+        "limit": 150,
+        "reuse_from": "boston-university-1",
+        "reuse_share": 0.25,
+        "new_words": 112
+      },
+      {
+        "step": 6,
+        "prompt": "upenn-2",
+        "school": "Penn",
+        "limit": 200,
+        "reuse_from": "boston-university-1",
+        "reuse_share": 0.3,
+        "new_words": 140
+      },
+      {
+        "step": 7,
+        "prompt": "rice-4",
+        "school": "Rice",
+        "limit": 500,
+        "reuse_from": "upenn-2",
+        "reuse_share": 0.16,
+        "new_words": 420
+      },
+      {
+        "step": 8,
+        "prompt": "fordham-university-1",
+        "school": "Fordham",
+        "limit": 300,
+        "reuse_from": "rice-4",
+        "reuse_share": 0.375,
+        "new_words": 188
+      },
+      {
+        "step": 9,
+        "prompt": "villanova-2",
+        "school": "Villanova",
+        "limit": 250,
+        "reuse_from": "fordham-university-1",
+        "reuse_share": 0.625,
+        "new_words": 94
+      },
+      {
+        "step": 10,
+        "prompt": "upenn-1",
+        "school": "Penn",
+        "limit": 200,
+        "reuse_from": "villanova-2",
+        "reuse_share": 0.175,
+        "new_words": 165
+      },
+      {
+        "step": 11,
+        "prompt": "rice-1",
+        "school": "Rice",
+        "limit": 150,
+        "reuse_from": "emory-1",
+        "reuse_share": 0.675,
+        "new_words": 49
+      },
+      {
+        "step": 12,
+        "prompt": "rice-2",
+        "school": "Rice",
+        "limit": 150,
+        "reuse_from": "boston-university-1",
+        "reuse_share": 0.525,
+        "new_words": 71
+      },
+      {
+        "step": 13,
+        "prompt": "emory-2",
+        "school": "Emory",
+        "limit": 150,
+        "reuse_from": "fordham-university-1",
+        "reuse_share": 0.425,
+        "new_words": 86
+      },
+      {
+        "step": 14,
+        "prompt": "boston-college-4",
         "school": "Boston College",
         "limit": 400,
-        "reuse_from": "fordham-university-1",
-        "reuse_share": 0.225,
-        "new_words": 310
+        "reuse_from": "villanova-2",
+        "reuse_share": 0.25,
+        "new_words": 300
       }
     ],
-    "new_words": 560,
-    "naive_words": 700,
-    "bc_option_new_words": {
-      "boston-college-1": 605,
-      "boston-college-2": 590,
-      "boston-college-3": 560,
-      "boston-college-4": 582
+    "how": "exact",
+    "chosen": [
+      "rice-4",
+      "emory-2",
+      "boston-college-4",
+      "villanova-2",
+      "fordham-university-1"
+    ],
+    "naive_words": 3350
+  },
+  "december": {
+    "new_words": 1576,
+    "steps": [
+      {
+        "step": 1,
+        "prompt": "villanova-2",
+        "school": "Villanova",
+        "limit": 250,
+        "reuse_from": "fordham-university-1",
+        "reuse_share": 0.625,
+        "new_words": 94
+      },
+      {
+        "step": 2,
+        "prompt": "upenn-1",
+        "school": "Penn",
+        "limit": 200,
+        "reuse_from": "villanova-2",
+        "reuse_share": 0.175,
+        "new_words": 165
+      },
+      {
+        "step": 3,
+        "prompt": "rice-3",
+        "school": "Rice",
+        "limit": 500,
+        "reuse_from": "villanova-2",
+        "reuse_share": 0.287,
+        "new_words": 356
+      },
+      {
+        "step": 4,
+        "prompt": "upenn-2",
+        "school": "Penn",
+        "limit": 200,
+        "reuse_from": "rice-3",
+        "reuse_share": 0.425,
+        "new_words": 115
+      },
+      {
+        "step": 5,
+        "prompt": "upenn-4",
+        "school": "Penn",
+        "limit": 200,
+        "reuse_from": "tufts-2",
+        "reuse_share": 0.375,
+        "new_words": 125
+      },
+      {
+        "step": 6,
+        "prompt": "emory-1",
+        "school": "Emory",
+        "limit": 200,
+        "reuse_from": "upenn-4",
+        "reuse_share": 0.65,
+        "new_words": 70
+      },
+      {
+        "step": 7,
+        "prompt": "rice-1",
+        "school": "Rice",
+        "limit": 150,
+        "reuse_from": "emory-1",
+        "reuse_share": 0.675,
+        "new_words": 49
+      },
+      {
+        "step": 8,
+        "prompt": "boston-university-1",
+        "school": "Boston University",
+        "limit": 300,
+        "reuse_from": "emory-1",
+        "reuse_share": 0.317,
+        "new_words": 205
+      },
+      {
+        "step": 9,
+        "prompt": "rice-2",
+        "school": "Rice",
+        "limit": 150,
+        "reuse_from": "boston-university-1",
+        "reuse_share": 0.525,
+        "new_words": 71
+      },
+      {
+        "step": 10,
+        "prompt": "emory-2",
+        "school": "Emory",
+        "limit": 150,
+        "reuse_from": "fordham-university-1",
+        "reuse_share": 0.425,
+        "new_words": 86
+      },
+      {
+        "step": 11,
+        "prompt": "boston-college-1",
+        "school": "Boston College",
+        "limit": 400,
+        "reuse_from": "rice-3",
+        "reuse_share": 0.4,
+        "new_words": 240
+      }
+    ],
+    "how": "exact",
+    "chosen": [
+      "rice-3",
+      "emory-2",
+      "boston-college-1",
+      "villanova-2"
+    ],
+    "naive_words": 2700
+  },
+  "december_options": {
+    "Rice": {
+      "rice-3": 280,
+      "rice-4": 350
+    },
+    "Emory": {
+      "emory-2": 86,
+      "emory-3": 90,
+      "emory-4": 112,
+      "emory-5": 105
+    },
+    "Boston College": {
+      "boston-college-1": 240,
+      "boston-college-2": 340,
+      "boston-college-3": 290,
+      "boston-college-4": 300
+    },
+    "Villanova": {
+      "villanova-1": 131,
+      "villanova-2": 94,
+      "villanova-3": 119,
+      "villanova-4": 210,
+      "villanova-5": 188
     }
-  }
+  },
+  "submitted": [
+    "tufts-2",
+    "tufts-1",
+    "fordham-university-1"
+  ],
+  "candidates": {
+    "university-of-massachusetts-amherst": {
+      "new_words": 105,
+      "naive_words": 300,
+      "steps": [
+        {
+          "step": 1,
+          "prompt": "university-of-massachusetts-amherst-1",
+          "school": "UMass Amherst",
+          "limit": 100,
+          "reuse_from": "boston-university-1",
+          "reuse_share": 0.5,
+          "new_words": 50
+        },
+        {
+          "step": 2,
+          "prompt": "university-of-massachusetts-amherst-2",
+          "school": "UMass Amherst",
+          "limit": 100,
+          "reuse_from": "rice-1",
+          "reuse_share": 0.8,
+          "new_words": 20
+        },
+        {
+          "step": 3,
+          "prompt": "university-of-massachusetts-amherst-4",
+          "school": "UMass Amherst",
+          "limit": 100,
+          "reuse_from": "rice-4",
+          "reuse_share": 0.65,
+          "new_words": 35
+        }
+      ]
+    },
+    "university-of-rhode-island": {
+      "new_words": 0,
+      "naive_words": 0,
+      "steps": []
+    },
+    "college-of-the-holy-cross": {
+      "new_words": 0,
+      "naive_words": 0,
+      "steps": []
+    },
+    "fairfield-university": {
+      "new_words": 0,
+      "naive_words": 0,
+      "steps": []
+    },
+    "northeastern": {
+      "new_words": 0,
+      "naive_words": 0,
+      "steps": []
+    },
+    "wesleyan-university": {
+      "new_words": 0,
+      "naive_words": 0,
+      "steps": []
+    }
+  },
+  "agreement": {
+    "n_scores": 786,
+    "mae": 3.4834605597964376,
+    "pearson_r": 0.9381734726241008,
+    "within_15": 0.989821882951654,
+    "over_25": 1,
+    "n_above_10": 394,
+    "pearson_r_above_10": 0.8907267634711812,
+    "mae_above_10": 5.322335025380711
+  },
+  "awaiting_adjudication": 0
 }

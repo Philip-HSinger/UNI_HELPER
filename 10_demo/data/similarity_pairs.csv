@@ -1,131 +1,787 @@
 needs (p),school p,limit p,source (q),school q,limit q,scorer A,scorer B,content,how,length factor,R = reuse
 boston-college-1,Boston College,400,boston-university-1,Boston University,300,5.0,5.0,5.0,mean,0.75,0.038
+boston-college-1,Boston College,400,emory-1,Emory,200,5.0,3.0,4.0,mean,0.5,0.02
+boston-college-1,Boston College,400,emory-2,Emory,150,20.0,25.0,22.5,mean,0.375,0.084
+boston-college-1,Boston College,400,emory-3,Emory,150,20.0,15.0,17.5,mean,0.375,0.066
+boston-college-1,Boston College,400,emory-4,Emory,150,10.0,10.0,10.0,mean,0.375,0.038
+boston-college-1,Boston College,400,emory-5,Emory,150,5.0,5.0,5.0,mean,0.375,0.019
 boston-college-1,Boston College,400,fordham-university-1,Fordham,300,15.0,15.0,15.0,mean,0.75,0.112
 boston-college-1,Boston College,400,fordham-university-2,Fordham,300,15.0,15.0,15.0,mean,0.75,0.112
 boston-college-1,Boston College,400,fordham-university-3,Fordham,300,5.0,5.0,5.0,mean,0.75,0.038
+boston-college-1,Boston College,400,rice-1,Rice,150,2.0,3.0,2.5,mean,0.375,0.009
+boston-college-1,Boston College,400,rice-2,Rice,150,5.0,5.0,5.0,mean,0.375,0.019
+boston-college-1,Boston College,400,rice-3,Rice,500,40.0,40.0,40.0,mean,1.0,0.4
+boston-college-1,Boston College,400,rice-4,Rice,500,30.0,25.0,27.5,mean,1.0,0.275
 boston-college-1,Boston College,400,tufts-1,Tufts,150,3.0,5.0,4.0,mean,0.375,0.015
 boston-college-1,Boston College,400,tufts-2,Tufts,200,5.0,5.0,5.0,mean,0.5,0.025
 boston-college-1,Boston College,400,university-of-massachusetts-amherst-1,UMass Amherst,100,3.0,5.0,4.0,mean,0.25,0.01
 boston-college-1,Boston College,400,university-of-massachusetts-amherst-2,UMass Amherst,100,3.0,5.0,4.0,mean,0.25,0.01
 boston-college-1,Boston College,400,university-of-massachusetts-amherst-4,UMass Amherst,100,40.0,40.0,40.0,mean,0.25,0.1
+boston-college-1,Boston College,400,upenn-1,Penn,200,12.0,5.0,8.5,mean,0.5,0.043
+boston-college-1,Boston College,400,upenn-2,Penn,200,15.0,12.0,13.5,mean,0.5,0.068
+boston-college-1,Boston College,400,upenn-4,Penn,200,3.0,3.0,3.0,mean,0.5,0.015
+boston-college-1,Boston College,400,villanova-1,Villanova,250,15.0,10.0,12.5,mean,0.625,0.078
+boston-college-1,Boston College,400,villanova-2,Villanova,250,20.0,15.0,17.5,mean,0.625,0.109
+boston-college-1,Boston College,400,villanova-3,Villanova,250,5.0,5.0,5.0,mean,0.625,0.031
+boston-college-1,Boston College,400,villanova-4,Villanova,250,3.0,3.0,3.0,mean,0.625,0.019
+boston-college-1,Boston College,400,villanova-5,Villanova,250,12.0,10.0,11.0,mean,0.625,0.069
 boston-college-2,Boston College,400,boston-university-1,Boston University,300,5.0,5.0,5.0,mean,0.75,0.038
+boston-college-2,Boston College,400,emory-1,Emory,200,15.0,15.0,15.0,mean,0.5,0.075
+boston-college-2,Boston College,400,emory-2,Emory,150,8.0,8.0,8.0,mean,0.375,0.03
+boston-college-2,Boston College,400,emory-3,Emory,150,15.0,15.0,15.0,mean,0.375,0.056
+boston-college-2,Boston College,400,emory-4,Emory,150,10.0,10.0,10.0,mean,0.375,0.038
+boston-college-2,Boston College,400,emory-5,Emory,150,25.0,25.0,25.0,mean,0.375,0.094
 boston-college-2,Boston College,400,fordham-university-1,Fordham,300,20.0,20.0,20.0,mean,0.75,0.15
 boston-college-2,Boston College,400,fordham-university-2,Fordham,300,5.0,10.0,7.5,mean,0.75,0.056
 boston-college-2,Boston College,400,fordham-university-3,Fordham,300,5.0,5.0,5.0,mean,0.75,0.038
+boston-college-2,Boston College,400,rice-1,Rice,150,12.0,12.0,12.0,mean,0.375,0.045
+boston-college-2,Boston College,400,rice-2,Rice,150,3.0,5.0,4.0,mean,0.375,0.015
+boston-college-2,Boston College,400,rice-3,Rice,500,20.0,10.0,15.0,mean,1.0,0.15
+boston-college-2,Boston College,400,rice-4,Rice,500,12.0,15.0,13.5,mean,1.0,0.135
 boston-college-2,Boston College,400,tufts-1,Tufts,150,3.0,5.0,4.0,mean,0.375,0.015
 boston-college-2,Boston College,400,tufts-2,Tufts,200,15.0,15.0,15.0,mean,0.5,0.075
 boston-college-2,Boston College,400,university-of-massachusetts-amherst-1,UMass Amherst,100,3.0,5.0,4.0,mean,0.25,0.01
 boston-college-2,Boston College,400,university-of-massachusetts-amherst-2,UMass Amherst,100,10.0,15.0,12.5,mean,0.25,0.031
 boston-college-2,Boston College,400,university-of-massachusetts-amherst-4,UMass Amherst,100,10.0,15.0,12.5,mean,0.25,0.031
+boston-college-2,Boston College,400,upenn-1,Penn,200,30.0,20.0,25.0,mean,0.5,0.125
+boston-college-2,Boston College,400,upenn-2,Penn,200,10.0,8.0,9.0,mean,0.5,0.045
+boston-college-2,Boston College,400,upenn-4,Penn,200,25.0,20.0,22.5,mean,0.5,0.113
+boston-college-2,Boston College,400,villanova-1,Villanova,250,10.0,10.0,10.0,mean,0.625,0.062
+boston-college-2,Boston College,400,villanova-2,Villanova,250,25.0,20.0,22.5,mean,0.625,0.141
+boston-college-2,Boston College,400,villanova-3,Villanova,250,5.0,5.0,5.0,mean,0.625,0.031
+boston-college-2,Boston College,400,villanova-4,Villanova,250,15.0,8.0,11.5,mean,0.625,0.072
+boston-college-2,Boston College,400,villanova-5,Villanova,250,20.0,10.0,15.0,mean,0.625,0.094
 boston-college-3,Boston College,400,boston-university-1,Boston University,300,3.0,5.0,4.0,mean,0.75,0.03
+boston-college-3,Boston College,400,emory-1,Emory,200,5.0,3.0,4.0,mean,0.5,0.02
+boston-college-3,Boston College,400,emory-2,Emory,150,8.0,10.0,9.0,mean,0.375,0.034
+boston-college-3,Boston College,400,emory-3,Emory,150,20.0,20.0,20.0,mean,0.375,0.075
+boston-college-3,Boston College,400,emory-4,Emory,150,5.0,5.0,5.0,mean,0.375,0.019
+boston-college-3,Boston College,400,emory-5,Emory,150,15.0,10.0,12.5,mean,0.375,0.047
 boston-college-3,Boston College,400,fordham-university-1,Fordham,300,30.0,30.0,30.0,mean,0.75,0.225
 boston-college-3,Boston College,400,fordham-university-2,Fordham,300,15.0,15.0,15.0,mean,0.75,0.112
 boston-college-3,Boston College,400,fordham-university-3,Fordham,300,5.0,5.0,5.0,mean,0.75,0.038
+boston-college-3,Boston College,400,rice-1,Rice,150,3.0,3.0,3.0,mean,0.375,0.011
+boston-college-3,Boston College,400,rice-2,Rice,150,2.0,5.0,3.5,mean,0.375,0.013
+boston-college-3,Boston College,400,rice-3,Rice,500,30.0,25.0,27.5,mean,1.0,0.275
+boston-college-3,Boston College,400,rice-4,Rice,500,35.0,30.0,32.5,mean,1.0,0.325
 boston-college-3,Boston College,400,tufts-1,Tufts,150,2.0,5.0,3.5,mean,0.375,0.013
 boston-college-3,Boston College,400,tufts-2,Tufts,200,3.0,5.0,4.0,mean,0.5,0.02
 boston-college-3,Boston College,400,university-of-massachusetts-amherst-1,UMass Amherst,100,3.0,5.0,4.0,mean,0.25,0.01
 boston-college-3,Boston College,400,university-of-massachusetts-amherst-2,UMass Amherst,100,5.0,10.0,7.5,mean,0.25,0.019
 boston-college-3,Boston College,400,university-of-massachusetts-amherst-4,UMass Amherst,100,25.0,25.0,25.0,mean,0.25,0.062
+boston-college-3,Boston College,400,upenn-1,Penn,200,8.0,5.0,6.5,mean,0.5,0.033
+boston-college-3,Boston College,400,upenn-2,Penn,200,12.0,8.0,10.0,mean,0.5,0.05
+boston-college-3,Boston College,400,upenn-4,Penn,200,3.0,3.0,3.0,mean,0.5,0.015
+boston-college-3,Boston College,400,villanova-1,Villanova,250,30.0,15.0,22.5,mean,0.625,0.141
+boston-college-3,Boston College,400,villanova-2,Villanova,250,25.0,20.0,22.5,mean,0.625,0.141
+boston-college-3,Boston College,400,villanova-3,Villanova,250,3.0,5.0,4.0,mean,0.625,0.025
+boston-college-3,Boston College,400,villanova-4,Villanova,250,3.0,3.0,3.0,mean,0.625,0.019
+boston-college-3,Boston College,400,villanova-5,Villanova,250,10.0,10.0,10.0,mean,0.625,0.062
 boston-college-4,Boston College,400,boston-university-1,Boston University,300,8.0,10.0,9.0,mean,0.75,0.068
+boston-college-4,Boston College,400,emory-1,Emory,200,5.0,5.0,5.0,mean,0.5,0.025
+boston-college-4,Boston College,400,emory-2,Emory,150,15.0,15.0,15.0,mean,0.375,0.056
+boston-college-4,Boston College,400,emory-3,Emory,150,10.0,15.0,12.5,mean,0.375,0.047
+boston-college-4,Boston College,400,emory-4,Emory,150,20.0,25.0,22.5,mean,0.375,0.084
+boston-college-4,Boston College,400,emory-5,Emory,150,12.0,25.0,18.5,mean,0.375,0.069
 boston-college-4,Boston College,400,fordham-university-1,Fordham,300,20.0,25.0,22.5,mean,0.75,0.169
 boston-college-4,Boston College,400,fordham-university-2,Fordham,300,8.0,10.0,9.0,mean,0.75,0.068
 boston-college-4,Boston College,400,fordham-university-3,Fordham,300,15.0,15.0,15.0,mean,0.75,0.112
+boston-college-4,Boston College,400,rice-1,Rice,150,5.0,5.0,5.0,mean,0.375,0.019
+boston-college-4,Boston College,400,rice-2,Rice,150,12.0,8.0,10.0,mean,0.375,0.038
+boston-college-4,Boston College,400,rice-3,Rice,500,15.0,20.0,17.5,mean,1.0,0.175
+boston-college-4,Boston College,400,rice-4,Rice,500,15.0,20.0,17.5,mean,1.0,0.175
 boston-college-4,Boston College,400,tufts-1,Tufts,150,5.0,5.0,5.0,mean,0.375,0.019
 boston-college-4,Boston College,400,tufts-2,Tufts,200,8.0,5.0,6.5,mean,0.5,0.033
 boston-college-4,Boston College,400,university-of-massachusetts-amherst-1,UMass Amherst,100,8.0,10.0,9.0,mean,0.25,0.022
 boston-college-4,Boston College,400,university-of-massachusetts-amherst-2,UMass Amherst,100,5.0,10.0,7.5,mean,0.25,0.019
 boston-college-4,Boston College,400,university-of-massachusetts-amherst-4,UMass Amherst,100,20.0,25.0,22.5,mean,0.25,0.056
+boston-college-4,Boston College,400,upenn-1,Penn,200,3.0,5.0,4.0,mean,0.5,0.02
+boston-college-4,Boston College,400,upenn-2,Penn,200,20.0,20.0,20.0,mean,0.5,0.1
+boston-college-4,Boston College,400,upenn-4,Penn,200,5.0,5.0,5.0,mean,0.5,0.025
+boston-college-4,Boston College,400,villanova-1,Villanova,250,15.0,20.0,17.5,mean,0.625,0.109
+boston-college-4,Boston College,400,villanova-2,Villanova,250,40.0,40.0,40.0,mean,0.625,0.25
+boston-college-4,Boston College,400,villanova-3,Villanova,250,12.0,15.0,13.5,mean,0.625,0.084
+boston-college-4,Boston College,400,villanova-4,Villanova,250,10.0,15.0,12.5,mean,0.625,0.078
+boston-college-4,Boston College,400,villanova-5,Villanova,250,15.0,20.0,17.5,mean,0.625,0.109
 boston-university-1,Boston University,300,boston-college-1,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
 boston-university-1,Boston University,300,boston-college-2,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
 boston-university-1,Boston University,300,boston-college-3,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
 boston-university-1,Boston University,300,boston-college-4,Boston College,400,8.0,10.0,9.0,mean,1.0,0.09
+boston-university-1,Boston University,300,emory-1,Emory,200,50.0,45.0,47.5,mean,0.667,0.317
+boston-university-1,Boston University,300,emory-2,Emory,150,5.0,5.0,5.0,mean,0.5,0.025
+boston-university-1,Boston University,300,emory-3,Emory,150,5.0,3.0,4.0,mean,0.5,0.02
+boston-university-1,Boston University,300,emory-4,Emory,150,10.0,10.0,10.0,mean,0.5,0.05
+boston-university-1,Boston University,300,emory-5,Emory,150,3.0,3.0,3.0,mean,0.5,0.015
 boston-university-1,Boston University,300,fordham-university-1,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
 boston-university-1,Boston University,300,fordham-university-2,Fordham,300,15.0,10.0,12.5,mean,1.0,0.125
 boston-university-1,Boston University,300,fordham-university-3,Fordham,300,35.0,40.0,37.5,mean,1.0,0.375
+boston-university-1,Boston University,300,rice-1,Rice,150,25.0,40.0,32.5,mean,0.5,0.163
+boston-university-1,Boston University,300,rice-2,Rice,150,50.0,55.0,52.5,mean,0.5,0.263
+boston-university-1,Boston University,300,rice-3,Rice,500,8.0,10.0,9.0,mean,1.0,0.09
+boston-university-1,Boston University,300,rice-4,Rice,500,12.0,15.0,13.5,mean,1.0,0.135
 boston-university-1,Boston University,300,tufts-1,Tufts,150,25.0,35.0,30.0,mean,0.5,0.15
 boston-university-1,Boston University,300,tufts-2,Tufts,200,10.0,10.0,10.0,mean,0.667,0.067
 boston-university-1,Boston University,300,university-of-massachusetts-amherst-1,UMass Amherst,100,50.0,50.0,50.0,mean,0.333,0.167
 boston-university-1,Boston University,300,university-of-massachusetts-amherst-2,UMass Amherst,100,15.0,20.0,17.5,mean,0.333,0.058
 boston-university-1,Boston University,300,university-of-massachusetts-amherst-4,UMass Amherst,100,10.0,10.0,10.0,mean,0.333,0.033
+boston-university-1,Boston University,300,upenn-1,Penn,200,2.0,2.0,2.0,mean,0.667,0.013
+boston-university-1,Boston University,300,upenn-2,Penn,200,30.0,35.0,32.5,mean,0.667,0.217
+boston-university-1,Boston University,300,upenn-4,Penn,200,25.0,35.0,30.0,mean,0.667,0.2
+boston-university-1,Boston University,300,villanova-1,Villanova,250,5.0,5.0,5.0,mean,0.833,0.042
+boston-university-1,Boston University,300,villanova-2,Villanova,250,5.0,5.0,5.0,mean,0.833,0.042
+boston-university-1,Boston University,300,villanova-3,Villanova,250,50.0,55.0,52.5,mean,0.833,0.438
+boston-university-1,Boston University,300,villanova-4,Villanova,250,8.0,5.0,6.5,mean,0.833,0.054
+boston-university-1,Boston University,300,villanova-5,Villanova,250,3.0,5.0,4.0,mean,0.833,0.033
+emory-1,Emory,200,boston-college-1,Boston College,400,5.0,3.0,4.0,mean,1.0,0.04
+emory-1,Emory,200,boston-college-2,Boston College,400,15.0,20.0,17.5,mean,1.0,0.175
+emory-1,Emory,200,boston-college-3,Boston College,400,5.0,3.0,4.0,mean,1.0,0.04
+emory-1,Emory,200,boston-college-4,Boston College,400,8.0,5.0,6.5,mean,1.0,0.065
+emory-1,Emory,200,boston-university-1,Boston University,300,40.0,45.0,42.5,mean,1.0,0.425
+emory-1,Emory,200,fordham-university-1,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
+emory-1,Emory,200,fordham-university-2,Fordham,300,8.0,5.0,6.5,mean,1.0,0.065
+emory-1,Emory,200,fordham-university-3,Fordham,300,30.0,25.0,27.5,mean,1.0,0.275
+emory-1,Emory,200,rice-1,Rice,150,65.0,70.0,67.5,mean,0.75,0.506
+emory-1,Emory,200,rice-2,Rice,150,12.0,35.0,23.5,mean,0.75,0.176
+emory-1,Emory,200,rice-3,Rice,500,3.0,5.0,4.0,mean,1.0,0.04
+emory-1,Emory,200,rice-4,Rice,500,10.0,10.0,10.0,mean,1.0,0.1
+emory-1,Emory,200,tufts-1,Tufts,150,5.0,15.0,10.0,mean,0.75,0.075
+emory-1,Emory,200,tufts-2,Tufts,200,30.0,35.0,32.5,mean,1.0,0.325
+emory-1,Emory,200,university-of-massachusetts-amherst-1,UMass Amherst,100,40.0,40.0,40.0,mean,0.5,0.2
+emory-1,Emory,200,university-of-massachusetts-amherst-2,UMass Amherst,100,65.0,60.0,62.5,mean,0.5,0.312
+emory-1,Emory,200,university-of-massachusetts-amherst-4,UMass Amherst,100,5.0,5.0,5.0,mean,0.5,0.025
+emory-1,Emory,200,upenn-1,Penn,200,3.0,3.0,3.0,mean,1.0,0.03
+emory-1,Emory,200,upenn-2,Penn,200,8.0,10.0,9.0,mean,1.0,0.09
+emory-1,Emory,200,upenn-4,Penn,200,60.0,70.0,65.0,mean,1.0,0.65
+emory-1,Emory,200,villanova-1,Villanova,250,5.0,8.0,6.5,mean,1.0,0.065
+emory-1,Emory,200,villanova-2,Villanova,250,5.0,5.0,5.0,mean,1.0,0.05
+emory-1,Emory,200,villanova-3,Villanova,250,30.0,40.0,35.0,mean,1.0,0.35
+emory-1,Emory,200,villanova-4,Villanova,250,20.0,20.0,20.0,mean,1.0,0.2
+emory-1,Emory,200,villanova-5,Villanova,250,3.0,3.0,3.0,mean,1.0,0.03
+emory-2,Emory,150,boston-college-1,Boston College,400,25.0,30.0,27.5,mean,1.0,0.275
+emory-2,Emory,150,boston-college-2,Boston College,400,10.0,8.0,9.0,mean,1.0,0.09
+emory-2,Emory,150,boston-college-3,Boston College,400,10.0,10.0,10.0,mean,1.0,0.1
+emory-2,Emory,150,boston-college-4,Boston College,400,15.0,15.0,15.0,mean,1.0,0.15
+emory-2,Emory,150,boston-university-1,Boston University,300,5.0,5.0,5.0,mean,1.0,0.05
+emory-2,Emory,150,fordham-university-1,Fordham,300,40.0,45.0,42.5,mean,1.0,0.425
+emory-2,Emory,150,fordham-university-2,Fordham,300,15.0,10.0,12.5,mean,1.0,0.125
+emory-2,Emory,150,fordham-university-3,Fordham,300,10.0,10.0,10.0,mean,1.0,0.1
+emory-2,Emory,150,rice-1,Rice,150,3.0,5.0,4.0,mean,1.0,0.04
+emory-2,Emory,150,rice-2,Rice,150,5.0,5.0,5.0,mean,1.0,0.05
+emory-2,Emory,150,rice-3,Rice,500,40.0,25.0,32.5,mean,1.0,0.325
+emory-2,Emory,150,rice-4,Rice,500,35.0,35.0,35.0,mean,1.0,0.35
+emory-2,Emory,150,tufts-1,Tufts,150,3.0,3.0,3.0,mean,1.0,0.03
+emory-2,Emory,150,tufts-2,Tufts,200,5.0,5.0,5.0,mean,1.0,0.05
+emory-2,Emory,150,university-of-massachusetts-amherst-1,UMass Amherst,100,5.0,5.0,5.0,mean,0.667,0.033
+emory-2,Emory,150,university-of-massachusetts-amherst-2,UMass Amherst,100,5.0,10.0,7.5,mean,0.667,0.05
+emory-2,Emory,150,university-of-massachusetts-amherst-4,UMass Amherst,100,40.0,50.0,45.0,mean,0.667,0.3
+emory-2,Emory,150,upenn-1,Penn,200,10.0,5.0,7.5,mean,1.0,0.075
+emory-2,Emory,150,upenn-2,Penn,200,25.0,20.0,22.5,mean,1.0,0.225
+emory-2,Emory,150,upenn-4,Penn,200,3.0,5.0,4.0,mean,1.0,0.04
+emory-2,Emory,150,villanova-1,Villanova,250,70.0,70.0,70.0,mean,1.0,0.7
+emory-2,Emory,150,villanova-2,Villanova,250,25.0,15.0,20.0,mean,1.0,0.2
+emory-2,Emory,150,villanova-3,Villanova,250,5.0,5.0,5.0,mean,1.0,0.05
+emory-2,Emory,150,villanova-4,Villanova,250,20.0,10.0,15.0,mean,1.0,0.15
+emory-2,Emory,150,villanova-5,Villanova,250,30.0,25.0,27.5,mean,1.0,0.275
+emory-3,Emory,150,boston-college-1,Boston College,400,20.0,15.0,17.5,mean,1.0,0.175
+emory-3,Emory,150,boston-college-2,Boston College,400,20.0,15.0,17.5,mean,1.0,0.175
+emory-3,Emory,150,boston-college-3,Boston College,400,30.0,25.0,27.5,mean,1.0,0.275
+emory-3,Emory,150,boston-college-4,Boston College,400,12.0,15.0,13.5,mean,1.0,0.135
+emory-3,Emory,150,boston-university-1,Boston University,300,5.0,3.0,4.0,mean,1.0,0.04
+emory-3,Emory,150,fordham-university-1,Fordham,300,40.0,40.0,40.0,mean,1.0,0.4
+emory-3,Emory,150,fordham-university-2,Fordham,300,30.0,45.0,37.5,mean,1.0,0.375
+emory-3,Emory,150,fordham-university-3,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
+emory-3,Emory,150,rice-1,Rice,150,5.0,5.0,5.0,mean,1.0,0.05
+emory-3,Emory,150,rice-2,Rice,150,3.0,5.0,4.0,mean,1.0,0.04
+emory-3,Emory,150,rice-3,Rice,500,40.0,25.0,32.5,mean,1.0,0.325
+emory-3,Emory,150,rice-4,Rice,500,30.0,35.0,32.5,mean,1.0,0.325
+emory-3,Emory,150,tufts-1,Tufts,150,3.0,3.0,3.0,mean,1.0,0.03
+emory-3,Emory,150,tufts-2,Tufts,200,15.0,10.0,12.5,mean,1.0,0.125
+emory-3,Emory,150,university-of-massachusetts-amherst-1,UMass Amherst,100,5.0,3.0,4.0,mean,0.667,0.027
+emory-3,Emory,150,university-of-massachusetts-amherst-2,UMass Amherst,100,5.0,5.0,5.0,mean,0.667,0.033
+emory-3,Emory,150,university-of-massachusetts-amherst-4,UMass Amherst,100,25.0,15.0,20.0,mean,0.667,0.133
+emory-3,Emory,150,upenn-1,Penn,200,10.0,5.0,7.5,mean,1.0,0.075
+emory-3,Emory,150,upenn-2,Penn,200,15.0,10.0,12.5,mean,1.0,0.125
+emory-3,Emory,150,upenn-4,Penn,200,10.0,10.0,10.0,mean,1.0,0.1
+emory-3,Emory,150,villanova-1,Villanova,250,25.0,20.0,22.5,mean,1.0,0.225
+emory-3,Emory,150,villanova-2,Villanova,250,25.0,20.0,22.5,mean,1.0,0.225
+emory-3,Emory,150,villanova-3,Villanova,250,5.0,3.0,4.0,mean,1.0,0.04
+emory-3,Emory,150,villanova-4,Villanova,250,8.0,3.0,5.5,mean,1.0,0.055
+emory-3,Emory,150,villanova-5,Villanova,250,15.0,5.0,10.0,mean,1.0,0.1
+emory-4,Emory,150,boston-college-1,Boston College,400,10.0,10.0,10.0,mean,1.0,0.1
+emory-4,Emory,150,boston-college-2,Boston College,400,10.0,10.0,10.0,mean,1.0,0.1
+emory-4,Emory,150,boston-college-3,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
+emory-4,Emory,150,boston-college-4,Boston College,400,25.0,30.0,27.5,mean,1.0,0.275
+emory-4,Emory,150,boston-university-1,Boston University,300,10.0,10.0,10.0,mean,1.0,0.1
+emory-4,Emory,150,fordham-university-1,Fordham,300,20.0,30.0,25.0,mean,1.0,0.25
+emory-4,Emory,150,fordham-university-2,Fordham,300,8.0,5.0,6.5,mean,1.0,0.065
+emory-4,Emory,150,fordham-university-3,Fordham,300,25.0,20.0,22.5,mean,1.0,0.225
+emory-4,Emory,150,rice-1,Rice,150,8.0,10.0,9.0,mean,1.0,0.09
+emory-4,Emory,150,rice-2,Rice,150,5.0,10.0,7.5,mean,1.0,0.075
+emory-4,Emory,150,rice-3,Rice,500,12.0,15.0,13.5,mean,1.0,0.135
+emory-4,Emory,150,rice-4,Rice,500,35.0,30.0,32.5,mean,1.0,0.325
+emory-4,Emory,150,tufts-1,Tufts,150,3.0,3.0,3.0,mean,1.0,0.03
+emory-4,Emory,150,tufts-2,Tufts,200,5.0,5.0,5.0,mean,1.0,0.05
+emory-4,Emory,150,university-of-massachusetts-amherst-1,UMass Amherst,100,8.0,15.0,11.5,mean,0.667,0.077
+emory-4,Emory,150,university-of-massachusetts-amherst-2,UMass Amherst,100,20.0,20.0,20.0,mean,0.667,0.133
+emory-4,Emory,150,university-of-massachusetts-amherst-4,UMass Amherst,100,20.0,20.0,20.0,mean,0.667,0.133
+emory-4,Emory,150,upenn-1,Penn,200,5.0,3.0,4.0,mean,1.0,0.04
+emory-4,Emory,150,upenn-2,Penn,200,12.0,15.0,13.5,mean,1.0,0.135
+emory-4,Emory,150,upenn-4,Penn,200,10.0,10.0,10.0,mean,1.0,0.1
+emory-4,Emory,150,villanova-1,Villanova,250,55.0,55.0,55.0,mean,1.0,0.55
+emory-4,Emory,150,villanova-2,Villanova,250,15.0,15.0,15.0,mean,1.0,0.15
+emory-4,Emory,150,villanova-3,Villanova,250,12.0,15.0,13.5,mean,1.0,0.135
+emory-4,Emory,150,villanova-4,Villanova,250,55.0,65.0,60.0,mean,1.0,0.6
+emory-4,Emory,150,villanova-5,Villanova,250,30.0,30.0,30.0,mean,1.0,0.3
+emory-5,Emory,150,boston-college-1,Boston College,400,8.0,5.0,6.5,mean,1.0,0.065
+emory-5,Emory,150,boston-college-2,Boston College,400,30.0,35.0,32.5,mean,1.0,0.325
+emory-5,Emory,150,boston-college-3,Boston College,400,20.0,10.0,15.0,mean,1.0,0.15
+emory-5,Emory,150,boston-college-4,Boston College,400,15.0,25.0,20.0,mean,1.0,0.2
+emory-5,Emory,150,boston-university-1,Boston University,300,3.0,3.0,3.0,mean,1.0,0.03
+emory-5,Emory,150,fordham-university-1,Fordham,300,30.0,30.0,30.0,mean,1.0,0.3
+emory-5,Emory,150,fordham-university-2,Fordham,300,10.0,15.0,12.5,mean,1.0,0.125
+emory-5,Emory,150,fordham-university-3,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
+emory-5,Emory,150,rice-1,Rice,150,3.0,5.0,4.0,mean,1.0,0.04
+emory-5,Emory,150,rice-2,Rice,150,3.0,5.0,4.0,mean,1.0,0.04
+emory-5,Emory,150,rice-3,Rice,500,15.0,15.0,15.0,mean,1.0,0.15
+emory-5,Emory,150,rice-4,Rice,500,15.0,15.0,15.0,mean,1.0,0.15
+emory-5,Emory,150,tufts-1,Tufts,150,2.0,2.0,2.0,mean,1.0,0.02
+emory-5,Emory,150,tufts-2,Tufts,200,10.0,12.0,11.0,mean,1.0,0.11
+emory-5,Emory,150,university-of-massachusetts-amherst-1,UMass Amherst,100,3.0,3.0,3.0,mean,0.667,0.02
+emory-5,Emory,150,university-of-massachusetts-amherst-2,UMass Amherst,100,5.0,5.0,5.0,mean,0.667,0.033
+emory-5,Emory,150,university-of-massachusetts-amherst-4,UMass Amherst,100,12.0,10.0,11.0,mean,0.667,0.073
+emory-5,Emory,150,upenn-1,Penn,200,5.0,3.0,4.0,mean,1.0,0.04
+emory-5,Emory,150,upenn-2,Penn,200,12.0,10.0,11.0,mean,1.0,0.11
+emory-5,Emory,150,upenn-4,Penn,200,10.0,8.0,9.0,mean,1.0,0.09
+emory-5,Emory,150,villanova-1,Villanova,250,15.0,15.0,15.0,mean,1.0,0.15
+emory-5,Emory,150,villanova-2,Villanova,250,25.0,20.0,22.5,mean,1.0,0.225
+emory-5,Emory,150,villanova-3,Villanova,250,3.0,3.0,3.0,mean,1.0,0.03
+emory-5,Emory,150,villanova-4,Villanova,250,8.0,5.0,6.5,mean,1.0,0.065
+emory-5,Emory,150,villanova-5,Villanova,250,12.0,5.0,8.5,mean,1.0,0.085
 fordham-university-1,Fordham,300,boston-college-1,Boston College,400,12.0,20.0,16.0,mean,1.0,0.16
 fordham-university-1,Fordham,300,boston-college-2,Boston College,400,25.0,40.0,32.5,mean,1.0,0.325
 fordham-university-1,Fordham,300,boston-college-3,Boston College,400,55.0,60.0,57.5,mean,1.0,0.575
 fordham-university-1,Fordham,300,boston-college-4,Boston College,400,15.0,30.0,22.5,mean,1.0,0.225
 fordham-university-1,Fordham,300,boston-university-1,Boston University,300,5.0,5.0,5.0,mean,1.0,0.05
+fordham-university-1,Fordham,300,emory-1,Emory,200,5.0,5.0,5.0,mean,0.667,0.033
+fordham-university-1,Fordham,300,emory-2,Emory,150,40.0,50.0,45.0,mean,0.5,0.225
+fordham-university-1,Fordham,300,emory-3,Emory,150,70.0,55.0,62.5,mean,0.5,0.312
+fordham-university-1,Fordham,300,emory-4,Emory,150,20.0,25.0,22.5,mean,0.5,0.113
+fordham-university-1,Fordham,300,emory-5,Emory,150,45.0,45.0,45.0,mean,0.5,0.225
+fordham-university-1,Fordham,300,rice-1,Rice,150,8.0,5.0,6.5,mean,0.5,0.033
+fordham-university-1,Fordham,300,rice-2,Rice,150,3.0,5.0,4.0,mean,0.5,0.02
+fordham-university-1,Fordham,300,rice-3,Rice,500,35.0,30.0,32.5,mean,1.0,0.325
+fordham-university-1,Fordham,300,rice-4,Rice,500,40.0,35.0,37.5,mean,1.0,0.375
 fordham-university-1,Fordham,300,tufts-1,Tufts,150,3.0,5.0,4.0,mean,0.5,0.02
 fordham-university-1,Fordham,300,tufts-2,Tufts,200,20.0,20.0,20.0,mean,0.667,0.133
 fordham-university-1,Fordham,300,university-of-massachusetts-amherst-1,UMass Amherst,100,5.0,5.0,5.0,mean,0.333,0.017
 fordham-university-1,Fordham,300,university-of-massachusetts-amherst-2,UMass Amherst,100,10.0,20.0,15.0,mean,0.333,0.05
 fordham-university-1,Fordham,300,university-of-massachusetts-amherst-4,UMass Amherst,100,20.0,30.0,25.0,mean,0.333,0.083
+fordham-university-1,Fordham,300,upenn-1,Penn,200,15.0,15.0,15.0,mean,0.667,0.1
+fordham-university-1,Fordham,300,upenn-2,Penn,200,20.0,10.0,15.0,mean,0.667,0.1
+fordham-university-1,Fordham,300,upenn-4,Penn,200,10.0,12.0,11.0,mean,0.667,0.073
+fordham-university-1,Fordham,300,villanova-1,Villanova,250,60.0,60.0,60.0,mean,0.833,0.5
+fordham-university-1,Fordham,300,villanova-2,Villanova,250,45.0,55.0,50.0,mean,0.833,0.417
+fordham-university-1,Fordham,300,villanova-3,Villanova,250,5.0,5.0,5.0,mean,0.833,0.042
+fordham-university-1,Fordham,300,villanova-4,Villanova,250,10.0,10.0,10.0,mean,0.833,0.083
+fordham-university-1,Fordham,300,villanova-5,Villanova,250,35.0,40.0,37.5,mean,0.833,0.312
 fordham-university-2,Fordham,300,boston-college-1,Boston College,400,20.0,15.0,17.5,mean,1.0,0.175
 fordham-university-2,Fordham,300,boston-college-2,Boston College,400,8.0,10.0,9.0,mean,1.0,0.09
 fordham-university-2,Fordham,300,boston-college-3,Boston College,400,20.0,25.0,22.5,mean,1.0,0.225
 fordham-university-2,Fordham,300,boston-college-4,Boston College,400,8.0,10.0,9.0,mean,1.0,0.09
 fordham-university-2,Fordham,300,boston-university-1,Boston University,300,15.0,10.0,12.5,mean,1.0,0.125
+fordham-university-2,Fordham,300,emory-1,Emory,200,8.0,5.0,6.5,mean,0.667,0.043
+fordham-university-2,Fordham,300,emory-2,Emory,150,10.0,10.0,10.0,mean,0.5,0.05
+fordham-university-2,Fordham,300,emory-3,Emory,150,45.0,55.0,50.0,mean,0.5,0.25
+fordham-university-2,Fordham,300,emory-4,Emory,150,8.0,5.0,6.5,mean,0.5,0.033
+fordham-university-2,Fordham,300,emory-5,Emory,150,10.0,20.0,15.0,mean,0.5,0.075
+fordham-university-2,Fordham,300,rice-1,Rice,150,8.0,5.0,6.5,mean,0.5,0.033
+fordham-university-2,Fordham,300,rice-2,Rice,150,15.0,8.0,11.5,mean,0.5,0.058
+fordham-university-2,Fordham,300,rice-3,Rice,500,25.0,30.0,27.5,mean,1.0,0.275
+fordham-university-2,Fordham,300,rice-4,Rice,500,35.0,40.0,37.5,mean,1.0,0.375
 fordham-university-2,Fordham,300,tufts-1,Tufts,150,5.0,5.0,5.0,mean,0.5,0.025
 fordham-university-2,Fordham,300,tufts-2,Tufts,200,5.0,5.0,5.0,mean,0.667,0.033
 fordham-university-2,Fordham,300,university-of-massachusetts-amherst-1,UMass Amherst,100,8.0,15.0,11.5,mean,0.333,0.038
 fordham-university-2,Fordham,300,university-of-massachusetts-amherst-2,UMass Amherst,100,5.0,15.0,10.0,mean,0.333,0.033
 fordham-university-2,Fordham,300,university-of-massachusetts-amherst-4,UMass Amherst,100,30.0,30.0,30.0,mean,0.333,0.1
+fordham-university-2,Fordham,300,upenn-1,Penn,200,8.0,3.0,5.5,mean,0.667,0.037
+fordham-university-2,Fordham,300,upenn-2,Penn,200,25.0,15.0,20.0,mean,0.667,0.133
+fordham-university-2,Fordham,300,upenn-4,Penn,200,8.0,5.0,6.5,mean,0.667,0.043
+fordham-university-2,Fordham,300,villanova-1,Villanova,250,10.0,15.0,12.5,mean,0.833,0.104
+fordham-university-2,Fordham,300,villanova-2,Villanova,250,15.0,15.0,15.0,mean,0.833,0.125
+fordham-university-2,Fordham,300,villanova-3,Villanova,250,20.0,10.0,15.0,mean,0.833,0.125
+fordham-university-2,Fordham,300,villanova-4,Villanova,250,5.0,3.0,4.0,mean,0.833,0.033
+fordham-university-2,Fordham,300,villanova-5,Villanova,250,8.0,15.0,11.5,mean,0.833,0.096
 fordham-university-3,Fordham,300,boston-college-1,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
 fordham-university-3,Fordham,300,boston-college-2,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
 fordham-university-3,Fordham,300,boston-college-3,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
 fordham-university-3,Fordham,300,boston-college-4,Boston College,400,15.0,15.0,15.0,mean,1.0,0.15
 fordham-university-3,Fordham,300,boston-university-1,Boston University,300,30.0,35.0,32.5,mean,1.0,0.325
+fordham-university-3,Fordham,300,emory-1,Emory,200,35.0,20.0,27.5,mean,0.667,0.183
+fordham-university-3,Fordham,300,emory-2,Emory,150,8.0,10.0,9.0,mean,0.5,0.045
+fordham-university-3,Fordham,300,emory-3,Emory,150,5.0,5.0,5.0,mean,0.5,0.025
+fordham-university-3,Fordham,300,emory-4,Emory,150,20.0,15.0,17.5,mean,0.5,0.087
+fordham-university-3,Fordham,300,emory-5,Emory,150,5.0,5.0,5.0,mean,0.5,0.025
+fordham-university-3,Fordham,300,rice-1,Rice,150,20.0,15.0,17.5,mean,0.5,0.087
+fordham-university-3,Fordham,300,rice-2,Rice,150,30.0,15.0,22.5,mean,0.5,0.113
+fordham-university-3,Fordham,300,rice-3,Rice,500,8.0,10.0,9.0,mean,1.0,0.09
+fordham-university-3,Fordham,300,rice-4,Rice,500,15.0,15.0,15.0,mean,1.0,0.15
 fordham-university-3,Fordham,300,tufts-1,Tufts,150,10.0,15.0,12.5,mean,0.5,0.062
 fordham-university-3,Fordham,300,tufts-2,Tufts,200,8.0,10.0,9.0,mean,0.667,0.06
 fordham-university-3,Fordham,300,university-of-massachusetts-amherst-1,UMass Amherst,100,30.0,35.0,32.5,mean,0.333,0.108
 fordham-university-3,Fordham,300,university-of-massachusetts-amherst-2,UMass Amherst,100,20.0,25.0,22.5,mean,0.333,0.075
 fordham-university-3,Fordham,300,university-of-massachusetts-amherst-4,UMass Amherst,100,15.0,10.0,12.5,mean,0.333,0.042
+fordham-university-3,Fordham,300,upenn-1,Penn,200,8.0,8.0,8.0,mean,0.667,0.053
+fordham-university-3,Fordham,300,upenn-2,Penn,200,25.0,20.0,22.5,mean,0.667,0.15
+fordham-university-3,Fordham,300,upenn-4,Penn,200,20.0,12.0,16.0,mean,0.667,0.107
+fordham-university-3,Fordham,300,villanova-1,Villanova,250,10.0,8.0,9.0,mean,0.833,0.075
+fordham-university-3,Fordham,300,villanova-2,Villanova,250,10.0,15.0,12.5,mean,0.833,0.104
+fordham-university-3,Fordham,300,villanova-3,Villanova,250,35.0,30.0,32.5,mean,0.833,0.271
+fordham-university-3,Fordham,300,villanova-4,Villanova,250,12.0,10.0,11.0,mean,0.833,0.092
+fordham-university-3,Fordham,300,villanova-5,Villanova,250,3.0,8.0,5.5,mean,0.833,0.046
+rice-1,Rice,150,boston-college-1,Boston College,400,2.0,3.0,2.5,mean,1.0,0.025
+rice-1,Rice,150,boston-college-2,Boston College,400,12.0,15.0,13.5,mean,1.0,0.135
+rice-1,Rice,150,boston-college-3,Boston College,400,3.0,3.0,3.0,mean,1.0,0.03
+rice-1,Rice,150,boston-college-4,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
+rice-1,Rice,150,boston-university-1,Boston University,300,30.0,35.0,32.5,mean,1.0,0.325
+rice-1,Rice,150,emory-1,Emory,200,65.0,70.0,67.5,mean,1.0,0.675
+rice-1,Rice,150,emory-2,Emory,150,3.0,5.0,4.0,mean,1.0,0.04
+rice-1,Rice,150,emory-3,Emory,150,5.0,5.0,5.0,mean,1.0,0.05
+rice-1,Rice,150,emory-4,Emory,150,8.0,12.0,10.0,mean,1.0,0.1
+rice-1,Rice,150,emory-5,Emory,150,3.0,8.0,5.5,mean,1.0,0.055
+rice-1,Rice,150,fordham-university-1,Fordham,300,8.0,8.0,8.0,mean,1.0,0.08
+rice-1,Rice,150,fordham-university-2,Fordham,300,8.0,5.0,6.5,mean,1.0,0.065
+rice-1,Rice,150,fordham-university-3,Fordham,300,20.0,20.0,20.0,mean,1.0,0.2
+rice-1,Rice,150,tufts-1,Tufts,150,8.0,12.0,10.0,mean,1.0,0.1
+rice-1,Rice,150,tufts-2,Tufts,200,25.0,35.0,30.0,mean,1.0,0.3
+rice-1,Rice,150,university-of-massachusetts-amherst-1,UMass Amherst,100,20.0,35.0,27.5,mean,0.667,0.183
+rice-1,Rice,150,university-of-massachusetts-amherst-2,UMass Amherst,100,55.0,60.0,57.5,mean,0.667,0.383
+rice-1,Rice,150,university-of-massachusetts-amherst-4,UMass Amherst,100,3.0,8.0,5.5,mean,0.667,0.037
+rice-1,Rice,150,upenn-1,Penn,200,3.0,5.0,4.0,mean,1.0,0.04
+rice-1,Rice,150,upenn-2,Penn,200,10.0,10.0,10.0,mean,1.0,0.1
+rice-1,Rice,150,upenn-4,Penn,200,55.0,70.0,62.5,mean,1.0,0.625
+rice-1,Rice,150,villanova-1,Villanova,250,5.0,5.0,5.0,mean,1.0,0.05
+rice-1,Rice,150,villanova-2,Villanova,250,3.0,5.0,4.0,mean,1.0,0.04
+rice-1,Rice,150,villanova-3,Villanova,250,20.0,30.0,25.0,mean,1.0,0.25
+rice-1,Rice,150,villanova-4,Villanova,250,15.0,15.0,15.0,mean,1.0,0.15
+rice-1,Rice,150,villanova-5,Villanova,250,2.0,3.0,2.5,mean,1.0,0.025
+rice-2,Rice,150,boston-college-1,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
+rice-2,Rice,150,boston-college-2,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
+rice-2,Rice,150,boston-college-3,Boston College,400,2.0,5.0,3.5,mean,1.0,0.035
+rice-2,Rice,150,boston-college-4,Boston College,400,12.0,8.0,10.0,mean,1.0,0.1
+rice-2,Rice,150,boston-university-1,Boston University,300,50.0,55.0,52.5,mean,1.0,0.525
+rice-2,Rice,150,emory-1,Emory,200,15.0,45.0,40.0,adjudicated,1.0,0.4
+rice-2,Rice,150,emory-2,Emory,150,5.0,5.0,5.0,mean,1.0,0.05
+rice-2,Rice,150,emory-3,Emory,150,3.0,5.0,4.0,mean,1.0,0.04
+rice-2,Rice,150,emory-4,Emory,150,5.0,10.0,7.5,mean,1.0,0.075
+rice-2,Rice,150,emory-5,Emory,150,3.0,5.0,4.0,mean,1.0,0.04
+rice-2,Rice,150,fordham-university-1,Fordham,300,3.0,5.0,4.0,mean,1.0,0.04
+rice-2,Rice,150,fordham-university-2,Fordham,300,12.0,8.0,10.0,mean,1.0,0.1
+rice-2,Rice,150,fordham-university-3,Fordham,300,30.0,20.0,25.0,mean,1.0,0.25
+rice-2,Rice,150,tufts-1,Tufts,150,15.0,35.0,25.0,mean,1.0,0.25
+rice-2,Rice,150,tufts-2,Tufts,200,5.0,8.0,6.5,mean,1.0,0.065
+rice-2,Rice,150,university-of-massachusetts-amherst-1,UMass Amherst,100,50.0,50.0,50.0,mean,0.667,0.333
+rice-2,Rice,150,university-of-massachusetts-amherst-2,UMass Amherst,100,12.0,20.0,16.0,mean,0.667,0.107
+rice-2,Rice,150,university-of-massachusetts-amherst-4,UMass Amherst,100,8.0,10.0,9.0,mean,0.667,0.06
+rice-2,Rice,150,upenn-1,Penn,200,2.0,2.0,2.0,mean,1.0,0.02
+rice-2,Rice,150,upenn-2,Penn,200,25.0,35.0,30.0,mean,1.0,0.3
+rice-2,Rice,150,upenn-4,Penn,200,15.0,30.0,22.5,mean,1.0,0.225
+rice-2,Rice,150,villanova-1,Villanova,250,3.0,5.0,4.0,mean,1.0,0.04
+rice-2,Rice,150,villanova-2,Villanova,250,3.0,5.0,4.0,mean,1.0,0.04
+rice-2,Rice,150,villanova-3,Villanova,250,45.0,50.0,47.5,mean,1.0,0.475
+rice-2,Rice,150,villanova-4,Villanova,250,5.0,8.0,6.5,mean,1.0,0.065
+rice-2,Rice,150,villanova-5,Villanova,250,2.0,5.0,3.5,mean,1.0,0.035
+rice-3,Rice,500,boston-college-1,Boston College,400,55.0,55.0,55.0,mean,0.8,0.44
+rice-3,Rice,500,boston-college-2,Boston College,400,20.0,20.0,20.0,mean,0.8,0.16
+rice-3,Rice,500,boston-college-3,Boston College,400,35.0,40.0,37.5,mean,0.8,0.3
+rice-3,Rice,500,boston-college-4,Boston College,400,20.0,35.0,27.5,mean,0.8,0.22
+rice-3,Rice,500,boston-university-1,Boston University,300,8.0,8.0,8.0,mean,0.6,0.048
+rice-3,Rice,500,emory-1,Emory,200,3.0,8.0,5.5,mean,0.4,0.022
+rice-3,Rice,500,emory-2,Emory,150,25.0,35.0,30.0,mean,0.3,0.09
+rice-3,Rice,500,emory-3,Emory,150,30.0,35.0,32.5,mean,0.3,0.098
+rice-3,Rice,500,emory-4,Emory,150,15.0,20.0,17.5,mean,0.3,0.052
+rice-3,Rice,500,emory-5,Emory,150,15.0,25.0,20.0,mean,0.3,0.06
+rice-3,Rice,500,fordham-university-1,Fordham,300,45.0,40.0,42.5,mean,0.6,0.255
+rice-3,Rice,500,fordham-university-2,Fordham,300,30.0,30.0,30.0,mean,0.6,0.18
+rice-3,Rice,500,fordham-university-3,Fordham,300,10.0,10.0,10.0,mean,0.6,0.06
+rice-3,Rice,500,tufts-1,Tufts,150,3.0,5.0,4.0,mean,0.3,0.012
+rice-3,Rice,500,tufts-2,Tufts,200,8.0,8.0,8.0,mean,0.4,0.032
+rice-3,Rice,500,university-of-massachusetts-amherst-1,UMass Amherst,100,5.0,15.0,10.0,mean,0.2,0.02
+rice-3,Rice,500,university-of-massachusetts-amherst-2,UMass Amherst,100,12.0,10.0,11.0,mean,0.2,0.022
+rice-3,Rice,500,university-of-massachusetts-amherst-4,UMass Amherst,100,70.0,65.0,67.5,mean,0.2,0.135
+rice-3,Rice,500,upenn-1,Penn,200,15.0,8.0,11.5,mean,0.4,0.046
+rice-3,Rice,500,upenn-2,Penn,200,45.0,40.0,42.5,mean,0.4,0.17
+rice-3,Rice,500,upenn-4,Penn,200,8.0,8.0,8.0,mean,0.4,0.032
+rice-3,Rice,500,villanova-1,Villanova,250,30.0,35.0,32.5,mean,0.5,0.163
+rice-3,Rice,500,villanova-2,Villanova,250,55.0,60.0,57.5,mean,0.5,0.287
+rice-3,Rice,500,villanova-3,Villanova,250,12.0,12.0,12.0,mean,0.5,0.06
+rice-3,Rice,500,villanova-4,Villanova,250,15.0,5.0,10.0,mean,0.5,0.05
+rice-3,Rice,500,villanova-5,Villanova,250,30.0,20.0,25.0,mean,0.5,0.125
+rice-4,Rice,500,boston-college-1,Boston College,400,40.0,35.0,37.5,mean,0.8,0.3
+rice-4,Rice,500,boston-college-2,Boston College,400,20.0,15.0,17.5,mean,0.8,0.14
+rice-4,Rice,500,boston-college-3,Boston College,400,45.0,40.0,42.5,mean,0.8,0.34
+rice-4,Rice,500,boston-college-4,Boston College,400,20.0,20.0,20.0,mean,0.8,0.16
+rice-4,Rice,500,boston-university-1,Boston University,300,12.0,15.0,13.5,mean,0.6,0.081
+rice-4,Rice,500,emory-1,Emory,200,12.0,10.0,11.0,mean,0.4,0.044
+rice-4,Rice,500,emory-2,Emory,150,35.0,40.0,37.5,mean,0.3,0.112
+rice-4,Rice,500,emory-3,Emory,150,40.0,30.0,35.0,mean,0.3,0.105
+rice-4,Rice,500,emory-4,Emory,150,35.0,30.0,32.5,mean,0.3,0.098
+rice-4,Rice,500,emory-5,Emory,150,20.0,15.0,17.5,mean,0.3,0.052
+rice-4,Rice,500,fordham-university-1,Fordham,300,45.0,35.0,40.0,mean,0.6,0.24
+rice-4,Rice,500,fordham-university-2,Fordham,300,30.0,35.0,32.5,mean,0.6,0.195
+rice-4,Rice,500,fordham-university-3,Fordham,300,20.0,15.0,17.5,mean,0.6,0.105
+rice-4,Rice,500,tufts-1,Tufts,150,5.0,8.0,6.5,mean,0.3,0.019
+rice-4,Rice,500,tufts-2,Tufts,200,5.0,5.0,5.0,mean,0.4,0.02
+rice-4,Rice,500,university-of-massachusetts-amherst-1,UMass Amherst,100,12.0,20.0,16.0,mean,0.2,0.032
+rice-4,Rice,500,university-of-massachusetts-amherst-2,UMass Amherst,100,12.0,15.0,13.5,mean,0.2,0.027
+rice-4,Rice,500,university-of-massachusetts-amherst-4,UMass Amherst,100,70.0,60.0,65.0,mean,0.2,0.13
+rice-4,Rice,500,upenn-1,Penn,200,12.0,8.0,10.0,mean,0.4,0.04
+rice-4,Rice,500,upenn-2,Penn,200,45.0,35.0,40.0,mean,0.4,0.16
+rice-4,Rice,500,upenn-4,Penn,200,8.0,8.0,8.0,mean,0.4,0.032
+rice-4,Rice,500,villanova-1,Villanova,250,45.0,40.0,42.5,mean,0.5,0.212
+rice-4,Rice,500,villanova-2,Villanova,250,30.0,35.0,32.5,mean,0.5,0.163
+rice-4,Rice,500,villanova-3,Villanova,250,12.0,20.0,16.0,mean,0.5,0.08
+rice-4,Rice,500,villanova-4,Villanova,250,20.0,10.0,15.0,mean,0.5,0.075
+rice-4,Rice,500,villanova-5,Villanova,250,25.0,10.0,17.5,mean,0.5,0.087
 tufts-1,Tufts,150,boston-college-1,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
 tufts-1,Tufts,150,boston-college-2,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
 tufts-1,Tufts,150,boston-college-3,Boston College,400,2.0,5.0,3.5,mean,1.0,0.035
 tufts-1,Tufts,150,boston-college-4,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
 tufts-1,Tufts,150,boston-university-1,Boston University,300,20.0,30.0,25.0,mean,1.0,0.25
+tufts-1,Tufts,150,emory-1,Emory,200,8.0,15.0,11.5,mean,1.0,0.115
+tufts-1,Tufts,150,emory-2,Emory,150,3.0,3.0,3.0,mean,1.0,0.03
+tufts-1,Tufts,150,emory-3,Emory,150,3.0,3.0,3.0,mean,1.0,0.03
+tufts-1,Tufts,150,emory-4,Emory,150,3.0,3.0,3.0,mean,1.0,0.03
+tufts-1,Tufts,150,emory-5,Emory,150,2.0,2.0,2.0,mean,1.0,0.02
 tufts-1,Tufts,150,fordham-university-1,Fordham,300,3.0,5.0,4.0,mean,1.0,0.04
 tufts-1,Tufts,150,fordham-university-2,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
 tufts-1,Tufts,150,fordham-university-3,Fordham,300,10.0,15.0,12.5,mean,1.0,0.125
+tufts-1,Tufts,150,rice-1,Rice,150,8.0,12.0,10.0,mean,1.0,0.1
+tufts-1,Tufts,150,rice-2,Rice,150,15.0,35.0,25.0,mean,1.0,0.25
+tufts-1,Tufts,150,rice-3,Rice,500,3.0,5.0,4.0,mean,1.0,0.04
+tufts-1,Tufts,150,rice-4,Rice,500,5.0,8.0,6.5,mean,1.0,0.065
 tufts-1,Tufts,150,university-of-massachusetts-amherst-1,UMass Amherst,100,20.0,30.0,25.0,mean,0.667,0.167
 tufts-1,Tufts,150,university-of-massachusetts-amherst-2,UMass Amherst,100,8.0,5.0,6.5,mean,0.667,0.043
 tufts-1,Tufts,150,university-of-massachusetts-amherst-4,UMass Amherst,100,5.0,5.0,5.0,mean,0.667,0.033
+tufts-1,Tufts,150,upenn-1,Penn,200,3.0,2.0,2.5,mean,1.0,0.025
+tufts-1,Tufts,150,upenn-2,Penn,200,10.0,20.0,15.0,mean,1.0,0.15
+tufts-1,Tufts,150,upenn-4,Penn,200,5.0,8.0,6.5,mean,1.0,0.065
+tufts-1,Tufts,150,villanova-1,Villanova,250,2.0,2.0,2.0,mean,1.0,0.02
+tufts-1,Tufts,150,villanova-2,Villanova,250,2.0,2.0,2.0,mean,1.0,0.02
+tufts-1,Tufts,150,villanova-3,Villanova,250,12.0,25.0,18.5,mean,1.0,0.185
+tufts-1,Tufts,150,villanova-4,Villanova,250,3.0,2.0,2.5,mean,1.0,0.025
+tufts-1,Tufts,150,villanova-5,Villanova,250,2.0,2.0,2.0,mean,1.0,0.02
 tufts-2,Tufts,200,boston-college-1,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
 tufts-2,Tufts,200,boston-college-2,Boston College,400,15.0,15.0,15.0,mean,1.0,0.15
 tufts-2,Tufts,200,boston-college-3,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
 tufts-2,Tufts,200,boston-college-4,Boston College,400,8.0,5.0,6.5,mean,1.0,0.065
 tufts-2,Tufts,200,boston-university-1,Boston University,300,10.0,10.0,10.0,mean,1.0,0.1
+tufts-2,Tufts,200,emory-1,Emory,200,25.0,25.0,25.0,mean,1.0,0.25
+tufts-2,Tufts,200,emory-2,Emory,150,5.0,5.0,5.0,mean,0.75,0.038
+tufts-2,Tufts,200,emory-3,Emory,150,15.0,12.0,13.5,mean,0.75,0.101
+tufts-2,Tufts,200,emory-4,Emory,150,5.0,5.0,5.0,mean,0.75,0.038
+tufts-2,Tufts,200,emory-5,Emory,150,10.0,15.0,12.5,mean,0.75,0.094
 tufts-2,Tufts,200,fordham-university-1,Fordham,300,15.0,15.0,15.0,mean,1.0,0.15
 tufts-2,Tufts,200,fordham-university-2,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
 tufts-2,Tufts,200,fordham-university-3,Fordham,300,8.0,5.0,6.5,mean,1.0,0.065
+tufts-2,Tufts,200,rice-1,Rice,150,20.0,25.0,22.5,mean,0.75,0.169
+tufts-2,Tufts,200,rice-2,Rice,150,5.0,5.0,5.0,mean,0.75,0.038
+tufts-2,Tufts,200,rice-3,Rice,500,5.0,8.0,6.5,mean,1.0,0.065
+tufts-2,Tufts,200,rice-4,Rice,500,5.0,5.0,5.0,mean,1.0,0.05
 tufts-2,Tufts,200,university-of-massachusetts-amherst-1,UMass Amherst,100,8.0,5.0,6.5,mean,0.5,0.033
 tufts-2,Tufts,200,university-of-massachusetts-amherst-2,UMass Amherst,100,25.0,25.0,25.0,mean,0.5,0.125
 tufts-2,Tufts,200,university-of-massachusetts-amherst-4,UMass Amherst,100,3.0,5.0,4.0,mean,0.5,0.02
+tufts-2,Tufts,200,upenn-1,Penn,200,8.0,5.0,6.5,mean,1.0,0.065
+tufts-2,Tufts,200,upenn-2,Penn,200,5.0,5.0,5.0,mean,1.0,0.05
+tufts-2,Tufts,200,upenn-4,Penn,200,30.0,30.0,30.0,mean,1.0,0.3
+tufts-2,Tufts,200,villanova-1,Villanova,250,8.0,8.0,8.0,mean,1.0,0.08
+tufts-2,Tufts,200,villanova-2,Villanova,250,10.0,10.0,10.0,mean,1.0,0.1
+tufts-2,Tufts,200,villanova-3,Villanova,250,3.0,5.0,4.0,mean,1.0,0.04
+tufts-2,Tufts,200,villanova-4,Villanova,250,10.0,10.0,10.0,mean,1.0,0.1
+tufts-2,Tufts,200,villanova-5,Villanova,250,3.0,3.0,3.0,mean,1.0,0.03
 university-of-massachusetts-amherst-1,UMass Amherst,100,boston-college-1,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
 university-of-massachusetts-amherst-1,UMass Amherst,100,boston-college-2,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
 university-of-massachusetts-amherst-1,UMass Amherst,100,boston-college-3,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
 university-of-massachusetts-amherst-1,UMass Amherst,100,boston-college-4,Boston College,400,8.0,10.0,9.0,mean,1.0,0.09
 university-of-massachusetts-amherst-1,UMass Amherst,100,boston-university-1,Boston University,300,50.0,50.0,50.0,mean,1.0,0.5
+university-of-massachusetts-amherst-1,UMass Amherst,100,emory-1,Emory,200,50.0,40.0,45.0,mean,1.0,0.45
+university-of-massachusetts-amherst-1,UMass Amherst,100,emory-2,Emory,150,5.0,5.0,5.0,mean,1.0,0.05
+university-of-massachusetts-amherst-1,UMass Amherst,100,emory-3,Emory,150,5.0,3.0,4.0,mean,1.0,0.04
+university-of-massachusetts-amherst-1,UMass Amherst,100,emory-4,Emory,150,8.0,15.0,11.5,mean,1.0,0.115
+university-of-massachusetts-amherst-1,UMass Amherst,100,emory-5,Emory,150,3.0,3.0,3.0,mean,1.0,0.03
 university-of-massachusetts-amherst-1,UMass Amherst,100,fordham-university-1,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
 university-of-massachusetts-amherst-1,UMass Amherst,100,fordham-university-2,Fordham,300,8.0,15.0,11.5,mean,1.0,0.115
 university-of-massachusetts-amherst-1,UMass Amherst,100,fordham-university-3,Fordham,300,30.0,40.0,35.0,mean,1.0,0.35
+university-of-massachusetts-amherst-1,UMass Amherst,100,rice-1,Rice,150,20.0,40.0,30.0,mean,1.0,0.3
+university-of-massachusetts-amherst-1,UMass Amherst,100,rice-2,Rice,150,50.0,50.0,50.0,mean,1.0,0.5
+university-of-massachusetts-amherst-1,UMass Amherst,100,rice-3,Rice,500,5.0,15.0,10.0,mean,1.0,0.1
+university-of-massachusetts-amherst-1,UMass Amherst,100,rice-4,Rice,500,10.0,20.0,15.0,mean,1.0,0.15
 university-of-massachusetts-amherst-1,UMass Amherst,100,tufts-1,Tufts,150,30.0,35.0,32.5,mean,1.0,0.325
 university-of-massachusetts-amherst-1,UMass Amherst,100,tufts-2,Tufts,200,10.0,5.0,7.5,mean,1.0,0.075
+university-of-massachusetts-amherst-1,UMass Amherst,100,upenn-1,Penn,200,2.0,2.0,2.0,mean,1.0,0.02
+university-of-massachusetts-amherst-1,UMass Amherst,100,upenn-2,Penn,200,35.0,40.0,37.5,mean,1.0,0.375
+university-of-massachusetts-amherst-1,UMass Amherst,100,upenn-4,Penn,200,20.0,30.0,25.0,mean,1.0,0.25
+university-of-massachusetts-amherst-1,UMass Amherst,100,villanova-1,Villanova,250,5.0,5.0,5.0,mean,1.0,0.05
+university-of-massachusetts-amherst-1,UMass Amherst,100,villanova-2,Villanova,250,3.0,5.0,4.0,mean,1.0,0.04
+university-of-massachusetts-amherst-1,UMass Amherst,100,villanova-3,Villanova,250,50.0,50.0,50.0,mean,1.0,0.5
+university-of-massachusetts-amherst-1,UMass Amherst,100,villanova-4,Villanova,250,5.0,8.0,6.5,mean,1.0,0.065
+university-of-massachusetts-amherst-1,UMass Amherst,100,villanova-5,Villanova,250,3.0,5.0,4.0,mean,1.0,0.04
 university-of-massachusetts-amherst-2,UMass Amherst,100,boston-college-1,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
 university-of-massachusetts-amherst-2,UMass Amherst,100,boston-college-2,Boston College,400,10.0,15.0,12.5,mean,1.0,0.125
 university-of-massachusetts-amherst-2,UMass Amherst,100,boston-college-3,Boston College,400,5.0,10.0,7.5,mean,1.0,0.075
 university-of-massachusetts-amherst-2,UMass Amherst,100,boston-college-4,Boston College,400,5.0,10.0,7.5,mean,1.0,0.075
 university-of-massachusetts-amherst-2,UMass Amherst,100,boston-university-1,Boston University,300,25.0,30.0,27.5,mean,1.0,0.275
+university-of-massachusetts-amherst-2,UMass Amherst,100,emory-1,Emory,200,75.0,75.0,75.0,mean,1.0,0.75
+university-of-massachusetts-amherst-2,UMass Amherst,100,emory-2,Emory,150,5.0,10.0,7.5,mean,1.0,0.075
+university-of-massachusetts-amherst-2,UMass Amherst,100,emory-3,Emory,150,5.0,5.0,5.0,mean,1.0,0.05
+university-of-massachusetts-amherst-2,UMass Amherst,100,emory-4,Emory,150,15.0,20.0,17.5,mean,1.0,0.175
+university-of-massachusetts-amherst-2,UMass Amherst,100,emory-5,Emory,150,5.0,5.0,5.0,mean,1.0,0.05
 university-of-massachusetts-amherst-2,UMass Amherst,100,fordham-university-1,Fordham,300,10.0,15.0,12.5,mean,1.0,0.125
 university-of-massachusetts-amherst-2,UMass Amherst,100,fordham-university-2,Fordham,300,5.0,10.0,7.5,mean,1.0,0.075
 university-of-massachusetts-amherst-2,UMass Amherst,100,fordham-university-3,Fordham,300,20.0,20.0,20.0,mean,1.0,0.2
+university-of-massachusetts-amherst-2,UMass Amherst,100,rice-1,Rice,150,75.0,85.0,80.0,mean,1.0,0.8
+university-of-massachusetts-amherst-2,UMass Amherst,100,rice-2,Rice,150,10.0,15.0,12.5,mean,1.0,0.125
+university-of-massachusetts-amherst-2,UMass Amherst,100,rice-3,Rice,500,8.0,10.0,9.0,mean,1.0,0.09
+university-of-massachusetts-amherst-2,UMass Amherst,100,rice-4,Rice,500,8.0,15.0,11.5,mean,1.0,0.115
 university-of-massachusetts-amherst-2,UMass Amherst,100,tufts-1,Tufts,150,10.0,5.0,7.5,mean,1.0,0.075
 university-of-massachusetts-amherst-2,UMass Amherst,100,tufts-2,Tufts,200,35.0,35.0,35.0,mean,1.0,0.35
+university-of-massachusetts-amherst-2,UMass Amherst,100,upenn-1,Penn,200,8.0,5.0,6.5,mean,1.0,0.065
+university-of-massachusetts-amherst-2,UMass Amherst,100,upenn-2,Penn,200,5.0,5.0,5.0,mean,1.0,0.05
+university-of-massachusetts-amherst-2,UMass Amherst,100,upenn-4,Penn,200,55.0,60.0,57.5,mean,1.0,0.575
+university-of-massachusetts-amherst-2,UMass Amherst,100,villanova-1,Villanova,250,8.0,10.0,9.0,mean,1.0,0.09
+university-of-massachusetts-amherst-2,UMass Amherst,100,villanova-2,Villanova,250,5.0,10.0,7.5,mean,1.0,0.075
+university-of-massachusetts-amherst-2,UMass Amherst,100,villanova-3,Villanova,250,15.0,30.0,22.5,mean,1.0,0.225
+university-of-massachusetts-amherst-2,UMass Amherst,100,villanova-4,Villanova,250,20.0,25.0,22.5,mean,1.0,0.225
+university-of-massachusetts-amherst-2,UMass Amherst,100,villanova-5,Villanova,250,3.0,5.0,4.0,mean,1.0,0.04
 university-of-massachusetts-amherst-4,UMass Amherst,100,boston-college-1,Boston College,400,55.0,50.0,52.5,mean,1.0,0.525
 university-of-massachusetts-amherst-4,UMass Amherst,100,boston-college-2,Boston College,400,10.0,15.0,12.5,mean,1.0,0.125
 university-of-massachusetts-amherst-4,UMass Amherst,100,boston-college-3,Boston College,400,35.0,35.0,35.0,mean,1.0,0.35
 university-of-massachusetts-amherst-4,UMass Amherst,100,boston-college-4,Boston College,400,20.0,25.0,22.5,mean,1.0,0.225
 university-of-massachusetts-amherst-4,UMass Amherst,100,boston-university-1,Boston University,300,10.0,10.0,10.0,mean,1.0,0.1
+university-of-massachusetts-amherst-4,UMass Amherst,100,emory-1,Emory,200,5.0,5.0,5.0,mean,1.0,0.05
+university-of-massachusetts-amherst-4,UMass Amherst,100,emory-2,Emory,150,45.0,60.0,52.5,mean,1.0,0.525
+university-of-massachusetts-amherst-4,UMass Amherst,100,emory-3,Emory,150,25.0,20.0,22.5,mean,1.0,0.225
+university-of-massachusetts-amherst-4,UMass Amherst,100,emory-4,Emory,150,20.0,20.0,20.0,mean,1.0,0.2
+university-of-massachusetts-amherst-4,UMass Amherst,100,emory-5,Emory,150,10.0,10.0,10.0,mean,1.0,0.1
 university-of-massachusetts-amherst-4,UMass Amherst,100,fordham-university-1,Fordham,300,25.0,25.0,25.0,mean,1.0,0.25
 university-of-massachusetts-amherst-4,UMass Amherst,100,fordham-university-2,Fordham,300,30.0,25.0,27.5,mean,1.0,0.275
 university-of-massachusetts-amherst-4,UMass Amherst,100,fordham-university-3,Fordham,300,15.0,10.0,12.5,mean,1.0,0.125
+university-of-massachusetts-amherst-4,UMass Amherst,100,rice-1,Rice,150,3.0,8.0,5.5,mean,1.0,0.055
+university-of-massachusetts-amherst-4,UMass Amherst,100,rice-2,Rice,150,8.0,12.0,10.0,mean,1.0,0.1
+university-of-massachusetts-amherst-4,UMass Amherst,100,rice-3,Rice,500,55.0,60.0,57.5,mean,1.0,0.575
+university-of-massachusetts-amherst-4,UMass Amherst,100,rice-4,Rice,500,65.0,65.0,65.0,mean,1.0,0.65
 university-of-massachusetts-amherst-4,UMass Amherst,100,tufts-1,Tufts,150,5.0,5.0,5.0,mean,1.0,0.05
 university-of-massachusetts-amherst-4,UMass Amherst,100,tufts-2,Tufts,200,3.0,5.0,4.0,mean,1.0,0.04
+university-of-massachusetts-amherst-4,UMass Amherst,100,upenn-1,Penn,200,8.0,5.0,6.5,mean,1.0,0.065
+university-of-massachusetts-amherst-4,UMass Amherst,100,upenn-2,Penn,200,45.0,40.0,42.5,mean,1.0,0.425
+university-of-massachusetts-amherst-4,UMass Amherst,100,upenn-4,Penn,200,5.0,8.0,6.5,mean,1.0,0.065
+university-of-massachusetts-amherst-4,UMass Amherst,100,villanova-1,Villanova,250,30.0,35.0,32.5,mean,1.0,0.325
+university-of-massachusetts-amherst-4,UMass Amherst,100,villanova-2,Villanova,250,20.0,25.0,22.5,mean,1.0,0.225
+university-of-massachusetts-amherst-4,UMass Amherst,100,villanova-3,Villanova,250,12.0,15.0,13.5,mean,1.0,0.135
+university-of-massachusetts-amherst-4,UMass Amherst,100,villanova-4,Villanova,250,8.0,10.0,9.0,mean,1.0,0.09
+university-of-massachusetts-amherst-4,UMass Amherst,100,villanova-5,Villanova,250,15.0,25.0,20.0,mean,1.0,0.2
+upenn-1,Penn,200,boston-college-1,Boston College,400,15.0,8.0,11.5,mean,1.0,0.115
+upenn-1,Penn,200,boston-college-2,Boston College,400,35.0,30.0,32.5,mean,1.0,0.325
+upenn-1,Penn,200,boston-college-3,Boston College,400,8.0,5.0,6.5,mean,1.0,0.065
+upenn-1,Penn,200,boston-college-4,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
+upenn-1,Penn,200,boston-university-1,Boston University,300,2.0,2.0,2.0,mean,1.0,0.02
+upenn-1,Penn,200,emory-1,Emory,200,3.0,3.0,3.0,mean,1.0,0.03
+upenn-1,Penn,200,emory-2,Emory,150,10.0,5.0,7.5,mean,0.75,0.056
+upenn-1,Penn,200,emory-3,Emory,150,10.0,5.0,7.5,mean,0.75,0.056
+upenn-1,Penn,200,emory-4,Emory,150,5.0,3.0,4.0,mean,0.75,0.03
+upenn-1,Penn,200,emory-5,Emory,150,5.0,3.0,4.0,mean,0.75,0.03
+upenn-1,Penn,200,fordham-university-1,Fordham,300,15.0,15.0,15.0,mean,1.0,0.15
+upenn-1,Penn,200,fordham-university-2,Fordham,300,8.0,3.0,5.5,mean,1.0,0.055
+upenn-1,Penn,200,fordham-university-3,Fordham,300,8.0,10.0,9.0,mean,1.0,0.09
+upenn-1,Penn,200,rice-1,Rice,150,3.0,5.0,4.0,mean,0.75,0.03
+upenn-1,Penn,200,rice-2,Rice,150,2.0,2.0,2.0,mean,0.75,0.015
+upenn-1,Penn,200,rice-3,Rice,500,15.0,10.0,12.5,mean,1.0,0.125
+upenn-1,Penn,200,rice-4,Rice,500,12.0,10.0,11.0,mean,1.0,0.11
+upenn-1,Penn,200,tufts-1,Tufts,150,2.0,2.0,2.0,mean,0.75,0.015
+upenn-1,Penn,200,tufts-2,Tufts,200,8.0,5.0,6.5,mean,1.0,0.065
+upenn-1,Penn,200,university-of-massachusetts-amherst-1,UMass Amherst,100,2.0,2.0,2.0,mean,0.5,0.01
+upenn-1,Penn,200,university-of-massachusetts-amherst-2,UMass Amherst,100,8.0,5.0,6.5,mean,0.5,0.033
+upenn-1,Penn,200,university-of-massachusetts-amherst-4,UMass Amherst,100,8.0,5.0,6.5,mean,0.5,0.033
+upenn-1,Penn,200,villanova-1,Villanova,250,8.0,5.0,6.5,mean,1.0,0.065
+upenn-1,Penn,200,villanova-2,Villanova,250,20.0,15.0,17.5,mean,1.0,0.175
+upenn-1,Penn,200,villanova-3,Villanova,250,2.0,2.0,2.0,mean,1.0,0.02
+upenn-1,Penn,200,villanova-4,Villanova,250,3.0,2.0,2.5,mean,1.0,0.025
+upenn-1,Penn,200,villanova-5,Villanova,250,10.0,10.0,10.0,mean,1.0,0.1
+upenn-2,Penn,200,boston-college-1,Boston College,400,20.0,15.0,17.5,mean,1.0,0.175
+upenn-2,Penn,200,boston-college-2,Boston College,400,10.0,10.0,10.0,mean,1.0,0.1
+upenn-2,Penn,200,boston-college-3,Boston College,400,15.0,12.0,13.5,mean,1.0,0.135
+upenn-2,Penn,200,boston-college-4,Boston College,400,20.0,25.0,22.5,mean,1.0,0.225
+upenn-2,Penn,200,boston-university-1,Boston University,300,25.0,35.0,30.0,mean,1.0,0.3
+upenn-2,Penn,200,emory-1,Emory,200,8.0,10.0,9.0,mean,1.0,0.09
+upenn-2,Penn,200,emory-2,Emory,150,30.0,30.0,30.0,mean,0.75,0.225
+upenn-2,Penn,200,emory-3,Emory,150,15.0,15.0,15.0,mean,0.75,0.112
+upenn-2,Penn,200,emory-4,Emory,150,15.0,20.0,17.5,mean,0.75,0.131
+upenn-2,Penn,200,emory-5,Emory,150,12.0,12.0,12.0,mean,0.75,0.09
+upenn-2,Penn,200,fordham-university-1,Fordham,300,20.0,15.0,17.5,mean,1.0,0.175
+upenn-2,Penn,200,fordham-university-2,Fordham,300,25.0,20.0,22.5,mean,1.0,0.225
+upenn-2,Penn,200,fordham-university-3,Fordham,300,25.0,20.0,22.5,mean,1.0,0.225
+upenn-2,Penn,200,rice-1,Rice,150,10.0,10.0,10.0,mean,0.75,0.075
+upenn-2,Penn,200,rice-2,Rice,150,25.0,30.0,27.5,mean,0.75,0.206
+upenn-2,Penn,200,rice-3,Rice,500,40.0,45.0,42.5,mean,1.0,0.425
+upenn-2,Penn,200,rice-4,Rice,500,40.0,40.0,40.0,mean,1.0,0.4
+upenn-2,Penn,200,tufts-1,Tufts,150,8.0,20.0,14.0,mean,0.75,0.105
+upenn-2,Penn,200,tufts-2,Tufts,200,5.0,5.0,5.0,mean,1.0,0.05
+upenn-2,Penn,200,university-of-massachusetts-amherst-1,UMass Amherst,100,35.0,35.0,35.0,mean,0.5,0.175
+upenn-2,Penn,200,university-of-massachusetts-amherst-2,UMass Amherst,100,5.0,5.0,5.0,mean,0.5,0.025
+upenn-2,Penn,200,university-of-massachusetts-amherst-4,UMass Amherst,100,45.0,45.0,45.0,mean,0.5,0.225
+upenn-2,Penn,200,villanova-1,Villanova,250,20.0,15.0,17.5,mean,1.0,0.175
+upenn-2,Penn,200,villanova-2,Villanova,250,25.0,25.0,25.0,mean,1.0,0.25
+upenn-2,Penn,200,villanova-3,Villanova,250,45.0,40.0,42.5,mean,1.0,0.425
+upenn-2,Penn,200,villanova-4,Villanova,250,10.0,10.0,10.0,mean,1.0,0.1
+upenn-2,Penn,200,villanova-5,Villanova,250,12.0,10.0,11.0,mean,1.0,0.11
+upenn-4,Penn,200,boston-college-1,Boston College,400,3.0,3.0,3.0,mean,1.0,0.03
+upenn-4,Penn,200,boston-college-2,Boston College,400,25.0,30.0,27.5,mean,1.0,0.275
+upenn-4,Penn,200,boston-college-3,Boston College,400,3.0,3.0,3.0,mean,1.0,0.03
+upenn-4,Penn,200,boston-college-4,Boston College,400,5.0,8.0,6.5,mean,1.0,0.065
+upenn-4,Penn,200,boston-university-1,Boston University,300,30.0,30.0,30.0,mean,1.0,0.3
+upenn-4,Penn,200,emory-1,Emory,200,50.0,60.0,55.0,mean,1.0,0.55
+upenn-4,Penn,200,emory-2,Emory,150,3.0,5.0,4.0,mean,0.75,0.03
+upenn-4,Penn,200,emory-3,Emory,150,10.0,12.0,11.0,mean,0.75,0.083
+upenn-4,Penn,200,emory-4,Emory,150,10.0,10.0,10.0,mean,0.75,0.075
+upenn-4,Penn,200,emory-5,Emory,150,10.0,10.0,10.0,mean,0.75,0.075
+upenn-4,Penn,200,fordham-university-1,Fordham,300,10.0,12.0,11.0,mean,1.0,0.11
+upenn-4,Penn,200,fordham-university-2,Fordham,300,8.0,5.0,6.5,mean,1.0,0.065
+upenn-4,Penn,200,fordham-university-3,Fordham,300,20.0,15.0,17.5,mean,1.0,0.175
+upenn-4,Penn,200,rice-1,Rice,150,55.0,60.0,57.5,mean,0.75,0.431
+upenn-4,Penn,200,rice-2,Rice,150,20.0,25.0,22.5,mean,0.75,0.169
+upenn-4,Penn,200,rice-3,Rice,500,8.0,10.0,9.0,mean,1.0,0.09
+upenn-4,Penn,200,rice-4,Rice,500,8.0,8.0,8.0,mean,1.0,0.08
+upenn-4,Penn,200,tufts-1,Tufts,150,5.0,8.0,6.5,mean,0.75,0.049
+upenn-4,Penn,200,tufts-2,Tufts,200,35.0,40.0,37.5,mean,1.0,0.375
+upenn-4,Penn,200,university-of-massachusetts-amherst-1,UMass Amherst,100,20.0,25.0,22.5,mean,0.5,0.113
+upenn-4,Penn,200,university-of-massachusetts-amherst-2,UMass Amherst,100,45.0,45.0,45.0,mean,0.5,0.225
+upenn-4,Penn,200,university-of-massachusetts-amherst-4,UMass Amherst,100,5.0,8.0,6.5,mean,0.5,0.033
+upenn-4,Penn,200,villanova-1,Villanova,250,5.0,8.0,6.5,mean,1.0,0.065
+upenn-4,Penn,200,villanova-2,Villanova,250,5.0,8.0,6.5,mean,1.0,0.065
+upenn-4,Penn,200,villanova-3,Villanova,250,15.0,25.0,20.0,mean,1.0,0.2
+upenn-4,Penn,200,villanova-4,Villanova,250,20.0,15.0,17.5,mean,1.0,0.175
+upenn-4,Penn,200,villanova-5,Villanova,250,2.0,3.0,2.5,mean,1.0,0.025
+villanova-1,Villanova,250,boston-college-1,Boston College,400,12.0,12.0,12.0,mean,1.0,0.12
+villanova-1,Villanova,250,boston-college-2,Boston College,400,10.0,15.0,12.5,mean,1.0,0.125
+villanova-1,Villanova,250,boston-college-3,Boston College,400,25.0,20.0,22.5,mean,1.0,0.225
+villanova-1,Villanova,250,boston-college-4,Boston College,400,12.0,20.0,16.0,mean,1.0,0.16
+villanova-1,Villanova,250,boston-university-1,Boston University,300,5.0,5.0,5.0,mean,1.0,0.05
+villanova-1,Villanova,250,emory-1,Emory,200,5.0,8.0,6.5,mean,0.8,0.052
+villanova-1,Villanova,250,emory-2,Emory,150,55.0,50.0,52.5,mean,0.6,0.315
+villanova-1,Villanova,250,emory-3,Emory,150,20.0,20.0,20.0,mean,0.6,0.12
+villanova-1,Villanova,250,emory-4,Emory,150,40.0,40.0,40.0,mean,0.6,0.24
+villanova-1,Villanova,250,emory-5,Emory,150,12.0,15.0,13.5,mean,0.6,0.081
+villanova-1,Villanova,250,fordham-university-1,Fordham,300,45.0,50.0,47.5,mean,1.0,0.475
+villanova-1,Villanova,250,fordham-university-2,Fordham,300,10.0,15.0,12.5,mean,1.0,0.125
+villanova-1,Villanova,250,fordham-university-3,Fordham,300,10.0,8.0,9.0,mean,1.0,0.09
+villanova-1,Villanova,250,rice-1,Rice,150,5.0,5.0,5.0,mean,0.6,0.03
+villanova-1,Villanova,250,rice-2,Rice,150,3.0,5.0,4.0,mean,0.6,0.024
+villanova-1,Villanova,250,rice-3,Rice,500,25.0,20.0,22.5,mean,1.0,0.225
+villanova-1,Villanova,250,rice-4,Rice,500,35.0,30.0,32.5,mean,1.0,0.325
+villanova-1,Villanova,250,tufts-1,Tufts,150,2.0,2.0,2.0,mean,0.6,0.012
+villanova-1,Villanova,250,tufts-2,Tufts,200,8.0,8.0,8.0,mean,0.8,0.064
+villanova-1,Villanova,250,university-of-massachusetts-amherst-1,UMass Amherst,100,5.0,5.0,5.0,mean,0.4,0.02
+villanova-1,Villanova,250,university-of-massachusetts-amherst-2,UMass Amherst,100,10.0,10.0,10.0,mean,0.4,0.04
+villanova-1,Villanova,250,university-of-massachusetts-amherst-4,UMass Amherst,100,30.0,25.0,27.5,mean,0.4,0.11
+villanova-1,Villanova,250,upenn-1,Penn,200,8.0,5.0,6.5,mean,0.8,0.052
+villanova-1,Villanova,250,upenn-2,Penn,200,15.0,12.0,13.5,mean,0.8,0.108
+villanova-1,Villanova,250,upenn-4,Penn,200,5.0,8.0,6.5,mean,0.8,0.052
+villanova-2,Villanova,250,boston-college-1,Boston College,400,30.0,25.0,27.5,mean,1.0,0.275
+villanova-2,Villanova,250,boston-college-2,Boston College,400,40.0,30.0,35.0,mean,1.0,0.35
+villanova-2,Villanova,250,boston-college-3,Boston College,400,50.0,40.0,45.0,mean,1.0,0.45
+villanova-2,Villanova,250,boston-college-4,Boston College,400,50.0,50.0,50.0,mean,1.0,0.5
+villanova-2,Villanova,250,boston-university-1,Boston University,300,5.0,8.0,6.5,mean,1.0,0.065
+villanova-2,Villanova,250,emory-1,Emory,200,5.0,5.0,5.0,mean,0.8,0.04
+villanova-2,Villanova,250,emory-2,Emory,150,20.0,20.0,20.0,mean,0.6,0.12
+villanova-2,Villanova,250,emory-3,Emory,150,50.0,30.0,40.0,mean,0.6,0.24
+villanova-2,Villanova,250,emory-4,Emory,150,15.0,15.0,15.0,mean,0.6,0.09
+villanova-2,Villanova,250,emory-5,Emory,150,45.0,35.0,40.0,mean,0.6,0.24
+villanova-2,Villanova,250,fordham-university-1,Fordham,300,60.0,65.0,62.5,mean,1.0,0.625
+villanova-2,Villanova,250,fordham-university-2,Fordham,300,15.0,15.0,15.0,mean,1.0,0.15
+villanova-2,Villanova,250,fordham-university-3,Fordham,300,15.0,15.0,15.0,mean,1.0,0.15
+villanova-2,Villanova,250,rice-1,Rice,150,3.0,5.0,4.0,mean,0.6,0.024
+villanova-2,Villanova,250,rice-2,Rice,150,3.0,5.0,4.0,mean,0.6,0.024
+villanova-2,Villanova,250,rice-3,Rice,500,55.0,45.0,50.0,mean,1.0,0.5
+villanova-2,Villanova,250,rice-4,Rice,500,25.0,35.0,30.0,mean,1.0,0.3
+villanova-2,Villanova,250,tufts-1,Tufts,150,3.0,2.0,2.5,mean,0.6,0.015
+villanova-2,Villanova,250,tufts-2,Tufts,200,10.0,8.0,9.0,mean,0.8,0.072
+villanova-2,Villanova,250,university-of-massachusetts-amherst-1,UMass Amherst,100,3.0,5.0,4.0,mean,0.4,0.016
+villanova-2,Villanova,250,university-of-massachusetts-amherst-2,UMass Amherst,100,5.0,10.0,7.5,mean,0.4,0.03
+villanova-2,Villanova,250,university-of-massachusetts-amherst-4,UMass Amherst,100,20.0,25.0,22.5,mean,0.4,0.09
+villanova-2,Villanova,250,upenn-1,Penn,200,20.0,12.0,16.0,mean,0.8,0.128
+villanova-2,Villanova,250,upenn-2,Penn,200,20.0,20.0,20.0,mean,0.8,0.16
+villanova-2,Villanova,250,upenn-4,Penn,200,5.0,5.0,5.0,mean,0.8,0.04
+villanova-3,Villanova,250,boston-college-1,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
+villanova-3,Villanova,250,boston-college-2,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
+villanova-3,Villanova,250,boston-college-3,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
+villanova-3,Villanova,250,boston-college-4,Boston College,400,10.0,15.0,12.5,mean,1.0,0.125
+villanova-3,Villanova,250,boston-university-1,Boston University,300,50.0,55.0,52.5,mean,1.0,0.525
+villanova-3,Villanova,250,emory-1,Emory,200,35.0,40.0,37.5,mean,0.8,0.3
+villanova-3,Villanova,250,emory-2,Emory,150,5.0,5.0,5.0,mean,0.6,0.03
+villanova-3,Villanova,250,emory-3,Emory,150,5.0,3.0,4.0,mean,0.6,0.024
+villanova-3,Villanova,250,emory-4,Emory,150,12.0,15.0,13.5,mean,0.6,0.081
+villanova-3,Villanova,250,emory-5,Emory,150,3.0,3.0,3.0,mean,0.6,0.018
+villanova-3,Villanova,250,fordham-university-1,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
+villanova-3,Villanova,250,fordham-university-2,Fordham,300,20.0,10.0,15.0,mean,1.0,0.15
+villanova-3,Villanova,250,fordham-university-3,Fordham,300,35.0,30.0,32.5,mean,1.0,0.325
+villanova-3,Villanova,250,rice-1,Rice,150,15.0,35.0,25.0,mean,0.6,0.15
+villanova-3,Villanova,250,rice-2,Rice,150,45.0,50.0,47.5,mean,0.6,0.285
+villanova-3,Villanova,250,rice-3,Rice,500,10.0,12.0,11.0,mean,1.0,0.11
+villanova-3,Villanova,250,rice-4,Rice,500,12.0,20.0,16.0,mean,1.0,0.16
+villanova-3,Villanova,250,tufts-1,Tufts,150,12.0,25.0,18.5,mean,0.6,0.111
+villanova-3,Villanova,250,tufts-2,Tufts,200,5.0,5.0,5.0,mean,0.8,0.04
+villanova-3,Villanova,250,university-of-massachusetts-amherst-1,UMass Amherst,100,50.0,50.0,50.0,mean,0.4,0.2
+villanova-3,Villanova,250,university-of-massachusetts-amherst-2,UMass Amherst,100,20.0,20.0,20.0,mean,0.4,0.08
+villanova-3,Villanova,250,university-of-massachusetts-amherst-4,UMass Amherst,100,15.0,15.0,15.0,mean,0.4,0.06
+villanova-3,Villanova,250,upenn-1,Penn,200,2.0,2.0,2.0,mean,0.8,0.016
+villanova-3,Villanova,250,upenn-2,Penn,200,45.0,40.0,42.5,mean,0.8,0.34
+villanova-3,Villanova,250,upenn-4,Penn,200,15.0,25.0,20.0,mean,0.8,0.16
+villanova-4,Villanova,250,boston-college-1,Boston College,400,3.0,3.0,3.0,mean,1.0,0.03
+villanova-4,Villanova,250,boston-college-2,Boston College,400,15.0,10.0,12.5,mean,1.0,0.125
+villanova-4,Villanova,250,boston-college-3,Boston College,400,3.0,3.0,3.0,mean,1.0,0.03
+villanova-4,Villanova,250,boston-college-4,Boston College,400,8.0,15.0,11.5,mean,1.0,0.115
+villanova-4,Villanova,250,boston-university-1,Boston University,300,5.0,8.0,6.5,mean,1.0,0.065
+villanova-4,Villanova,250,emory-1,Emory,200,20.0,20.0,20.0,mean,0.8,0.16
+villanova-4,Villanova,250,emory-2,Emory,150,15.0,15.0,15.0,mean,0.6,0.09
+villanova-4,Villanova,250,emory-3,Emory,150,5.0,3.0,4.0,mean,0.6,0.024
+villanova-4,Villanova,250,emory-4,Emory,150,35.0,40.0,37.5,mean,0.6,0.225
+villanova-4,Villanova,250,emory-5,Emory,150,5.0,5.0,5.0,mean,0.6,0.03
+villanova-4,Villanova,250,fordham-university-1,Fordham,300,12.0,10.0,11.0,mean,1.0,0.11
+villanova-4,Villanova,250,fordham-university-2,Fordham,300,5.0,3.0,4.0,mean,1.0,0.04
+villanova-4,Villanova,250,fordham-university-3,Fordham,300,15.0,10.0,12.5,mean,1.0,0.125
+villanova-4,Villanova,250,rice-1,Rice,150,15.0,12.0,13.5,mean,0.6,0.081
+villanova-4,Villanova,250,rice-2,Rice,150,5.0,8.0,6.5,mean,0.6,0.039
+villanova-4,Villanova,250,rice-3,Rice,500,8.0,5.0,6.5,mean,1.0,0.065
+villanova-4,Villanova,250,rice-4,Rice,500,10.0,10.0,10.0,mean,1.0,0.1
+villanova-4,Villanova,250,tufts-1,Tufts,150,3.0,2.0,2.5,mean,0.6,0.015
+villanova-4,Villanova,250,tufts-2,Tufts,200,10.0,8.0,9.0,mean,0.8,0.072
+villanova-4,Villanova,250,university-of-massachusetts-amherst-1,UMass Amherst,100,5.0,5.0,5.0,mean,0.4,0.02
+villanova-4,Villanova,250,university-of-massachusetts-amherst-2,UMass Amherst,100,25.0,20.0,22.5,mean,0.4,0.09
+villanova-4,Villanova,250,university-of-massachusetts-amherst-4,UMass Amherst,100,8.0,10.0,9.0,mean,0.4,0.036
+villanova-4,Villanova,250,upenn-1,Penn,200,3.0,2.0,2.5,mean,0.8,0.02
+villanova-4,Villanova,250,upenn-2,Penn,200,8.0,8.0,8.0,mean,0.8,0.064
+villanova-4,Villanova,250,upenn-4,Penn,200,20.0,15.0,17.5,mean,0.8,0.14
+villanova-5,Villanova,250,boston-college-1,Boston College,400,10.0,10.0,10.0,mean,1.0,0.1
+villanova-5,Villanova,250,boston-college-2,Boston College,400,15.0,10.0,12.5,mean,1.0,0.125
+villanova-5,Villanova,250,boston-college-3,Boston College,400,10.0,10.0,10.0,mean,1.0,0.1
+villanova-5,Villanova,250,boston-college-4,Boston College,400,12.0,30.0,21.0,mean,1.0,0.21
+villanova-5,Villanova,250,boston-university-1,Boston University,300,3.0,5.0,4.0,mean,1.0,0.04
+villanova-5,Villanova,250,emory-1,Emory,200,3.0,3.0,3.0,mean,0.8,0.024
+villanova-5,Villanova,250,emory-2,Emory,150,25.0,20.0,22.5,mean,0.6,0.135
+villanova-5,Villanova,250,emory-3,Emory,150,12.0,5.0,8.5,mean,0.6,0.051
+villanova-5,Villanova,250,emory-4,Emory,150,20.0,25.0,22.5,mean,0.6,0.135
+villanova-5,Villanova,250,emory-5,Emory,150,10.0,5.0,7.5,mean,0.6,0.045
+villanova-5,Villanova,250,fordham-university-1,Fordham,300,25.0,25.0,25.0,mean,1.0,0.25
+villanova-5,Villanova,250,fordham-university-2,Fordham,300,8.0,10.0,9.0,mean,1.0,0.09
+villanova-5,Villanova,250,fordham-university-3,Fordham,300,3.0,5.0,4.0,mean,1.0,0.04
+villanova-5,Villanova,250,rice-1,Rice,150,2.0,3.0,2.5,mean,0.6,0.015
+villanova-5,Villanova,250,rice-2,Rice,150,2.0,5.0,3.5,mean,0.6,0.021
+villanova-5,Villanova,250,rice-3,Rice,500,20.0,15.0,17.5,mean,1.0,0.175
+villanova-5,Villanova,250,rice-4,Rice,500,20.0,15.0,17.5,mean,1.0,0.175
+villanova-5,Villanova,250,tufts-1,Tufts,150,2.0,2.0,2.0,mean,0.6,0.012
+villanova-5,Villanova,250,tufts-2,Tufts,200,3.0,3.0,3.0,mean,0.8,0.024
+villanova-5,Villanova,250,university-of-massachusetts-amherst-1,UMass Amherst,100,3.0,3.0,3.0,mean,0.4,0.012
+villanova-5,Villanova,250,university-of-massachusetts-amherst-2,UMass Amherst,100,3.0,5.0,4.0,mean,0.4,0.016
+villanova-5,Villanova,250,university-of-massachusetts-amherst-4,UMass Amherst,100,15.0,20.0,17.5,mean,0.4,0.07
+villanova-5,Villanova,250,upenn-1,Penn,200,10.0,8.0,9.0,mean,0.8,0.072
+villanova-5,Villanova,250,upenn-2,Penn,200,10.0,5.0,7.5,mean,0.8,0.06
+villanova-5,Villanova,250,upenn-4,Penn,200,2.0,3.0,2.5,mean,0.8,0.02
