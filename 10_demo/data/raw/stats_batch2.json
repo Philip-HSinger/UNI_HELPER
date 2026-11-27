@@ -1,0 +1,244 @@
+[
+  {
+    "school_id": "fairfield-university",
+    "school": "Fairfield University",
+    "cds_year": "2025-26",
+    "cds_url": "https://www.fairfield.edu/_files/documents/pdfs/4422120485_about_offices-and-departments_institutional-research_common-data-sheet-2025-26_03302026.pdf",
+    "stats_source": "CDS",
+    "applicants": 21299,
+    "admits": 5336,
+    "enrolled": 1513,
+    "admit_rate": 0.2505,
+    "ed_applicants": 689,
+    "ed_admits": 566,
+    "ed_rate": 0.8215,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": 0.17,
+    "pct_submit_act": 0.04,
+    "sat_ebrw": [
+      640,
+      670,
+      700
+    ],
+    "sat_math": [
+      630,
+      660,
+      690
+    ],
+    "sat_composite": [
+      1280,
+      1330,
+      1370
+    ],
+    "act_composite": [
+      29,
+      30,
+      32
+    ],
+    "test_importance": "Considered",
+    "test_policy_2026_27": "test-optional (SAT/ACT required for homeschooled applicants; TOEFL/IELTS/Duolingo for non-native English speakers)",
+    "test_policy_url": "https://www.fairfield.edu/admission-and-aid/apply/first-year-applicants/",
+    "deadlines": {
+      "ED1": "Nov 15",
+      "ED2": "Jan 15",
+      "EA": "Nov 1",
+      "RD": "Jan 15"
+    },
+    "deadlines_url": "https://www.fairfield.edu/admission-and-aid/apply/first-year-applicants/",
+    "notes": "2025-26 CDS (Fall 2025 entering class; file dated 03/30/2026, linked from the IR page). Page headers inside the PDF still read 'Common Data Set 2024-2025' (template carry-over), but the data are labelled Fall 2025. C9: 258 SAT / 54 ACT submitters of 1,513 enrolled (17% / 4% as published). C21 ED counts combine ED I (11/15) and ED II (1/15). The standard CDS does not ask for EA counts and none are published. C22 EA notification is 12/20; the admissions page gives Dec 20-Jan 15. The admissions FAQ cites Class of 2030 admitted-student middle 50% of SAT 1320-1420 and ACT 29-33 (admitted, not enrolled). The admissions page does not print a cycle year; dates are taken as current for 2026-27."
+  },
+  {
+    "school_id": "university-of-rhode-island",
+    "school": "University of Rhode Island",
+    "cds_year": "2025-26",
+    "cds_url": "https://web.uri.edu/ir/wp-content/uploads/sites/276/CDS-PDF-2025-2026_fillablePDF.pdf",
+    "stats_source": "CDS",
+    "applicants": 28021,
+    "admits": 20892,
+    "enrolled": 3431,
+    "admit_rate": 0.7456,
+    "ed_applicants": 202,
+    "ed_admits": 150,
+    "ed_rate": 0.7426,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": 0.23,
+    "pct_submit_act": 0.0149,
+    "sat_ebrw": [
+      550,
+      620,
+      670
+    ],
+    "sat_math": [
+      520,
+      590,
+      645
+    ],
+    "sat_composite": [
+      1090,
+      1210,
+      1310
+    ],
+    "act_composite": [
+      25,
+      28,
+      31
+    ],
+    "test_importance": "Considered",
+    "test_policy_2026_27": "test-optional",
+    "test_policy_url": "https://web.uri.edu/admission/first-year/",
+    "deadlines": {
+      "ED1": "Nov 1",
+      "ED2": null,
+      "EA": "Dec 1",
+      "RD": "Feb 1"
+    },
+    "deadlines_url": "https://web.uri.edu/admission/first-year/",
+    "notes": "2025-26 CDS (Fall 2025). It is a fillable PDF and the checkboxes were read from the text layer. C7 'Considered' and C8A 'Yes, considered if submitted' look clear. C9 published 23.00% SAT (775) and 1.49% ACT (51). 775/3431 is 22.6%, so the published SAT percent is slightly off. The C21 label reads 'For the Fall 2024 entering class' (ED 202 applied, 150 admitted). This is probably a stale template label, but the ED counts may be from Fall 2024. There is only one ED round (Nov 1). EA (Dec 1) is non-restrictive, and the CDS gives no EA counts. The admissions site quotes a '2026 Admitted Student Profile' of SAT 1170-1340 and ACT 27-32 (admitted, not enrolled). C1 sex breakdown (men 1285 / women 2144 / unknown 2) totals 3431 enrolled, which matches the residency table."
+  },
+  {
+    "school_id": "wesleyan-university",
+    "school": "Wesleyan University",
+    "cds_year": "2025-26",
+    "cds_url": "https://wesleyan0.sharepoint.com/:f:/s/IRDataandReports/EtCqjFa5sgBLif1SveNykPUB6j5D6s_nZFlWs_GLu_3yXA",
+    "stats_source": "CDS",
+    "applicants": 14973,
+    "admits": 2451,
+    "enrolled": 825,
+    "admit_rate": 0.1637,
+    "ed_applicants": 1220,
+    "ed_admits": 522,
+    "ed_rate": 0.4279,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": 0.4352,
+    "pct_submit_act": 0.1515,
+    "sat_ebrw": [
+      690,
+      730,
+      750
+    ],
+    "sat_math": [
+      660,
+      720,
+      770
+    ],
+    "sat_composite": [
+      1350,
+      1460,
+      1510
+    ],
+    "act_composite": [
+      32,
+      33,
+      35
+    ],
+    "test_importance": "Considered",
+    "test_policy_2026_27": "test-optional (homeschooled applicants must submit SAT or ACT)",
+    "test_policy_url": "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html",
+    "deadlines": {
+      "ED1": "Nov 15",
+      "ED2": "Jan 1",
+      "EA": null,
+      "RD": "Jan 1"
+    },
+    "deadlines_url": "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html",
+    "notes": "Wesleyan publishes its CDS only as .xlsx files in a SharePoint folder linked from https://www.wesleyan.edu/ir/common-data-sets.html. The file used is CDS_2025-2026.xlsx (Fall 2025). Values come from the sheet's answer columns (C.101-C.2201). C9: 359 SAT / 125 ACT submitters of 825 enrolled. ED counts combine ED I (11/15) and ED II (1/1). No EA plan. The admissions page does not print a cycle year; dates are taken as current for 2026-27."
+  },
+  {
+    "school_id": "fordham-university",
+    "school": "Fordham University",
+    "cds_year": "2024-25",
+    "cds_url": "https://fordhamit-my.sharepoint.com/:x:/g/personal/oira_fordham_edu/EaJPT5Oj60pOvKeX3_fzOqQBLFA9sVfvKFLE4nT-WLJSRQ?e=9ExBg2",
+    "stats_source": "admissions site (Undergraduate Admission Facts, Fall 2026 / Class of 2030), NOT CDS",
+    "applicants": 53599,
+    "admits": 25300,
+    "enrolled": 2653,
+    "admit_rate": 0.472,
+    "ed_applicants": null,
+    "ed_admits": null,
+    "ed_rate": null,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": null,
+    "pct_submit_act": null,
+    "sat_ebrw": null,
+    "sat_math": null,
+    "sat_composite": [
+      1355,
+      null,
+      1470
+    ],
+    "act_composite": [
+      31,
+      null,
+      34
+    ],
+    "test_importance": null,
+    "test_policy_2026_27": "test-optional",
+    "test_policy_url": "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/testing-policy/",
+    "deadlines": {
+      "ED1": "Nov 1",
+      "ED2": "Jan 3",
+      "EA": "Nov 1",
+      "RD": "Jan 3"
+    },
+    "deadlines_url": "https://www.fordham.edu/undergraduate-admission/apply/",
+    "notes": "I could not open the CDS. Fordham's CDS page (https://www.fordham.edu/about/leadership-and-administration/administrative-offices/office-of-the-provost/provost-office-units/institutional-research-and-assessment/consumer-information/common-data-set/) lists CDS 2024-25 as the newest. It is a OneDrive Excel share that refused anonymous download (HTML error / 403). No 2025-26 CDS is posted. All stats here come from https://www.fordham.edu/undergraduate-admission/why-fordham/admission-facts/ (Fall 2026 applications, updated Sept 23, 2026), so they are one cycle newer than any CDS. Figures: 53,599 completed applications (excludes PCS), 25,300 offers, 2,653 enrolled, acceptance rate 47%. SAT and ACT middle 50% are for ENROLLED students (SAT 1355-1470, ACT 31-34). No medians or section scores are given. 70.1% of enrollees did not submit tests, so about 29.9% submitted SAT or ACT combined; the split is not published. Admitted-student middle 50%: SAT 1380-1490, ACT 32-34 (60.3% of admits test-free). ED/EA counts and C7 test importance are not available without the CDS. Third-party sites (CollegeVine) cite the 2024-25 CDS at 43,364 applicants / 25,719 admits; this is unverified and not used. Deadlines (2026-27 cycle, explicitly dated): EA and ED I Nov 1, 2026, extended to Nov 8 this cycle; RD and ED II Jan 3, 2027."
+  },
+  {
+    "school_id": "university-of-massachusetts-amherst",
+    "school": "University of Massachusetts Amherst",
+    "cds_year": "2025-26",
+    "cds_url": "https://www.umass.edu/uair/media/1062/download",
+    "stats_source": "CDS",
+    "applicants": 53117,
+    "admits": 31813,
+    "enrolled": 5315,
+    "admit_rate": 0.5989,
+    "ed_applicants": null,
+    "ed_admits": null,
+    "ed_rate": null,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": 0.249,
+    "pct_submit_act": 0.03,
+    "sat_ebrw": [
+      660,
+      700,
+      740
+    ],
+    "sat_math": [
+      660,
+      710,
+      760
+    ],
+    "sat_composite": [
+      1330,
+      1410,
+      1480
+    ],
+    "act_composite": [
+      30,
+      32,
+      34
+    ],
+    "test_importance": "Considered",
+    "test_policy_2026_27": "test-optional (all majors; homeschooled applicants in an approved curriculum also not required)",
+    "test_policy_url": "https://www.umass.edu/admissions/test-optional-policy",
+    "deadlines": {
+      "ED1": null,
+      "ED2": null,
+      "EA": "Nov 5",
+      "RD": "Jan 15"
+    },
+    "deadlines_url": "https://www.umass.edu/admissions/important-dates-deadlines",
+    "notes": "2025-26 CDS (Fall 2025), linked as 'Fall 2025 Common Data Set' on https://www.umass.edu/uair/data/common-data-set. No ED plan (C21 = No). EA (Nov 5) is non-restrictive, and the CDS gives no EA counts. C9 inconsistency: ACT is published as 0.3% but with 160 submitters, which is 3.0% of 5,315; I used 0.030 (SAT 1,322 = 24.9% is consistent). C8E/C8D are blank. The admissions stats page shows Fall 2026: about 52.5K first-year applicants, 65% admitted, about 5.2K enrolled (newer than the CDS). The test-optional page gives no end date and no cycle year. The deadlines page also lists the spring first-year deadline as Oct 15 in one block and Nov 5 in another (inconsistent)."
+  }
+]
