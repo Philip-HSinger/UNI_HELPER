@@ -113,7 +113,7 @@
   },
   {
     "id": "boston-university-1",
-    "text": "Boston University is dedicated to our founding principles: “that higher education should be accessible to all and that research, scholarship, artistic creation, and professional practice should be conducted in the service of the wider community—local and international. These principles endure in the University’s insistence on the value of diversity in its tradition and standards of excellence and its dynamic engagement with the City of Boston and the world.” With this mission in mind, please respond to the following question in 300 words or less:\n\nWhat about being a student at BU most excites you? How do you hope to contribute to our campus community?",
+    "text": "What about being a student at BU most excites you?",
     "word_limit": 300,
     "char_limit": null,
     "word_min": null,
@@ -189,7 +189,7 @@
   },
   {
     "id": "university-of-massachusetts-amherst-1",
-    "text": "Why do you want to attend UMass Amherst?",
+    "text": "Please tell us why you want to attend UMass Amherst?",
     "word_limit": 100,
     "char_limit": null,
     "word_min": null,
@@ -205,7 +205,7 @@
   },
   {
     "id": "university-of-massachusetts-amherst-2",
-    "text": "Why did you choose the major you did?",
+    "text": "Please tell us why you chose the Major(s) you did.",
     "word_limit": 100,
     "char_limit": null,
     "word_min": null,

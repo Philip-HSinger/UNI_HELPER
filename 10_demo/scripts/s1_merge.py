@@ -10,6 +10,9 @@ if (VERIFY / "prompts_check.json").exists():
     for school in load(VERIFY / "prompts_check.json"):
         for c in school.get("corrections", []):
             fixes.setdefault(c["prompt_id"], []).append(c)
+if (VERIFY / "decisions.json").exists():  # my own rulings where the checker left a prompt unresolved
+    for c in load(VERIFY / "decisions.json"):
+        fixes.setdefault(c["prompt_id"], []).append(c)
 
 prompts, schools, excluded = [], {}, []
 for sid in IDS:

@@ -1,0 +1,199 @@
+[
+  {
+    "school_id": "tufts",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "sources": [
+      "https://admissions.tufts.edu/apply/short-answer-questions/",
+      "https://www.collegetransitions.com/blog/tufts-university-essay-prompts-3"
+    ],
+    "check_notes": "All 5 prompt texts match the official 'Short Answer Prompts for the Class of 2031' page word for word. tufts-1 differs only because the '(75-150 words)' parenthetical was moved into word_min/word_limit. Ranges 75-150 and 100-200, and who each prompt applies to, also match. College Transitions (2026-27, Aug 20 2026) gives the same text."
+  },
+  {
+    "school_id": "boston-college",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [
+      "The page states the 400-word limit only once, for prompts 1-4. Applying it to HCE prompt 5 is a reasonable inference but no source states it."
+    ],
+    "sources": [
+      "https://www.bc.edu/content/bc-web/admission/apply.html",
+      "https://www.collegetransitions.com/blog/boston-college-supplemental-essay-prompts-3",
+      "https://imadmitted.com/supplemental-essay-prompts"
+    ],
+    "check_notes": "An exact substring match against the official 'Supplemental Questions 2026-27' section passed for all 5 prompts, including the mixed straight/curly quotes in prompt 2. The instruction matches too ('respond to one of the first four prompts below (400 word limit)', HCE answers #5 instead). College Transitions (2026-27) matches apart from typographic quotes."
+  },
+  {
+    "school_id": "boston-university",
+    "verdict": "unresolved",
+    "corrections": [],
+    "unresolved": [
+      "Whether the Why-BU prompt includes 'How do you hope to contribute to our campus community?' is NOT settled. No bu.edu page prints the prompt; it is only inside the Common App. 2026-27 third-party sources split. INCLUDE the sentence: College Transitions (Aug 13 2026), College Essay Guy (updated 08/04/2026), NextAdmit (Sep 21 2026), College Essay Advisors, CollegeAdvisor. OMIT it: Esslo ('Prompts: read from the Common App on August 19, 2026'), GradGPT ('verified ... in the Common App portal (checked Aug 1, 2026)' and states it 'no longer carries the old second half about how you would contribute to campus'), I'mAdmitted (says the contribute half is gone), Ivy Coach (Sep 29 2026), Koppelman Group (Sep 17 2026), Momentum College Prep. The raw file's note says the majority includes the sentence. That is not accurate: the split is 5 include vs 6 omit. The only sources that say they read the live portal both omit it. Leaning: the stored text probably has an extra sentence. It should be checked in the Common App before being presented as verbatim.",
+      "Intro wording: the 'founding principles' preamble plus 'With this mission in mind, please respond to the following question in 300 words or less:' appears in 2026-27 form only in College Essay Guy, via WebFetch summary. NextAdmit quotes the preamble without the lead-in line. The portal-verified sources (Esslo, GradGPT) print no preamble. College Transitions gives only 'All first-year applicants must respond to the following question in 300 words or less:'. The exact preamble cannot be confirmed.",
+      "Word limit: 300 is consistent everywhere, except NudgeEssay's 250 with a paraphrased prompt, which is unreliable and ignored. GradGPT notes the Common App editor accepts up to 350.",
+      "Kilachand: Esslo (portal-read), College Essay Guy and Ivy Coach agree: choose 1 of 2, 600 words, wording as stored. I'mAdmitted's two 250-word KHC essays are an outlier. Koppelman also lists an optional BU 'Additional Information' upload question ('Please use this space if you have additional information, materials, or writing samples you would like us to consider.'). It is not an essay prompt and is not recorded."
+    ],
+    "sources": [
+      "https://www.bu.edu/admissions/apply/first-year/",
+      "https://www.bu.edu/admissions/apply/first-year/application-requirements/",
+      "https://www.bu.edu/khc/admissions/",
+      "https://www.collegetransitions.com/blog/boston-university-supplemental-essay-prompts/",
+      "https://www.collegeessayguy.com/blog/boston-university-supplemental-essay",
+      "https://www.ivycoach.com/the-ivy-coach-blog/college-essays/boston-university-supplemental-essay-prompts/",
+      "https://nextadmit.com/blog/how-to-write-the-bu-supplemental-essays/",
+      "https://www.esslo.org/supplemental-essays/boston-university",
+      "https://www.collegeessayadvisors.com/supplemental-essay/boston-university-bu-supplemental-essay-prompt-guide/",
+      "https://www.collegeadvisor.com/essay-guides/boston-university-essay/",
+      "https://www.gradgpt.com/blog/boston-university-supplemental-essays",
+      "https://www.momentumcollegeprep.com/essay-guides/boston-university-essays-202627-with-examples-the-complete-guide",
+      "https://imadmitted.com/schools/bu",
+      "https://imadmitted.com/supplemental-essay-prompts",
+      "https://blog.collegevine.com/how-to-write-the-boston-university-essays",
+      "https://www.koppelmangroup.com/blog/2026/9/17/how-to-write-the-boston-university-supplement-2026-2027",
+      "https://nudgeessay.com/requirements/boston-university"
+    ]
+  },
+  {
+    "school_id": "northeastern",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "sources": [
+      "https://admissions.northeastern.edu/application-information/first-year-applicants/",
+      "https://admissions.northeastern.edu/apply/first-year-application-requirements/",
+      "https://camd.northeastern.edu/undergraduate-admissions/portfolios/",
+      "https://nudgeessay.com/requirements/northeastern-university",
+      "https://imadmitted.com/supplemental-essay-prompts",
+      "https://joinclarityprep.com/supplemental-essays"
+    ],
+    "check_notes": "The official first-year page lists no writing supplement, only the optional CAMD portfolio ('Personal Statement (500-word limit)'). The old apply/first-year-application-requirements URL now returns 'Page not found'. All 3 CAMD statement texts match the CAMD portfolios page exactly. 2026-27 third-party sources (I'mAdmitted: 'No general supplemental essay for 2026-27'; NudgeEssay; Clarity Prep) agree."
+  },
+  {
+    "school_id": "wesleyan-university",
+    "verdict": "unresolved",
+    "corrections": [],
+    "unresolved": [
+      "US applicants: no supplement is confirmed as far as public sources allow. Official pages mention only 'Wesleyan's member-specific questions': test-policy choice, two narrow conviction/disciplinary questions, and optional SlideRoom arts. I'mAdmitted ('Wesleyan does not require a supplemental essay for 2026-27'), NudgeEssay and Clarity Prep agree.",
+      "International prompt: the text and 250-word limit come from a single 2026-27 source, Esslo (both its supplemental-essays page and grader page), which says it read the Common App on Aug 19 2026. No official page prints it, and I'mAdmitted and NudgeEssay say Wesleyan has no supplement at all. Esslo wording: 'Applicants attending a school outside the U.S. and Canada answer one short essay (up to 250 words)'. That suggests required=true for that group rather than null, but it is one source, so not corrected.",
+      "applies_to: Esslo's wording is 'applicants attending a school outside the U.S. and Canada' (based on school location, not citizenship). The stored applies_to matches that."
+    ],
+    "sources": [
+      "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html",
+      "https://www.wesleyan.edu/admission/undergraduate-admission/international/index.html",
+      "https://www.wesleyan.edu/admission/admission-faq.html",
+      "https://www.wesleyan.edu/admission/application-process.html",
+      "https://www.esslo.org/college-essay-grader/wesleyan",
+      "https://www.esslo.org/supplemental-essays/wesleyan",
+      "https://www.collegevine.com/schools/wesleyan-university/essay-prompts",
+      "https://imadmitted.com/supplemental-essay-prompts",
+      "https://nudgeessay.com/requirements/wesleyan-university",
+      "https://joinclarityprep.com/supplemental-essays",
+      "https://content.commonapp.org/Files/ReqGrid.pdf"
+    ]
+  },
+  {
+    "school_id": "college-of-the-holy-cross",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [
+      "A possible optional post-submission portal question ('Holy Cross Response') mentioned in older sources could not be checked. Nothing current on holycross.edu mentions it."
+    ],
+    "sources": [
+      "https://www.holycross.edu/admissions-aid/how-to-apply",
+      "https://content.commonapp.org/Files/ReqGrid.pdf",
+      "https://nudgeessay.com/requirements/college-of-the-holy-cross",
+      "https://imadmitted.com/supplemental-essay-prompts",
+      "https://joinclarityprep.com/supplemental-essays"
+    ],
+    "check_notes": "The official How to Apply page lists 'What's Required?' with no writing supplement; optional supplementary materials go via SlideRoom. I'mAdmitted ('does not require a supplemental essay for 2026-27'), NudgeEssay and Clarity Prep ('use only the Common App essay') agree. Grid row (College of the Holy Cross: ED 11/15/2026, EDII 1/15/2027, RD 01/15/2027) matches the file. The grid's Writing column is blank for every school, so it is not evidence either way."
+  },
+  {
+    "school_id": "fordham-university",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [
+      "The official fordham.edu 'Writing for the Common Application' page could not be re-opened. It redirects to a Fordham CAS login gateway, and the automated fetch through it was blocked. Verification therefore rests on 2026-27 third-party sources: Clarity Prep was 'Checked against fordham.edu and the Common App application on October 17, 2026', and Esslo read the Common App."
+    ],
+    "sources": [
+      "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/writing-for-the-common-application/",
+      "https://joinclarityprep.com/supplemental-essays/fordham-university",
+      "https://www.esslo.org/supplemental-essays/fordham",
+      "https://nudgeessay.com/requirements/fordham-university",
+      "https://imadmitted.com/supplemental-essay-prompts"
+    ],
+    "check_notes": "Clarity Prep's 2026-27 text matches all 3 stored prompts exactly, curly quotes included. Esslo matches except for straight quotes. Both say: optional, answer one of three, 300 words each. NudgeEssay agrees ('1 Optional Essay, None Required')."
+  },
+  {
+    "school_id": "fairfield-university",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "sources": [
+      "https://www.fairfield.edu/admission-and-aid/apply/first-year-applicants/index.html",
+      "https://content.commonapp.org/Files/ReqGrid.pdf",
+      "https://joinclarityprep.com/supplemental-essays"
+    ],
+    "check_notes": "The official page's 'Required Components' are the Common App and a 'Personal statement (Common Application essay)'. The only Fairfield-specific item is the 'Fairfield University Supplement to the Common Application', used for the test-optional choice. Clarity Prep 2026-27 lists Fairfield among colleges that 'use only the Common App essay'. Grid row (EDI 11/15/2026, EDII 1/15/2027, EA 11/1/2026, RD 01/15/2027) matches."
+  },
+  {
+    "school_id": "university-of-massachusetts-amherst",
+    "verdict": "corrections",
+    "corrections": [
+      {
+        "prompt_id": "university-of-massachusetts-amherst-1",
+        "field": "text",
+        "current": "Why do you want to attend UMass Amherst?",
+        "should_be": "Please tell us why you want to attend UMass Amherst?",
+        "source_url": "https://www.esslo.org/supplemental-essays/umass-amherst"
+      },
+      {
+        "prompt_id": "university-of-massachusetts-amherst-2",
+        "field": "text",
+        "current": "Why did you choose the major you did?",
+        "should_be": "Please tell us why you chose the Major(s) you did.",
+        "source_url": "https://www.esslo.org/supplemental-essays/umass-amherst"
+      }
+    ],
+    "unresolved": [
+      "Basis for corrections 1-2: the stored text copies the official instructions page (umass.edu/admissions/first-year-application-instructions), which summarizes the questions. The FY27 handout words prompt 2 differently again ('Why did you choose this major(s)?'). The in-application (Common App) wording given above is what 3 independent 2026-27 sources print: Esslo (read from the Common App), GradGPT ('verified ... against UMass Amherst's Common App questions (checked August 13, 2026)') and Ivy Coach (Sep 29 2026). All three keep the odd question mark on prompt 1; CollegeVine 2025-26 and I'mAdmitted use a period. If the dataset wants official-page wording rather than in-app wording, keep the current text and add the in-app version as a variant.",
+      "100-word limit: confirmed by the official FY27 handout ('UMASS CUSTOM QUESTIONS (100 WORDS EACH)') and by Esslo, GradGPT, Ivy Coach and I'mAdmitted.",
+      "Third question (prompts 3/4): the official instructions page and FY27 handout both list it ('The third question depends on whether or not you're interested in joining Commonwealth Honors College'), and Esslo lists both. GradGPT says 'the community short answer from earlier cycles is gone', and Ivy Coach and I'mAdmitted list only 2 prompts. The official page wins, so it is kept, but in-app presence is disputed. Honors prompt ending: official page and handout say 'at UMass Amherst?'; Esslo says 'at UMass?'. Stored official wording kept.",
+      "choose_group/applies_to for 3/4: the official page assigns by Honors interest ('If yes: ...'), while the handout says 'Please answer one of the following questions'. Storing both a choose-1-of-2 group and per-group applies_to is consistent with both, so it is left as is."
+    ],
+    "sources": [
+      "https://www.umass.edu/admissions/first-year-application-instructions",
+      "https://www.umass.edu/sites/default/files/2026-09/FY27AdmissionsUREPUMassReadySetApply_EmpoweringVoiceEssay_Fillable.pdf",
+      "https://www.ivycoach.com/the-ivy-coach-blog/college-essays/university-of-massachusetts-supplemental-essay-prompts/",
+      "https://www.esslo.org/supplemental-essays/umass-amherst",
+      "https://www.esslo.org/college-essay-grader/umass-amherst",
+      "https://www.gradgpt.com/blog/umass-amherst-supplemental-essays",
+      "https://blog.collegevine.com/how-to-write-the-umass-amherst-essays",
+      "https://imadmitted.com/supplemental-essay-prompts",
+      "https://nudgeessay.com/requirements/umass-amherst"
+    ]
+  },
+  {
+    "school_id": "university-of-rhode-island",
+    "verdict": "unresolved",
+    "corrections": [],
+    "unresolved": [
+      "No 2026-27 verbatim source found for any URI program prompt. The stored texts match CollegeVine's 2025-26 guide (Sep 3 2025) exactly. CollegeVine's school page, labelled 2024-25, has the same Nursing/PharmD/TD wording, so the prompts have been stable for at least 2 cycles. The file's own cycle field says '2025-26'. It is not a 2026-27 record.",
+      "Official 2026-27-era confirmation is limited to: the first-year page lists 'Supplemental essay (Honors, Nursing, Pharmacy, and Talent Development only)', 'The required Nursing statement' and 'All pharmacy applicants are required to submit a supplemental essay'. The Honors page says the statement 'should be 250 words or less' and describes the Colloquium-theme prompt, consistent with the stored text. The Honors priority deadline is Dec 1. The 250-word Nursing/PharmD limits and the 250-500 TD range come only from CollegeVine.",
+      "TD prompt may have changed: the official TD page describes the essay as addressing 'why the student feels they are eligible for the TD program, and explain how the program's opportunities will help them achieve their academic, professional, or personal goals', including lived experience. That is broader than the stored CollegeVine wording.",
+      "Third-party 2026-27 aggregators are wrong on URI: NudgeEssay ('asks for no supplemental essays') and Clarity Prep (Common App essay only) contradict URI's own first-year page. They were not used. The 'no supplement for general applicants' claim is confirmed by the official page."
+    ],
+    "sources": [
+      "https://web.uri.edu/admission/first-year/",
+      "https://web.uri.edu/admission/scholarships/honors-program/",
+      "https://web.uri.edu/admission/first-year/td/",
+      "https://web.uri.edu/talentdevelopment/getting-in/applications-process/",
+      "https://web.uri.edu/pharmacy/academics/pharmd/admission/",
+      "https://blog.collegevine.com/how-to-write-the-university-of-rhode-island-essays",
+      "https://www.collegevine.com/schools/university-of-rhode-island-uri/essay-prompts",
+      "https://www.esslo.org/supplemental-essays/university-of-rhode-island",
+      "https://nudgeessay.com/requirements/university-of-rhode-island",
+      "https://joinclarityprep.com/supplemental-essays"
+    ]
+  }
+]

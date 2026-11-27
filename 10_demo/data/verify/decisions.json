@@ -1,0 +1,5 @@
+[
+  {"prompt_id": "boston-university-1", "field": "text",
+   "should_be": "What about being a student at BU most excites you?",
+   "why": "Sources split 5-6 on a second sentence ('How do you hope to contribute to our campus community?'). The two sources that state they read the live 2026-27 Common App (Esslo, 19 Aug 2026; GradGPT, 1 Aug 2026) print only this question and no intro paragraph, so the demo uses this wording. 300-word limit agreed by all sources."}
+]
