@@ -1,0 +1,18 @@
+{
+  "school_id": "fairfield-university",
+  "school": "Fairfield University",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-27",
+  "no_supplement": true,
+  "prompts": [],
+  "notes": "No school-specific supplemental essay for first-year applicants. The official First-Year Applicants page lists 'Required Components' as a 'Completed Common Application', a 'Personal statement (Common Application essay)', a '$65 application fee or official fee waiver', and the counselor materials. It lists no writing supplement. The only Fairfield-specific item mentioned is the 'Fairfield University Supplement to the Common Application', where test-optional applicants indicate that choice. The Common App explore page shows only 'Common Application Essay' and no supplemental questions. The Common App 2026-27 Requirements Grid (updated 09-25-2026) lists Fairfield with EDI 11/15/2026, EDII 1/15/2027, EA 11/1/2026, RD 01/15/2027 and Personal essay = Y. That confirms the 2026-27 cycle, although the grid's Writing column is blank for every school, so it is not conclusive on its own. Search-result snippets from third-party Draftl, Clarity Prep and UPgraded also say no supplement; those pages were not opened. CollegeCalcAI lists a '250 words' item, but it is the Accelerated Second Degree Nursing (ASDNU) portal essays (150-250 words each). That is a post-baccalaureate program, not first-year entry, so it is excluded. Also excluded: Fairfield Bellarmine (https://www.fairfield.edu/bellarmine/admission), Fairfield's separate two-year associate-degree college, with its own rolling application (not the Common App). It says 'Choose one of four prompts to tell us more about who you are.' and 'Written, video, and creative pieces are all welcomed options for sharing your best self.' The four prompts are not published on the page, and its dates refer to the 2026 entry cycle. The Honors Program is by invitation and has no separate essay.",
+  "sources": [
+    "https://www.fairfield.edu/admission-and-aid/apply/first-year-applicants/index.html",
+    "https://www.fairfield.edu/admission-and-aid/apply/index.html",
+    "https://www.fairfield.edu/bellarmine/admission",
+    "https://www.commonapp.org/explore/fairfield-university",
+    "https://content.commonapp.org/Files/ReqGrid.pdf",
+    "https://collegecalcai.com/schools/fairfield-university/supplemental-essays",
+    "https://solutionprep.com/wp-content/uploads/2026/06/Solution-Prep-Essay-Handouts.pdf"
+  ]
+}

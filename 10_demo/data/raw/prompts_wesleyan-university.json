@@ -1,0 +1,38 @@
+{
+  "school_id": "wesleyan-university",
+  "school": "Wesleyan University",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-27",
+  "no_supplement": false,
+  "prompts": [
+    {
+      "id": "wesleyan-university-1",
+      "text": "What recent news story—local or global—has resonated with you personally? Share the story and tell us why it had that impact on you.",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": null,
+      "choose_group": null,
+      "applies_to": "international applicants attending a school outside the U.S./Canada only",
+      "source_url": "https://www.esslo.org/college-essay-grader/wesleyan",
+      "source_type": "third-party"
+    }
+  ],
+  "notes": "UNCONFIRMED ON AN OFFICIAL PAGE. Wesleyan's official admission pages (first-year, application process, FAQ, international) say only that applicants complete the Common App or Coalition/Scoir application 'including Wesleyan's member-specific questions' and do not publish any essay prompt text. The only prompt found is from third-party Esslo, which labels it the 2026-2027 prompt for 'International — school outside the U.S./Canada' (250 words). AADPS (Chinese admissions guide) lists the same wording, 250 words, under international students for an earlier cycle (page labeled 2022-23 / 2025-26), and the same prompt appears as one of Wesleyan's old optional supplement choices in a 2014 blog. Whether it is required or optional for international applicants is not stated by any source, so 'required' is null. For domestic applicants there appears to be no supplemental essay: the Common App 2026-27 requirements grid (updated 09-25-2026) shows a blank 'Writing' (required writing supplement) column for Wesleyan, AdmissionSight (2025-26) says Wesleyan has no supplemental essays, and CollegeVine lists none. Wesleyan's member questions also include two narrow disciplinary/conviction questions (not essays) and optional SlideRoom arts supplements (music, theatre, visual arts, film, dance), neither of which is an essay prompt. Verify the international prompt in the Common App Wesleyan member questions before relying on it.",
+  "sources": [
+    "https://www.wesleyan.edu/apply/",
+    "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html",
+    "https://www.wesleyan.edu/admission/application-process.html",
+    "https://www.wesleyan.edu/admission/undergraduate-admission/early-decision.html",
+    "https://www.wesleyan.edu/admission/information-for-school-counselors.html",
+    "https://www.wesleyan.edu/admission/admission-faq.html",
+    "https://www.wesleyan.edu/admission/undergraduate-admission/international/index.html",
+    "https://admission.wesleyan.edu/apply/",
+    "https://www.esslo.org/college-essay-grader/wesleyan",
+    "https://aadps.net/2014/2132.html",
+    "https://www.collegevine.com/schools/wesleyan-university/essay-prompts",
+    "https://www.collegeessayguy.com/blog/wesleyan-university-supplemental-essay",
+    "https://www.commonapp.org/explore/wesleyan-university",
+    "https://content.commonapp.org/Files/ReqGrid.pdf"
+  ]
+}

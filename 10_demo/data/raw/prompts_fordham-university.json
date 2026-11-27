@@ -1,0 +1,67 @@
+{
+  "school_id": "fordham-university",
+  "school": "Fordham University",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-27",
+  "no_supplement": false,
+  "prompts": [
+    {
+      "id": "fordham-university-1",
+      "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?).",
+      "word_limit": 300,
+      "char_limit": null,
+      "word_min": null,
+      "required": false,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 3
+      },
+      "applies_to": "all applicants (optional short response; choose one of three)",
+      "source_url": "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/writing-for-the-common-application/",
+      "source_type": "official"
+    },
+    {
+      "id": "fordham-university-2",
+      "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?",
+      "word_limit": 300,
+      "char_limit": null,
+      "word_min": null,
+      "required": false,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 3
+      },
+      "applies_to": "all applicants (optional short response; choose one of three)",
+      "source_url": "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/writing-for-the-common-application/",
+      "source_type": "official"
+    },
+    {
+      "id": "fordham-university-3",
+      "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?",
+      "word_limit": 300,
+      "char_limit": null,
+      "word_min": null,
+      "required": false,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 3
+      },
+      "applies_to": "all applicants (optional short response; choose one of three)",
+      "source_url": "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/writing-for-the-common-application/",
+      "source_type": "official"
+    }
+  ],
+  "notes": "Prompt text copied verbatim from Fordham's official 'Writing for the Common Application' page (listed there as A, B, C under 'Short Response', with the lead-in: 'Your choice of one of three short response questions (300 words max) is meant to help you reflect on your personal growth and community impact. How will you continue to grow and impact our communities at Fordham and in New York City?'). The page states these optional sections carry no penalty if skipped. The official page is undated; the 2026-27 cycle is inferred from CollegeEssayGuy ('Guide 2026/2027', updated 08/10/2026) and Esslo ('essay prompts for 2026-2027'), which both list the same three prompts with 300-word limits. CollegeEssayGuy/CollegeVine quote the in-app instruction as 'You may choose to answer one (1) of the optional questions below. Keep in mind that your response is a maximum of 300 words.' Common App 2026-27 requirements grid (updated 09-25-2026) shows no required writing supplement for Fordham, consistent with the prompts being optional. Not included: the official page also mentions optional 'Challenges and Circumstances' and 'Additional Information' sections, which are standard Common App sections rather than Fordham-specific prompts. No program-specific (e.g., Gabelli, Honors) essay prompts were found. Empowerly's claim of '1 required Fordham-specific question' conflicts with the official page and was disregarded. CollegeVine's older guide lists four options (incl. a Jesuit 'contribute to our campus community' prompt and a 'something you are proud of' prompt) from earlier cycles; those are not on the current official page.",
+  "sources": [
+    "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/writing-for-the-common-application/",
+    "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/writing-for-the-common-application/essay-guidelines/",
+    "https://www.collegeessayguy.com/blog/fordham-university-supplemental-essay",
+    "https://www.esslo.org/college-essay-grader/fordham",
+    "https://empowerly.com/blog/blog-supplemental-essay-prompts-2026-27",
+    "https://blog.collegevine.com/how-to-write-the-fordham-university-essays",
+    "https://content.commonapp.org/Files/ReqGrid.pdf"
+  ]
+}
