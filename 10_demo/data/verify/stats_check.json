@@ -1,0 +1,143 @@
+[
+  {
+    "school_id": "tufts",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "notes": "CDS 2025-26 (Fall 2025). C1 sex rows sum to 33,395 applied / 3,612 admitted (residency table: 33,415 / 3,613); 3612/33395 = 0.1082. C21 ED 3,344 / 1,071. C9 SAT EBRW 720/740/760, Math 730/760/780, composite 1460/1500/1520, ACT 33/34/35. C7 test scores 'Considered' (read from rendered page image). Admissions site: test-optional for all undergraduate applicants.",
+    "sources": [
+      "https://provost.tufts.edu/institutionalresearch/wp-content/uploads/sites/5/CDS_2025-2026.pdf",
+      "https://admissions.tufts.edu/apply/applying-to-tufts/sat-and-act-tests/"
+    ]
+  },
+  {
+    "school_id": "boston-college",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "notes": "CDS 2024-25 (Fall 2024), one cycle older than most other records. C1 34,779 / 5,632 (0.1619). C21 ED 4,288 / 1,434. C9 SAT EBRW 710/740/760, Math 730/760/780, composite 1460/1500/1520, ACT 33/34/35. C7 'Important'. Admissions site: test-optional. A 2025-26 CDS at the analogous file name returned 404.",
+    "sources": [
+      "https://www.bc.edu/content/dam/bc1/offices/irp/ir/cds/Boston_College_CDS_2024-2025_Final.pdf",
+      "https://www.bc.edu/content/bc-web/admission/apply/test-optional.html",
+      "https://www.bc.edu/content/dam/bc1/offices/irp/ir/cds/Boston_College_CDS_2025-2026_Final.pdf"
+    ]
+  },
+  {
+    "school_id": "boston-university",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "notes": "CDS 2025-26 Section C (updated). C1 76,776 / 9,853 (0.1283). C21 ED 6,907 / 2,165 (ED1+ED2 not split). C9 SAT EBRW 700/730/750, Math 720/750/780, composite 1420/1470/1510, ACT 33/34/34. C7 'Considered'. Admissions site: test optional through fall 2028 / spring 2029.",
+    "sources": [
+      "https://www.bu.edu/asir/files/2026/07/CDS-2025-2026-C-updated.pdf",
+      "https://www.bu.edu/admissions/apply/first-year/"
+    ]
+  },
+  {
+    "school_id": "northeastern",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "notes": "HTML CDS (headed 'Northeastern 2024-2025' but data are Fall 2025). C1 sex rows 105,257 applied / 5,920 admitted (0.0562); residency total 105,256. C21 ED 5,404 / 1,910. C9 SAT EBRW 710/730/750, Math 720/750/780, composite 1440/1480/1510, ACT 33/33/34. C7 'Very Important' (X in first column of the HTML table). Admissions site: test-optional.",
+    "sources": [
+      "https://uds.northeastern.edu/university-facts/common-data-set/",
+      "https://admissions.northeastern.edu/application-information/first-year-applicants/"
+    ]
+  },
+  {
+    "school_id": "college-of-the-holy-cross",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "notes": "Values match the CDS 2023-24 (Fall 2023), which is still the newest CDS linked on Holy Cross's IR page (/media/2068), so the record is two cycles stale. C1 8,670 / 1,829 (0.2110). C21 ED 761 / 511. C9 SAT EBRW 630/680/720, Math 620/660/700, composite 1270/1340/1420, ACT 28/30/32. C7 'Considered'. Admissions site: test scores 'entirely optional'.",
+    "sources": [
+      "https://www.holycross.edu/document/common-data-set-20232024",
+      "https://www.holycross.edu/finance/institutional-research",
+      "https://www.holycross.edu/admissions-aid/how-to-apply"
+    ]
+  },
+  {
+    "school_id": "fairfield-university",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "notes": "CDS 2025-26 (Fall 2025). C1 21,299 / 5,336 (0.2505). C21 ED 689 / 566. C9 SAT EBRW 640/670/700, Math 630/660/690, composite 1280/1330/1370, ACT 29/30/32. C7 'Considered'. Admissions site: test-optional; homeschooled applicants must submit SAT/ACT; TOEFL for non-native speakers.",
+    "sources": [
+      "https://www.fairfield.edu/_files/documents/pdfs/4422120485_about_offices-and-departments_institutional-research_common-data-sheet-2025-26_03302026.pdf",
+      "https://www.fairfield.edu/admission-and-aid/apply/first-year-applicants/"
+    ]
+  },
+  {
+    "school_id": "university-of-rhode-island",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [
+      "C21 in the 2025-26 CDS is labelled 'For the Fall 2024 entering class' (202 ED applied / 150 admitted). The 2024-25 CDS has the same label with the ED counts left blank, so 202/150 are most likely Fall 2025 counts under a stale template label, but the CDS does not say so explicitly."
+    ],
+    "notes": "CDS 2025-26 (Fall 2025). C1 28,021 / 20,892 (0.7456). C9 SAT EBRW 550/620/670, Math 520/590/645, composite 1090/1210/1310, ACT 25/28/31. C7 'Considered' (read from rendered page image). Admissions site: 'URI is a test-optional institution'.",
+    "sources": [
+      "https://web.uri.edu/ir/wp-content/uploads/sites/276/CDS-PDF-2025-2026_fillablePDF.pdf",
+      "https://web.uri.edu/ir/data/common/",
+      "https://web.uri.edu/ir/wp-content/uploads/sites/276/CDS-2024-2025-fillable.pdf",
+      "https://web.uri.edu/admission/first-year/"
+    ]
+  },
+  {
+    "school_id": "wesleyan-university",
+    "verdict": "unresolved",
+    "corrections": [],
+    "unresolved": [
+      "Could not open CDS_2025-2026.xlsx: the CDS exists only as files in a SharePoint folder, and the file download was blocked by this session's permission system (not attempted again). The folder listing confirms CDS_2025-2026.xlsx exists, but none of these fields could be checked: applicants, admits, admit_rate, ed_applicants, ed_admits, sat_ebrw, sat_math, sat_composite, act_composite, test_importance.",
+      "No official Wesleyan admissions-facts page with Fall 2025 numbers was found; the undergraduate admission page shows only '16% '28 Acceptance Rate' (Class of 2028, Fall 2024), so it cannot be compared."
+    ],
+    "notes": "Test policy confirmed: the first-year page says Wesleyan 'does not require most students to submit SAT or ACT scores' and requires testing from homeschooled applicants.",
+    "sources": [
+      "https://www.wesleyan.edu/ir/common-data-sets.html",
+      "https://wesleyan0.sharepoint.com/:f:/s/IRDataandReports/EtCqjFa5sgBLif1SveNykPUB6j5D6s_nZFlWs_GLu_3yXA",
+      "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html",
+      "https://www.wesleyan.edu/admission/index.html",
+      "https://www.wesleyan.edu/admission/undergraduate-admission/index.html",
+      "https://www.wesleyan.edu/admission/undergraduate-admission/early-decision.html",
+      "https://www.wesleyan.edu/admission/information-for-school-counselors.html"
+    ]
+  },
+  {
+    "school_id": "fordham-university",
+    "verdict": "unresolved",
+    "corrections": [
+      {
+        "field": "cds_year",
+        "current": "2024-25",
+        "should_be": null,
+        "source_url": "https://www.fordham.edu/undergraduate-admission/why-fordham/admission-facts/"
+      }
+    ],
+    "unresolved": [
+      "Fordham 2024-25 CDS figures (C1, C9 EBRW/Math split, C21, C7) could not be obtained. The CDS page links CDS 2024-25, 2023-24 and 2022-23 only as OneDrive/SharePoint shares, and every IR Fact Book item (including 'Admission') is also a SharePoint share. I did not open them because a SharePoint file download was blocked by the permission system earlier in this session. No PDF copy exists at the older /media path (common_data_set_2024-2025.pdf returned 404), and the Fordham Facts page has no admissions numbers.",
+      "Still null and unverifiable: ed_applicants, ed_admits, sat_ebrw, sat_math, SAT/ACT medians, pct_submit_sat/act, test_importance.",
+      "The record mixes cycles: its figures are Fall 2026 (Class of 2030), while the other schools use Fall 2025 or older CDS data. The SAT/ACT ranges are for enrolled students, with 70.1% of enrollees not submitting scores."
+    ],
+    "notes": "Every value in the record matches the official Admission Facts page (updated Sept 23, 2026): 53,599 completed applications, 25,300 offers, 2,653 enrolled, 47% (25300/53599 = 0.4720), enrolled SAT 1355-1470, ACT 31-34. Testing-policy page: Fordham does not require SAT or ACT (test-optional). The cds_year correction applies because none of the record's figures come from the 2024-25 CDS; cds_url likewise points to a document that was not used.",
+    "sources": [
+      "https://www.fordham.edu/undergraduate-admission/why-fordham/admission-facts/",
+      "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/testing-policy/",
+      "https://www.fordham.edu/about/leadership-and-administration/administrative-offices/office-of-the-provost/provost-office-units/institutional-research-and-assessment/consumer-information/common-data-set/",
+      "https://www.fordham.edu/media/home/departments-centers-and-offices/office-of-the-provost/pdfs/common_data_set_2024-2025.pdf",
+      "https://www.fordham.edu/about/leadership-and-administration/administrative-offices/office-of-the-provost/provost-office-units/institutional-research-and-assessment/",
+      "https://www.fordham.edu/about/leadership-and-administration/administrative-offices/office-of-the-provost/provost-office-units/institutional-research-and-assessment/consumer-information/",
+      "https://www.fordham.edu/about/leadership-and-administration/administrative-offices/office-of-the-provost/provost-office-units/institutional-research-and-assessment/fordham-fact-book/",
+      "https://www.fordham.edu/about/fordham-facts/"
+    ]
+  },
+  {
+    "school_id": "university-of-massachusetts-amherst",
+    "verdict": "confirmed",
+    "corrections": [],
+    "unresolved": [],
+    "notes": "CDS 2025-26 (Fall 2025). C1 53,117 / 31,813 (0.5989). C21: no ED plan (counts blank). C9 SAT EBRW 660/700/740, Math 660/710/760, composite 1330/1410/1480, ACT 30/32/34. C7 'Considered'. The CDS prints ACT submitters as 0.3% with 160 students; 160/5,315 = 3.0%, so the record's 0.03 is right. Admissions site: tests optional for first-year applicants in all majors; homeschooled applicants in an approved curriculum are not required to submit scores.",
+    "sources": [
+      "https://www.umass.edu/uair/media/1062/download",
+      "https://www.umass.edu/admissions/test-optional-policy"
+    ]
+  }
+]
