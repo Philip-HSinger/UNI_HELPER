@@ -1,0 +1,111 @@
+{
+  "school_id": "rice",
+  "school": "Rice University",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-27",
+  "no_supplement": false,
+  "prompts": [
+    {
+      "id": "rice-1",
+      "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University.",
+      "word_limit": 150,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "all first-year applicants (domestic, international, QuestBridge)",
+      "source_url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+      "source_type": "official"
+    },
+    {
+      "id": "rice-2",
+      "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?",
+      "word_limit": 150,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "all first-year applicants (domestic, international, QuestBridge)",
+      "source_url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+      "source_type": "official"
+    },
+    {
+      "id": "rice-3",
+      "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?",
+      "word_limit": 500,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 2
+      },
+      "applies_to": "all first-year applicants; optional for QuestBridge applicants",
+      "source_url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+      "source_type": "official"
+    },
+    {
+      "id": "rice-4",
+      "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?",
+      "word_limit": 500,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 2
+      },
+      "applies_to": "all first-year applicants; optional for QuestBridge applicants",
+      "source_url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+      "source_type": "official"
+    },
+    {
+      "id": "rice-5",
+      "text": "One of Rice's long-standing traditions is “The Box,” a question on our application where we ask all of our applicants to share an image of something that appeals to them. The Box gives you the opportunity to present us with an image that shares something about yourself, your interests or what is meaningful to you. This image is not used for evaluative purposes in the application, but allows you to put your stamp on the application about who you are aside from what you have achieved. Be sure to choose an image that speaks for itself and does not need an explanation. The Box must be a two-dimensional image that is uploaded in the Common App or uploaded in the Rice Admission Student Portal.",
+      "word_limit": null,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "all first-year applicants",
+      "source_url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+      "source_type": "official"
+    },
+    {
+      "id": "rice-6",
+      "text": "Why are you determined to study architecture? Please explain your motivation and describe how your past experiences have led you to apply to the Rice School of Architecture in particular. Have you had an opportunity outside of school—such as an internship, building project, architecture summer program or other experience—that strengthened your interest in the field? If so, please describe how the experience further compels you to pursue a career in architecture.",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "Rice School of Architecture applicants only",
+      "source_url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+      "source_type": "official"
+    },
+    {
+      "id": "rice-7",
+      "text": "Describe a building, place, or city that you have encountered and found especially compelling. What specifically captured your attention, and why? In your response, reflect on how this experience has shaped your understanding of architecture and the built environment.",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "Rice School of Architecture applicants only",
+      "source_url": "https://admission.rice.edu/apply/first-year-domestic-applicants",
+      "source_type": "official"
+    }
+  ],
+  "notes": "Official Rice pages are headed 'Essay Prompts (2026-2027)'; identical prompt text on the domestic, international and general first-year pages. Prompt 3 instruction (verbatim): 'Please respond to one of the following prompts to explore how you will contribute to the Rice community:' (choose rice-3 or rice-4). On the QuestBridge page the same instruction ends '(optional):', so for QuestBridge applicants the 500-word choice is optional; prompts 1, 2 and the Box are identical there. rice-5 (Rice Box) is an image prompt, not written: a two-dimensional image uploaded in the Common App or Rice Admission Student Portal, word_limit null; the text recorded is the official page's description, and the shorter wording shown inside the Common App question itself could not be viewed. Architecture limits are stated as '250 words.' (not 'word limit'); architecture applicants also must submit a portfolio (PDF, up to 10 pages, 15 MB). No written prompts for Shepherd School of Music (separate audition/materials, due Dec 1) or Department of Art (optional portfolio). Rice has no other school-of-intended-major prompts; prompt 1 refers to the academic areas selected in the application. Third-party discrepancies: CollegeEssayGuy's 2026/2027 page shows 'racial identity' in prompt 4 and older architecture prompts; the official 2026-2027 page says 'cultural identity' and has the architecture prompts used here.",
+  "sources": [
+    "https://admission.rice.edu/apply/first-year-domestic-applicants",
+    "https://admission.rice.edu/apply/first-year-international-applicants",
+    "https://admission.rice.edu/apply/first-year-applicants",
+    "https://admission.rice.edu/apply/questbridge-applicants",
+    "https://admission.rice.edu/apply",
+    "https://admission.rice.edu/apply/first-year",
+    "https://www.collegeessayguy.com/blog/rice-university-supplemental-essays"
+  ]
+}

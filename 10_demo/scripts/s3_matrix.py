@@ -11,8 +11,17 @@ import numpy as np
 from common import CANDIDATES, IDS, LIST, OUT, ROOT, SCORES, SHORT, SUBMITTED, WRITE_OPTIONAL, length_factor, load, save
 
 prompts = {p["id"]: p for p in load(ROOT / "data" / "prompts.json")}
-sA = {r["pair"]: r for r in load(SCORES / "scorer_A.json")}
-sB = {r["pair"]: r for r in load(SCORES / "scorer_B.json")}
+def scores(who):
+    out = {}
+    for name in (f"scorer_{who}.json", f"scorer_{who}_new_1.json", f"scorer_{who}_new_2.json"):
+        if (SCORES / name).exists():
+            out.update({r["pair"]: r for r in load(SCORES / name)})
+    return out
+
+
+pairs_all = [x["pair"] for x in load(SCORES / "pairs.json")]
+sA = {k: v for k, v in scores("A").items() if k in set(pairs_all)}
+sB = {k: v for k, v in scores("B").items() if k in set(pairs_all)}
 adj = {r["pair"]: r for r in load(SCORES / "adjudicated.json")} if (SCORES / "adjudicated.json").exists() else {}
 pairs = [x["pair"] for x in load(SCORES / "pairs.json")]
 assert set(pairs) == set(sA) == set(sB), "scorers did not cover exactly the listed pairs"
@@ -101,24 +110,32 @@ def best_order(items, written0=()):
     """Exact (subset DP) for up to 12 essays; otherwise greedy start + insertion local search."""
     items = list(items)
     n = len(items)
-    if n <= 12:
+    if n <= 14:
+        Rm = [[R(p, q)[0] if prompts[q]["school_id"] != prompts[p]["school_id"] else 0.0 for q in items] for p in items]
         base = [max([R(p, q)[0] for q in written0 if prompts[q]["school_id"] != prompts[p]["school_id"]] or [0.0]) for p in items]
+        L = [prompts[p]["limit"] for p in items]
+        full_mask = (1 << n) - 1
+        best_r = [base[:]] + [None] * full_mask  # best_r[mask][i]: best reuse for essay i given essays in mask written
+        for mask in range(1, 1 << n):
+            low = (mask & -mask).bit_length() - 1
+            prev = best_r[mask & (mask - 1)]
+            best_r[mask] = [max(prev[i], Rm[i][low]) for i in range(n)]
         INF = float("inf")
         dp, par = [INF] * (1 << n), [None] * (1 << n)
         dp[0] = 0.0
         for mask in range(1 << n):
-            if dp[mask] == INF:
+            d = dp[mask]
+            if d == INF:
                 continue
-            inside = [items[j] for j in range(n) if mask >> j & 1]
+            br = best_r[mask]
             for i in range(n):
                 if mask >> i & 1:
                     continue
-                p = items[i]
-                r = max([base[i]] + [R(p, q)[0] for q in inside if prompts[q]["school_id"] != prompts[p]["school_id"]])
-                v = dp[mask] + prompts[p]["limit"] * (1 - r)
-                if v < dp[mask | 1 << i] - 1e-9:
-                    dp[mask | 1 << i], par[mask | 1 << i] = v, (mask, i)
-        order, mask = [], (1 << n) - 1
+                v = d + L[i] * (1 - br[i])
+                nm = mask | 1 << i
+                if v < dp[nm] - 1e-9:
+                    dp[nm], par[nm] = v, (mask, i)
+        order, mask = [], full_mask
         while mask:
             mask, i = par[mask]
             order.append(items[i])
@@ -156,7 +173,16 @@ def plan_for(schools, written0=()):
         fixed += f
         groups += [(sid, k, opts) for k, opts in g]
     best = None
-    for combo in itertools.product(*[list(itertools.combinations(opts, k)) for _, k, opts in groups]):
+    combos = list(itertools.product(*[list(itertools.combinations(opts, k)) for _, k, opts in groups]))
+    n_items = len(fixed) + sum(k for _, k, _ in groups)
+    if len(combos) * (1 << min(n_items, 14)) > 3_000_000:
+        pick = []
+        for sid, k, opts in groups:
+            others = [q for q in prompts if prompts[q]["school_id"] != sid]
+            score = {o: np.mean([R(o, q)[0] + R(q, o)[0] for q in others]) for o in opts}
+            pick.append(tuple(sorted(opts, key=lambda o: -score[o])[:k]))
+        combos = [tuple(pick)]
+    for combo in combos:
         items = fixed + [p for pick in combo for p in pick]
         (tot, steps), how = best_order(items, written0)
         if best is None or tot < best["new_words"]:

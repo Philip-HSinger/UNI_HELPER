@@ -18,6 +18,108 @@
     "text": "Tell us more about a specific piece in your portfolio. How did an academic course, project, or interest inspire the ideas that you explored in this piece? Or, how did making this piece influence your academic interests?"
   },
   {
+    "id": "upenn-3",
+    "school": "Penn",
+    "why": "Penn Nursing only",
+    "text": "Penn Nursing intends to meet the health needs of society in a global and multicultural world by preparing its students to impact healthcare by advancing science. Why are you applying to Nursing, where do you see yourself professionally in the future, and how will you contribute to our mission of promoting equity in healthcare?"
+  },
+  {
+    "id": "upenn-5",
+    "school": "Penn",
+    "why": "Penn Wharton only",
+    "text": "Wharton prepares its students to make an impact by applying business methods and economic theory to real-world problems, including economic, political, and social issues. Discuss a current issue of importance to you and how you hope a Wharton education would help you explore it."
+  },
+  {
+    "id": "upenn-6",
+    "school": "Penn",
+    "why": "Penn Engineering only",
+    "text": "Penn Engineering prepares its students to become leaders in technology by combining a strong foundation in the natural sciences and mathematics with depth of study in focused disciplinary majors. Describe how you plan to pursue your engineering interests at Penn, particularly within the intended major you selected."
+  },
+  {
+    "id": "upenn-7",
+    "school": "Penn",
+    "why": "Penn dual-degree or specialized program only",
+    "text": "Applicants to the Huntsman Program in International Studies and Business must choose one of eleven target languages. Please select your target language."
+  },
+  {
+    "id": "upenn-8",
+    "school": "Penn",
+    "why": "Penn dual-degree or specialized program only",
+    "text": "Describe your experience with the target language you selected. You may wish to share the length of time you’ve studied or used this language, how you’ve learned it, the skills you’ve acquired, and/or the skills you still wish to develop. Please also explain why you are interested in studying this language and the region(s) of the world where it is spoken."
+  },
+  {
+    "id": "upenn-9",
+    "school": "Penn",
+    "why": "Penn dual-degree or specialized program only",
+    "text": "The Huntsman Program supports the development of globally-minded scholars who become engaged citizens, creative innovators, and ethical leaders in the public, private, and non-profit sectors in the United States and around the world. What draws you to a dual degree in international studies and business, and how would you use what you learn to address a global issue where these two domains intersect?"
+  },
+  {
+    "id": "upenn-10",
+    "school": "Penn",
+    "why": "Penn dual-degree or specialized program only",
+    "text": "The Vagelos Life Sciences & Management (LSM) program brings together two powerful modes of understanding—scientific inquiry and strategic thinking—to prepare students to engage thoughtfully and creatively with some of the most complex challenges of our time. What questions, problems, or opportunities would you hope to explore through LSM, and how might the integration of life sciences and management shape your approach to them? Focus on the ideas, values, or questions that draw you to this intersection, rather than how LSM might advance your career, and make sure this essay is distinct from your single-degree application."
+  },
+  {
+    "id": "upenn-11",
+    "school": "Penn",
+    "why": "Penn dual-degree or specialized program only",
+    "text": "Explain how you will use the M&T program to pursue problems or opportunities that require both engineering and business perspectives."
+  },
+  {
+    "id": "upenn-12",
+    "school": "Penn",
+    "why": "Penn dual-degree or specialized program only",
+    "text": "Describe something you created, designed, improved, or built. What motivated you, and what did you learn from the process?"
+  },
+  {
+    "id": "upenn-13",
+    "school": "Penn",
+    "why": "Penn dual-degree or specialized program only",
+    "text": "Describe your interest in nursing and health care management, and how Penn's coordinated dual-degree program in nursing and business would help you meet your goals. Please ensure that this essay is distinct from your single-degree application, if applicable."
+  },
+  {
+    "id": "upenn-14",
+    "school": "Penn",
+    "why": "Penn dual-degree or specialized program only",
+    "text": "VIPER students pursue dual degrees in science or math and engineering. Which major combination(s) interest you most right now and why? Your response to this prompt is not binding; students often shift majors as they learn more through the program. See available VIPER majors on our website."
+  },
+  {
+    "id": "upenn-15",
+    "school": "Penn",
+    "why": "Penn dual-degree or specialized program only",
+    "text": "Describe your interest in the VIPER program, including how any past experiences (academic, research, extracurricular, etc.) have shaped your interest in energy science and technology, and how you envision participation in VIPER fitting into your future goals."
+  },
+  {
+    "id": "upenn-16",
+    "school": "Penn",
+    "why": "Penn dual-degree or specialized program only",
+    "text": "Discuss how your interests align with the Visual and Interactive Computing (VIC) program at the University of Pennsylvania"
+  },
+  {
+    "id": "upenn-17",
+    "school": "Penn",
+    "why": "Penn transfer applicants only",
+    "text": "Please explain your reasons for transferring from your current institution and what you hope to gain by transferring to another institution."
+  },
+  {
+    "id": "rice-5",
+    "school": "Rice",
+    "why": "Rice 'The Box' is an image upload, not a written essay",
+    "text": "One of Rice's long-standing traditions is “The Box,” a question on our application where we ask all of our applicants to share an image of something that appeals to them. The Box gives you the opportunity to present us with an image that shares something about yourself, your interests or what is meaningful to you. This image is not used for evaluative purposes in the application, but allows you to put your stamp on the application about who you are aside from what you have achieved. Be sure to choose an image that speaks for itself and does not need an explanation. The Box must be a two-dimensional image that is uploaded in the Common App or uploaded in the Rice Admission Student Portal."
+  },
+  {
+    "id": "rice-6",
+    "school": "Rice",
+    "why": "Rice Architecture only",
+    "text": "Why are you determined to study architecture? Please explain your motivation and describe how your past experiences have led you to apply to the Rice School of Architecture in particular. Have you had an opportunity outside of school—such as an internship, building project, architecture summer program or other experience—that strengthened your interest in the field? If so, please describe how the experience further compels you to pursue a career in architecture."
+  },
+  {
+    "id": "rice-7",
+    "school": "Rice",
+    "why": "Rice Architecture only",
+    "text": "Describe a building, place, or city that you have encountered and found especially compelling. What specifically captured your attention, and why? In your response, reflect on how this experience has shaped your understanding of architecture and the built environment."
+  },
+  {
     "id": "boston-college-5",
     "school": "Boston College",
     "why": "BC Human-Centered Engineering only",

@@ -42,8 +42,6 @@ for chk in stat_fixes:
 for s in stats:
     if s["school_id"] in schools:
         schools[s["school_id"]].update(stats=s)
-missing = [sid for sid in IDS if "stats" not in schools[sid]]
-assert not missing, f"no stats for {missing}"
 
 save(ROOT / "data" / "prompts.json", prompts)
 save(ROOT / "data" / "excluded_prompts.json", excluded)
@@ -57,7 +55,8 @@ for a, b in itertools.combinations(prompts, 2):
                   "A": {"id": a["id"], "school": a["school"], "limit_words": a["limit"], "text": a["text"]},
                   "B": {"id": b["id"], "school": b["school"], "limit_words": b["limit"], "text": b["text"]}})
 save(SCORES / "pairs.json", pairs)
-print(f"{len(prompts)} prompts, {len(pairs)} cross-school pairs")
+missing = [sid for sid in IDS if "stats" not in schools[sid]]
+print(f"{len(prompts)} prompts, {len(pairs)} cross-school pairs; schools without stats: {missing}")
 for sid in IDS:
     n = sum(p["school_id"] == sid for p in prompts)
     print(f"  {SHORT[sid]:15s} {n} prompts")

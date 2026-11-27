@@ -1,0 +1,2462 @@
+[
+ {
+  "pair": "rice-3|villanova-4",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "rice-3|villanova-5",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "rice-3|fordham-university-1",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "rice-3|fordham-university-2",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "rice-3|fordham-university-3",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "rice-3|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "rice-3|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "rice-3|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "rice-4|emory-1",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  }
+ },
+ {
+  "pair": "rice-4|emory-2",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  }
+ },
+ {
+  "pair": "rice-4|emory-3",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  }
+ },
+ {
+  "pair": "rice-4|emory-4",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  }
+ },
+ {
+  "pair": "rice-4|emory-5",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  }
+ },
+ {
+  "pair": "rice-4|boston-college-1",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  }
+ },
+ {
+  "pair": "rice-4|boston-college-2",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  }
+ },
+ {
+  "pair": "rice-4|boston-college-3",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  }
+ },
+ {
+  "pair": "rice-4|boston-college-4",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  }
+ },
+ {
+  "pair": "rice-4|boston-university-1",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  }
+ },
+ {
+  "pair": "rice-4|villanova-1",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "rice-4|villanova-2",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "rice-4|villanova-3",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "rice-4|villanova-4",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "rice-4|villanova-5",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "rice-4|fordham-university-1",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "rice-4|fordham-university-2",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "rice-4|fordham-university-3",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "rice-4|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "rice-4|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "rice-4|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "emory-1|boston-college-1",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  }
+ },
+ {
+  "pair": "emory-1|boston-college-2",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  }
+ },
+ {
+  "pair": "emory-1|boston-college-3",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  }
+ },
+ {
+  "pair": "emory-1|boston-college-4",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  }
+ },
+ {
+  "pair": "emory-1|boston-university-1",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  }
+ },
+ {
+  "pair": "emory-1|villanova-1",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "emory-1|villanova-2",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "emory-1|villanova-3",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "emory-1|villanova-4",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "emory-1|villanova-5",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "emory-1|fordham-university-1",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "emory-1|fordham-university-2",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "emory-1|fordham-university-3",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "emory-1|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "emory-1|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "emory-1|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "emory-2|boston-college-1",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  }
+ },
+ {
+  "pair": "emory-2|boston-college-2",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  }
+ },
+ {
+  "pair": "emory-2|boston-college-3",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  }
+ },
+ {
+  "pair": "emory-2|boston-college-4",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  }
+ },
+ {
+  "pair": "emory-2|boston-university-1",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  }
+ },
+ {
+  "pair": "emory-2|villanova-1",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "emory-2|villanova-2",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "emory-2|villanova-3",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "emory-2|villanova-4",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "emory-2|villanova-5",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "emory-2|fordham-university-1",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "emory-2|fordham-university-2",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "emory-2|fordham-university-3",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "emory-2|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "emory-2|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "emory-2|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "emory-3|boston-college-1",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  }
+ },
+ {
+  "pair": "emory-3|boston-college-2",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  }
+ },
+ {
+  "pair": "emory-3|boston-college-3",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  }
+ },
+ {
+  "pair": "emory-3|boston-college-4",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  }
+ },
+ {
+  "pair": "emory-3|boston-university-1",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  }
+ },
+ {
+  "pair": "emory-3|villanova-1",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "emory-3|villanova-2",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "emory-3|villanova-3",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "emory-3|villanova-4",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "emory-3|villanova-5",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "emory-3|fordham-university-1",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "emory-3|fordham-university-2",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "emory-3|fordham-university-3",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "emory-3|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "emory-3|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "emory-3|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "emory-4|boston-college-1",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  }
+ },
+ {
+  "pair": "emory-4|boston-college-2",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  }
+ },
+ {
+  "pair": "emory-4|boston-college-3",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  }
+ },
+ {
+  "pair": "emory-4|boston-college-4",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  }
+ },
+ {
+  "pair": "emory-4|boston-university-1",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  }
+ },
+ {
+  "pair": "emory-4|villanova-1",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "emory-4|villanova-2",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "emory-4|villanova-3",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "emory-4|villanova-4",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "emory-4|villanova-5",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "emory-4|fordham-university-1",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "emory-4|fordham-university-2",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "emory-4|fordham-university-3",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "emory-4|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "emory-4|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "emory-4|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "emory-5|boston-college-1",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  }
+ },
+ {
+  "pair": "emory-5|boston-college-2",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  }
+ },
+ {
+  "pair": "emory-5|boston-college-3",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  }
+ },
+ {
+  "pair": "emory-5|boston-college-4",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  }
+ },
+ {
+  "pair": "emory-5|boston-university-1",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  }
+ },
+ {
+  "pair": "emory-5|villanova-1",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "emory-5|villanova-2",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "emory-5|villanova-3",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "emory-5|villanova-4",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "emory-5|villanova-5",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "emory-5|fordham-university-1",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "emory-5|fordham-university-2",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "emory-5|fordham-university-3",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "emory-5|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "emory-5|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "emory-5|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "boston-college-1|villanova-1",
+  "A": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "boston-college-1|villanova-2",
+  "A": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "boston-college-1|villanova-3",
+  "A": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "boston-college-1|villanova-4",
+  "A": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "boston-college-1|villanova-5",
+  "A": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "boston-college-2|villanova-1",
+  "A": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "boston-college-2|villanova-2",
+  "A": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "boston-college-2|villanova-3",
+  "A": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "boston-college-2|villanova-4",
+  "A": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "boston-college-2|villanova-5",
+  "A": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "boston-college-3|villanova-1",
+  "A": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "boston-college-3|villanova-2",
+  "A": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "boston-college-3|villanova-3",
+  "A": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "boston-college-3|villanova-4",
+  "A": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "boston-college-3|villanova-5",
+  "A": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "boston-college-4|villanova-1",
+  "A": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "boston-college-4|villanova-2",
+  "A": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "boston-college-4|villanova-3",
+  "A": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "boston-college-4|villanova-4",
+  "A": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "boston-college-4|villanova-5",
+  "A": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "boston-university-1|villanova-1",
+  "A": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "boston-university-1|villanova-2",
+  "A": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "boston-university-1|villanova-3",
+  "A": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "boston-university-1|villanova-4",
+  "A": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "boston-university-1|villanova-5",
+  "A": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "villanova-1|fordham-university-1",
+  "A": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "villanova-1|fordham-university-2",
+  "A": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "villanova-1|fordham-university-3",
+  "A": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "villanova-1|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "villanova-1|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "villanova-1|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "villanova-2|fordham-university-1",
+  "A": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "villanova-2|fordham-university-2",
+  "A": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "villanova-2|fordham-university-3",
+  "A": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "villanova-2|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "villanova-2|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "villanova-2|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "villanova-3|fordham-university-1",
+  "A": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "villanova-3|fordham-university-2",
+  "A": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "villanova-3|fordham-university-3",
+  "A": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "villanova-3|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "villanova-3|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "villanova-3|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "villanova-4|fordham-university-1",
+  "A": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "villanova-4|fordham-university-2",
+  "A": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "villanova-4|fordham-university-3",
+  "A": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "villanova-4|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "villanova-4|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "villanova-4|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "villanova-5|fordham-university-1",
+  "A": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "villanova-5|fordham-university-2",
+  "A": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "villanova-5|fordham-university-3",
+  "A": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "villanova-5|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "villanova-5|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "villanova-5|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ }
+]

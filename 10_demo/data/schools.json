@@ -63,6 +63,50 @@
     }
   },
   {
+    "school_id": "upenn",
+    "school": "Penn",
+    "cycle": "2026-27",
+    "no_supplement": false,
+    "prompt_notes": "Official page is headed '2026-27 Short Answer and Essay Prompts'. Every applicant answers the two all-applicant prompts plus ONE school-specific prompt for their single-degree school choice (Nursing, College of Arts and Sciences, Wharton, or Engineering). Coordinated dual-degree/specialized program applicants (Huntsman, LSM, M&T, NHCM, VIPER, VIC) additionally answer their program-specific prompts. Limits are stated on the page as '(50-200 words)', '(50 to 200 words)', '(50-400 words)' etc.; recorded as word_min 50 and word_limit 200/400. The trailing limit parentheticals were removed from 'text'; all other wording is copied exactly (HTML non-breaking/double spaces normalized to single spaces). Each school/program prompt is followed on the page by a 'To help inform your response, we encourage you to review...' guidance line, which is not included in 'text'. Huntsman upenn-7 is a target-language selection (one of eleven languages), counted by Penn as one of the three Huntsman responses; it is not a written essay. upenn-17 (transfer essay) applies only to transfer applicants: '(50-400 words/up to 2,000 characters)'. The page says double-asterisk numbers denote character counts for transfer Common App applicants; none appeared on first-year prompts. upenn-16 (VIC) has no terminal period in text because on the page the period follows the limit: \"...University of Pennsylvania (50-400 words).\"",
+    "prompt_sources": [
+      "https://admissions.upenn.edu/how-to-apply/preparing-your-application/writing",
+      "https://www.collegetransitions.com/blog/upenn-supplemental-essay-prompts/",
+      "https://www.collegeessayguy.com/blog/upenn-university-pennsylvania-supplemental-essay",
+      "https://admissions.upenn.edu/how-to-apply/first-year-applicants/writing-supplement"
+    ]
+  },
+  {
+    "school_id": "rice",
+    "school": "Rice",
+    "cycle": "2026-27",
+    "no_supplement": false,
+    "prompt_notes": "Official Rice pages are headed 'Essay Prompts (2026-2027)'; identical prompt text on the domestic, international and general first-year pages. Prompt 3 instruction (verbatim): 'Please respond to one of the following prompts to explore how you will contribute to the Rice community:' (choose rice-3 or rice-4). On the QuestBridge page the same instruction ends '(optional):', so for QuestBridge applicants the 500-word choice is optional; prompts 1, 2 and the Box are identical there. rice-5 (Rice Box) is an image prompt, not written: a two-dimensional image uploaded in the Common App or Rice Admission Student Portal, word_limit null; the text recorded is the official page's description, and the shorter wording shown inside the Common App question itself could not be viewed. Architecture limits are stated as '250 words.' (not 'word limit'); architecture applicants also must submit a portfolio (PDF, up to 10 pages, 15 MB). No written prompts for Shepherd School of Music (separate audition/materials, due Dec 1) or Department of Art (optional portfolio). Rice has no other school-of-intended-major prompts; prompt 1 refers to the academic areas selected in the application. Third-party discrepancies: CollegeEssayGuy's 2026/2027 page shows 'racial identity' in prompt 4 and older architecture prompts; the official 2026-2027 page says 'cultural identity' and has the architecture prompts used here.",
+    "prompt_sources": [
+      "https://admission.rice.edu/apply/first-year-domestic-applicants",
+      "https://admission.rice.edu/apply/first-year-international-applicants",
+      "https://admission.rice.edu/apply/first-year-applicants",
+      "https://admission.rice.edu/apply/questbridge-applicants",
+      "https://admission.rice.edu/apply",
+      "https://admission.rice.edu/apply/first-year",
+      "https://www.collegeessayguy.com/blog/rice-university-supplemental-essays"
+    ]
+  },
+  {
+    "school_id": "emory",
+    "school": "Emory",
+    "cycle": "2026-27",
+    "no_supplement": false,
+    "prompt_notes": "Source is Emory's official admission blog post 'Emory's Short Answer Questions 2026-27' (dated August 1, 2026), which announces the questions 'for the 2026-2027 first-year application' and says they are the same as the previous cycle. Academic Interests is required and labeled '(200 Words Recommended Length)' - a recommended length, not necessarily a hard cap; recorded as word_limit 200. Getting to Know You: answer one of four, labeled '(150 Words)'. There are no separate Oxford College or Emory College prompts: one application covers Emory College, Oxford College, or both, and the same short answers apply (per Emory's blog and third-party guides; admission.emory.edu pages could not be loaded - 404/503 - so this was not re-confirmed on the main site or in the Common App itself). Exact Common App character caps, if any, were not verified. A non-breaking space in emory-5 was normalized to a regular space.",
+    "prompt_sources": [
+      "https://blog.emoryadmission.com/2026/08/emorys-short-answer-questions-2026-27/",
+      "https://blog.emoryadmission.com/feed/",
+      "https://admission.emory.edu/apply/",
+      "https://admission.emory.edu/apply/first-year/",
+      "https://blog.emoryadmission.com/2026/08/emorys-short-answer-questions-2026-2027/",
+      "https://blog.emoryadmission.com/2026/07/emorys-short-answer-questions-2026-27/"
+    ]
+  },
+  {
     "school_id": "boston-college",
     "school": "Boston College",
     "cycle": "2026-27",
@@ -205,6 +249,77 @@
       "deadlines_url": "https://www.bu.edu/admissions/apply/deadlines/",
       "notes": "CDS 2025-26 = Fall 2025 entering class. The figures come from the 'updated' Section C file posted in July 2026, which matches the updated full CDS (https://www.bu.edu/asir/files/2026/07/CDS-2025-2026-updated.pdf). The C21 ED applicant and admit counts are not split between ED1 and ED2, so they are probably combined. No Early Action plan. The CDS C8F and the admissions site both say BU is test-optional for first-year applicants applying through fall 2028 and spring 2029. The CDS lists ED closing Nov 1, but the admissions deadlines page lists Nov 2 for the current cycle (Nov 1, 2026 is a Sunday); notification dates are Dec 14 (ED) and Feb 8 (ED2).",
       "verified": "confirmed"
+    }
+  },
+  {
+    "school_id": "villanova",
+    "school": "Villanova",
+    "cycle": "2026-27",
+    "no_supplement": false,
+    "prompt_notes": "Official page is headed 'Villanova Writing Supplement (2026-2027)' and instructs: 'Choose one of the five topics below and submit a written response in about 250 words.' The limit is approximate ('about 250 words'; Pro-Tips say not to stress about going over or under 'as long as it is close'), so word_limit=250 records the stated target, not a hard cap; the exact cap enforced in the Common App text box was not visible. Quotation marks are copied as the official page renders them (curly quotes in Prompt One, straight quotes in Prompts Three and Five). The supplement must differ from the Common App/Coalition main essay. No honors, college-specific (Nursing, Business, Engineering, CLAS), or short-answer prompts found on the official page or in third-party guides. Third-party discrepancy: College Transitions' 2026-27 post lists a different Prompt Four (misjudged identity prompt, apparently from an older cycle); the official page and GradPilot both show the AI/technology Prompt Four, which is used here.",
+    "prompt_sources": [
+      "https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/application-essays.html",
+      "https://www.collegetransitions.com/blog/villanova-university-essay-prompts-3",
+      "https://gradpilot.com/news/villanova-supplemental-essays-2026-2027"
+    ]
+  },
+  {
+    "school_id": "fordham-university",
+    "school": "Fordham",
+    "cycle": "2026-27",
+    "no_supplement": false,
+    "prompt_notes": "Prompt text copied verbatim from Fordham's official 'Writing for the Common Application' page (listed there as A, B, C under 'Short Response', with the lead-in: 'Your choice of one of three short response questions (300 words max) is meant to help you reflect on your personal growth and community impact. How will you continue to grow and impact our communities at Fordham and in New York City?'). The page states these optional sections carry no penalty if skipped. The official page is undated; the 2026-27 cycle is inferred from CollegeEssayGuy ('Guide 2026/2027', updated 08/10/2026) and Esslo ('essay prompts for 2026-2027'), which both list the same three prompts with 300-word limits. CollegeEssayGuy/CollegeVine quote the in-app instruction as 'You may choose to answer one (1) of the optional questions below. Keep in mind that your response is a maximum of 300 words.' Common App 2026-27 requirements grid (updated 09-25-2026) shows no required writing supplement for Fordham, consistent with the prompts being optional. Not included: the official page also mentions optional 'Challenges and Circumstances' and 'Additional Information' sections, which are standard Common App sections rather than Fordham-specific prompts. No program-specific (e.g., Gabelli, Honors) essay prompts were found. Empowerly's claim of '1 required Fordham-specific question' conflicts with the official page and was disregarded. CollegeVine's older guide lists four options (incl. a Jesuit 'contribute to our campus community' prompt and a 'something you are proud of' prompt) from earlier cycles; those are not on the current official page.",
+    "prompt_sources": [
+      "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/writing-for-the-common-application/",
+      "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/writing-for-the-common-application/essay-guidelines/",
+      "https://www.collegeessayguy.com/blog/fordham-university-supplemental-essay",
+      "https://www.esslo.org/college-essay-grader/fordham",
+      "https://empowerly.com/blog/blog-supplemental-essay-prompts-2026-27",
+      "https://blog.collegevine.com/how-to-write-the-fordham-university-essays",
+      "https://content.commonapp.org/Files/ReqGrid.pdf"
+    ],
+    "stats": {
+      "school_id": "fordham-university",
+      "school": "Fordham University",
+      "cds_year": null,
+      "cds_url": "https://fordhamit-my.sharepoint.com/:x:/g/personal/oira_fordham_edu/EaJPT5Oj60pOvKeX3_fzOqQBLFA9sVfvKFLE4nT-WLJSRQ?e=9ExBg2",
+      "stats_source": "admissions site (Undergraduate Admission Facts, Fall 2026 / Class of 2030), NOT CDS",
+      "applicants": 53599,
+      "admits": 25300,
+      "enrolled": 2653,
+      "admit_rate": 0.472,
+      "ed_applicants": null,
+      "ed_admits": null,
+      "ed_rate": null,
+      "ea_applicants": null,
+      "ea_admits": null,
+      "ea_rate": null,
+      "pct_submit_sat": null,
+      "pct_submit_act": null,
+      "sat_ebrw": null,
+      "sat_math": null,
+      "sat_composite": [
+        1355,
+        null,
+        1470
+      ],
+      "act_composite": [
+        31,
+        null,
+        34
+      ],
+      "test_importance": null,
+      "test_policy_2026_27": "test-optional",
+      "test_policy_url": "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/testing-policy/",
+      "deadlines": {
+        "ED1": "Nov 1",
+        "ED2": "Jan 3",
+        "EA": "Nov 1",
+        "RD": "Jan 3"
+      },
+      "deadlines_url": "https://www.fordham.edu/undergraduate-admission/apply/",
+      "notes": "I could not open the CDS. Fordham's CDS page (https://www.fordham.edu/about/leadership-and-administration/administrative-offices/office-of-the-provost/provost-office-units/institutional-research-and-assessment/consumer-information/common-data-set/) lists CDS 2024-25 as the newest. It is a OneDrive Excel share that refused anonymous download (HTML error / 403). No 2025-26 CDS is posted. All stats here come from https://www.fordham.edu/undergraduate-admission/why-fordham/admission-facts/ (Fall 2026 applications, updated Sept 23, 2026), so they are one cycle newer than any CDS. Figures: 53,599 completed applications (excludes PCS), 25,300 offers, 2,653 enrolled, acceptance rate 47%. SAT and ACT middle 50% are for ENROLLED students (SAT 1355-1470, ACT 31-34). No medians or section scores are given. 70.1% of enrollees did not submit tests, so about 29.9% submitted SAT or ACT combined; the split is not published. Admitted-student middle 50%: SAT 1380-1490, ACT 32-34 (60.3% of admits test-free). ED/EA counts and C7 test importance are not available without the CDS. Third-party sites (CollegeVine) cite the 2024-25 CDS at 43,364 applicants / 25,719 admits; this is unverified and not used. Deadlines (2026-27 cycle, explicitly dated): EA and ED I Nov 1, 2026, extended to Nov 8 this cycle; RD and ED II Jan 3, 2027.",
+      "verified": "unresolved"
     }
   },
   {
@@ -420,65 +535,6 @@
       "deadlines_url": "https://www.holycross.edu/admissions-aid/how-to-apply",
       "notes": "STALE: the newest CDS on Holy Cross's Institutional Research page (https://www.holycross.edu/finance/institutional-research) is 2023-24 (Fall 2023 entering class). No 2024-25 or 2025-26 CDS was found, and guessed URLs returned 404. The PDF link /media/2068 redirects to the URL given in cds_url. The CDS C8 (for Fall 2025) reads 'Not required for admission, but considered for some'. No Early Action plan. Admissions site: test scores are 'entirely optional' (test-optional since the class entering in 2006); Holy Cross superscores SAT and ACT. The admissions homepage (https://www.holycross.edu/admissions-aid) shows Class of 2030 figures of about 10,600 applications and an 18% acceptance rate, newer than the CDS (rounded and not CDS-sourced). The deadlines page does not name a cycle year; QuestBridge deadline is Nov 1.",
       "verified": "confirmed"
-    }
-  },
-  {
-    "school_id": "fordham-university",
-    "school": "Fordham",
-    "cycle": "2026-27",
-    "no_supplement": false,
-    "prompt_notes": "Prompt text copied verbatim from Fordham's official 'Writing for the Common Application' page (listed there as A, B, C under 'Short Response', with the lead-in: 'Your choice of one of three short response questions (300 words max) is meant to help you reflect on your personal growth and community impact. How will you continue to grow and impact our communities at Fordham and in New York City?'). The page states these optional sections carry no penalty if skipped. The official page is undated; the 2026-27 cycle is inferred from CollegeEssayGuy ('Guide 2026/2027', updated 08/10/2026) and Esslo ('essay prompts for 2026-2027'), which both list the same three prompts with 300-word limits. CollegeEssayGuy/CollegeVine quote the in-app instruction as 'You may choose to answer one (1) of the optional questions below. Keep in mind that your response is a maximum of 300 words.' Common App 2026-27 requirements grid (updated 09-25-2026) shows no required writing supplement for Fordham, consistent with the prompts being optional. Not included: the official page also mentions optional 'Challenges and Circumstances' and 'Additional Information' sections, which are standard Common App sections rather than Fordham-specific prompts. No program-specific (e.g., Gabelli, Honors) essay prompts were found. Empowerly's claim of '1 required Fordham-specific question' conflicts with the official page and was disregarded. CollegeVine's older guide lists four options (incl. a Jesuit 'contribute to our campus community' prompt and a 'something you are proud of' prompt) from earlier cycles; those are not on the current official page.",
-    "prompt_sources": [
-      "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/writing-for-the-common-application/",
-      "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/writing-for-the-common-application/essay-guidelines/",
-      "https://www.collegeessayguy.com/blog/fordham-university-supplemental-essay",
-      "https://www.esslo.org/college-essay-grader/fordham",
-      "https://empowerly.com/blog/blog-supplemental-essay-prompts-2026-27",
-      "https://blog.collegevine.com/how-to-write-the-fordham-university-essays",
-      "https://content.commonapp.org/Files/ReqGrid.pdf"
-    ],
-    "stats": {
-      "school_id": "fordham-university",
-      "school": "Fordham University",
-      "cds_year": null,
-      "cds_url": "https://fordhamit-my.sharepoint.com/:x:/g/personal/oira_fordham_edu/EaJPT5Oj60pOvKeX3_fzOqQBLFA9sVfvKFLE4nT-WLJSRQ?e=9ExBg2",
-      "stats_source": "admissions site (Undergraduate Admission Facts, Fall 2026 / Class of 2030), NOT CDS",
-      "applicants": 53599,
-      "admits": 25300,
-      "enrolled": 2653,
-      "admit_rate": 0.472,
-      "ed_applicants": null,
-      "ed_admits": null,
-      "ed_rate": null,
-      "ea_applicants": null,
-      "ea_admits": null,
-      "ea_rate": null,
-      "pct_submit_sat": null,
-      "pct_submit_act": null,
-      "sat_ebrw": null,
-      "sat_math": null,
-      "sat_composite": [
-        1355,
-        null,
-        1470
-      ],
-      "act_composite": [
-        31,
-        null,
-        34
-      ],
-      "test_importance": null,
-      "test_policy_2026_27": "test-optional",
-      "test_policy_url": "https://www.fordham.edu/undergraduate-admission/apply/what-were-looking-for/testing-policy/",
-      "deadlines": {
-        "ED1": "Nov 1",
-        "ED2": "Jan 3",
-        "EA": "Nov 1",
-        "RD": "Jan 3"
-      },
-      "deadlines_url": "https://www.fordham.edu/undergraduate-admission/apply/",
-      "notes": "I could not open the CDS. Fordham's CDS page (https://www.fordham.edu/about/leadership-and-administration/administrative-offices/office-of-the-provost/provost-office-units/institutional-research-and-assessment/consumer-information/common-data-set/) lists CDS 2024-25 as the newest. It is a OneDrive Excel share that refused anonymous download (HTML error / 403). No 2025-26 CDS is posted. All stats here come from https://www.fordham.edu/undergraduate-admission/why-fordham/admission-facts/ (Fall 2026 applications, updated Sept 23, 2026), so they are one cycle newer than any CDS. Figures: 53,599 completed applications (excludes PCS), 25,300 offers, 2,653 enrolled, acceptance rate 47%. SAT and ACT middle 50% are for ENROLLED students (SAT 1355-1470, ACT 31-34). No medians or section scores are given. 70.1% of enrollees did not submit tests, so about 29.9% submitted SAT or ACT combined; the split is not published. Admitted-student middle 50%: SAT 1380-1490, ACT 32-34 (60.3% of admits test-free). ED/EA counts and C7 test importance are not available without the CDS. Third-party sites (CollegeVine) cite the 2024-25 CDS at 43,364 applicants / 25,719 admits; this is unverified and not used. Deadlines (2026-27 cycle, explicitly dated): EA and ED I Nov 1, 2026, extended to Nov 8 this cycle; RD and ED II Jan 3, 2027.",
-      "verified": "unresolved"
     }
   },
   {

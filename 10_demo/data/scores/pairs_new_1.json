@@ -1,0 +1,2462 @@
+[
+ {
+  "pair": "tufts-1|upenn-1",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  }
+ },
+ {
+  "pair": "tufts-1|upenn-2",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  }
+ },
+ {
+  "pair": "tufts-1|upenn-4",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  }
+ },
+ {
+  "pair": "tufts-1|rice-1",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  }
+ },
+ {
+  "pair": "tufts-1|rice-2",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  }
+ },
+ {
+  "pair": "tufts-1|rice-3",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  }
+ },
+ {
+  "pair": "tufts-1|rice-4",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  }
+ },
+ {
+  "pair": "tufts-1|emory-1",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  }
+ },
+ {
+  "pair": "tufts-1|emory-2",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  }
+ },
+ {
+  "pair": "tufts-1|emory-3",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  }
+ },
+ {
+  "pair": "tufts-1|emory-4",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  }
+ },
+ {
+  "pair": "tufts-1|emory-5",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  }
+ },
+ {
+  "pair": "tufts-1|villanova-1",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "tufts-1|villanova-2",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "tufts-1|villanova-3",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "tufts-1|villanova-4",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "tufts-1|villanova-5",
+  "A": {
+   "id": "tufts-1",
+   "school": "Tufts",
+   "limit_words": 150,
+   "text": "Please describe how you have learned about and engaged with Tufts during your college search process."
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "tufts-2|upenn-1",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  }
+ },
+ {
+  "pair": "tufts-2|upenn-2",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  }
+ },
+ {
+  "pair": "tufts-2|upenn-4",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  }
+ },
+ {
+  "pair": "tufts-2|rice-1",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  }
+ },
+ {
+  "pair": "tufts-2|rice-2",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  }
+ },
+ {
+  "pair": "tufts-2|rice-3",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  }
+ },
+ {
+  "pair": "tufts-2|rice-4",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  }
+ },
+ {
+  "pair": "tufts-2|emory-1",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  }
+ },
+ {
+  "pair": "tufts-2|emory-2",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  }
+ },
+ {
+  "pair": "tufts-2|emory-3",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  }
+ },
+ {
+  "pair": "tufts-2|emory-4",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  }
+ },
+ {
+  "pair": "tufts-2|emory-5",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  }
+ },
+ {
+  "pair": "tufts-2|villanova-1",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "tufts-2|villanova-2",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "tufts-2|villanova-3",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "tufts-2|villanova-4",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "tufts-2|villanova-5",
+  "A": {
+   "id": "tufts-2",
+   "school": "Tufts",
+   "limit_words": 200,
+   "text": "Tell us about one of your favorite school assignments in the past two years. What was the assignment and why did you enjoy it?"
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "upenn-1|rice-1",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  }
+ },
+ {
+  "pair": "upenn-1|rice-2",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  }
+ },
+ {
+  "pair": "upenn-1|rice-3",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  }
+ },
+ {
+  "pair": "upenn-1|rice-4",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  }
+ },
+ {
+  "pair": "upenn-1|emory-1",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  }
+ },
+ {
+  "pair": "upenn-1|emory-2",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  }
+ },
+ {
+  "pair": "upenn-1|emory-3",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  }
+ },
+ {
+  "pair": "upenn-1|emory-4",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  }
+ },
+ {
+  "pair": "upenn-1|emory-5",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  }
+ },
+ {
+  "pair": "upenn-1|boston-college-1",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  }
+ },
+ {
+  "pair": "upenn-1|boston-college-2",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  }
+ },
+ {
+  "pair": "upenn-1|boston-college-3",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  }
+ },
+ {
+  "pair": "upenn-1|boston-college-4",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  }
+ },
+ {
+  "pair": "upenn-1|boston-university-1",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  }
+ },
+ {
+  "pair": "upenn-1|villanova-1",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "upenn-1|villanova-2",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "upenn-1|villanova-3",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "upenn-1|villanova-4",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "upenn-1|villanova-5",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "upenn-1|fordham-university-1",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "upenn-1|fordham-university-2",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "upenn-1|fordham-university-3",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "upenn-1|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "upenn-1|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "upenn-1|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "upenn-1",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "Write a short thank-you note to someone you have not yet thanked and would like to acknowledge. (We encourage you to share this note with that person, if possible, and reflect on the experience!)"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "upenn-2|rice-1",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  }
+ },
+ {
+  "pair": "upenn-2|rice-2",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  }
+ },
+ {
+  "pair": "upenn-2|rice-3",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  }
+ },
+ {
+  "pair": "upenn-2|rice-4",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  }
+ },
+ {
+  "pair": "upenn-2|emory-1",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  }
+ },
+ {
+  "pair": "upenn-2|emory-2",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  }
+ },
+ {
+  "pair": "upenn-2|emory-3",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  }
+ },
+ {
+  "pair": "upenn-2|emory-4",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  }
+ },
+ {
+  "pair": "upenn-2|emory-5",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  }
+ },
+ {
+  "pair": "upenn-2|boston-college-1",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  }
+ },
+ {
+  "pair": "upenn-2|boston-college-2",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  }
+ },
+ {
+  "pair": "upenn-2|boston-college-3",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  }
+ },
+ {
+  "pair": "upenn-2|boston-college-4",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  }
+ },
+ {
+  "pair": "upenn-2|boston-university-1",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  }
+ },
+ {
+  "pair": "upenn-2|villanova-1",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "upenn-2|villanova-2",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "upenn-2|villanova-3",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "upenn-2|villanova-4",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "upenn-2|villanova-5",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "upenn-2|fordham-university-1",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "upenn-2|fordham-university-2",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "upenn-2|fordham-university-3",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "upenn-2|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "upenn-2|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "upenn-2|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "upenn-2",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "How will you explore community at Penn? Consider how Penn will help shape your perspective, and how your experiences and perspective will help shape Penn."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "upenn-4|rice-1",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  }
+ },
+ {
+  "pair": "upenn-4|rice-2",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  }
+ },
+ {
+  "pair": "upenn-4|rice-3",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  }
+ },
+ {
+  "pair": "upenn-4|rice-4",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "rice-4",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "Rice is strengthened by its diverse community of learning and discovery that produces leaders and change agents across the spectrum of human endeavor. What perspectives shaped by your background, experiences, upbringing, and/or cultural identity inspire you to join our community of change agents at Rice?"
+  }
+ },
+ {
+  "pair": "upenn-4|emory-1",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  }
+ },
+ {
+  "pair": "upenn-4|emory-2",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  }
+ },
+ {
+  "pair": "upenn-4|emory-3",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  }
+ },
+ {
+  "pair": "upenn-4|emory-4",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  }
+ },
+ {
+  "pair": "upenn-4|emory-5",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  }
+ },
+ {
+  "pair": "upenn-4|boston-college-1",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  }
+ },
+ {
+  "pair": "upenn-4|boston-college-2",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  }
+ },
+ {
+  "pair": "upenn-4|boston-college-3",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  }
+ },
+ {
+  "pair": "upenn-4|boston-college-4",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  }
+ },
+ {
+  "pair": "upenn-4|boston-university-1",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  }
+ },
+ {
+  "pair": "upenn-4|villanova-1",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "upenn-4|villanova-2",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "upenn-4|villanova-3",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "upenn-4|villanova-4",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "upenn-4|villanova-5",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "upenn-4|fordham-university-1",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "upenn-4|fordham-university-2",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "upenn-4|fordham-university-3",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "upenn-4|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "upenn-4|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "upenn-4|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "upenn-4",
+   "school": "Penn",
+   "limit_words": 200,
+   "text": "The College of Arts and Sciences is designed to foster discovery and connection. Describe something you are curious about—something you'd like to learn more about or find a new approach to—and how you might pursue that curiosity in the College."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "rice-1|emory-1",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  }
+ },
+ {
+  "pair": "rice-1|emory-2",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  }
+ },
+ {
+  "pair": "rice-1|emory-3",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  }
+ },
+ {
+  "pair": "rice-1|emory-4",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  }
+ },
+ {
+  "pair": "rice-1|emory-5",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  }
+ },
+ {
+  "pair": "rice-1|boston-college-1",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  }
+ },
+ {
+  "pair": "rice-1|boston-college-2",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  }
+ },
+ {
+  "pair": "rice-1|boston-college-3",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  }
+ },
+ {
+  "pair": "rice-1|boston-college-4",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  }
+ },
+ {
+  "pair": "rice-1|boston-university-1",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  }
+ },
+ {
+  "pair": "rice-1|villanova-1",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "rice-1|villanova-2",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "rice-1|villanova-3",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "rice-1|villanova-4",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "rice-1|villanova-5",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "rice-1|fordham-university-1",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "rice-1|fordham-university-2",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "rice-1|fordham-university-3",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "rice-1|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "rice-1|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "rice-1|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "rice-1",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Please explain what draws you to the academic areas you selected above and how you hope to explore them at Rice University."
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "rice-2|emory-1",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  }
+ },
+ {
+  "pair": "rice-2|emory-2",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  }
+ },
+ {
+  "pair": "rice-2|emory-3",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  }
+ },
+ {
+  "pair": "rice-2|emory-4",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  }
+ },
+ {
+  "pair": "rice-2|emory-5",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  }
+ },
+ {
+  "pair": "rice-2|boston-college-1",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  }
+ },
+ {
+  "pair": "rice-2|boston-college-2",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  }
+ },
+ {
+  "pair": "rice-2|boston-college-3",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  }
+ },
+ {
+  "pair": "rice-2|boston-college-4",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  }
+ },
+ {
+  "pair": "rice-2|boston-university-1",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  }
+ },
+ {
+  "pair": "rice-2|villanova-1",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "rice-2|villanova-2",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "rice-2|villanova-3",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ },
+ {
+  "pair": "rice-2|villanova-4",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "villanova-4",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?"
+  }
+ },
+ {
+  "pair": "rice-2|villanova-5",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "villanova-5",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need."
+  }
+ },
+ {
+  "pair": "rice-2|fordham-university-1",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "fordham-university-1",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we expect students to care for and engage with their communities and be active citizens for positive change. Please share an experience you had that caused you to develop a new perspective, change your point of view, and/or empower you to take an action or be courageous. Your response should include examples of your personal growth (e.g., what did you learn, did your point of view change, did you develop new skills or strengths?)."
+  }
+ },
+ {
+  "pair": "rice-2|fordham-university-2",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "fordham-university-2",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "Our motto is “New York is my campus, Fordham is my school.” New York City is a diverse and global city that provides Fordham students with a special kind of educational experience, full of both challenge and opportunity. What has prepared you to embrace the unique opportunity of living and learning in New York City?"
+  }
+ },
+ {
+  "pair": "rice-2|fordham-university-3",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "fordham-university-3",
+   "school": "Fordham",
+   "limit_words": 300,
+   "text": "At Fordham, we have a tradition of having our graduating seniors send a message to their younger selves. What will the future “you” tell the “you” of today about what you accomplished as a Fordham student?"
+  }
+ },
+ {
+  "pair": "rice-2|university-of-massachusetts-amherst-1",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-1",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you want to attend UMass Amherst?"
+  }
+ },
+ {
+  "pair": "rice-2|university-of-massachusetts-amherst-2",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-2",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "Please tell us why you chose the Major(s) you did."
+  }
+ },
+ {
+  "pair": "rice-2|university-of-massachusetts-amherst-4",
+  "A": {
+   "id": "rice-2",
+   "school": "Rice",
+   "limit_words": 150,
+   "text": "Based upon your exploration of Rice University, what elements of the Rice experience appeal to you?"
+  },
+  "B": {
+   "id": "university-of-massachusetts-amherst-4",
+   "school": "UMass Amherst",
+   "limit_words": 100,
+   "text": "At UMass Amherst, no two students are alike. Our communities and groups often define us and shape our individual worlds. Community can refer to various aspects, including shared geography, religion, race/ethnicity, income, ideology, and more. Please choose one of your communities or groups and describe its significance. Explain how, as a product of this community or group, you would enrich our campus."
+  }
+ },
+ {
+  "pair": "rice-3|emory-1",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "emory-1",
+   "school": "Emory",
+   "limit_words": 200,
+   "text": "What academic areas are you interested in exploring at Emory University and why?"
+  }
+ },
+ {
+  "pair": "rice-3|emory-2",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "emory-2",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better."
+  }
+ },
+ {
+  "pair": "rice-3|emory-3",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "emory-3",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness."
+  }
+ },
+ {
+  "pair": "rice-3|emory-4",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "emory-4",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity."
+  }
+ },
+ {
+  "pair": "rice-3|emory-5",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "emory-5",
+   "school": "Emory",
+   "limit_words": 150,
+   "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?"
+  }
+ },
+ {
+  "pair": "rice-3|boston-college-1",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "boston-college-1",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Strong communities are sustained by traditions. Boston College's annual calendar is marked with both long-standing and newer traditions that help shape our community. Tell us about a meaningful tradition in your family or community. Why is it important to you, and how does it bring people together or strengthen the bonds of those who participate?"
+  }
+ },
+ {
+  "pair": "rice-3|boston-college-2",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "boston-college-2",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "The late BC theology professor, Father Michael Himes, argued that a university is not a place to which you go, but instead, a \"rigorous and sustained conversation about the great questions of human existence, among the widest possible circle of the best possible conversation partners.” Who has been your most meaningful conversation partner, and what profound questions have you considered together?"
+  }
+ },
+ {
+  "pair": "rice-3|boston-college-3",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "boston-college-3",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "In her July 2009 Ted Talk, “The Danger of a Single Story,” Chimamanda Ngozi Adichie warned viewers against assigning people a “single story” through assumptions about their nationality, appearance, or background. Discuss a time when someone defined you by a single story. What challenges did this present and how did you overcome them?"
+  }
+ },
+ {
+  "pair": "rice-3|boston-college-4",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "boston-college-4",
+   "school": "Boston College",
+   "limit_words": 400,
+   "text": "Boston College’s Jesuit mission highlights “the three Be’s”: be attentive, be reflective, be loving – core to Jesuit education (see A Pocket Guide to Jesuit Education). If you could add a fourth “Be,” what would it be and why? How would this new value support your personal development and enrich the BC community?"
+  }
+ },
+ {
+  "pair": "rice-3|boston-university-1",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "boston-university-1",
+   "school": "Boston University",
+   "limit_words": 300,
+   "text": "What about being a student at BU most excites you?"
+  }
+ },
+ {
+  "pair": "rice-3|villanova-1",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "villanova-1",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?"
+  }
+ },
+ {
+  "pair": "rice-3|villanova-2",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "villanova-2",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?"
+  }
+ },
+ {
+  "pair": "rice-3|villanova-3",
+  "A": {
+   "id": "rice-3",
+   "school": "Rice",
+   "limit_words": 500,
+   "text": "The Residential College System is at the heart of Rice student life and is heavily influenced by the particular cultural traditions and unique life experiences each student brings. What life experiences and/or unique perspectives are you looking forward to sharing with fellow Owls in the residential college system?"
+  },
+  "B": {
+   "id": "villanova-3",
+   "school": "Villanova",
+   "limit_words": 250,
+   "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?"
+  }
+ }
+]

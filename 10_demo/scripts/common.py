@@ -39,9 +39,14 @@ NOT_ELIGIBLE = {
     "university-of-rhode-island-1": "URI Nursing only", "university-of-rhode-island-2": "URI PharmD only",
     "university-of-rhode-island-3": "URI Honors only", "university-of-rhode-island-4": "URI Talent Development only",
     "wesleyan-university-1": "Wesleyan international applicants only",
+    "upenn-3": "Penn Nursing only", "upenn-5": "Penn Wharton only", "upenn-6": "Penn Engineering only",
+    **{f"upenn-{i}": "Penn dual-degree or specialized program only" for i in range(7, 17)},
+    "upenn-17": "Penn transfer applicants only",
+    "rice-5": "Rice 'The Box' is an image upload, not a written essay",
+    "rice-6": "Rice Architecture only", "rice-7": "Rice Architecture only",
 }
 # Optional essays the student writes anyway (most counselors advise it); key = (school_id, choose group)
-WRITE_OPTIONAL = {("fordham-university", "A")}
+WRITE_OPTIONAL = {("fordham-university", "A")}  # Fordham: optional, choose 1 of 3
 DEFAULT_LIMIT = 250  # words assumed when a prompt states no limit (flagged in the annotated report)
 
 

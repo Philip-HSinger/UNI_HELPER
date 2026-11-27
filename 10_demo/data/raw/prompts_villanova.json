@@ -1,0 +1,95 @@
+{
+  "school_id": "villanova",
+  "school": "Villanova University",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-27",
+  "no_supplement": false,
+  "prompts": [
+    {
+      "id": "villanova-1",
+      "text": "As Pope Leo XIV (Villanova Class of 1977) has said, “no one can single-handedly bear the weight of the challenges the world is facing, just as no one is so weak that they cannot play their part.” What have you done to play your part in advancing equity and justice in your community?",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 5
+      },
+      "applies_to": "all first-year applicants (Common App or Coalition App)",
+      "source_url": "https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/application-essays.html",
+      "source_type": "official"
+    },
+    {
+      "id": "villanova-2",
+      "text": "What is a lesson in life that you have learned that you would want to share with others at Villanova?",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 5
+      },
+      "applies_to": "all first-year applicants (Common App or Coalition App)",
+      "source_url": "https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/application-essays.html",
+      "source_type": "official"
+    },
+    {
+      "id": "villanova-3",
+      "text": "\"Villanova\" means \"new home.\" Why do you want to call Villanova your new home?",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 5
+      },
+      "applies_to": "all first-year applicants (Common App or Coalition App)",
+      "source_url": "https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/application-essays.html",
+      "source_type": "official"
+    },
+    {
+      "id": "villanova-4",
+      "text": "Villanova embraces Artificial Intelligence (AI) with a commitment to thoughtful, ethical use rooted in our Augustinian mission and values. How do you see technology helping you to lead, serve, and contribute to the common good?",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 5
+      },
+      "applies_to": "all first-year applicants (Common App or Coalition App)",
+      "source_url": "https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/application-essays.html",
+      "source_type": "official"
+    },
+    {
+      "id": "villanova-5",
+      "text": "At Villanova, we often say \"each of us strengthens all of us.\" Please detail a time when someone has borrowed some of your strength in their time of need.",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 5
+      },
+      "applies_to": "all first-year applicants (Common App or Coalition App)",
+      "source_url": "https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/application-essays.html",
+      "source_type": "official"
+    }
+  ],
+  "notes": "Official page is headed 'Villanova Writing Supplement (2026-2027)' and instructs: 'Choose one of the five topics below and submit a written response in about 250 words.' The limit is approximate ('about 250 words'; Pro-Tips say not to stress about going over or under 'as long as it is close'), so word_limit=250 records the stated target, not a hard cap; the exact cap enforced in the Common App text box was not visible. Quotation marks are copied as the official page renders them (curly quotes in Prompt One, straight quotes in Prompts Three and Five). The supplement must differ from the Common App/Coalition main essay. No honors, college-specific (Nursing, Business, Engineering, CLAS), or short-answer prompts found on the official page or in third-party guides. Third-party discrepancy: College Transitions' 2026-27 post lists a different Prompt Four (misjudged identity prompt, apparently from an older cycle); the official page and GradPilot both show the AI/technology Prompt Four, which is used here.",
+  "sources": [
+    "https://www.villanova.edu/university/undergraduate-admission/applying-to-villanova/application-essays.html",
+    "https://www.collegetransitions.com/blog/villanova-university-essay-prompts-3",
+    "https://gradpilot.com/news/villanova-supplemental-essays-2026-2027"
+  ]
+}

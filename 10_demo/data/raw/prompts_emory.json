@@ -1,0 +1,94 @@
+{
+  "school_id": "emory",
+  "school": "Emory University",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-27",
+  "no_supplement": false,
+  "prompts": [
+    {
+      "id": "emory-1",
+      "text": "What academic areas are you interested in exploring at Emory University and why?",
+      "word_limit": 200,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "all first-year applicants (Emory College, Oxford College, or both)",
+      "source_url": "https://blog.emoryadmission.com/2026/08/emorys-short-answer-questions-2026-27/",
+      "source_type": "official"
+    },
+    {
+      "id": "emory-2",
+      "text": "Emory University has a strong commitment to building community. Tell us about a community that you have been part of where your personal participation helped to change or shape the community for the better.",
+      "word_limit": 150,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 4
+      },
+      "applies_to": "all first-year applicants (Emory College, Oxford College, or both); answer one of the four 'Getting to Know You' questions",
+      "source_url": "https://blog.emoryadmission.com/2026/08/emorys-short-answer-questions-2026-27/",
+      "source_type": "official"
+    },
+    {
+      "id": "emory-3",
+      "text": "Reflect on a personal experience where you intentionally expanded your cultural awareness.",
+      "word_limit": 150,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 4
+      },
+      "applies_to": "all first-year applicants (Emory College, Oxford College, or both); answer one of the four 'Getting to Know You' questions",
+      "source_url": "https://blog.emoryadmission.com/2026/08/emorys-short-answer-questions-2026-27/",
+      "source_type": "official"
+    },
+    {
+      "id": "emory-4",
+      "text": "Emory University’s unique mission calls for service to humanity. Share how you might personally contribute to this mission of service to humanity.",
+      "word_limit": 150,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 4
+      },
+      "applies_to": "all first-year applicants (Emory College, Oxford College, or both); answer one of the four 'Getting to Know You' questions",
+      "source_url": "https://blog.emoryadmission.com/2026/08/emorys-short-answer-questions-2026-27/",
+      "source_type": "official"
+    },
+    {
+      "id": "emory-5",
+      "text": "In a scholarly community, differing ideas often collide before they converge. How do you personally navigate disagreement in a way that promotes progress and deepens meaningful dialogue?",
+      "word_limit": 150,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": {
+        "group": "A",
+        "choose": 1,
+        "of": 4
+      },
+      "applies_to": "all first-year applicants (Emory College, Oxford College, or both); answer one of the four 'Getting to Know You' questions",
+      "source_url": "https://blog.emoryadmission.com/2026/08/emorys-short-answer-questions-2026-27/",
+      "source_type": "official"
+    }
+  ],
+  "notes": "Source is Emory's official admission blog post 'Emory's Short Answer Questions 2026-27' (dated August 1, 2026), which announces the questions 'for the 2026-2027 first-year application' and says they are the same as the previous cycle. Academic Interests is required and labeled '(200 Words Recommended Length)' - a recommended length, not necessarily a hard cap; recorded as word_limit 200. Getting to Know You: answer one of four, labeled '(150 Words)'. There are no separate Oxford College or Emory College prompts: one application covers Emory College, Oxford College, or both, and the same short answers apply (per Emory's blog and third-party guides; admission.emory.edu pages could not be loaded - 404/503 - so this was not re-confirmed on the main site or in the Common App itself). Exact Common App character caps, if any, were not verified. A non-breaking space in emory-5 was normalized to a regular space.",
+  "sources": [
+    "https://blog.emoryadmission.com/2026/08/emorys-short-answer-questions-2026-27/",
+    "https://blog.emoryadmission.com/feed/",
+    "https://admission.emory.edu/apply/",
+    "https://admission.emory.edu/apply/first-year/",
+    "https://blog.emoryadmission.com/2026/08/emorys-short-answer-questions-2026-2027/",
+    "https://blog.emoryadmission.com/2026/07/emorys-short-answer-questions-2026-27/"
+  ]
+}
