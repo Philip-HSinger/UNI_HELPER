@@ -8,7 +8,7 @@ import itertools
 
 import numpy as np
 
-from common import IDS, OUT, ROOT, SCORES, SHORT, WRITE_OPTIONAL, length_factor, load, save
+from common import CANDIDATES, IDS, LIST, OUT, ROOT, SCORES, SHORT, SUBMITTED, WRITE_OPTIONAL, length_factor, load, save
 
 prompts = {p["id"]: p for p in load(ROOT / "data" / "prompts.json")}
 sA = {r["pair"]: r for r in load(SCORES / "scorer_A.json")}
@@ -65,43 +65,23 @@ with open(ROOT / "data" / "similarity_pairs.csv", "w", newline="") as f:
         w.writerow([p, prompts[p]["school"], prompts[p]["limit"], q, prompts[q]["school"], prompts[q]["limit"],
                     c["a"], c["b"], round(c["content"], 1), c["source"], round(lf, 3), round(r, 3)])
 
-# ---- which prompts a student must answer: required ones; a choose-k group counts its k most reusable options
-def required_set():
-    req = []
-    groups = {}
+# ---- what a school asks of this student: fixed required prompts + choose-k groups (optional groups only if written)
+def school_needs(sid):
+    fixed, groups = [], {}
     for p in prompts.values():
+        if p["school_id"] != sid:
+            continue
         g = p.get("choose_group")
         if g:
-            groups.setdefault((p["school_id"], g["group"]), (g.get("choose", 1), []))[1].append(p["id"])
+            groups.setdefault(g["group"], [g.get("choose", 1), [], False])
+            groups[g["group"]][1].append(p["id"])
+            groups[g["group"]][2] |= bool(p.get("required")) or (sid, g["group"]) in WRITE_OPTIONAL
         elif p.get("required"):
-            req.append(p["id"])
-    picks = {}
-    for (sid, g), (k, opts) in groups.items():
-        others = [q for q in prompts if prompts[q]["school_id"] != sid]
-        score = {o: np.mean([R(o, q)[0] + R(q, o)[0] for q in others]) for o in opts}
-        chosen = sorted(opts, key=lambda o: -score[o])[:k]
-        picks[f"{SHORT[sid]} group {g}"] = {"options": opts, "chosen": chosen,
-                                            "why": {o: round(float(score[o]), 3) for o in opts}}
-        if any(prompts[o].get("required") for o in opts) or (sid, g) in WRITE_OPTIONAL:
-            req += chosen
-    return req, picks
+            fixed.append(p["id"])
+    return fixed, [(k, opts) for k, opts, used in groups.values() if used]
 
 
-REQ, PICKS = required_set()
-
-# ---- school x school matrix: share of school j's required words school k's essays can supply
-by_school = {sid: [p for p in REQ if prompts[p]["school_id"] == sid] for sid in IDS}
-M = np.zeros((len(IDS), len(IDS)))
-for i, j in enumerate(IDS):
-    need = by_school[j]
-    tot = sum(prompts[p]["limit"] for p in need)
-    for k_, k in enumerate(IDS):
-        if j == k or not need or not by_school[k]:
-            continue
-        M[i, k_] = sum(prompts[p]["limit"] * max(R(p, q)[0] for q in by_school[k]) for p in need) / tot
-
-# ---- writing order: try every order of the required essays; each essay reuses the best essay written before it
-def walk(order, written0=()):
+def cost_of(order, written0=()):
     written, steps = list(written0), []
     for p in order:
         best_q, best_r = None, 0.0
@@ -114,35 +94,116 @@ def walk(order, written0=()):
         steps.append({"step": len(steps) + 1, "prompt": p, "school": prompts[p]["school"], "limit": L,
                       "reuse_from": best_q, "reuse_share": round(best_r, 3), "new_words": round(L * (1 - best_r))})
         written.append(p)
-    return steps
+    return sum(s["new_words"] for s in steps), steps
 
 
-best = min(itertools.permutations(REQ), key=lambda o: sum(s["new_words"] for s in walk(o)))
-plan = walk(best)
-naive = sum(prompts[p]["limit"] for p in REQ)
-new = sum(s["new_words"] for s in plan)
+def best_order(items, written0=()):
+    """Exact (subset DP) for up to 12 essays; otherwise greedy start + insertion local search."""
+    items = list(items)
+    n = len(items)
+    if n <= 12:
+        base = [max([R(p, q)[0] for q in written0 if prompts[q]["school_id"] != prompts[p]["school_id"]] or [0.0]) for p in items]
+        INF = float("inf")
+        dp, par = [INF] * (1 << n), [None] * (1 << n)
+        dp[0] = 0.0
+        for mask in range(1 << n):
+            if dp[mask] == INF:
+                continue
+            inside = [items[j] for j in range(n) if mask >> j & 1]
+            for i in range(n):
+                if mask >> i & 1:
+                    continue
+                p = items[i]
+                r = max([base[i]] + [R(p, q)[0] for q in inside if prompts[q]["school_id"] != prompts[p]["school_id"]])
+                v = dp[mask] + prompts[p]["limit"] * (1 - r)
+                if v < dp[mask | 1 << i] - 1e-9:
+                    dp[mask | 1 << i], par[mask | 1 << i] = v, (mask, i)
+        order, mask = [], (1 << n) - 1
+        while mask:
+            mask, i = par[mask]
+            order.append(items[i])
+        order.reverse()
+        return cost_of(order, written0), "exact"
+    order = []
+    rest = items[:]
+    while rest:  # greedy: next = the essay that supplies the most to the rest
+        nxt = max(rest, key=lambda c: sum(prompts[p]["limit"] * R(p, c)[0] for p in rest if p != c
+                                          and prompts[p]["school_id"] != prompts[c]["school_id"]))
+        order.append(nxt)
+        rest.remove(nxt)
+    best = cost_of(order, written0)
+    improved = True
+    while improved:  # move any single essay to any other position while that lowers the total
+        improved = False
+        for i in range(n):
+            for j in range(n):
+                if i == j:
+                    continue
+                o = [s["prompt"] for s in best[1]]
+                p = o.pop(i)
+                o.insert(j, p)
+                c = cost_of(o, written0)
+                if c[0] < best[0]:
+                    best, improved = c, True
+    return best, "local search"
 
-# ---- December view: ED/EA essays already submitted (deadlines Nov 1-8); what is left for Jan deadlines
-SUBMITTED_SCHOOLS = {"tufts", "fordham-university", "university-of-massachusetts-amherst"}
-submitted = [p for p in REQ if prompts[p]["school_id"] in SUBMITTED_SCHOOLS]
-left_fixed = [p for p in REQ if prompts[p]["school_id"] not in SUBMITTED_SCHOOLS and not prompts[p].get("choose_group")]
-bc_opts = [p for p in prompts if prompts[p]["school_id"] == "boston-college"]
-dec_best = None
-for opt in bc_opts:
-    todo = left_fixed + [opt]
-    for o in itertools.permutations(todo):
-        steps = walk(o, submitted)
-        tot = sum(s["new_words"] for s in steps)
-        if dec_best is None or tot < dec_best[0]:
-            dec_best = (tot, opt, steps)
-december = {"submitted": submitted, "bc_choice": dec_best[1], "steps": dec_best[2], "new_words": dec_best[0],
-            "naive_words": sum(prompts[s["prompt"]]["limit"] for s in dec_best[2]),
-            "bc_option_new_words": {opt: min(sum(s["new_words"] for s in walk(o, submitted))
-                                         for o in itertools.permutations(left_fixed + [opt])) for opt in bc_opts}}
-save(OUT / "school_matrix.json", {"ids": IDS, "names": [SHORT[i] for i in IDS], "matrix": M.round(3).tolist()})
-save(OUT / "essay_plan.json", {"required": REQ, "choose_groups": PICKS, "plan": plan, "naive_words": naive,
-                               "new_words": new, "saved_share": round(1 - new / naive, 3) if naive else 0,
-                               "agreement": agree, "awaiting_adjudication": len(set(need_adj)), "december": december})
+
+def plan_for(schools, written0=()):
+    """Best plan over every combination of choose-group options for these schools."""
+    fixed, groups = [], []
+    for sid in schools:
+        f, g = school_needs(sid)
+        fixed += f
+        groups += [(sid, k, opts) for k, opts in g]
+    best = None
+    for combo in itertools.product(*[list(itertools.combinations(opts, k)) for _, k, opts in groups]):
+        items = fixed + [p for pick in combo for p in pick]
+        (tot, steps), how = best_order(items, written0)
+        if best is None or tot < best["new_words"]:
+            best = {"new_words": tot, "steps": steps, "how": how, "chosen": [p for pick in combo for p in pick],
+                    "naive_words": sum(prompts[p]["limit"] for p in items)}
+    if best is None:
+        return {"new_words": 0, "steps": [], "how": "none", "chosen": [], "naive_words": 0}
+    return best
+
+
+# ---- the student's full plan, the December view, and what each school he has not considered would cost
+full = plan_for(LIST)
+essays = [s["prompt"] for s in full["steps"]]
+submitted = [p for p in essays if prompts[p]["school_id"] in SUBMITTED]
+december = plan_for([s for s in LIST if s not in SUBMITTED], written0=submitted)
+options_dec = {}
+for sid in LIST:
+    if sid in SUBMITTED:
+        continue
+    for k, opts in school_needs(sid)[1]:
+        if len(opts) > 1:
+            others = [s for s in LIST if s not in SUBMITTED and s != sid]
+            dec_essays = [x["prompt"] for x in december["steps"]]
+            base_written = submitted + [p for p in dec_essays if prompts[p]["school_id"] in others]
+            options_dec[SHORT[sid]] = {o: cost_of([o], base_written)[0] for o in opts}
+candidates = {}
+for sid in CANDIDATES:
+    c = plan_for([sid], written0=essays)
+    candidates[sid] = {"new_words": c["new_words"], "naive_words": c["naive_words"], "steps": c["steps"]}
+
+# ---- school x school matrix over all schools with essays
+need = {sid: school_needs(sid)[0] + [o for _, opts in school_needs(sid)[1] for o in opts] for sid in IDS}
+Mx = np.zeros((len(IDS), len(IDS)))
+for i, j in enumerate(IDS):
+    for k_, k in enumerate(IDS):
+        if j != k and need[j] and need[k]:
+            tot = sum(prompts[p]["limit"] for p in need[j])
+            Mx[i, k_] = sum(prompts[p]["limit"] * max(R(p, q)[0] for q in need[k]) for p in need[j]) / tot
+
+save(OUT / "school_matrix.json", {"ids": IDS, "names": [SHORT[i] for i in IDS], "matrix": Mx.round(3).tolist()})
+save(OUT / "essay_plan.json", {"list": LIST, "full": full, "december": december, "december_options": options_dec,
+                               "submitted": submitted, "candidates": candidates, "agreement": agree,
+                               "awaiting_adjudication": len(set(need_adj))})
 print("agreement", {k: round(v, 3) if isinstance(v, float) else v for k, v in agree.items()})
-print(f"required prompts {len(REQ)}; words if written from scratch {naive}; with reuse {new}; saved {1 - new / naive:.0%}")
+print(f"full plan ({full['how']}): {full['naive_words']} -> {full['new_words']} words; chosen {full['chosen']}")
+print(f"December ({december['how']}): {december['naive_words']} -> {december['new_words']}")
+print("December options", options_dec)
+for sid, c in candidates.items():
+    print(f"  consider {SHORT[sid]:15s} {c['naive_words']:4d} -> {c['new_words']:4d} new words")
 print(f"pairs awaiting adjudication: {len(set(need_adj))}")

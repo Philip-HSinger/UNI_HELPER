@@ -8,17 +8,15 @@ import sys
 
 import numpy as np
 
-from common import IDS, OUT, ROOT, SHORT, TOOLKIT, load, save
+from common import CANDIDATES, IDS, LIST, OUT, ROOT, SHORT, SUBMITTED, TOOLKIT, load, save
 
 sys.path.insert(0, str(TOOLKIT))
 from unimath import model as um  # noqa: E402
 from unimath.model import AdmissionModel, Student  # noqa: E402
 
-STUDENT = {"ebrw": 710, "math": 710}
+STUDENT = {"name": "John Smith (fictional)", "ebrw": 700, "math": 720}
 ED = "tufts"
-EA = ["northeastern", "fordham-university", "fairfield-university", "university-of-massachusetts-amherst",
-      "university-of-rhode-island"]
-SIX = ["tufts", "boston-college", "northeastern", "boston-university", "college-of-the-holy-cross", "fairfield-university"]
+EA = ["fordham-university"]
 
 schools = {s["school_id"]: s for s in load(ROOT / "data" / "schools.json")}
 
@@ -95,16 +93,36 @@ def risk(ids, decisions=None):
     return {"linked": mid, "lo": lo, "hi": hi, "naive": float(np.prod(1 - p))}
 
 
-out = {"student": STUDENT, "ed": ED, "ea": EA, "rates_used": RATES,
+out = {"student": STUDENT, "ed": ED, "ea": EA, "list": LIST, "candidates": CANDIDATES, "rates_used": RATES,
        "rates_overall": {s: schools[s]["stats"]["admit_rate"] for s in IDS},
        "sat_25th": {s: comp25(s) for s in IDS},
-       "baseline": odds(IDS), "risk_all10": risk(IDS), "risk_six": risk(SIX), "six": SIX, "scenarios": {}}
-rest = [s for s in IDS if s != ED]
+       "baseline": odds(IDS), "risk_list": risk(LIST), "scenarios": {}}
+rest = [s for s in LIST if s != ED]
 out["scenarios"]["accepted"] = {"done": True, "note": "Early Decision is binding: withdraw every other application."}
 for res in ("deferred", "rejected"):
     d = {ED: res}
-    out["scenarios"][res] = {"odds": odds(rest, d), "risk_rest": risk(rest, d),
-                             "risk_six_rest": risk([s for s in SIX if s != ED], d)}
+    out["scenarios"][res] = {"odds": odds(rest, d), "risk_rest": risk(rest, d)}
+
+# schools he has not considered: how much each cuts the no-admit risk, now and after a Tufts rejection,
+# and per 100 new essay words (essay cost from s3_matrix.py)
+plan = load(OUT / "essay_plan.json")
+adds = {}
+for c in CANDIDATES:
+    words = plan["candidates"][c]["new_words"]
+    now, after = risk(LIST + [c]), risk(rest + [c], {ED: "rejected"})
+    cut = out["risk_list"]["linked"] - now["linked"]
+    cut_after = out["scenarios"]["rejected"]["risk_rest"]["linked"] - after["linked"]
+    adds[c] = {"new_words": words, "risk_with": now, "risk_with_after_rejection": after, "cut": cut,
+               "cut_after_rejection": cut_after, "cut_per_100_words": None if words == 0 else 100 * cut / words}
+out["consider"] = dict(sorted(adds.items(), key=lambda kv: (-(kv[1]["cut"] / max(kv[1]["new_words"], 25)))))
+
+# a two-school illustration for the report: Tufts and Boston University
+a, b = "tufts", "boston-university"
+pa, pb = M.chances(ST, [a, b])
+both_no = float(M.count_distribution(ST, [a, b])[0])
+bu_after_tufts_no = float(M.chances(ST, [b], {a: "rejected"})[0])
+out["illustration"] = {"a": a, "b": b, "p_a": float(pa), "p_b": float(pb), "naive_both_no": float((1 - pa) * (1 - pb)),
+                       "linked_both_no": both_no, "p_b_after_a_rejects": bu_after_tufts_no}
 
 out["ed_rates"] = ED_RATE
 out["ed_sensitivity"] = {k: {"rate_used": r, "chance": float(build(dict(RATES, **{ED: r})).chances(ST, [ED])[0])}
@@ -119,11 +137,12 @@ for s in IDS:
     b = out["baseline"][s]
     print(f"{SHORT[s]:15s} rate {100 * RATES[s]:5.1f}%  chance {100 * b['chance']:5.1f}%  [{100 * b['lo']:4.1f}, {100 * b['hi']:4.1f}]"
           f"  SAT 25th {comp25(s)}  sends: {b['sends_sat']}")
-for k in ("risk_all10", "risk_six"):
-    r = out[k]
-    print(k, f"linked {100 * r['linked']:.1f}% ({100 * r['lo']:.1f}-{100 * r['hi']:.1f}), naive {100 * r['naive']:.1f}%")
+r = out["risk_list"]
+print(f"risk (list of {len(LIST)}): linked {100 * r['linked']:.1f}% ({100 * r['lo']:.1f}-{100 * r['hi']:.1f}), naive {100 * r['naive']:.1f}%")
 for res in ("deferred", "rejected"):
     s = out["scenarios"][res]
-    print(res, "rest", round(100 * s["risk_rest"]["linked"], 2), "| six-rest", round(100 * s["risk_six_rest"]["linked"], 1),
-          {SHORT[k]: round(100 * v["chance"]) for k, v in s["odds"].items()})
+    print(res, "risk", round(100 * s["risk_rest"]["linked"], 1), {SHORT[k]: round(100 * v["chance"]) for k, v in s["odds"].items()})
+for c, v in out["consider"].items():
+    print(f"  + {SHORT[c]:15s} words {v['new_words']:4d}  risk now {100 * v['risk_with']['linked']:.1f}%  after Tufts no {100 * v['risk_with_after_rejection']['linked']:.1f}%")
+print("illustration", {k: (round(v, 3) if isinstance(v, float) else v) for k, v in out["illustration"].items()})
 print("ED", {k: round(100 * v["chance"], 1) for k, v in out["ed_sensitivity"].items()})

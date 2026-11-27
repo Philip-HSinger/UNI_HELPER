@@ -8,18 +8,27 @@ TOOLKIT = ROOT.parent / "toolkit"
 
 SCHOOLS = [  # order used in every table
     ("tufts", "Tufts"),
+    ("upenn", "Penn"),
+    ("rice", "Rice"),
+    ("emory", "Emory"),
     ("boston-college", "Boston College"),
     ("boston-university", "Boston University"),
+    ("villanova", "Villanova"),
+    ("fordham-university", "Fordham"),
     ("northeastern", "Northeastern"),
     ("wesleyan-university", "Wesleyan"),
     ("college-of-the-holy-cross", "Holy Cross"),
-    ("fordham-university", "Fordham"),
     ("fairfield-university", "Fairfield"),
     ("university-of-massachusetts-amherst", "UMass Amherst"),
     ("university-of-rhode-island", "URI"),
 ]
 SHORT = dict(SCHOOLS)
 IDS = [s for s, _ in SCHOOLS]
+# The example student, John Smith (fictional): the eight schools he applies to, and six he has not considered.
+LIST = ["tufts", "upenn", "rice", "emory", "boston-college", "boston-university", "villanova", "fordham-university"]
+CANDIDATES = ["university-of-massachusetts-amherst", "university-of-rhode-island", "college-of-the-holy-cross",
+              "fairfield-university", "northeastern", "wesleyan-university"]
+SUBMITTED = {"tufts", "fordham-university"}  # Early Decision / Early Action essays already sent (deadlines Nov 1-8)
 # The example student: a domestic, arts-and-sciences applicant, not applying to an honors college or a
 # specialised program. Prompts that apply only to other applicants are left out (listed in the annotated report).
 NOT_ELIGIBLE = {
