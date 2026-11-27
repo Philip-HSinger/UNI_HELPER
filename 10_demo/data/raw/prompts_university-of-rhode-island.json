@@ -1,0 +1,67 @@
+{
+  "school_id": "university-of-rhode-island",
+  "school": "University of Rhode Island",
+  "cycle": "2025-26",
+  "retrieved": "2026-11-27",
+  "no_supplement": false,
+  "prompts": [
+    {
+      "id": "university-of-rhode-island-1",
+      "text": "Please provide a statement of 250 words or fewer explaining why you have chosen this major.",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "Nursing applicants only",
+      "source_url": "https://blog.collegevine.com/how-to-write-the-university-of-rhode-island-essays",
+      "source_type": "third-party"
+    },
+    {
+      "id": "university-of-rhode-island-2",
+      "text": "Please provide a statement of 250 words or fewer explaining why you have chosen this major.",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "PharmD (Doctor of Pharmacy) direct-admission applicants only",
+      "source_url": "https://blog.collegevine.com/how-to-write-the-university-of-rhode-island-essays",
+      "source_type": "third-party"
+    },
+    {
+      "id": "university-of-rhode-island-3",
+      "text": "URI Honors offers students an opportunity to engage in advanced coursework, thought-provoking project work/dialogue, and more.  One defining moment of your Honors journey is participation in our inspiring yearly Colloquium. The URI Honors Program brings in amazing guest speakers, including scientists, bestselling authors, actors, politicians, activists, and other incredible leaders. Past students have met legends like Jane Goodall, actor B.D. Wong, and countless other changemakers. To learn more about our Honors Students and the URI Honors Program, check out our website and YouTube channel. If you’d like to be considered for the URI Honors Program, please submit a brief statement responding to the prompt below. In 250 words or less, please tell us:\nWhat theme would you pick for your Colloquium? To guide you through your statement, consider answering the following questions within your writing:\nWhy does this theme matter to you personally?\nWhy would this topic grab the attention of other high schoolers and URI students?\nWhat makes this theme super relevant to what’s happening in the world today?\nGet creative and think about it—we’re excited to see what ideas you come up with!",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "Applicants who want to be considered for the URI Honors Program (optional for everyone else)",
+      "source_url": "https://blog.collegevine.com/how-to-write-the-university-of-rhode-island-essays",
+      "source_type": "third-party"
+    },
+    {
+      "id": "university-of-rhode-island-4",
+      "text": "Following the assassination of Dr. Martin Luther King, Jr., the University of Rhode Island (URI) established Talent Development (TD) as a special admission program for historically marginalized Rhode Island students looking to enter higher education and earn a baccalaureate degree. Tell us about aspects of your lived experience that you believe make you an ideal candidate for the Talent Development program.",
+      "word_limit": 500,
+      "char_limit": null,
+      "word_min": 250,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "Talent Development (TD) program applicants only (RI residents, U.S. citizens/permanent residents)",
+      "source_url": "https://blog.collegevine.com/how-to-write-the-university-of-rhode-island-essays",
+      "source_type": "third-party"
+    }
+  ],
+  "notes": "No verbatim 2026-27 prompt text is published on any official URI page; URI's supplement questions live inside the Common App (login required). Prompt wording is copied from CollegeVine's 2025-26 guide (posted Sept 3, 2025), so cycle is recorded as 2025-26. Official confirmation available: URI's first-year page (current, shows '2026 Admitted Student Profile') says a supplemental essay is required for 'Honors, Nursing, Pharmacy, and Talent Development only' - there is NO supplement for general applicants. The official Honors Program page confirms the Honors statement is '250 words or less' and that the prompt asks applicants to pitch a creative Colloquium theme, why it matters to them, its connection to current world events and why it would captivate the campus community - consistent with prompt 3. The official first-year page confirms a 'required Nursing statement' and that 'All pharmacy applicants are required to submit a supplemental essay', but gives no wording or limits; 250-word limits for prompts 1-2 come only from CollegeVine. UNCERTAIN: the official TD page describes the TD essay differently ('should address why the student feels they are eligible for the TD program, and explain how the program’s opportunities will help them achieve their academic, professional, or personal goals', including aspects of lived experience), so the 2026-27 TD prompt may have been reworded; the 250-500 word range is from CollegeVine only. CollegeVine labels the PharmD prompt 'Required'; the Nursing prompt is required per URI's 'required Nursing statement'. Honors essay is required only for those seeking Honors consideration (priority deadline Dec 1).",
+  "sources": [
+    "https://web.uri.edu/admission/first-year/",
+    "https://www.commonapp.org/explore/university-rhode-island",
+    "https://blog.collegevine.com/how-to-write-the-university-of-rhode-island-essays",
+    "https://web.uri.edu/admission/scholarships/honors-program/",
+    "https://web.uri.edu/admission/first-year/td/",
+    "https://web.uri.edu/talentdevelopment/getting-in/applications-process/",
+    "https://web.uri.edu/pharmacy/academics/pharmd/admission/"
+  ]
+}
