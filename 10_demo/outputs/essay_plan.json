@@ -21,10 +21,10 @@
         "boston-college-3"
       ],
       "why": {
-        "boston-college-1": 0.152,
-        "boston-college-2": 0.144,
-        "boston-college-3": 0.171,
-        "boston-college-4": 0.148
+        "boston-college-1": 0.177,
+        "boston-college-2": 0.16,
+        "boston-college-3": 0.218,
+        "boston-college-4": 0.181
       }
     },
     "Fordham group A": {
@@ -37,9 +37,9 @@
         "fordham-university-1"
       ],
       "why": {
-        "fordham-university-1": 0.264,
-        "fordham-university-2": 0.175,
-        "fordham-university-3": 0.202
+        "fordham-university-1": 0.296,
+        "fordham-university-2": 0.197,
+        "fordham-university-3": 0.244
       }
     },
     "UMass Amherst group A": {
@@ -50,7 +50,7 @@
         "university-of-massachusetts-amherst-4"
       ],
       "why": {
-        "university-of-massachusetts-amherst-4": 0.228
+        "university-of-massachusetts-amherst-4": 0.263
       }
     }
   },
@@ -66,24 +66,15 @@
     },
     {
       "step": 2,
-      "prompt": "boston-university-1",
-      "school": "Boston University",
-      "limit": 300,
-      "reuse_from": "boston-college-3",
-      "reuse_share": 0.025,
-      "new_words": 292
-    },
-    {
-      "step": 3,
       "prompt": "fordham-university-1",
       "school": "Fordham",
       "limit": 300,
       "reuse_from": "boston-college-3",
-      "reuse_share": 0.45,
-      "new_words": 165
+      "reuse_share": 0.575,
+      "new_words": 128
     },
     {
-      "step": 4,
+      "step": 3,
       "prompt": "tufts-2",
       "school": "Tufts",
       "limit": 200,
@@ -92,13 +83,22 @@
       "new_words": 170
     },
     {
+      "step": 4,
+      "prompt": "boston-university-1",
+      "school": "Boston University",
+      "limit": 300,
+      "reuse_from": "tufts-2",
+      "reuse_share": 0.067,
+      "new_words": 280
+    },
+    {
       "step": 5,
       "prompt": "tufts-1",
       "school": "Tufts",
       "limit": 150,
       "reuse_from": "boston-university-1",
-      "reuse_share": 0.2,
-      "new_words": 120
+      "reuse_share": 0.25,
+      "new_words": 112
     },
     {
       "step": 6,
@@ -114,9 +114,9 @@
       "prompt": "university-of-massachusetts-amherst-2",
       "school": "UMass Amherst",
       "limit": 100,
-      "reuse_from": "boston-university-1",
-      "reuse_share": 0.3,
-      "new_words": 70
+      "reuse_from": "tufts-2",
+      "reuse_share": 0.35,
+      "new_words": 65
     },
     {
       "step": 8,
@@ -124,19 +124,61 @@
       "school": "UMass Amherst",
       "limit": 100,
       "reuse_from": "boston-college-3",
-      "reuse_share": 0.275,
-      "new_words": 72
+      "reuse_share": 0.35,
+      "new_words": 65
     }
   ],
   "naive_words": 1650,
-  "new_words": 1339,
-  "saved_share": 0.188,
+  "new_words": 1270,
+  "saved_share": 0.23,
   "agreement": {
     "n_scores": 130,
-    "mae": 2.576923076923077,
-    "pearson_r": 0.9375261895162984,
+    "mae": 2.8384615384615386,
+    "pearson_r": 0.9500552656783549,
     "within_15": 1.0,
-    "over_25": 0
+    "over_25": 0,
+    "n_above_10": 58,
+    "pearson_r_above_10": 0.9104141078362836,
+    "mae_above_10": 4.172413793103448
   },
-  "awaiting_adjudication": 0
+  "awaiting_adjudication": 0,
+  "december": {
+    "submitted": [
+      "tufts-1",
+      "tufts-2",
+      "university-of-massachusetts-amherst-1",
+      "university-of-massachusetts-amherst-2",
+      "fordham-university-1",
+      "university-of-massachusetts-amherst-4"
+    ],
+    "bc_choice": "boston-college-3",
+    "steps": [
+      {
+        "step": 1,
+        "prompt": "boston-university-1",
+        "school": "Boston University",
+        "limit": 300,
+        "reuse_from": "university-of-massachusetts-amherst-1",
+        "reuse_share": 0.167,
+        "new_words": 250
+      },
+      {
+        "step": 2,
+        "prompt": "boston-college-3",
+        "school": "Boston College",
+        "limit": 400,
+        "reuse_from": "fordham-university-1",
+        "reuse_share": 0.225,
+        "new_words": 310
+      }
+    ],
+    "new_words": 560,
+    "naive_words": 700,
+    "bc_option_new_words": {
+      "boston-college-1": 605,
+      "boston-college-2": 590,
+      "boston-college-3": 560,
+      "boston-college-4": 582
+    }
+  }
 }

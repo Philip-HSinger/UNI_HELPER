@@ -1,0 +1,392 @@
+[
+  {
+    "pair": "tufts-1|boston-college-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts engagement is a school-fit 'how you engaged' prompt; BC tradition is personal; Tufts narrower (school-specific), almost nothing transfers."
+  },
+  {
+    "pair": "tufts-1|boston-college-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts engagement (school-specific, narrower) vs conversation partner; unrelated subjects."
+  },
+  {
+    "pair": "tufts-1|boston-college-3",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts engagement (school-specific, narrower) vs single-story challenge; unrelated subjects."
+  },
+  {
+    "pair": "tufts-1|boston-college-4",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts engagement (narrower, search-process detail) vs inventing a fourth Jesuit 'Be'; at most a fit sentence carries."
+  },
+  {
+    "pair": "tufts-1|boston-university-1",
+    "a_from_b": 30,
+    "b_from_a": 35,
+    "reason": "Both school-fit; Tufts narrower (asks how you engaged during search); student goals transfer, school reasons do not."
+  },
+  {
+    "pair": "tufts-1|fordham-university-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts engagement (school-specific, narrower) vs perspective-changing experience; nothing usable."
+  },
+  {
+    "pair": "tufts-1|fordham-university-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts engagement vs NYC preparation; both narrow, Tufts narrower (search-process specifics); little overlap."
+  },
+  {
+    "pair": "tufts-1|fordham-university-3",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "Both school-specific; Fordham future-self letter narrower in format; only goals overlap."
+  },
+  {
+    "pair": "tufts-1|university-of-massachusetts-amherst-1",
+    "a_from_b": 30,
+    "b_from_a": 35,
+    "reason": "Two school-fit prompts; Tufts narrower (engagement/research process); goals transfer, school reasons do not."
+  },
+  {
+    "pair": "tufts-1|university-of-massachusetts-amherst-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts engagement (narrower, school-specific) vs why the major; a line on goals at most."
+  },
+  {
+    "pair": "tufts-1|university-of-massachusetts-amherst-4",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts engagement (school-specific) vs one community and campus enrichment; UMass narrower on subject; little overlap."
+  },
+  {
+    "pair": "tufts-2|boston-college-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Favorite assignment (narrower, academic) vs family/community tradition; different subjects."
+  },
+  {
+    "pair": "tufts-2|boston-college-2",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "Favorite assignment (narrower) vs conversation partner; an intellectual exchange with a teacher could carry a paragraph."
+  },
+  {
+    "pair": "tufts-2|boston-college-3",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Favorite assignment vs being defined by a single story; BC narrower (specific incident); different subjects."
+  },
+  {
+    "pair": "tufts-2|boston-college-4",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Favorite assignment vs inventing a fourth 'Be' value; BC narrower (format plus BC community); little overlap."
+  },
+  {
+    "pair": "tufts-2|boston-university-1",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Favorite assignment (narrower) vs why BU excites; academic interest could carry a paragraph, BU reasons do not."
+  },
+  {
+    "pair": "tufts-2|fordham-university-1",
+    "a_from_b": 15,
+    "b_from_a": 20,
+    "reason": "Favorite assignment (narrower) vs perspective-changing experience; an assignment anecdote can serve the broad Fordham prompt partly."
+  },
+  {
+    "pair": "tufts-2|fordham-university-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Favorite assignment vs NYC preparation; Fordham narrower (place-specific); little overlap."
+  },
+  {
+    "pair": "tufts-2|fordham-university-3",
+    "a_from_b": 5,
+    "b_from_a": 10,
+    "reason": "Favorite assignment vs future Fordham accomplishments; Fordham narrower (school-specific future letter)."
+  },
+  {
+    "pair": "tufts-2|university-of-massachusetts-amherst-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Favorite assignment vs why UMass; UMass narrower (school reasons); nothing usable beyond a line."
+  },
+  {
+    "pair": "tufts-2|university-of-massachusetts-amherst-2",
+    "a_from_b": 25,
+    "b_from_a": 35,
+    "reason": "Same intellectual raw material; Tufts narrower (one specific assignment), which a major essay may lack."
+  },
+  {
+    "pair": "tufts-2|university-of-massachusetts-amherst-4",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Favorite assignment vs community and campus enrichment; UMass narrower on subject; different topics."
+  },
+  {
+    "pair": "boston-college-1|boston-university-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tradition essay vs why BU excites; BU narrower (school reasons); nothing usable."
+  },
+  {
+    "pair": "boston-college-1|fordham-university-1",
+    "a_from_b": 15,
+    "b_from_a": 20,
+    "reason": "Tradition (narrower) vs perspective-changing experience; a tradition anecdote only partly shows growth."
+  },
+  {
+    "pair": "boston-college-1|fordham-university-2",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "Tradition vs NYC preparation; Fordham narrower (place-specific); a diverse-community tradition could carry a paragraph."
+  },
+  {
+    "pair": "boston-college-1|fordham-university-3",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tradition vs future Fordham accomplishments; Fordham narrower (school-specific); little overlap."
+  },
+  {
+    "pair": "boston-college-1|university-of-massachusetts-amherst-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tradition vs why UMass; UMass narrower (school reasons); nothing usable."
+  },
+  {
+    "pair": "boston-college-1|university-of-massachusetts-amherst-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tradition vs why the major; UMass narrower on academics; different subjects."
+  },
+  {
+    "pair": "boston-college-1|university-of-massachusetts-amherst-4",
+    "a_from_b": 40,
+    "b_from_a": 50,
+    "reason": "Same community raw material; BC narrower (a specific tradition), UMass adds campus-enrichment part."
+  },
+  {
+    "pair": "boston-college-2|boston-university-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Conversation partner vs why BU excites; BU narrower (school reasons); nothing usable."
+  },
+  {
+    "pair": "boston-college-2|fordham-university-1",
+    "a_from_b": 20,
+    "b_from_a": 40,
+    "reason": "BC narrower (a specific person and profound questions); a conversation essay can show a new perspective for Fordham."
+  },
+  {
+    "pair": "boston-college-2|fordham-university-2",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Conversation partner vs NYC preparation; Fordham narrower (place-specific); a paragraph at most."
+  },
+  {
+    "pair": "boston-college-2|fordham-university-3",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Conversation partner vs future Fordham accomplishments; Fordham narrower (school-specific); little overlap."
+  },
+  {
+    "pair": "boston-college-2|university-of-massachusetts-amherst-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Conversation partner vs why UMass; UMass narrower (school reasons); nothing usable."
+  },
+  {
+    "pair": "boston-college-2|university-of-massachusetts-amherst-2",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "Conversation partner vs why the major; both narrow, BC narrower (a person); an intellectual thread could carry."
+  },
+  {
+    "pair": "boston-college-2|university-of-massachusetts-amherst-4",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "Conversation partner vs community significance; UMass narrower (one community plus campus); an anecdote could carry."
+  },
+  {
+    "pair": "boston-college-3|boston-university-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Single-story challenge vs why BU excites; BU narrower (school reasons); nothing usable."
+  },
+  {
+    "pair": "boston-college-3|fordham-university-1",
+    "a_from_b": 30,
+    "b_from_a": 60,
+    "reason": "BC narrower (being stereotyped and overcoming it); that essay fits Fordham's broad growth prompt well, not vice versa."
+  },
+  {
+    "pair": "boston-college-3|fordham-university-2",
+    "a_from_b": 15,
+    "b_from_a": 25,
+    "reason": "Single-story (narrower, specific incident) vs NYC preparation; facing assumptions can show readiness for a diverse city."
+  },
+  {
+    "pair": "boston-college-3|fordham-university-3",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Single-story challenge vs future Fordham accomplishments; Fordham narrower (school-specific future); little overlap."
+  },
+  {
+    "pair": "boston-college-3|university-of-massachusetts-amherst-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Single-story challenge vs why UMass; UMass narrower (school reasons); nothing usable."
+  },
+  {
+    "pair": "boston-college-3|university-of-massachusetts-amherst-2",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Single-story challenge vs why the major; both narrow, BC narrower (specific incident); a paragraph at most."
+  },
+  {
+    "pair": "boston-college-3|university-of-massachusetts-amherst-4",
+    "a_from_b": 25,
+    "b_from_a": 35,
+    "reason": "Shared identity/background material; BC narrower (stereotyping incident and overcoming), UMass adds campus enrichment."
+  },
+  {
+    "pair": "boston-college-4|boston-university-1",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Fourth 'Be' (narrower format, BC community) vs why BU excites; only a fit sentence carries."
+  },
+  {
+    "pair": "boston-college-4|fordham-university-1",
+    "a_from_b": 25,
+    "b_from_a": 30,
+    "reason": "BC narrower (invent a value, enrich BC); an anecdote of growth carries partly either way."
+  },
+  {
+    "pair": "boston-college-4|fordham-university-2",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Fourth 'Be' (narrower format) vs NYC preparation; little overlap."
+  },
+  {
+    "pair": "boston-college-4|fordham-university-3",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "Both touch contribution at the school; BC narrower (invented value format); little else transfers."
+  },
+  {
+    "pair": "boston-college-4|university-of-massachusetts-amherst-1",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Fourth 'Be' (narrower format) vs why UMass; both have a fit element but reasons differ."
+  },
+  {
+    "pair": "boston-college-4|university-of-massachusetts-amherst-2",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Fourth 'Be' (narrower format) vs why the major; different subjects."
+  },
+  {
+    "pair": "boston-college-4|university-of-massachusetts-amherst-4",
+    "a_from_b": 25,
+    "b_from_a": 25,
+    "reason": "Both ask how you would enrich campus; BC narrower (invent a fourth 'Be'), UMass about one community."
+  },
+  {
+    "pair": "boston-university-1|fordham-university-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Why BU excites (narrower, school reasons) vs perspective-changing experience; nothing usable."
+  },
+  {
+    "pair": "boston-university-1|fordham-university-2",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Why BU vs NYC preparation; both place/school-specific, BU narrower (school reasons); little transfers."
+  },
+  {
+    "pair": "boston-university-1|fordham-university-3",
+    "a_from_b": 40,
+    "b_from_a": 35,
+    "reason": "Both future-at-school prompts; Fordham narrower (future-self letter about accomplishments); goals transfer."
+  },
+  {
+    "pair": "boston-university-1|university-of-massachusetts-amherst-1",
+    "a_from_b": 50,
+    "b_from_a": 50,
+    "reason": "Two 'why us' prompts of similar breadth; BU slightly narrower (what excites); goals transfer, school reasons do not."
+  },
+  {
+    "pair": "boston-university-1|university-of-massachusetts-amherst-2",
+    "a_from_b": 20,
+    "b_from_a": 30,
+    "reason": "BU narrower (school-specific); a major essay supplies academic goals but not BU reasons."
+  },
+  {
+    "pair": "boston-university-1|university-of-massachusetts-amherst-4",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Why BU vs community and campus enrichment; UMass narrower on subject; a sentence or two carries."
+  },
+  {
+    "pair": "fordham-university-1|university-of-massachusetts-amherst-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Perspective-changing experience vs why UMass; UMass narrower (school reasons); nothing usable."
+  },
+  {
+    "pair": "fordham-university-1|university-of-massachusetts-amherst-2",
+    "a_from_b": 20,
+    "b_from_a": 15,
+    "reason": "Growth experience vs why the major; UMass narrower (major-specific); a formative anecdote could carry."
+  },
+  {
+    "pair": "fordham-university-1|university-of-massachusetts-amherst-4",
+    "a_from_b": 30,
+    "b_from_a": 25,
+    "reason": "Same raw material, different angle; UMass narrower (one community plus campus enrichment)."
+  },
+  {
+    "pair": "fordham-university-2|university-of-massachusetts-amherst-1",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "NYC preparation vs why UMass; UMass narrower (school reasons); only a fit sentence or two carries."
+  },
+  {
+    "pair": "fordham-university-2|university-of-massachusetts-amherst-2",
+    "a_from_b": 15,
+    "b_from_a": 10,
+    "reason": "NYC preparation (narrower, place-specific) vs why the major; little overlap."
+  },
+  {
+    "pair": "fordham-university-2|university-of-massachusetts-amherst-4",
+    "a_from_b": 30,
+    "b_from_a": 25,
+    "reason": "Diverse-community material overlaps; Fordham narrower on place (NYC), UMass on one community."
+  },
+  {
+    "pair": "fordham-university-3|university-of-massachusetts-amherst-1",
+    "a_from_b": 35,
+    "b_from_a": 40,
+    "reason": "Both school-fit; Fordham narrower (future-self letter about accomplishments); goals transfer, reasons do not."
+  },
+  {
+    "pair": "fordham-university-3|university-of-massachusetts-amherst-2",
+    "a_from_b": 25,
+    "b_from_a": 20,
+    "reason": "Fordham narrower (school-specific future); a major essay supplies academic goals to project forward."
+  },
+  {
+    "pair": "fordham-university-3|university-of-massachusetts-amherst-4",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Future Fordham accomplishments (narrower, school-specific) vs one community; only campus-contribution lines carry."
+  }
+]

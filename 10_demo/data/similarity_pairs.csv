@@ -1,131 +1,131 @@
 needs (p),school p,limit p,source (q),school q,limit q,scorer A,scorer B,content,how,length factor,R = reuse
-boston-college-1,Boston College,400,boston-university-1,Boston University,300,3.0,3.0,3.0,mean,0.75,0.022
-boston-college-1,Boston College,400,fordham-university-1,Fordham,300,10.0,20.0,15.0,mean,0.75,0.112
+boston-college-1,Boston College,400,boston-university-1,Boston University,300,5.0,5.0,5.0,mean,0.75,0.038
+boston-college-1,Boston College,400,fordham-university-1,Fordham,300,15.0,15.0,15.0,mean,0.75,0.112
 boston-college-1,Boston College,400,fordham-university-2,Fordham,300,15.0,15.0,15.0,mean,0.75,0.112
 boston-college-1,Boston College,400,fordham-university-3,Fordham,300,5.0,5.0,5.0,mean,0.75,0.038
-boston-college-1,Boston College,400,tufts-1,Tufts,150,2.0,2.0,2.0,mean,0.375,0.007
-boston-college-1,Boston College,400,tufts-2,Tufts,200,3.0,3.0,3.0,mean,0.5,0.015
-boston-college-1,Boston College,400,university-of-massachusetts-amherst-1,UMass Amherst,100,3.0,3.0,3.0,mean,0.25,0.007
-boston-college-1,Boston College,400,university-of-massachusetts-amherst-2,UMass Amherst,100,3.0,3.0,3.0,mean,0.25,0.007
-boston-college-1,Boston College,400,university-of-massachusetts-amherst-4,UMass Amherst,100,45.0,40.0,42.5,mean,0.25,0.106
+boston-college-1,Boston College,400,tufts-1,Tufts,150,3.0,5.0,4.0,mean,0.375,0.015
+boston-college-1,Boston College,400,tufts-2,Tufts,200,5.0,5.0,5.0,mean,0.5,0.025
+boston-college-1,Boston College,400,university-of-massachusetts-amherst-1,UMass Amherst,100,3.0,5.0,4.0,mean,0.25,0.01
+boston-college-1,Boston College,400,university-of-massachusetts-amherst-2,UMass Amherst,100,3.0,5.0,4.0,mean,0.25,0.01
+boston-college-1,Boston College,400,university-of-massachusetts-amherst-4,UMass Amherst,100,40.0,40.0,40.0,mean,0.25,0.1
 boston-college-2,Boston College,400,boston-university-1,Boston University,300,5.0,5.0,5.0,mean,0.75,0.038
-boston-college-2,Boston College,400,fordham-university-1,Fordham,300,20.0,25.0,22.5,mean,0.75,0.169
+boston-college-2,Boston College,400,fordham-university-1,Fordham,300,20.0,20.0,20.0,mean,0.75,0.15
 boston-college-2,Boston College,400,fordham-university-2,Fordham,300,5.0,10.0,7.5,mean,0.75,0.056
-boston-college-2,Boston College,400,fordham-university-3,Fordham,300,3.0,5.0,4.0,mean,0.75,0.03
-boston-college-2,Boston College,400,tufts-1,Tufts,150,3.0,3.0,3.0,mean,0.375,0.011
+boston-college-2,Boston College,400,fordham-university-3,Fordham,300,5.0,5.0,5.0,mean,0.75,0.038
+boston-college-2,Boston College,400,tufts-1,Tufts,150,3.0,5.0,4.0,mean,0.375,0.015
 boston-college-2,Boston College,400,tufts-2,Tufts,200,15.0,15.0,15.0,mean,0.5,0.075
-boston-college-2,Boston College,400,university-of-massachusetts-amherst-1,UMass Amherst,100,3.0,3.0,3.0,mean,0.25,0.007
-boston-college-2,Boston College,400,university-of-massachusetts-amherst-2,UMass Amherst,100,10.0,10.0,10.0,mean,0.25,0.025
-boston-college-2,Boston College,400,university-of-massachusetts-amherst-4,UMass Amherst,100,8.0,10.0,9.0,mean,0.25,0.022
-boston-college-3,Boston College,400,boston-university-1,Boston University,300,2.0,3.0,2.5,mean,0.75,0.019
-boston-college-3,Boston College,400,fordham-university-1,Fordham,300,25.0,35.0,30.0,mean,0.75,0.225
-boston-college-3,Boston College,400,fordham-university-2,Fordham,300,10.0,15.0,12.5,mean,0.75,0.094
-boston-college-3,Boston College,400,fordham-university-3,Fordham,300,2.0,5.0,3.5,mean,0.75,0.026
-boston-college-3,Boston College,400,tufts-1,Tufts,150,2.0,2.0,2.0,mean,0.375,0.007
-boston-college-3,Boston College,400,tufts-2,Tufts,200,3.0,3.0,3.0,mean,0.5,0.015
-boston-college-3,Boston College,400,university-of-massachusetts-amherst-1,UMass Amherst,100,2.0,3.0,2.5,mean,0.25,0.006
-boston-college-3,Boston College,400,university-of-massachusetts-amherst-2,UMass Amherst,100,3.0,5.0,4.0,mean,0.25,0.01
-boston-college-3,Boston College,400,university-of-massachusetts-amherst-4,UMass Amherst,100,20.0,30.0,25.0,mean,0.25,0.062
-boston-college-4,Boston College,400,boston-university-1,Boston University,300,10.0,10.0,10.0,mean,0.75,0.075
+boston-college-2,Boston College,400,university-of-massachusetts-amherst-1,UMass Amherst,100,3.0,5.0,4.0,mean,0.25,0.01
+boston-college-2,Boston College,400,university-of-massachusetts-amherst-2,UMass Amherst,100,10.0,15.0,12.5,mean,0.25,0.031
+boston-college-2,Boston College,400,university-of-massachusetts-amherst-4,UMass Amherst,100,10.0,15.0,12.5,mean,0.25,0.031
+boston-college-3,Boston College,400,boston-university-1,Boston University,300,3.0,5.0,4.0,mean,0.75,0.03
+boston-college-3,Boston College,400,fordham-university-1,Fordham,300,30.0,30.0,30.0,mean,0.75,0.225
+boston-college-3,Boston College,400,fordham-university-2,Fordham,300,15.0,15.0,15.0,mean,0.75,0.112
+boston-college-3,Boston College,400,fordham-university-3,Fordham,300,5.0,5.0,5.0,mean,0.75,0.038
+boston-college-3,Boston College,400,tufts-1,Tufts,150,2.0,5.0,3.5,mean,0.375,0.013
+boston-college-3,Boston College,400,tufts-2,Tufts,200,3.0,5.0,4.0,mean,0.5,0.02
+boston-college-3,Boston College,400,university-of-massachusetts-amherst-1,UMass Amherst,100,3.0,5.0,4.0,mean,0.25,0.01
+boston-college-3,Boston College,400,university-of-massachusetts-amherst-2,UMass Amherst,100,5.0,10.0,7.5,mean,0.25,0.019
+boston-college-3,Boston College,400,university-of-massachusetts-amherst-4,UMass Amherst,100,25.0,25.0,25.0,mean,0.25,0.062
+boston-college-4,Boston College,400,boston-university-1,Boston University,300,8.0,10.0,9.0,mean,0.75,0.068
 boston-college-4,Boston College,400,fordham-university-1,Fordham,300,20.0,25.0,22.5,mean,0.75,0.169
-boston-college-4,Boston College,400,fordham-university-2,Fordham,300,5.0,10.0,7.5,mean,0.75,0.056
-boston-college-4,Boston College,400,fordham-university-3,Fordham,300,10.0,10.0,10.0,mean,0.75,0.075
-boston-college-4,Boston College,400,tufts-1,Tufts,150,3.0,3.0,3.0,mean,0.375,0.011
-boston-college-4,Boston College,400,tufts-2,Tufts,200,5.0,5.0,5.0,mean,0.5,0.025
+boston-college-4,Boston College,400,fordham-university-2,Fordham,300,8.0,10.0,9.0,mean,0.75,0.068
+boston-college-4,Boston College,400,fordham-university-3,Fordham,300,15.0,15.0,15.0,mean,0.75,0.112
+boston-college-4,Boston College,400,tufts-1,Tufts,150,5.0,5.0,5.0,mean,0.375,0.019
+boston-college-4,Boston College,400,tufts-2,Tufts,200,8.0,5.0,6.5,mean,0.5,0.033
 boston-college-4,Boston College,400,university-of-massachusetts-amherst-1,UMass Amherst,100,8.0,10.0,9.0,mean,0.25,0.022
-boston-college-4,Boston College,400,university-of-massachusetts-amherst-2,UMass Amherst,100,3.0,5.0,4.0,mean,0.25,0.01
-boston-college-4,Boston College,400,university-of-massachusetts-amherst-4,UMass Amherst,100,15.0,25.0,20.0,mean,0.25,0.05
-boston-university-1,Boston University,300,boston-college-1,Boston College,400,3.0,3.0,3.0,mean,1.0,0.03
+boston-college-4,Boston College,400,university-of-massachusetts-amherst-2,UMass Amherst,100,5.0,10.0,7.5,mean,0.25,0.019
+boston-college-4,Boston College,400,university-of-massachusetts-amherst-4,UMass Amherst,100,20.0,25.0,22.5,mean,0.25,0.056
+boston-university-1,Boston University,300,boston-college-1,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
 boston-university-1,Boston University,300,boston-college-2,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
-boston-university-1,Boston University,300,boston-college-3,Boston College,400,2.0,3.0,2.5,mean,1.0,0.025
-boston-university-1,Boston University,300,boston-college-4,Boston College,400,10.0,10.0,10.0,mean,1.0,0.1
-boston-university-1,Boston University,300,fordham-university-1,Fordham,300,3.0,5.0,4.0,mean,1.0,0.04
+boston-university-1,Boston University,300,boston-college-3,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
+boston-university-1,Boston University,300,boston-college-4,Boston College,400,8.0,10.0,9.0,mean,1.0,0.09
+boston-university-1,Boston University,300,fordham-university-1,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
 boston-university-1,Boston University,300,fordham-university-2,Fordham,300,15.0,10.0,12.5,mean,1.0,0.125
-boston-university-1,Boston University,300,fordham-university-3,Fordham,300,30.0,30.0,30.0,mean,1.0,0.3
-boston-university-1,Boston University,300,tufts-1,Tufts,150,15.0,25.0,20.0,mean,0.5,0.1
-boston-university-1,Boston University,300,tufts-2,Tufts,200,15.0,15.0,15.0,mean,0.667,0.1
+boston-university-1,Boston University,300,fordham-university-3,Fordham,300,35.0,40.0,37.5,mean,1.0,0.375
+boston-university-1,Boston University,300,tufts-1,Tufts,150,25.0,35.0,30.0,mean,0.5,0.15
+boston-university-1,Boston University,300,tufts-2,Tufts,200,10.0,10.0,10.0,mean,0.667,0.067
 boston-university-1,Boston University,300,university-of-massachusetts-amherst-1,UMass Amherst,100,50.0,50.0,50.0,mean,0.333,0.167
-boston-university-1,Boston University,300,university-of-massachusetts-amherst-2,UMass Amherst,100,30.0,30.0,30.0,mean,0.333,0.1
+boston-university-1,Boston University,300,university-of-massachusetts-amherst-2,UMass Amherst,100,15.0,20.0,17.5,mean,0.333,0.058
 boston-university-1,Boston University,300,university-of-massachusetts-amherst-4,UMass Amherst,100,10.0,10.0,10.0,mean,0.333,0.033
-fordham-university-1,Fordham,300,boston-college-1,Boston College,400,10.0,20.0,15.0,mean,1.0,0.15
-fordham-university-1,Fordham,300,boston-college-2,Boston College,400,25.0,30.0,27.5,mean,1.0,0.275
-fordham-university-1,Fordham,300,boston-college-3,Boston College,400,45.0,45.0,45.0,mean,1.0,0.45
-fordham-university-1,Fordham,300,boston-college-4,Boston College,400,15.0,20.0,17.5,mean,1.0,0.175
-fordham-university-1,Fordham,300,boston-university-1,Boston University,300,3.0,5.0,4.0,mean,1.0,0.04
-fordham-university-1,Fordham,300,tufts-1,Tufts,150,3.0,3.0,3.0,mean,0.5,0.015
-fordham-university-1,Fordham,300,tufts-2,Tufts,200,20.0,10.0,15.0,mean,0.667,0.1
-fordham-university-1,Fordham,300,university-of-massachusetts-amherst-1,UMass Amherst,100,3.0,5.0,4.0,mean,0.333,0.013
-fordham-university-1,Fordham,300,university-of-massachusetts-amherst-2,UMass Amherst,100,10.0,15.0,12.5,mean,0.333,0.042
-fordham-university-1,Fordham,300,university-of-massachusetts-amherst-4,UMass Amherst,100,25.0,30.0,27.5,mean,0.333,0.092
-fordham-university-2,Fordham,300,boston-college-1,Boston College,400,15.0,15.0,15.0,mean,1.0,0.15
-fordham-university-2,Fordham,300,boston-college-2,Boston College,400,5.0,10.0,7.5,mean,1.0,0.075
-fordham-university-2,Fordham,300,boston-college-3,Boston College,400,15.0,20.0,17.5,mean,1.0,0.175
-fordham-university-2,Fordham,300,boston-college-4,Boston College,400,5.0,10.0,7.5,mean,1.0,0.075
+fordham-university-1,Fordham,300,boston-college-1,Boston College,400,12.0,20.0,16.0,mean,1.0,0.16
+fordham-university-1,Fordham,300,boston-college-2,Boston College,400,25.0,40.0,32.5,mean,1.0,0.325
+fordham-university-1,Fordham,300,boston-college-3,Boston College,400,55.0,60.0,57.5,mean,1.0,0.575
+fordham-university-1,Fordham,300,boston-college-4,Boston College,400,15.0,30.0,22.5,mean,1.0,0.225
+fordham-university-1,Fordham,300,boston-university-1,Boston University,300,5.0,5.0,5.0,mean,1.0,0.05
+fordham-university-1,Fordham,300,tufts-1,Tufts,150,3.0,5.0,4.0,mean,0.5,0.02
+fordham-university-1,Fordham,300,tufts-2,Tufts,200,20.0,20.0,20.0,mean,0.667,0.133
+fordham-university-1,Fordham,300,university-of-massachusetts-amherst-1,UMass Amherst,100,5.0,5.0,5.0,mean,0.333,0.017
+fordham-university-1,Fordham,300,university-of-massachusetts-amherst-2,UMass Amherst,100,10.0,20.0,15.0,mean,0.333,0.05
+fordham-university-1,Fordham,300,university-of-massachusetts-amherst-4,UMass Amherst,100,20.0,30.0,25.0,mean,0.333,0.083
+fordham-university-2,Fordham,300,boston-college-1,Boston College,400,20.0,15.0,17.5,mean,1.0,0.175
+fordham-university-2,Fordham,300,boston-college-2,Boston College,400,8.0,10.0,9.0,mean,1.0,0.09
+fordham-university-2,Fordham,300,boston-college-3,Boston College,400,20.0,25.0,22.5,mean,1.0,0.225
+fordham-university-2,Fordham,300,boston-college-4,Boston College,400,8.0,10.0,9.0,mean,1.0,0.09
 fordham-university-2,Fordham,300,boston-university-1,Boston University,300,15.0,10.0,12.5,mean,1.0,0.125
-fordham-university-2,Fordham,300,tufts-1,Tufts,150,4.0,5.0,4.5,mean,0.5,0.022
+fordham-university-2,Fordham,300,tufts-1,Tufts,150,5.0,5.0,5.0,mean,0.5,0.025
 fordham-university-2,Fordham,300,tufts-2,Tufts,200,5.0,5.0,5.0,mean,0.667,0.033
-fordham-university-2,Fordham,300,university-of-massachusetts-amherst-1,UMass Amherst,100,8.0,10.0,9.0,mean,0.333,0.03
-fordham-university-2,Fordham,300,university-of-massachusetts-amherst-2,UMass Amherst,100,5.0,8.0,6.5,mean,0.333,0.022
+fordham-university-2,Fordham,300,university-of-massachusetts-amherst-1,UMass Amherst,100,8.0,15.0,11.5,mean,0.333,0.038
+fordham-university-2,Fordham,300,university-of-massachusetts-amherst-2,UMass Amherst,100,5.0,15.0,10.0,mean,0.333,0.033
 fordham-university-2,Fordham,300,university-of-massachusetts-amherst-4,UMass Amherst,100,30.0,30.0,30.0,mean,0.333,0.1
-fordham-university-3,Fordham,300,boston-college-1,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
-fordham-university-3,Fordham,300,boston-college-2,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
-fordham-university-3,Fordham,300,boston-college-3,Boston College,400,2.0,5.0,3.5,mean,1.0,0.035
-fordham-university-3,Fordham,300,boston-college-4,Boston College,400,10.0,10.0,10.0,mean,1.0,0.1
-fordham-university-3,Fordham,300,boston-university-1,Boston University,300,30.0,30.0,30.0,mean,1.0,0.3
-fordham-university-3,Fordham,300,tufts-1,Tufts,150,10.0,10.0,10.0,mean,0.5,0.05
-fordham-university-3,Fordham,300,tufts-2,Tufts,200,5.0,5.0,5.0,mean,0.667,0.033
-fordham-university-3,Fordham,300,university-of-massachusetts-amherst-1,UMass Amherst,100,30.0,25.0,27.5,mean,0.333,0.092
-fordham-university-3,Fordham,300,university-of-massachusetts-amherst-2,UMass Amherst,100,25.0,25.0,25.0,mean,0.333,0.083
-fordham-university-3,Fordham,300,university-of-massachusetts-amherst-4,UMass Amherst,100,10.0,10.0,10.0,mean,0.333,0.033
-tufts-1,Tufts,150,boston-college-1,Boston College,400,3.0,2.0,2.5,mean,1.0,0.025
-tufts-1,Tufts,150,boston-college-2,Boston College,400,3.0,3.0,3.0,mean,1.0,0.03
-tufts-1,Tufts,150,boston-college-3,Boston College,400,2.0,2.0,2.0,mean,1.0,0.02
-tufts-1,Tufts,150,boston-college-4,Boston College,400,3.0,3.0,3.0,mean,1.0,0.03
-tufts-1,Tufts,150,boston-university-1,Boston University,300,15.0,25.0,20.0,mean,1.0,0.2
-tufts-1,Tufts,150,fordham-university-1,Fordham,300,3.0,3.0,3.0,mean,1.0,0.03
-tufts-1,Tufts,150,fordham-university-2,Fordham,300,4.0,5.0,4.5,mean,1.0,0.045
-tufts-1,Tufts,150,fordham-university-3,Fordham,300,10.0,10.0,10.0,mean,1.0,0.1
-tufts-1,Tufts,150,university-of-massachusetts-amherst-1,UMass Amherst,100,20.0,25.0,22.5,mean,0.667,0.15
-tufts-1,Tufts,150,university-of-massachusetts-amherst-2,UMass Amherst,100,10.0,5.0,7.5,mean,0.667,0.05
-tufts-1,Tufts,150,university-of-massachusetts-amherst-4,UMass Amherst,100,3.0,3.0,3.0,mean,0.667,0.02
-tufts-2,Tufts,200,boston-college-1,Boston College,400,3.0,3.0,3.0,mean,1.0,0.03
-tufts-2,Tufts,200,boston-college-2,Boston College,400,15.0,20.0,17.5,mean,1.0,0.175
-tufts-2,Tufts,200,boston-college-3,Boston College,400,3.0,3.0,3.0,mean,1.0,0.03
-tufts-2,Tufts,200,boston-college-4,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
-tufts-2,Tufts,200,boston-university-1,Boston University,300,10.0,15.0,12.5,mean,1.0,0.125
+fordham-university-3,Fordham,300,boston-college-1,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
+fordham-university-3,Fordham,300,boston-college-2,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
+fordham-university-3,Fordham,300,boston-college-3,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
+fordham-university-3,Fordham,300,boston-college-4,Boston College,400,15.0,15.0,15.0,mean,1.0,0.15
+fordham-university-3,Fordham,300,boston-university-1,Boston University,300,30.0,35.0,32.5,mean,1.0,0.325
+fordham-university-3,Fordham,300,tufts-1,Tufts,150,10.0,15.0,12.5,mean,0.5,0.062
+fordham-university-3,Fordham,300,tufts-2,Tufts,200,8.0,10.0,9.0,mean,0.667,0.06
+fordham-university-3,Fordham,300,university-of-massachusetts-amherst-1,UMass Amherst,100,30.0,35.0,32.5,mean,0.333,0.108
+fordham-university-3,Fordham,300,university-of-massachusetts-amherst-2,UMass Amherst,100,20.0,25.0,22.5,mean,0.333,0.075
+fordham-university-3,Fordham,300,university-of-massachusetts-amherst-4,UMass Amherst,100,15.0,10.0,12.5,mean,0.333,0.042
+tufts-1,Tufts,150,boston-college-1,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
+tufts-1,Tufts,150,boston-college-2,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
+tufts-1,Tufts,150,boston-college-3,Boston College,400,2.0,5.0,3.5,mean,1.0,0.035
+tufts-1,Tufts,150,boston-college-4,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
+tufts-1,Tufts,150,boston-university-1,Boston University,300,20.0,30.0,25.0,mean,1.0,0.25
+tufts-1,Tufts,150,fordham-university-1,Fordham,300,3.0,5.0,4.0,mean,1.0,0.04
+tufts-1,Tufts,150,fordham-university-2,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
+tufts-1,Tufts,150,fordham-university-3,Fordham,300,10.0,15.0,12.5,mean,1.0,0.125
+tufts-1,Tufts,150,university-of-massachusetts-amherst-1,UMass Amherst,100,20.0,30.0,25.0,mean,0.667,0.167
+tufts-1,Tufts,150,university-of-massachusetts-amherst-2,UMass Amherst,100,8.0,5.0,6.5,mean,0.667,0.043
+tufts-1,Tufts,150,university-of-massachusetts-amherst-4,UMass Amherst,100,5.0,5.0,5.0,mean,0.667,0.033
+tufts-2,Tufts,200,boston-college-1,Boston College,400,5.0,5.0,5.0,mean,1.0,0.05
+tufts-2,Tufts,200,boston-college-2,Boston College,400,15.0,15.0,15.0,mean,1.0,0.15
+tufts-2,Tufts,200,boston-college-3,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
+tufts-2,Tufts,200,boston-college-4,Boston College,400,8.0,5.0,6.5,mean,1.0,0.065
+tufts-2,Tufts,200,boston-university-1,Boston University,300,10.0,10.0,10.0,mean,1.0,0.1
 tufts-2,Tufts,200,fordham-university-1,Fordham,300,15.0,15.0,15.0,mean,1.0,0.15
 tufts-2,Tufts,200,fordham-university-2,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
-tufts-2,Tufts,200,fordham-university-3,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
+tufts-2,Tufts,200,fordham-university-3,Fordham,300,8.0,5.0,6.5,mean,1.0,0.065
 tufts-2,Tufts,200,university-of-massachusetts-amherst-1,UMass Amherst,100,8.0,5.0,6.5,mean,0.5,0.033
-tufts-2,Tufts,200,university-of-massachusetts-amherst-2,UMass Amherst,100,30.0,25.0,27.5,mean,0.5,0.138
+tufts-2,Tufts,200,university-of-massachusetts-amherst-2,UMass Amherst,100,25.0,25.0,25.0,mean,0.5,0.125
 tufts-2,Tufts,200,university-of-massachusetts-amherst-4,UMass Amherst,100,3.0,5.0,4.0,mean,0.5,0.02
-university-of-massachusetts-amherst-1,UMass Amherst,100,boston-college-1,Boston College,400,3.0,3.0,3.0,mean,1.0,0.03
-university-of-massachusetts-amherst-1,UMass Amherst,100,boston-college-2,Boston College,400,3.0,3.0,3.0,mean,1.0,0.03
-university-of-massachusetts-amherst-1,UMass Amherst,100,boston-college-3,Boston College,400,2.0,3.0,2.5,mean,1.0,0.025
+university-of-massachusetts-amherst-1,UMass Amherst,100,boston-college-1,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
+university-of-massachusetts-amherst-1,UMass Amherst,100,boston-college-2,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
+university-of-massachusetts-amherst-1,UMass Amherst,100,boston-college-3,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
 university-of-massachusetts-amherst-1,UMass Amherst,100,boston-college-4,Boston College,400,8.0,10.0,9.0,mean,1.0,0.09
 university-of-massachusetts-amherst-1,UMass Amherst,100,boston-university-1,Boston University,300,50.0,50.0,50.0,mean,1.0,0.5
-university-of-massachusetts-amherst-1,UMass Amherst,100,fordham-university-1,Fordham,300,3.0,5.0,4.0,mean,1.0,0.04
-university-of-massachusetts-amherst-1,UMass Amherst,100,fordham-university-2,Fordham,300,5.0,10.0,7.5,mean,1.0,0.075
-university-of-massachusetts-amherst-1,UMass Amherst,100,fordham-university-3,Fordham,300,35.0,20.0,27.5,mean,1.0,0.275
-university-of-massachusetts-amherst-1,UMass Amherst,100,tufts-1,Tufts,150,20.0,25.0,22.5,mean,1.0,0.225
-university-of-massachusetts-amherst-1,UMass Amherst,100,tufts-2,Tufts,200,8.0,5.0,6.5,mean,1.0,0.065
-university-of-massachusetts-amherst-2,UMass Amherst,100,boston-college-1,Boston College,400,3.0,3.0,3.0,mean,1.0,0.03
-university-of-massachusetts-amherst-2,UMass Amherst,100,boston-college-2,Boston College,400,10.0,10.0,10.0,mean,1.0,0.1
-university-of-massachusetts-amherst-2,UMass Amherst,100,boston-college-3,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
-university-of-massachusetts-amherst-2,UMass Amherst,100,boston-college-4,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
-university-of-massachusetts-amherst-2,UMass Amherst,100,boston-university-1,Boston University,300,25.0,35.0,30.0,mean,1.0,0.3
+university-of-massachusetts-amherst-1,UMass Amherst,100,fordham-university-1,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
+university-of-massachusetts-amherst-1,UMass Amherst,100,fordham-university-2,Fordham,300,8.0,15.0,11.5,mean,1.0,0.115
+university-of-massachusetts-amherst-1,UMass Amherst,100,fordham-university-3,Fordham,300,30.0,40.0,35.0,mean,1.0,0.35
+university-of-massachusetts-amherst-1,UMass Amherst,100,tufts-1,Tufts,150,30.0,35.0,32.5,mean,1.0,0.325
+university-of-massachusetts-amherst-1,UMass Amherst,100,tufts-2,Tufts,200,10.0,5.0,7.5,mean,1.0,0.075
+university-of-massachusetts-amherst-2,UMass Amherst,100,boston-college-1,Boston College,400,3.0,5.0,4.0,mean,1.0,0.04
+university-of-massachusetts-amherst-2,UMass Amherst,100,boston-college-2,Boston College,400,10.0,15.0,12.5,mean,1.0,0.125
+university-of-massachusetts-amherst-2,UMass Amherst,100,boston-college-3,Boston College,400,5.0,10.0,7.5,mean,1.0,0.075
+university-of-massachusetts-amherst-2,UMass Amherst,100,boston-college-4,Boston College,400,5.0,10.0,7.5,mean,1.0,0.075
+university-of-massachusetts-amherst-2,UMass Amherst,100,boston-university-1,Boston University,300,25.0,30.0,27.5,mean,1.0,0.275
 university-of-massachusetts-amherst-2,UMass Amherst,100,fordham-university-1,Fordham,300,10.0,15.0,12.5,mean,1.0,0.125
-university-of-massachusetts-amherst-2,UMass Amherst,100,fordham-university-2,Fordham,300,5.0,5.0,5.0,mean,1.0,0.05
-university-of-massachusetts-amherst-2,UMass Amherst,100,fordham-university-3,Fordham,300,25.0,20.0,22.5,mean,1.0,0.225
-university-of-massachusetts-amherst-2,UMass Amherst,100,tufts-1,Tufts,150,8.0,5.0,6.5,mean,1.0,0.065
-university-of-massachusetts-amherst-2,UMass Amherst,100,tufts-2,Tufts,200,35.0,25.0,30.0,mean,1.0,0.3
-university-of-massachusetts-amherst-4,UMass Amherst,100,boston-college-1,Boston College,400,50.0,40.0,45.0,mean,1.0,0.45
-university-of-massachusetts-amherst-4,UMass Amherst,100,boston-college-2,Boston College,400,8.0,10.0,9.0,mean,1.0,0.09
-university-of-massachusetts-amherst-4,UMass Amherst,100,boston-college-3,Boston College,400,25.0,30.0,27.5,mean,1.0,0.275
-university-of-massachusetts-amherst-4,UMass Amherst,100,boston-college-4,Boston College,400,15.0,20.0,17.5,mean,1.0,0.175
-university-of-massachusetts-amherst-4,UMass Amherst,100,boston-university-1,Boston University,300,10.0,8.0,9.0,mean,1.0,0.09
-university-of-massachusetts-amherst-4,UMass Amherst,100,fordham-university-1,Fordham,300,20.0,25.0,22.5,mean,1.0,0.225
-university-of-massachusetts-amherst-4,UMass Amherst,100,fordham-university-2,Fordham,300,25.0,30.0,27.5,mean,1.0,0.275
-university-of-massachusetts-amherst-4,UMass Amherst,100,fordham-university-3,Fordham,300,8.0,10.0,9.0,mean,1.0,0.09
-university-of-massachusetts-amherst-4,UMass Amherst,100,tufts-1,Tufts,150,3.0,3.0,3.0,mean,1.0,0.03
+university-of-massachusetts-amherst-2,UMass Amherst,100,fordham-university-2,Fordham,300,5.0,10.0,7.5,mean,1.0,0.075
+university-of-massachusetts-amherst-2,UMass Amherst,100,fordham-university-3,Fordham,300,20.0,20.0,20.0,mean,1.0,0.2
+university-of-massachusetts-amherst-2,UMass Amherst,100,tufts-1,Tufts,150,10.0,5.0,7.5,mean,1.0,0.075
+university-of-massachusetts-amherst-2,UMass Amherst,100,tufts-2,Tufts,200,35.0,35.0,35.0,mean,1.0,0.35
+university-of-massachusetts-amherst-4,UMass Amherst,100,boston-college-1,Boston College,400,55.0,50.0,52.5,mean,1.0,0.525
+university-of-massachusetts-amherst-4,UMass Amherst,100,boston-college-2,Boston College,400,10.0,15.0,12.5,mean,1.0,0.125
+university-of-massachusetts-amherst-4,UMass Amherst,100,boston-college-3,Boston College,400,35.0,35.0,35.0,mean,1.0,0.35
+university-of-massachusetts-amherst-4,UMass Amherst,100,boston-college-4,Boston College,400,20.0,25.0,22.5,mean,1.0,0.225
+university-of-massachusetts-amherst-4,UMass Amherst,100,boston-university-1,Boston University,300,10.0,10.0,10.0,mean,1.0,0.1
+university-of-massachusetts-amherst-4,UMass Amherst,100,fordham-university-1,Fordham,300,25.0,25.0,25.0,mean,1.0,0.25
+university-of-massachusetts-amherst-4,UMass Amherst,100,fordham-university-2,Fordham,300,30.0,25.0,27.5,mean,1.0,0.275
+university-of-massachusetts-amherst-4,UMass Amherst,100,fordham-university-3,Fordham,300,15.0,10.0,12.5,mean,1.0,0.125
+university-of-massachusetts-amherst-4,UMass Amherst,100,tufts-1,Tufts,150,5.0,5.0,5.0,mean,1.0,0.05
 university-of-massachusetts-amherst-4,UMass Amherst,100,tufts-2,Tufts,200,3.0,5.0,4.0,mean,1.0,0.04
