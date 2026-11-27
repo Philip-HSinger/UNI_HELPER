@@ -1,0 +1,392 @@
+[
+  {
+    "pair": "tufts-1|boston-college-1",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Tufts engagement prompt is narrow and school-specific; BC family tradition is an unrelated personal story."
+  },
+  {
+    "pair": "tufts-1|boston-college-2",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Tufts engagement prompt is narrow (school research); BC conversation-partner essay is a personal story with nothing on Tufts."
+  },
+  {
+    "pair": "tufts-1|boston-college-3",
+    "a_from_b": 2,
+    "b_from_a": 2,
+    "reason": "Tufts engagement is a narrow why-us task; BC single-story is about identity and adversity, no overlap."
+  },
+  {
+    "pair": "tufts-1|boston-college-4",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts engagement is narrower; BC fourth-Be has a small fit element but is about a value, not school research."
+  },
+  {
+    "pair": "tufts-1|boston-university-1",
+    "a_from_b": 20,
+    "b_from_a": 25,
+    "reason": "Tufts is narrower (how you engaged); both school-fit, but BU reasons do not transfer and BU essay lacks engagement history."
+  },
+  {
+    "pair": "tufts-1|fordham-university-1",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Tufts engagement is a narrow why-us task; Fordham perspective-change is a personal growth story."
+  },
+  {
+    "pair": "tufts-1|fordham-university-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts engagement is narrower; Fordham NYC-readiness is about personal background and city life, not Tufts research."
+  },
+  {
+    "pair": "tufts-1|fordham-university-3",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Both school-facing; Tufts engagement is narrower, Fordham future-self is a letter format about goals at Fordham."
+  },
+  {
+    "pair": "tufts-1|university-of-massachusetts-amherst-1",
+    "a_from_b": 20,
+    "b_from_a": 30,
+    "reason": "Tufts is narrower (engagement process); two why-us prompts but school reasons do not transfer and UMass essay lacks visits/contacts."
+  },
+  {
+    "pair": "tufts-1|university-of-massachusetts-amherst-2",
+    "a_from_b": 8,
+    "b_from_a": 10,
+    "reason": "Tufts engagement is narrower; a major essay offers only academic-goal lines for a why-us answer."
+  },
+  {
+    "pair": "tufts-1|university-of-massachusetts-amherst-4",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts engagement is narrower; UMass community essay is a personal-community story with a brief campus line."
+  },
+  {
+    "pair": "tufts-2|boston-college-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts assignment is narrower (one academic task); BC tradition is a family/community subject."
+  },
+  {
+    "pair": "tufts-2|boston-college-2",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "Tufts assignment is narrower; a conversation partner essay may share intellectual questions but a different subject."
+  },
+  {
+    "pair": "tufts-2|boston-college-3",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Tufts assignment is narrower and academic; BC single-story is identity/adversity."
+  },
+  {
+    "pair": "tufts-2|boston-college-4",
+    "a_from_b": 8,
+    "b_from_a": 8,
+    "reason": "Tufts assignment is narrower; BC fourth-Be is a values essay with little academic overlap."
+  },
+  {
+    "pair": "tufts-2|boston-university-1",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Tufts assignment is a narrow personal academic story; BU is a why-us prompt, little transfers either way."
+  },
+  {
+    "pair": "tufts-2|fordham-university-1",
+    "a_from_b": 15,
+    "b_from_a": 20,
+    "reason": "Tufts assignment is narrower; an assignment could spark a new perspective but Fordham wants growth/action."
+  },
+  {
+    "pair": "tufts-2|fordham-university-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Tufts assignment is narrower; Fordham NYC-readiness is about background and city, not coursework."
+  },
+  {
+    "pair": "tufts-2|fordham-university-3",
+    "a_from_b": 8,
+    "b_from_a": 8,
+    "reason": "Tufts assignment is narrower; Fordham future-self letter is about accomplishments at Fordham."
+  },
+  {
+    "pair": "tufts-2|university-of-massachusetts-amherst-1",
+    "a_from_b": 8,
+    "b_from_a": 10,
+    "reason": "Tufts assignment is narrower; UMass why-us essay supplies at most a line about academic interest."
+  },
+  {
+    "pair": "tufts-2|university-of-massachusetts-amherst-2",
+    "a_from_b": 25,
+    "b_from_a": 35,
+    "reason": "Tufts assignment is narrower; same academic material, an assignment can show the spark for a major but major essay rarely details one task."
+  },
+  {
+    "pair": "tufts-2|university-of-massachusetts-amherst-4",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "Tufts assignment is narrower and academic; UMass community essay is a different subject."
+  },
+  {
+    "pair": "boston-college-1|boston-university-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "BU why-us is a school-fit prompt; BC tradition is a personal story that supplies no BU reasons."
+  },
+  {
+    "pair": "boston-college-1|fordham-university-1",
+    "a_from_b": 15,
+    "b_from_a": 12,
+    "reason": "BC tradition is narrower; Fordham perspective-change shares little beyond possible community setting."
+  },
+  {
+    "pair": "boston-college-1|fordham-university-2",
+    "a_from_b": 15,
+    "b_from_a": 20,
+    "reason": "Fordham NYC prompt is narrower (city-specific); a cultural tradition can show readiness for diversity."
+  },
+  {
+    "pair": "boston-college-1|fordham-university-3",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "BC tradition and Fordham future-self letter are different subjects; Fordham is school-facing."
+  },
+  {
+    "pair": "boston-college-1|university-of-massachusetts-amherst-1",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "UMass why-us is school-specific; BC tradition supplies no reasons for UMass."
+  },
+  {
+    "pair": "boston-college-1|university-of-massachusetts-amherst-2",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "BC tradition and UMass major are different subjects."
+  },
+  {
+    "pair": "boston-college-1|university-of-massachusetts-amherst-4",
+    "a_from_b": 40,
+    "b_from_a": 55,
+    "reason": "BC tradition is narrower (a tradition within a community); a tradition essay covers community significance but lacks the enrich-campus part."
+  },
+  {
+    "pair": "boston-college-2|boston-university-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "BU why-us vs BC conversation partner; personal story supplies no BU reasons."
+  },
+  {
+    "pair": "boston-college-2|fordham-university-1",
+    "a_from_b": 20,
+    "b_from_a": 25,
+    "reason": "BC conversation-partner is narrower (a person and questions); such a conversation can supply a perspective shift for Fordham."
+  },
+  {
+    "pair": "boston-college-2|fordham-university-2",
+    "a_from_b": 5,
+    "b_from_a": 8,
+    "reason": "Fordham NYC prompt is narrower; a conversation partner essay offers little NYC readiness."
+  },
+  {
+    "pair": "boston-college-2|fordham-university-3",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "BC conversation-partner vs Fordham future-self letter; different subjects."
+  },
+  {
+    "pair": "boston-college-2|university-of-massachusetts-amherst-1",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "UMass why-us is school-specific; conversation essay supplies nothing about UMass."
+  },
+  {
+    "pair": "boston-college-2|university-of-massachusetts-amherst-2",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Both fairly narrow; a mentor conversation may touch the intended field, a paragraph at most."
+  },
+  {
+    "pair": "boston-college-2|university-of-massachusetts-amherst-4",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "BC conversation-partner is narrower; a community essay might feature a conversation partner only incidentally."
+  },
+  {
+    "pair": "boston-college-3|boston-university-1",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "BU why-us vs BC single-story identity essay; nothing transfers."
+  },
+  {
+    "pair": "boston-college-3|fordham-university-1",
+    "a_from_b": 30,
+    "b_from_a": 55,
+    "reason": "BC single-story is narrower (being stereotyped); it fits Fordham's broad perspective/courage/growth prompt well, not vice versa."
+  },
+  {
+    "pair": "boston-college-3|fordham-university-2",
+    "a_from_b": 15,
+    "b_from_a": 20,
+    "reason": "Fordham NYC prompt is narrower; overcoming assumptions about background partly shows readiness for a diverse city."
+  },
+  {
+    "pair": "boston-college-3|fordham-university-3",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "BC single-story vs Fordham future-self letter; different subjects."
+  },
+  {
+    "pair": "boston-college-3|university-of-massachusetts-amherst-1",
+    "a_from_b": 3,
+    "b_from_a": 3,
+    "reason": "UMass why-us is school-specific; single-story essay supplies no UMass reasons."
+  },
+  {
+    "pair": "boston-college-3|university-of-massachusetts-amherst-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "BC single-story and UMass major essay are different subjects."
+  },
+  {
+    "pair": "boston-college-3|university-of-massachusetts-amherst-4",
+    "a_from_b": 25,
+    "b_from_a": 35,
+    "reason": "BC single-story is narrower; identity/background raw material overlaps with a community essay but angles differ."
+  },
+  {
+    "pair": "boston-college-4|boston-university-1",
+    "a_from_b": 8,
+    "b_from_a": 8,
+    "reason": "BU why-us vs BC fourth-Be; BC's enrich-community line gives slight fit overlap."
+  },
+  {
+    "pair": "boston-college-4|fordham-university-1",
+    "a_from_b": 20,
+    "b_from_a": 15,
+    "reason": "BC fourth-Be is narrower (propose a value); a growth experience can illustrate a value, partially."
+  },
+  {
+    "pair": "boston-college-4|fordham-university-2",
+    "a_from_b": 8,
+    "b_from_a": 8,
+    "reason": "Fordham NYC prompt is narrower; a values essay offers little on city readiness."
+  },
+  {
+    "pair": "boston-college-4|fordham-university-3",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "Both fairly narrow; personal development and contributions at a school overlap slightly with a future-self letter."
+  },
+  {
+    "pair": "boston-college-4|university-of-massachusetts-amherst-1",
+    "a_from_b": 8,
+    "b_from_a": 8,
+    "reason": "UMass why-us vs BC fourth-Be; only the enrich-community line overlaps."
+  },
+  {
+    "pair": "boston-college-4|university-of-massachusetts-amherst-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "BC fourth-Be and UMass major essay are different subjects."
+  },
+  {
+    "pair": "boston-college-4|university-of-massachusetts-amherst-4",
+    "a_from_b": 20,
+    "b_from_a": 20,
+    "reason": "Both ask how you would enrich campus; BC fourth-Be is a value, UMass is a community, so only part carries."
+  },
+  {
+    "pair": "boston-university-1|fordham-university-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "BU why-us vs Fordham personal growth story; little transfers."
+  },
+  {
+    "pair": "boston-university-1|fordham-university-2",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "Fordham NYC prompt is narrower; a BU essay may mention urban campus life, and NYC readiness gives a line on city life."
+  },
+  {
+    "pair": "boston-university-1|fordham-university-3",
+    "a_from_b": 35,
+    "b_from_a": 30,
+    "reason": "Fordham future-self letter is narrower in format; both are school-forward and the student's goals transfer, school reasons do not."
+  },
+  {
+    "pair": "boston-university-1|university-of-massachusetts-amherst-1",
+    "a_from_b": 50,
+    "b_from_a": 50,
+    "reason": "Two why-us prompts of equal breadth; personal goals transfer but BU and UMass reasons do not."
+  },
+  {
+    "pair": "boston-university-1|university-of-massachusetts-amherst-2",
+    "a_from_b": 15,
+    "b_from_a": 25,
+    "reason": "BU why-us is school-specific; a major essay supplies only the goals part, a BU essay may supply major motivation."
+  },
+  {
+    "pair": "boston-university-1|university-of-massachusetts-amherst-4",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "UMass community essay is narrower; its enrich-campus line overlaps slightly with BU fit."
+  },
+  {
+    "pair": "fordham-university-1|university-of-massachusetts-amherst-1",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "UMass why-us vs Fordham growth story; little transfers."
+  },
+  {
+    "pair": "fordham-university-1|university-of-massachusetts-amherst-2",
+    "a_from_b": 10,
+    "b_from_a": 10,
+    "reason": "Both narrow in different ways; a growth experience may explain a major choice in a paragraph."
+  },
+  {
+    "pair": "fordham-university-1|university-of-massachusetts-amherst-4",
+    "a_from_b": 20,
+    "b_from_a": 25,
+    "reason": "UMass community is narrower on subject; a perspective-changing experience may come from a community, angles differ."
+  },
+  {
+    "pair": "fordham-university-2|university-of-massachusetts-amherst-1",
+    "a_from_b": 8,
+    "b_from_a": 8,
+    "reason": "Fordham NYC prompt is narrower and city-specific; UMass why-us reasons do not transfer."
+  },
+  {
+    "pair": "fordham-university-2|university-of-massachusetts-amherst-2",
+    "a_from_b": 5,
+    "b_from_a": 5,
+    "reason": "Fordham NYC prompt and UMass major are different subjects."
+  },
+  {
+    "pair": "fordham-university-2|university-of-massachusetts-amherst-4",
+    "a_from_b": 30,
+    "b_from_a": 30,
+    "reason": "Fordham NYC prompt is narrower (city); a diverse-community essay partly shows readiness for NYC and vice versa."
+  },
+  {
+    "pair": "fordham-university-3|university-of-massachusetts-amherst-1",
+    "a_from_b": 30,
+    "b_from_a": 30,
+    "reason": "Fordham future-self letter is narrower in format; both school-forward, goals transfer, school reasons do not."
+  },
+  {
+    "pair": "fordham-university-3|university-of-massachusetts-amherst-2",
+    "a_from_b": 20,
+    "b_from_a": 20,
+    "reason": "Fordham future-self is narrower (letter format, accomplishments at Fordham); a major essay supplies academic goals."
+  },
+  {
+    "pair": "fordham-university-3|university-of-massachusetts-amherst-4",
+    "a_from_b": 15,
+    "b_from_a": 15,
+    "reason": "Fordham future-self is narrower in format; UMass enrich-campus line overlaps with future contributions."
+  }
+]
