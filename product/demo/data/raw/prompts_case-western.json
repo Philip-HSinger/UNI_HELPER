@@ -1,0 +1,41 @@
+{
+  "school_id": "case-western",
+  "school": "Case Western Reserve University",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-28",
+  "no_supplement": false,
+  "prompts": [
+    {
+      "id": "case-western-1",
+      "text": "In the college application process, you are constantly prompted for a list of your achievements, awards, and accomplishments. While this information is useful to us, we are interested in hearing more about you. Describe an event, achievement, or experience of which you are particularly proud but that will not show up on a resume, may not garner any recognition, and does not appear anywhere else on your admission application. This essay should not exceed 750 words in length.",
+      "word_limit": 750,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "Pre-Professional Scholars Program (PPSP) applicants only (medicine, dental medicine, etc.)",
+      "source_url": "https://www.esslo.org/college-essay-grader/case-western",
+      "source_type": "third-party"
+    },
+    {
+      "id": "case-western-2",
+      "text": "By applying to the Pre-Professional Scholars Program, you are applying to gain admission to professional school earlier than students who apply in the traditional way. Please indicate why you’re interested in your chosen profession. How do you see yourself being particularly suited to this field? What events and/or experiences have led you to your choice? This essay should be between 250 and 500 words in length.",
+      "word_limit": 500,
+      "char_limit": null,
+      "word_min": 250,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "Pre-Professional Scholars Program (PPSP) applicants only (medicine, dental medicine, etc.)",
+      "source_url": "https://www.esslo.org/college-essay-grader/case-western",
+      "source_type": "third-party"
+    }
+  ],
+  "notes": "Case Western has no supplemental essay for general first-year applicants: the official first-year page (case.edu/admission/apply/first-year-applicants) lists 'Two additional essays via your application platform' only for the Pre-Professional Scholars Program (PPSP deadline Dec 1; finalists interview) and an Arts Supplement via the applicant portal for music majors. Official case.edu pages do not print the PPSP essay text, so the wording comes from Esslo, which says it checked Case Western's 2026-2027 application on August 19, 2026; AdmissionSight's 2026-2027 guide (March 12, 2026) gives the same wording minus the closing length sentences and uses the same limits (750 max; 250-500). The fetch tool returns text in short quoted segments, so each prompt was reassembled from segments. The last sentence of each prompt (length instruction) is kept because Esslo prints it as part of the prompt.",
+  "sources": [
+    "https://case.edu/admission/apply/first-year-applicants",
+    "https://case.edu/admission/apply/ppsp/",
+    "https://case.edu/admission/academics/pre-professional-programs",
+    "https://www.esslo.org/college-essay-grader/case-western",
+    "https://admissionsight.com/case-western-supplemental-essays/"
+  ]
+}

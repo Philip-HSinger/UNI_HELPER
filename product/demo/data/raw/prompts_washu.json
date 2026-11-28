@@ -1,0 +1,41 @@
+{
+  "school_id": "washu",
+  "school": "Washington University in St. Louis",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-28",
+  "no_supplement": false,
+  "prompts": [
+    {
+      "id": "washu-1",
+      "text": "Please tell us what you are interested in studying at college and why.",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "all first-year applicants",
+      "source_url": "https://admissions.washu.edu/how-to-apply/first-year-us-applicants/",
+      "source_type": "official"
+    },
+    {
+      "id": "washu-2",
+      "text": "The Beyond Boundaries Program equips students with a set of tools to critically understand and make a difference in a complicated world where challenges require varied perspectives and skill sets. What is the big societal issue you would like to tackle? Who would you need on your team? How would the Beyond Boundaries Program support you to work with collaborative teams to address this issue?",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": true,
+      "choose_group": null,
+      "applies_to": "Beyond Boundaries Program applicants only (indicate interest on the application)",
+      "source_url": "https://admissions.washu.edu/academics/majors-programs/beyond-boundaries/",
+      "source_type": "official"
+    }
+  ],
+  "notes": "Official pages (admissions.washu.edu, fall 2027 entry / Class of 2031) list one required 250-word response for all first-year applicants. The 'What's new' page says 'We no longer have an optional writing supplement.' Beyond Boundaries applicants answer washu-2 (250-word maximum, per the program page; the two opening statements and the three questions were joined into one text). Signature Scholar Programs (Annika Rodriguez, John B. Ervin, Danforth) each require a 250-word short answer completed in the WashU Pathway after applying, with a Dec 16, 2026 priority deadline; the question text is not published on public pages, so these are not listed. Optional 90-second video supplement ('telling us about something important to you') is not a written prompt and is not listed. College of Art portfolio required and Architecture portfolio strongly encouraged (SlideRoom). Live application not viewed.",
+  "sources": [
+    "https://admissions.washu.edu/how-to-apply/first-year-us-applicants/",
+    "https://admissions.washu.edu/whats-new-at-washu/",
+    "https://admissions.washu.edu/academics/majors-programs/beyond-boundaries/",
+    "https://admissions.washu.edu/cost-aid/scholarships/signature-scholar-programs/",
+    "https://gradpilot.com/news/washu-supplemental-essays-2026-2027"
+  ]
+}

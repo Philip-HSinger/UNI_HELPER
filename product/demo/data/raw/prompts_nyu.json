@@ -1,0 +1,27 @@
+{
+  "school_id": "nyu",
+  "school": "New York University",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-28",
+  "no_supplement": false,
+  "prompts": [
+    {
+      "id": "nyu-1",
+      "text": "We are looking for students who want to be bridge builders—students who can connect people, groups, and ideas to span divides, foster understanding, and promote collaboration within a dynamic, interconnected, and vibrant global academic community. We are eager for you to tell us how your experiences have helped you understand what qualities and efforts are needed to bridge divides so that people can better learn and work together. Please consider one or more of the following questions in your essay: Tell us about a time you encountered a perspective different from your own. What did you learn—about yourself, the other person, or the world? Tell us about an experience you’ve had working with others who have different perspectives. What role did you try to play in helping people to work together, and what did you learn from your efforts? Tell us about someone you’ve observed who does a particularly good job helping people think or work together. How does this person set the stage for common exploration or work? How do they react when challenges arise? What qualities do you admire in this person?",
+      "word_limit": 250,
+      "char_limit": null,
+      "word_min": null,
+      "required": false,
+      "choose_group": null,
+      "applies_to": "all first-year applicants (optional, pre-checked Writing section in the NYU Common App questions)",
+      "source_url": "https://meet.nyu.edu/advice/application-tips/inside-the-2026-2027-common-application-for-nyu/",
+      "source_type": "official"
+    }
+  ],
+  "notes": "Source is NYU's official admissions blog post 'Inside the 2026-2027 Common Application for NYU' (meet.nyu.edu, dated July 31, 2026), which calls the Writing section 'optional, pre-checked-off' and says 'it really is optional!'. The post prints no word limit; the 250-word limit is from NYU's August 4, 2026 essay guide ('We're confident you can communicate your thoughts in 250 words or less'), as reported by GradPilot (Oct 2026) - the guide itself was not opened. GradPilot also notes the August 4 guide omits the question 'How do they react when challenges arise?' in the third bullet; the July 31 Common App post (used here) includes it. The three suggested questions are not a choose-N group: the essay may address one or more. Plain curl to meet.nyu.edu was blocked by Cloudflare (HTTP 403); the page was read through the normal fetch tool, which returns the text in short quoted segments, so the text was reassembled from those segments (punctuation such as curly apostrophes and em dashes follows the official page as rendered; a third-party guide confirms the same wording). No school- or program-specific essays are listed (campus, academic-area and first-year-away questions are not essays; Tisch/Steinhardt artistic reviews are portfolios, not covered). Live Common App not viewed.",
+  "sources": [
+    "https://meet.nyu.edu/advice/application-tips/inside-the-2026-2027-common-application-for-nyu/",
+    "https://meet.nyu.edu/advice/application-tips/your-guide-to-the-nyu-supplemental-essay/",
+    "https://gradpilot.com/news/nyu-supplemental-essays-2026-2027"
+  ]
+}

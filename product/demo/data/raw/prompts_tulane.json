@@ -1,0 +1,14 @@
+{
+  "school_id": "tulane",
+  "school": "Tulane University",
+  "cycle": "2026-27",
+  "retrieved": "2026-11-28",
+  "no_supplement": true,
+  "prompts": [],
+  "notes": "Tulane has paused its 'Why Tulane?' supplemental essay for the 2026-27 cycle. The official application instructions page lists only 'Application (including list of activities and personal statement)' with SAT/ACT optional and no writing supplement. Inside Higher Ed (July 8, 2026, as cited by a third-party guide; not opened directly) reported Tulane 'pausing its \"Why Tulane?\" essay'; the Orbit guide (updated Sep 2026) and CollegeEssayGuy agree there is no Tulane-specific essay. Older Tulane pages and 2025-26 guides still mention an optional ~250-word Why Tulane prompt; these describe earlier cycles. Some scholarships (Community Service Fellowship, artistic scholarships, FIRST) need extra materials; their prompts were not found and are not listed. The instructions page does not name an entry term; assumed fall 2027 (2026-27 cycle). Live application not viewed.",
+  "sources": [
+    "https://admission.tulane.edu/apply/instructions",
+    "https://www.findmyorbit.com/blog/tulane-supplemental-essays-2026",
+    "https://www.collegeessayguy.com/blog/tulane-university-supplemental-essays"
+  ]
+}
