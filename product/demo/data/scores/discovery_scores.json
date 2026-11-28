@@ -1,0 +1,170 @@
+[
+  {
+    "new_prompt": "washu-1",
+    "source": "emory-1",
+    "score": 88,
+    "reason": "Same question (academic interests and why); only Emory-specific references need removing, and WashU's prompt names no school."
+  },
+  {
+    "new_prompt": "washu-1",
+    "source": "rice-1",
+    "score": 80,
+    "reason": "Same core subject (academic areas and what draws you); the Rice-specific 'how explore at Rice' part is dropped, leaving most of the essay usable."
+  },
+  {
+    "new_prompt": "washu-1",
+    "source": "upenn-4",
+    "score": 65,
+    "reason": "A specific intellectual curiosity and how to pursue it supplies much of 'what and why', but may be narrower than a field of study and needs a line connecting it to a major."
+  },
+  {
+    "new_prompt": "washu-1",
+    "source": "tufts-2",
+    "score": 40,
+    "reason": "A favourite assignment can be the origin story for an intended field, but it describes one task rather than what he wants to study and why."
+  },
+  {
+    "new_prompt": "washu-1",
+    "source": "boston-university-1",
+    "score": 25,
+    "reason": "A 'why BU' essay usually names an academic interest in passing; most of it is BU-specific and does not transfer."
+  },
+  {
+    "new_prompt": "washu-1",
+    "source": "rice-2",
+    "score": 15,
+    "reason": "Rice-experience reasons are school-specific; at most a sentence about academic goals carries over."
+  },
+  {
+    "new_prompt": "washu-1",
+    "source": "tufts-1",
+    "score": 10,
+    "reason": "How he engaged with Tufts is about his college search, not his intended studies; one line of interest might carry over."
+  },
+  {
+    "new_prompt": "washu-1",
+    "source": "fordham-university-1",
+    "score": 10,
+    "reason": "A perspective-change and growth story; only usable if the experience happened to spark his academic interest."
+  },
+  {
+    "new_prompt": "washu-1",
+    "source": "rice-3",
+    "score": 10,
+    "reason": "Life experiences for residential college are personal, not academic; an anecdote might at most motivate a field."
+  },
+  {
+    "new_prompt": "washu-1",
+    "source": "villanova-2",
+    "score": 8,
+    "reason": "A life lesson essay is a different subject; little bears on what he wants to study."
+  },
+  {
+    "new_prompt": "washu-1",
+    "source": "upenn-1",
+    "score": 5,
+    "reason": "Thank-you note format and subject; nothing about intended study unless the note is to a teacher."
+  },
+  {
+    "new_prompt": "washu-1",
+    "source": "upenn-2",
+    "score": 5,
+    "reason": "Community at Penn is a different subject and school-specific."
+  },
+  {
+    "new_prompt": "washu-1",
+    "source": "emory-2",
+    "score": 5,
+    "reason": "Community contribution essay; nothing usable for academic interests."
+  },
+  {
+    "new_prompt": "washu-1",
+    "source": "boston-college-1",
+    "score": 3,
+    "reason": "Family or community tradition; unrelated to field of study."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "fordham-university-1",
+    "score": 60,
+    "reason": "Both ask for an experience that changed his perspective and what he learned; NYU additionally wants the qualities needed to bridge divides between people."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "emory-2",
+    "score": 45,
+    "reason": "Same raw material (his role in a group) from a different angle; NYU's second question wants him helping people with different views work together, which a community-improvement story only partly covers."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "rice-3",
+    "score": 35,
+    "reason": "Unique perspectives he would share can supply the 'different perspective' encounter, but not the bridging role or lessons NYU asks for."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "villanova-2",
+    "score": 30,
+    "reason": "A life lesson could be about understanding others, giving the 'what did you learn' part, but it is not framed around bridging divides."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "upenn-2",
+    "score": 25,
+    "reason": "The part about how his perspective shapes a community transfers; the Penn-specific half does not."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "boston-college-1",
+    "score": 25,
+    "reason": "A tradition that brings people together is adjacent to bridge-building; the anecdote carries over but not the divide or what he did about it."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "upenn-1",
+    "score": 15,
+    "reason": "A thank-you note could honour someone who brings people together (NYU option 3), but the letter format and gratitude angle need rewriting."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "tufts-2",
+    "score": 8,
+    "reason": "A favourite assignment rarely involves differing perspectives; a group-project detail at most."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "boston-university-1",
+    "score": 5,
+    "reason": "'Why BU' reasons do not address bridging divides."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "rice-2",
+    "score": 5,
+    "reason": "Rice-specific appeal; nothing about bridging perspectives."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "upenn-4",
+    "score": 5,
+    "reason": "Intellectual curiosity essay; a different subject."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "tufts-1",
+    "score": 3,
+    "reason": "College-search engagement with Tufts; nothing usable."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "emory-1",
+    "score": 3,
+    "reason": "Academic interests essay; nothing about working across differences."
+  },
+  {
+    "new_prompt": "nyu-1",
+    "source": "rice-1",
+    "score": 3,
+    "reason": "Academic areas at Rice; nothing usable."
+  }
+]
