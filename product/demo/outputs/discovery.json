@@ -1,0 +1,71 @@
+{
+  "risk_now": 0.3965288287239427,
+  "schools": [
+    {
+      "id": "case-western",
+      "name": "Case Western",
+      "chance": 0.28666858086415853,
+      "lo": 0.02271564582477642,
+      "hi": 0.7388327451675322,
+      "risk_with": 0.35990999950614755,
+      "rate_used": 0.35599153582904464,
+      "sends_sat": false,
+      "essays": [],
+      "required_new_words": 0
+    },
+    {
+      "id": "tulane",
+      "name": "Tulane",
+      "chance": 0.061039321097259416,
+      "lo": 0.005771230569962651,
+      "hi": 0.1775562024361333,
+      "risk_with": 0.39285601572629025,
+      "rate_used": 0.1151466061882391,
+      "sends_sat": false,
+      "essays": [],
+      "required_new_words": 0
+    },
+    {
+      "id": "nyu",
+      "name": "NYU",
+      "chance": 0.03642765317751891,
+      "lo": 0.0045319925683869585,
+      "hi": 0.0909945114185292,
+      "risk_with": 0.3942491852332167,
+      "rate_used": 0.0906,
+      "sends_sat": false,
+      "essays": [
+        {
+          "prompt": "nyu-1",
+          "limit": 250,
+          "required": false,
+          "reuse_from": "fordham-university-1",
+          "share": 0.6,
+          "new_words": 100
+        }
+      ],
+      "required_new_words": 0
+    },
+    {
+      "id": "washu",
+      "name": "WashU",
+      "chance": 0.02873264165308085,
+      "lo": 0.004648178612390362,
+      "hi": 0.06398338237766586,
+      "risk_with": 0.3944039958689022,
+      "rate_used": 0.09294860488906134,
+      "sends_sat": false,
+      "essays": [
+        {
+          "prompt": "washu-1",
+          "limit": 250,
+          "required": true,
+          "reuse_from": "emory-1",
+          "share": 0.704,
+          "new_words": 74
+        }
+      ],
+      "required_new_words": 74
+    }
+  ]
+}
