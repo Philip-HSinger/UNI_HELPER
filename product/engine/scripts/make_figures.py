@@ -12,11 +12,11 @@ from scipy import stats  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from unimath.backtest import _continuous_split_normal  # noqa: E402
-from unimath.catalog import SIMILARITY, curated_only, load_catalog  # noqa: E402
-from unimath.model import AdmissionModel, Student  # noqa: E402
-from unimath.scores import fit_band, fit_school  # noqa: E402
-from unimath.similarity import SimilarityEngine  # noqa: E402
+from calliper.backtest import _continuous_split_normal  # noqa: E402
+from calliper.catalog import SIMILARITY, curated_only, load_catalog  # noqa: E402
+from calliper.model import AdmissionModel, Student  # noqa: E402
+from calliper.scores import fit_band, fit_school  # noqa: E402
+from calliper.similarity import SimilarityEngine  # noqa: E402
 
 FIG = ROOT / "results" / "figures"
 FIG.mkdir(parents=True, exist_ok=True)
@@ -45,7 +45,7 @@ sd = (q[2] - q[0]) / 1.348
 fig, ax = plt.subplots(figsize=(6.4, 2.8))
 ax.plot(x, 100 * stats.norm.cdf(x, q[1], sd), color=GREY, ls="--", label="normal through IQR (web app)")
 ax.plot(x, 100 * cont(x), color=BLUE, ls=":", label="continuous split normal (abandoned)")
-ax.plot(x, 100 * d.cdf(x), color=AMBER, lw=2, label="two-piece quantile-matched (UNIMATH)")
+ax.plot(x, 100 * d.cdf(x), color=AMBER, lw=2, label="two-piece quantile-matched (Calliper)")
 ax.scatter(q, [25, 50, 75], color=INK, zorder=5, label="published 25/50/75")
 ax.set(xlabel="EBRW score", ylabel="percentile", title="Band 740/760/770: only the two-piece fit passes through all three points")
 ax.legend(frameon=False, fontsize=7)
@@ -107,10 +107,10 @@ save("f5_port")
 # 6. reliability diagrams E3
 fig, axes = plt.subplots(1, 2, figsize=(6.8, 3.0), sharey=True)
 for ax, key, title in zip(axes, ("e3_well", "e3_miss"), ("world matches model", "misspecified world")):
-    for name, col in (("logistic on z-score", GREY), ("unimath (fitted)", AMBER),
-                      ("unimath fitted + other decisions (LOO posterior)", BLUE)):
+    for name, col in (("logistic on z-score", GREY), ("calliper (fitted)", AMBER),
+                      ("calliper fitted + other decisions (LOO posterior)", BLUE)):
         pts = np.array(R[key]["calib"][name])
-        ax.plot(pts[:, 0], pts[:, 1], "o-", ms=3, color=col, label=name.replace("unimath fitted + other decisions (LOO posterior)", "unimath + other decisions"))
+        ax.plot(pts[:, 0], pts[:, 1], "o-", ms=3, color=col, label=name.replace("calliper fitted + other decisions (LOO posterior)", "calliper + other decisions"))
     ax.plot(np.linspace(0, 1, 50), np.linspace(0, 1, 50), color=INK, lw=0.6, ls=":")
     for setter in (ax.set_xscale, ax.set_yscale):
         setter("function", functions=(np.sqrt, np.square))
@@ -240,9 +240,9 @@ if PW.exists():
     pw = json.loads(PW.read_text())
     fig, axes = plt.subplots(1, 2, figsize=(7.2, 2.8), sharey=True)
     for ax, key, title in zip(axes, ("scores_only", "with_counselor_rating"),
-                              ("A. scores-only UNIMATH vs counselor", "B. UNIMATH + counselor rating vs counselor")):
+                              ("A. scores-only Calliper vs counselor", "B. Calliper + counselor rating vs counselor")):
         ns = [int(k) for k in pw[key]]
-        ax.plot(ns, [100 * pw[key][str(n)]["p_unimath_significantly_better"] for n in ns], "o-", color=AMBER, label="UNIMATH significantly better")
+        ax.plot(ns, [100 * pw[key][str(n)]["p_calliper_significantly_better"] for n in ns], "o-", color=AMBER, label="Calliper significantly better")
         ax.plot(ns, [100 * pw[key][str(n)]["p_counselor_significantly_better"] for n in ns], "o-", color=BLUE, label="counselor significantly better")
         ax.plot(ns, [100 * pw[key][str(n)]["p_inconclusive"] for n in ns], "o--", color=GREY, label="inconclusive")
         ax.axvline(25, color=RED, lw=0.7, ls=":")

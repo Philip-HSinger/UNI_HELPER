@@ -1339,19 +1339,19 @@
     "auc": 0.9429897865395884,
     "ece": 0.00908985092102293
    },
-   "unimath (default priors)": {
+   "calliper (default priors)": {
     "brier": 0.05203520605178039,
     "log_loss": 0.1677922201887523,
     "auc": 0.9468354121404674,
     "ece": 0.021250287337828737
    },
-   "unimath (fitted)": {
+   "calliper (fitted)": {
     "brier": 0.04903154399849012,
     "log_loss": 0.16054807089161463,
     "auc": 0.9485460210787451,
     "ece": 0.00809235782290688
    },
-   "unimath fitted + other decisions (LOO posterior)": {
+   "calliper fitted + other decisions (LOO posterior)": {
     "brier": 0.03810053495282555,
     "log_loss": 0.12618365670845247,
     "auc": 0.9661894529265826,
@@ -4455,7 +4455,7 @@
      0.62375
     ]
    ],
-   "unimath (default priors)": [
+   "calliper (default priors)": [
     [
      0.0018785940661394751,
      0.0025
@@ -4497,7 +4497,7 @@
      0.6525
     ]
    ],
-   "unimath (fitted)": [
+   "calliper (fitted)": [
     [
      0.000953242145963018,
      0.0025
@@ -4539,7 +4539,7 @@
      0.6575
     ]
    ],
-   "unimath fitted + other decisions (LOO posterior)": [
+   "calliper fitted + other decisions (LOO posterior)": [
     [
      0.0009389133420621408,
      0.0025
@@ -4606,19 +4606,19 @@
     "auc": 0.8430272589614275,
     "ece": 0.03761024891253556
    },
-   "unimath (default priors)": {
+   "calliper (default priors)": {
     "brier": 0.07007962641354115,
     "log_loss": 0.2687156762443107,
     "auc": 0.8534282220363988,
     "ece": 0.03383204014535137
    },
-   "unimath (fitted)": {
+   "calliper (fitted)": {
     "brier": 0.06847861310841315,
     "log_loss": 0.24775559858954146,
     "auc": 0.8553148984489019,
     "ece": 0.022700843413592204
    },
-   "unimath fitted + other decisions (LOO posterior)": {
+   "calliper fitted + other decisions (LOO posterior)": {
     "brier": 0.055993267075031196,
     "log_loss": 0.1999235641671373,
     "auc": 0.9117115816981046,
@@ -7722,7 +7722,7 @@
      0.54625
     ]
    ],
-   "unimath (default priors)": [
+   "calliper (default priors)": [
     [
      0.0018816356093441467,
      0.03
@@ -7764,7 +7764,7 @@
      0.6225
     ]
    ],
-   "unimath (fitted)": [
+   "calliper (fitted)": [
     [
      0.007147055873053372,
      0.02625
@@ -7806,7 +7806,7 @@
      0.6325
     ]
    ],
-   "unimath fitted + other decisions (LOO posterior)": [
+   "calliper fitted + other decisions (LOO posterior)": [
     [
      0.007055403206501883,
      0.01125

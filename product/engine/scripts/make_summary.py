@@ -50,7 +50,7 @@ def fig(name, w):
 OK, HALF, NO = ("<font color='#0a7d32'><b>built</b></font>", "<font color='#b86e00'><b>half</b></font>",
                 "<font color='#c0392b'><b>not built</b></font>")
 
-P("UNIMATH: what we sell", H1)
+P("Calliper: what we sell", H1)
 P("Three features on two engines. The essay matrix is the differentiator: it doesn't need outcome data, which the "
   "big platforms have and we don't. Full detail: <b>calliper-feature-build-spec-v1.pdf</b>.")
 fig("o1_architecture", 5.9)
@@ -90,5 +90,5 @@ P("<b>Main risk:</b> the matrix costs ~$100 to compute, so it's copyable. The mo
   "the August refresh, and reuse logs nobody else has.")
 
 SimpleDocTemplate(str(OUT), pagesize=letter, leftMargin=0.75 * inch, rightMargin=0.75 * inch, topMargin=0.5 * inch,
-                  bottomMargin=0.5 * inch, title="UNIMATH: what we sell").build(story)
+                  bottomMargin=0.5 * inch, title="Calliper: what we sell").build(story)
 print(f"wrote {OUT}")

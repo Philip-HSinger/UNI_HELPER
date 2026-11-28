@@ -1,6 +1,6 @@
-# UNIMATH: admissions analytics terminal
+# Calliper engine: admissions analytics terminal
 
-UNIMATH is a terminal and Python library for college-admissions statistics, built for independent college counselors
+Calliper is a terminal and Python library for college-admissions statistics, built for independent college counselors
 and for quantitatively minded families. It takes published admissions data (each school's SAT bands and acceptance
 rate, and its supplement prompts) plus the counselor's own read of a student, and produces:
 
@@ -18,25 +18,25 @@ tables.
 > **Status: v0.1, research grade.** The statistics are implemented and unit tested, and every accuracy claim was
 > backtested, but **only on simulated students**. No real outcome data has been used yet. The essay-similarity
 > heuristic did **not** beat chance in its test; only human-scored prompt pairs should be trusted. The full story,
-> including what failed, is in **[`reports/UNIMATH_methods_manual.pdf`](reports/UNIMATH_methods_manual.pdf)**.
+> including what failed, is in **[`product/reports/calliper-methods-manual-v1.pdf`](../reports/calliper-methods-manual-v1.pdf)**.
 
 ## Quick start
 
 ```bash
-cd toolkit
+cd product/engine
 pip install -e ".[report,test]"      # numpy + scipy; matplotlib/reportlab only for the manual
-unimath                               # interactive terminal; type HELP, Q to quit
+calliper                               # interactive terminal; type HELP, Q to quit
 ```
 
 One-shot commands (scriptable, `--json` for machine-readable output):
 
 ```bash
-unimath CHNC  -p examples/profile.toml          # odds for the schools in a student profile
-unimath PORT  -p examples/profile.toml          # chance of 0, 1, 2... admits; zero-admit risk range
-unimath BRIEF -p examples/profile.toml          # counselor brief; add "family" for the words-only version
-unimath ROSTER examples/caseload_demo.csv       # screen a whole caseload at once
-unimath BKTST  examples/past_class_demo.csv     # your past reach/target/likely calls vs UNIMATH
-unimath CHNC  -p examples/profile.toml --json
+calliper CHNC  -p examples/profile.toml          # odds for the schools in a student profile
+calliper PORT  -p examples/profile.toml          # chance of 0, 1, 2... admits; zero-admit risk range
+calliper BRIEF -p examples/profile.toml          # counselor brief; add "family" for the words-only version
+calliper ROSTER examples/caseload_demo.csv       # screen a whole caseload at once
+calliper BKTST  examples/past_class_demo.csv     # your past reach/target/likely calls vs Calliper
+calliper CHNC  -p examples/profile.toml --json
 ```
 
 ## Commands
@@ -55,7 +55,7 @@ unimath CHNC  -p examples/profile.toml --json
 | `ED` | Use a school's early-round admit rate (from its Common Data Set) | Recalibration with the round-specific base rate (approximation) |
 | `SENS` | How much each answer depends on each assumption | One-at-a-time perturbation (tornado) |
 | `FIT` | Refit the model on a practice's own outcomes, with held-out accuracy | Maximum marginal likelihood; Brier, log loss, AUC, calibration error |
-| `BKTST` | Score a counselor's past calls against UNIMATH on real outcomes | Label → rate conversion; student-cluster bootstrap CI (see power caveat below) |
+| `BKTST` | Score a counselor's past calls against Calliper on real outcomes | Label → rate conversion; student-cluster bootstrap CI (see power caveat below) |
 | `LEDGER` / `SCORE` | Freeze forecasts now, grade them when decisions arrive | SHA-256 hash chain (tamper-evident); proper scoring rules |
 | `SCH` / `DQ` / `CAT` | School calibration page, data-quality report, catalog listing | |
 | `SAT` `HOL` `LIST` `UTIL` `SIM` | Session setup; synthetic outcomes for demos | |
@@ -75,13 +75,13 @@ Decisions are `accepted`, `rejected`, `waitlisted` or `deferred`. School ids are
 
 `data/catalog.json` holds 412 four-year schools:
 
-- **19 hand-curated schools** with real supplement prompts, built from `../supabase/seed_source.schools.json` and
-  the researched 2026-27 corrections in `../supabase/update_five_schools.sql`.
+- **19 hand-curated schools** with real supplement prompts, built from `archive/old-web-app/supabase/seed_source.schools.json` and
+  the researched 2026-27 corrections in `archive/old-web-app/supabase/update_five_schools.sql`.
 - **393 schools from the US Department of Education's College Scorecard** (SAT quartiles and admission rate). Their
   "test importance" is a proxy from Scorecard's test-requirement code, and their supplements are placeholders
   (assumed one 250-word essay). `DQ` flags all of this.
 
-`data/similarity.csv` holds the human-scored prompt pairs (same table as the web app's Supabase
+`data/similarity.csv` holds the human-scored prompt pairs (same table as the archived web app's Supabase
 `prompt_similarity`). Human scores always override the heuristic.
 
 Refresh: `python scripts/fetch_scorecard.py` (resumable; the free DEMO_KEY allows ~10 requests/hour, or set
@@ -98,7 +98,7 @@ manual. Summary (claims 2-6 and 10 tested on simulated students only):
 | 2 | Odds beat quoting the acceptance rate | Yes: 20-33% lower error |
 | 3 | Odds beat a simple logistic model | Yes, small: 7-8% lower error, significant in all 5 simulated worlds |
 | 4 | A student's other decisions sharpen the rest | Yes, largest effect: 18-24% lower error |
-| 5 | Multiplying odds understates zero-admit risk | Yes: 4.5-8x too optimistic; UNIMATH can over-warn ~2x when its assumptions fail |
+| 5 | Multiplying odds understates zero-admit risk | Yes: 4.5-8x too optimistic; Calliper can over-warn ~2x when its assumptions fail |
 | 6 | Settings are learnable from outcomes | Partly: one setting biased; error bars cover 65-75%, not 95% |
 | 7 | Essay heuristic matches human scores | **No** (p = 0.12) |
 | 8 | List optimizer finds the optimum | Yes: 30 of 30 |
@@ -108,12 +108,12 @@ manual. Summary (claims 2-6 and 10 tested on simulated students only):
 ## Reproducing everything
 
 ```bash
-python scripts/build_catalog.py      # catalog from repo sources (+ cached Scorecard data)
+python scripts/build_catalog.py      # catalog from archived sources (+ cached Scorecard data)
 pytest tests                         # 41 tests: formulas, calibration by simulation, CLI smoke tests
-python scripts/run_backtests.py      # E1-E6 -> reports/backtest_results.json
-python scripts/run_significance.py   # multi-seed tests, 20-rep recovery -> reports/significance.json (~15 min)
-python scripts/run_power.py          # backtest power analysis -> reports/power.json
-python scripts/make_figures.py && python scripts/make_report.py   # -> reports/UNIMATH_methods_manual.pdf
+python scripts/run_backtests.py      # E1-E6 -> results/backtest_results.json
+python scripts/run_significance.py   # multi-seed tests, 20-rep recovery -> results/significance.json (~15 min)
+python scripts/run_power.py          # backtest power analysis -> results/power.json
+python scripts/make_figures.py && python scripts/make_report.py   # -> ../reports/calliper-methods-manual-v1.pdf
 ```
 
 Backtests use the 19 curated schools so results stay comparable across versions.
@@ -121,7 +121,7 @@ Backtests use the 19 curated schools so results stay comparable across versions.
 ## Layout
 
 ```
-unimath/
+calliper/
   scores.py        band fitting, percentiles, composite distribution
   model.py         calibrated selection model, shared factor, Bayes updates, portfolio, risk ranges
   similarity.py    prompt reuse, coverage matrix, marginal effort, clustering
@@ -135,27 +135,24 @@ data/              catalog.json, similarity.csv, scorecard_raw.json (cached API 
 examples/          sample profile, caseload and past-class files
 scripts/           data build, backtests, significance, power, figures, manual
 tests/             pytest suite
-reports/           methods manual (PDF), figures, results JSON, business documents (below)
+results/           backtest, significance and power results (JSON) and figures for the PDFs
 ```
 
-## Business documents (drafts)
+## Documents built from this engine
 
-- `reports/UNIMATH_market_analysis.pdf` and `reports/UNIMATH_offer.pdf` (`scripts/make_pitch_docs.py`): market analysis and the prospect-facing offer, inputs for the pitch simulation.
-- `reports/UNIMATH_product_plan.pdf` (3 pages, `scripts/make_plan.py`): per feature, how it works, benefit, build, test, sell.
-- `reports/UNIMATH_summary.pdf` (one page, `scripts/make_summary.py`): the short version of the build spec below.
-- `reports/UNIMATH_feature_build_spec.pdf` (internal, built by `scripts/make_offer.py`): the three features being
-  sold (Essay map, List check, Decision updates) on two engines, how each is calculated, what exists in the code,
-  and the build spec for what's missing (prompt collection, LLM-scored essay matrix, counselor check, new commands,
-  tests, gates).
-- `reports/pitch_email_v3.md`: counselor pitch led by essay planning. **Don't send it until:**
-  1. the prompt-pair matrix is human-scored for the schools it names ([N] in the email),
-  2. the similarity test (E5) is re-run on held-out human scores and beats a constant guess,
-  3. the worked example is replaced with real numbers from 2-3 students' actual writing,
-  4. the founder, company, price and contributor-benefit placeholders are filled in.
-- `reports/pitch_email.md`, `reports/pitch_email_v2.md`: earlier versions, kept for comparison.
-- `reports/DATA_TERMS_DRAFT.md`: data terms draft, for review with a lawyer.
-- `reports/loop/`: the buyer/builder persuasion loop (each round's pitch, manual snapshot and verdicts), summarized in
-  Section C of the manual.
+PDF builders live in `scripts/`; their output goes to `product/reports/` (product documents) and `sales/`
+(outreach). See the root README for the full map.
+
+- `make_report.py` -> `product/reports/calliper-methods-manual-v1.pdf`
+- `make_technote.py` -> `product/reports/calliper-technical-note-v1.pdf` (2 pages, sent with outreach)
+- `make_offer.py` -> `product/reports/calliper-feature-build-spec-v1.pdf` (internal): the three features being sold
+  (Essay map, List check, Decision updates) on two engines, how each is calculated, what exists in the code, and the
+  build spec for what's missing
+- `make_plan.py` -> `product/reports/calliper-product-plan-v1.pdf` (3 pages): per feature, how it works, benefit,
+  build, test, sell
+- `make_summary.py` -> `product/reports/calliper-summary-v1.pdf` (one page): the short version of the build spec
+- `make_pitch_docs.py` -> `product/reports/calliper-market-analysis-v1.pdf` and `sales/calliper-overview-v1.pdf`
+- The buyer/builder persuasion loop summarized in Section C of the manual is read from `research/persuasion-loop/`.
 
 ## Known limitations
 

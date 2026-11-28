@@ -81,7 +81,7 @@ pw, pm = pnone("e3_well"), pnone("e3_miss")
 
 # ------------------------------------------------------------------------------------------ cover
 story += [Spacer(1, 1.3 * inch)]
-P("<font size=28 color='#d98a00'><b>UNIMATH</b></font>", B)
+P("<font size=28 color='#d98a00'><b>Calliper</b></font>", B)
 story.append(Spacer(1, 14))
 P("<font size=15><b>Admissions analytics terminal: methods, validation, and the business case</b></font>", B)
 story.append(Spacer(1, 8))
@@ -101,8 +101,8 @@ P("<b>The one result that matters, in plain English.</b> Most list-balancing too
   "admissions were separate coin flips. Across 5 simulated worlds, we took the students whose lists looked at least "
   f"95% safe that way. <b>{100 * _sw['observed_rate']:.1f}% of them got zero admits</b> "
   f"({_sw['zero_admits']} of {_sw['n']}). Multiplying odds predicted {100 * _sw['independence']['expected'] / _sw['n']:.1f}%; "
-  f"UNIMATH predicted {100 * _sw['correlated']['expected'] / _sw['n']:.1f}%. When we deliberately made the fake world "
-  f"break the model's rules, {100 * _sm['observed_rate']:.1f}% got zero. UNIMATH said "
+  f"Calliper predicted {100 * _sw['correlated']['expected'] / _sw['n']:.1f}%. When we deliberately made the fake world "
+  f"break the model's rules, {100 * _sm['observed_rate']:.1f}% got zero. Calliper said "
   f"{100 * _sm['correlated']['expected'] / _sm['n']:.1f}% (too cautious) and multiplying odds said "
   f"{100 * _sm['independence']['expected'] / _sm['n']:.1f}% (far too optimistic). "
   "<i>Math version: Claim 5 in Section B.</i>", CALL)
@@ -231,10 +231,10 @@ claim("2", "The chances are informative: better than a coin flip and better than
       "bootstrap (4,000 resamples).",
       "Knowing the student's scores gives better odds than telling everyone the school's acceptance rate, and ranks "
       "admitted students above rejected ones far more often than guessing would.",
-      f"Matched world: AUC {aw['unimath (fitted)']['auc']:.3f} ({pf(aw['unimath (fitted)']['p_vs_random'])} vs 0.5); "
-      f"Brier {bw['unimath (fitted)']:.4f} vs {bw['base rate']:.4f} for the acceptance rate and {bw['coin flip (0.5)']:.3f} for a coin flip "
+      f"Matched world: AUC {aw['calliper (fitted)']['auc']:.3f} ({pf(aw['calliper (fitted)']['p_vs_random'])} vs 0.5); "
+      f"Brier {bw['calliper (fitted)']:.4f} vs {bw['base rate']:.4f} for the acceptance rate and {bw['coin flip (0.5)']:.3f} for a coin flip "
       f"(improvement {ci_s([-fb_w['ci95'][1], -fb_w['ci95'][0]])}). "
-      f"Misspecified world: AUC {am['unimath (fitted)']['auc']:.3f}; Brier {bm['unimath (fitted)']:.4f} vs {bm['base rate']:.4f} "
+      f"Misspecified world: AUC {am['calliper (fitted)']['auc']:.3f}; Brier {bm['calliper (fitted)']:.4f} vs {bm['base rate']:.4f} "
       f"({ci_s([-fb_m['ci95'][1], -fb_m['ci95'][0]])}).",
       "YES" if sig_verdict(fb_w) and sig_verdict(fb_m) else "PARTLY",
       "on synthetic data, in both worlds, by a wide margin.",
@@ -244,9 +244,9 @@ fl_w, fl_m = ww["fitted_vs_logistic"]["brier"], wm["fitted_vs_logistic"]["brier"
 dl_w = ww["default_vs_logistic"]["brier"]
 yes3 = sig_verdict(fl_w) and sig_verdict(fl_m)
 claim("3", "Per-school chances beat a simple statistical baseline (logistic regression)",
-      "Δ = E[(p<sub>UNIMATH</sub>−y)² − (p<sub>logit</sub>−y)²], logit model: y ~ logit(r<sub>j</sub>) + "
+      "Δ = E[(p<sub>Calliper</sub>−y)² − (p<sub>logit</sub>−y)²], logit model: y ~ logit(r<sub>j</sub>) + "
       "z-score vs published band, trained on the same 60% of students. H<sub>0</sub>: Δ = 0; student-cluster bootstrap.",
-      "Compared with what a careful developer could build in an afternoon, are UNIMATH's single-school odds actually better?",
+      "Compared with what a careful developer could build in an afternoon, are Calliper's single-school odds actually better?",
       f"Matched world: Brier difference {fl_w['diff']:.4f} ({ci_s(fl_w['ci95'])}, {pf(fl_w['p'])}), i.e. "
       f"{-100 * fl_w['relative']:.1f}% lower error. Misspecified world: {fl_m['diff']:.4f} ({ci_s(fl_m['ci95'])}, {pf(fl_m['p'])}), "
       f"{-100 * fl_m['relative']:.1f}% lower. With <i>no</i> training data (default priors): {dl_w['diff']:.4f} ({ci_s(dl_w['ci95'])}).",
@@ -264,7 +264,7 @@ claim("4", "Knowing a student's other decisions improves the prediction for the 
       "If you know a student got into CMU and was rejected by MIT, you can predict their Cornell result better than from "
       "their scores alone. This is the 'accepted at one, probably at the other' feature.",
       f"Matched world: error lower by {-100 * pv_w['relative']:.0f}% ({ci_s(pv_w['ci95'])}, {pf(pv_w['p'])}); AUC "
-      f"{aw['unimath (fitted)']['auc']:.3f} → {aw['unimath fitted + other decisions (LOO posterior)']['auc']:.3f}. "
+      f"{aw['calliper (fitted)']['auc']:.3f} → {aw['calliper fitted + other decisions (LOO posterior)']['auc']:.3f}. "
       f"Misspecified world: lower by {-100 * pv_m['relative']:.0f}% ({ci_s(pv_m['ci95'])}, {pf(pv_m['p'])}).",
       "YES" if sig_verdict(pv_w) and sig_verdict(pv_m) else "PARTLY",
       "the largest and most robust effect in the whole suite.",
@@ -279,7 +279,7 @@ claim("5", "Treating schools as independent badly understates the risk of zero a
       "1−Π(1−p<sub>j</sub>) &gt; 0.95, test the observed zero-admit count against the exact Poisson-binomial "
       "distribution implied by each model.",
       "When a list 'looks' 95%+ safe because you multiplied the odds, the real chance of getting nothing is much higher. "
-      "UNIMATH's correlated model sees this; the multiply-the-odds method doesn't.",
+      "Calliper's correlated model sees this; the multiply-the-odds method doesn't.",
       f"(a) Correlated model better: matched {ci_s([-cw['ci95'][1], -cw['ci95'][0]], 1, 3)} nats/student ({pf(cw['p'])}); "
       f"misspecified {ci_s([-cm['ci95'][1], -cm['ci95'][0]], 1, 3)} ({pf(cm['p'])}). "
       f"(b) Matched world: {sw['zero_admits']} of {sw['n']} 'safe' students got zero admits "
@@ -333,7 +333,7 @@ claim("8", "The list optimizer finds the best list",
       "'Best' only under the model's own odds and the user's preference numbers.")
 
 claim("9", "Any of this predicts real students better than existing tools",
-      "Would require E[L(p<sub>UNIMATH</sub>, y)] &lt; E[L(p<sub>competitor</sub>, y)] on real outcomes y "
+      "Would require E[L(p<sub>Calliper</sub>, y)] &lt; E[L(p<sub>competitor</sub>, y)] on real outcomes y "
       "(L = Brier or log loss), with a pre-registered held-out set.",
       "Is it actually better than CollegeVine, scattergrams, or an experienced counselor's judgement for real students?",
       "No real outcome data was available. FIT and LEDGER/SCORE are built to answer this on a counselor's past classes "
@@ -343,17 +343,17 @@ claim("9", "Any of this predicts real students better than existing tools",
 
 PWR = json.loads((ROOT / "results" / "power.json").read_text())
 so, wc = PWR["scores_only"], PWR["with_counselor_rating"]
-claim("10", "UNIMATH beats a counselor's own reach/target/likely calls, and one class can show it",
+claim("10", "Calliper beats a counselor's own reach/target/likely calls, and one class can show it",
       "Simulated counselor with private, noisy knowledge of non-test strength (sd 0.6) reports 3 labels. BKTST "
-      "scoring: labels → leave-one-student-out label rates; Δ = Brier(UNIMATH) − Brier(labels), student-cluster "
+      "scoring: labels → leave-one-student-out label rates; Δ = Brier(Calliper) − Brier(labels), student-cluster "
       "bootstrap. Power = P(95% CI excludes 0) over 150 simulated backtests per class size n.",
-      "If a counselor runs our free backtest on last year's class, will it show UNIMATH is better than their own "
+      "If a counselor runs our free backtest on last year's class, will it show Calliper is better than their own "
       "calls, and would that result mean anything?",
-      f"<b>Scores-only UNIMATH loses to the counselor</b> (mean Δ = +{so['800']['mean_diff']:.4f}; counselor "
+      f"<b>Scores-only Calliper loses to the counselor</b> (mean Δ = +{so['800']['mean_diff']:.4f}; counselor "
       f"significantly better in {100 * so['800']['p_counselor_significantly_better']:.0f}% of 800-student backtests). "
-      f"<b>UNIMATH + the counselor's rating wins, but barely</b> (mean Δ = {wc['800']['mean_diff']:.4f}). "
+      f"<b>Calliper + the counselor's rating wins, but barely</b> (mean Δ = {wc['800']['mean_diff']:.4f}). "
       f"With one class of 25 students, the result is inconclusive in {100 * wc['25']['p_inconclusive']:.0f}% of backtests; "
-      f"even with 800 students, only {100 * wc['800']['p_unimath_significantly_better']:.0f}% detect the gain.",
+      f"even with 800 students, only {100 * wc['800']['p_calliper_significantly_better']:.0f}% detect the gain.",
       "NO", "not provable on one counselor's data: the honest pitch is 'use your judgement as an input', not 'beat it'.",
       "The simulated counselor's skill is an assumption. Real counselors may be better or worse than modelled.")
 fig("f14_power", 6.6, "Figure 14. Power of the free backtest. Red line: a typical class of 25. Left: a model "
@@ -412,12 +412,12 @@ rows = [["Code", "What a user gets", "Technique", "Backtestable?"],
         ["LEDGER / SCORE", "Frozen, tamper-evident forecasts graded in spring", "SHA-256 hash chain; proper scoring rules vs constant forecast", "It is the backtest"],
         ["BRIEF [family]", "Counselor brief (numbers), or family brief in words (low/moderate/high), no false precision", "Templated summary; risk shown as a range across link strengths", "n/a"],
         ["ROSTER", "Whole caseload screened at once: no-admit risk range and likely count per student", "Batch of PORT/CHNC", "n/a"],
-        ["BKTST", "Counselor's own past calls vs UNIMATH on real past outcomes", "Label→rate conversion (leave-one-student-out); student-cluster bootstrap CI", "It is the backtest (see Claim 10 for power)"],
+        ["BKTST", "Counselor's own past calls vs Calliper on real past outcomes", "Label→rate conversion (leave-one-student-out); student-cluster bootstrap CI", "It is the backtest (see Claim 10 for power)"],
         ["ED", "Use a school's early-round admit rate for one student", "Recalibration with the round-specific base rate (approximation)", "Needs round-level outcomes"],
         ["DQ / SCH / CAT", "Data-quality report; per-school calibration page", "Validation rules; calibration readout", "n/a"]]
 table(rows, [0.8, 1.9, 2.6, 1.4])
 P("Screenshots of the terminal look like this (amber on black, one function per screen):", B)
-P("UNIMATH&gt; CHNC<br/> CHNC  ADMISSION PROBABILITY                          COMP 1540  HOL n/a<br/>"
+P("CALLIPER&gt; CHNC<br/> CHNC  ADMISSION PROBABILITY                          COMP 1540  HOL n/a<br/>"
   "SCHOOL         BASE%  P(ADM)%  80% BAND  LIFT   TIER     TESTS<br/>"
   "MIT              4.6      7.7      0-24  1.69x  LONG SHOT required<br/>"
   "Stanford         3.8     18.5      0-56  4.87x  REACH     required<br/>"
@@ -510,7 +510,7 @@ P("<b>Backtest E4.</b> On held-out students, each decision was predicted twice: 
 rows = [["World", "Brier: marginal → with other decisions", "Log loss", "AUC", "Count log-score: independent vs correlated"]]
 for key, lab in (("e3_well", "matches model"), ("e3_miss", "misspecified")):
     sc = R[key]["scores"]
-    a, b = sc["unimath (fitted)"], sc["unimath fitted + other decisions (LOO posterior)"]
+    a, b = sc["calliper (fitted)"], sc["calliper fitted + other decisions (LOO posterior)"]
     rows.append([lab, f"{f(a['brier'], 4)} → {f(b['brier'], 4)}", f"{f(a['log_loss'])} → {f(b['log_loss'])}",
                  f"{f(a['auc'])} → {f(b['auc'])}", f"{f(R[key]['count_logscore']['independent'])} vs {f(R[key]['count_logscore']['correlated'])}"])
 table(rows, [1.1, 1.9, 1.2, 1.1, 1.6])
@@ -640,7 +640,7 @@ story.append(PageBreak())
 # ------------------------------------------------------------------------------------------ market
 P("10. Who buys this, and why not just vibe-code it?", H1)
 P("<b>The market today.</b>", H3)
-rows = [["Product", "Buyer", "What it gives", "Gap UNIMATH targets"],
+rows = [["Product", "Buyer", "What it gives", "Gap Calliper targets"],
         ["Naviance / Scoir scattergrams", "High schools (district contracts)", "Past applicants from the same high school: GPA × score × outcome", "Suppressed for schools with fewer than 5-10 past applicants; no probabilities; no correlation"],
         ["Scoir Admission Intelligence", "High schools", "Match levels from 'tens of millions' of de-identified outcomes", "Black box; no published validation; not sold to independent counselors"],
         ["CollegeVine", "Students (free)", "Per-school % from about 75 factors", "No published validation; users report inflated odds; essay-service upsell"],
@@ -673,7 +673,7 @@ table([["Test", "Question put to a fresh Claude", "Verdict", "In one sentence"],
       [0.8, 2.3, 0.9, 2.7])
 P("Resolving every objection", H2)
 P("In plain English: each row is something that made the AI hesitate, and the concrete fix. 'Done' items already exist "
-  "in the toolkit; the rest is the roadmap in priority order.")
+  "in the engine; the rest is the roadmap in priority order.")
 table([["#", "Objection (who raised it)", "Fix", "Effort", "Status"],
        ["1", "Headline numbers come from the model itself, not real outcomes (buy)",
         "Offer a free backtest of the counselor's last 2-3 classes with FIT, scored against their own calls and the scattergram. Freeze this year's forecasts in LEDGER now and publish the April SCORE.",
@@ -755,16 +755,16 @@ rows = [["Command", "Description"]] + [[c, d] for c, d in [
     ("DEC mit accepted · UPDT", "record a decision, Bayesian re-pricing"),
     ("ESSY · FREE · PLAN", "essay coverage, near-free schools, list optimizer"),
     ("BRIEF · BRIEF family", "counselor brief (numbers) · family brief (words)"),
-    ("ROSTER caseload.csv · BKTST past.csv", "whole-caseload risk screen · score your past calls vs UNIMATH"),
+    ("ROSTER caseload.csv · BKTST past.csv", "whole-caseload risk screen · score your past calls vs Calliper"),
     ("ED tufts 0.20", "use a school's early-round admit rate for this student"),
     ("SENS · SCH mit · DQ · CAT", "sensitivity, school page, data quality, catalog"),
     ("FIT outcomes.csv · SIM out.csv", "fit to real outcomes with held-out scores; synthetic data"),
     ("LEDGER f.jsonl alex · SCORE f.jsonl outcomes.csv", "freeze forecasts (hash chain); verify and grade"),
-    ("unimath CHNC -p profile.toml --json", "one-shot, machine-readable")]]
+    ("calliper CHNC -p profile.toml --json", "one-shot, machine-readable")]]
 table(rows, [3.2, 3.4])
 P("Appendix B. Reproducing this manual", H2)
-P("pip install -e toolkit[report,test]<br/>python toolkit/scripts/build_catalog.py<br/>pytest toolkit/tests<br/>"
-  "python toolkit/scripts/run_backtests.py<br/>python toolkit/scripts/make_figures.py<br/>python toolkit/scripts/make_report.py", MONO)
+P("pip install -e 'product/engine[report,test]'<br/>python product/engine/scripts/build_catalog.py<br/>pytest product/engine/tests<br/>"
+  "python product/engine/scripts/run_backtests.py<br/>python product/engine/scripts/make_figures.py<br/>python product/engine/scripts/make_report.py", MONO)
 
 
 def on_page(canvas, doc):
@@ -773,13 +773,13 @@ def on_page(canvas, doc):
     canvas.rect(0, letter[1] - 14, letter[0], 14, fill=1, stroke=0)
     canvas.setFillColor(INK)
     canvas.setFont("Helvetica-Bold", 7)
-    canvas.drawString(0.6 * inch, letter[1] - 10, "UNIMATH  ·  METHODS & VALIDATION")
+    canvas.drawString(0.6 * inch, letter[1] - 10, "CALLIPER  ·  METHODS & VALIDATION")
     canvas.setFont("Helvetica", 7)
     canvas.drawRightString(letter[0] - 0.6 * inch, 0.45 * inch, f"{doc.page}")
     canvas.restoreState()
 
 
 doc = SimpleDocTemplate(str(OUT), pagesize=letter, leftMargin=0.75 * inch, rightMargin=0.75 * inch,
-                        topMargin=0.7 * inch, bottomMargin=0.7 * inch, title="UNIMATH methods manual", author="UNIMATH")
+                        topMargin=0.7 * inch, bottomMargin=0.7 * inch, title="Calliper methods manual", author="Calliper")
 doc.build(story, onFirstPage=lambda c, d: None, onLaterPages=on_page)
 print("wrote", OUT)

@@ -9,9 +9,9 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from unimath import backtest as bt  # noqa: E402
-from unimath import significance as sg  # noqa: E402
-from unimath.catalog import curated_only, load_catalog  # noqa: E402
+from calliper import backtest as bt  # noqa: E402
+from calliper import significance as sg  # noqa: E402
+from calliper.catalog import curated_only, load_catalog  # noqa: E402
 
 CAT = curated_only(load_catalog())
 R = json.loads((ROOT / "results" / "backtest_results.json").read_text())
@@ -60,8 +60,8 @@ for world, mis in (("well", False), ("miss", True)):
         print(world, seed, time.time() - t0, flush=True)
     y, stu = np.array(pooled["y"]), np.array(pooled["student"])
     P = {k_: np.array(v) for k_, v in pooled["preds"].items()}
-    fit_, logi, base = P["unimath (fitted)"], P["logistic on z-score"], P["base rate"]
-    post, dflt = P["unimath fitted + other decisions (LOO posterior)"], P["unimath (default priors)"]
+    fit_, logi, base = P["calliper (fitted)"], P["logistic on z-score"], P["base rate"]
+    post, dflt = P["calliper fitted + other decisions (LOO posterior)"], P["calliper (default priors)"]
     coin = np.full_like(y, 0.5)
     res = {"n_rows": int(len(y)), "n_students": int(len(np.unique(stu))), "admit_rate": float(y.mean())}
     res["auc"] = {k_: sg.auc_test(v, y) for k_, v in P.items()}

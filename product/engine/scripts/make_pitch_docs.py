@@ -57,7 +57,7 @@ class Doc:
 
 # ================================================================================================ market analysis
 m = Doc()
-m.p("UNIMATH: market analysis", H1)
+m.p("Calliper: market analysis", H1)
 m.p("Would this sell, to whom, for what, and for how much. Internal; figures are cited at the end and some are "
     "estimates or old. November 2026.", LEAD)
 m.p("<b>Verdict:</b> sellable as a low-price tool to independent counselors, mainly for Essay map, but that market "
@@ -140,7 +140,7 @@ m.p("Sources: IECA State of the Profession 2022 (iecaonline.com) and IECA profes
     "centre, Essay Stack Planner; CollegeApply AI on Product Hunt; CollegePlannerPro plans page; Applerouth, citing IECA "
     "(lower count: 6,000+ full-time). Counselor numbers differ between IECA sources; fee data is from 2022. Segment "
     "prices and adoption rates are estimates, not survey results.", SM)
-m.build(ROOT.parent / "reports" / "calliper-market-analysis-v1.pdf", "UNIMATH market analysis")
+m.build(ROOT.parent / "reports" / "calliper-market-analysis-v1.pdf", "Calliper market analysis")
 
 # ================================================================================================ offer
 o = Doc()

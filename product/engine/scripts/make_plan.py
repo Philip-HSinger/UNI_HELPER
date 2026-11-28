@@ -169,5 +169,5 @@ feature(
      "is the long-term moat."])
 
 SimpleDocTemplate(str(OUT), pagesize=letter, leftMargin=0.75 * inch, rightMargin=0.75 * inch, topMargin=0.5 * inch,
-                  bottomMargin=0.45 * inch, title="UNIMATH product plan").build(story)
+                  bottomMargin=0.45 * inch, title="Calliper product plan").build(story)
 print(f"wrote {OUT}")

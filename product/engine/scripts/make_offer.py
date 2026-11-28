@@ -3,7 +3,7 @@ each is calculated, what exists in the code, and the build spec for what's missi
 
     python scripts/make_offer.py
 
-All example numbers are computed live from the toolkit on the example student (examples/profile.toml).
+All example numbers are computed live from the engine on the example student (examples/profile.toml).
 """
 import sys
 from dataclasses import replace
@@ -26,9 +26,9 @@ from reportlab.platypus import (Image, KeepTogether, PageBreak, Paragraph, Simpl
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from unimath.catalog import SIMILARITY, load_catalog  # noqa: E402
-from unimath.model import AdmissionModel, Student  # noqa: E402
-from unimath.similarity import SimilarityEngine  # noqa: E402
+from calliper.catalog import SIMILARITY, load_catalog  # noqa: E402
+from calliper.model import AdmissionModel, Student  # noqa: E402
+from calliper.similarity import SimilarityEngine  # noqa: E402
 
 FIG = ROOT / "results" / "figures" / "offer"
 FIG.mkdir(parents=True, exist_ok=True)
@@ -327,7 +327,7 @@ iS = UPD.index("stanford")
 iM = UPD.index("mit")
 
 # ================================================================================================ 0. overview
-P("UNIMATH build spec: the three features", H1)
+P("Calliper build spec: the three features", H1)
 P("Internal developer document. It says what is being sold, how each piece is calculated (in maths, then in plain "
   "English), what already exists in the code, and exactly what to build next: files, data schemas, functions, CLI "
   "commands, tests and the checks each piece must pass before it's sold. Example numbers are computed live by "
@@ -356,14 +356,14 @@ story.append(PageBreak())
 P("1. Engine A: the admissions model (built)", H1)
 P("Code map", H2)
 table([["File", "What's there"],
-       ["unimath/scores.py", "fit_band (two-piece normal matched to the 25/50/75; 800 ceiling), CompositeDist (Gaussian "
+       ["calliper/scores.py", "fit_band (two-piece normal matched to the 25/50/75; 800 ceiling), CompositeDist (Gaussian "
         "copula, ρ = 0.6 between sections)"],
-       ["unimath/model.py", "ModelParams (defaults), calibrate() → Calibration per school, Student, AdmissionModel: "
+       ["calliper/model.py", "ModelParams (defaults), calibrate() → Calibration per school, Student, AdmissionModel: "
         "prob_grid, decision_loglik, posterior_logw, chances, chances_interval, cross_matrix, count_distribution, "
         "expected_best, p_none_range"],
-       ["unimath/fit.py", "Outcomes I/O, marginal_loglik, fit() (L-BFGS-B), scoring rules, simulate()"],
-       ["unimath/backtest.py, significance.py", "Experiments E1-E7, cluster bootstrap, exact and permutation tests"],
-       ["unimath/cli.py", "Terminal class; each command is a method cmd_XXX(self, args); --json supported"]],
+       ["calliper/fit.py", "Outcomes I/O, marginal_loglik, fit() (L-BFGS-B), scoring rules, simulate()"],
+       ["calliper/backtest.py, significance.py", "Experiments E1-E7, cluster bootstrap, exact and permutation tests"],
+       ["calliper/cli.py", "Terminal class; each command is a method cmd_XXX(self, args); --json supported"]],
       [1.9, 5.0])
 P("How it calculates", H2)
 P("Latent index at school j:  U<sub>j</sub> = a<sub>j</sub>·T + b·H + ε<sub>j</sub>, with T the standardized composite, "
@@ -402,7 +402,7 @@ P("R(p, q) ∈ [0, 1] = share of the writing effort for target prompt p saved by
   "(non-increasing as L grows, so greedy ordering behaves well)", MATH)
 P("<b>In plain English:</b> for each pair of prompts the LLM says how much of one essay can be recycled into the other. "
   "Add up what a school asks for, take the best match from what's already written, and you get \"Harvard is 40% done\" "
-  "or \"CMU needs 300 new words\". All of the aggregation already exists in <font face='DVM'>unimath/similarity.py</font>; "
+  "or \"CMU needs 300 new words\". All of the aggregation already exists in <font face='DVM'>calliper/similarity.py</font>; "
   f"only the input R changes. Today R comes from {N_CURATED} hand-scored pairs plus a keyword heuristic that "
   "<b>failed its test</b> (Spearman 0.41 against the hand scores, p = 0.12).", PLAIN)
 
@@ -515,7 +515,7 @@ if key_undirected in self.curated:  R[i, j] = self.curated[key_undirected];  sel
 elif key_dir in self.llm:           R[i, j] = self.llm[key_dir] / 100;       self.source[i, j] = "llm"
 else:                               R[i, j] = heuristic(i, j);               self.source[i, j] = "model"
 """)
-P("Tests to add in <font face='DVM'>tests/test_unimath.py</font>: priority order (a pair in both tables takes the "
+P("Tests to add in <font face='DVM'>tests/test_calliper.py</font>: priority order (a pair in both tables takes the "
   "human value); R stays in [0, 1] and is 0 within a school; marginal effort still never increases as the written set "
   "grows; ESSY, FREE and PLAN run with the LLM table loaded; DQ reports what share of a list's pairs come from each source.")
 
@@ -637,7 +637,7 @@ P("5. Feature 3: Decision updates (built: DEC, UPDT, XADM)", H1)
 P("<b>What the customer sees:</b> record a real result and get new odds for every pending school. This is the "
   "mid-December feature: early results arrive about two weeks before most Regular Decision deadlines, when families "
   "decide whether to keep writing reach applications, add safer schools, or use Early Decision II.")
-fig("o4_updates", 6.0, f"Figure 4. Computed by the toolkit for the example student. A CMU admit: MIT {pct(before[iM], 1)} → "
+fig("o4_updates", 6.0, f"Figure 4. Computed by the engine for the example student. A CMU admit: MIT {pct(before[iM], 1)} → "
     f"{pct(after1[iM], 1)}, Stanford {pct(before[iS], 1)} → {pct(after1[iS], 1)}. Adding an MIT reject pulls them "
     f"partway back (Stanford → {pct(after2[iS], 1)}). Safe schools barely move.")
 P("f(s | D) ∝ f(s) · Π<sub>k∈D</sub> P(d<sub>k</sub> | s)   (AdmissionModel.posterior_logw)<br/>"
@@ -695,7 +695,7 @@ table([["#", "Milestone", "Unblocks", "Size"],
        ["8", "power_shared.py, partner data, calibration, early rounds", "Real accuracy claims", "Next cycle"],
        ["9", "Web service + front end", "Self-serve sales", "1-3 weeks"]], [0.3, 3.7, 1.6, 1.3])
 P("What is not sold separately", H2)
-P("PCTL, CHNC, XADM, PLAN, SENS, SCH, DQ, LEDGER/SCORE and BKTST stay in the toolkit as plumbing or for building a "
+P("PCTL, CHNC, XADM, PLAN, SENS, SCH, DQ, LEDGER/SCORE and BKTST stay in the engine as plumbing or for building a "
   "track record (LEDGER freezes forecasts so they can be graded in spring). BKTST can't show anything on one class of "
   "25 students, so it isn't marketed.")
 P("Risks", H2)
@@ -714,13 +714,13 @@ def on_page(canvas, doc):
     canvas.saveState()
     canvas.setFont("DV", 7)
     canvas.setFillColor(colors.HexColor(MUTED))
-    canvas.drawString(0.75 * inch, 0.5 * inch, "UNIMATH build spec: the three features (internal, November 2026)")
+    canvas.drawString(0.75 * inch, 0.5 * inch, "Calliper build spec: the three features (internal, November 2026)")
     canvas.drawRightString(7.75 * inch, 0.5 * inch, f"{doc.page}")
     canvas.restoreState()
 
 
 doc = SimpleDocTemplate(str(OUT), pagesize=letter, leftMargin=0.75 * inch, rightMargin=0.75 * inch,
-                        topMargin=0.7 * inch, bottomMargin=0.75 * inch, title="UNIMATH build spec: the three features",
-                        author="UNIMATH")
+                        topMargin=0.7 * inch, bottomMargin=0.75 * inch, title="Calliper build spec: the three features",
+                        author="Calliper")
 doc.build(story, onFirstPage=on_page, onLaterPages=on_page)
 print(f"wrote {OUT}")

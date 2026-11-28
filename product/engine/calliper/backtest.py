@@ -15,7 +15,7 @@ What can be validated, and how:
                             calibrated, vs the independence formula 1 - prod(1 - p)?
   E5 essay similarity     - model reuse scores vs the human-curated pairs (held out).
   E6 planner              - greedy+swap vs brute-force optimum on random instances.
-On real data, E3/E4 run unchanged on an outcomes CSV (`unimath fit` / `BKTST <csv>`).
+On real data, E3/E4 run unchanged on an outcomes CSV (`calliper fit` / `BKTST <csv>`).
 """
 from __future__ import annotations
 
@@ -211,18 +211,18 @@ def e3_e4_predictive(schools, misspecified: bool, n_students=2500, seed=7, true:
     preds = {
         "base rate": base,
         "logistic on z-score": logi,
-        "unimath (default priors)": predict_marginal(default, test),
-        "unimath (fitted)": predict_marginal(fitted, test),
-        "unimath fitted + other decisions (LOO posterior)": predict_leave_one_out(fitted, test),
+        "calliper (default priors)": predict_marginal(default, test),
+        "calliper (fitted)": predict_marginal(fitted, test),
+        "calliper fitted + other decisions (LOO posterior)": predict_leave_one_out(fitted, test),
     }
     scores = {k: score_all(v, y) for k, v in preds.items()}
     ls_c, pany_c, pany_i, any_obs = correlated_count_logscore(fitted, test)
-    ls_i = independent_count_logscore(preds["unimath (fitted)"], test)
+    ls_i = independent_count_logscore(preds["calliper (fitted)"], test)
     extra = {}
     if return_preds:
         extra = {"preds": {k: v.tolist() for k, v in preds.items()}, "y": y.tolist(), "student": test.student.tolist(),
                  "pany_correlated": pany_c.tolist(), "pany_independent": pany_i.tolist(), "any_observed": any_obs.tolist(),
-                 "count_ll": per_student_count_ll(fitted, test, preds["unimath (fitted)"])}
+                 "count_ll": per_student_count_ll(fitted, test, preds["calliper (fitted)"])}
     return {**extra, "misspecified": misspecified, "n_train_rows": len(train), "n_test_rows": len(test),
             "fitted": res.estimates, "scores": scores,
             "count_logscore": {"correlated": ls_c, "independent": ls_i},
@@ -302,11 +302,11 @@ def sensitivity(schools, student: Student, sids: list[str]) -> dict:
 
 # ---------------------------------------------------------------------------------------- E7 power
 def e7_backtest_power(schools, sizes=(25, 50, 100, 200, 400), reps=150, seed=0, informed: bool = False) -> dict:
-    """How many past students does BKTST need before 'UNIMATH beat my calls' is distinguishable from luck?
+    """How many past students does BKTST need before 'Calliper beat my calls' is distinguishable from luck?
 
-    Simulated counselor: knows each student's non-test strength (noisy rating, sd 0.6) - information UNIMATH's
+    Simulated counselor: knows each student's non-test strength (noisy rating, sd 0.6) - information Calliper's
     score-only forecast lacks - but reports only reach (<20%), target (20-60%) or likely (>60%) labels.
-    UNIMATH: default parameters, scores only. Scoring exactly as BKTST: labels -> leave-one-student-out label
+    Calliper: default parameters, scores only. Scoring exactly as BKTST: labels -> leave-one-student-out label
     rates; Brier difference with a student-cluster bootstrap 95% CI.
     """
     from .fit import predict_marginal
@@ -322,7 +322,7 @@ def e7_backtest_power(schools, sizes=(25, 50, 100, 200, 400), reps=150, seed=0, 
             p_c_full = predict_marginal(M, o)                      # counselor's private, informed estimate
             calls = np.where(p_c_full < 0.2, 0, np.where(p_c_full < 0.6, 1, 2))
             blind = Outcomes(o.student, o.school, o.ebrw, o.math, o.code, np.full(len(o), np.nan), o.submitted)
-            # UNIMATH: scores only, or (informed=True) scores + the counselor's own holistic rating via HOL
+            # Calliper: scores only, or (informed=True) scores + the counselor's own holistic rating via HOL
             p_u = predict_marginal(M, o if informed else blind)
             if informed:
                 # counselor's rating is a separate noisy read, not the same one used for their labels
@@ -340,7 +340,7 @@ def e7_backtest_power(schools, sizes=(25, 50, 100, 200, 400), reps=150, seed=0, 
             diffs.append(d["diff"])
             wins += d["ci95"][1] < 0
             losses += d["ci95"][0] > 0
-        out[str(n)] = {"p_unimath_significantly_better": wins / reps, "p_counselor_significantly_better": losses / reps,
+        out[str(n)] = {"p_calliper_significantly_better": wins / reps, "p_counselor_significantly_better": losses / reps,
                        "p_inconclusive": 1 - (wins + losses) / reps, "mean_diff": float(np.mean(diffs))}
         print("power", n, out[str(n)], flush=True)
     return out

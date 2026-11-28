@@ -1,7 +1,7 @@
 """Build product/reports/calliper-technical-note-v1.pdf: a 2-page technical note sent with outreach emails.
 
 Uses only the standard PDF fonts (Times, Symbol) and a vector figure, so the file stays small enough to attach.
-All example numbers are computed live from the toolkit.
+All example numbers are computed live from the engine.
 """
 import sys
 from pathlib import Path
@@ -19,8 +19,8 @@ from reportlab.platypus import KeepTogether, Paragraph, SimpleDocTemplate, Space
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from unimath.catalog import load_catalog  # noqa: E402
-from unimath.model import AdmissionModel, Student  # noqa: E402
+from calliper.catalog import load_catalog  # noqa: E402
+from calliper.model import AdmissionModel, Student  # noqa: E402
 
 OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT.parent / "reports" / "calliper-technical-note-v1.pdf"
 

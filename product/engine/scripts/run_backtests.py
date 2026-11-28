@@ -6,9 +6,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from unimath import backtest as bt  # noqa: E402
-from unimath.catalog import curated_only, load_catalog  # noqa: E402
-from unimath.model import Student  # noqa: E402
+from calliper import backtest as bt  # noqa: E402
+from calliper.catalog import curated_only, load_catalog  # noqa: E402
+from calliper.model import Student  # noqa: E402
 
 schools = curated_only(load_catalog())
 sim_csv = ROOT / "data" / "similarity.csv"

@@ -11,12 +11,12 @@ from scipy.special import ndtr
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from unimath.catalog import SIMILARITY, load_catalog, validate  # noqa: E402
-from unimath.fit import Outcomes, marginal_loglik, simulate  # noqa: E402
-from unimath.model import AdmissionModel, ModelParams, Student  # noqa: E402
-from unimath.planner import greedy_only, plan  # noqa: E402
-from unimath.scores import CompositeDist, fit_band, fit_school  # noqa: E402
-from unimath.similarity import SimilarityEngine  # noqa: E402
+from calliper.catalog import SIMILARITY, load_catalog, validate  # noqa: E402
+from calliper.fit import Outcomes, marginal_loglik, simulate  # noqa: E402
+from calliper.model import AdmissionModel, ModelParams, Student  # noqa: E402
+from calliper.planner import greedy_only, plan  # noqa: E402
+from calliper.scores import CompositeDist, fit_band, fit_school  # noqa: E402
+from calliper.similarity import SimilarityEngine  # noqa: E402
 
 CAT = load_catalog()
 
@@ -181,20 +181,20 @@ def test_catalog_validation_flags_known_gaps():
                                  "HELP", "UPDT", "SENS", "BKTST examples/past_class_demo.csv",
                                  "ROSTER examples/caseload_demo.csv", "BRIEF family", "ED tufts 0.2"])
 def test_cli_commands_run(cmd):
-    r = subprocess.run([sys.executable, "-m", "unimath.cli", "-p", str(ROOT / "examples" / "profile.toml"), *cmd.split()],
+    r = subprocess.run([sys.executable, "-m", "calliper.cli", "-p", str(ROOT / "examples" / "profile.toml"), *cmd.split()],
                        cwd=ROOT, capture_output=True, text=True, timeout=120)
     assert r.returncode == 0 and "error:" not in r.stdout, r.stdout + r.stderr
 
 
 def test_cli_json_is_parseable():
-    r = subprocess.run([sys.executable, "-m", "unimath.cli", "-p", str(ROOT / "examples" / "profile.toml"), "--json", "CHNC"],
+    r = subprocess.run([sys.executable, "-m", "calliper.cli", "-p", str(ROOT / "examples" / "profile.toml"), "--json", "CHNC"],
                        cwd=ROOT, capture_output=True, text=True, timeout=60)
     assert isinstance(json.loads(r.stdout), list)
 
 
 def test_ledger_detects_tampering(tmp_path):
     led, out = tmp_path / "l.jsonl", tmp_path / "o.csv"
-    run = lambda *a: subprocess.run([sys.executable, "-m", "unimath.cli", "-p", str(ROOT / "examples" / "profile.toml"), *a],  # noqa: E731
+    run = lambda *a: subprocess.run([sys.executable, "-m", "calliper.cli", "-p", str(ROOT / "examples" / "profile.toml"), *a],  # noqa: E731
                                     cwd=ROOT, capture_output=True, text=True, timeout=60).stdout
     run("LEDGER", str(led), "alex")
     out.write_text("student,school,decision\nalex,purdue,accepted\nalex,mit,rejected\n")
@@ -219,7 +219,7 @@ def test_scorecard_placeholder_supplements_cost_effort_but_no_reuse():
 
 
 def test_family_brief_has_no_percentages():
-    r = subprocess.run([sys.executable, "-m", "unimath.cli", "-p", str(ROOT / "examples" / "profile.toml"), "--json", "BRIEF", "family"],
+    r = subprocess.run([sys.executable, "-m", "calliper.cli", "-p", str(ROOT / "examples" / "profile.toml"), "--json", "BRIEF", "family"],
                        cwd=ROOT, capture_output=True, text=True, timeout=60)
     text = " ".join(json.loads(r.stdout)["brief"])
     assert "%" not in text and "1 in" not in text

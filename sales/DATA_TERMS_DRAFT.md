@@ -1,6 +1,6 @@
-# UNIMATH data terms (DRAFT: for the founder to review with counsel before use)
+# Calliper data terms (DRAFT: for the founder to review with counsel before use)
 
-1. **Default is local.** UNIMATH runs entirely on the counselor's own computer. No student data leaves it unless the
+1. **Default is local.** Calliper runs entirely on the counselor's own computer. No student data leaves it unless the
    counselor explicitly opts in to item 3.
 2. **Minimum fields.** The tool needs: an internal student ID chosen by the counselor (no names), SAT section scores,
    the counselor's 0-100 rating, the school list, and decisions. It never asks for names, emails, high school, address,

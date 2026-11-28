@@ -11,8 +11,8 @@ import numpy as np
 from common import CANDIDATES, IDS, LIST, OUT, ROOT, SHORT, SUBMITTED, ENGINE, load, save
 
 sys.path.insert(0, str(ENGINE))
-from unimath import model as um  # noqa: E402
-from unimath.model import AdmissionModel, Student  # noqa: E402
+from calliper import model as um  # noqa: E402
+from calliper.model import AdmissionModel, Student  # noqa: E402
 
 STUDENT = {"name": "John Smith (fictional)", "ebrw": 700, "math": 720}
 ED = "tufts"

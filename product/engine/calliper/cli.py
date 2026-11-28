@@ -1,8 +1,8 @@
-"""UNIMATH terminal. Bloomberg-style mnemonics, dense amber tables, a stateful REPL.
+"""Calliper terminal. Bloomberg-style mnemonics, dense amber tables, a stateful REPL.
 
-  unimath                         interactive terminal
-  unimath CHNC -p profile.toml    one-shot command (any mnemonic), scriptable
-  unimath CHNC -p profile.toml --json
+  calliper                         interactive terminal
+  calliper CHNC -p profile.toml    one-shot command (any mnemonic), scriptable
+  calliper CHNC -p profile.toml --json
 """
 from __future__ import annotations
 
@@ -633,7 +633,7 @@ class Terminal:
         print(AMB(f"  graded {len(pairs)} of {len(recs)} frozen forecasts"))
 
     def cmd_BKTST(self, args):
-        """BKTST <past_class.csv>  score the counselor's own reach/target/likely calls vs UNIMATH on real past outcomes"""
+        """BKTST <past_class.csv>  score the counselor's own reach/target/likely calls vs Calliper on real past outcomes"""
         import csv as _csv
         from .significance import cluster_bootstrap_diff
         from .fit import auc, brier
@@ -663,25 +663,25 @@ class Terminal:
         base = np.array([self.model.cal[r["school_id"]].rate for r in rows])
         d = cluster_bootstrap_diff((p_u - y) ** 2, (p_c - y) ** 2, stu)
         res = {"n_apps": len(rows), "n_students": int(len(set(stu))),
-               "brier": {"unimath": brier(p_u, y), "counselor_calls": brier(p_c, y), "acceptance_rate": brier(base, y)},
-               "auc": {"unimath": auc(p_u, y), "counselor_calls": auc(p_rank, y)}, "unimath_minus_counselor": d}
+               "brier": {"calliper": brier(p_u, y), "counselor_calls": brier(p_c, y), "acceptance_rate": brier(base, y)},
+               "auc": {"calliper": auc(p_u, y), "counselor_calls": auc(p_rank, y)}, "calliper_minus_counselor": d}
         if self.out(res):
             return
         header("BKTST", "YOUR PAST CLASS: WHOSE ODDS WERE BETTER?", f"{len(rows)} apps / {len(set(stu))} students")
         table([("FORECAST", 26, "<"), ("BRIER", 9, ">"), ("AUC", 8, ">")],
-              [["UNIMATH", f"{res['brier']['unimath']:.4f}", f"{res['auc']['unimath']:.3f}"],
+              [["Calliper", f"{res['brier']['calliper']:.4f}", f"{res['auc']['calliper']:.3f}"],
                ["your reach/target/likely", f"{res['brier']['counselor_calls']:.4f}", f"{res['auc']['counselor_calls']:.3f}"],
                ["acceptance rate only", f"{res['brier']['acceptance_rate']:.4f}", "-"]])
         better = d["ci95"][1] < 0
         worse = d["ci95"][0] > 0
-        verdict = ("UNIMATH was more accurate, and not by luck" if better else "your calls were more accurate"
+        verdict = ("Calliper was more accurate, and not by luck" if better else "your calls were more accurate"
                    if worse else "no clear winner: the difference is within what luck could produce")
         print(WHT(f"  difference {d['diff']:+.4f} (95% CI {d['ci95'][0]:+.4f} to {d['ci95'][1]:+.4f}, p={d['p']:.3f}): ") + AMB(verdict))
         note("  lower Brier = better. Your labels are turned into probabilities using how often each label actually got in.")
 
     def cmd_HELP(self, args):
         """HELP                  this screen"""
-        header("HELP", "UNIMATH FUNCTIONS", "<CMD> [args]  then <GO>/Enter")
+        header("HELP", "CALLIPER FUNCTIONS", "<CMD> [args]  then <GO>/Enter")
         for name in sorted(n for n in dir(self) if n.startswith("cmd_")):
             doc = getattr(self, name).__doc__.strip().splitlines()[0]
             code, _, rest = doc.partition(" ")
@@ -708,8 +708,8 @@ class Terminal:
 def main(argv=None):
     import signal
     if hasattr(signal, "SIGPIPE"):
-        signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # `unimath CHNC | head` shouldn't traceback
-    ap = argparse.ArgumentParser(prog="unimath", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+        signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # `calliper CHNC | head` shouldn't traceback
+    ap = argparse.ArgumentParser(prog="calliper", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("command", nargs="*", help="mnemonic + args, e.g. CHNC mit stanford")
     ap.add_argument("-p", "--profile", help="TOML profile (see examples/)")
     ap.add_argument("--catalog", help="alternate catalog.json")
@@ -722,10 +722,10 @@ def main(argv=None):
     if a.command:
         term.run(" ".join(shlex.quote(x) for x in a.command))
         return
-    header("UNIMATH", "ADMISSIONS ANALYTICS TERMINAL", "HELP for functions · Q to quit")
+    header("CALLIPER", "ADMISSIONS ANALYTICS TERMINAL", "HELP for functions · Q to quit")
     while True:
         try:
-            line = input(AMB("UNIMATH> ") if COLOR else "UNIMATH> ")
+            line = input(AMB("CALLIPER> ") if COLOR else "CALLIPER> ")
         except (EOFError, KeyboardInterrupt):
             print()
             break

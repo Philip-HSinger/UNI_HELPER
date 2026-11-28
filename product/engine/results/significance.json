@@ -65,15 +65,15 @@
     "auc": 0.9413952383269163,
     "p_vs_random": 0.0
    },
-   "unimath (default priors)": {
+   "calliper (default priors)": {
     "auc": 0.9468019492961727,
     "p_vs_random": 0.0
    },
-   "unimath (fitted)": {
+   "calliper (fitted)": {
     "auc": 0.9483384062930915,
     "p_vs_random": 0.0
    },
-   "unimath fitted + other decisions (LOO posterior)": {
+   "calliper fitted + other decisions (LOO posterior)": {
     "auc": 0.9691678335473818,
     "p_vs_random": 0.0
    }
@@ -81,9 +81,9 @@
   "brier": {
    "base rate": 0.075684122807,
    "logistic on z-score": 0.05501283167598365,
-   "unimath (default priors)": 0.05433000656126458,
-   "unimath (fitted)": 0.05102348006152406,
-   "unimath fitted + other decisions (LOO posterior)": 0.038698189200177896,
+   "calliper (default priors)": 0.05433000656126458,
+   "calliper (fitted)": 0.05102348006152406,
+   "calliper fitted + other decisions (LOO posterior)": 0.038698189200177896,
    "coin flip (0.5)": 0.25
   },
   "fitted_vs_base": {
@@ -219,19 +219,19 @@
       "auc": 0.9429897865395884,
       "ece": 0.00908985092102293
      },
-     "unimath (default priors)": {
+     "calliper (default priors)": {
       "brier": 0.05203520605178039,
       "log_loss": 0.1677922201887523,
       "auc": 0.9468354121404674,
       "ece": 0.021250287337828737
      },
-     "unimath (fitted)": {
+     "calliper (fitted)": {
       "brier": 0.04903154399849012,
       "log_loss": 0.16054807089161463,
       "auc": 0.9485460210787451,
       "ece": 0.00809235782290688
      },
-     "unimath fitted + other decisions (LOO posterior)": {
+     "calliper fitted + other decisions (LOO posterior)": {
       "brier": 0.03810053495282555,
       "log_loss": 0.12618365670845247,
       "auc": 0.9661894529265826,
@@ -260,19 +260,19 @@
       "auc": 0.9430315045797982,
       "ece": 0.005302842107338617
      },
-     "unimath (default priors)": {
+     "calliper (default priors)": {
       "brier": 0.05532856648800336,
       "log_loss": 0.17487759151149312,
       "auc": 0.9479747055843991,
       "ece": 0.025615075682819774
      },
-     "unimath (fitted)": {
+     "calliper (fitted)": {
       "brier": 0.05210361455603818,
       "log_loss": 0.1663411048634752,
       "auc": 0.9490847823276771,
       "ece": 0.0034090867277497337
      },
-     "unimath fitted + other decisions (LOO posterior)": {
+     "calliper fitted + other decisions (LOO posterior)": {
       "brier": 0.03721101594241932,
       "log_loss": 0.1205509348110946,
       "auc": 0.9739165354195686,
@@ -301,19 +301,19 @@
       "auc": 0.9427923611111111,
       "ece": 0.008172761394434251
      },
-     "unimath (default priors)": {
+     "calliper (default priors)": {
       "brier": 0.05145058286444382,
       "log_loss": 0.16620039865893171,
       "auc": 0.9477478298611111,
       "ece": 0.02161762490758973
      },
-     "unimath (fitted)": {
+     "calliper (fitted)": {
       "brier": 0.04891875850151505,
       "log_loss": 0.15962569016081055,
       "auc": 0.9487112847222222,
       "ece": 0.002490074468949997
      },
-     "unimath fitted + other decisions (LOO posterior)": {
+     "calliper fitted + other decisions (LOO posterior)": {
       "brier": 0.038730857670491774,
       "log_loss": 0.126890435615283,
       "auc": 0.9673360243055555,
@@ -342,19 +342,19 @@
       "auc": 0.9394762712857148,
       "ece": 0.004972681559647912
      },
-     "unimath (default priors)": {
+     "calliper (default priors)": {
       "brier": 0.057670730401024536,
       "log_loss": 0.18200504354974686,
       "auc": 0.9465511304729197,
       "ece": 0.026360653227681972
      },
-     "unimath (fitted)": {
+     "calliper (fitted)": {
       "brier": 0.05324145898413993,
       "log_loss": 0.17061773583510023,
       "auc": 0.9493136298828614,
       "ece": 0.005015229246617832
      },
-     "unimath fitted + other decisions (LOO posterior)": {
+     "calliper fitted + other decisions (LOO posterior)": {
       "brier": 0.03997684153360049,
       "log_loss": 0.12861259771293998,
       "auc": 0.9715798676974651,
@@ -383,19 +383,19 @@
       "auc": 0.9392101689785826,
       "ece": 0.007398118612266768
      },
-     "unimath (default priors)": {
+     "calliper (default priors)": {
       "brier": 0.05516494700107083,
       "log_loss": 0.1760405617559195,
       "auc": 0.9446967796442564,
       "ece": 0.02617304650104543
      },
-     "unimath (fitted)": {
+     "calliper (fitted)": {
       "brier": 0.05182202426743699,
       "log_loss": 0.16768442399442196,
       "auc": 0.9457337736160859,
       "ece": 0.004816292684623601
      },
-     "unimath fitted + other decisions (LOO posterior)": {
+     "calliper fitted + other decisions (LOO posterior)": {
       "brier": 0.0394716959015523,
       "log_loss": 0.12935189639771932,
       "auc": 0.9668907735079068,
@@ -424,15 +424,15 @@
     "auc": 0.8373863860285276,
     "p_vs_random": 0.0
    },
-   "unimath (default priors)": {
+   "calliper (default priors)": {
     "auc": 0.8451719432941344,
     "p_vs_random": 0.0
    },
-   "unimath (fitted)": {
+   "calliper (fitted)": {
     "auc": 0.8456397694299846,
     "p_vs_random": 0.0
    },
-   "unimath fitted + other decisions (LOO posterior)": {
+   "calliper fitted + other decisions (LOO posterior)": {
     "auc": 0.9040286525223502,
     "p_vs_random": 0.0
    }
@@ -440,9 +440,9 @@
   "brier": {
    "base rate": 0.092795770922,
    "logistic on z-score": 0.08025079961150593,
-   "unimath (default priors)": 0.07656419837951188,
-   "unimath (fitted)": 0.07414999154441564,
-   "unimath fitted + other decisions (LOO posterior)": 0.06091304200435094,
+   "calliper (default priors)": 0.07656419837951188,
+   "calliper (fitted)": 0.07414999154441564,
+   "calliper fitted + other decisions (LOO posterior)": 0.06091304200435094,
    "coin flip (0.5)": 0.25
   },
   "fitted_vs_base": {
@@ -578,19 +578,19 @@
       "auc": 0.8430272589614275,
       "ece": 0.03761024891253556
      },
-     "unimath (default priors)": {
+     "calliper (default priors)": {
       "brier": 0.07007962641354115,
       "log_loss": 0.2687156762443107,
       "auc": 0.8534282220363988,
       "ece": 0.03383204014535137
      },
-     "unimath (fitted)": {
+     "calliper (fitted)": {
       "brier": 0.06847861310841315,
       "log_loss": 0.24775559858954146,
       "auc": 0.8553148984489019,
       "ece": 0.022700843413592204
      },
-     "unimath fitted + other decisions (LOO posterior)": {
+     "calliper fitted + other decisions (LOO posterior)": {
       "brier": 0.055993267075031196,
       "log_loss": 0.1999235641671373,
       "auc": 0.9117115816981046,
@@ -619,19 +619,19 @@
       "auc": 0.8089728232056846,
       "ece": 0.031158738371656246
      },
-     "unimath (default priors)": {
+     "calliper (default priors)": {
       "brier": 0.07811532958592066,
       "log_loss": 0.30289221020134177,
       "auc": 0.8197528712683916,
       "ece": 0.033771394725863345
      },
-     "unimath (fitted)": {
+     "calliper (fitted)": {
       "brier": 0.07808882403417977,
       "log_loss": 0.2815889141265808,
       "auc": 0.8203895501715702,
       "ece": 0.028198915672754735
      },
-     "unimath fitted + other decisions (LOO posterior)": {
+     "calliper fitted + other decisions (LOO posterior)": {
       "brier": 0.06252098914771387,
       "log_loss": 0.22219611386612104,
       "auc": 0.8895548877102032,
@@ -660,19 +660,19 @@
       "auc": 0.8467408222693831,
       "ece": 0.021425207000625935
      },
-     "unimath (default priors)": {
+     "calliper (default priors)": {
       "brier": 0.07133113744714925,
       "log_loss": 0.27661282047685665,
       "auc": 0.8490423587798545,
       "ece": 0.037855794214306515
      },
-     "unimath (fitted)": {
+     "calliper (fitted)": {
       "brier": 0.07086177806212493,
       "log_loss": 0.2562517438501775,
       "auc": 0.8468519246990487,
       "ece": 0.02253325281527835
      },
-     "unimath fitted + other decisions (LOO posterior)": {
+     "calliper fitted + other decisions (LOO posterior)": {
       "brier": 0.05870812248117517,
       "log_loss": 0.20776920241813293,
       "auc": 0.9046768251622614,
@@ -701,19 +701,19 @@
       "auc": 0.826685982092941,
       "ece": 0.038816631556844367
      },
-     "unimath (default priors)": {
+     "calliper (default priors)": {
       "brier": 0.08577173517454852,
       "log_loss": 0.32832961419654144,
       "auc": 0.8346709798405262,
       "ece": 0.05116093195382069
      },
-     "unimath (fitted)": {
+     "calliper (fitted)": {
       "brier": 0.08122898628317092,
       "log_loss": 0.29556533685445036,
       "auc": 0.8366225030368493,
       "ece": 0.025894712803361652
      },
-     "unimath fitted + other decisions (LOO posterior)": {
+     "calliper fitted + other decisions (LOO posterior)": {
       "brier": 0.0676040510126045,
       "log_loss": 0.23790288320929304,
       "auc": 0.900857337292115,
@@ -742,19 +742,19 @@
       "auc": 0.8636613574922257,
       "ece": 0.0311945111856568
      },
-     "unimath (default priors)": {
+     "calliper (default priors)": {
       "brier": 0.07752316327639984,
       "log_loss": 0.2823904043462427,
       "auc": 0.8683367433045133,
       "ece": 0.04787179524598181
      },
-     "unimath (fitted)": {
+     "calliper (fitted)": {
       "brier": 0.07209175623418947,
       "log_loss": 0.2542196790366259,
       "auc": 0.8693808725731162,
       "ece": 0.015131028887082166
      },
-     "unimath fitted + other decisions (LOO posterior)": {
+     "calliper fitted + other decisions (LOO posterior)": {
       "brier": 0.05973878030522994,
       "log_loss": 0.2074449268718604,
       "auc": 0.9165780688066328,
