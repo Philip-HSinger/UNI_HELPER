@@ -78,4 +78,4 @@ Resume from the first unchecked box; every stage commits its own output.
 - [x] 2. Compute (main session): chance per school (SAT bell-curve fit), new words needed given John's essays, risk of no admissions if added; ranking.
 - [x] 3. Report: "Schools worth a look" panel in the report v3 doc (claude.ai artifact E3kdBYvXXuHbw4DYP4XuKa) + PDF to `product/demo/outputs/`.
 - [x] 4. Pitch sharpening (one agent playing 4 personas: solo private counselor, essay-coaching business, private-school director, public-school counselor) -> `research/report_review/pitch_v4.md`. Conflicts: favour solo IECs and essay coaches, then private schools, then public schools and nonprofits; families last.
-- [ ] 5. Apply the sharpened pitch to the report opening and `sales/` cold email.
+- [x] 5. Apply the sharpened pitch to the report opening and `sales/` cold email.
