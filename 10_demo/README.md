@@ -5,8 +5,9 @@ student (SAT 1420, domestic arts-and-sciences applicant, Early Decision to Tufts
 
 ## Outputs
 
-- `outputs/Calliper_sample_report.pdf`: the report to bring to meetings (6 pages)
-- `outputs/Calliper_sample_report_annotated.pdf`: how every number was derived (10 pages)
+- `outputs/Calliper_report_v3_John_Smith.pdf`: current report, example student John Smith (7 pages)
+- `outputs/Calliper_report_v2_10_schools.pdf`: earlier 10-school version (superseded)
+- `outputs/Calliper_report_v2_10_schools_annotated.pdf`: derivations for the v2 report (10 pages)
 - `outputs/odds.json`, `outputs/essay_plan.json`, `outputs/school_matrix.json`: the numbers behind them
 - `data/similarity_pairs.csv`: every directed prompt pair, both scores, length cap and reuse share
 
