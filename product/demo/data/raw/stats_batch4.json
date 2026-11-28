@@ -1,0 +1,190 @@
+[
+  {
+    "school_id": "nyu",
+    "school": "New York University",
+    "cds_year": "2025-26",
+    "cds_url": "https://www.nyu.edu/content/dam/nyu/institutionalResearch/documents/cds-2025-2026/CDS%202025-2026%20FINAL%20(no%20G).pdf",
+    "applicants": 114125,
+    "admits": 10340,
+    "enrolled": 5662,
+    "admit_rate": 0.0906,
+    "ed_applicants": null,
+    "ed_admits": null,
+    "ed_rate": null,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": 0.27,
+    "pct_submit_act": 0.1,
+    "sat_ebrw": null,
+    "sat_math": null,
+    "sat_composite": [
+      1480,
+      null,
+      1550
+    ],
+    "act_composite": [
+      34,
+      null,
+      35
+    ],
+    "test_importance": "Important",
+    "test_policy_2026_27": "Test-optional",
+    "test_policy_url": "https://meet.nyu.edu/advice/test-optional-at-nyu-what-it-is-and-isnt/",
+    "deadlines": {
+      "ED1": "Nov 1",
+      "ED2": "Jan 1",
+      "EA": null,
+      "RD": "Jan 5"
+    },
+    "deadlines_url": "https://www.collegedata.com/college-search/new-york-university/admission",
+    "notes": "BLOCKED: the CDS PDF on nyu.edu returned HTTP 403 to curl and 405 to the fetch tool, and every nyu.edu page below the home page (CDS index, admissions testing and deadlines pages) was refused the same way, so the CDS was NOT opened and nothing here was read from it. Not worked around. All figures are third-party transcriptions of the 2025-26 CDS: applicants/admits/enrolled (C1, New York campus completed applications only), SAT composite 25th/75th 1480/1550, ACT 34/35, and SAT 27% / ACT 10% submitting are from CollegeTransitions 'NYU inside the numbers' (cites CDS C1/C9); Esslo's transcription (2026-06-25) agrees on 1480-1550, 34-35 and a 9.1% admit rate. No 50th percentile is reported by either, so those entries are null. SAT EBRW/Math are null because third-party sources conflict (720/740/760 and 760/780/800 vs 730/750/770 and 750/780/790). C7 test importance conflicts: CollegeTransitions says 'Important' (2023-26 editions), Esslo says 'Considered'; 'Important' recorded, unverified. ED applicants/admits are not available: NYU communications cite about 25,000 ED applicants for the Class of 2029 but no ED admit count, so ED fields are null. NYU's announced 7.7% rate for the Class of 2029 uses a university-wide pool (>120,000, including Abu Dhabi and Shanghai) and is not used. Test policy: MEET NYU (admissions blog) says testing is welcome but not required; a third-party guide says NYU is test-optional through 2027-28. Deadlines ED I Nov 1, ED II Jan 1, RD Jan 5 are from third-party tables (RD matches CollegeData); not confirmed on an official NYU page because of the block; one MEET NYU student post also gives Jan 1 for ED II. No EA. Re-check every NYU figure against the CDS when it can be opened."
+  },
+  {
+    "school_id": "washu",
+    "school": "Washington University in St. Louis",
+    "cds_year": "2025-26",
+    "cds_url": "https://washu.edu/app/uploads/2026/06/2025-2026-WashU-CDS.pdf",
+    "applicants": 33283,
+    "admits": 3968,
+    "enrolled": 1961,
+    "admit_rate": 0.1192,
+    "ed_applicants": 4934,
+    "ed_admits": 1333,
+    "ed_rate": 0.2702,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": 0.32,
+    "pct_submit_act": 0.29,
+    "sat_ebrw": [
+      730,
+      750,
+      760
+    ],
+    "sat_math": [
+      760,
+      780,
+      790
+    ],
+    "sat_composite": [
+      1500,
+      1530,
+      1550
+    ],
+    "act_composite": [
+      33,
+      34,
+      35
+    ],
+    "test_importance": "Very Important",
+    "test_policy_2026_27": "Test-optional",
+    "test_policy_url": "https://admissions.washu.edu/how-to-apply/first-year-us-applicants/",
+    "deadlines": {
+      "ED1": "Nov 2",
+      "ED2": "Jan 4",
+      "EA": "Nov 2",
+      "RD": "Jan 4"
+    },
+    "deadlines_url": "https://admissions.washu.edu/how-to-apply/first-year-us-applicants/",
+    "notes": "CDS PDF downloaded directly from washu.edu (2025-2026 edition, uploaded 2026-06). C1 totals include 16 applicants and 1 admit of unknown sex; all 1,961 enrollees are full-time. C21 gives one ED figure; ED I (11/2) and ED II (1/4) look combined. C22 lists a non-restrictive EA plan (closing 11/2, notification 12/23) but the CDS gives no EA counts, so EA fields are null. C7 rates test scores 'Very Important' while C8A (Fall 2027) says SAT/ACT 'not required for admission, but considered if submitted' and C8F describes a test-optional policy. Only 32% of enrollees submitted SAT and 29% ACT. The admissions pages say fall 2027 entry: ED I and EA Nov 2, ED II and RD Jan 4; Signature Scholar / scholarship priority deadline Dec 16, 2026."
+  },
+  {
+    "school_id": "tulane",
+    "school": "Tulane University",
+    "cds_year": "2025-26",
+    "cds_url": "https://tulane.box.com/s/1dgaxpa2x2ie24zgglrg0puwm1h7xrt5",
+    "applicants": 32942,
+    "admits": 4763,
+    "enrolled": 1858,
+    "admit_rate": 0.1446,
+    "ed_applicants": 2077,
+    "ed_admits": 1209,
+    "ed_rate": 0.5821,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": 0.11,
+    "pct_submit_act": 0.27,
+    "sat_ebrw": [
+      710,
+      730,
+      750
+    ],
+    "sat_math": [
+      710,
+      730,
+      760
+    ],
+    "sat_composite": [
+      1430,
+      1460,
+      1500
+    ],
+    "act_composite": [
+      32,
+      33,
+      34
+    ],
+    "test_importance": "Important",
+    "test_policy_2026_27": "Test-optional",
+    "test_policy_url": "https://admission.tulane.edu/apply/instructions",
+    "deadlines": {
+      "ED1": "Nov 1",
+      "ED2": "Jan 15",
+      "EA": "Nov 10",
+      "RD": "Jan 15"
+    },
+    "deadlines_url": "https://admission.tulane.edu/apply/instructions",
+    "notes": "CDS index: https://oair.tulane.edu/common-data-set (links to Tulane Box). The file is 'CDS 2025-2026 Final 2026-08-31.pdf' (36 pages), downloaded through Box's public shared-file download link. C1 totals include 8 applicants, 2 admits and 1 enrollee of unknown sex; all 1,858 enrollees are full-time. C21 gives one ED figure; ED I (11/1) and ED II (1/15) look combined. The ED admit rate (58%) is far above the overall 14.5%, so the non-ED pool is much harder (about 11.5%). C22: non-restrictive EA (closing 11/10, notification 1/10), no EA counts in the CDS, so EA fields are null. C8A (Fall 2027): SAT or ACT 'not required for admission, but considered if submitted'. Only 11% of enrollees submitted SAT (27% ACT), so the SAT ranges describe a small subset. The instructions page does not name an entry term; deadlines (ED I Nov 1, EA Nov 10, ED II and RD Jan 15) were assumed current for 2026-27."
+  },
+  {
+    "school_id": "case-western",
+    "school": "Case Western Reserve University",
+    "cds_year": "2025-26",
+    "cds_url": "https://case.edu/ir/sites/default/files/2026-02/CDS%202025-26%20Adjusted%20Final.pdf",
+    "applicants": 39332,
+    "admits": 13890,
+    "enrolled": 1663,
+    "admit_rate": 0.3531,
+    "ed_applicants": 1053,
+    "ed_admits": 263,
+    "ed_rate": 0.2498,
+    "ea_applicants": null,
+    "ea_admits": null,
+    "ea_rate": null,
+    "pct_submit_sat": 0.52,
+    "pct_submit_act": 0.15,
+    "sat_ebrw": [
+      710,
+      730,
+      760
+    ],
+    "sat_math": [
+      730,
+      760,
+      780
+    ],
+    "sat_composite": [
+      1440,
+      1490,
+      1530
+    ],
+    "act_composite": [
+      32,
+      33,
+      34
+    ],
+    "test_importance": "Considered",
+    "test_policy_2026_27": "Test-optional",
+    "test_policy_url": "https://case.edu/admission/apply/first-year-applicants",
+    "deadlines": {
+      "ED1": "Nov 1",
+      "ED2": "Jan 15",
+      "EA": "Nov 1",
+      "RD": "Jan 15"
+    },
+    "deadlines_url": "https://case.edu/admission/apply/first-year-applicants",
+    "notes": "CDS PDF downloaded directly from case.edu/ir (file 'CDS 2025-26 Adjusted Final', posted 2026-02; the reason for the adjustment is not stated). All 1,663 enrollees are full-time. C21 lists only one ED plan (closing 11/1, notification 12/5) with no 'other' ED date, although the admissions page lists ED II on Jan 15; the 1,053 ED applicants / 263 admits (ED rate 25.0%, below the overall 35.3%; the CDS does not explain this) are reported as given. C22: non-restrictive EA (closing 11/1, notification 12/21); no EA counts in the CDS, so EA fields are null. Most admits come through EA/RD, so the overall 35.3% rate is the relevant one for non-ED applicants. C8A (Fall 2027): SAT/ACT 'not required for admission, but considered if submitted'; C8E latest score date Jan 15. Admissions page: EA and ED I Nov 1, ED II and RD Jan 15, PPSP Dec 1; no entry term named (assumed fall 2027)."
+  }
+]
