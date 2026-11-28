@@ -7,6 +7,7 @@ Outreach material for counselors and schools.
 | `calliper-overview-v1.pdf` | Overview a prospect receives: the three features and what is available now (built by `product/engine/scripts/make_pitch_docs.py`) |
 | `calliper-overview-email-v1.pdf` | Lightweight version of the overview for email attachments |
 | `pitch-email-v1.md`, `-v2.md`, `-v3.md` | Early pitch-email drafts, written while the product was still called UNIMATH (kept as written) |
+| `pitch-email-v4-private-counselor.md`, `pitch-email-v4-essay-coach.md` | Current cold emails (under 120 words), from `research/report_review/pitch_v4.md` |
 | `DATA_TERMS_DRAFT.md` | Data terms draft, to review with a lawyer before use |
 | `leads/` | What a lead record contains. Real contact data is kept outside this repo. |
 
