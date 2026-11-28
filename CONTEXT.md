@@ -69,3 +69,13 @@ Two things are being sold:
 - Verify before committing: `pytest` in `product/engine` and `product/demo/run_all.sh`; `outputs/odds.json` should not
   change unless the model or data changed on purpose.
 - Personas in `research/` are fictional. Do not invent numbers; take them from the research and results files.
+
+## Pipeline in progress: discovery panel + pitch sharpening (started 2026-11-28)
+
+Resume from the first unchecked box; every stage commits its own output.
+
+- [ ] 1. Data + scoring (one agent): 2026-27 prompts and CDS data for NYU, WashU, Tulane, Case Western into `product/demo/data/raw/` (prompts_<id>.json, stats_batch4.json); one-pass overlap scores of each new prompt against John's 14 planned essays into `product/demo/data/scores/discovery_scores.json`.
+- [ ] 2. Compute (main session): chance per school (SAT bell-curve fit), new words needed given John's essays, risk of no admissions if added; ranking.
+- [ ] 3. Report: "Schools worth a look" panel in the report v3 doc (claude.ai artifact E3kdBYvXXuHbw4DYP4XuKa) + PDF to `product/demo/outputs/`.
+- [ ] 4. Pitch sharpening (one agent playing 4 personas: solo private counselor, essay-coaching business, private-school director, public-school counselor) -> `research/report_review/pitch_v4.md`. Conflicts: favour solo IECs and essay coaches, then private schools, then public schools and nonprofits; families last.
+- [ ] 5. Apply the sharpened pitch to the report opening and `sales/` cold email.
