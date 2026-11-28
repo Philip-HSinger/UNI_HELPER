@@ -1,4 +1,4 @@
-"""Build reports/UNIMATH_feature_build_spec.pdf (internal, for the developer): the three features being sold, how
+"""Build product/reports/calliper-feature-build-spec-v1.pdf (internal, for the developer): the three features being sold, how
 each is calculated, what exists in the code, and the build spec for what's missing.
 
     python scripts/make_offer.py
@@ -30,9 +30,9 @@ from unimath.catalog import SIMILARITY, load_catalog  # noqa: E402
 from unimath.model import AdmissionModel, Student  # noqa: E402
 from unimath.similarity import SimilarityEngine  # noqa: E402
 
-FIG = ROOT / "reports" / "figures" / "offer"
+FIG = ROOT / "results" / "figures" / "offer"
 FIG.mkdir(parents=True, exist_ok=True)
-OUT = ROOT / "reports" / "UNIMATH_feature_build_spec.pdf"
+OUT = ROOT.parent / "reports" / "calliper-feature-build-spec-v1.pdf"
 
 # ------------------------------------------------------------------------------------------------ numbers
 CAT = load_catalog()
@@ -530,7 +530,7 @@ bullets(["<b>Sample:</b> 200 test pairs, stratified by LLM score (40 from each 2
          "and mean absolute difference; LLM vs rater-mean Spearman ρ<sub>LH</sub> and MAE<sub>LH</sub>; the same for a "
          "constant guess (the rater mean, leave-one-out) and for the old heuristic. It reuses "
          "<font face='DVM'>significance.cluster_bootstrap_diff</font> (cluster on target prompt, since pairs share "
-         "prompts) and <font face='DVM'>permutation_spearman</font>. Results go in reports/matrix_validation.json and a "
+         "prompts) and <font face='DVM'>permutation_spearman</font>. Results go in results/matrix_validation.json and a "
          "rerun of experiment E5."])
 P("Gate G1:  MAE<sub>LH</sub> &lt; MAE<sub>constant</sub>, with the 95% cluster-bootstrap CI of the difference below 0<br/>"
   "Gate G2:  ρ<sub>LH</sub> ≥ ρ<sub>HH</sub> − 0.05 (the LLM agrees with counselors about as well as they agree with each other)<br/>"
@@ -660,7 +660,7 @@ table([["Step", "Work", "Size", "Done when"],
         "grid as p_none_range. UPDT prints 'lo-hi (central)'; BRIEF uses the range.", "1 day",
         "Test: range brackets the central value; it collapses when γ and sd are fixed"],
        ["2. Data", "De-identified past results from 3-10 practices. Extend the FIT outcomes CSV with round (ED, EA, REA, "
-        "RD, ED2) and year. Target 300+ students with full lists. Data terms draft: reports/DATA_TERMS_DRAFT.md.",
+        "RD, ED2) and year. Target 300+ students with full lists. Data terms draft: sales/DATA_TERMS_DRAFT.md.",
         "Depends on partners", "Files received; DQ passes"],
        ["3. How much data?", "scripts/power_shared.py: simulate N students from the default settings (fit.simulate), "
         "refit, record the SE of shared_fit and holistic sd for N = 100 ... 1000. Pick N where SE(γ) ≤ 0.08.",

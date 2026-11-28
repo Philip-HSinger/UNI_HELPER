@@ -1,4 +1,4 @@
-"""Run the full validation suite and write reports/backtest_results.json (feeds the PDF)."""
+"""Run the full validation suite and write results/backtest_results.json (feeds the PDF)."""
 import json
 import sys
 import time
@@ -20,5 +20,5 @@ out["e3_well"] = bt.e3_e4_predictive(schools, misspecified=False); print("e3w", 
 out["e3_miss"] = bt.e3_e4_predictive(schools, misspecified=True); print("e3m", time.time() - t0, flush=True)
 out["e2"] = bt.e2_recovery(schools, reps=6); print("e2", time.time() - t0, flush=True)
 out["sens"] = bt.sensitivity(schools, Student(750, 790), ["mit", "stanford", "cmu", "georgia-tech", "purdue"])
-(ROOT / "reports" / "backtest_results.json").write_text(json.dumps(out, indent=1))
+(ROOT / "results" / "backtest_results.json").write_text(json.dumps(out, indent=1))
 print("done", time.time() - t0)

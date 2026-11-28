@@ -1,5 +1,5 @@
 """Significance of every backtest claim: multi-seed E3/E4, 20-rep E2, exact/permutation tests.
-Writes reports/significance.json."""
+Writes results/significance.json."""
 import json
 import sys
 import time
@@ -14,7 +14,7 @@ from unimath import significance as sg  # noqa: E402
 from unimath.catalog import curated_only, load_catalog  # noqa: E402
 
 CAT = curated_only(load_catalog())
-R = json.loads((ROOT / "reports" / "backtest_results.json").read_text())
+R = json.loads((ROOT / "results" / "backtest_results.json").read_text())
 out, t0 = {}, time.time()
 
 # ---- C1 band fit: paired across simulated bands
@@ -86,7 +86,7 @@ for world, mis in (("well", False), ("miss", True)):
                          "correlated": sg.poisson_binomial_test(1 - pc[m], k0)}
     res["per_seed"] = pooled["per_seed"]
     out[f"pred_{world}"] = res
-    (ROOT / "reports" / "significance.json").write_text(json.dumps(out, indent=1))
+    (ROOT / "results" / "significance.json").write_text(json.dumps(out, indent=1))
 
 # ---- C5 parameter recovery with 20 replications
 e2 = bt.e2_recovery(CAT, reps=20)
@@ -96,5 +96,5 @@ for k_, v in e2.items():
     est = np.array(v["estimates"])
     v["bias_t_p"] = float(__import__("scipy").stats.ttest_1samp(est, v["true"]).pvalue)
 out["c5"] = e2
-(ROOT / "reports" / "significance.json").write_text(json.dumps(out, indent=1))
+(ROOT / "results" / "significance.json").write_text(json.dumps(out, indent=1))
 print("done", time.time() - t0)

@@ -1,4 +1,4 @@
-"""Build reports/UNIMATH_product_plan.pdf: one page per feature (how it works, benefit, build, test, sell)."""
+"""Build product/reports/calliper-product-plan-v1.pdf: one page per feature (how it works, benefit, build, test, sell)."""
 from pathlib import Path
 
 from reportlab.lib import colors
@@ -10,7 +10,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "reports" / "UNIMATH_product_plan.pdf"
+OUT = ROOT.parent / "reports" / "calliper-product-plan-v1.pdf"
 F = "/usr/share/fonts/truetype/dejavu/"
 pdfmetrics.registerFont(TTFont("DV", F + "DejaVuSans.ttf"))
 pdfmetrics.registerFont(TTFont("DVB", F + "DejaVuSans-Bold.ttf"))

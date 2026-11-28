@@ -1,4 +1,4 @@
-"""Build reports/UNIMATH_methods_manual.pdf from backtest results + figures.
+"""Build product/reports/calliper-methods-manual-v1.pdf from backtest results + figures.
 
 Run order:  python scripts/run_backtests.py && python scripts/make_figures.py && python scripts/make_report.py
 """
@@ -17,10 +17,10 @@ from reportlab.platypus import (Image, KeepTogether, PageBreak, Paragraph, Simpl
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-R = json.loads((ROOT / "reports" / "backtest_results.json").read_text())
-SIG0 = json.loads((ROOT / "reports" / "significance.json").read_text())
-FIG = ROOT / "reports" / "figures"
-OUT = ROOT / "reports" / "UNIMATH_methods_manual.pdf"
+R = json.loads((ROOT / "results" / "backtest_results.json").read_text())
+SIG0 = json.loads((ROOT / "results" / "significance.json").read_text())
+FIG = ROOT / "results" / "figures"
+OUT = ROOT.parent / "reports" / "calliper-methods-manual-v1.pdf"
 
 AMBER = colors.HexColor("#d98a00")
 INK = colors.HexColor("#1d1d1d")
@@ -154,7 +154,7 @@ story.append(PageBreak())
 
 
 # ------------------------------------------------------------------------------------------ claims register
-SIG = json.loads((ROOT / "reports" / "significance.json").read_text())
+SIG = json.loads((ROOT / "results" / "significance.json").read_text())
 
 
 def pf(p):
@@ -341,7 +341,7 @@ claim("9", "Any of this predicts real students better than existing tools",
       "UNTESTED", "unknown. This is the claim buyers care about most.",
       "Until this is tested, all accuracy statements should be framed as 'on simulated data'.")
 
-PWR = json.loads((ROOT / "reports" / "power.json").read_text())
+PWR = json.loads((ROOT / "results" / "power.json").read_text())
 so, wc = PWR["scores_only"], PWR["with_counselor_rating"]
 claim("10", "UNIMATH beats a counselor's own reach/target/likely calls, and one class can show it",
       "Simulated counselor with private, noisy knowledge of non-test strength (sd 0.6) reports 3 labels. BKTST "
@@ -363,7 +363,7 @@ story.append(PageBreak())
 
 
 # ------------------------------------------------------------------------------------------ persuasion loop
-LOOP = ROOT / "reports" / "loop"
+LOOP = ROOT.parents[1] / "research" / "persuasion-loop"
 if LOOP.exists():
     P("C. The persuasion loop: fresh AI buyer and builder, round by round", H1)
     P("<b>Method.</b> Each round, two brand-new subagents with no memory of earlier rounds read only that round's sales "

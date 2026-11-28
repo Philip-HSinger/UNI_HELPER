@@ -6,8 +6,8 @@ student (SAT 1420, domestic arts-and-sciences applicant, Early Decision to Tufts
 ## Outputs
 
 - `outputs/Calliper_report_v3_John_Smith.pdf`: current report, example student John Smith (7 pages)
-- `outputs/Calliper_report_v2_10_schools.pdf`: earlier 10-school version (superseded)
-- `outputs/Calliper_report_v2_10_schools_annotated.pdf`: derivations for the v2 report (10 pages)
+- The earlier 10-school version (v2) and its annotated derivations (10 pages) are superseded and kept in
+  `archive/superseded/` at the repository root
 - `outputs/odds.json`, `outputs/essay_plan.json`, `outputs/school_matrix.json`: the numbers behind them
 - `data/similarity_pairs.csv`: every directed prompt pair, both scores, length cap and reuse share
 
@@ -21,7 +21,7 @@ student (SAT 1420, domestic arts-and-sciences applicant, Early Decision to Tufts
 | 4. Merge, apply corrections and recorded decisions | `scripts/s1_merge.py` | `data/prompts.json`, `data/schools.json` |
 | 5. Score every cross-school prompt pair, both directions | 2 independent agents, `scripts/rubric.md` | `data/scores/scorer_A.json`, `scorer_B.json` |
 | 6. Agreement, length cap, matrix, best writing order | `scripts/s3_matrix.py` | `essay_plan.json`, `similarity_pairs.csv` |
-| 7. Odds and Bayesian updates after Early Decision | `scripts/s4_odds.py` (toolkit `AdmissionModel`) | `odds.json` |
+| 7. Odds and Bayesian updates after Early Decision | `scripts/s4_odds.py` (engine `AdmissionModel`, `product/engine`) | `odds.json` |
 | 8. Audit everything | independent reviewer agent | `data/verify/pipeline_review.md` |
 
 Steps 4, 6 and 7 rerun with `./run_all.sh`. The example student's eligibility (which prompts apply) and the optional

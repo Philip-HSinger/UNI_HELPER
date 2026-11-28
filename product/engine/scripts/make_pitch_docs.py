@@ -1,6 +1,6 @@
 """Build the two documents for the pitch simulation:
-  reports/UNIMATH_market_analysis.pdf  - would this sell, to whom, for what, at what price
-  reports/UNIMATH_offer.pdf            - the offer a prospect receives (truthful about what exists today)
+  product/reports/calliper-market-analysis-v1.pdf  - would this sell, to whom, for what, at what price
+  sales/calliper-overview-v1.pdf                   - the overview a prospect receives (truthful about what exists today)
 """
 from pathlib import Path
 
@@ -140,7 +140,7 @@ m.p("Sources: IECA State of the Profession 2022 (iecaonline.com) and IECA profes
     "centre, Essay Stack Planner; CollegeApply AI on Product Hunt; CollegePlannerPro plans page; Applerouth, citing IECA "
     "(lower count: 6,000+ full-time). Counselor numbers differ between IECA sources; fee data is from 2022. Segment "
     "prices and adoption rates are estimates, not survey results.", SM)
-m.build(ROOT / "reports" / "UNIMATH_market_analysis.pdf", "UNIMATH market analysis")
+m.build(ROOT.parent / "reports" / "calliper-market-analysis-v1.pdf", "UNIMATH market analysis")
 
 # ================================================================================================ offer
 o = Doc()
@@ -191,4 +191,4 @@ o.p("Send a typical college list from your practice and an SAT score, with no re
     "one-page sample report within a few days: the odds, the list's real risk of no admits, and how an early result "
     "would change them.", BOX)
 o.p("Calliper · 69 Brown Street #7457, Providence, RI 02912 · calliper@agentmail.to", SM)
-o.build(ROOT / "reports" / "Calliper_overview.pdf", "Calliper overview")
+o.build(ROOT.parents[1] / "sales" / "calliper-overview-v1.pdf", "Calliper overview")

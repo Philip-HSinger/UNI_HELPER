@@ -4,7 +4,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW, VERIFY, SCORES, OUT = ROOT / "data" / "raw", ROOT / "data" / "verify", ROOT / "data" / "scores", ROOT / "outputs"
-TOOLKIT = ROOT.parent / "toolkit"
+ENGINE = ROOT.parent / "engine"  # product/engine: the Calliper Python package
 
 SCHOOLS = [  # order used in every table
     ("tufts", "Tufts"),

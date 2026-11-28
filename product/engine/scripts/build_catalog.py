@@ -1,6 +1,6 @@
-"""Build toolkit/data/catalog.json + toolkit/data/similarity.csv from the repo's curated sources.
+"""Build product/engine/data/catalog.json + similarity.csv from the repo's curated sources.
 
-Sources (both already in this repo):
+Sources (both kept with the archived web app, archive/old-web-app/):
   supabase/seed_source.schools.json   - the 19-school seed
   supabase/update_five_schools.sql    - researched 2026-27 corrections (MIT, Princeton, Stanford,
                                         Georgia Tech, Purdue) + the first curated similarity pairs
@@ -8,7 +8,7 @@ Sources (both already in this repo):
 Prompt ids use the exact same slug scheme as scripts/generate_seed_sql.py, so a curated
 prompt_similarity export from Supabase lines up with this catalog id-for-id.
 
-Re-run after editing either source:  python toolkit/scripts/build_catalog.py
+Re-run after editing either source:  python product/engine/scripts/build_catalog.py
 """
 from __future__ import annotations
 
@@ -18,13 +18,14 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "scripts"))
+ENGINE = Path(__file__).resolve().parents[1]
+LEGACY = ENGINE.parents[1] / "archive" / "old-web-app"  # where the curated catalog sources live
+sys.path.insert(0, str(LEGACY / "scripts"))
 from generate_seed_sql import parse_word_limit, slugify  # noqa: E402
 
-SEED = ROOT / "supabase" / "seed_source.schools.json"
-UPDATE_SQL = ROOT / "supabase" / "update_five_schools.sql"
-OUT_DIR = ROOT / "toolkit" / "data"
+SEED = LEGACY / "supabase" / "seed_source.schools.json"
+UPDATE_SQL = LEGACY / "supabase" / "update_five_schools.sql"
+OUT_DIR = ENGINE / "data"
 
 SQL_STR = r"'((?:[^']|'')*)'"
 
@@ -86,7 +87,7 @@ SQL_TO_JSON = {
 }
 
 
-SCORECARD = ROOT / "toolkit" / "data" / "scorecard_raw.json"
+SCORECARD = ENGINE / "data" / "scorecard_raw.json"
 CURATED_TO_SCORECARD = {
     "northeastern": "Northeastern University", "purdue": "Purdue University-Main Campus",
     "georgia-tech": "Georgia Institute of Technology-Main Campus", "tufts": "Tufts University",

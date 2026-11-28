@@ -1,4 +1,4 @@
-"""Build reports/UNIMATH_summary.pdf: the one-page version of the feature build spec.
+"""Build product/reports/calliper-summary-v1.pdf: the one-page version of the feature build spec.
 Run scripts/make_offer.py first (it draws the figures)."""
 from pathlib import Path
 
@@ -11,8 +11,8 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import Image, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 ROOT = Path(__file__).resolve().parents[1]
-FIG = ROOT / "reports" / "figures" / "offer"
-OUT = ROOT / "reports" / "UNIMATH_summary.pdf"
+FIG = ROOT / "results" / "figures" / "offer"
+OUT = ROOT.parent / "reports" / "calliper-summary-v1.pdf"
 F = "/usr/share/fonts/truetype/dejavu/"
 pdfmetrics.registerFont(TTFont("DV", F + "DejaVuSans.ttf"))
 pdfmetrics.registerFont(TTFont("DVB", F + "DejaVuSans-Bold.ttf"))
@@ -52,7 +52,7 @@ OK, HALF, NO = ("<font color='#0a7d32'><b>built</b></font>", "<font color='#b86e
 
 P("UNIMATH: what we sell", H1)
 P("Three features on two engines. The essay matrix is the differentiator: it doesn't need outcome data, which the "
-  "big platforms have and we don't. Full detail: <b>UNIMATH_feature_build_spec.pdf</b>.")
+  "big platforms have and we don't. Full detail: <b>calliper-feature-build-spec-v1.pdf</b>.")
 fig("o1_architecture", 5.9)
 story.append(Spacer(1, 6))
 table([["Feature", "Tells the counselor", "Status", "Next to build"],

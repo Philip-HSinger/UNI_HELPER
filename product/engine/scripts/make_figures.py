@@ -1,4 +1,4 @@
-"""Render every figure used in the methods manual into reports/figures/."""
+"""Render every figure used in the methods manual into results/figures/."""
 import json
 import sys
 from pathlib import Path
@@ -18,9 +18,9 @@ from unimath.model import AdmissionModel, Student  # noqa: E402
 from unimath.scores import fit_band, fit_school  # noqa: E402
 from unimath.similarity import SimilarityEngine  # noqa: E402
 
-FIG = ROOT / "reports" / "figures"
+FIG = ROOT / "results" / "figures"
 FIG.mkdir(parents=True, exist_ok=True)
-R = json.loads((ROOT / "reports" / "backtest_results.json").read_text())
+R = json.loads((ROOT / "results" / "backtest_results.json").read_text())
 CAT = curated_only(load_catalog())
 M = AdmissionModel(CAT)
 E = SimilarityEngine(CAT, SIMILARITY)
@@ -205,7 +205,7 @@ save("f12_posterior")
 print("figures written to", FIG)
 
 # 13. forest plot of every effect with 95% CI (from significance.json)
-SIGP = ROOT / "reports" / "significance.json"
+SIGP = ROOT / "results" / "significance.json"
 if SIGP.exists():
     SG = json.loads(SIGP.read_text())
     rows = []
@@ -235,7 +235,7 @@ if SIGP.exists():
     print("forest written")
 
 # 14. backtest power
-PW = ROOT / "reports" / "power.json"
+PW = ROOT / "results" / "power.json"
 if PW.exists():
     pw = json.loads(PW.read_text())
     fig, axes = plt.subplots(1, 2, figsize=(7.2, 2.8), sharey=True)

@@ -1,5 +1,5 @@
 """Step 4: admission odds on the verified Common Data Set figures, with Bayesian updates after early results.
-Writes outputs/odds.json. Uses the toolkit's AdmissionModel; three demo-level choices are made here and documented
+Writes outputs/odds.json. Uses the engine's (product/engine) AdmissionModel; three demo-level choices are made here and documented
 in the annotated report:
   1. Early Decision school: priced halfway (log-odds) between its overall and its ED admit rate.
   2. Every other school: priced at its non-ED admit rate, (admits - ED admits) / (applicants - ED applicants).
@@ -8,9 +8,9 @@ import sys
 
 import numpy as np
 
-from common import CANDIDATES, IDS, LIST, OUT, ROOT, SHORT, SUBMITTED, TOOLKIT, load, save
+from common import CANDIDATES, IDS, LIST, OUT, ROOT, SHORT, SUBMITTED, ENGINE, load, save
 
-sys.path.insert(0, str(TOOLKIT))
+sys.path.insert(0, str(ENGINE))
 from unimath import model as um  # noqa: E402
 from unimath.model import AdmissionModel, Student  # noqa: E402
 

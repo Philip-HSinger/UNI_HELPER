@@ -1,4 +1,4 @@
-"""Build reports/Calliper_technical_note.pdf: a 2-page technical note sent with outreach emails.
+"""Build product/reports/calliper-technical-note-v1.pdf: a 2-page technical note sent with outreach emails.
 
 Uses only the standard PDF fonts (Times, Symbol) and a vector figure, so the file stays small enough to attach.
 All example numbers are computed live from the toolkit.
@@ -22,7 +22,7 @@ sys.path.insert(0, str(ROOT))
 from unimath.catalog import load_catalog  # noqa: E402
 from unimath.model import AdmissionModel, Student  # noqa: E402
 
-OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "reports" / "Calliper_technical_note.pdf"
+OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT.parent / "reports" / "calliper-technical-note-v1.pdf"
 
 # ---------------------------------------------------------------------------------------------- numbers
 M = AdmissionModel(load_catalog())
