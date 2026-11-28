@@ -1,6 +1,6 @@
 """Build product/engine/data/catalog.json + similarity.csv from the repo's curated sources.
 
-Sources (both kept with the archived web app, archive/old-web-app/):
+Sources (kept from the deleted web app in archive/catalog-sources/):
   supabase/seed_source.schools.json   - the 19-school seed
   supabase/update_five_schools.sql    - researched 2026-27 corrections (MIT, Princeton, Stanford,
                                         Georgia Tech, Purdue) + the first curated similarity pairs
@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 ENGINE = Path(__file__).resolve().parents[1]
-LEGACY = ENGINE.parents[1] / "archive" / "old-web-app"  # where the curated catalog sources live
+LEGACY = ENGINE.parents[1] / "archive" / "catalog-sources"  # curated sources kept from the old web app
 sys.path.insert(0, str(LEGACY / "scripts"))
 from generate_seed_sql import parse_word_limit, slugify  # noqa: E402
 

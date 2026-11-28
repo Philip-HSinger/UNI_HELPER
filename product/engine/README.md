@@ -75,13 +75,13 @@ Decisions are `accepted`, `rejected`, `waitlisted` or `deferred`. School ids are
 
 `data/catalog.json` holds 412 four-year schools:
 
-- **19 hand-curated schools** with real supplement prompts, built from `archive/old-web-app/supabase/seed_source.schools.json` and
-  the researched 2026-27 corrections in `archive/old-web-app/supabase/update_five_schools.sql`.
+- **19 hand-curated schools** with real supplement prompts, built from `archive/catalog-sources/supabase/seed_source.schools.json` and
+  the researched 2026-27 corrections in `archive/catalog-sources/supabase/update_five_schools.sql`.
 - **393 schools from the US Department of Education's College Scorecard** (SAT quartiles and admission rate). Their
   "test importance" is a proxy from Scorecard's test-requirement code, and their supplements are placeholders
   (assumed one 250-word essay). `DQ` flags all of this.
 
-`data/similarity.csv` holds the human-scored prompt pairs (same table as the archived web app's Supabase
+`data/similarity.csv` holds the human-scored prompt pairs (same table as the old web app's Supabase
 `prompt_similarity`). Human scores always override the heuristic.
 
 Refresh: `python scripts/fetch_scorecard.py` (resumable; the free DEMO_KEY allows ~10 requests/hour, or set
